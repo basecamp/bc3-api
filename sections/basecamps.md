@@ -134,7 +134,7 @@ If you hit that error, you'll need to either archive or trash projects, or upgra
 ``` shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" \
   -d '{"name":"Marketing Campaign","description":"For Client: Xyz Corp Conference"}' \
-  http://bc3.dev/$ACCOUNT_ID/basecamps.json
+  https://3.basecamp.com/$ACCOUNT_ID/basecamps.json
 ```
 
 
@@ -157,7 +157,7 @@ This will return `200 OK`, with the location of the new basecamp in the `Locatio
 ``` shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" \
   -d '{"name":"Marketing Campaign for Xyz Corp","description":"2016-2017 Strategy"}' -X PUT \
-  http://bc3.dev/$ACCOUNT_ID/basecamps/2085958506.json
+  https://3.basecamp.com/$ACCOUNT_ID/basecamps/2085958506.json
 ```
 
 
@@ -172,7 +172,7 @@ Archived basecamps do not count against the current basecamp limit for an accoun
 
 ``` shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" -X PUT \
-  http://bc3.dev/$ACCOUNT_ID/basecamps/2085958506/status/archived.json
+  https://3.basecamp.com/$ACCOUNT_ID/basecamps/2085958506/status/archived.json
 ```
 
 
@@ -187,7 +187,7 @@ Trashed basecamps will be deleted from Basecamp 3 after 30 days. No parameters r
 
 ``` shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" -X PUT \
-  http://bc3.dev/$ACCOUNT_ID/basecamps/2085958506/status/trashed.json
+  https://3.basecamp.com/$ACCOUNT_ID/basecamps/2085958506/status/trashed.json
 ```
 
 
@@ -202,7 +202,7 @@ This will remove the basecamp from the trashed or archived state. No parameters 
 
 ``` shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" -X PUT \
-  http://bc3.dev/$ACCOUNT_ID/basecamps/2085958506/status/active.json
+  https://3.basecamp.com/$ACCOUNT_ID/basecamps/2085958506/status/active.json
 ```
 
 
