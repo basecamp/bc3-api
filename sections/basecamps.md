@@ -119,7 +119,7 @@ Create a basecamp
 }
 ```
 
-This will return `201 Created`, with the location of the new basecamp in the `Location` header along with the current JSON representation of the basecamp if the creation was a success. See the **Get basecamp** endpoint for more info. If the account has reached the basecamp limit you'll see a `507 Insufficient Storage` and a response of:
+This will return `201 Created`, with the location of the new basecamp in the `Location` header along with the current JSON representation of the basecamp if the creation was a success. See the [Get a basecamp](#get-a-basecamp) endpoint for more info. If the account has reached the basecamp limit you'll see a `507 Insufficient Storage` and a response of:
 
 ``` json
 {
@@ -142,6 +142,23 @@ Update a basecamp
 -----------------
 
 * `PUT /basecamps/1.json` will allow updating of a basecamp's name and description.
+
+``` json
+{
+  "name": "Marketing Campaign for Xyz Corp",
+  "description": "2016-2017 Strategy"
+}
+```
+
+This will return `200 OK`, with the location of the new basecamp in the `Location` header along with the current JSON representation of the basecamp if the update was a success. See the [Get a basecamp](#get-a-basecamp) endpoint for more info.
+
+###### Copy as cURL:
+
+``` shell
+curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" \
+  -d '{"name":"Marketing Campaign for Xyz Corp","description":"2016-2017 Strategy"}' -X PUT \
+  http://bc3.dev/$ACCOUNT_ID/basecamps/2085958506.json
+```
 
 
 Archive a basecamp
