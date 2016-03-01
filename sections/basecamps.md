@@ -164,9 +164,9 @@ curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/j
 Archive a basecamp
 ------------------
 
-* `PUT /basecamps/1/status/archived.json` will archive the basecamp with the given ID. Archived basecamps do not count against the current basecamp limit for an account.
+* `PUT /basecamps/1/status/archived.json` will archive the basecamp with the given ID.
 
-No parameters required. Returns `200 OK` if successful.
+Archived basecamps do not count against the current basecamp limit for an account. No parameters required. Returns `200 OK` if successful.
 
 ###### Copy as cURL:
 
@@ -179,9 +179,9 @@ curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/j
 Trash a basecamp
 ----------------
 
-* `PUT /basecamps/1/status/trashed.json` will mark the basecamp with the given ID as trashed. Trashed basecamps will be deleted from Basecamp 3 after 30 days.
+* `PUT /basecamps/1/status/trashed.json` will mark the basecamp with the given ID as trashed.
 
-No parameters required. Returns `200 OK` if successful.
+Trashed basecamps will be deleted from Basecamp 3 after 30 days. No parameters required. Returns `200 OK` if successful.
 
 ###### Copy as cURL:
 
@@ -194,9 +194,9 @@ curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/j
 Activate a basecamp
 ------------------
 
-* `PUT /basecamps/1/status/active.json` will mark the basecamp as active, removing it from the trashed or archived state.
+* `PUT /basecamps/1/status/active.json` will mark the basecamp as active.
 
-No parameters required. Returns `200 OK` if successful. If a basecamp cannot be marked as active due to account limits, the request will fail. See the [Create a basecamp](#create-a-basecamp) endpoint.
+This will remove the basecamp from the trashed or archived state. No parameters required. Returns `200 OK` if successful. If a basecamp cannot be marked as active due to account limits, the request will fail. See the [Create a basecamp](#create-a-basecamp) endpoint.
 
 ###### Copy as cURL:
 
