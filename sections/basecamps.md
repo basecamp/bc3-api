@@ -5,20 +5,18 @@ Basecamps
 
 Endpoints:
 
-- [Get basecamps](#get-basecamps)
-- [Get a basecamp](#get-a-basecamp)
-- [Create a basecamp](#create-a-basecamp)
-- [Update a basecamp](#update-a-basecamp)
-- [Archive a basecamp](#archive-a-basecamp)
-- [Trash a basecamp](#trash-a-basecamp)
-- [Activate a basecamp](#activate-a-basecamp)
+- [Get Basecamps](#get-basecamps)
+- [Get a Basecamp](#get-a-basecamp)
+- [Create a Basecamp](#create-a-basecamp)
+- [Update a Basecamp](#update-a-basecamp)
+- [Trash a Basecamp](#trash-a-basecamp)
 
-Get basecamps
+Get Basecamps
 -------------
 
-* `GET /projects.json` will return all active basecamps visible to the current user.
-* `GET /projects/archive.json` will return all archived basecamps visible to the current user.
-* `GET /projects/trash.json` will return all trashed basecamps visible to the current user.
+* `GET /projects.json` will return all active Basecamps visible to the current user.
+* `GET /projects/archive.json` will return all archived Basecamps visible to the current user.
+* `GET /projects/trash.json` will return all trashed Basecamps visible to the current user.
 
 ```json
 [
@@ -80,10 +78,10 @@ curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecamp.com/$ACCOUNT
 ```
 
 
-Get a basecamp
+Get a Basecamp
 --------------
 
-* `GET /projects/1.json` will return the basecamp with the given ID, granted they have access to it.
+* `GET /projects/1.json` will return the Basecamp with the given ID, granted they have access to it.
 
 
 ``` json
@@ -107,10 +105,10 @@ curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecamp.com/$ACCOUNT
 ```
 
 
-Create a basecamp
+Create a Basecamp
 -----------------
 
-* `POST /projects.json` with at least a name, and optionally a description, to kick off a new basecamp.
+* `POST /projects.json` with at least a name, and optionally a description, to kick off a new Basecamp.
 
 ``` json
 {
@@ -119,15 +117,15 @@ Create a basecamp
 }
 ```
 
-This will return `201 Created`, with the location of the new basecamp in the `Location` header along with the current JSON representation of the basecamp if the creation was a success. See the [Get a basecamp](#get-a-basecamp) endpoint for more info. If the account has reached the basecamp limit you'll see a `507 Insufficient Storage` and a response of:
+This will return `201 Created` with the current JSON representation of the Basecamp if the creation was a success. See the [Get a Basecamp](#get-a-basecamp) endpoint for more info. If the account has reached the Basecamp limit you'll see a `507 Insufficient Storage` and a response of:
 
 ``` json
 {
-  "error": "The basecamp limit for this account has been reached."
+  "error": "The Basecamp limit for this account has been reached."
 }
 ```
 
-If you hit that error, you'll need to either archive or trash projects, or upgrade your subscription to a bigger plan. After creating a basecamp, you'll  want to [allow people to get in][1]. Or maybe, [add some to-dos][2]?
+If you hit that error, you'll need to either archive or trash projects, or upgrade your subscription to a bigger plan. After creating a Basecamp, you'll  want to [allow people to get in][1]. Or maybe, [add some to-dos][2]?
 
 ###### Copy as cURL:
 
@@ -138,10 +136,10 @@ curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/j
 ```
 
 
-Update a basecamp
+Update a Basecamp
 -----------------
 
-* `PUT /projects/1.json` will allow updating of a basecamp's name and description.
+* `PUT /projects/1.json` will allow updating of a Basecamp's name and description.
 
 ``` json
 {
@@ -150,7 +148,7 @@ Update a basecamp
 }
 ```
 
-This will return `200 OK`, with the location of the new basecamp in the `Location` header along with the current JSON representation of the basecamp if the update was a success. See the [Get a basecamp](#get-a-basecamp) endpoint for more info.
+This will return `204 No Content` when successful. See the [Get a Basecamp](#get-a-basecamp) endpoint for more info.
 
 ###### Copy as cURL:
 
@@ -161,50 +159,19 @@ curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/j
 ```
 
 
-Archive a basecamp
-------------------
-
-* `PUT /projects/1/status/archived.json` will archive the basecamp with the given ID.
-
-Archived basecamps do not count against the current basecamp limit for an account. No parameters required. Returns `200 OK` if successful.
-
-###### Copy as cURL:
-
-``` shell
-curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" -X PUT \
-  https://3.basecamp.com/$ACCOUNT_ID/projects/2085958506/status/archived.json
-```
-
-
-Trash a basecamp
+Trash a Basecamp
 ----------------
 
-* `PUT /projects/1/status/trashed.json` will mark the basecamp with the given ID as trashed.
+* `DELETE /projects/1.json` will mark the Basecamp with the given ID as trashed.
 
-Trashed basecamps will be deleted from Basecamp 3 after 30 days. No parameters required. Returns `200 OK` if successful.
-
-###### Copy as cURL:
-
-``` shell
-curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" -X PUT \
-  https://3.basecamp.com/$ACCOUNT_ID/projects/2085958506/status/trashed.json
-```
-
-
-Activate a basecamp
-------------------
-
-* `PUT /projects/1/status/active.json` will mark the basecamp as active.
-
-This will remove the basecamp from the trashed or archived state. No parameters required. Returns `200 OK` if successful. If a basecamp cannot be marked as active due to account limits, the request will fail. See the [Create a basecamp](#create-a-basecamp) endpoint.
+Trashed Basecamps will be deleted from Basecamp 3 after 30 days. No parameters required. Returns `204 No Content` if successful.
 
 ###### Copy as cURL:
 
 ``` shell
-curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" -X PUT \
-  https://3.basecamp.com/$ACCOUNT_ID/projects/2085958506/status/active.json
+curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" -X DELETE \
+  http://bc3.dev/$ACCOUNT_ID/projects/2085958507.json
 ```
-
 
 [1]: https://github.com/basecamp/bc3-api/blob/master/sections/accesses.md#accesses
 [2]: https://github.com/basecamp/bc3-api/blob/master/sections/todos.md#todos
