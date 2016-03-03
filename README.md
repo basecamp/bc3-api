@@ -95,8 +95,22 @@ You'll receive a `415 Unsupported Media Type` response code if you attempt to us
 Pagination
 ----------
 
-Most collection APIs paginate their results. The first request returns up to 50 records. Check the next page for more results by adding `&page=2`, then `&page=3`, and so on until you get an empty response.
+Most collection APIs paginate their results. The first request returns up to 50 records. The Basecamp 3 API follows the [RFC5988 convention](https://tools.ietf.org/html/rfc5988) of using the `Link` header to provide URLs for the `first`, `next`, `prev`, and `last` pages. Follow these URLs to retreive the next page of data, and please don't build the pagination URLs yourself! Here's an example from the [Messages API][2] for requesting the third page (of 50) when 300 are available:
 
+```
+<https://3.basecamp.com/195539477/buckets/2085958496/messages.json?page=1>; rel="first", <https://3.basecamp.com/195539477/buckets/2085958496/messages.json?page=4>; rel="next", <https://3.basecamp.com/195539477/buckets/2085958496/messages.json?page=2>; rel="prev", <https://3.basecamp.com/195539477/buckets/2085958496/messages.json?page=6>; rel="last"
+```
+
+Here's the same header, just split out so it's more human readable. Note: in the API there won't be any linebreaks!
+
+```
+<https://3.basecamp.com/195539477/buckets/2085958496/messages.json?page=1>; rel="first",
+<https://3.basecamp.com/195539477/buckets/2085958496/messages.json?page=4>; rel="next",
+<https://3.basecamp.com/195539477/buckets/2085958496/messages.json?page=2>; rel="prev",
+<https://3.basecamp.com/195539477/buckets/2085958496/messages.json?page=6>; rel="last"
+```
+
+Quick note: If the `Link` header is blank, and you have some results, then that's the only page of data!
 
 Use HTTP caching
 ----------------

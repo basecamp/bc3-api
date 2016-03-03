@@ -1,19 +1,18 @@
 Messages
 ========
 
-Messages and comments are both [recordings][1].
-
 Endpoints:
 
 - [Get messages](#get-messages)
 - [Get a message](#get-a-message)
 - [Create a message](#create-a-message)
 - [Update a message](#update-a-message)
+- [Trash a message](#trash-a-message)
 
 Get messages
 ------------
 
-* `GET /buckets/1/messages.json` will return all active messages in specific basecamp.
+* `GET /buckets/1/messages.json` will return a [paginated list][1] of active messages in the basecamp with an ID of `1`.
 
 ``` json
 [
@@ -98,4 +97,4 @@ Pagination?
 Get message
 -----------
 
-[1]: https://github.com/basecamp/bc3-api/blob/master/sections/recordings.md#recordings
+[1]: https://github.com/basecamp/bc3-api/blob/master/README.md#pagination
