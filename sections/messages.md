@@ -56,10 +56,9 @@ Get messages
 ###### Copy as cURL:
 
 ``` shell
-curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecamp.com/$ACCOUNT_ID/buckets/1/messages.json
+curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecamp.com/$ACCOUNT_ID/buckets/2085958506/messages.json
 ```
 
-Pagination?
 
 Get a message
 -------------
@@ -109,7 +108,7 @@ curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecamp.com/$ACCOUNT
 Create a message
 ----------------
 
-* `POST /buckets/1/messages.json` starts a message with the given `subject` and optionally, some HTML `content` in the Basecamp with ID `1`.
+* `POST /buckets/1/messages.json` publishes a message with the given `subject` and optionally, some HTML `content` in the Basecamp with ID `1`.
 
 ``` json
 {
@@ -125,9 +124,31 @@ This will return `201 Created` with the current JSON representation of the messa
 ``` shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" \
   -d '{"subject":"Kickoff","content":"<div><strong>Welcome to Basecamp, everyone.</strong></div>"}' \
-  https://basecamp.com/$ACCOUNT_ID/buckets/1/messages.json
+  https://basecamp.com/$ACCOUNT_ID/buckets/2085958506/messages.json
 ```
 
+
+Update a message
+-----------------
+
+* `PUT /buckets/1/messages/2.json` allows changing the subject and content of the message with an ID of `2` in the Basecamp with ID `1`.
+
+``` json
+{
+  "subject": "Spin-down",
+  "content": "<div><strong>Oops, we lost that client.</strong></div>"
+}
+```
+
+This will return `200 OK` with the current JSON representation of the message if the update was a success. See the [Get a message](#get-a-message) endpoint for more info.
+
+###### Copy as cURL:
+
+``` shell
+curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" \
+  -d '{"name":"Spin-down","description":"<div><strong>Oops, we lost that client.</strong></div>"}' -X PUT \
+  https://3.basecamp.com/$ACCOUNT_ID/buckets/2085958506.json
+```
 
 
 [1]: https://github.com/basecamp/bc3-api/blob/master/README.md#pagination

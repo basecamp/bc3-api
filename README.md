@@ -113,17 +113,16 @@ Rich content
 
 Many resources accept HTML for content to display in Basecamp. If you're accepting content from a web browser, we'd highly encourage you to check out [Trix](https://github.com/basecamp/trix), our rich content editor. If you are sending HTML tags directly, here's what we allow:
 
+* `div`
 * `strong`
 * `em`
+* `strike`
 * `a` (with `href` attribute)
 * `pre`
-* `img` (with `src` attribute)
-* `div`
 * `ol`
 * `ul`
 * `li`
 * `blockquote`
-* `strike`
 
 
 Use HTTP caching

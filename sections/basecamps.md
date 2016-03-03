@@ -148,7 +148,7 @@ Update a Basecamp
 }
 ```
 
-This will return `204 No Content` when successful. See the [Get a Basecamp](#get-a-basecamp) endpoint for more info.
+This will return `200 OK` with the current JSON representation of the Basecamp if the update was a success. See the [Get a Basecamp](#get-a-basecamp) endpoint for more info.
 
 ###### Copy as cURL:
 
