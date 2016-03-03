@@ -22,15 +22,9 @@ If you've used a previous version of the Basecamp API, you will need to adapt yo
 - We're requiring OAuth for [authentication](#authentication)
 - All requests must end in `.json`
 - Many IDs are numeric, but many are now [Signed Global IDs (SGIDs)](https://github.com/rails/globalid#signed-global-ids), also known as "Squids"
-- Most data structures are "Recordables", which tie back to a [Recording][1]
+- Most data structures are "Recordables", which tie back to a [Recording][6]
 - [Pagination](#pagination) is now performed via the `Link` header.
 
-More on "Recordings" and "Recordables":
-
-What is a recording? Recordable?
-
-- Tree structure
-- Children
 
 Making a request
 ----------------
@@ -113,6 +107,7 @@ Here's the same header, just split out so it's more human readable. _Note: in th
 
 Quick note: If the `Link` header is blank, and you have some results, then that's the only page of data!
 
+
 Rich content
 ------------
 
@@ -129,6 +124,7 @@ Many resources accept HTML for content to display in Basecamp. If you're accepti
 * `li`
 * `blockquote`
 * `strike`
+
 
 Use HTTP caching
 ----------------
