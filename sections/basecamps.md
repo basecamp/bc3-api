@@ -170,7 +170,7 @@ Trashed Basecamps will be deleted from Basecamp 3 after 30 days. No parameters r
 
 ``` shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" -X DELETE \
-  http://bc3.dev/$ACCOUNT_ID/projects/2085958507.json
+  https://3.basecamp.com/$ACCOUNT_ID/projects/2085958507.json
 ```
 
 [1]: https://github.com/basecamp/bc3-api/blob/master/sections/accesses.md#accesses
