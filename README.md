@@ -113,6 +113,23 @@ Here's the same header, just split out so it's more human readable. _Note: in th
 
 Quick note: If the `Link` header is blank, and you have some results, then that's the only page of data!
 
+Rich content
+------------
+
+Many resources accept HTML for content to display in Basecamp. If you're accepting content from a web browser, we'd highly encourage you to check out [Trix](https://github.com/basecamp/trix), our rich content editor. If you are sending HTML tags directly, here's what we allow:
+
+* `strong`
+* `em`
+* `a` (with `href` attribute)
+* `pre`
+* `img` (with `src` attribute)
+* `div`
+* `ol`
+* `ul`
+* `li`
+* `blockquote`
+* `strike`
+
 Use HTTP caching
 ----------------
 

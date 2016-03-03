@@ -12,7 +12,7 @@ Endpoints:
 Get messages
 ------------
 
-* `GET /buckets/1/messages.json` will return a [paginated list][1] of active messages in the basecamp with an ID of `1`.
+* `GET /buckets/1/messages.json` will return a [paginated list][1] of active messages in the Basecamp with an ID of `1`.
 
 ``` json
 [
@@ -64,7 +64,7 @@ Pagination?
 Get a message
 -------------
 
-* `GET /buckets/1/messages/2.json` will return the message with an ID of `2` in the basecamp with an ID of `1`.
+* `GET /buckets/1/messages/2.json` will return the message with an ID of `2` in the Basecamp with an ID of `1`.
 
 ``` json
 {
@@ -106,4 +106,29 @@ curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecamp.com/$ACCOUNT
 ```
 
 
+Create a message
+----------------
+
+* `POST /buckets/1/messages.json` starts a message with the given `subject` and optionally, some HTML `content` in the Basecamp with ID `1`.
+
+``` json
+{
+  "subject": "Kickoff",
+  "content": "<div><strong>Welcome to Basecamp, everyone.</strong></div>"
+}
+```
+
+This will return `201 Created` with the current JSON representation of the message if the creation was a success. See the [Get a message](#get-a-message) endpoint for more info on the payload, and check out what is allowed in the `content` field in our [Rich content][2] guide.
+
+###### Copy as cURL:
+
+``` shell
+curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" \
+  -d '{"subject":"Kickoff","content":"<div><strong>Welcome to Basecamp, everyone.</strong></div>"}' \
+  https://basecamp.com/$ACCOUNT_ID/buckets/1/messages.json
+```
+
+
+
 [1]: https://github.com/basecamp/bc3-api/blob/master/README.md#pagination
+[2]: https://github.com/basecamp/bc3-api/blob/master/README.md#rich-content
