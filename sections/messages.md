@@ -21,7 +21,7 @@ Get messages
       "creator" : {
          "id" : 1007299145,
          "name" : "Annie Bryan",
-         "avatar_url" : "http://bc3-cdn.dev/195539477/people/BAhpBEkqCjw=--7e8e5d9e90e4898faee5f69e72def9e58da85fbe/avatar-64-x4",
+         "avatar_url" : "https://3.basecamp-static.com/195539477/people/BAhpBEkqCjw=--7e8e5d9e90e4898faee5f69e72def9e58da85fbe/avatar-64-x4",
          "email_address" : "annie@honchodesign.com"
       },
       "comments_count" : 5,
@@ -38,13 +38,13 @@ Get messages
       "status" : "active",
       "created_at" : "2016-02-03T12:22:46.082-06:00",
       "id" : 9007199254741871,
-      "url" : "http://bc3.dev/195539477/buckets/2085958496/messages/9007199254741871",
+      "url" : "https://3.basecamp.com/195539477/buckets/2085958496/messages/9007199254741871",
       "updated_at" : "2016-02-03T12:48:48.704-06:00",
       "bucket_path" : "/195539477/buckets/2085958496",
       "subject" : "Another one",
       "parent" : {
          "id" : 9007199254741044,
-         "url" : "http://bc3.dev/195539477/buckets/2085958496/message_boards/9007199254741044",
+         "url" : "https://3.basecamp.com/195539477/buckets/2085958496/message_boards/9007199254741044",
          "title" : "Message Board"
       },
       "content" : "<div>wow</div>"
@@ -55,7 +55,7 @@ Get messages
       "parent" : {
          "id" : 9007199254741044,
          "title" : "Message Board",
-         "url" : "http://bc3.dev/195539477/buckets/2085958496/message_boards/9007199254741044"
+         "url" : "https://3.basecamp.com/195539477/buckets/2085958496/message_boards/9007199254741044"
       },
       "subject" : "Home screens at Honcho",
       "created_at" : "2016-01-23T12:09:28.313-06:00",
@@ -63,7 +63,7 @@ Get messages
       "status" : "active",
       "type" : "Message",
       "creator" : {
-         "avatar_url" : "http://bc3-cdn.dev/195539477/people/BAhpBEsqCjw=--628b01c4d4d8909d3ef57844195aeaa302338966/avatar-64-x4",
+         "avatar_url" : "https://3.basecamp-static.com/195539477/people/BAhpBEsqCjw=--628b01c4d4d8909d3ef57844195aeaa302338966/avatar-64-x4",
          "name" : "Jared Davis",
          "email_address" : "jared@honchodesign.com",
          "id" : 1007299147
@@ -80,7 +80,7 @@ Get messages
          "description" : "Let's talk about the company!"
       },
       "updated_at" : "2016-01-27T11:01:57.926-06:00",
-      "url" : "http://bc3.dev/195539477/buckets/2085958496/messages/9007199254741318"
+      "url" : "https://3.basecamp.com/195539477/buckets/2085958496/messages/9007199254741318"
    },
    ...
 ]

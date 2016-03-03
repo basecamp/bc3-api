@@ -23,6 +23,7 @@ If you've used a previous version of the Basecamp API, you will need to adapt yo
 - All requests must end in `.json`
 - Many IDs are numeric, but many are now [Signed Global IDs (SGIDs)](https://github.com/rails/globalid#signed-global-ids), also known as "Squids"
 - Most data structures are "Recordables", which tie back to a [Recording][1]
+- [Pagination](#pagination) is now performed via the `Link` header.
 
 More on "Recordings" and "Recordables":
 
@@ -101,7 +102,7 @@ Most collection APIs paginate their results. The first request returns up to 50 
 <https://3.basecamp.com/195539477/buckets/2085958496/messages.json?page=1>; rel="first", <https://3.basecamp.com/195539477/buckets/2085958496/messages.json?page=4>; rel="next", <https://3.basecamp.com/195539477/buckets/2085958496/messages.json?page=2>; rel="prev", <https://3.basecamp.com/195539477/buckets/2085958496/messages.json?page=6>; rel="last"
 ```
 
-Here's the same header, just split out so it's more human readable. Note: in the API there won't be any linebreaks!
+Here's the same header, just split out so it's more human readable. _Note: in the API there won't be any linebreaks!_
 
 ```
 <https://3.basecamp.com/195539477/buckets/2085958496/messages.json?page=1>; rel="first",
