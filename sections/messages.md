@@ -73,7 +73,7 @@ To get the message board ID for a Basecamp, see the [Get message boards][2] endp
          "email_address" : "victor@honchodesign.com",
          "avatar_url" : "https://3.basecamp-static.com/195539477/people/BAhpBEgqCjw=--8266bb0507508f3d46050d57b65924d5e2a005f3/avatar-64-x4",
          "name" : "Victor Cooper",
-         id" : 1007299144
+         "id" : 1007299144
       },
       "comments_count" : 0,
       "url" : "https://3.basecamp.com/195539477/buckets/2085958506/messages/9007199254743016",
@@ -153,6 +153,7 @@ Create a message
 * `POST /buckets/1/message_boards/3/messages.json` publishes a message in the Basecamp with ID `1` and under the message board with an ID of `3`.
 
 **Required parameters**: `subject` as the title of the message, and `status`, set to `active` to publish immediately.
+
 _Optional parameters_: HTML `content` as the body of the message. See our [Rich content][3] guide for what is allowed.
 
 ``` json
@@ -162,6 +163,8 @@ _Optional parameters_: HTML `content` as the body of the message. See our [Rich 
   "status": "active"
 }
 ```
+
+Note: All people on a Basecamp are notified of the new message when it's posted. Changing who is subscribed is coming soon!
 
 This endpoint will return `201 Created` with the current JSON representation of the message if the creation was a success. See the [Get a message](#get-a-message) endpoint for more info on the payload.
 

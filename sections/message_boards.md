@@ -1,9 +1,7 @@
 Message Boards
 ==============
 
-Endpoints:
-
-- [Get message boards](#get-message-boards)
+All messages under a Basecamp are children of a Message Board resource. If you'd like to browse through messages in a Basecamp, this is a good place to start!
 
 Get message boards
 ------------------

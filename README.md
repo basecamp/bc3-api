@@ -144,7 +144,6 @@ API ready for use
 * [Comments][4]
 * [To-do lists][5]
 * [To-dos][6]
-* [Recordings][7]
 
 
 API libraries
