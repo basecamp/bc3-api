@@ -21,52 +21,48 @@ Get Basecamps
 ```json
 [
    {
-      "vault_url" : "https://3.basecamp.com/195539477/buckets/2085958495/vaults/9007199254741021",
-      "id" : 2085958495,
       "bookmark_url" : "https://3.basecamp.com/195539477/my/bookmarks/BAh7CEkiCGdpZAY6BkVUSSIrZ2lkOi8vYmMzL0J1Y2tldC8yMDg1OTU4NDk1P2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg1yZWFkYWJsZQY7AFRJIg9leHBpcmVzX2F0BjsAVDA=--06a5145963152c63ea56090695ec59e6d83fb21a",
-      "created_at" : "2016-01-27T11:00:20.701-06:00",
-      "name" : "Annie's Corner",
-      "updated_at" : "2016-02-11T09:49:52.878-06:00",
-      "status" : "active",
-      "description" : "Annie's Stuff. Keep Out. 😁",
       "bookmarked" : false,
+      "created_at" : "2016-01-27T11:00:20.701-06:00",
+      "description" : "Annie's Stuff. Keep Out. 😁",
+      "id" : 2085958495,
+      "name" : "Annie's Corner",
+      "status" : "active",
+      "updated_at" : "2016-02-11T09:49:52.878-06:00",
       "url" : "https://3.basecamp.com/195539477/projects/2085958495"
    },
    {
-      "name" : "Honcho Design Newsroom",
-      "created_at" : "2016-01-27T11:00:28.325-06:00",
       "bookmark_url" : "https://3.basecamp.com/195539477/my/bookmarks/BAh7CEkiCGdpZAY6BkVUSSIrZ2lkOi8vYmMzL0J1Y2tldC8yMDg1OTU4NDk2P2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg1yZWFkYWJsZQY7AFRJIg9leHBpcmVzX2F0BjsAVDA=--456eaced982bc4da97ac830c019a4af1d250bb21",
-      "vault_url" : "https://3.basecamp.com/195539477/buckets/2085958496/vaults/9007199254741052",
-      "id" : 2085958496,
-      "url" : "https://3.basecamp.com/195539477/projects/2085958496",
       "bookmarked" : false,
-      "status" : "active",
+      "created_at" : "2016-01-27T11:00:28.325-06:00",
       "description" : "Let's talk about the company!",
+      "id" : 2085958496,
+      "name" : "Honcho Design Newsroom",
+      "status" : "active",
       "updated_at" : "2016-02-09T22:40:55.279-06:00"
+      "url" : "https://3.basecamp.com/195539477/projects/2085958496"
    },
    {
-      "status" : "active",
-      "description" : "Looking for the best!",
-      "updated_at" : "2016-02-11T09:49:55.177-06:00",
-      "url" : "https://3.basecamp.com/195539477/projects/2085958497",
-      "bookmarked" : false,
       "bookmark_url" : "https://3.basecamp.com/195539477/my/bookmarks/BAh7CEkiCGdpZAY6BkVUSSIrZ2lkOi8vYmMzL0J1Y2tldC8yMDg1OTU4NDk3P2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg1yZWFkYWJsZQY7AFRJIg9leHBpcmVzX2F0BjsAVDA=--9a7b024a94ef1e7abaa92676ceb712dff9de6885",
+      "bookmarked" : false,
       "created_at" : "2016-01-27T11:01:58.074-06:00",
-      "vault_url" : "https://3.basecamp.com/195539477/buckets/2085958497/vaults/9007199254741364",
+      "description" : "Looking for the best!",
       "id" : 2085958497,
-      "name" : "Honcho Recruiting and Hiring"
+      "name" : "Honcho Recruiting and Hiring",
+      "status" : "active",
+      "updated_at" : "2016-02-11T09:49:55.177-06:00",
+      "url" : "https://3.basecamp.com/195539477/projects/2085958497"
    },
    {
-      "name" : "The Leto Laptop",
-      "created_at" : "2016-01-27T11:02:32.061-06:00",
       "bookmark_url" : "https://3.basecamp.com/195539477/my/bookmarks/BAh7CEkiCGdpZAY6BkVUSSIrZ2lkOi8vYmMzL0J1Y2tldC8yMDg1OTU4NDk4P2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg1yZWFkYWJsZQY7AFRJIg9leHBpcmVzX2F0BjsAVDA=--c8e1a465de900eb9864fa79ae2f30345be158f71",
-      "vault_url" : "https://3.basecamp.com/195539477/buckets/2085958498/vaults/9007199254741442",
-      "id" : 2085958498,
-      "url" : "https://3.basecamp.com/195539477/projects/2085958498",
       "bookmarked" : false,
-      "status" : "active",
+      "created_at" : "2016-01-27T11:02:32.061-06:00",
       "description" : "Laptop product launch.",
-      "updated_at" : "2016-01-27T11:03:32.570-06:00"
+      "id" : 2085958498,
+      "name" : "The Leto Laptop",
+      "status" : "active",
+      "updated_at" : "2016-01-27T11:03:32.570-06:00",
+      "url" : "https://3.basecamp.com/195539477/projects/2085958498"
    }
 ]
 ```
@@ -88,13 +84,12 @@ Get a Basecamp
 {
    "bookmark_url" : "https://3.basecamp.com/195539477/my/bookmarks/BAh7CEkiCGdpZAY6BkVUSSIrZ2lkOi8vYmMzL0J1Y2tldC8yMDg1OTU4NDk2P2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg1yZWFkYWJsZQY7AFRJIg9leHBpcmVzX2F0BjsAVDA=--456eaced982bc4da97ac830c019a4af1d250bb21",
    "created_at" : "2016-01-27T11:00:28.325-06:00",
-   "updated_at" : "2016-02-09T22:40:55.279-06:00",
-   "vault_url" : "https://3.basecamp.com/195539477/buckets/2085958496/vaults/9007199254741052",
-   "url" : "https://3.basecamp.com/195539477/projects/2085958496",
+   "description" : "Let's talk about the company!",
    "id" : 2085958496,
    "name" : "Honcho Design Newsroom",
-   "description" : "Let's talk about the company!",
-   "status" : "active"
+   "status" : "active",
+   "updated_at" : "2016-02-09T22:40:55.279-06:00",
+   "url" : "https://3.basecamp.com/195539477/projects/2085958496"
 }
 ```
 

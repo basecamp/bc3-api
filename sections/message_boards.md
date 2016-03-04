@@ -13,16 +13,6 @@ This payload includes the most recent 10 messages in the `entries` key. To retri
 ``` json
 [
    {
-      "created_at" : "2016-01-27T11:00:28.446-06:00",
-      "creator" : {
-         "name" : "Victor Cooper",
-         "avatar_url" : "https://3.basecamp-static.com/195539477/people/BAhpBEgqCjw=--8266bb0507508f3d46050d57b65924d5e2a005f3/avatar-64-x4",
-         "id" : 1007299144,
-         "email_address" : "victor@honchodesign.com"
-      },
-      "bucket_path" : "/195539477/buckets/2085958496",
-      "updated_at" : "2016-02-03T15:40:39.036-06:00",
-      "messages_count" : 16,
       "bucket" : {
          "account_id" : 31989850,
          "created_at" : "2015-10-27T12:00:28.313-05:00",
@@ -33,12 +23,15 @@ This payload includes the most recent 10 messages in the `entries` key. To retri
          "updated_at" : "2015-10-27T12:00:28.313-05:00",
          "name" : "Honcho Design Newsroom"
       },
+      "bucket_path" : "/195539477/buckets/2085958496",
       "comments_count" : 0,
-      "title" : "Message Board",
-      "status" : "active",
-      "type" : "Message::Board",
-      "url" : "https://3.basecamp.com/195539477/buckets/2085958496/message_boards/9007199254741044",
-      "id" : 9007199254741044,
+      "created_at" : "2016-01-27T11:00:28.446-06:00",
+      "creator" : {
+         "name" : "Victor Cooper",
+         "avatar_url" : "https://3.basecamp-static.com/195539477/people/BAhpBEgqCjw=--8266bb0507508f3d46050d57b65924d5e2a005f3/avatar-64-x4",
+         "id" : 1007299144,
+         "email_address" : "victor@honchodesign.com"
+      },
       "entries" : [
          {
             "id" : 9007199254741256,
@@ -74,7 +67,14 @@ This payload includes the most recent 10 messages in the `entries` key. To retri
             }
          },
          ...
-      ]
+      ],
+      "id" : 9007199254741044,
+      "messages_count" : 16,
+      "status" : "active",
+      "title" : "Message Board",
+      "type" : "Message::Board",
+      "updated_at" : "2016-02-03T15:40:39.036-06:00",
+      "url" : "https://3.basecamp.com/195539477/buckets/2085958496/message_boards/9007199254741044",
    }
 ]
 ```

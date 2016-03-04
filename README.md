@@ -113,6 +113,7 @@ Many resources accept HTML for content to display in Basecamp. If you're accepti
 * `ul`
 * `li`
 * `blockquote`
+* `br`
 
 
 Use HTTP caching
