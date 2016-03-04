@@ -12,42 +12,77 @@ Endpoints:
 Get messages
 ------------
 
-* `GET /buckets/1/messages.json` will return a [paginated list][1] of active messages in the Basecamp with an ID of `1`.
+* `GET /buckets/1/message_boards/3/messages.json` will return a [paginated list][1] of active messages in the Basecamp with an ID of `1` and the message board with ID of `3`.
+
+To get the message board ID for a Basecamp, see the [Get message boards][2] endpoint.
 
 ``` json
 [
    {
-      "type" : "Message",
-      "creator" : {
-         "id" : 1007299145,
-         "name" : "Annie Bryan",
-         "avatar_url" : "https://3.basecamp-static.com/195539477/people/BAhpBEkqCjw=--7e8e5d9e90e4898faee5f69e72def9e58da85fbe/avatar-64-x4",
-         "email_address" : "annie@honchodesign.com"
-      },
-      "comments_count" : 5,
-      "bucket" : {
-         "description" : "Let's talk about the company!",
-         "updated_at" : "2015-10-27T12:00:28.313-05:00",
-         "name" : "Honcho Design Newsroom",
-         "client_company_id" : null,
-         "id" : 1042979250,
-         "account_id" : 31989850,
-         "creator_id" : 1007299144,
-         "created_at" : "2015-10-27T12:00:28.313-05:00"
-      },
+      "url" : "https://3.basecamp.com/195539477/buckets/2085958506/messages/9007199254743018",
       "status" : "active",
-      "created_at" : "2016-02-03T12:22:46.082-06:00",
-      "id" : 9007199254741871,
-      "url" : "https://3.basecamp.com/195539477/buckets/2085958496/messages/9007199254741871",
-      "updated_at" : "2016-02-03T12:48:48.704-06:00",
-      "bucket_path" : "/195539477/buckets/2085958496",
-      "subject" : "What's on your plate this week?",
       "parent" : {
-         "id" : 9007199254741044,
-         "url" : "https://3.basecamp.com/195539477/buckets/2085958496/message_boards/9007199254741044",
-         "title" : "Message Board"
+         "title" : "Message Board",
+         "url" : "https://3.basecamp.com/195539477/buckets/2085958506/message_boards/9007199254742955",
+         "id" : 9007199254742955
       },
-      "content" : "<div>Let's get it all on the table.</div>"
+      "creator" : {
+         "avatar_url" : "https://3.basecamp-static.com/195539477/people/BAhpBEgqCjw=--8266bb0507508f3d46050d57b65924d5e2a005f3/avatar-64-x4",
+         "email_address" : "victor@honchodesign.com",
+         "id" : 1007299144,
+         "name" : "Victor Cooper"
+      },
+      "content" : "<div>Welcome!</div>",
+      "subject" : "Hey everyone!",
+      "created_at" : "2016-03-03T21:23:01.951-06:00",
+      "comments_count" : 0,
+      "updated_at" : "2016-03-03T21:23:01.968-06:00",
+      "bucket" : {
+         "creator_id" : 1007299144,
+         "created_at" : "2016-03-01T10:20:40.146-06:00",
+         "updated_at" : "2016-03-01T10:21:42.345-06:00",
+         "name" : "Marketing Campaign for Xyz Corp",
+         "client_company_id" : null,
+         "description" : "2016-2017 Strategy",
+         "id" : 1042979260,
+         "account_id" : 31989850
+      },
+      "type" : "Message",
+      "bucket_path" : "/195539477/buckets/2085958506",
+      "id" : 9007199254743018
+   },
+   {
+      "id" : 9007199254743016,
+      "type" : "Message",
+      "bucket_path" : "/195539477/buckets/2085958506",
+      "bucket" : {
+         "account_id" : 31989850,
+         "id" : 1042979260,
+         "description" : "2016-2017 Strategy",
+         "client_company_id" : null,
+         "name" : "Marketing Campaign for Xyz Corp",
+         "updated_at" : "2016-03-01T10:21:42.345-06:00",
+         "created_at" : "2016-03-01T10:20:40.146-06:00",
+         "creator_id" : 1007299144
+      },
+      "updated_at" : "2016-03-03T21:22:42.008-06:00",
+      "created_at" : "2016-03-03T21:08:25.977-06:00",
+      "content" : "<div>Next week we need to get started.</div>",
+      "subject" : "On Deck For Next Week",
+      "creator" : {
+         "email_address" : "victor@honchodesign.com",
+         "avatar_url" : "https://3.basecamp-static.com/195539477/people/BAhpBEgqCjw=--8266bb0507508f3d46050d57b65924d5e2a005f3/avatar-64-x4",
+         "name" : "Victor Cooper",
+         id" : 1007299144
+      },
+      "comments_count" : 0,
+      "url" : "https://3.basecamp.com/195539477/buckets/2085958506/messages/9007199254743016",
+      "status" : "active",
+      "parent" : {
+         "title" : "Message Board",
+         "url" : "https://3.basecamp.com/195539477/buckets/2085958506/message_boards/9007199254742955",
+         "id" : 9007199254742955
+      }
    },
    ...
 ]
@@ -56,7 +91,7 @@ Get messages
 ###### Copy as cURL:
 
 ``` shell
-curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecamp.com/$ACCOUNT_ID/buckets/2085958506/messages.json
+curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecamp.com/$ACCOUNT_ID/buckets/2085958506/message_boards/9007199254742955/messages.json
 ```
 
 
@@ -68,6 +103,11 @@ Get a message
 ``` json
 {
    "status" : "active",
+   "parent" : {
+      "title" : "Message Board",
+      "url" : "https://3.basecamp.com/195539477/buckets/2085958506/message_boards/9007199254742955",
+      "id" : 9007199254742955
+   }
    "creator" : {
       "avatar_url" : "https://3.basecamp-static.com/195539477/people/BAhpBEgqCjw=--8266bb0507508f3d46050d57b65924d5e2a005f3/avatar-64-x4",
       "id" : 1007299144,
@@ -98,6 +138,8 @@ Get a message
 }
 ```
 
+Nesting under the message board resource is not necessary for this endpoint.
+
 ###### Copy as cURL:
 
 ``` shell
@@ -108,23 +150,27 @@ curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecamp.com/$ACCOUNT
 Create a message
 ----------------
 
-* `POST /buckets/1/messages.json` publishes a message with the given `subject` and optionally, some HTML `content` in the Basecamp with ID `1`.
+* `POST /buckets/1/message_boards/3/messages.json` publishes a message in the Basecamp with ID `1` and under the message board with an ID of `3`.
+
+**Required parameters**: `subject` as the title of the message, and `status`, set to `active` to publish immediately.
+_Optional parameters_: HTML `content` as the body of the message. See our [Rich content][3] guide for what is allowed.
 
 ``` json
 {
   "subject": "Kickoff",
-  "content": "<div><strong>Welcome to Basecamp, everyone.</strong></div>"
+  "content": "<div><strong>Welcome to Basecamp, everyone.</strong></div>",
+  "status": "active"
 }
 ```
 
-This will return `201 Created` with the current JSON representation of the message if the creation was a success. See the [Get a message](#get-a-message) endpoint for more info on the payload, and check out what is allowed in the `content` field in our [Rich content][2] guide.
+This endpoint will return `201 Created` with the current JSON representation of the message if the creation was a success. See the [Get a message](#get-a-message) endpoint for more info on the payload.
 
 ###### Copy as cURL:
 
 ``` shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" \
-  -d '{"subject":"Kickoff","content":"<div><strong>Welcome to Basecamp, everyone.</strong></div>"}' \
-  https://basecamp.com/$ACCOUNT_ID/buckets/2085958506/messages.json
+  -d '{"subject":"Kickoff","content":"<div><strong>Welcome to Basecamp, everyone.</strong></div>","status":"active"}' \
+  https://3.basecamp.com/$ACCOUNT_ID/buckets/2085958506/message_boards/9007199254742955/messages.json
 ```
 
 
@@ -140,14 +186,16 @@ Update a message
 }
 ```
 
-This will return `200 OK` with the current JSON representation of the message if the update was a success. See the [Get a message](#get-a-message) endpoint for more info.
+Nesting under the message board resource is not necessary for this endpoint. Clients may deliver `subject` or `content` parameters, or both if necessary.
+
+This endpoint will return `200 OK` with the current JSON representation of the message if the update was a success. See the [Get a message](#get-a-message) endpoint for more info on the payload.
 
 ###### Copy as cURL:
 
 ``` shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" \
-  -d '{"name":"Spin-down","description":"<div><strong>Oops, we lost that client.</strong></div>"}' -X PUT \
-  https://3.basecamp.com/$ACCOUNT_ID/buckets/2085958506.json
+  -d '{"subject":"Spin-down","content":"<div><strong>Oops, we lost that client.</strong></div>"}' -X PUT \
+  https://3.basecamp.com/$ACCOUNT_ID/buckets/2085958506/messages/9007199254743021.json
 ```
 
 
@@ -162,9 +210,10 @@ No parameters required. Returns `204 No Content` if successful.
 
 ``` shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" -X PUT \
-  https://3.basecamp.com/$ACCOUNT_ID/buckets/2085958506/recordings/9007199254742982/status/trashed.json
+  http://bc3.dev/$ACCOUNT_ID/buckets/2085958506/recordings/9007199254743021/status/trashed.json
 ```
 
 
 [1]: https://github.com/basecamp/bc3-api/blob/master/README.md#pagination
-[2]: https://github.com/basecamp/bc3-api/blob/master/README.md#rich-content
+[2]: https://github.com/basecamp/bc3-api/blob/master/sections/message_boards.md#get-message-boards
+[3]: https://github.com/basecamp/bc3-api/blob/master/README.md#rich-content

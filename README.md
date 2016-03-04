@@ -19,11 +19,10 @@ What's different?
 If you've used a previous version of the Basecamp API, you will need to adapt your integration code. Here's a quick summary of changes:
 
 - "Projects" are now [Basecamps][1].
-- We're requiring OAuth for [authentication](#authentication)
+- We're requiring OAuth for [authentication](#authentication). No more Basic auth.
 - All requests must end in `.json`
 - Many IDs are numeric, but many are now [Signed Global IDs (SGIDs)](https://github.com/rails/globalid#signed-global-ids), also known as "Squids"
-- Most data structures are "Recordables", which tie back to a [Recording][6]
-- [Pagination](#pagination) is now performed via the `Link` header.
+- [Pagination](#pagination) is now performed via the `Link` and `X-Total-Count` headers.
 
 
 Making a request
@@ -93,19 +92,10 @@ Pagination
 Most collection APIs paginate their results. The first request returns up to 50 records. The Basecamp 3 API follows the [RFC5988 convention](https://tools.ietf.org/html/rfc5988) of using the `Link` header to provide URLs for the `first`, `next`, `prev`, and `last` pages. Follow these URLs to retreive the next page of data, and please don't build the pagination URLs yourself! Here's an example from the [Messages API][2] for requesting the third page (of 50) when 300 are available:
 
 ```
-<https://3.basecamp.com/195539477/buckets/2085958496/messages.json?page=1>; rel="first", <https://3.basecamp.com/195539477/buckets/2085958496/messages.json?page=4>; rel="next", <https://3.basecamp.com/195539477/buckets/2085958496/messages.json?page=2>; rel="prev", <https://3.basecamp.com/195539477/buckets/2085958496/messages.json?page=6>; rel="last"
+<https://3.basecamp.com/195539477/buckets/2085958496/messages.json?page=4>; rel="next"
 ```
 
-Here's the same header, just split out so it's more human readable. _Note: in the API there won't be any linebreaks!_
-
-```
-<https://3.basecamp.com/195539477/buckets/2085958496/messages.json?page=1>; rel="first",
-<https://3.basecamp.com/195539477/buckets/2085958496/messages.json?page=4>; rel="next",
-<https://3.basecamp.com/195539477/buckets/2085958496/messages.json?page=2>; rel="prev",
-<https://3.basecamp.com/195539477/buckets/2085958496/messages.json?page=6>; rel="last"
-```
-
-Quick note: If the `Link` header is blank, and you have some results, then that's the only page of data!
+Quick note: If the `Link` header is blank, and you have some results, then that's the only page of data! We also provide the `X-Total-Count` header, which displays the total amount of resources in the collection you are fetching.
 
 
 Rich content
@@ -149,11 +139,12 @@ API ready for use
 -----------------
 
 * [Basecamps][1]
-* [Messages][2]
-* [Comments][3]
-* [To-do lists][4]
-* [To-dos][5]
-* [Recordings][6]
+* [Message Boards][2]
+* [Messages][3]
+* [Comments][4]
+* [To-do lists][5]
+* [To-dos][6]
+* [Recordings][7]
 
 
 API libraries
@@ -175,8 +166,8 @@ These API docs are licensed under [Creative Commons (CC BY-SA 4.0)](http://creat
 
 
 [1]: https://github.com/basecamp/bc3-api/blob/master/sections/basecamps.md#basecamps
-[2]: https://github.com/basecamp/bc3-api/blob/master/sections/messages.md#messages
-[3]: https://github.com/basecamp/bc3-api/blob/master/sections/comments.md#comments
-[4]: https://github.com/basecamp/bc3-api/blob/master/sections/todolists.md#todolists
-[5]: https://github.com/basecamp/bc3-api/blob/master/sections/todos.md#todos
-[6]: https://github.com/basecamp/bc3-api/blob/master/sections/recordings.md#recordings
+[2]: https://github.com/basecamp/bc3-api/blob/master/sections/message_boards.md#message-boards
+[3]: https://github.com/basecamp/bc3-api/blob/master/sections/messages.md#messages
+[4]: https://github.com/basecamp/bc3-api/blob/master/sections/comments.md#comments
+[5]: https://github.com/basecamp/bc3-api/blob/master/sections/todolists.md#todolists
+[6]: https://github.com/basecamp/bc3-api/blob/master/sections/todos.md#todos
