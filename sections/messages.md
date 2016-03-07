@@ -7,14 +7,14 @@ Endpoints:
 - [Get a message](#get-a-message)
 - [Create a message](#create-a-message)
 - [Update a message](#update-a-message)
-- [Trash a message](#trash-a-message)
+- [Trash a message][1]
 
 Get messages
 ------------
 
-* `GET /buckets/1/message_boards/3/messages.json` will return a [paginated list][1] of active messages in the Basecamp with an ID of `1` and the message board with ID of `3`.
+* `GET /buckets/1/message_boards/3/messages.json` will return a [paginated list][2] of active messages in the Basecamp with an ID of `1` and the message board with ID of `3`.
 
-To get the message board ID for a Basecamp, see the [Get message boards][2] endpoint.
+To get the message board ID for a Basecamp, see the [Get message boards](#get-message-boards) endpoint.
 
 ``` json
 [
@@ -58,7 +58,7 @@ To get the message board ID for a Basecamp, see the [Get message boards][2] endp
 ###### Copy as cURL:
 
 ``` shell
-curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecamp.com/$ACCOUNT_ID/buckets/2085958506/message_boards/9007199254742955/messages.json
+curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecamp.com/$ACCOUNT_ID/buckets/1/message_boards/3/messages.json
 ```
 
 
@@ -140,12 +140,12 @@ This endpoint will return `201 Created` with the current JSON representation of 
 ``` shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" \
   -d '{"subject":"Kickoff","content":"<div><strong>Welcome to Basecamp, everyone.</strong></div>","status":"active"}' \
-  https://3.basecamp.com/$ACCOUNT_ID/buckets/2085958506/message_boards/9007199254742955/messages.json
+  https://3.basecamp.com/$ACCOUNT_ID/buckets/1/message_boards/3/messages.json
 ```
 
 
 Update a message
------------------
+----------------
 
 * `PUT /buckets/1/messages/2.json` allows changing the subject and content of the message with an ID of `2` in the Basecamp with ID `1`.
 
@@ -165,25 +165,10 @@ This endpoint will return `200 OK` with the current JSON representation of the m
 ``` shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" \
   -d '{"subject":"Spin-down","content":"<div><strong>Oops, we lost that client.</strong></div>"}' -X PUT \
-  https://3.basecamp.com/$ACCOUNT_ID/buckets/2085958506/messages/9007199254743021.json
+  https://3.basecamp.com/$ACCOUNT_ID/buckets/1/messages/2.json
 ```
 
 
-Trash a message
----------------
-
-* `PUT /buckets/1/recordings/2/status/trashed.json` will mark the message with an ID of `2`in the Basecamp with ID `1` as trashed.
-
-No parameters required. Returns `204 No Content` if successful.
-
-###### Copy as cURL:
-
-``` shell
-curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" -X PUT \
-  http://bc3.dev/$ACCOUNT_ID/buckets/2085958506/recordings/9007199254743021/status/trashed.json
-```
-
-
-[1]: https://github.com/basecamp/bc3-api/blob/master/README.md#pagination
-[2]: https://github.com/basecamp/bc3-api/blob/master/sections/message_boards.md#get-message-boards
+[1]: https://github.com/basecamp/bc3-api/blob/master/sections/recordings.md#trash-a-recording
+[2]: https://github.com/basecamp/bc3-api/blob/master/README.md#pagination
 [3]: https://github.com/basecamp/bc3-api/blob/master/README.md#rich-content

@@ -145,6 +145,7 @@ API ready for use
 * [Comments][4]
 * [To-do lists][5]
 * [To-dos][6]
+* [Recordings][7]
 
 
 API libraries
@@ -171,3 +172,4 @@ These API docs are licensed under [Creative Commons (CC BY-SA 4.0)](http://creat
 [4]: https://github.com/basecamp/bc3-api/blob/master/sections/comments.md#comments
 [5]: https://github.com/basecamp/bc3-api/blob/master/sections/todolists.md#todolists
 [6]: https://github.com/basecamp/bc3-api/blob/master/sections/todos.md#todos
+[7]: https://github.com/basecamp/bc3-api/blob/master/sections/recordings.md#recordings
