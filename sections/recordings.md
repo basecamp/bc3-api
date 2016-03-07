@@ -24,7 +24,7 @@ No parameters required. Returns `204 No Content` if successful.
 
 ``` shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" -X PUT \
-  http://bc3.dev/$ACCOUNT_ID/buckets/2085958506/recordings/9007199254743021/status/trashed.json
+  https://3.basecamp.com/$ACCOUNT_ID/buckets/1/recordings/2/status/trashed.json
 ```
 
 

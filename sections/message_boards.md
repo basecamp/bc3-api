@@ -3,6 +3,11 @@ Message Boards
 
 All messages under a Basecamp are children of a Message Board resource. If you'd like to browse through messages in a Basecamp, this is a good place to start!
 
+Endpoints:
+
+- [Get message boards](#get-message-boards)
+- [Hide message board](#hide-message-board)
+
 Get message boards
 ------------------
 
@@ -86,4 +91,11 @@ curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecamp.com/$ACCOUNT
 ```
 
 
+Hide message board
+------------------
+
+If you'd like to remove the message board from the list of active tools for a Basecamp, use the [Trash a recording][2] endpoint with the ID of the message board as the recording ID.
+
+
 [1]: https://github.com/basecamp/bc3-api/blob/master/sections/messages.md#get-messages
+[2]: https://github.com/basecamp/bc3-api/blob/master/sections/recordings.md#trash-a-recording
