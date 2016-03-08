@@ -1,8 +1,4 @@
 Webhooks
 ========
 
-- CRUD
-
-Webhook payload:
-
-
+_Under construction!_

@@ -1,7 +1,8 @@
 Schedule entries
 ================
 
-Recordable!
+_Under construction!_
+
 
 Get schedule entries
 --------------------

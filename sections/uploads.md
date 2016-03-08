@@ -1,12 +1,11 @@
 Uploads
 =======
 
-RECORDABLE! In the docs + files section.
-
-Uploads + versions???
+_Under construction!_
 
 Get upload
 ----------
+
 
 Create upload
 -------------
@@ -18,4 +17,3 @@ Show upload
 
 Stage upload
 ------------
-

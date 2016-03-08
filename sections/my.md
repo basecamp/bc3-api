@@ -1,6 +1,8 @@
 "My"
 ====
 
+_Under construction!_
+
 Campfires
 ---------
 
@@ -27,4 +29,3 @@ Get unreads
 
 Mark as read
 ------------
-DELETE /my/readings/:id

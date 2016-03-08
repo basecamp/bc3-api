@@ -1,11 +1,4 @@
 Automatic questions
 ===================
 
-Recordable!
-
-Missing:
-- CRUD
-- CRUD Answers
-
-
-
+_Under construction!_
