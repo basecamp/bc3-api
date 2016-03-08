@@ -126,7 +126,7 @@ Create a comment
 
 Note: All people who are subscribed to the recording will be notified when the comment is posted. Changing who is subscribed is coming soon!
 
-This endpoint will return `201 Created` with the current JSON representation of the message if the creation was a success. See the [Get a comment](#get-a-comment) endpoint for more info on the payload.
+This endpoint will return `201 Created` with the current JSON representation of the message if the creation was a success. See the [Get a comment](#get-a-comment) endpoint for more info on the payload. The `Location` header will contain a URL to the HTML version of the new comment.
 
 ###### Copy as cURL:
 
@@ -148,7 +148,7 @@ Update a comment
 }
 ```
 
-This endpoint will return `200 OK` with the current JSON representation of the message if the update was a success. See the [Get a comment](#get-a-comment) endpoint for more info on the payload.
+This endpoint will return `200 OK` with the current JSON representation of the message if the update was a success. See the [Get a comment](#get-a-comment) endpoint for more info on the payload. The `Location` header will contain a URL to the HTML version of the updated comment.
 
 ###### Copy as cURL:
 
