@@ -143,9 +143,10 @@ API ready for use
 * [Message Boards][2]
 * [Messages][3]
 * [Comments][4]
-* [To-do lists][5]
-* [To-dos][6]
-* [Recordings][7]
+* [To-do sets][5]
+* [To-do lists][6]
+* [To-dos][7]
+* [Recordings][8]
 
 
 API libraries
@@ -170,6 +171,7 @@ These API docs are licensed under [Creative Commons (CC BY-SA 4.0)](http://creat
 [2]: https://github.com/basecamp/bc3-api/blob/master/sections/message_boards.md#message-boards
 [3]: https://github.com/basecamp/bc3-api/blob/master/sections/messages.md#messages
 [4]: https://github.com/basecamp/bc3-api/blob/master/sections/comments.md#comments
-[5]: https://github.com/basecamp/bc3-api/blob/master/sections/todolists.md#todolists
-[6]: https://github.com/basecamp/bc3-api/blob/master/sections/todos.md#todos
-[7]: https://github.com/basecamp/bc3-api/blob/master/sections/recordings.md#recordings
+[5]: https://github.com/basecamp/bc3-api/blob/master/sections/todosets.md#to-dosets
+[6]: https://github.com/basecamp/bc3-api/blob/master/sections/todolists.md#to-dolists
+[7]: https://github.com/basecamp/bc3-api/blob/master/sections/todos.md#to-dos
+[8]: https://github.com/basecamp/bc3-api/blob/master/sections/recordings.md#recordings
