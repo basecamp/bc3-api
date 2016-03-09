@@ -1,7 +1,7 @@
 To-do sets
 ==========
 
-All to-do lists under a Basecamp are children of a To-do set resource.
+All to-do lists under a Basecamp are children of a to-do set resource.
 
 Endpoints:
 

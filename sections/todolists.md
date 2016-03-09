@@ -1,8 +1,6 @@
 To-do lists
 ===========
 
-Recordable!
-
 Get to-do lists
 ---------------
 

@@ -171,7 +171,7 @@ These API docs are licensed under [Creative Commons (CC BY-SA 4.0)](http://creat
 [2]: https://github.com/basecamp/bc3-api/blob/master/sections/message_boards.md#message-boards
 [3]: https://github.com/basecamp/bc3-api/blob/master/sections/messages.md#messages
 [4]: https://github.com/basecamp/bc3-api/blob/master/sections/comments.md#comments
-[5]: https://github.com/basecamp/bc3-api/blob/master/sections/todosets.md#to-dosets
-[6]: https://github.com/basecamp/bc3-api/blob/master/sections/todolists.md#to-dolists
+[5]: https://github.com/basecamp/bc3-api/blob/master/sections/todosets.md#to-do-sets
+[6]: https://github.com/basecamp/bc3-api/blob/master/sections/todolists.md#to-do-lists
 [7]: https://github.com/basecamp/bc3-api/blob/master/sections/todos.md#to-dos
 [8]: https://github.com/basecamp/bc3-api/blob/master/sections/recordings.md#recordings
