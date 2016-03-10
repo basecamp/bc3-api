@@ -16,6 +16,8 @@ Get to-do lists
 
 To get the to-do set ID for a Basecamp, see the [Get to-do sets][3] endpoint.
 
+###### Example JSON
+
 ``` json
 [
   {
@@ -71,6 +73,8 @@ Get a to-do list
 * `GET /buckets/1/todolists/2.json` will return the to-do list with an ID of `2` in the Basecamp with an ID of `1`.
 
 Each to-do list payload includes the first 10 to-dos in the `todos` key. To retrieve more, see the [Get to-dos][4] endpoint.
+
+###### Example JSON
 
 ``` json
 {
@@ -132,6 +136,8 @@ Create a to-do list
 
 _Optional parameters_: HTML `description` containing information about the to-do list. See our [Rich content][4] guide for what is allowed.
 
+###### Example JSON
+
 ``` json
 {
   "name": "Launch",
@@ -154,6 +160,8 @@ Update a to-do list
 -------------------
 
 * `PUT /buckets/1/todolists/2.json` allows changing the name and description of the to-do list with an ID of `2` in the Basecamp with ID `1`.
+
+###### Example JSON
 
 ``` json
 {
