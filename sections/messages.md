@@ -14,7 +14,7 @@ Get messages
 
 * `GET /buckets/1/message_boards/3/messages.json` will return a [paginated list][2] of active messages in the Basecamp with an ID of `1` and the message board with ID of `3`.
 
-To get the message board ID for a Basecamp, see the [Get message boards](#get-message-boards) endpoint.
+To get the message board ID for a Basecamp, see the [Get message boards][3] endpoint.
 
 ``` json
 [
@@ -121,7 +121,7 @@ Create a message
 
 **Required parameters**: `subject` as the title of the message, and `status`, set to `active` to publish immediately.
 
-_Optional parameters_: HTML `content` as the body of the message. See our [Rich content][3] guide for what is allowed.
+_Optional parameters_: HTML `content` as the body of the message. See our [Rich content][4] guide for what is allowed.
 
 ``` json
 {
@@ -171,4 +171,5 @@ curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/j
 
 [1]: https://github.com/basecamp/bc3-api/blob/master/sections/recordings.md#trash-a-recording
 [2]: https://github.com/basecamp/bc3-api/blob/master/README.md#pagination
-[3]: https://github.com/basecamp/bc3-api/blob/master/README.md#rich-content
+[3]: https://github.com/basecamp/bc3-api/blob/master/sections/message_boards.md#message-boards
+[4]: https://github.com/basecamp/bc3-api/blob/master/README.md#rich-content
