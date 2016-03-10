@@ -16,7 +16,7 @@ Get to-do lists
 
 To get the to-do set ID for a Basecamp, see the [Get to-do sets][3] endpoint.
 
-###### Example JSON
+###### Example JSON Response
 
 ``` json
 [
@@ -74,7 +74,7 @@ Get a to-do list
 
 Each to-do list payload includes the first 10 to-dos in the `todos` key. To retrieve more, see the [Get to-dos][4] endpoint. Nesting under the to-do set resource is not necessary for this endpoint.
 
-###### Example JSON
+###### Example JSON Response
 
 ``` json
 {
@@ -136,7 +136,7 @@ _Optional parameters_: HTML `description` containing information about the to-do
 
 This endpoint will return `201 Created` with the current JSON representation of the to-do list if the creation was a success. See the [Get a to-do list](#get-a-to-do-list) endpoint for more info on the payload.
 
-###### Example JSON
+###### Example JSON Request
 
 ``` json
 {
@@ -163,7 +163,7 @@ Nesting under the to-do set resource is not necessary for this endpoint. Clients
 
 This endpoint will return `200 OK` with the current JSON representation of the to-do list if the update was a success. See the [Get a to-do list](#get-a-to-do-list) endpoint for more info on the payload.
 
-###### Example JSON
+###### Example JSON Request
 
 ``` json
 {

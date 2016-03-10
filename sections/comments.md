@@ -18,6 +18,8 @@ Get comments
 
 * `GET /buckets/1/recordings/3/comments.json` will return a [paginated list][4] of active comments in the Basecamp with an ID of `1` and the recording with ID of `3`.
 
+###### Example JSON Response
+
 ``` json
 [
   {
@@ -69,6 +71,8 @@ Get a comment
 
 * `GET /buckets/1/comments/2.json` will return the comment with an ID of `2` in the Basecamp with an ID of `1`.
 
+###### Example JSON Response
+
 ``` json
 {
   "bucket": {
@@ -118,15 +122,17 @@ Create a comment
 
 **Required parameters**: HTML `content` as the body of the message. See our [Rich content][5] guide for what is allowed.
 
+Note: All people who are subscribed to the recording will be notified when the comment is posted. Changing who is subscribed is coming soon!
+
+This endpoint will return `201 Created` with the current JSON representation of the message if the creation was a success. See the [Get a comment](#get-a-comment) endpoint for more info on the payload. The `Location` header will contain a URL to the HTML version of the new comment.
+
+###### Example JSON Request
+
 ``` json
 {
   "content": "<div><em>Wow!</em> That is cool.</div>",
 }
 ```
-
-Note: All people who are subscribed to the recording will be notified when the comment is posted. Changing who is subscribed is coming soon!
-
-This endpoint will return `201 Created` with the current JSON representation of the message if the creation was a success. See the [Get a comment](#get-a-comment) endpoint for more info on the payload. The `Location` header will contain a URL to the HTML version of the new comment.
 
 ###### Copy as cURL:
 
@@ -142,13 +148,15 @@ Update a comment
 
 * `PUT /buckets/1/comments/2.json` allows changing content of the message with an ID of `2` in the Basecamp with ID `1`.
 
+This endpoint will return `200 OK` with the current JSON representation of the message if the update was a success. See the [Get a comment](#get-a-comment) endpoint for more info on the payload. The `Location` header will contain a URL to the HTML version of the updated comment.
+
+###### Example JSON Request
+
 ``` json
 {
   "content": "<div><em>No way!</em> That isn't cool at all.</div>"
 }
 ```
-
-This endpoint will return `200 OK` with the current JSON representation of the message if the update was a success. See the [Get a comment](#get-a-comment) endpoint for more info on the payload. The `Location` header will contain a URL to the HTML version of the updated comment.
 
 ###### Copy as cURL:
 

@@ -18,6 +18,8 @@ Get Basecamps
 * `GET /projects/archive.json` will return all archived Basecamps visible to the current user.
 * `GET /projects/trash.json` will return all trashed Basecamps visible to the current user.
 
+###### Example JSON Response
+
 ```json
 [
    {
@@ -80,6 +82,8 @@ Get a Basecamp
 * `GET /projects/1.json` will return the Basecamp with the given ID, granted they have access to it.
 
 
+###### Example JSON Response
+
 ``` json
 {
    "bookmark_url" : "https://3.basecamp.com/195539477/my/bookmarks/BAh7CEkiCGdpZAY6BkVUSSIrZ2lkOi8vYmMzL0J1Y2tldC8yMDg1OTU4NDk2P2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg1yZWFkYWJsZQY7AFRJIg9leHBpcmVzX2F0BjsAVDA=--456eaced982bc4da97ac830c019a4af1d250bb21",
@@ -104,6 +108,8 @@ Create a Basecamp
 -----------------
 
 * `POST /projects.json` with at least a name, and optionally a description, to kick off a new Basecamp.
+
+###### Example JSON Request
 
 ``` json
 {
@@ -135,6 +141,8 @@ Update a Basecamp
 -----------------
 
 * `PUT /projects/1.json` will allow updating of a Basecamp's name and description.
+
+###### Example JSON Request
 
 ``` json
 {

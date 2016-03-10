@@ -16,6 +16,8 @@ Get to-do sets
 
 This payload includes the first 10 todolists in the `todolists` key. To retrieve more, see the [Get to-do lists][1] endpoint.
 
+###### Example JSON Response
+
 ``` json
 [
   {

@@ -16,6 +16,9 @@ Get messages
 
 To get the message board ID for a Basecamp, see the [Get message boards][3] endpoint.
 
+###### Example JSON Response
+
+
 ``` json
 [
    {
@@ -66,6 +69,8 @@ Get a message
 -------------
 
 * `GET /buckets/1/messages/2.json` will return the message with an ID of `2` in the Basecamp with an ID of `1`.
+
+###### Example JSON Response
 
 ``` json
 {
@@ -123,6 +128,12 @@ Create a message
 
 _Optional parameters_: HTML `content` as the body of the message. See our [Rich content][4] guide for what is allowed.
 
+Note: All people on a Basecamp are notified of the new message when it's posted. Changing who is subscribed is coming soon!
+
+This endpoint will return `201 Created` with the current JSON representation of the message if the creation was a success. See the [Get a message](#get-a-message) endpoint for more info on the payload.
+
+###### Example JSON Request
+
 ``` json
 {
   "subject": "Kickoff",
@@ -130,10 +141,6 @@ _Optional parameters_: HTML `content` as the body of the message. See our [Rich 
   "status": "active"
 }
 ```
-
-Note: All people on a Basecamp are notified of the new message when it's posted. Changing who is subscribed is coming soon!
-
-This endpoint will return `201 Created` with the current JSON representation of the message if the creation was a success. See the [Get a message](#get-a-message) endpoint for more info on the payload.
 
 ###### Copy as cURL:
 
@@ -149,16 +156,18 @@ Update a message
 
 * `PUT /buckets/1/messages/2.json` allows changing the subject and content of the message with an ID of `2` in the Basecamp with ID `1`.
 
+Nesting under the message board resource is not necessary for this endpoint. Clients may deliver `subject` or `content` parameters, or both if necessary.
+
+This endpoint will return `200 OK` with the current JSON representation of the message if the update was a success. See the [Get a message](#get-a-message) endpoint for more info on the payload.
+
+###### Example JSON Request
+
 ``` json
 {
   "subject": "Spin-down",
   "content": "<div><strong>Oops, we lost that client.</strong></div>"
 }
 ```
-
-Nesting under the message board resource is not necessary for this endpoint. Clients may deliver `subject` or `content` parameters, or both if necessary.
-
-This endpoint will return `200 OK` with the current JSON representation of the message if the update was a success. See the [Get a message](#get-a-message) endpoint for more info on the payload.
 
 ###### Copy as cURL:
 

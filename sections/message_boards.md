@@ -16,6 +16,8 @@ Get message boards
 
 This payload includes the most recent 10 messages in the `messages` key. To retrieve more, see the [Get messages][1] endpoint.
 
+###### Example JSON Response
+
 ``` json
 [
    {
@@ -57,6 +59,7 @@ This payload includes the most recent 10 messages in the `messages` key. To retr
 ``` shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecamp.com/$ACCOUNT_ID/buckets/1/message_boards.json
 ```
+
 
 Get message board
 ------------------
