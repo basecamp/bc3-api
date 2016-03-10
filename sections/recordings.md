@@ -20,7 +20,7 @@ Trash a recording
 
 No parameters required. Returns `204 No Content` if successful.
 
-###### Copy as cURL:
+###### Copy as cURL
 
 ``` shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" -X PUT \

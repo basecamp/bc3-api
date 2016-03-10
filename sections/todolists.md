@@ -60,7 +60,7 @@ To get the to-do set ID for a Basecamp, see the [Get to-do sets][3] endpoint.
 ]
 ```
 
-###### Copy as cURL:
+###### Copy as cURL
 
 ``` shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecamp.com/$ACCOUNT_ID/buckets/1/todosets/3/todolists.json
@@ -118,7 +118,7 @@ Each to-do list payload includes the first 10 to-dos in the `todos` key. To retr
 }
 ```
 
-###### Copy as cURL:
+###### Copy as cURL
 
 ``` shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecamp.com/$ACCOUNT_ID/buckets/1/todolists/2.json
@@ -145,7 +145,7 @@ This endpoint will return `201 Created` with the current JSON representation of 
 }
 ```
 
-###### Copy as cURL:
+###### Copy as cURL
 
 ``` shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" \
@@ -172,7 +172,7 @@ This endpoint will return `200 OK` with the current JSON representation of the t
 }
 ```
 
-###### Copy as cURL:
+###### Copy as cURL
 
 ``` shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" \

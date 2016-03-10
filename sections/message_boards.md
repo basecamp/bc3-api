@@ -54,7 +54,7 @@ This payload includes the most recent 10 messages in the `messages` key. To retr
 ]
 ```
 
-###### Copy as cURL:
+###### Copy as cURL
 
 ``` shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecamp.com/$ACCOUNT_ID/buckets/1/message_boards.json
@@ -68,7 +68,7 @@ Get message board
 
 The payload returned is the same as the [Get message boards](#get-message-boards) endpoint, just not inside of an array.
 
-###### Copy as cURL:
+###### Copy as cURL
 
 ``` shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecamp.com/$ACCOUNT_ID/buckets/1/message_boards/2.json

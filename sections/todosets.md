@@ -56,7 +56,7 @@ This payload includes the first 10 todolists in the `todolists` key. To retrieve
 ]
 ```
 
-###### Copy as cURL:
+###### Copy as cURL
 
 ``` shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecamp.com/$ACCOUNT_ID/buckets/1/todosets.json
@@ -70,7 +70,7 @@ Get to-do set
 
 The payload returned is the same as the [Get to-do sets](#get-to-do-set) endpoint, just not inside of an array.
 
-###### Copy as cURL:
+###### Copy as cURL
 
 ``` shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecamp.com/$ACCOUNT_ID/buckets/1/todosets/2.json

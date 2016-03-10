@@ -69,7 +69,7 @@ Get Basecamps
 ]
 ```
 
-###### Copy as cURL:
+###### Copy as cURL
 
 ``` shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecamp.com/$ACCOUNT_ID/projects.json
@@ -97,7 +97,7 @@ Get a Basecamp
 }
 ```
 
-###### Copy as cURL:
+###### Copy as cURL
 
 ``` shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecamp.com/$ACCOUNT_ID/projects/1.json
@@ -128,7 +128,7 @@ This will return `201 Created` with the current JSON representation of the Basec
 
 If you hit that error, you'll need to either archive or trash projects, or upgrade your subscription to a bigger plan. After creating a Basecamp, you'll  want to [allow people to get in][1]. Or maybe, [add some to-dos][2]?
 
-###### Copy as cURL:
+###### Copy as cURL
 
 ``` shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" \
@@ -153,7 +153,7 @@ Update a Basecamp
 
 This will return `200 OK` with the current JSON representation of the Basecamp if the update was a success. See the [Get a Basecamp](#get-a-basecamp) endpoint for more info.
 
-###### Copy as cURL:
+###### Copy as cURL
 
 ``` shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" \
@@ -169,7 +169,7 @@ Trash a Basecamp
 
 Trashed Basecamps will be deleted from Basecamp 3 after 30 days. No parameters required. Returns `204 No Content` if successful.
 
-###### Copy as cURL:
+###### Copy as cURL
 
 ``` shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" -X DELETE \

@@ -58,7 +58,7 @@ To get the message board ID for a Basecamp, see the [Get message boards][3] endp
 ]
 ```
 
-###### Copy as cURL:
+###### Copy as cURL
 
 ``` shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecamp.com/$ACCOUNT_ID/buckets/1/message_boards/3/messages.json
@@ -112,7 +112,7 @@ Get a message
 
 Nesting under the message board resource is not necessary for this endpoint.
 
-###### Copy as cURL:
+###### Copy as cURL
 
 ``` shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecamp.com/$ACCOUNT_ID/buckets/1/messages/2.json
@@ -142,7 +142,7 @@ This endpoint will return `201 Created` with the current JSON representation of 
 }
 ```
 
-###### Copy as cURL:
+###### Copy as cURL
 
 ``` shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" \
@@ -169,7 +169,7 @@ This endpoint will return `200 OK` with the current JSON representation of the m
 }
 ```
 
-###### Copy as cURL:
+###### Copy as cURL
 
 ``` shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" \
