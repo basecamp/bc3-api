@@ -20,54 +20,61 @@ Get Basecamps
 
 ###### Example JSON Response
 
-```json
+``` json
 [
-   {
-      "bookmark_url" : "https://3.basecamp.com/195539477/my/bookmarks/BAh7CEkiCGdpZAY6BkVUSSIrZ2lkOi8vYmMzL0J1Y2tldC8yMDg1OTU4NDk1P2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg1yZWFkYWJsZQY7AFRJIg9leHBpcmVzX2F0BjsAVDA=--06a5145963152c63ea56090695ec59e6d83fb21a",
-      "bookmarked" : false,
-      "created_at" : "2016-01-27T11:00:20.701-06:00",
-      "description" : "Annie's Stuff. Keep Out. 😁",
-      "id" : 2085958495,
-      "name" : "Annie's Corner",
-      "status" : "active",
-      "updated_at" : "2016-02-11T09:49:52.878-06:00",
-      "url" : "https://3.basecamp.com/195539477/projects/2085958495"
-   },
-   {
-      "bookmark_url" : "https://3.basecamp.com/195539477/my/bookmarks/BAh7CEkiCGdpZAY6BkVUSSIrZ2lkOi8vYmMzL0J1Y2tldC8yMDg1OTU4NDk2P2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg1yZWFkYWJsZQY7AFRJIg9leHBpcmVzX2F0BjsAVDA=--456eaced982bc4da97ac830c019a4af1d250bb21",
-      "bookmarked" : false,
-      "created_at" : "2016-01-27T11:00:28.325-06:00",
-      "description" : "Let's talk about the company!",
-      "id" : 2085958496,
-      "name" : "Honcho Design Newsroom",
-      "status" : "active",
-      "updated_at" : "2016-02-09T22:40:55.279-06:00"
-      "url" : "https://3.basecamp.com/195539477/projects/2085958496"
-   },
-   {
-      "bookmark_url" : "https://3.basecamp.com/195539477/my/bookmarks/BAh7CEkiCGdpZAY6BkVUSSIrZ2lkOi8vYmMzL0J1Y2tldC8yMDg1OTU4NDk3P2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg1yZWFkYWJsZQY7AFRJIg9leHBpcmVzX2F0BjsAVDA=--9a7b024a94ef1e7abaa92676ceb712dff9de6885",
-      "bookmarked" : false,
-      "created_at" : "2016-01-27T11:01:58.074-06:00",
-      "description" : "Looking for the best!",
-      "id" : 2085958497,
-      "name" : "Honcho Recruiting and Hiring",
-      "status" : "active",
-      "updated_at" : "2016-02-11T09:49:55.177-06:00",
-      "url" : "https://3.basecamp.com/195539477/projects/2085958497"
-   },
-   {
-      "bookmark_url" : "https://3.basecamp.com/195539477/my/bookmarks/BAh7CEkiCGdpZAY6BkVUSSIrZ2lkOi8vYmMzL0J1Y2tldC8yMDg1OTU4NDk4P2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg1yZWFkYWJsZQY7AFRJIg9leHBpcmVzX2F0BjsAVDA=--c8e1a465de900eb9864fa79ae2f30345be158f71",
-      "bookmarked" : false,
-      "created_at" : "2016-01-27T11:02:32.061-06:00",
-      "description" : "Laptop product launch.",
-      "id" : 2085958498,
-      "name" : "The Leto Laptop",
-      "status" : "active",
-      "updated_at" : "2016-01-27T11:03:32.570-06:00",
-      "url" : "https://3.basecamp.com/195539477/projects/2085958498"
-   }
+  {
+    "bookmark_url": "https://3.basecamp.com/195539477/my/bookmarks/BAh7CEkiCGdpZAY6BkVUSSIrZ2lkOi8vYmMzL0J1Y2tldC8yMDg1OTU4NDk1P2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg1yZWFkYWJsZQY7AFRJIg9leHBpcmVzX2F0BjsAVDA=--06a5145963152c63ea56090695ec59e6d83fb21a",
+    "bookmarked": false,
+    "created_at": "2016-01-27T11:00:20.701-06:00",
+    "description": "Annie's Stuff. Keep Out. 😁",
+    "dock": [
+      {
+        "id": 9007199254741012,
+        "name": "chat",
+        "title": "Campfire",
+        "url": "https://3.basecamp.com/195539477/buckets/2085958495/chats/9007199254741012.json"
+      },
+      {
+        "id": 9007199254741012,
+        "name": "message_board",
+        "title": "Message Board",
+        "url": "https://3.basecamp.com/195539477/buckets/2085958495/message_boards/9007199254741013.json"
+      },
+      {
+        "id": 9007199254741014,
+        "name": "todoset",
+        "title": "To-dos",
+        "url": "https://3.basecamp.com/195539477/buckets/2085958495/todosets/9007199254741014.json"
+      },
+      {
+        "id": 9007199254741016,
+        "name": "schedule",
+        "title": "Schedule",
+        "url": "https://3.basecamp.com/195539477/buckets/2085958495/schedules/9007199254741015.json"
+      },
+      {
+        "id": 9007199254741016,
+        "name": "questionnaire",
+        "title": "Automatic Check-ins",
+        "url": "https://3.basecamp.com/195539477/buckets/2085958495/questionnaires/9007199254741016.json"
+      },
+      {
+        "id": 9007199254741020,
+        "name": "vault",
+        "title": "Docs & Files",
+        "url": "https://3.basecamp.com/195539477/buckets/2085958495/vaults/9007199254741021.json"
+      }
+    ],
+    "id": 2085958495,
+    "name": "Annie's Corner",
+    "status": "active",
+    "updated_at": "2016-03-09T11:50:54.324-06:00",
+    "url": "https://3.basecamp.com/195539477/projects/2085958495"
+  },
+  ...
 ]
 ```
+
 
 ###### Copy as cURL
 
@@ -81,19 +88,58 @@ Get a Basecamp
 
 * `GET /projects/1.json` will return the Basecamp with the given ID, granted they have access to it.
 
+The `dock` key contains an array of the current tools that are enabled for this Basecamp. You can use the `url` parameter from each tool to jump to the resources available inside of this Basecamp.
 
 ###### Example JSON Response
 
 ``` json
 {
-   "bookmark_url" : "https://3.basecamp.com/195539477/my/bookmarks/BAh7CEkiCGdpZAY6BkVUSSIrZ2lkOi8vYmMzL0J1Y2tldC8yMDg1OTU4NDk2P2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg1yZWFkYWJsZQY7AFRJIg9leHBpcmVzX2F0BjsAVDA=--456eaced982bc4da97ac830c019a4af1d250bb21",
-   "created_at" : "2016-01-27T11:00:28.325-06:00",
-   "description" : "Let's talk about the company!",
-   "id" : 2085958496,
-   "name" : "Honcho Design Newsroom",
-   "status" : "active",
-   "updated_at" : "2016-02-09T22:40:55.279-06:00",
-   "url" : "https://3.basecamp.com/195539477/projects/2085958496"
+  "bookmark_url": "https://3.basecamp.com/195539477/my/bookmarks/BAh7CEkiCGdpZAY6BkVUSSIrZ2lkOi8vYmMzL0J1Y2tldC8yMDg1OTU4NDk4P2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg1yZWFkYWJsZQY7AFRJIg9leHBpcmVzX2F0BjsAVDA=--c8e1a465de900eb9864fa79ae2f30345be158f71",
+  "created_at": "2016-01-27T11:02:32.061-06:00",
+  "description": "Laptop product launch.",
+  "dock": [
+    {
+      "id": 9007199254741432,
+      "name": "chat",
+      "title": "Campfire",
+      "url": "https://3.basecamp.com/195539477/buckets/2085958498/chats/9007199254741433.json"
+    },
+    {
+      "id": 9007199254741434,
+      "name": "message_board",
+      "title": "Message Board",
+      "url": "https://3.basecamp.com/195539477/buckets/2085958498/message_boards/9007199254741434.json"
+    },
+    {
+      "id": 9007199254741436,
+      "name": "todoset",
+      "title": "To-dos",
+      "url": "https://3.basecamp.com/195539477/buckets/2085958498/todosets/9007199254741435.json"
+    },
+    {
+      "id": 9007199254741436,
+      "name": "schedule",
+      "title": "Schedule",
+      "url": "https://3.basecamp.com/195539477/buckets/2085958498/schedules/9007199254741436.json"
+    },
+    {
+      "id": 9007199254741436,
+      "name": "questionnaire",
+      "title": "Automatic Check-ins",
+      "url": "https://3.basecamp.com/195539477/buckets/2085958498/questionnaires/9007199254741437.json"
+    },
+    {
+      "id": 9007199254741442,
+      "name": "vault",
+      "title": "Docs & Files",
+      "url": "https://3.basecamp.com/195539477/buckets/2085958498/vaults/9007199254741442.json"
+    }
+  ],
+  "id": 2085958498,
+  "name": "The Leto Laptop",
+  "status": "active",
+  "updated_at": "2016-01-27T11:03:32.570-06:00",
+  "url": "https://3.basecamp.com/195539477/projects/2085958498"
 }
 ```
 
