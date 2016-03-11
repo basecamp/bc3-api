@@ -1,9 +1,11 @@
 Comments
 ========
 
-Many [recordings][1] can be commented on, including:
+Many [recordings][recordings] can be commented on, including:
 
-- [Messages][2]
+- [Messages][messages]
+- [To-do lists][todolists]
+- [To-dos][todos]
 
 Endpoints:
 
@@ -11,12 +13,12 @@ Endpoints:
 - [Get a comment](#get-a-comment)
 - [Create a comment](#create-a-comment)
 - [Update a comment](#update-a-comment)
-- [Trash a comment][3]
+- [Trash a comment][trash]
 
 Get comments
 ------------
 
-* `GET /buckets/1/recordings/3/comments.json` will return a [paginated list][4] of active comments in the Basecamp with an ID of `1` and the recording with ID of `3`.
+* `GET /buckets/1/recordings/3/comments.json` will return a [paginated list][pagination] of active comments in the Basecamp with an ID of `1` and the recording with ID of `3`.
 
 ###### Example JSON Response
 
@@ -120,7 +122,7 @@ Create a comment
 
 * `POST /buckets/1/recordings/3/comments.json` publishes a comment in the Basecamp with ID `1` and under the recording with an ID of `3`.
 
-**Required parameters**: `content` as the body of the message. See our [Rich content][5] guide for what HTML tags are allowed.
+**Required parameters**: `content` as the body of the message. See our [Rich content][rich] guide for what HTML tags are allowed.
 
 Note: All people who are subscribed to the recording will be notified when the comment is posted. Changing who is subscribed is coming soon!
 
@@ -167,8 +169,10 @@ curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/j
 ```
 
 
-[1]: https://github.com/basecamp/bc3-api/blob/master/sections/recordings.md#recordings
-[2]: https://github.com/basecamp/bc3-api/blob/master/sections/messages.md#messages
-[3]: https://github.com/basecamp/bc3-api/blob/master/sections/recordings.md#trash-a-recording
-[4]: https://github.com/basecamp/bc3-api/blob/master/README.md#pagination
-[5]: https://github.com/basecamp/bc3-api/blob/master/README.md#rich-content
+[recordings]: https://github.com/basecamp/bc3-api/blob/master/sections/recordings.md#recordings
+[messages]:   https://github.com/basecamp/bc3-api/blob/master/sections/messages.md#messages
+[todolists]:  https://github.com/basecamp/bc3-api/blob/master/sections/todolists.md#todolists
+[todos]:      https://github.com/basecamp/bc3-api/blob/master/sections/todos.md#todos
+[trash]:      https://github.com/basecamp/bc3-api/blob/master/sections/recordings.md#trash-a-recording
+[pagination]: https://github.com/basecamp/bc3-api/blob/master/README.md#pagination
+[rich]:       https://github.com/basecamp/bc3-api/blob/master/README.md#rich-content
