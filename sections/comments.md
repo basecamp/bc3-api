@@ -120,7 +120,7 @@ Create a comment
 
 * `POST /buckets/1/recordings/3/comments.json` publishes a comment in the Basecamp with ID `1` and under the recording with an ID of `3`.
 
-**Required parameters**: HTML `content` as the body of the message. See our [Rich content][5] guide for what is allowed.
+**Required parameters**: `content` as the body of the message. See our [Rich content][5] guide for what HTML tags are allowed.
 
 Note: All people who are subscribed to the recording will be notified when the comment is posted. Changing who is subscribed is coming soon!
 

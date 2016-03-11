@@ -126,7 +126,7 @@ Create a message
 
 **Required parameters**: `subject` as the title of the message, and `status`, set to `active` to publish immediately.
 
-_Optional parameters_: HTML `content` as the body of the message. See our [Rich content][4] guide for what is allowed.
+_Optional parameters_: `content` as the body of the message. See our [Rich content][4] guide for what HTML tags are allowed.
 
 Note: All people on a Basecamp are notified of the new message when it's posted. Changing who is subscribed is coming soon!
 
