@@ -14,7 +14,7 @@ Get messages
 
 * `GET /buckets/1/message_boards/3/messages.json` will return a [paginated list][2] of active messages in the Basecamp with an ID of `1` and the message board with ID of `3`.
 
-To get the message board ID for a Basecamp, see the [Get message boards][3] endpoint.
+To get the message board ID for a Basecamp, see the [Get message board][3] endpoint.
 
 ###### Example JSON Response
 
