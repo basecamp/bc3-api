@@ -164,7 +164,7 @@ Create a Basecamp
 }
 ```
 
-This will return `201 Created` with the current JSON representation of the Basecamp if the creation was a success. See the [Get a Basecamp](#get-a-basecamp) endpoint for more info. If the account has reached the Basecamp limit you'll see a `507 Insufficient Storage` and a response of:
+This will return `201 Created` with the current JSON representation of the Basecamp if the creation was a success. See the [Get a Basecamp](#get-a-basecamp) endpoint for more info. If your the account is on a free subscription and you're trying to create a new Basecamp you'll see a `507 Insufficient Storage` and a response of:
 
 ``` json
 {
@@ -172,7 +172,7 @@ This will return `201 Created` with the current JSON representation of the Basec
 }
 ```
 
-If you hit that error, you'll need to either archive or trash projects, or upgrade your subscription to a bigger plan. After creating a Basecamp, you'll  want to [allow people to get in][1]. Or maybe, [add some to-dos][2]?
+If you hit that error, the user will need to upgrade their subscription to any plan, which all have unlimited Basecamps. After creating a Basecamp, you'll  want to [allow people to get in][1]. Or maybe, [add some to-dos][2]!
 
 ###### Copy as cURL
 
