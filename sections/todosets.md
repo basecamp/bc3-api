@@ -14,7 +14,7 @@ Get to-do set
 
 * `GET /buckets/1/todosets/2.json` will return the to-do set for the Basecamp with an ID of `1`.
 
-To get the to-do set ID for a Basecamp, see the [Get a Basecamp][1] endpoint's `dock` payload. This endpoint's payload includes the first 10 to-do lists in the `todolists` key. To retrieve more to-do lists, see the [Get to-do lists][2] endpoint.
+To get the to-do set ID for a Basecamp, see the [Get a Basecamp][1] endpoint's `dock` payload. To retrieve its to-do lists, see the [Get to-do lists][2] endpoint.
 
 ###### Example JSON Response
 
@@ -39,13 +39,8 @@ To get the to-do set ID for a Basecamp, see the [Get a Basecamp][1] endpoint's `
     "id": 1007299144,
     "name": "Victor Cooper"
   },
-  "description": null,
-  "id": 9007199254741014,
   "name": "To-dos",
   "status": "active",
-  "todolists": [
-    ...
-  ],
   "todolists_count": 2,
   "todolists_url": "https://3.basecamp.com/195539477/buckets/2085958495/todolists.json",
   "type": "Todoset",

@@ -14,7 +14,7 @@ Get message board
 
 * `GET /buckets/1/message_boards/2.json` will return the message board for the Basecamp with an ID of `1`.
 
-To get the message board ID for a Basecamp, see the [Get a Basecamp][1] endpoint's `dock` payload. This endpoint's payload includes the most recent 10 messages in the `messages` key. To retrieve more messages, see the [Get messages][2] endpoint.
+To get the message board ID for a Basecamp, see the [Get a Basecamp][1] endpoint's `dock` payload. To retrieve its messages, see the [Get messages][2] endpoint.
 
 ###### Example JSON Response
 
@@ -40,9 +40,6 @@ To get the message board ID for a Basecamp, see the [Get a Basecamp][1] endpoint
          "id" : 1007299144,
          "email_address" : "victor@honchodesign.com"
       },
-      "messages" : [
-        ...
-      ],
       "id" : 9007199254741044,
       "messages_count" : 16,
       "messages_url": "https://3.basecamp.com/195539477/buckets/2085958496/message_boards/9007199254741044/messages.json",

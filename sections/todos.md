@@ -49,7 +49,8 @@ Get to-dos
       "id": 1007299146,
       "name": "Cheryl Walters"
     },
-    "description": null,
+    "description_text": null,
+    "description_html": null,
     "due_on": null,
     "id": 9007199254741424,
     "parent": {
@@ -116,7 +117,8 @@ Nesting under the to-do lists resource is not necessary for this endpoint.
     "id": 1007299145,
     "name": "Annie Bryan"
   },
-  "description": null,
+  "description_text": "Important: We'll need to loop marketing in on this.",
+  "description_html": "<div><em>Important:&nbsp;</em>We'll need to loop marketing in on this.</div>",
   "due_on": null,
   "id": 9007199254741616,
   "parent": {
@@ -149,7 +151,7 @@ Create a to-do
 
 _Optional parameters_:
 
-* `description` - containing information about the to-do. See our [Rich content][3] guide for what HTML tags allowed.
+* `description_html` - containing information about the to-do. See our [Rich content][3] guide for what HTML tags allowed.
 * `assignees` - an array of people that will be assigned to this to-do. Please see the [Get people][] endpoints to retrieve them.
 * `notify` - when set to `true`, will notify the assignees about being assigned
 * `due_on` - a date when the to-do should be completed
@@ -162,7 +164,7 @@ This endpoint will return `201 Created` with the current JSON representation of 
 ``` json
 {
   "name": "Program it",
-  "description": "<div><em>Try that new language!</em></div>",
+  "description_html": "<div><em>Try that new language!</em></div>",
   "due_on": "2016-05-01"
 }
 ```
@@ -171,7 +173,7 @@ This endpoint will return `201 Created` with the current JSON representation of 
 
 ``` shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" \
-  -d '{"name":"Program it","description":"<div><em>Try that new language!</em></div>","due_on":"2016-05-01"}' \
+  -d '{"name":"Program it","description_html":"<div><em>Try that new language!</em></div>","due_on":"2016-05-01"}' \
   https://3.basecamp.com/$ACCOUNT_ID/buckets/1/todolists/3/todos.json
 ```
 
@@ -190,7 +192,7 @@ This endpoint will return `200 OK` with the current JSON representation of the t
 ``` json
 {
   "name": "Whiteboard it",
-  "description": "<div><strong>Maybe plan it out first.</strong></div>"
+  "description_html": "<div><strong>Maybe plan it out first.</strong></div>"
 }
 ```
 
@@ -198,7 +200,7 @@ This endpoint will return `200 OK` with the current JSON representation of the t
 
 ``` shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" \
-  -d '{"name":"Whiteboard it","description":"<div><strong>Maybe plan it out first.</strong></div>"}' -X PUT \
+  -d '{"name":"Whiteboard it","description_html":"<div><strong>Maybe plan it out first.</strong></div>"}' -X PUT \
   https://3.basecamp.com/$ACCOUNT_ID/buckets/1/todos/2.json
 ```
 

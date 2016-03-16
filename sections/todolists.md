@@ -40,7 +40,8 @@ To get the to-do set ID for a Basecamp, see the [Get to-do set][3] endpoint.
       "id": 1007299146,
       "name": "Cheryl Walters"
     },
-    "description": null,
+    "description_text": null,
+    "description_html": null,
     "id": 9007199254741428,
     "name": "Declined 😬",
     "parent": {
@@ -49,9 +50,6 @@ To get the to-do set ID for a Basecamp, see the [Get to-do set][3] endpoint.
       "url": "https://3.basecamp.com/195539477/buckets/2085958497/todosets/9007199254741357"
     },
     "status": "active",
-    "todos": [
-      ...
-    ],
     "todos_url": "https://3.basecamp.com/195539477/buckets/2085958497/todos.json",
     "type": "Todolist",
     "updated_at": "2016-03-10T14:30:02.761-06:00",
@@ -98,7 +96,8 @@ Each to-do list payload includes the first 10 to-dos in the `todos` key. To retr
     "id": 1007299146,
     "name": "Cheryl Walters"
   },
-  "description": null,
+  "description_text": "Let's finish this stuff!",
+  "description_html": "<div>Let's&nbsp;<strong>finish</strong>&nbsp;this stuff!</div>",
   "id": 9007199254741420,
   "name": "Accepted! 😀",
   "parent": {
@@ -108,9 +107,6 @@ Each to-do list payload includes the first 10 to-dos in the `todos` key. To retr
   },
   "status": "active",
   "subscription_url": "https://3.basecamp.com/195539477/buckets/2085958497/recordings/9007199254741420/subscription",
-  "todos": [
-    ...
-  ],
   "todos_url": "https://3.basecamp.com/195539477/buckets/2085958497/todos.json",
   "type": "Todolist",
   "updated_at": "2016-02-11T09:49:53.804-06:00",
@@ -132,7 +128,7 @@ Create a to-do list
 
 **Required parameters**: `name` of the to-do list.
 
-_Optional parameters_: `description` containing information about the to-do list. See our [Rich content][4] guide for what HTML tags are allowed.
+_Optional parameters_: `description_html` containing information about the to-do list. See our [Rich content][4] guide for what HTML tags are allowed.
 
 This endpoint will return `201 Created` with the current JSON representation of the to-do list if the creation was a success. See the [Get a to-do list](#get-a-to-do-list) endpoint for more info on the payload.
 
@@ -141,7 +137,7 @@ This endpoint will return `201 Created` with the current JSON representation of 
 ``` json
 {
   "name": "Launch",
-  "description": "<div><em>Finish it!</em></div>"
+  "description_html": "<div><em>Finish it!</em></div>"
 }
 ```
 
@@ -149,7 +145,7 @@ This endpoint will return `201 Created` with the current JSON representation of 
 
 ``` shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" \
-  -d '{"name":"Launch","description":"<div><em>Finish it!</em></div>"}' \
+  -d '{"name":"Launch","description_html":"<div><em>Finish it!</em></div>"}' \
   https://3.basecamp.com/$ACCOUNT_ID/buckets/1/todosets/3/todolists.json
 ```
 
@@ -159,7 +155,7 @@ Update a to-do list
 
 * `PUT /buckets/1/todolists/2.json` allows changing the name and description of the to-do list with an ID of `2` in the Basecamp with ID `1`.
 
-Nesting under the to-do set resource is not necessary for this endpoint. Clients may deliver `name` or `description` parameters, or both if necessary.
+Nesting under the to-do set resource is not necessary for this endpoint. Clients may deliver `name` or `description_html` parameters, or both if necessary.
 
 This endpoint will return `200 OK` with the current JSON representation of the to-do list if the update was a success. See the [Get a to-do list](#get-a-to-do-list) endpoint for more info on the payload.
 
@@ -168,7 +164,7 @@ This endpoint will return `200 OK` with the current JSON representation of the t
 ``` json
 {
   "name": "Relaunch",
-  "description": "<div><strong>Try this again.</strong></div>"
+  "description_html": "<div><strong>Try this again.</strong></div>"
 }
 ```
 
@@ -176,7 +172,7 @@ This endpoint will return `200 OK` with the current JSON representation of the t
 
 ``` shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" \
-  -d '{"name":"Relaunch","description":"<div><strong>Try this again.</strong></div>"}' -X PUT \
+  -d '{"name":"Relaunch","description_html":"<div><strong>Try this again.</strong></div>"}' -X PUT \
   https://3.basecamp.com/$ACCOUNT_ID/buckets/1/todolists/2.json
 ```
 

@@ -37,7 +37,8 @@ Get comments
     },
     "bucket_path": "/195539477/buckets/2085958506",
     "comments_count": 0,
-    "content": "<div>We're finished!</div>",
+    "content_text": "We're finished!",
+    "content_html": "<div>We're finished!</div>",
     "created_at": "2016-03-07T10:12:35.411-06:00",
     "creator": {
       "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBEgqCjw=--8266bb0507508f3d46050d57b65924d5e2a005f3/avatar-64-x4",
@@ -89,7 +90,8 @@ Get a comment
   },
   "bucket_path": "/195539477/buckets/2085958496",
   "comments_count": 0,
-  "content": "Can't wait to meet everyone for the first time. Been working with you guys for a while, but haven't met in person for so many of you. Can't wait!",
+  "content_text": "Can't wait to meet everyone for the first time. Been working with you guys for a while, but haven't met in person for so many of you. Can't wait!",
+  "content_html": "<div>Can't wait to meet everyone for the first time. Been working with you guys for a while, but haven't met in person for so many of you. Can't wait!</div>",
   "created_at": "2016-01-27T11:33:28.988-06:00",
   "creator": {
     "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBE4qCjw=--b544b6a710bd76020abc076fc041895954025116/avatar-64-x4",
@@ -122,7 +124,7 @@ Create a comment
 
 * `POST /buckets/1/recordings/3/comments.json` publishes a comment in the Basecamp with ID `1` and under the recording with an ID of `3`.
 
-**Required parameters**: `content` as the body of the message. See our [Rich content][rich] guide for what HTML tags are allowed.
+**Required parameters**: `content_html` as the body of the message. See our [Rich content][rich] guide for what HTML tags are allowed.
 
 Note: All people who are subscribed to the recording will be notified when the comment is posted. Changing who is subscribed is coming soon!
 
@@ -132,7 +134,7 @@ This endpoint will return `201 Created` with the current JSON representation of 
 
 ``` json
 {
-  "content": "<div><em>Wow!</em> That is cool.</div>",
+  "content_html": "<div><em>Wow!</em> That is cool.</div>",
 }
 ```
 
@@ -140,7 +142,7 @@ This endpoint will return `201 Created` with the current JSON representation of 
 
 ``` shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" \
-  -d '{"content":"<div><em>Wow!</em> That is cool.</div>"}' \
+  -d '{"content_html":"<div><em>Wow!</em> That is cool.</div>"}' \
   https://3.basecamp.com/$ACCOUNT_ID/buckets/1/recordings/3/comments.json
 ```
 
@@ -156,7 +158,7 @@ This endpoint will return `200 OK` with the current JSON representation of the m
 
 ``` json
 {
-  "content": "<div><em>No way!</em> That isn't cool at all.</div>"
+  "content_html": "<div><em>No way!</em> That isn't cool at all.</div>"
 }
 ```
 
@@ -164,7 +166,7 @@ This endpoint will return `200 OK` with the current JSON representation of the m
 
 ``` shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" \
-  -d '{"content":"<div><em>No way!</em> That isn't cool at all.</div>"}' -X PUT \
+  -d '{"content_html":"<div><em>No way!</em> That isn't cool at all.</div>"}' -X PUT \
   https://3.basecamp.com/$ACCOUNT_ID/buckets/1/messages/2.json
 ```
 
