@@ -28,12 +28,12 @@ If you've used a previous version of the Basecamp API, you will need to adapt yo
 Making a request
 ----------------
 
-All URLs start with `https://3.basecampapi.com/999999999/`. **HTTPS only**. The path is prefixed with the account ID, but no `/api/v1` API prefix.
+All URLs start with `https://3.basecamp.com/999999999/`. **HTTPS only**. The path is prefixed with the account ID, but no `/api/v1` API prefix.
 
-To make a request for all the projects on your account, you'd append the projects index path to the base url to form something like https://3.basecampapi.com/999999999/basecamps.json. In cURL, that looks like:
+To make a request for all the projects on your account, you'd append the projects index path to the base url to form something like https://3.basecamp.com/999999999/basecamps.json. In cURL, that looks like:
 
 ``` shell
-curl -H "Authorization: Bearer $ACCESS_TOKEN" -H 'User-Agent: MyApp (yourname@example.com)' https://3.basecampapi.com/999999999/basecamps.json
+curl -H "Authorization: Bearer $ACCESS_TOKEN" -H 'User-Agent: MyApp (yourname@example.com)' https://3.basecamp.com/999999999/basecamps.json
 ```
 
 To create something, it's the same deal except you also have to include the `Content-Type` header and the JSON data:
@@ -43,7 +43,7 @@ curl -H "Authorization: Bearer $ACCESS_TOKEN" \
   -H 'Content-Type: application/json' \
   -H 'User-Agent: MyApp (yourname@example.com)' \
   -d '{ "name": "My new project!" }' \
-  https://3.basecampapi.com/999999999/basecamps.json
+  https://3.basecamp.com/999999999/basecamps.json
 ```
 
 That's all! Throughout this guide we've included "Copy as cURL" examples. If you'd like to try this out in your shell, copy your OAuth Access token into your clipboard and run:
