@@ -21,41 +21,41 @@ To get the message board ID for a Basecamp, see the [Get message board][3] endpo
 
 ``` json
 [
-   {
-      "bucket" : {
-         "creator_id" : 1007299144,
-         "created_at" : "2016-03-01T10:20:40.146-06:00",
-         "updated_at" : "2016-03-01T10:21:42.345-06:00",
-         "name" : "Marketing Campaign for Xyz Corp",
-         "client_company_id" : null,
-         "description" : "2016-2017 Strategy",
-         "id" : 1042979260,
-         "account_id" : 31989850
-      },
-      "bucket_path" : "/195539477/buckets/2085958506",
-      "comments_count" : 0,
-      "content_text" : "Welcome!",
-      "content_html" : "<div>Welcome!</div>",
-      "created_at" : "2016-03-03T21:23:01.951-06:00",
-      "creator" : {
-         "avatar_url" : "https://3.basecamp-static.com/195539477/people/BAhpBEgqCjw=--8266bb0507508f3d46050d57b65924d5e2a005f3/avatar-64-x4",
-         "email_address" : "victor@honchodesign.com",
-         "id" : 1007299144,
-         "name" : "Victor Cooper"
-      },
-      "id" : 9007199254743018,
-      "parent" : {
-         "title" : "Message Board",
-         "url" : "https://3.basecamp.com/195539477/buckets/2085958506/message_boards/9007199254742955",
-         "id" : 9007199254742955
-      },
-      "status" : "active",
-      "subject" : "Hey everyone!",
-      "type" : "Message",
-      "updated_at" : "2016-03-03T21:23:01.968-06:00",
-      "url" : "https://3.basecamp.com/195539477/buckets/2085958506/messages/9007199254743018"
-   },
-   ...
+  {
+    "id": 9007199254741052,
+    "created_at": "2015-10-30T13:55:28.313-05:00",
+    "updated_at": "2016-01-27T11:00:34.131-06:00",
+    "status": "active",
+    "url": "https://3.basecamp.com/195539477/buckets/2085958496/messages/9007199254741053",
+    "subject": "We won Leto!",
+    "content_html": "Hey guys,\n\n  We won the Leto account! This is huge for us, it really marks a turning point for the company.\n\n  As you know we've been pursuing bigger clients in the consumer space, but we've done so carefully. We've never been about getting the biggest clients - those are easy to get. We've been trying to get the best clients for us - ones that will challenge us, grow us, make us better, and ultimately giving us a platform to show how awesome you guys all are. And now we have that!\n\n  A big congrats to everyone who worked so hard to make this happen, and now the fun really begins. Most of the pitch team will stay on as leading members of the first project, the Leto Microsite.\n\n  Again, great job everyone, and let's go kick some more butt!",
+    "content_text": "Hey guys,\n\nWe won the Leto account! This is huge for us, it really marks a turning point for the company.\n\nAs you know we've been pursuing bigger clients in the consumer space, but we've done so carefully. We've never been about getting the biggest clients - those are easy to get. We've been trying to get the best clients for us - ones that will challenge us, grow us, make us better, and ultimately giving us a platform to show how awesome you guys all are. And now we have that!\n\nA big congrats to everyone who worked so hard to make this happen, and now the fun really begins. Most of the pitch team will stay on as leading members of the first project, the Leto Microsite.\n\nAgain, great job everyone, and let's go kick some more butt!",
+    "comments_count": 10,
+    "type": "Message",
+    "creator": {
+      "id": 1007299144,
+      "name": "Victor Cooper",
+      "email_address": "victor@honchodesign.com",
+      "avatar_url": "https://3.basecamp-assets.com/195539477/people/BAhpBEgqCjw=--8266bb0507508f3d46050d57b65924d5e2a005f3/avatar-64-x4"
+    },
+    "bucket": {
+      "id": 1042979250,
+      "account_id": 31989850,
+      "name": "Honcho Design Newsroom",
+      "description": "Let's talk about the company!",
+      "created_at": "2015-10-27T12:00:28.313-05:00",
+      "updated_at": "2015-10-27T12:00:28.313-05:00",
+      "creator_id": 1007299144,
+      "client_company_id": null
+    },
+    "bucket_path": "/195539477/buckets/2085958496",
+    "parent": {
+      "id": 9007199254741044,
+      "title": "Message Board",
+      "url": "https://3.basecamp.com/195539477/buckets/2085958496/message_boards/9007199254741044"
+    }
+  },
+  ...
 ]
 ```
 
@@ -75,40 +75,38 @@ Get a message
 
 ``` json
 {
-   "bucket" : {
-      "updated_at" : "2015-10-27T12:00:28.313-05:00",
-      "id" : 1042979250,
-      "account_id" : 31989850,
-      "client_company_id" : null,
-      "created_at" : "2015-10-27T12:00:28.313-05:00",
-      "name" : "Honcho Design Newsroom",
-      "creator_id" : 1007299144,
-      "description" : "Let's talk about the company!"
-   },
-   "bucket_path" : "/195539477/buckets/2085958496",
-   "creator" : {
-      "avatar_url" : "https://3.basecamp-static.com/195539477/people/BAhpBEgqCjw=--8266bb0507508f3d46050d57b65924d5e2a005f3/avatar-64-x4",
-      "id" : 1007299144,
-      "email_address" : "victor@honchodesign.com",
-      "name" : "Victor Cooper"
-   },
-   "comments_count" : 10,
-   "content_text" : "Hey all - we're planning our next quarterly get together. We'll be flying our remote folks and hanging out for a week. 😀\n\nThere's a bunch of stuff we'll try to cover, so I wanted to give you a quick overview of the stuff we're planning on covering, activities, food, and the like. As always, much of this is fluid and we'll see where it goes. But this stuff will get covered at somepoint:\n\nLogistics\n\n• We'll have breakfast, lunch, and dinner each day. It'll rotate a variety of cuisines. 🍕 will definitely be served.\n\n• Most people are flying in Saturday night, some Sunday morning.\n\n• We'll have a picnic Sunday morning for everyone, including families.\n\n• We've got two happy hours planned, and I think people will also naturally find their way to local watering holes throughout the week. 🍺\n\n• Out of towners are staying at the Radisson. They have a pool. Just saying.\n\n• Ping pong tournament!\n\n\n\nTopics\n\n• New office space\n\n• Security stuff\n\n• Update on overall strategy and vision\n\n• Our clients, and their feedback\n\n• Know Your Company feedback and ideas\n\n• Financials\n\n\n\nSessions\n\n• Mobile - Android, iOS, etc.\n\n• Mobile Web\n\n• Hardware tune ups\n\n• Software tune ups\n\n• Proof of concept demos\n\n• Communicating with clients\n\n• UX + Tech in lock step\n\n• Pet meet and greet! 🐶 🐱\n\n\n\nAny questions or comments at all, let us know!",
-   "content_html" : "Hey team - a couple of weeks ago we asked a question in Know Your Company - 'What have we gotten worse at over the last year?'<br/><br/>\n\n  Of course I had hoped nothing, but that's probably not realistic. 😬 I read a lot of great feedback, but the general theme is that we've gotten much worse with overwork. That our clients demand even more of our time, and we haven't grown necessarily.<br/><br/>\n\n  That means more work across the same amount of people, which means longer days, more weekend work, and ultimately more burn out. And as our clients have grown, so has our geographic dispersal - bigger clients means more travel. And that's not helping us get any more done either.<br/><br/>\n\n  I want you to know I hear you. This is unacceptable from my perspective. I knew we were taking a hit work wise and couldn't sustain it, but I didn't know it was this bad. That's my fault.<br/><br/>\n\n  So here's what we going to do, immediately:\n  <ul>\n    <li>If you know you're working more than 45 hours a week, just stop. Seriously, just stop. The work will still be there, and it will be better for it if you take some time away from it. I know this is easier said than done.</li>\n    <li>Talk to your manager, ASAP. Honestly, if deadlines need to move, so be it. If deliverables need to be cut, so be it.</li>\n    <li>Plan vacation, now. Stop procrastinating and say you'll figure it out later. You won't. Plan with your teams and get a slot of at minimum 3-4 days off in row, preferably a week or more.</li>\n    <li>Myself and the management team are looking at clients across the board. We're going to strongly consider firing the least profitable clients. We're at a good size and aren't going to grow for the sake of it. This is longer term planning. We can't ditch clients overnight, but in the next 6 months expect reduction in low-profit, or painful clients.</li>\n    <li>Try to avoid working weekends at all costs. I know an email or two might have to be sent. Resist the urge.</li>\n    <li>We're bringing on more contractors to ease the burden of work across more people.</li>\n  </ul><br/>\n\n  I know this sounds a bit like I'm preaching -- that in reality, the client work can't just stop. But believe me, it can. We can manage our clients if we know what we need to do. The quality of our work, and the quality of your lives has always been what has made us great. We're not about to just give that up, even though I've failed to recognize it until it got to this point. For that, I'm sorry. But I think we can turn it around.<br/><br/>\n\n  I'll update you soon on where everything stands soon. Thanks for all your hard work. Now go take a breather.<br/><br/>\n\n  -Victor",
-   "bookmark_url" : "https://3.basecamp.com/195539477/my/bookmarks/BAh7CEkiCGdpZAY6BkVUSSI0Z2lkOi8vYmMzL1JlY29yZGluZy85MDA3MTk5MjU0NzQxMjg0P2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg1yZWFkYWJsZQY7AFRJIg9leHBpcmVzX2F0BjsAVDA=--cc06ad7b09ccc6ab6f6bda67b01ba0bfd651e221",
-   "created_at" : "2016-01-20T14:26:28.313-06:00",
-   "id" : 9007199254741284,
-   "parent" : {
-      "title" : "Message Board",
-      "url" : "https://3.basecamp.com/195539477/buckets/2085958506/message_boards/9007199254742955",
-      "id" : 9007199254742955
-   }
-   "status" : "active",
-   "subject" : "Know Your Company: What we've gotten worse at",
-   "subscription_url" : "https://3.basecamp.com/195539477/buckets/2085958496/recordings/9007199254741284/subscription",
-   "type" : "Message",
-   "updated_at" : "2016-01-27T11:01:39.368-06:00",
-   "url" : "https://3.basecamp.com/195539477/buckets/2085958496/messages/9007199254741284"
+  "id": 9007199254741872,
+  "created_at": "2016-02-03T12:22:46.082-06:00",
+  "updated_at": "2016-03-15T13:14:41.849-05:00",
+  "status": "active",
+  "url": "https://3.basecamp.com/195539477/buckets/2085958496/messages/9007199254741871",
+  "subject": "Another one",
+  "content_html": "<div>Welcome, Dave!</div>",
+  "content_text": "Welcome, Dave!",
+  "comments_count": 6,
+  "type": "Message",
+  "creator": {
+    "id": 1007299145,
+    "name": "Annie Bryan",
+    "email_address": "annie@honchodesign.com",
+    "avatar_url": "https://3.basecamp-assets.com/195539477/people/BAhpBEkqCjw=--7e8e5d9e90e4898faee5f69e72def9e58da85fbe/avatar-64-x4"
+  },
+  "bucket": {
+    "id": 1042979250,
+    "account_id": 31989850,
+    "name": "Honcho Design Newsroom",
+    "description": "Let's talk about the company!",
+    "created_at": "2015-10-27T12:00:28.313-05:00",
+    "updated_at": "2015-10-27T12:00:28.313-05:00",
+    "creator_id": 1007299144,
+    "client_company_id": null
+  },
+  "bucket_path": "/195539477/buckets/2085958496",
+  "parent": {
+    "id": 9007199254741044,
+    "title": "Message Board",
+    "url": "https://3.basecamp.com/195539477/buckets/2085958496/message_boards/9007199254741044"
+  }
 }
 ```
 

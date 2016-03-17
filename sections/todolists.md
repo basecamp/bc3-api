@@ -21,40 +21,43 @@ To get the to-do set ID for a Basecamp, see the [Get to-do set][3] endpoint.
 ``` json
 [
   {
-    "bucket": {
-      "account_id": 31989850,
-      "client_company_id": null,
-      "created_at": "2015-12-27T11:01:58.062-06:00",
-      "creator_id": 1007299144,
-      "description": "Looking for the best!",
-      "id": 1042979251,
-      "name": "Honcho Recruiting and Hiring",
-      "updated_at": "2015-12-27T11:01:58.062-06:00"
-    },
-    "bucket_path": "/195539477/buckets/2085958497",
-    "comments_count": 0,
-    "created_at": "2016-01-25T12:10:58.062-06:00",
-    "creator": {
-      "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBEoqCjw=--19d80553ef84a88c19b6846fdd222c5c394b6dc4/avatar-64-x4",
-      "email_address": "cheryl@honchodesign.com",
-      "id": 1007299146,
-      "name": "Cheryl Walters"
-    },
-    "description_text": null,
-    "description_html": null,
-    "id": 9007199254741428,
-    "name": "Declined 😬",
-    "parent": {
-      "id": 9007199254741356,
-      "title": "To-dos",
-      "url": "https://3.basecamp.com/195539477/buckets/2085958497/todosets/9007199254741357"
-    },
+    "id": 9007199254741064,
+    "created_at": "2015-10-30T14:16:28.313-05:00",
+    "updated_at": "2016-01-27T11:00:39.837-06:00",
     "status": "active",
-    "todos_url": "https://3.basecamp.com/195539477/buckets/2085958497/todos.json",
+    "url": "https://3.basecamp.com/195539477/buckets/2085958496/todolists/9007199254741064",
+    "name": "Health benefits renewal",
+    "description_html": null,
+    "description_text": null,
+    "comments_count": 0,
+    "todos_url": "https://3.basecamp.com/195539477/buckets/2085958496/todos.json",
+    "bookmark_url": "https://3.basecamp.com/195539477/my/bookmarks/BAh7CEkiCGdpZAY6BkVUSSI0Z2lkOi8vYmMzL1JlY29yZGluZy85MDA3MTk5MjU0NzQxMDY0P2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg1yZWFkYWJsZQY7AFRJIg9leHBpcmVzX2F0BjsAVDA=--be7fc7d856bd884e8ec8001bd362c45cb4c1e9f6",
+    "subscription_url": "https://3.basecamp.com/195539477/buckets/2085958496/recordings/9007199254741064/subscription",
     "type": "Todolist",
-    "updated_at": "2016-03-10T14:30:02.761-06:00",
-    "url": "https://3.basecamp.com/195539477/buckets/2085958497/todolists/9007199254741427"
+    "creator": {
+      "id": 1007299146,
+      "name": "Cheryl Walters",
+      "email_address": "cheryl@honchodesign.com",
+      "avatar_url": "https://3.basecamp-assets.com/195539477/people/BAhpBEoqCjw=--19d80553ef84a88c19b6846fdd222c5c394b6dc4/avatar-64-x4"
+    },
+    "bucket": {
+      "id": 1042979250,
+      "account_id": 31989850,
+      "name": "Honcho Design Newsroom",
+      "description": "Let's talk about the company!",
+      "created_at": "2015-10-27T12:00:28.313-05:00",
+      "updated_at": "2015-10-27T12:00:28.313-05:00",
+      "creator_id": 1007299144,
+      "client_company_id": null
+    },
+    "bucket_path": "/195539477/buckets/2085958496",
+    "parent": {
+      "id": 9007199254741044,
+      "title": "To-dos",
+      "url": "https://3.basecamp.com/195539477/buckets/2085958496/todosets/9007199254741045"
+    }
   },
+  ...
 ]
 ```
 
@@ -76,41 +79,41 @@ Each to-do list payload includes the first 10 to-dos in the `todos` key. To retr
 
 ``` json
 {
-  "bookmark_url": "https://3.basecamp.com/195539477/my/bookmarks/BAh7CEkiCGdpZAY6BkVUSSI0Z2lkOi8vYmMzL1JlY29yZGluZy85MDA3MTk5MjU0NzQxNDIwP2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg1yZWFkYWJsZQY7AFRJIg9leHBpcmVzX2F0BjsAVDA=--29f41e960aaf8c1d46ac356fa4fed65c5d4786eb",
-  "bucket": {
-    "account_id": 31989850,
-    "client_company_id": null,
-    "created_at": "2015-12-27T11:01:58.062-06:00",
-    "creator_id": 1007299144,
-    "description": "Looking for the best!",
-    "id": 1042979251,
-    "name": "Honcho Recruiting and Hiring",
-    "updated_at": "2015-12-27T11:01:58.062-06:00"
-  },
-  "bucket_path": "/195539477/buckets/2085958497",
-  "comments_count": 3,
-  "created_at": "2016-01-21T13:40:58.062-06:00",
-  "creator": {
-    "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBEoqCjw=--19d80553ef84a88c19b6846fdd222c5c394b6dc4/avatar-64-x4",
-    "email_address": "cheryl@honchodesign.com",
-    "id": 1007299146,
-    "name": "Cheryl Walters"
-  },
-  "description_text": "Let's finish this stuff!",
-  "description_html": "<div>Let's&nbsp;<strong>finish</strong>&nbsp;this stuff!</div>",
-  "id": 9007199254741420,
-  "name": "Accepted! 😀",
-  "parent": {
-    "id": 9007199254741356,
-    "title": "To-dos",
-    "url": "https://3.basecamp.com/195539477/buckets/2085958497/todosets/9007199254741357"
-  },
+  "id": 9007199254741234,
+  "created_at": "2015-12-31T13:41:28.313-06:00",
+  "updated_at": "2016-03-16T12:14:01.281-05:00",
   "status": "active",
-  "subscription_url": "https://3.basecamp.com/195539477/buckets/2085958497/recordings/9007199254741420/subscription",
-  "todos_url": "https://3.basecamp.com/195539477/buckets/2085958497/todos.json",
+  "url": "https://3.basecamp.com/195539477/buckets/2085958496/todolists/9007199254741234",
+  "name": "Meetup setup",
+  "description_html": "<div>Let's&nbsp;<strong>finish</strong>&nbsp;this stuff!</div>",
+  "description_text": "Let's finish this stuff!",
+  "comments_count": 0,
+  "todos_url": "https://3.basecamp.com/195539477/buckets/2085958496/todos.json",
+  "bookmark_url": "https://3.basecamp.com/195539477/my/bookmarks/BAh7CEkiCGdpZAY6BkVUSSI0Z2lkOi8vYmMzL1JlY29yZGluZy85MDA3MTk5MjU0NzQxMjM0P2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg1yZWFkYWJsZQY7AFRJIg9leHBpcmVzX2F0BjsAVDA=--ceb1312e43bf42063c09d2679ac787d132dc6bff",
+  "subscription_url": "https://3.basecamp.com/195539477/buckets/2085958496/recordings/9007199254741234/subscription",
   "type": "Todolist",
-  "updated_at": "2016-02-11T09:49:53.804-06:00",
-  "url": "https://3.basecamp.com/195539477/buckets/2085958497/todolists/9007199254741420"
+  "creator": {
+    "id": 1007299148,
+    "name": "Jennifer Young",
+    "email_address": "jennifer@honchodesign.com",
+    "avatar_url": "https://3.basecamp-assets.com/195539477/people/BAhpBEwqCjw=--6d75c96cdfed6528797fe38d7b07ed9b8cc630c8/avatar-64-x4"
+  },
+  "bucket": {
+    "id": 1042979250,
+    "account_id": 31989850,
+    "name": "Honcho Design Newsroom",
+    "description": "Let's talk about the company!",
+    "created_at": "2015-10-27T12:00:28.313-05:00",
+    "updated_at": "2015-10-27T12:00:28.313-05:00",
+    "creator_id": 1007299144,
+    "client_company_id": null
+  },
+  "bucket_path": "/195539477/buckets/2085958496",
+  "parent": {
+    "id": 9007199254741044,
+    "title": "To-dos",
+    "url": "https://3.basecamp.com/195539477/buckets/2085958496/todosets/9007199254741045"
+  }
 }
 ```
 

@@ -19,52 +19,52 @@ Get to-dos
 ``` json
 [
   {
+    "id": 9007199254741208,
+    "created_at": "2016-02-24T16:27:28.313-06:00",
+    "updated_at": "2016-02-09T22:20:46.519-06:00",
+    "status": "active",
+    "url": "https://3.basecamp.com/195539477/buckets/2085958496/todos/9007199254741209",
+    "content": "Nicole vs. Dan",
+    "description_html": "<div>It is time!</div>",
+    "description_text": "It is time!",
+    "starts_on": null,
+    "due_on": null,
+    "completed": false,
+    "comments_count": 0,
+    "bookmark_url": "https://3.basecamp.com/195539477/my/bookmarks/BAh7CEkiCGdpZAY6BkVUSSI0Z2lkOi8vYmMzL1JlY29yZGluZy85MDA3MTk5MjU0NzQxMjA5P2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg1yZWFkYWJsZQY7AFRJIg9leHBpcmVzX2F0BjsAVDA=--fe49818bda5455af0f5655bd729df58acfdf7f3b",
+    "subscription_url": "https://3.basecamp.com/195539477/buckets/2085958496/recordings/9007199254741209/subscription",
     "assignees": [
       {
-        "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBEoqCjw=--19d80553ef84a88c19b6846fdd222c5c394b6dc4/avatar-64-x4",
-        "email_address": "cheryl@honchodesign.com",
-        "id": 1007299146,
-        "name": "Cheryl Walters"
+        "id": 1007299150,
+        "name": "Nicole Katz",
+        "email_address": "nicole@honchodesign.com",
+        "avatar_url": "https://3.basecamp-assets.com/195539477/people/BAhpBE4qCjw=--b544b6a710bd76020abc076fc041895954025116/avatar-64-x4"
       }
     ],
-    "bucket": {
-      "account_id": 31989850,
-      "client_company_id": null,
-      "created_at": "2015-12-27T11:01:58.062-06:00",
-      "creator_id": 1007299144,
-      "description": "Looking for the best!",
-      "id": 1042979251,
-      "name": "Honcho Recruiting and Hiring",
-      "updated_at": "2015-12-27T11:01:58.062-06:00"
-    },
-    "bucket_path": "/195539477/buckets/2085958497",
-    "comments_count": 0,
-    "completed": false,
-    "completion_bucket_todo_path": "/195539477/buckets/2085958497/todos/9007199254741425/completion",
-    "content": "Bruce Barnes",
-    "created_at": "2016-02-15T15:43:58.062-06:00",
-    "creator": {
-      "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBEoqCjw=--19d80553ef84a88c19b6846fdd222c5c394b6dc4/avatar-64-x4",
-      "email_address": "cheryl@honchodesign.com",
-      "id": 1007299146,
-      "name": "Cheryl Walters"
-    },
-    "description_text": null,
-    "description_html": null,
-    "due_on": null,
-    "id": 9007199254741424,
-    "parent": {
-      "id": 9007199254741420,
-      "title": "Accepted! 😀",
-      "url": "https://3.basecamp.com/195539477/buckets/2085958497/todolists/9007199254741420"
-    },
-    "starts_on": null,
-    "status": "active",
     "type": "Todo",
-    "updated_at": "2016-02-11T09:49:38.059-06:00",
-    "url": "https://3.basecamp.com/195539477/buckets/2085958497/todos/9007199254741425"
-  },
-  ...
+    "creator": {
+      "id": 1007299155,
+      "name": "Brian Jenks",
+      "email_address": "brian@honchodesign.com",
+      "avatar_url": "https://3.basecamp-assets.com/195539477/people/BAhpBFMqCjw=--edcad0d274229690f2ff2d8e53e033fb0d04491e/avatar-64-x4"
+    },
+    "bucket": {
+      "id": 1042979250,
+      "account_id": 31989850,
+      "name": "Honcho Design Newsroom",
+      "description": "Let's talk about the company!",
+      "created_at": "2015-10-27T12:00:28.313-05:00",
+      "updated_at": "2015-10-27T12:00:28.313-05:00",
+      "creator_id": 1007299144,
+      "client_company_id": null
+    },
+    "bucket_path": "/195539477/buckets/2085958496",
+    "parent": {
+      "id": 9007199254741204,
+      "title": "Ping pong tournament",
+      "url": "https://3.basecamp.com/195539477/buckets/2085958496/todolists/9007199254741203"
+    }
+  }
 ]
 ```
 
@@ -86,52 +86,51 @@ Nesting under the to-do lists resource is not necessary for this endpoint.
 
 ``` json
 {
+  "id": 9007199254741204,
+  "created_at": "2016-02-24T14:25:28.313-06:00",
+  "updated_at": "2016-02-09T15:09:16.785-06:00",
+  "status": "active",
+  "url": "https://3.basecamp.com/195539477/buckets/2085958496/todos/9007199254741205",
+  "content": "Lillie vs. Charles",
+  "description_html": null,
+  "description_text": null,
+  "starts_on": null,
+  "due_on": null,
+  "completed": false,
+  "comments_count": 0,
+  "bookmark_url": "https://3.basecamp.com/195539477/my/bookmarks/BAh7CEkiCGdpZAY6BkVUSSI0Z2lkOi8vYmMzL1JlY29yZGluZy85MDA3MTk5MjU0NzQxMjA1P2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg1yZWFkYWJsZQY7AFRJIg9leHBpcmVzX2F0BjsAVDA=--b7261cb370f0f26a8acff00a0fea2745f8491b8c",
+  "subscription_url": "https://3.basecamp.com/195539477/buckets/2085958496/recordings/9007199254741205/subscription",
   "assignees": [
     {
-      "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBF8qCjw=--213cf293338eeeb3865113763a0a63542a0ca73c/avatar-64-x4",
-      "email_address": "sharon@honchodesign.com",
-      "id": 1007299167,
-      "name": "Sharon Bradford"
+      "id": 1007299163,
+      "name": "Lillie McKenzie",
+      "email_address": "lillie@honchodesign.com",
+      "avatar_url": "https://3.basecamp-assets.com/195539477/people/BAhpBFsqCjw=--5b11ef4df711ccffeae93405a32a97d7daac0cd4/avatar-64-x4"
     }
   ],
-  "bookmark_url": "https://3.basecamp.com/195539477/my/bookmarks/BAh7CEkiCGdpZAY6BkVUSSI0Z2lkOi8vYmMzL1JlY29yZGluZy85MDA3MTk5MjU0NzQxNjE1P2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg1yZWFkYWJsZQY7AFRJIg9leHBpcmVzX2F0BjsAVDA=--1aa203449a2e5e82749f5502fd53231a647989b8",
-  "bucket": {
-    "account_id": 31989850,
-    "client_company_id": null,
-    "created_at": "2016-01-02T11:02:32.048-06:00",
-    "creator_id": 1007299144,
-    "description": "Laptop product launch.",
-    "id": 1042979252,
-    "name": "The Leto Laptop",
-    "updated_at": "2016-01-02T11:02:32.048-06:00"
-  },
-  "bucket_path": "/195539477/buckets/2085958498",
-  "comments_count": 0,
-  "completed": false,
-  "completion_bucket_todo_path": "/195539477/buckets/2085958498/todos/9007199254741615/completion",
-  "content": "Clear and simple UI",
-  "created_at": "2016-02-15T15:02:32.048-06:00",
-  "creator": {
-    "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBEkqCjw=--7e8e5d9e90e4898faee5f69e72def9e58da85fbe/avatar-64-x4",
-    "email_address": "annie@honchodesign.com",
-    "id": 1007299145,
-    "name": "Annie Bryan"
-  },
-  "description_text": "Important: We'll need to loop marketing in on this.",
-  "description_html": "<div><em>Important:&nbsp;</em>We'll need to loop marketing in on this.</div>",
-  "due_on": null,
-  "id": 9007199254741616,
-  "parent": {
-    "id": 9007199254741612,
-    "title": "Strategy ideas",
-    "url": "https://3.basecamp.com/195539477/buckets/2085958498/todolists/9007199254741612"
-  },
-  "starts_on": null,
-  "status": "active",
-  "subscription_url": "https://3.basecamp.com/195539477/buckets/2085958498/recordings/9007199254741615/subscription",
   "type": "Todo",
-  "updated_at": "2016-02-15T15:02:32.048-06:00",
-  "url": "https://3.basecamp.com/195539477/buckets/2085958498/todos/9007199254741615"
+  "creator": {
+    "id": 1007299155,
+    "name": "Brian Jenks",
+    "email_address": "brian@honchodesign.com",
+    "avatar_url": "https://3.basecamp-assets.com/195539477/people/BAhpBFMqCjw=--edcad0d274229690f2ff2d8e53e033fb0d04491e/avatar-64-x4"
+  },
+  "bucket": {
+    "id": 1042979250,
+    "account_id": 31989850,
+    "name": "Honcho Design Newsroom",
+    "description": "Let's talk about the company!",
+    "created_at": "2015-10-27T12:00:28.313-05:00",
+    "updated_at": "2015-10-27T12:00:28.313-05:00",
+    "creator_id": 1007299144,
+    "client_company_id": null
+  },
+  "bucket_path": "/195539477/buckets/2085958496",
+  "parent": {
+    "id": 9007199254741204,
+    "title": "Ping pong tournament",
+    "url": "https://3.basecamp.com/195539477/buckets/2085958496/todolists/9007199254741203"
+  }
 }
 ```
 

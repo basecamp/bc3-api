@@ -25,41 +25,39 @@ Get comments
 ``` json
 [
   {
-    "bucket": {
-      "account_id": 31989850,
-      "client_company_id": null,
-      "created_at": "2016-03-01T10:20:40.146-06:00",
-      "creator_id": 1007299144,
-      "description": "2016-2017 Strategy",
-      "id": 1042979260,
-      "name": "Marketing Campaign for Xyz Corp",
-      "updated_at": "2016-03-01T10:21:42.345-06:00"
-    },
-    "bucket_path": "/195539477/buckets/2085958506",
-    "comments_count": 0,
-    "content_text": "We're finished!",
-    "content_html": "<div>We're finished!</div>",
-    "created_at": "2016-03-07T10:12:35.411-06:00",
-    "creator": {
-      "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBEgqCjw=--8266bb0507508f3d46050d57b65924d5e2a005f3/avatar-64-x4",
-      "email_address": "victor@honchodesign.com",
-      "id": 1007299144,
-      "name": "Victor Cooper"
-    },
-    "id": 9007199254743026,
-    "parent": {
-      "id": 9007199254743024,
-      "title": "Kickoff",
-      "url": "https://3.basecamp.com/195539477/buckets/2085958506/messages/9007199254743024"
-    },
+    "id": 9007199254741064,
+    "created_at": "2016-01-27T12:41:33.975-06:00",
+    "updated_at": "2016-01-27T12:41:33.975-06:00",
     "status": "active",
+    "url": "https://3.basecamp.com/195539477/buckets/2085958496/comments/9007199254741063",
+    "content_html": "I just want to echo what just about everyone already said. This is a big one for us, and I can't wait to get going. I'll be spinning up the project shortly!",
+    "content_text": "I just want to echo what just about everyone already said. This is a big one for us, and I can't wait to get going. I'll be spinning up the project shortly!",
     "type": "Comment",
-    "updated_at": "2016-03-07T10:12:41.372-06:00",
-    "url": "https://3.basecamp.com/195539477/buckets/2085958506/comments/9007199254743026"
+    "creator": {
+      "id": 1007299145,
+      "name": "Annie Bryan",
+      "email_address": "annie@honchodesign.com",
+      "avatar_url": "https://3.basecamp-assets.com/195539477/people/BAhpBEkqCjw=--7e8e5d9e90e4898faee5f69e72def9e58da85fbe/avatar-64-x4"
+    },
+    "bucket": {
+      "id": 1042979250,
+      "account_id": 31989850,
+      "name": "Honcho Design Newsroom",
+      "description": "Let's talk about the company!",
+      "created_at": "2015-10-27T12:00:28.313-05:00",
+      "updated_at": "2015-10-27T12:00:28.313-05:00",
+      "creator_id": 1007299144,
+      "client_company_id": null
+    },
+    "bucket_path": "/195539477/buckets/2085958496",
+    "parent": {
+      "id": 9007199254741052,
+      "title": "We won Leto!",
+      "url": "https://3.basecamp.com/195539477/buckets/2085958496/messages/9007199254741053"
+    }
   },
   ...
 ]
-
 ```
 
 ###### Copy as cURL
@@ -78,37 +76,36 @@ Get a comment
 
 ``` json
 {
+  "id": 9007199254741054,
+  "created_at": "2016-01-27T11:31:31.734-06:00",
+  "updated_at": "2016-01-27T11:31:31.734-06:00",
+  "status": "active",
+  "url": "https://3.basecamp.com/195539477/buckets/2085958496/comments/9007199254741054",
+  "content_html": "Yeah! Great job everyone! Super excited to get going!",
+  "content_text": "Yeah! Great job everyone! Super excited to get going!",
+  "type": "Comment",
+  "creator": {
+    "id": 1007299153,
+    "name": "Andrew Wong",
+    "email_address": "andrew@honchodesign.com",
+    "avatar_url": "https://3.basecamp-assets.com/195539477/people/BAhpBFEqCjw=--f4f91a8c888e425d0d557f8f27d70dfb6f68505e/avatar-64-x4"
+  },
   "bucket": {
-    "account_id": 31989850,
-    "client_company_id": null,
-    "created_at": "2015-10-27T12:00:28.313-05:00",
-    "creator_id": 1007299144,
-    "description": "Let's talk about the company!",
     "id": 1042979250,
+    "account_id": 31989850,
     "name": "Honcho Design Newsroom",
-    "updated_at": "2015-10-27T12:00:28.313-05:00"
+    "description": "Let's talk about the company!",
+    "created_at": "2015-10-27T12:00:28.313-05:00",
+    "updated_at": "2015-10-27T12:00:28.313-05:00",
+    "creator_id": 1007299144,
+    "client_company_id": null
   },
   "bucket_path": "/195539477/buckets/2085958496",
-  "comments_count": 0,
-  "content_text": "Can't wait to meet everyone for the first time. Been working with you guys for a while, but haven't met in person for so many of you. Can't wait!",
-  "content_html": "<div>Can't wait to meet everyone for the first time. Been working with you guys for a while, but haven't met in person for so many of you. Can't wait!</div>",
-  "created_at": "2016-01-27T11:33:28.988-06:00",
-  "creator": {
-    "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBE4qCjw=--b544b6a710bd76020abc076fc041895954025116/avatar-64-x4",
-    "email_address": "nicole@honchodesign.com",
-    "id": 1007299150,
-    "name": "Nicole Katz"
-  },
-  "id": 9007199254741264,
   "parent": {
-    "id": 9007199254741256,
-    "title": "Next Quarterly meeting",
-    "url": "https://3.basecamp.com/195539477/buckets/2085958496/messages/9007199254741256"
-  },
-  "status": "active",
-  "type": "Comment",
-  "updated_at": "2016-01-27T11:33:28.988-06:00",
-  "url": "https://3.basecamp.com/195539477/buckets/2085958496/comments/9007199254741264"
+    "id": 9007199254741052,
+    "title": "We won Leto!",
+    "url": "https://3.basecamp.com/195539477/buckets/2085958496/messages/9007199254741053"
+  }
 }
 ```
 

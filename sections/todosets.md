@@ -20,32 +20,32 @@ To get the to-do set ID for a Basecamp, see the [Get a Basecamp][1] endpoint's `
 
 ``` json
 {
-  "bucket": {
-    "account_id": 31989850,
-    "client_company_id": null,
-    "created_at": "2015-12-27T11:00:20.687-06:00",
-    "creator_id": 1007299144,
-    "description": "Annie's Stuff. Keep Out. <U+1F601>",
-    "id": 1042979249,
-    "name": "Annie's Corner",
-    "updated_at": "2015-12-27T11:00:20.687-06:00"
-  },
-  "bucket_path": "/195539477/buckets/2085958495",
-  "comments_count": 0,
-  "created_at": "2016-01-27T11:00:20.851-06:00",
-  "creator": {
-    "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBEgqCjw=--8266bb0507508f3d46050d57b65924d5e2a005f3/avatar-64-x4",
-    "email_address": "victor@honchodesign.com",
-    "id": 1007299144,
-    "name": "Victor Cooper"
-  },
-  "name": "To-dos",
+  "id": 9007199254741044,
+  "created_at": "2016-01-27T11:00:28.483-06:00",
+  "updated_at": "2016-03-16T12:14:01.288-05:00",
   "status": "active",
-  "todolists_count": 2,
-  "todolists_url": "https://3.basecamp.com/195539477/buckets/2085958495/todolists.json",
+  "url": "https://3.basecamp.com/195539477/buckets/2085958496/todosets/9007199254741045",
+  "name": "To-dos",
+  "todolists_count": 4,
+  "todolists_url": "https://3.basecamp.com/195539477/buckets/2085958496/todolists.json",
   "type": "Todoset",
-  "updated_at": "2016-02-11T09:49:51.452-06:00",
-  "url": "https://3.basecamp.com/195539477/buckets/2085958495/todosets/9007199254741014"
+  "creator": {
+    "id": 1007299144,
+    "name": "Victor Cooper",
+    "email_address": "victor@honchodesign.com",
+    "avatar_url": "https://3.basecamp-assets.com/195539477/people/BAhpBEgqCjw=--8266bb0507508f3d46050d57b65924d5e2a005f3/avatar-64-x4"
+  },
+  "bucket": {
+    "id": 1042979250,
+    "account_id": 31989850,
+    "name": "Honcho Design Newsroom",
+    "description": "Let's talk about the company!",
+    "created_at": "2015-10-27T12:00:28.313-05:00",
+    "updated_at": "2015-10-27T12:00:28.313-05:00",
+    "creator_id": 1007299144,
+    "client_company_id": null
+  },
+  "bucket_path": "/195539477/buckets/2085958496"
 }
 ```
 
