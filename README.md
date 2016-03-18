@@ -7,6 +7,8 @@ If you have a specific feature request or if you found a bug, [please open a Git
 
 To talk with us and other developers about the API, [post a question on StackOverflow](http://stackoverflow.com/questions/ask) tagged `basecamp` or [open a support ticket](https://basecamp.com/support) if you need help from us directly.
 
+**Please note:** During this early access period (while this repo is private), please hold on with announcing your API integration publicly. Once we're fully public you can go for it. If you have questions about this please [email Nick](mailto:nick@basecamp.com).
+
 Compatibility with previous Basecamp APIs
 -----------------------------------------
 
@@ -29,6 +31,8 @@ Making a request
 ----------------
 
 All URLs start with `https://3.basecamp.com/999999999/`. **HTTPS only**. The path is prefixed with the account ID, but no `/api/v1` API prefix.
+
+**Please note:** The domain for the API will be changing soon to `3.basecampapi.com` from `3.basecamp.com`. Please watch [this issue](https://github.com/basecamp/bc3-api/issues/2) for notification about when that will happen.
 
 To make a request for all the projects on your account, you'd append the projects index path to the base url to form something like https://3.basecamp.com/999999999/basecamps.json. In cURL, that looks like:
 
