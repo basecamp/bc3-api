@@ -38,37 +38,43 @@ Get Basecamps
         "id": 9007199254741432,
         "title": "Campfire",
         "name": "chat",
-        "url": "https://3.basecamp.com/195539477/buckets/2085958498/chats/9007199254741433.json"
+        "url": "https://3.basecamp.com/195539477/buckets/2085958498/chats/9007199254741433.json",
+        "enabled": true
       },
       {
         "id": 9007199254741434,
         "title": "Message Board",
         "name": "message_board",
-        "url": "https://3.basecamp.com/195539477/buckets/2085958498/message_boards/9007199254741434.json"
+        "url": "https://3.basecamp.com/195539477/buckets/2085958498/message_boards/9007199254741434.json",
+        "enabled": true
       },
       {
         "id": 9007199254741436,
         "title": "To-dos",
         "name": "todoset",
-        "url": "https://3.basecamp.com/195539477/buckets/2085958498/todosets/9007199254741435.json"
+        "url": "https://3.basecamp.com/195539477/buckets/2085958498/todosets/9007199254741435.json",
+        "enabled": true
       },
       {
         "id": 9007199254741436,
         "title": "Schedule",
         "name": "schedule",
-        "url": "https://3.basecamp.com/195539477/buckets/2085958498/schedules/9007199254741436.json"
+        "url": "https://3.basecamp.com/195539477/buckets/2085958498/schedules/9007199254741436.json",
+        "enabled": true
       },
       {
         "id": 9007199254741436,
         "title": "Automatic Check-ins",
         "name": "questionnaire",
-        "url": "https://3.basecamp.com/195539477/buckets/2085958498/questionnaires/9007199254741437.json"
+        "url": "https://3.basecamp.com/195539477/buckets/2085958498/questionnaires/9007199254741437.json",
+        "enabled": true
       },
       {
         "id": 9007199254741442,
         "title": "Docs & Files",
         "name": "vault",
-        "url": "https://3.basecamp.com/195539477/buckets/2085958498/vaults/9007199254741442.json"
+        "url": "https://3.basecamp.com/195539477/buckets/2085958498/vaults/9007199254741442.json",
+        "enabled": false
       }
     ]
   },
@@ -89,7 +95,7 @@ Get a Basecamp
 
 * `GET /projects/1.json` will return the Basecamp with the given ID, granted they have access to it.
 
-The `dock` key contains an array of the current tools that are enabled for this Basecamp. You can use the `url` parameter from each tool to jump to the resources available inside of this Basecamp.
+The `dock` key contains an array of the current tools for this Basecamp. The `enabled` flag will be `true` if the tool is turned on for use. You can use the `url` parameter from each tool to jump to the resources available inside of this Basecamp.
 
 ###### Example JSON Response
 
@@ -110,37 +116,43 @@ The `dock` key contains an array of the current tools that are enabled for this 
       "id": 9007199254741012,
       "title": "Campfire",
       "name": "chat",
-      "url": "https://3.basecamp.com/195539477/buckets/2085958495/chats/9007199254741012.json"
+      "url": "https://3.basecamp.com/195539477/buckets/2085958495/chats/9007199254741012.json",
+      "enabled": true
     },
     {
       "id": 9007199254741012,
       "title": "Message Board",
       "name": "message_board",
-      "url": "https://3.basecamp.com/195539477/buckets/2085958495/message_boards/9007199254741013.json"
+      "url": "https://3.basecamp.com/195539477/buckets/2085958495/message_boards/9007199254741013.json",
+      "enabled": true
     },
     {
       "id": 9007199254741014,
       "title": "To-dos",
       "name": "todoset",
-      "url": "https://3.basecamp.com/195539477/buckets/2085958495/todosets/9007199254741014.json"
+      "url": "https://3.basecamp.com/195539477/buckets/2085958495/todosets/9007199254741014.json",
+      "enabled": true
     },
     {
       "id": 9007199254741016,
       "title": "Schedule",
       "name": "schedule",
-      "url": "https://3.basecamp.com/195539477/buckets/2085958495/schedules/9007199254741015.json"
+      "url": "https://3.basecamp.com/195539477/buckets/2085958495/schedules/9007199254741015.json",
+      "enabled": true
     },
     {
       "id": 9007199254741016,
       "title": "Automatic Check-ins",
       "name": "questionnaire",
-      "url": "https://3.basecamp.com/195539477/buckets/2085958495/questionnaires/9007199254741016.json"
+      "url": "https://3.basecamp.com/195539477/buckets/2085958495/questionnaires/9007199254741016.json",
+      "enabled": true
     },
     {
       "id": 9007199254741020,
       "title": "Docs & Files",
       "name": "vault",
-      "url": "https://3.basecamp.com/195539477/buckets/2085958495/vaults/9007199254741021.json"
+      "url": "https://3.basecamp.com/195539477/buckets/2085958495/vaults/9007199254741021.json",
+      "enabled": false
     }
   ]
 }
