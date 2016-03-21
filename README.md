@@ -34,10 +34,10 @@ All URLs start with `https://3.basecamp.com/999999999/`. **HTTPS only**. The pat
 
 **Please note:** The domain for the API will be changing soon to `3.basecampapi.com` from `3.basecamp.com`. Please watch [this issue](https://github.com/basecamp/bc3-api/issues/2) for notification about when that will happen.
 
-To make a request for all the projects on your account, you'd append the projects index path to the base url to form something like https://3.basecamp.com/999999999/basecamps.json. In cURL, that looks like:
+To make a request for all the projects on your account, you'd append the projects index path to the base url to form something like https://3.basecamp.com/999999999/projects.json. In cURL, that looks like:
 
 ``` shell
-curl -H "Authorization: Bearer $ACCESS_TOKEN" -H 'User-Agent: MyApp (yourname@example.com)' https://3.basecamp.com/999999999/basecamps.json
+curl -H "Authorization: Bearer $ACCESS_TOKEN" -H 'User-Agent: MyApp (yourname@example.com)' https://3.basecamp.com/999999999/projects.json
 ```
 
 To create something, it's the same deal except you also have to include the `Content-Type` header and the JSON data:
@@ -47,7 +47,7 @@ curl -H "Authorization: Bearer $ACCESS_TOKEN" \
   -H 'Content-Type: application/json' \
   -H 'User-Agent: MyApp (yourname@example.com)' \
   -d '{ "name": "My new project!" }' \
-  https://3.basecamp.com/999999999/basecamps.json
+  https://3.basecamp.com/999999999/projects.json
 ```
 
 That's all! Throughout this guide we've included "Copy as cURL" examples. If you'd like to try this out in your shell, copy your OAuth Access token into your clipboard and run:
@@ -60,7 +60,7 @@ export ACCOUNT_ID=999999999
 Then you should be able to easily copy + paste any example from our docs. After pasting a cURL example, you could pipe it to a JSON pretty printer to make it a little more readable. Try [jsonpp](https://jmhodges.github.io/jsonpp/) or `json_pp` on OSX:
 
 ``` shell
-curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecamp.com/195539477/basecamps.json | json_pp
+curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecamp.com/195539477/projects.json | json_pp
 ```
 
 Authentication
