@@ -164,32 +164,34 @@ API ready for use
 
 ### Endpoints
 
-| URL                                                                                                                                         | Endpoint            |
-|---------------------------------------------------------------------------------------------------------------------------------------------|---------------------|
-| [GET /projects.json](https://github.com/basecamp/bc3-api/blob/master/sections/basecamps.md#get-basecamps)                                   | Get Basecamps       |
-| [GET /projects/1.json](https://github.com/basecamp/bc3-api/blob/master/sections/basecamps.md#get-a-basecamp)                                | Get a Basecamp      |
-| [POST /projects.json](https://github.com/basecamp/bc3-api/blob/master/sections/basecamps.md#create-a-basecamp)                              | Create a Basecamp   |
-| [PUT /projects/1.json](https://github.com/basecamp/bc3-api/blob/master/sections/basecamps.md#update-a-basecamp)                             | Update a Basecamp   |
-| [DELETE /projects/1.json](https://github.com/basecamp/bc3-api/blob/master/sections/basecamps.md#trash-a-basecamp)                           | Trash a Basecamp    |
-| [PUT /buckets/1/recordings/2/status/trashed.json](https://github.com/basecamp/bc3-api/blob/master/sections/recordings.md#trash-a-recording) | Trash a recording   |
-| [GET /buckets/1/message_boards/2.json](https://github.com/basecamp/bc3-api/blob/master/sections/message_boards.md#get-message-board)        | Get message board   |
-| [GET /buckets/1/message_boards/3/messages.json](https://github.com/basecamp/bc3-api/blob/master/sections/messages.md#get-messages)          | Get messages        |
-| [GET /buckets/1/messages/2.json](https://github.com/basecamp/bc3-api/blob/master/sections/messages.md#get-a-message)                        | Get a message       |
-| [POST /buckets/1/message_boards/3/messages.json](https://github.com/basecamp/bc3-api/blob/master/sections/messages.md#create-a-message)     | Create a message    |
-| [PUT /buckets/1/messages/2.json](https://github.com/basecamp/bc3-api/blob/master/sections/messages.md#update-a-message)                     | Update a message    |
-| [GET /buckets/1/recordings/3/comments.json](https://github.com/basecamp/bc3-api/blob/master/sections/comments.md#get-comments)              | Get comments        |
-| [GET /buckets/1/comments/2.json](https://github.com/basecamp/bc3-api/blob/master/sections/comments.md#get-a-comment)                        | Get a comment       |
-| [POST /buckets/1/recordings/3/comments.json](https://github.com/basecamp/bc3-api/blob/master/sections/comments.md#create-a-comment)         | Create a comment    |
-| [PUT /buckets/1/comments/2.json](https://github.com/basecamp/bc3-api/blob/master/sections/comments.md#update-a-comment)                     | Update a comment    |
-| [GET /buckets/1/todosets/2.json](https://github.com/basecamp/bc3-api/blob/master/sections/todosets.md#get-to-do-set)                        | Get to-do set       |
-| [GET /buckets/1/todosets/3/todolists.json](https://github.com/basecamp/bc3-api/blob/master/sections/todolists.md#get-to-do-lists)           | Get to-do lists     |
-| [GET /buckets/1/todolists/2.json](https://github.com/basecamp/bc3-api/blob/master/sections/todolists.md#get-a-to-do-list)                   | Get a to-do list    |
-| [POST /buckets/1/todosets/3/todolists.json](https://github.com/basecamp/bc3-api/blob/master/sections/todolists.md#create-a-to-do-list)      | Create a to-do list |
-| [PUT /buckets/1/todolists/2.json](https://github.com/basecamp/bc3-api/blob/master/sections/todolists.md#update-a-to-do-list)                | Update a to-do list |
-| [GET /buckets/1/todolists/3/todos.json](https://github.com/basecamp/bc3-api/blob/master/sections/todos.md#get-to-dos)                       | Get to-dos          |
-| [GET /buckets/1/todos/2.json](https://github.com/basecamp/bc3-api/blob/master/sections/todos.md#get-a-to-do)                                | Get a to-do         |
-| [POST /buckets/1/todolists/3/todos.json](https://github.com/basecamp/bc3-api/blob/master/sections/todos.md#create-a-to-do)                  | Create a to-do      |
-| [PUT /buckets/1/todos/2.json](https://github.com/basecamp/bc3-api/blob/master/sections/todos.md#update-a-to-do)                             | Update a to-do      |
+| URL                                                                                                                                         | Endpoint               |
+|---------------------------------------------------------------------------------------------------------------------------------------------|------------------------|
+| [GET /projects.json](https://github.com/basecamp/bc3-api/blob/master/sections/basecamps.md#get-basecamps)                                   | Get Basecamps          |
+| [GET /projects/archive.json](https://github.com/basecamp/bc3-api/blob/master/sections/basecamps.md#get-archived-basecamps)                  | Get archived Basecamps |
+| [GET /projects/trash.json](https://github.com/basecamp/bc3-api/blob/master/sections/basecamps.md#get-trashed-basecamps)                     | Get trashed Basecamps  |
+| [GET /projects/1.json](https://github.com/basecamp/bc3-api/blob/master/sections/basecamps.md#get-a-basecamp)                                | Get a Basecamp         |
+| [POST /projects.json](https://github.com/basecamp/bc3-api/blob/master/sections/basecamps.md#create-a-basecamp)                              | Create a Basecamp      |
+| [PUT /projects/1.json](https://github.com/basecamp/bc3-api/blob/master/sections/basecamps.md#update-a-basecamp)                             | Update a Basecamp      |
+| [DELETE /projects/1.json](https://github.com/basecamp/bc3-api/blob/master/sections/basecamps.md#trash-a-basecamp)                           | Trash a Basecamp       |
+| [PUT /buckets/1/recordings/2/status/trashed.json](https://github.com/basecamp/bc3-api/blob/master/sections/recordings.md#trash-a-recording) | Trash a recording      |
+| [GET /buckets/1/message_boards/2.json](https://github.com/basecamp/bc3-api/blob/master/sections/message_boards.md#get-message-board)        | Get message board      |
+| [GET /buckets/1/message_boards/3/messages.json](https://github.com/basecamp/bc3-api/blob/master/sections/messages.md#get-messages)          | Get messages           |
+| [GET /buckets/1/messages/2.json](https://github.com/basecamp/bc3-api/blob/master/sections/messages.md#get-a-message)                        | Get a message          |
+| [POST /buckets/1/message_boards/3/messages.json](https://github.com/basecamp/bc3-api/blob/master/sections/messages.md#create-a-message)     | Create a message       |
+| [PUT /buckets/1/messages/2.json](https://github.com/basecamp/bc3-api/blob/master/sections/messages.md#update-a-message)                     | Update a message       |
+| [GET /buckets/1/recordings/3/comments.json](https://github.com/basecamp/bc3-api/blob/master/sections/comments.md#get-comments)              | Get comments           |
+| [GET /buckets/1/comments/2.json](https://github.com/basecamp/bc3-api/blob/master/sections/comments.md#get-a-comment)                        | Get a comment          |
+| [POST /buckets/1/recordings/3/comments.json](https://github.com/basecamp/bc3-api/blob/master/sections/comments.md#create-a-comment)         | Create a comment       |
+| [PUT /buckets/1/comments/2.json](https://github.com/basecamp/bc3-api/blob/master/sections/comments.md#update-a-comment)                     | Update a comment       |
+| [GET /buckets/1/todosets/2.json](https://github.com/basecamp/bc3-api/blob/master/sections/todosets.md#get-to-do-set)                        | Get to-do set          |
+| [GET /buckets/1/todosets/3/todolists.json](https://github.com/basecamp/bc3-api/blob/master/sections/todolists.md#get-to-do-lists)           | Get to-do lists        |
+| [GET /buckets/1/todolists/2.json](https://github.com/basecamp/bc3-api/blob/master/sections/todolists.md#get-a-to-do-list)                   | Get a to-do list       |
+| [POST /buckets/1/todosets/3/todolists.json](https://github.com/basecamp/bc3-api/blob/master/sections/todolists.md#create-a-to-do-list)      | Create a to-do list    |
+| [PUT /buckets/1/todolists/2.json](https://github.com/basecamp/bc3-api/blob/master/sections/todolists.md#update-a-to-do-list)                | Update a to-do list    |
+| [GET /buckets/1/todolists/3/todos.json](https://github.com/basecamp/bc3-api/blob/master/sections/todos.md#get-to-dos)                       | Get to-dos             |
+| [GET /buckets/1/todos/2.json](https://github.com/basecamp/bc3-api/blob/master/sections/todos.md#get-a-to-do)                                | Get a to-do            |
+| [POST /buckets/1/todolists/3/todos.json](https://github.com/basecamp/bc3-api/blob/master/sections/todos.md#create-a-to-do)                  | Create a to-do         |
+| [PUT /buckets/1/todos/2.json](https://github.com/basecamp/bc3-api/blob/master/sections/todos.md#update-a-to-do)                             | Update a to-do         |
 
 
 Conduct
