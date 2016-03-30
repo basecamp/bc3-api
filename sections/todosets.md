@@ -27,7 +27,7 @@ To get the to-do set ID for a Basecamp, see the [Get a Basecamp][1] endpoint's `
   "url": "https://3.basecampapi.com/195539477/buckets/2085958496/todosets/9007199254741045",
   "name": "To-dos",
   "todolists_count": 4,
-  "todolists_url": "https://3.basecampapi.com/195539477/buckets/2085958496/todolists.json",
+  "todolists_url": "https://3.basecampapi.com/195539477/buckets/2085958496/todosets/9007199254741044/todolists.json",
   "type": "Todoset",
   "creator": {
     "id": 1007299144,
