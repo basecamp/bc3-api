@@ -24,10 +24,10 @@ To get the message board ID for a Basecamp, see the [Get a Basecamp][1] endpoint
   "created_at": "2016-01-27T11:00:28.446-06:00",
   "updated_at": "2016-03-15T13:14:41.883-05:00",
   "status": "active",
-  "url": "https://3.basecamp.com/195539477/buckets/2085958496/message_boards/9007199254741044",
+  "url": "https://3.basecampapi.com/195539477/buckets/2085958496/message_boards/9007199254741044",
   "title": "Message Board",
   "messages_count": 16,
-  "messages_url": "https://3.basecamp.com/195539477/buckets/2085958496/message_boards/9007199254741044/messages.json",
+  "messages_url": "https://3.basecampapi.com/195539477/buckets/2085958496/message_boards/9007199254741044/messages.json",
   "type": "Message::Board",
   "creator": {
     "id": 1007299144,
@@ -52,7 +52,7 @@ To get the message board ID for a Basecamp, see the [Get a Basecamp][1] endpoint
 ###### Copy as cURL
 
 ``` shell
-curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecamp.com/$ACCOUNT_ID/buckets/1/message_boards/2.json
+curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/message_boards/2.json
 ```
 
 

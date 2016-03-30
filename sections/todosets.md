@@ -24,10 +24,10 @@ To get the to-do set ID for a Basecamp, see the [Get a Basecamp][1] endpoint's `
   "created_at": "2016-01-27T11:00:28.483-06:00",
   "updated_at": "2016-03-16T12:14:01.288-05:00",
   "status": "active",
-  "url": "https://3.basecamp.com/195539477/buckets/2085958496/todosets/9007199254741045",
+  "url": "https://3.basecampapi.com/195539477/buckets/2085958496/todosets/9007199254741045",
   "name": "To-dos",
   "todolists_count": 4,
-  "todolists_url": "https://3.basecamp.com/195539477/buckets/2085958496/todolists.json",
+  "todolists_url": "https://3.basecampapi.com/195539477/buckets/2085958496/todolists.json",
   "type": "Todoset",
   "creator": {
     "id": 1007299144,
@@ -52,7 +52,7 @@ To get the to-do set ID for a Basecamp, see the [Get a Basecamp][1] endpoint's `
 ###### Copy as cURL
 
 ``` shell
-curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecamp.com/$ACCOUNT_ID/buckets/1/todosets/2.json
+curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/todosets/2.json
 ```
 
 

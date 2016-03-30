@@ -26,7 +26,7 @@ To get the message board ID for a Basecamp, see the [Get message board][3] endpo
     "created_at": "2015-10-30T13:55:28.313-05:00",
     "updated_at": "2016-01-27T11:00:34.131-06:00",
     "status": "active",
-    "url": "https://3.basecamp.com/195539477/buckets/2085958496/messages/9007199254741053",
+    "url": "https://3.basecampapi.com/195539477/buckets/2085958496/messages/9007199254741053",
     "subject": "We won Leto!",
     "content_html": "Hey guys,\n\n  We won the Leto account! This is huge for us, it really marks a turning point for the company.\n\n  As you know we've been pursuing bigger clients in the consumer space, but we've done so carefully. We've never been about getting the biggest clients - those are easy to get. We've been trying to get the best clients for us - ones that will challenge us, grow us, make us better, and ultimately giving us a platform to show how awesome you guys all are. And now we have that!\n\n  A big congrats to everyone who worked so hard to make this happen, and now the fun really begins. Most of the pitch team will stay on as leading members of the first project, the Leto Microsite.\n\n  Again, great job everyone, and let's go kick some more butt!",
     "content_text": "Hey guys,\n\nWe won the Leto account! This is huge for us, it really marks a turning point for the company.\n\nAs you know we've been pursuing bigger clients in the consumer space, but we've done so carefully. We've never been about getting the biggest clients - those are easy to get. We've been trying to get the best clients for us - ones that will challenge us, grow us, make us better, and ultimately giving us a platform to show how awesome you guys all are. And now we have that!\n\nA big congrats to everyone who worked so hard to make this happen, and now the fun really begins. Most of the pitch team will stay on as leading members of the first project, the Leto Microsite.\n\nAgain, great job everyone, and let's go kick some more butt!",
@@ -52,7 +52,7 @@ To get the message board ID for a Basecamp, see the [Get message board][3] endpo
     "parent": {
       "id": 9007199254741044,
       "title": "Message Board",
-      "url": "https://3.basecamp.com/195539477/buckets/2085958496/message_boards/9007199254741044"
+      "url": "https://3.basecampapi.com/195539477/buckets/2085958496/message_boards/9007199254741044"
     }
   },
   ...
@@ -62,7 +62,7 @@ To get the message board ID for a Basecamp, see the [Get message board][3] endpo
 ###### Copy as cURL
 
 ``` shell
-curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecamp.com/$ACCOUNT_ID/buckets/1/message_boards/3/messages.json
+curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/message_boards/3/messages.json
 ```
 
 
@@ -79,7 +79,7 @@ Get a message
   "created_at": "2016-02-03T12:22:46.082-06:00",
   "updated_at": "2016-03-15T13:14:41.849-05:00",
   "status": "active",
-  "url": "https://3.basecamp.com/195539477/buckets/2085958496/messages/9007199254741871",
+  "url": "https://3.basecampapi.com/195539477/buckets/2085958496/messages/9007199254741871",
   "subject": "Another one",
   "content_html": "<div>Welcome, Dave!</div>",
   "content_text": "Welcome, Dave!",
@@ -105,7 +105,7 @@ Get a message
   "parent": {
     "id": 9007199254741044,
     "title": "Message Board",
-    "url": "https://3.basecamp.com/195539477/buckets/2085958496/message_boards/9007199254741044"
+    "url": "https://3.basecampapi.com/195539477/buckets/2085958496/message_boards/9007199254741044"
   }
 }
 ```
@@ -115,7 +115,7 @@ Nesting under the message board resource is not necessary for this endpoint.
 ###### Copy as cURL
 
 ``` shell
-curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecamp.com/$ACCOUNT_ID/buckets/1/messages/2.json
+curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/messages/2.json
 ```
 
 
@@ -147,7 +147,7 @@ This endpoint will return `201 Created` with the current JSON representation of 
 ``` shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" \
   -d '{"subject":"Kickoff","content_html":"<div><strong>Welcome to Basecamp, everyone.</strong></div>","status":"active"}' \
-  https://3.basecamp.com/$ACCOUNT_ID/buckets/1/message_boards/3/messages.json
+  https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/message_boards/3/messages.json
 ```
 
 
@@ -174,7 +174,7 @@ This endpoint will return `200 OK` with the current JSON representation of the m
 ``` shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" \
   -d '{"subject":"Spin-down","content_html":"<div><strong>Oops, we lost that client.</strong></div>"}' -X PUT \
-  https://3.basecamp.com/$ACCOUNT_ID/buckets/1/messages/2.json
+  https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/messages/2.json
 ```
 
 

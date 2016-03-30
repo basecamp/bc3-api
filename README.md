@@ -30,14 +30,12 @@ If you've used a previous version of the Basecamp API, you will need to adapt yo
 Making a request
 ----------------
 
-All URLs start with `https://3.basecamp.com/999999999/`. **HTTPS only**. The path is prefixed with the account ID, but no `/api/v1` API prefix.
+All URLs start with `https://3.basecampapi.com/999999999/`. **HTTPS only**. The path is prefixed with the account ID, but no `/api/v1` API prefix.
 
-**Please note:** The domain for the API will be changing soon to `3.basecampapi.com` from `3.basecamp.com`. Please watch [this issue](https://github.com/basecamp/bc3-api/issues/2) for notification about when that will happen.
-
-To make a request for all the projects on your account, you'd append the projects index path to the base url to form something like https://3.basecamp.com/999999999/projects.json. In cURL, that looks like:
+To make a request for all the projects on your account, you'd append the projects index path to the base url to form something like https://3.basecampapi.com/999999999/projects.json. In cURL, that looks like:
 
 ``` shell
-curl -H "Authorization: Bearer $ACCESS_TOKEN" -H 'User-Agent: MyApp (yourname@example.com)' https://3.basecamp.com/999999999/projects.json
+curl -H "Authorization: Bearer $ACCESS_TOKEN" -H 'User-Agent: MyApp (yourname@example.com)' https://3.basecampapi.com/999999999/projects.json
 ```
 
 To create something, it's the same deal except you also have to include the `Content-Type` header and the JSON data:
@@ -47,7 +45,7 @@ curl -H "Authorization: Bearer $ACCESS_TOKEN" \
   -H 'Content-Type: application/json' \
   -H 'User-Agent: MyApp (yourname@example.com)' \
   -d '{ "name": "My new project!" }' \
-  https://3.basecamp.com/999999999/projects.json
+  https://3.basecampapi.com/999999999/projects.json
 ```
 
 That's all! Throughout this guide we've included "Copy as cURL" examples. If you'd like to try this out in your shell, copy your OAuth Access token into your clipboard and run:
@@ -60,7 +58,7 @@ export ACCOUNT_ID=999999999
 Then you should be able to easily copy + paste any example from our docs. After pasting a cURL example, you could pipe it to a JSON pretty printer to make it a little more readable. Try [jsonpp](https://jmhodges.github.io/jsonpp/) or `json_pp` on OSX:
 
 ``` shell
-curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecamp.com/195539477/projects.json | json_pp
+curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/195539477/projects.json | json_pp
 ```
 
 Authentication
@@ -96,7 +94,7 @@ Pagination
 Most collection APIs paginate their results. The first request returns up to 50 records. The Basecamp 3 API follows the [RFC5988 convention](https://tools.ietf.org/html/rfc5988) of using the `Link` header to provide URLs for the `first`, `next`, `prev`, and `last` pages. Follow these URLs to retreive the next page of data, and please don't build the pagination URLs yourself! Here's an example from the [Messages API][2] for requesting the third page (of 50) when 300 are available:
 
 ```
-<https://3.basecamp.com/195539477/buckets/2085958496/messages.json?page=4>; rel="next"
+<https://3.basecampapi.com/195539477/buckets/2085958496/messages.json?page=4>; rel="next"
 ```
 
 Quick note: If the `Link` header is blank, and you have some results, then that's the only page of data! We also provide the `X-Total-Count` header, which displays the total amount of resources in the collection you are fetching.

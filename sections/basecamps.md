@@ -27,53 +27,53 @@ Get Basecamps
     "created_at": "2016-01-27T11:02:32.061-06:00",
     "updated_at": "2016-01-27T11:03:32.570-06:00",
     "status": "active",
-    "url": "https://3.basecamp.com/195539477/projects/2085958498",
+    "url": "https://3.basecampapi.com/195539477/projects/2085958498",
     "name": "The Leto Laptop",
     "description": "Laptop product launch.",
     "bookmarked": false,
-    "bookmark_url": "https://3.basecamp.com/195539477/my/bookmarks/BAh7CEkiCGdpZAY6BkVUSSIrZ2lkOi8vYmMzL0J1Y2tldC8yMDg1OTU4NDk4P2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg1yZWFkYWJsZQY7AFRJIg9leHBpcmVzX2F0BjsAVDA=--c8e1a465de900eb9864fa79ae2f30345be158f71",
-    "vault_url": "https://3.basecamp.com/195539477/buckets/2085958498/vaults/9007199254741442",
+    "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7CEkiCGdpZAY6BkVUSSIrZ2lkOi8vYmMzL0J1Y2tldC8yMDg1OTU4NDk4P2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg1yZWFkYWJsZQY7AFRJIg9leHBpcmVzX2F0BjsAVDA=--c8e1a465de900eb9864fa79ae2f30345be158f71",
+    "vault_url": "https://3.basecampapi.com/195539477/buckets/2085958498/vaults/9007199254741442",
     "dock": [
       {
         "id": 9007199254741432,
         "title": "Campfire",
         "name": "chat",
-        "url": "https://3.basecamp.com/195539477/buckets/2085958498/chats/9007199254741433.json",
+        "url": "https://3.basecampapi.com/195539477/buckets/2085958498/chats/9007199254741433.json",
         "enabled": true
       },
       {
         "id": 9007199254741434,
         "title": "Message Board",
         "name": "message_board",
-        "url": "https://3.basecamp.com/195539477/buckets/2085958498/message_boards/9007199254741434.json",
+        "url": "https://3.basecampapi.com/195539477/buckets/2085958498/message_boards/9007199254741434.json",
         "enabled": true
       },
       {
         "id": 9007199254741436,
         "title": "To-dos",
         "name": "todoset",
-        "url": "https://3.basecamp.com/195539477/buckets/2085958498/todosets/9007199254741435.json",
+        "url": "https://3.basecampapi.com/195539477/buckets/2085958498/todosets/9007199254741435.json",
         "enabled": true
       },
       {
         "id": 9007199254741436,
         "title": "Schedule",
         "name": "schedule",
-        "url": "https://3.basecamp.com/195539477/buckets/2085958498/schedules/9007199254741436.json",
+        "url": "https://3.basecampapi.com/195539477/buckets/2085958498/schedules/9007199254741436.json",
         "enabled": true
       },
       {
         "id": 9007199254741436,
         "title": "Automatic Check-ins",
         "name": "questionnaire",
-        "url": "https://3.basecamp.com/195539477/buckets/2085958498/questionnaires/9007199254741437.json",
+        "url": "https://3.basecampapi.com/195539477/buckets/2085958498/questionnaires/9007199254741437.json",
         "enabled": true
       },
       {
         "id": 9007199254741442,
         "title": "Docs & Files",
         "name": "vault",
-        "url": "https://3.basecamp.com/195539477/buckets/2085958498/vaults/9007199254741442.json",
+        "url": "https://3.basecampapi.com/195539477/buckets/2085958498/vaults/9007199254741442.json",
         "enabled": false
       }
     ]
@@ -86,7 +86,7 @@ Get Basecamps
 ###### Copy as cURL
 
 ``` shell
-curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecamp.com/$ACCOUNT_ID/projects.json
+curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/projects.json
 ```
 
 Get archived Basecamps
@@ -115,53 +115,53 @@ The `dock` key contains an array of the current tools for this Basecamp. The `en
   "created_at": "2016-01-27T11:00:20.701-06:00",
   "updated_at": "2016-03-09T11:50:54.324-06:00",
   "status": "active",
-  "url": "https://3.basecamp.com/195539477/projects/2085958495",
+  "url": "https://3.basecampapi.com/195539477/projects/2085958495",
   "name": "Annie's Corner",
   "description": "Annie's Stuff. Keep Out. 😁",
   "bookmarked": false,
-  "bookmark_url": "https://3.basecamp.com/195539477/my/bookmarks/BAh7CEkiCGdpZAY6BkVUSSIrZ2lkOi8vYmMzL0J1Y2tldC8yMDg1OTU4NDk1P2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg1yZWFkYWJsZQY7AFRJIg9leHBpcmVzX2F0BjsAVDA=--06a5145963152c63ea56090695ec59e6d83fb21a",
-  "vault_url": "https://3.basecamp.com/195539477/buckets/2085958495/vaults/9007199254741021",
+  "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7CEkiCGdpZAY6BkVUSSIrZ2lkOi8vYmMzL0J1Y2tldC8yMDg1OTU4NDk1P2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg1yZWFkYWJsZQY7AFRJIg9leHBpcmVzX2F0BjsAVDA=--06a5145963152c63ea56090695ec59e6d83fb21a",
+  "vault_url": "https://3.basecampapi.com/195539477/buckets/2085958495/vaults/9007199254741021",
   "dock": [
     {
       "id": 9007199254741012,
       "title": "Campfire",
       "name": "chat",
-      "url": "https://3.basecamp.com/195539477/buckets/2085958495/chats/9007199254741012.json",
+      "url": "https://3.basecampapi.com/195539477/buckets/2085958495/chats/9007199254741012.json",
       "enabled": true
     },
     {
       "id": 9007199254741012,
       "title": "Message Board",
       "name": "message_board",
-      "url": "https://3.basecamp.com/195539477/buckets/2085958495/message_boards/9007199254741013.json",
+      "url": "https://3.basecampapi.com/195539477/buckets/2085958495/message_boards/9007199254741013.json",
       "enabled": true
     },
     {
       "id": 9007199254741014,
       "title": "To-dos",
       "name": "todoset",
-      "url": "https://3.basecamp.com/195539477/buckets/2085958495/todosets/9007199254741014.json",
+      "url": "https://3.basecampapi.com/195539477/buckets/2085958495/todosets/9007199254741014.json",
       "enabled": true
     },
     {
       "id": 9007199254741016,
       "title": "Schedule",
       "name": "schedule",
-      "url": "https://3.basecamp.com/195539477/buckets/2085958495/schedules/9007199254741015.json",
+      "url": "https://3.basecampapi.com/195539477/buckets/2085958495/schedules/9007199254741015.json",
       "enabled": true
     },
     {
       "id": 9007199254741016,
       "title": "Automatic Check-ins",
       "name": "questionnaire",
-      "url": "https://3.basecamp.com/195539477/buckets/2085958495/questionnaires/9007199254741016.json",
+      "url": "https://3.basecampapi.com/195539477/buckets/2085958495/questionnaires/9007199254741016.json",
       "enabled": true
     },
     {
       "id": 9007199254741020,
       "title": "Docs & Files",
       "name": "vault",
-      "url": "https://3.basecamp.com/195539477/buckets/2085958495/vaults/9007199254741021.json",
+      "url": "https://3.basecampapi.com/195539477/buckets/2085958495/vaults/9007199254741021.json",
       "enabled": false
     }
   ]
@@ -171,7 +171,7 @@ The `dock` key contains an array of the current tools for this Basecamp. The `en
 ###### Copy as cURL
 
 ``` shell
-curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecamp.com/$ACCOUNT_ID/projects/1.json
+curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/projects/1.json
 ```
 
 
@@ -204,7 +204,7 @@ If you hit that error, the user will need to upgrade their subscription to any p
 ``` shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" \
   -d '{"name":"Marketing Campaign","description":"For Client: Xyz Corp Conference"}' \
-  https://3.basecamp.com/$ACCOUNT_ID/projects.json
+  https://3.basecampapi.com/$ACCOUNT_ID/projects.json
 ```
 
 
@@ -229,7 +229,7 @@ This will return `200 OK` with the current JSON representation of the Basecamp i
 ``` shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" \
   -d '{"name":"Marketing Campaign for Xyz Corp","description":"2016-2017 Strategy"}' -X PUT \
-  https://3.basecamp.com/$ACCOUNT_ID/projects/2085958506.json
+  https://3.basecampapi.com/$ACCOUNT_ID/projects/2085958506.json
 ```
 
 
@@ -244,7 +244,7 @@ Trashed Basecamps will be deleted from Basecamp 3 after 30 days. No parameters r
 
 ``` shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" -X DELETE \
-  https://3.basecamp.com/$ACCOUNT_ID/projects/2085958507.json
+  https://3.basecampapi.com/$ACCOUNT_ID/projects/2085958507.json
 ```
 
 [1]: https://github.com/basecamp/bc3-api/blob/master/sections/accesses.md#accesses

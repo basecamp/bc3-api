@@ -23,7 +23,7 @@ Get to-dos
     "created_at": "2016-02-24T16:27:28.313-06:00",
     "updated_at": "2016-02-09T22:20:46.519-06:00",
     "status": "active",
-    "url": "https://3.basecamp.com/195539477/buckets/2085958496/todos/9007199254741209",
+    "url": "https://3.basecampapi.com/195539477/buckets/2085958496/todos/9007199254741209",
     "content": "Nicole vs. Dan",
     "description_html": "<div>It is time!</div>",
     "description_text": "It is time!",
@@ -31,8 +31,8 @@ Get to-dos
     "due_on": null,
     "completed": false,
     "comments_count": 0,
-    "bookmark_url": "https://3.basecamp.com/195539477/my/bookmarks/BAh7CEkiCGdpZAY6BkVUSSI0Z2lkOi8vYmMzL1JlY29yZGluZy85MDA3MTk5MjU0NzQxMjA5P2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg1yZWFkYWJsZQY7AFRJIg9leHBpcmVzX2F0BjsAVDA=--fe49818bda5455af0f5655bd729df58acfdf7f3b",
-    "subscription_url": "https://3.basecamp.com/195539477/buckets/2085958496/recordings/9007199254741209/subscription",
+    "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7CEkiCGdpZAY6BkVUSSI0Z2lkOi8vYmMzL1JlY29yZGluZy85MDA3MTk5MjU0NzQxMjA5P2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg1yZWFkYWJsZQY7AFRJIg9leHBpcmVzX2F0BjsAVDA=--fe49818bda5455af0f5655bd729df58acfdf7f3b",
+    "subscription_url": "https://3.basecampapi.com/195539477/buckets/2085958496/recordings/9007199254741209/subscription",
     "assignees": [
       {
         "id": 1007299150,
@@ -62,7 +62,7 @@ Get to-dos
     "parent": {
       "id": 9007199254741204,
       "title": "Ping pong tournament",
-      "url": "https://3.basecamp.com/195539477/buckets/2085958496/todolists/9007199254741203"
+      "url": "https://3.basecampapi.com/195539477/buckets/2085958496/todolists/9007199254741203"
     }
   }
 ]
@@ -71,7 +71,7 @@ Get to-dos
 ###### Copy as cURL
 
 ``` shell
-curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecamp.com/$ACCOUNT_ID/buckets/1/todolists/3/todos.json
+curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/todolists/3/todos.json
 ```
 
 
@@ -90,7 +90,7 @@ Nesting under the to-do lists resource is not necessary for this endpoint.
   "created_at": "2016-02-24T14:25:28.313-06:00",
   "updated_at": "2016-02-09T15:09:16.785-06:00",
   "status": "active",
-  "url": "https://3.basecamp.com/195539477/buckets/2085958496/todos/9007199254741205",
+  "url": "https://3.basecampapi.com/195539477/buckets/2085958496/todos/9007199254741205",
   "content": "Lillie vs. Charles",
   "description_html": null,
   "description_text": null,
@@ -98,8 +98,8 @@ Nesting under the to-do lists resource is not necessary for this endpoint.
   "due_on": null,
   "completed": false,
   "comments_count": 0,
-  "bookmark_url": "https://3.basecamp.com/195539477/my/bookmarks/BAh7CEkiCGdpZAY6BkVUSSI0Z2lkOi8vYmMzL1JlY29yZGluZy85MDA3MTk5MjU0NzQxMjA1P2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg1yZWFkYWJsZQY7AFRJIg9leHBpcmVzX2F0BjsAVDA=--b7261cb370f0f26a8acff00a0fea2745f8491b8c",
-  "subscription_url": "https://3.basecamp.com/195539477/buckets/2085958496/recordings/9007199254741205/subscription",
+  "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7CEkiCGdpZAY6BkVUSSI0Z2lkOi8vYmMzL1JlY29yZGluZy85MDA3MTk5MjU0NzQxMjA1P2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg1yZWFkYWJsZQY7AFRJIg9leHBpcmVzX2F0BjsAVDA=--b7261cb370f0f26a8acff00a0fea2745f8491b8c",
+  "subscription_url": "https://3.basecampapi.com/195539477/buckets/2085958496/recordings/9007199254741205/subscription",
   "assignees": [
     {
       "id": 1007299163,
@@ -129,7 +129,7 @@ Nesting under the to-do lists resource is not necessary for this endpoint.
   "parent": {
     "id": 9007199254741204,
     "title": "Ping pong tournament",
-    "url": "https://3.basecamp.com/195539477/buckets/2085958496/todolists/9007199254741203"
+    "url": "https://3.basecampapi.com/195539477/buckets/2085958496/todolists/9007199254741203"
   }
 }
 ```
@@ -137,7 +137,7 @@ Nesting under the to-do lists resource is not necessary for this endpoint.
 ###### Copy as cURL
 
 ``` shell
-curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecamp.com/$ACCOUNT_ID/buckets/1/todos/2.json
+curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/todos/2.json
 ```
 
 
@@ -173,7 +173,7 @@ This endpoint will return `201 Created` with the current JSON representation of 
 ``` shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" \
   -d '{"name":"Program it","description_html":"<div><em>Try that new language!</em></div>","due_on":"2016-05-01"}' \
-  https://3.basecamp.com/$ACCOUNT_ID/buckets/1/todolists/3/todos.json
+  https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/todolists/3/todos.json
 ```
 
 
@@ -200,7 +200,7 @@ This endpoint will return `200 OK` with the current JSON representation of the t
 ``` shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" \
   -d '{"name":"Whiteboard it","description_html":"<div><strong>Maybe plan it out first.</strong></div>"}' -X PUT \
-  https://3.basecamp.com/$ACCOUNT_ID/buckets/1/todos/2.json
+  https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/todos/2.json
 ```
 
 

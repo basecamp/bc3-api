@@ -25,14 +25,14 @@ To get the to-do set ID for a Basecamp, see the [Get to-do set][3] endpoint.
     "created_at": "2015-10-30T14:16:28.313-05:00",
     "updated_at": "2016-01-27T11:00:39.837-06:00",
     "status": "active",
-    "url": "https://3.basecamp.com/195539477/buckets/2085958496/todolists/9007199254741064",
+    "url": "https://3.basecampapi.com/195539477/buckets/2085958496/todolists/9007199254741064",
     "name": "Health benefits renewal",
     "description_html": null,
     "description_text": null,
     "comments_count": 0,
-    "todos_url": "https://3.basecamp.com/195539477/buckets/2085958496/todos.json",
-    "bookmark_url": "https://3.basecamp.com/195539477/my/bookmarks/BAh7CEkiCGdpZAY6BkVUSSI0Z2lkOi8vYmMzL1JlY29yZGluZy85MDA3MTk5MjU0NzQxMDY0P2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg1yZWFkYWJsZQY7AFRJIg9leHBpcmVzX2F0BjsAVDA=--be7fc7d856bd884e8ec8001bd362c45cb4c1e9f6",
-    "subscription_url": "https://3.basecamp.com/195539477/buckets/2085958496/recordings/9007199254741064/subscription",
+    "todos_url": "https://3.basecampapi.com/195539477/buckets/2085958496/todos.json",
+    "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7CEkiCGdpZAY6BkVUSSI0Z2lkOi8vYmMzL1JlY29yZGluZy85MDA3MTk5MjU0NzQxMDY0P2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg1yZWFkYWJsZQY7AFRJIg9leHBpcmVzX2F0BjsAVDA=--be7fc7d856bd884e8ec8001bd362c45cb4c1e9f6",
+    "subscription_url": "https://3.basecampapi.com/195539477/buckets/2085958496/recordings/9007199254741064/subscription",
     "type": "Todolist",
     "creator": {
       "id": 1007299146,
@@ -54,7 +54,7 @@ To get the to-do set ID for a Basecamp, see the [Get to-do set][3] endpoint.
     "parent": {
       "id": 9007199254741044,
       "title": "To-dos",
-      "url": "https://3.basecamp.com/195539477/buckets/2085958496/todosets/9007199254741045"
+      "url": "https://3.basecampapi.com/195539477/buckets/2085958496/todosets/9007199254741045"
     }
   },
   ...
@@ -64,7 +64,7 @@ To get the to-do set ID for a Basecamp, see the [Get to-do set][3] endpoint.
 ###### Copy as cURL
 
 ``` shell
-curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecamp.com/$ACCOUNT_ID/buckets/1/todosets/3/todolists.json
+curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/todosets/3/todolists.json
 ```
 
 
@@ -83,14 +83,14 @@ Each to-do list payload includes the first 10 to-dos in the `todos` key. To retr
   "created_at": "2015-12-31T13:41:28.313-06:00",
   "updated_at": "2016-03-16T12:14:01.281-05:00",
   "status": "active",
-  "url": "https://3.basecamp.com/195539477/buckets/2085958496/todolists/9007199254741234",
+  "url": "https://3.basecampapi.com/195539477/buckets/2085958496/todolists/9007199254741234",
   "name": "Meetup setup",
   "description_html": "<div>Let's&nbsp;<strong>finish</strong>&nbsp;this stuff!</div>",
   "description_text": "Let's finish this stuff!",
   "comments_count": 0,
-  "todos_url": "https://3.basecamp.com/195539477/buckets/2085958496/todos.json",
-  "bookmark_url": "https://3.basecamp.com/195539477/my/bookmarks/BAh7CEkiCGdpZAY6BkVUSSI0Z2lkOi8vYmMzL1JlY29yZGluZy85MDA3MTk5MjU0NzQxMjM0P2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg1yZWFkYWJsZQY7AFRJIg9leHBpcmVzX2F0BjsAVDA=--ceb1312e43bf42063c09d2679ac787d132dc6bff",
-  "subscription_url": "https://3.basecamp.com/195539477/buckets/2085958496/recordings/9007199254741234/subscription",
+  "todos_url": "https://3.basecampapi.com/195539477/buckets/2085958496/todos.json",
+  "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7CEkiCGdpZAY6BkVUSSI0Z2lkOi8vYmMzL1JlY29yZGluZy85MDA3MTk5MjU0NzQxMjM0P2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg1yZWFkYWJsZQY7AFRJIg9leHBpcmVzX2F0BjsAVDA=--ceb1312e43bf42063c09d2679ac787d132dc6bff",
+  "subscription_url": "https://3.basecampapi.com/195539477/buckets/2085958496/recordings/9007199254741234/subscription",
   "type": "Todolist",
   "creator": {
     "id": 1007299148,
@@ -112,7 +112,7 @@ Each to-do list payload includes the first 10 to-dos in the `todos` key. To retr
   "parent": {
     "id": 9007199254741044,
     "title": "To-dos",
-    "url": "https://3.basecamp.com/195539477/buckets/2085958496/todosets/9007199254741045"
+    "url": "https://3.basecampapi.com/195539477/buckets/2085958496/todosets/9007199254741045"
   }
 }
 ```
@@ -120,7 +120,7 @@ Each to-do list payload includes the first 10 to-dos in the `todos` key. To retr
 ###### Copy as cURL
 
 ``` shell
-curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecamp.com/$ACCOUNT_ID/buckets/1/todolists/2.json
+curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/todolists/2.json
 ```
 
 
@@ -149,7 +149,7 @@ This endpoint will return `201 Created` with the current JSON representation of 
 ``` shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" \
   -d '{"name":"Launch","description_html":"<div><em>Finish it!</em></div>"}' \
-  https://3.basecamp.com/$ACCOUNT_ID/buckets/1/todosets/3/todolists.json
+  https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/todosets/3/todolists.json
 ```
 
 
@@ -176,7 +176,7 @@ This endpoint will return `200 OK` with the current JSON representation of the t
 ``` shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" \
   -d '{"name":"Relaunch","description_html":"<div><strong>Try this again.</strong></div>"}' -X PUT \
-  https://3.basecamp.com/$ACCOUNT_ID/buckets/1/todolists/2.json
+  https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/todolists/2.json
 ```
 
 

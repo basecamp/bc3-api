@@ -29,7 +29,7 @@ Get comments
     "created_at": "2016-01-27T12:41:33.975-06:00",
     "updated_at": "2016-01-27T12:41:33.975-06:00",
     "status": "active",
-    "url": "https://3.basecamp.com/195539477/buckets/2085958496/comments/9007199254741063",
+    "url": "https://3.basecampapi.com/195539477/buckets/2085958496/comments/9007199254741063",
     "content_html": "I just want to echo what just about everyone already said. This is a big one for us, and I can't wait to get going. I'll be spinning up the project shortly!",
     "content_text": "I just want to echo what just about everyone already said. This is a big one for us, and I can't wait to get going. I'll be spinning up the project shortly!",
     "type": "Comment",
@@ -53,7 +53,7 @@ Get comments
     "parent": {
       "id": 9007199254741052,
       "title": "We won Leto!",
-      "url": "https://3.basecamp.com/195539477/buckets/2085958496/messages/9007199254741053"
+      "url": "https://3.basecampapi.com/195539477/buckets/2085958496/messages/9007199254741053"
     }
   },
   ...
@@ -63,7 +63,7 @@ Get comments
 ###### Copy as cURL
 
 ``` shell
-curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecamp.com/$ACCOUNT_ID/buckets/1/recordings/3/comments.json
+curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/recordings/3/comments.json
 ```
 
 
@@ -80,7 +80,7 @@ Get a comment
   "created_at": "2016-01-27T11:31:31.734-06:00",
   "updated_at": "2016-01-27T11:31:31.734-06:00",
   "status": "active",
-  "url": "https://3.basecamp.com/195539477/buckets/2085958496/comments/9007199254741054",
+  "url": "https://3.basecampapi.com/195539477/buckets/2085958496/comments/9007199254741054",
   "content_html": "Yeah! Great job everyone! Super excited to get going!",
   "content_text": "Yeah! Great job everyone! Super excited to get going!",
   "type": "Comment",
@@ -104,7 +104,7 @@ Get a comment
   "parent": {
     "id": 9007199254741052,
     "title": "We won Leto!",
-    "url": "https://3.basecamp.com/195539477/buckets/2085958496/messages/9007199254741053"
+    "url": "https://3.basecampapi.com/195539477/buckets/2085958496/messages/9007199254741053"
   }
 }
 ```
@@ -112,7 +112,7 @@ Get a comment
 ###### Copy as cURL
 
 ``` shell
-curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecamp.com/$ACCOUNT_ID/buckets/1/comment/2.json
+curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/comment/2.json
 ```
 
 
@@ -140,7 +140,7 @@ This endpoint will return `201 Created` with the current JSON representation of 
 ``` shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" \
   -d '{"content_html":"<div><em>Wow!</em> That is cool.</div>"}' \
-  https://3.basecamp.com/$ACCOUNT_ID/buckets/1/recordings/3/comments.json
+  https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/recordings/3/comments.json
 ```
 
 
@@ -164,7 +164,7 @@ This endpoint will return `200 OK` with the current JSON representation of the m
 ``` shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" \
   -d '{"content_html":"<div><em>No way!</em> That isn't cool at all.</div>"}' -X PUT \
-  https://3.basecamp.com/$ACCOUNT_ID/buckets/1/messages/2.json
+  https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/messages/2.json
 ```
 
 
