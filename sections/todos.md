@@ -151,10 +151,10 @@ Create a to-do
 _Optional parameters_:
 
 * `description_html` - containing information about the to-do. See our [Rich content][3] guide for what HTML tags allowed.
-* `assignees` - an array of people that will be assigned to this to-do. Please see the [Get people][] endpoints to retrieve them.
-* `notify` - when set to `true`, will notify the assignees about being assigned
-* `due_on` - a date when the to-do should be completed
-* `starts_on` - allows the to-do to run from this date to the `due_on` date
+* `assignee_ids` - an array of people that will be assigned to this to-do. Please see the [Get people]() endpoints to retrieve them.
+* `notify` - when set to `true`, will notify the assignees about being assigned.
+* `due_on` - a date when the to-do should be completed.
+* `starts_on` - allows the to-do to run from this date to the `due_on` date.
 
 This endpoint will return `201 Created` with the current JSON representation of the to-do if the creation was a success. See the [Get a to-do](#get-a-to-do) endpoint for more info on the payload.
 
