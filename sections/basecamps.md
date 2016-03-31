@@ -32,7 +32,6 @@ Get Basecamps
     "description": "Laptop product launch.",
     "bookmarked": false,
     "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7CEkiCGdpZAY6BkVUSSIrZ2lkOi8vYmMzL0J1Y2tldC8yMDg1OTU4NDk4P2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg1yZWFkYWJsZQY7AFRJIg9leHBpcmVzX2F0BjsAVDA=--c8e1a465de900eb9864fa79ae2f30345be158f71",
-    "vault_url": "https://3.basecampapi.com/195539477/buckets/2085958498/vaults/9007199254741442",
     "dock": [
       {
         "id": 9007199254741432,
@@ -120,7 +119,6 @@ The `dock` key contains an array of the current tools for this Basecamp. The `en
   "description": "Annie's Stuff. Keep Out. 😁",
   "bookmarked": false,
   "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7CEkiCGdpZAY6BkVUSSIrZ2lkOi8vYmMzL0J1Y2tldC8yMDg1OTU4NDk1P2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg1yZWFkYWJsZQY7AFRJIg9leHBpcmVzX2F0BjsAVDA=--06a5145963152c63ea56090695ec59e6d83fb21a",
-  "vault_url": "https://3.basecampapi.com/195539477/buckets/2085958495/vaults/9007199254741021",
   "dock": [
     {
       "id": 9007199254741012,
