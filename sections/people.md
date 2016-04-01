@@ -5,13 +5,14 @@ Endpoints:
 
 - [Get all people](#get-all-people)
 - [Get people on a Basecamp](#get-people-on-a-basecamp)
+- [Get pingable people](#get-pingable-people)
 - [Get person](#get-person)
-- [Get my profile](#get-my-profile)
+- [Get my personal info](#get-my-personal-info)
 
 Get all people
 --------------
 
-* `GET /people.json` will return all active people on this account visible to the current user.
+* `GET /people.json` will return all people on this account visible to the current user. This includes clients and people who may have been removed from the account.
 
 ###### Example JSON Response
 
@@ -45,7 +46,7 @@ curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCO
 
 
 Get people on a Basecamp
-----------------------
+------------------------
 
 * `GET /projects/1/people.json` will return all active people on the Basecamp with the given ID.
 
@@ -55,6 +56,19 @@ See the [Get all people](#get-all-people) endpoint for an example of the JSON re
 
 ``` shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/projects/1/people.json
+```
+
+Get pingable people
+-------------------
+
+* `GET /circles/people.json` will return all people on this Basecamp account who can be pinged.
+
+See the [Get all people](#get-all-people) endpoint for an example of the JSON response.
+
+###### Copy as cURL
+
+``` shell
+curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/circles/people.json
 ```
 
 
@@ -91,10 +105,10 @@ curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCO
 ```
 
 
-Get my profile
---------------
+Get my personal info
+--------------------
 
-* `GET /my/profile.json` will return the current user's profile.
+* `GET /my/profile.json` will return the current user's personal info.
 
 See the [Get person](#get-person) endpoint for an example of the JSON response.
 

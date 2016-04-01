@@ -175,8 +175,9 @@ API ready for use
 | [PUT /buckets/1/recordings/2/status/trashed.json](https://github.com/basecamp/bc3-api/blob/master/sections/recordings.md#trash-a-recording) | Trash a recording        |
 | [GET /people.json](https://github.com/basecamp/bc3-api/blob/master/sections/people.md#get-all-people)                                       | Get all people           |
 | [GET /projects/1/people.json](https://github.com/basecamp/bc3-api/blob/master/sections/people.md#get-people-on-a-basecamp)                  | Get people on a Basecamp |
+| [GET /circles/people.json](https://github.com/basecamp/bc3-api/blob/master/sections/people.md#get-pingable-people)                          | Get pingable people      |
 | [GET /people/2.json](https://github.com/basecamp/bc3-api/blob/master/sections/people.md#get-person)                                         | Get person               |
-| [GET /my/profile.json](https://github.com/basecamp/bc3-api/blob/master/sections/people.md#get-my-profile)                                   | Get my profile           |
+| [GET /my/profile.json](https://github.com/basecamp/bc3-api/blob/master/sections/people.md#get-my-personal-info)                             | Get my personal info     |
 | [GET /buckets/1/message_boards/2.json](https://github.com/basecamp/bc3-api/blob/master/sections/message_boards.md#get-message-board)        | Get message board        |
 | [GET /buckets/1/message_boards/3/messages.json](https://github.com/basecamp/bc3-api/blob/master/sections/messages.md#get-messages)          | Get messages             |
 | [GET /buckets/1/messages/2.json](https://github.com/basecamp/bc3-api/blob/master/sections/messages.md#get-a-message)                        | Get a message            |
