@@ -20,7 +20,7 @@ What's different?
 
 If you've used a previous version of the Basecamp API, you will need to adapt your integration code. Here's a quick summary of changes:
 
-- "Projects" are now [Basecamps][1].
+- "Projects" are now Basecamps.
 - We're requiring OAuth for [authentication](#authentication). No more Basic auth.
 - All requests must end in `.json`
 - Many IDs are numeric, but many are now [Signed Global IDs (SGIDs)](https://github.com/rails/globalid#signed-global-ids), also known as "Squids"
