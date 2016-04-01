@@ -88,10 +88,12 @@ Get Basecamps
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/projects.json
 ```
 
+
 Get archived Basecamps
 ----------------------
 
 * `GET /projects/archive.json` will return all archived Basecamps visible to the current user.
+
 
 Get trashed Basecamps
 ---------------------
