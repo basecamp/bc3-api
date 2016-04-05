@@ -7,6 +7,9 @@ Endpoints:
 - [Get a to-do](#get-a-to-do)
 - [Create a to-do](#create-a-to-do)
 - [Update a to-do](#update-a-to-do)
+- [Complete a to-do](#complete-a-to-do)
+- [Uncomplete a to-do](#uncomplete-a-to-do)
+- [Move a to-do](#move-a-to-do)
 - [Trash a to-do][1]
 
 Get to-dos
@@ -201,6 +204,62 @@ This endpoint will return `200 OK` with the current JSON representation of the t
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" \
   -d '{"name":"Whiteboard it","description_html":"<div><strong>Maybe plan it out first.</strong></div>"}' -X PUT \
   https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/todos/2.json
+```
+
+
+Complete a to-do
+----------------
+
+* `POST /buckets/1/todos/2/completion.json` will mark the to-do with an ID of `2` in the Basecamp with ID `1` as completed.
+
+This endpoint will return `204 No Content` if successful. No parameters are required.
+
+###### Copy as cURL
+
+``` shell
+curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" -X POST \
+  https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/todos/2/completion.json
+```
+
+
+Uncomplete a to-do
+------------------
+
+* `DELETE /buckets/1/todos/2/completion.json` will mark the to-do with an ID of `2` in the Basecamp with ID `1` as uncompleted.
+
+This endpoint will return `204 No Content` if successful. No parameters are required.
+
+###### Copy as cURL
+
+``` shell
+curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" -X DELETE \
+  https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/todos/2/completion.json
+```
+
+
+Move a to-do
+------------
+
+* `PUT /buckets/1/todos/2/position.json` allows changing the position of the to-do with an ID of `2` in the Basecamp with ID `1`.
+
+**Required parameters**: `position` greater than or equal to one.
+
+This endpoint will return `204 No Content` if the update was a success.
+
+###### Example JSON Request
+
+``` json
+{
+  "position": 3
+}
+```
+
+###### Copy as cURL
+
+``` shell
+curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" \
+  -d '{"position":3}' -X PUT \
+  https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/todos/2/position.json
 ```
 
 
