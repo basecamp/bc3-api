@@ -3,7 +3,7 @@ To-dos
 
 Endpoints:
 
-- [Get to-dos](#get-to-do)
+- [Get to-dos](#get-to-dos)
 - [Get a to-do](#get-a-to-do)
 - [Create a to-do](#create-a-to-do)
 - [Update a to-do](#update-a-to-do)
