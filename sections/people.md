@@ -65,6 +65,8 @@ Get pingable people
 
 See the [Get all people](#get-all-people) endpoint for an example of the JSON response.
 
+**Note:** This endpoint is currently not paginated.
+
 ###### Copy as cURL
 
 ``` shell
