@@ -9,7 +9,7 @@ Endpoints:
 - [Update a to-do](#update-a-to-do)
 - [Complete a to-do](#complete-a-to-do)
 - [Uncomplete a to-do](#uncomplete-a-to-do)
-- [Move a to-do](#move-a-to-do)
+- [Reposition a to-do](#move-a-to-do)
 - [Trash a to-do][1]
 
 Get to-dos
@@ -237,8 +237,8 @@ curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/j
 ```
 
 
-Move a to-do
-------------
+Reposition a to-do
+------------------
 
 * `PUT /buckets/1/todos/2/position.json` allows changing the position of the to-do with an ID of `2` in the Basecamp with ID `1`.
 
