@@ -196,6 +196,9 @@ API ready for use
 | [GET /buckets/1/todos/2.json](https://github.com/basecamp/bc3-api/blob/master/sections/todos.md#get-a-to-do)                                | Get a to-do              |
 | [POST /buckets/1/todolists/3/todos.json](https://github.com/basecamp/bc3-api/blob/master/sections/todos.md#create-a-to-do)                  | Create a to-do           |
 | [PUT /buckets/1/todos/2.json](https://github.com/basecamp/bc3-api/blob/master/sections/todos.md#update-a-to-do)                             | Update a to-do           |
+| [POST /buckets/1/todos/2/completion.json](https://github.com/basecamp/bc3-api/blob/master/sections/todos.md#complete-a-to-do)               | Complete a to-do         |
+| [DELETE /buckets/1/todos/2/completion.json](https://github.com/basecamp/bc3-api/blob/master/sections/todos.md#uncomplete-a-to-do)           | Uncomplete a to-do       |
+| [PUT /buckets/1/todos/2/position.json](https://github.com/basecamp/bc3-api/blob/master/sections/todos.md#reposition-a-to-do)                | Reposition a to-do       |
 
 
 Conduct
