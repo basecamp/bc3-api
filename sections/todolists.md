@@ -16,6 +16,10 @@ Get to-do lists
 
 To get the to-do set ID for a Basecamp, see the [Get to-do set][3] endpoint.
 
+_Optional query parameters_:
+
+* `status` - when set to `archived` or `trashed`, will return archived or trashed to-do lists that are in this to-do set.
+
 ###### Example JSON Response
 
 ``` json
