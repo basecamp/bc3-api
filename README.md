@@ -30,7 +30,7 @@ If you've used a previous version of the Basecamp API, you will need to adapt yo
 Making a request
 ----------------
 
-All URLs start with `https://3.basecampapi.com/999999999/`. **HTTPS only**. The path is prefixed with the account ID, but no `/api/v1` API prefix.
+All URLs start with **`https://3.basecampapi.com/999999999/`**. HTTPS only. The path is prefixed with the account ID, but no `/api/v1` API prefix. Also note the different domain!
 
 To make a request for all the projects on your account, you'd append the projects index path to the base url to form something like https://3.basecampapi.com/999999999/projects.json. In cURL, that looks like:
 
