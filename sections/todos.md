@@ -17,6 +17,11 @@ Get to-dos
 
 * `GET /buckets/1/todolists/3/todos.json` will return a [paginated list][2] of active to-dos in the Basecamp with an ID of `1` and the to-do list with ID of `3`.
 
+_Optional query parameters_:
+
+* `status` - when set to `archived` or `trashed`, will return archived or trashed to-dos that are in this list
+* `completed` - when set to `true`, will only return to-dos that were completed. Can be combined with the `status` parameter too.
+
 ###### Example JSON Response
 
 ``` json
