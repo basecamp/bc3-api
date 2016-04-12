@@ -91,7 +91,7 @@ You'll receive a `415 Unsupported Media Type` response code if you attempt to us
 Pagination
 ----------
 
-Most collection APIs paginate their results. The first request returns up to 50 records. The Basecamp 3 API follows the [RFC5988 convention](https://tools.ietf.org/html/rfc5988) of using the `Link` header to provide URLs for the `first`, `next`, `prev`, and `last` pages. Follow these URLs to retreive the next page of data, and please don't build the pagination URLs yourself! Here's an example from the [Messages API][2] for requesting the third page (of 50) when 300 are available:
+Most collection APIs paginate their results. The first request returns up to 50 records. The Basecamp 3 API follows the [RFC5988 convention](https://tools.ietf.org/html/rfc5988) of using the `Link` header to provide URLs for the `next` page. Follow this URLs to retrieve the next page of data, and please don't build the pagination URLs yourself! Here's an example from the [Messages API][2] for requesting the third page (of 50) when 300 are available:
 
 ```
 <https://3.basecampapi.com/195539477/buckets/2085958496/messages.json?page=4>; rel="next"
