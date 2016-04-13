@@ -77,7 +77,7 @@ Get a to-do list
 
 * `GET /buckets/1/todolists/2.json` will return the to-do list with an ID of `2` in the Basecamp with an ID of `1`.
 
-Each to-do list payload includes the first 10 to-dos in the `todos` key. To retrieve more, see the [Get to-dos][4] endpoint. Nesting under the to-do set resource is not necessary for this endpoint.
+Note: Nesting under the to-do set resource is not necessary for this endpoint.
 
 ###### Example JSON Response
 
