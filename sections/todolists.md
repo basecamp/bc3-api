@@ -7,14 +7,14 @@ Endpoints:
 - [Get a to-do list](#get-a-to-do-list)
 - [Create a to-do list](#create-a-to-do-list)
 - [Update a to-do list](#update-a-to-do-list)
-- [Trash a to-do list][1]
+- [Trash a to-do list][trash]
 
 Get to-do lists
 ---------------
 
-* `GET /buckets/1/todosets/3/todolists.json` will return a [paginated list][2] of active to-do lists in the Basecamp with an ID of `1` and the to-do set with ID of `3`.
+* `GET /buckets/1/todosets/3/todolists.json` will return a [paginated list][pagination] of active to-do lists in the Basecamp with an ID of `1` and the to-do set with ID of `3`.
 
-To get the to-do set ID for a Basecamp, see the [Get to-do set][3] endpoint.
+To get the to-do set ID for a Basecamp, see the [Get to-do set][todoset] endpoint.
 
 _Optional query parameters_:
 
@@ -135,7 +135,7 @@ Create a to-do list
 
 **Required parameters**: `name` of the to-do list.
 
-_Optional parameters_: `description_html` containing information about the to-do list. See our [Rich content][4] guide for what HTML tags are allowed.
+_Optional parameters_: `description_html` containing information about the to-do list. See our [Rich content][rich] guide for what HTML tags are allowed.
 
 This endpoint will return `201 Created` with the current JSON representation of the to-do list if the creation was a success. See the [Get a to-do list](#get-a-to-do-list) endpoint for more info on the payload.
 
@@ -184,8 +184,8 @@ curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/j
 ```
 
 
-[1]: https://github.com/basecamp/bc3-api/blob/master/sections/recordings.md#trash-a-recording
-[2]: https://github.com/basecamp/bc3-api/blob/master/README.md#pagination
-[3]: https://github.com/basecamp/bc3-api/blob/master/sections/todosets.md#get-to-do-set
-[4]: https://github.com/basecamp/bc3-api/blob/master/sections/todos.md#to-dos
-[5]: https://github.com/basecamp/bc3-api/blob/master/README.md#rich-content
+[trash]: https://github.com/basecamp/bc3-api/blob/master/sections/recordings.md#trash-a-recording
+[pagination]: https://github.com/basecamp/bc3-api/blob/master/README.md#pagination
+[todoset]: https://github.com/basecamp/bc3-api/blob/master/sections/todosets.md#get-to-do-set
+[todos]: https://github.com/basecamp/bc3-api/blob/master/sections/todos.md#to-dos
+[rich]: https://github.com/basecamp/bc3-api/blob/master/README.md#rich-content
