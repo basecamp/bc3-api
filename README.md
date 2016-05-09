@@ -7,7 +7,7 @@ If you have a specific feature request or if you found a bug, [please open a Git
 
 To talk with us and other developers about the API, [post a question on StackOverflow](http://stackoverflow.com/questions/ask) tagged `basecamp` or [open a support ticket](https://basecamp.com/support) if you need help from us directly.
 
-**Please note:** During this early access period (while this repo is private), please hold on with announcing your API integration publicly. Once we're fully public you can go for it. If you have questions about this please [email Nick](mailto:nick@basecamp.com).
+**Please note:** During this early access period (while this repo is private), please hold on with announcing your API integration publicly. Once we're fully public you can go for it.
 
 Compatibility with previous Basecamp APIs
 -----------------------------------------
