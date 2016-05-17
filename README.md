@@ -58,7 +58,7 @@ export ACCOUNT_ID=999999999
 Then you should be able to easily copy + paste any example from our docs. After pasting a cURL example, you could pipe it to a JSON pretty printer to make it a little more readable. Try [jsonpp](https://jmhodges.github.io/jsonpp/) or `json_pp` on OSX:
 
 ``` shell
-curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/195539477/projects.json | json_pp
+curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/999999999/projects.json | json_pp
 ```
 
 Authentication
@@ -94,7 +94,7 @@ Pagination
 Most collection APIs paginate their results. The first request returns up to 50 records. The Basecamp 3 API follows the [RFC5988 convention](https://tools.ietf.org/html/rfc5988) of using the `Link` header to provide URLs for the `next` page. Follow this URLs to retrieve the next page of data, and please don't build the pagination URLs yourself! Here's an example from the [Messages API][2] for requesting the third page (of 50) when 300 are available:
 
 ```
-<https://3.basecampapi.com/195539477/buckets/2085958496/messages.json?page=4>; rel="next"
+<https://3.basecampapi.com/999999999/buckets/2085958496/messages.json?page=4>; rel="next"
 ```
 
 Quick note: If the `Link` header is blank, and you have some results, then that's the only page of data! We also provide the `X-Total-Count` header, which displays the total amount of resources in the collection you are fetching.
