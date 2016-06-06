@@ -146,7 +146,7 @@ API endpoints
 
 | URL | Endpoint | Ready to use? |
 | :--- | :--- | :---: |
-| **[Basecamps](sections/basecamps.md#basecamps)** | ↓ | 👍 |
+| ▾ **[Basecamps](sections/basecamps.md#basecamps)** | | |
 | [GET /projects.json](sections/basecamps.md#get-basecamps) | Get Basecamps | 👍 |
 | [GET /projects/archive.json](sections/basecamps.md#get-archived-basecamps) | Get archived Basecamps | 👍 |
 | [GET /projects/trash.json](sections/basecamps.md#get-trashed-basecamps) | Get trashed Basecamps | 👍 |
@@ -154,41 +154,41 @@ API endpoints
 | [POST /projects.json](sections/basecamps.md#create-a-basecamp) | Create a Basecamp | 👍 |
 | [PUT /projects/1.json](sections/basecamps.md#update-a-basecamp) | Update a Basecamp | 👍 |
 | [DELETE /projects/1.json](sections/basecamps.md#trash-a-basecamp) | Trash a Basecamp | 👍 |
-| **[Comments](sections/comments.md#comments)** | ↓ | 👍 |
+| ▾ **[Comments](sections/comments.md#comments)** | | |
 | [GET /buckets/1/recordings/3/comments.json](sections/comments.md#get-comments) | Get comments | 👍 |
 | [GET /buckets/1/comments/2.json](sections/comments.md#get-a-comment) | Get a comment | 👍 |
 | [POST /buckets/1/recordings/3/comments.json](sections/comments.md#create-a-comment) | Create a comment | 👍 |
 | [PUT /buckets/1/comments/2.json](sections/comments.md#update-a-comment) | Update a comment | 👍 |
-| **[Messages](sections/messages.md#messages)** | ↓ | 👍|
+| ▾ **[Messages](sections/messages.md#messages)** | | |
 | [GET /buckets/1/messages/2.json](sections/messages.md#get-a-message) | Get a message | 👍 |
 | [POST /buckets/1/message_boards/3/messages.json](sections/messages.md#create-a-message) | Create a message | 👍 |
 | [PUT /buckets/1/messages/2.json](sections/messages.md#update-a-message) | Update a message | 👍 |
-| **[Message Boards](sections/message_boards.md#message-boards)** | ↓ | 👍|
+| ▾ **[Message Boards](sections/message_boards.md#message-boards)** | | |
 | [GET /buckets/1/message_boards/2.json](sections/message_boards.md#get-message-board) | Get message board | 👍|
 | [GET /buckets/1/message_boards/3/messages.json](sections/messages.md#get-messages) | Get messages | 👍|
-| **[People](sections/people.md#people)** | ↓ | 👍|
+| ▾ **[People](sections/people.md#people)** | | |
 | [GET /people.json](sections/people.md#get-all-people) | Get all people | 👍|
 | [GET /projects/1/people.json](sections/people.md#get-people-on-a-basecamp) | Get people on a Basecamp | 👍|
 | PUT | Update who can access a Basecamp | 🚧 |
 | [GET /circles/people.json](sections/people.md#get-pingable-people) | Get pingable people | 👍|
 | [GET /people/2.json](sections/people.md#get-person) | Get person | 👍|
 | [GET /my/profile.json](sections/people.md#get-my-personal-info) | Get my personal info | 👍|
-| **[Recordings](sections/recordings.md#recordings)** | ↓ | 👍|
+| ▾ **[Recordings](sections/recordings.md#recordings)** | | |
 | [PUT /buckets/1/recordings/2/status/trashed.json](sections/recordings.md#trash-a-recording) | Trash a recording | 👍|
-| **[Schedules](sections/schedules.md#schedules)** | ↓ | 👍|
+| ▾ **[Schedules](sections/schedules.md#schedules)** | | |
 | [GET /buckets/1/schedules/2.json](sections/schedules.md#get-schedule) | Get a schedule | 👍 |
-| **[Schedule Entries](schedule_entries.md#schedule-entries)** | ↓ | 👍|
+| ▾ **[Schedule Entries](schedule_entries.md#schedule-entries)** | | |
 | [GET /buckets/1/schedules/3/entries.json](sections/schedule_entries.md#get-schedule-entries) | Get schedule entries | 👍 |
 | [GET /buckets/1/schedule_entries/2.json](sections/schedule_entries.md#get-a-schedule-entry) | Get a schedule entry | 👍 |
 | [POST /buckets/1/schedules/3/entries.json](sections/schedule_entries.md#create-a-schedule-entry) | Create a schedule entry | 👍 |
 | [PUT /buckets/1/schedule_entries/2.json](sections/schedule_entries.md#update-a-schedule-entry) | Update a schedule entry | 👍 |
-| **[To-do sets](sections/todosets.md#to-do-sets)** | ↓ | 👍|
+| ▾ **[To-do sets](sections/todosets.md#to-do-sets)** | | |
 | [GET /buckets/1/todosets/2.json](sections/todosets.md#get-to-do-set) | Get to-do set | 👍|
-| **[To-do lists](sections/todolists.md#to-do-lists)** | ↓ | 👍|
+| ▾ **[To-do lists](sections/todolists.md#to-do-lists)** | | |
 | [GET /buckets/1/todolists/2.json](sections/todolists.md#get-a-to-do-list) | Get a to-do list | 👍|
 | [POST /buckets/1/todosets/3/todolists.json](sections/todolists.md#create-a-to-do-list) | Create a to-do list | 👍|
 | [PUT /buckets/1/todolists/2.json](sections/todolists.md#update-a-to-do-list) | Update a to-do list | 👍|
-| **[To-dos](sections/todos.md#to-dos)** | ↓ | 👍|
+| ▾ **[To-dos](sections/todos.md#to-dos)** | | |
 | [GET /buckets/1/todolists/3/todos.json](sections/todos.md#get-to-dos) | Get to-dos | 👍|
 | [GET /buckets/1/todos/2.json](sections/todos.md#get-a-to-do) | Get a to-do | 👍|
 | [POST /buckets/1/todolists/3/todos.json](sections/todos.md#create-a-to-do) | Create a to-do | 👍|
