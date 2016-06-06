@@ -203,6 +203,7 @@ API endpoints
 | **[Client Correspondences](sections/client_correspondences.md)** | - | 🚧|
 | **[Client Approvals](sections/client_approvals.md)** | - | 🚧|
 | **[Documents](sections/documents.md#documents)** | - | 🚧|
+| **[Events](sections/events.md#events)** | - | 🚧|
 | **[My](sections/my.md#my)** | - | 🚧|
 | **[Pings](sections/pings.md#pings)** | - | 🚧|
 | **[Uploads](sections/uploads.md#uploads)** | - | 🚧|
