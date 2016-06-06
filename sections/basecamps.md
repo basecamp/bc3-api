@@ -197,7 +197,7 @@ This will return `201 Created` with the current JSON representation of the Basec
 }
 ```
 
-If you hit that error, the user will need to upgrade their subscription to any plan, which all have unlimited Basecamps. After creating a Basecamp, you'll  want to [allow people to get in][1]. Or maybe, [add some to-dos][2]!
+If you hit that error, the user will need to upgrade their subscription to any plan, which all have unlimited Basecamps.
 
 ###### Copy as cURL
 
@@ -246,6 +246,3 @@ Trashed Basecamps will be deleted from Basecamp 3 after 30 days. No parameters r
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" -X DELETE \
   https://3.basecampapi.com/$ACCOUNT_ID/projects/2085958507.json
 ```
-
-[1]: https://github.com/basecamp/bc3-api/blob/master/sections/accesses.md#accesses
-[2]: https://github.com/basecamp/bc3-api/blob/master/sections/todos.md#todos
