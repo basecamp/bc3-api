@@ -75,7 +75,7 @@ Identify your app
 You must include a `User-Agent` header with the name of your application and a link to it or your email address so we can get in touch in case you're doing something wrong (so we may warn you before you're blacklisted) or something awesome (so we may congratulate you). Here's a couple of examples:
 
     User-Agent: Freshbooks (http://freshbooks.com/contact.php)
-    User-Agent: Fabian's Ingenious Integration (fabian@example.com) 
+    User-Agent: Fabian's Ingenious Integration (fabian@example.com)
 
 If you don't supply this header, you will get a `400 Bad Request` response.
 
@@ -131,7 +131,7 @@ You must make use of the HTTP freshness headers to speed up your app and lighten
 Handling errors
 ---------------
 
-If Basecamp is having trouble, you might see a 5xx error. `500` means that the app is entirely down, but you might also see `502 Bad Gateway`, `503 Service Unavailable`, or `504 Gateway Timeout`. It's your responsibility in all of these cases to retry your request later. 
+If Basecamp is having trouble, you might see a 5xx error. `500` means that the app is entirely down, but you might also see `502 Bad Gateway`, `503 Service Unavailable`, or `504 Gateway Timeout`. It's your responsibility in all of these cases to retry your request later.
 
 
 Rate limiting
@@ -141,65 +141,76 @@ You can perform up to 50 requests per 10 second period from the same IP address 
 
 We recommend baking 429 response handling in to your HTTP handling at a low level so your integration gracefully and automatically handles retries.
 
+API endpoints
+-------------
+
+| URL | Endpoint | Status |
+| :--- | :--- | :---: |
+| **[Basecamps](sections/basecamps.md#basecamps)** | ↓ | 👍 |
+| [GET /projects.json](sections/basecamps.md#get-basecamps) | Get Basecamps | 👍 |
+| [GET /projects/archive.json](sections/basecamps.md#get-archived-basecamps) | Get archived Basecamps | 👍 |
+| [GET /projects/trash.json](sections/basecamps.md#get-trashed-basecamps) | Get trashed Basecamps | 👍 |
+| [GET /projects/1.json](sections/basecamps.md#get-a-basecamp) | Get a Basecamp | 👍 |
+| [POST /projects.json](sections/basecamps.md#create-a-basecamp) | Create a Basecamp | 👍 |
+| [PUT /projects/1.json](sections/basecamps.md#update-a-basecamp) | Update a Basecamp | 👍 |
+| [DELETE /projects/1.json](sections/basecamps.md#trash-a-basecamp) | Trash a Basecamp | 👍 |
+| **[Comments](sections/comments.md#comments)** | ↓ | 👍 |
+| [GET /buckets/1/recordings/3/comments.json](sections/comments.md#get-comments) | Get comments | 👍 |
+| [GET /buckets/1/comments/2.json](sections/comments.md#get-a-comment) | Get a comment | 👍 |
+| [POST /buckets/1/recordings/3/comments.json](sections/comments.md#create-a-comment) | Create a comment | 👍 |
+| [PUT /buckets/1/comments/2.json](sections/comments.md#update-a-comment) | Update a comment | 👍 |
+| **[Messages](sections/messages.md#messages)** | ↓ | 👍|
+| [GET /buckets/1/messages/2.json](sections/messages.md#get-a-message) | Get a message | 👍 |
+| [POST /buckets/1/message_boards/3/messages.json](sections/messages.md#create-a-message) | Create a message | 👍 |
+| [PUT /buckets/1/messages/2.json](sections/messages.md#update-a-message) | Update a message | 👍 |
+| **[Message Boards](sections/message_boards.md#message-boards)** | ↓ | 👍|
+| [GET /buckets/1/message_boards/2.json](sections/message_boards.md#get-message-board) | Get message board | 👍|
+| [GET /buckets/1/message_boards/3/messages.json](sections/messages.md#get-messages) | Get messages | 👍|
+| **[People](sections/people.md#people)** | ↓ | 👍|
+| [GET /people.json](sections/people.md#get-all-people) | Get all people | 👍|
+| [GET /projects/1/people.json](sections/people.md#get-people-on-a-basecamp) | Get people on a Basecamp | 👍|
+| [GET /circles/people.json](sections/people.md#get-pingable-people) | Get pingable people | 👍|
+| [GET /people/2.json](sections/people.md#get-person) | Get person | 👍|
+| [GET /my/profile.json](sections/people.md#get-my-personal-info) | Get my personal info | 👍|
+| **[Recordings](sections/recordings.md#recordings)** | ↓ | 👍|
+| [PUT /buckets/1/recordings/2/status/trashed.json](sections/recordings.md#trash-a-recording) | Trash a recording | 👍|
+| **[Schedules](sections/schedules.md#schedules)** | ↓ | 👍|
+| [GET /buckets/1/schedules/2.json](sections/schedules.md#get-schedule) | Get a schedule | 👍 |
+| **[Schedule Entries](schedule_entries.md#schedule-entries)** | ↓ | 👍|
+| [GET /buckets/1/schedules/3/entries.json](sections/schedule_entries.md#get-schedule-entries) | Get schedule entries | 👍 |
+| [GET /buckets/1/schedule_entries/2.json](sections/schedule_entries.md#get-a-schedule-entry) | Get a schedule entry | 👍 |
+| [POST /buckets/1/schedules/3/entries.json](sections/schedule_entries.md#create-a-schedule-entry) | Create a schedule entry | 👍 |
+| [PUT /buckets/1/schedule_entries/2.json](sections/schedule_entries.md#update-a-schedule-entry) | Update a schedule entry | 👍 |
+| **[To-do sets](sections/todosets.md#to-do-sets)** | ↓ | 👍|
+| [GET /buckets/1/todosets/2.json](sections/todosets.md#get-to-do-set) | Get to-do set | 👍|
+| **[To-do lists](sections/todolists.md#to-do-lists)** | ↓ | 👍|
+| [GET /buckets/1/todolists/2.json](sections/todolists.md#get-a-to-do-list) | Get a to-do list | 👍|
+| [POST /buckets/1/todosets/3/todolists.json](sections/todolists.md#create-a-to-do-list) | Create a to-do list | 👍|
+| [PUT /buckets/1/todolists/2.json](sections/todolists.md#update-a-to-do-list) | Update a to-do list | 👍|
+| **[To-dos](sections/todos.md#to-dos)** | ↓ | 👍|
+| [GET /buckets/1/todolists/3/todos.json](sections/todos.md#get-to-dos) | Get to-dos | 👍|
+| [GET /buckets/1/todos/2.json](sections/todos.md#get-a-to-do) | Get a to-do | 👍|
+| [POST /buckets/1/todolists/3/todos.json](sections/todos.md#create-a-to-do) | Create a to-do | 👍|
+| [PUT /buckets/1/todos/2.json](sections/todos.md#update-a-to-do) | Update a to-do | 👍|
+| [POST /buckets/1/todos/2/completion.json](sections/todos.md#complete-a-to-do) | Complete a to-do | 👍|
+| [DELETE /buckets/1/todos/2/completion.json](sections/todos.md#uncomplete-a-to-do) | Uncomplete a to-do | 👍|
+| [PUT /buckets/1/todos/2/position.json](sections/todos.md#reposition-a-to-do) | Reposition a to-do | 👍|
+| **[Attachments](sections/attachments.md#attachments)** | - | 🚧|
+| **[Automatic Check-ins](sections/automatic_check-ins.md)** | - | 🚧|
+| **[Bookmarks](sections/bookmarks.md#bookmarks)** | - | 🚧|
+| **[Campfires](sections/campfires.md#campfires)** | - | 🚧|
+| **[Client Correspondences](sections/client_correspondences.md)** | - | 🚧|
+| **[Client Approvals](sections/client_approvals.md)** | - | 🚧|
+| **[Documents](sections/documents.md#documents)** | - | 🚧|
+| **[My](sections/my.md#my)** | - | 🚧|
+| **[Pings](sections/pings.md#pings)** | - | 🚧|
+| **[Uploads](sections/uploads.md#uploads)** | - | 🚧|
+| **[Vaults](sections/vaults.md#vaults)** | - | 🚧|
 
 API libraries
 -------------
 
 If you've got an API library for Basecamp 3, just [open a Pull Request](https://github.com/basecamp/bc3-api/compare) and let us know! We'd be happy to add it here.
-
-
-API ready for use
------------------
-
-* [Basecamps](https://github.com/basecamp/bc3-api/blob/master/sections/basecamps.md#basecamps)
-* [Recordings](https://github.com/basecamp/bc3-api/blob/master/sections/recordings.md#recordings)
-* [People](https://github.com/basecamp/bc3-api/blob/master/sections/people.md#people)
-* [Message Boards](https://github.com/basecamp/bc3-api/blob/master/sections/message_boards.md#message-boards)
-* [Messages](https://github.com/basecamp/bc3-api/blob/master/sections/messages.md#messages)
-* [Comments](https://github.com/basecamp/bc3-api/blob/master/sections/comments.md#comments)
-* [To-do sets](https://github.com/basecamp/bc3-api/blob/master/sections/todosets.md#to-do-sets)
-* [To-do lists](https://github.com/basecamp/bc3-api/blob/master/sections/todolists.md#to-do-lists)
-* [To-dos](https://github.com/basecamp/bc3-api/blob/master/sections/todos.md#to-dos)
-
-### Endpoints
-
-| URL                                                                                                                                         | Endpoint                 |
-|---------------------------------------------------------------------------------------------------------------------------------------------|--------------------------|
-| [GET /projects.json](https://github.com/basecamp/bc3-api/blob/master/sections/basecamps.md#get-basecamps)                                   | Get Basecamps            |
-| [GET /projects/archive.json](https://github.com/basecamp/bc3-api/blob/master/sections/basecamps.md#get-archived-basecamps)                  | Get archived Basecamps   |
-| [GET /projects/trash.json](https://github.com/basecamp/bc3-api/blob/master/sections/basecamps.md#get-trashed-basecamps)                     | Get trashed Basecamps    |
-| [GET /projects/1.json](https://github.com/basecamp/bc3-api/blob/master/sections/basecamps.md#get-a-basecamp)                                | Get a Basecamp           |
-| [POST /projects.json](https://github.com/basecamp/bc3-api/blob/master/sections/basecamps.md#create-a-basecamp)                              | Create a Basecamp        |
-| [PUT /projects/1.json](https://github.com/basecamp/bc3-api/blob/master/sections/basecamps.md#update-a-basecamp)                             | Update a Basecamp        |
-| [DELETE /projects/1.json](https://github.com/basecamp/bc3-api/blob/master/sections/basecamps.md#trash-a-basecamp)                           | Trash a Basecamp         |
-| [PUT /buckets/1/recordings/2/status/trashed.json](https://github.com/basecamp/bc3-api/blob/master/sections/recordings.md#trash-a-recording) | Trash a recording        |
-| [GET /people.json](https://github.com/basecamp/bc3-api/blob/master/sections/people.md#get-all-people)                                       | Get all people           |
-| [GET /projects/1/people.json](https://github.com/basecamp/bc3-api/blob/master/sections/people.md#get-people-on-a-basecamp)                  | Get people on a Basecamp |
-| [GET /circles/people.json](https://github.com/basecamp/bc3-api/blob/master/sections/people.md#get-pingable-people)                          | Get pingable people      |
-| [GET /people/2.json](https://github.com/basecamp/bc3-api/blob/master/sections/people.md#get-person)                                         | Get person               |
-| [GET /my/profile.json](https://github.com/basecamp/bc3-api/blob/master/sections/people.md#get-my-personal-info)                             | Get my personal info     |
-| [GET /buckets/1/message_boards/2.json](https://github.com/basecamp/bc3-api/blob/master/sections/message_boards.md#get-message-board)        | Get message board        |
-| [GET /buckets/1/message_boards/3/messages.json](https://github.com/basecamp/bc3-api/blob/master/sections/messages.md#get-messages)          | Get messages             |
-| [GET /buckets/1/messages/2.json](https://github.com/basecamp/bc3-api/blob/master/sections/messages.md#get-a-message)                        | Get a message            |
-| [POST /buckets/1/message_boards/3/messages.json](https://github.com/basecamp/bc3-api/blob/master/sections/messages.md#create-a-message)     | Create a message         |
-| [PUT /buckets/1/messages/2.json](https://github.com/basecamp/bc3-api/blob/master/sections/messages.md#update-a-message)                     | Update a message         |
-| [GET /buckets/1/recordings/3/comments.json](https://github.com/basecamp/bc3-api/blob/master/sections/comments.md#get-comments)              | Get comments             |
-| [GET /buckets/1/comments/2.json](https://github.com/basecamp/bc3-api/blob/master/sections/comments.md#get-a-comment)                        | Get a comment            |
-| [POST /buckets/1/recordings/3/comments.json](https://github.com/basecamp/bc3-api/blob/master/sections/comments.md#create-a-comment)         | Create a comment         |
-| [PUT /buckets/1/comments/2.json](https://github.com/basecamp/bc3-api/blob/master/sections/comments.md#update-a-comment)                     | Update a comment         |
-| [GET /buckets/1/todosets/2.json](https://github.com/basecamp/bc3-api/blob/master/sections/todosets.md#get-to-do-set)                        | Get to-do set            |
-| [GET /buckets/1/todosets/3/todolists.json](https://github.com/basecamp/bc3-api/blob/master/sections/todolists.md#get-to-do-lists)           | Get to-do lists          |
-| [GET /buckets/1/todolists/2.json](https://github.com/basecamp/bc3-api/blob/master/sections/todolists.md#get-a-to-do-list)                   | Get a to-do list         |
-| [POST /buckets/1/todosets/3/todolists.json](https://github.com/basecamp/bc3-api/blob/master/sections/todolists.md#create-a-to-do-list)      | Create a to-do list      |
-| [PUT /buckets/1/todolists/2.json](https://github.com/basecamp/bc3-api/blob/master/sections/todolists.md#update-a-to-do-list)                | Update a to-do list      |
-| [GET /buckets/1/todolists/3/todos.json](https://github.com/basecamp/bc3-api/blob/master/sections/todos.md#get-to-dos)                       | Get to-dos               |
-| [GET /buckets/1/todos/2.json](https://github.com/basecamp/bc3-api/blob/master/sections/todos.md#get-a-to-do)                                | Get a to-do              |
-| [POST /buckets/1/todolists/3/todos.json](https://github.com/basecamp/bc3-api/blob/master/sections/todos.md#create-a-to-do)                  | Create a to-do           |
-| [PUT /buckets/1/todos/2.json](https://github.com/basecamp/bc3-api/blob/master/sections/todos.md#update-a-to-do)                             | Update a to-do           |
-| [POST /buckets/1/todos/2/completion.json](https://github.com/basecamp/bc3-api/blob/master/sections/todos.md#complete-a-to-do)               | Complete a to-do         |
-| [DELETE /buckets/1/todos/2/completion.json](https://github.com/basecamp/bc3-api/blob/master/sections/todos.md#uncomplete-a-to-do)           | Uncomplete a to-do       |
-| [PUT /buckets/1/todos/2/position.json](https://github.com/basecamp/bc3-api/blob/master/sections/todos.md#reposition-a-to-do)                | Reposition a to-do       |
-
 
 Conduct
 -------
