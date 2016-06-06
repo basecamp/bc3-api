@@ -144,7 +144,7 @@ We recommend baking 429 response handling in to your HTTP handling at a low leve
 API endpoints
 -------------
 
-| URL | Endpoint | Status |
+| URL | Endpoint | Ready to use? |
 | :--- | :--- | :---: |
 | **[Basecamps](sections/basecamps.md#basecamps)** | ↓ | 👍 |
 | [GET /projects.json](sections/basecamps.md#get-basecamps) | Get Basecamps | 👍 |
