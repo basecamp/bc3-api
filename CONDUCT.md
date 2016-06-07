@@ -67,7 +67,7 @@ members of the project's leadership.
 
 ## Project Maintainers
 
-* Nick Quaranto <<nick@basecamp.com>>
+* Javan Makhmali <<javan@basecamp.com>>
 
 ## Attribution
 
