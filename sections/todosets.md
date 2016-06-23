@@ -17,38 +17,51 @@ Get to-do set
 To get the to-do set ID for a Basecamp, see the [Get a Basecamp][1] endpoint's `dock` payload. To retrieve its to-do lists, see the [Get to-do lists][2] endpoint.
 
 ###### Example JSON Response
-
-``` json
+<!-- START GET /buckets/1/todosets/2.json -->
+```json
 {
-  "id": 9007199254741044,
-  "created_at": "2016-01-27T11:00:28.483-06:00",
-  "updated_at": "2016-03-16T12:14:01.288-05:00",
+  "id": 9007199254741435,
   "status": "active",
-  "url": "https://3.basecampapi.com/195539477/buckets/2085958496/todosets/9007199254741045",
-  "name": "To-dos",
-  "todolists_count": 4,
-  "todolists_url": "https://3.basecampapi.com/195539477/buckets/2085958496/todosets/9007199254741044/todolists.json",
+  "created_at": "2016-06-22T16:39:25.570-05:00",
+  "updated_at": "2016-06-22T16:40:03.928-05:00",
+  "bucket_path": "/195539477/buckets/2085958498",
   "type": "Todoset",
+  "comments_count": 0,
+  "url": "https://3.basecampapi.com/195539477/buckets/2085958498/todosets/9007199254741435.json",
+  "app_url": "https://3.basecamp.com/195539477/buckets/2085958498/todosets/9007199254741435",
   "creator": {
-    "id": 1007299144,
+    "id": 1007299143,
     "name": "Victor Cooper",
     "email_address": "victor@honchodesign.com",
-    "avatar_url": "https://3.basecamp-assets.com/195539477/people/BAhpBEgqCjw=--8266bb0507508f3d46050d57b65924d5e2a005f3/avatar-64-x4"
+    "personable_type": "User",
+    "title": null,
+    "created_at": "2016-06-22T16:37:56.840-05:00",
+    "updated_at": "2016-06-22T16:38:02.871-05:00",
+    "admin": true,
+    "owner": true,
+    "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBEcqCjw=--c632b967cec296b87363a697a67a87f9cc1e5b45/avatar-64-x4",
+    "company": {
+      "id": 1033447817,
+      "name": "Honcho Design"
+    }
   },
   "bucket": {
-    "id": 1042979250,
-    "account_id": 31989850,
-    "name": "Honcho Design Newsroom",
-    "description": "Let's talk about the company!",
-    "created_at": "2015-10-27T12:00:28.313-05:00",
-    "updated_at": "2015-10-27T12:00:28.313-05:00",
-    "creator_id": 1007299144,
+    "id": 1042979252,
+    "account_id": 1009501286,
+    "name": "The Leto Laptop",
+    "description": "Laptop product launch.",
+    "created_at": "2016-05-28T16:39:25.413-05:00",
+    "updated_at": "2016-05-28T16:39:25.413-05:00",
+    "creator_id": 1007299143,
     "client_company_id": null
   },
-  "bucket_path": "/195539477/buckets/2085958496"
+  "name": "To-dos",
+  "todolists_count": 10,
+  "todolists_url": "https://3.basecampapi.com/195539477/buckets/2085958498/todosets/9007199254741435/todolists.json",
+  "app_todoslists_url": "https://3.basecamp.com/195539477/buckets/2085958498/todosets/9007199254741435/todolists"
 }
 ```
-
+<!-- END GET /buckets/1/todosets/2.json -->
 ###### Copy as cURL
 
 ``` shell

@@ -21,79 +21,81 @@ _Optional query parameters_:
 * `status` - when set to `archived` or `trashed`, will return archived or trashed schedule entries that are in this schedule.
 
 ###### Example JSON Response
-
-``` json
+<!-- START GET /buckets/1/schedules/3/entries.json -->
+```json
 [
   {
-    "id": 9007199254741764,
-    "created_at": "2016-04-13T04:36:14.917-05:00",
-    "updated_at": "2016-04-13T04:36:17.610-05:00",
-    "summary": "Meeting",
-    "description_html": "<div>Let's talk about stuff!</div>",
-    "description_text": "Let's talk about stuff!",
-    "starts_at": "2016-04-13T09:30:00.000Z",
-    "ends_at": "2016-04-13T10:00:00.000Z",
-    "all_day": false,
-    "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7CEkiCGdpZAY6BkVUSSI0Z2lkOi8vYmMzL1JlY29yZGluZy85MDA3MTk5MjU0NzQxNzY0P2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg1yZWFkYWJsZQY7AFRJIg9leHBpcmVzX2F0BjsAVDA=--ee6896a897ae0079b5949557ef4dd6315600af32",
-    "subscription_url": "https://3.basecampapi.com/195539477/buckets/2085958495/recordings/9007199254741764/subscription",
-    "participants": [
-      {
-        "id": 1007299143,
-        "name": "Victor Cooper",
-        "email_address": "victor@honchodesign.com",
-        "personable_type": "User",
-        "title": null,
-        "created_at": "2016-04-05T06:16:24.895-05:00",
-        "updated_at": "2016-04-13T04:34:12.591-05:00",
-        "admin": true,
-        "owner": true,
-        "avatar_url": "https://3.basecamp-assets.com/195539477/people/BAhpBEcqCjw=--c632b967cec296b87363a697a67a87f9cc1e5b45/avatar-64-x4",
-        "company": {
-          "id": 1033447817,
-          "name": "Honcho Design"
-        }
-      }
-    ],
+    "id": 9007199254741759,
     "status": "active",
-    "url": "https://3.basecampapi.com/195539477/buckets/2085958495/schedule_entries/9007199254741764",
+    "created_at": "2016-06-22T16:40:55.620-05:00",
+    "updated_at": "2016-06-22T16:40:59.157-05:00",
+    "bucket_path": "/195539477/buckets/2085958498",
     "type": "Schedule::Entry",
+    "comments_count": 0,
+    "url": "https://3.basecampapi.com/195539477/buckets/2085958498/schedule_entries/9007199254741759.json",
+    "app_url": "https://3.basecamp.com/195539477/buckets/2085958498/schedule_entries/9007199254741759",
     "creator": {
       "id": 1007299143,
       "name": "Victor Cooper",
       "email_address": "victor@honchodesign.com",
       "personable_type": "User",
       "title": null,
-      "created_at": "2016-04-05T06:16:24.895-05:00",
-      "updated_at": "2016-04-13T04:34:12.591-05:00",
+      "created_at": "2016-06-22T16:37:56.840-05:00",
+      "updated_at": "2016-06-22T16:38:02.871-05:00",
       "admin": true,
       "owner": true,
-      "avatar_url": "https://3.basecamp-assets.com/195539477/people/BAhpBEcqCjw=--c632b967cec296b87363a697a67a87f9cc1e5b45/avatar-64-x4",
+      "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBEcqCjw=--c632b967cec296b87363a697a67a87f9cc1e5b45/avatar-64-x4",
       "company": {
         "id": 1033447817,
         "name": "Honcho Design"
       }
     },
     "bucket": {
-      "id": 1042979249,
+      "id": 1042979252,
       "account_id": 1009501286,
-      "name": "Annie's Corner",
-      "description": "Annie's Stuff. Keep Out. 😁",
-      "created_at": "2016-03-05T05:16:29.737-06:00",
-      "updated_at": "2016-03-05T05:16:29.737-06:00",
+      "name": "The Leto Laptop",
+      "description": "Laptop product launch.",
+      "created_at": "2016-05-28T16:39:25.413-05:00",
+      "updated_at": "2016-05-28T16:39:25.413-05:00",
       "creator_id": 1007299143,
       "client_company_id": null
     },
-    "bucket_path": "/195539477/buckets/2085958495",
     "parent": {
-      "id": 9007199254741016,
+      "id": 9007199254741436,
       "title": "Schedule",
-      "url": "https://3.basecampapi.com/195539477/buckets/2085958495/schedules/9007199254741015"
-    }
-  },
-  ...
+      "url": "https://3.basecampapi.com/195539477/buckets/2085958498/schedules/9007199254741436.json",
+      "app_url": "https://3.basecamp.com/195539477/buckets/2085958498/schedules/9007199254741436"
+    },
+    "description_html": "Time to synergize!",
+    "description_text": "Time to synergize!",
+    "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7CEkiCGdpZAY6BkVUSSI0Z2lkOi8vYmMzL1JlY29yZGluZy85MDA3MTk5MjU0NzQxNzU5P2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg1yZWFkYWJsZQY7AFRJIg9leHBpcmVzX2F0BjsAVDA=--150340d7bf9e45970422758888bbf0176a1fdd2c.json",
+    "subscription_url": "https://3.basecampapi.com/195539477/buckets/2085958498/recordings/9007199254741759/subscription.json",
+    "summary": "Team Meeting",
+    "all_day": false,
+    "starts_at": "2016-06-23T23:40:55.599Z",
+    "ends_at": "2016-06-24T03:40:55.599Z",
+    "participants": [
+      {
+        "id": 1007299150,
+        "name": "Steve Marsh",
+        "email_address": "steve@honchodesign.com",
+        "personable_type": "User",
+        "title": "Legacy Directives Strategist",
+        "created_at": "2016-06-22T16:37:58.189-05:00",
+        "updated_at": "2016-06-22T16:37:58.189-05:00",
+        "admin": false,
+        "owner": false,
+        "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBE4qCjw=--b544b6a710bd76020abc076fc041895954025116/avatar-64-x4",
+        "company": {
+          "id": 1033447817,
+          "name": "Honcho Design"
+        }
+      }
+    ]
+  }
 ]
 ```
-
+<!-- END GET /buckets/1/schedules/3/entries.json -->
 ###### Copy as cURL
 
 ``` shell
@@ -109,76 +111,80 @@ Get a schedule entry
 Note: Nesting under the schedule resource is not necessary for this endpoint.
 
 ###### Example JSON Response
-
-``` json
+<!-- START GET /buckets/1/schedule_entries/2.json -->
+```json
 {
-  "id": 9007199254741764,
-  "created_at": "2016-04-13T04:36:14.917-05:00",
-  "updated_at": "2016-04-13T04:36:17.610-05:00",
-  "summary": "Meeting",
-  "description_html": "<div>Let's talk about stuff!</div>",
-  "description_text": "Let's talk about stuff!",
-  "starts_at": "2016-04-13T09:30:00.000Z",
-  "ends_at": "2016-04-13T10:00:00.000Z",
-  "all_day": false,
-  "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7CEkiCGdpZAY6BkVUSSI0Z2lkOi8vYmMzL1JlY29yZGluZy85MDA3MTk5MjU0NzQxNzY0P2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg1yZWFkYWJsZQY7AFRJIg9leHBpcmVzX2F0BjsAVDA=--ee6896a897ae0079b5949557ef4dd6315600af32",
-  "subscription_url": "https://3.basecampapi.com/195539477/buckets/2085958495/recordings/9007199254741764/subscription",
-  "participants": [
-    {
-      "id": 1007299143,
-      "name": "Victor Cooper",
-      "email_address": "victor@honchodesign.com",
-      "personable_type": "User",
-      "title": null,
-      "created_at": "2016-04-05T06:16:24.895-05:00",
-      "updated_at": "2016-04-13T04:34:12.591-05:00",
-      "admin": true,
-      "owner": true,
-      "avatar_url": "https://3.basecamp-assets.com/195539477/people/BAhpBEcqCjw=--c632b967cec296b87363a697a67a87f9cc1e5b45/avatar-64-x4",
-      "company": {
-        "id": 1033447817,
-        "name": "Honcho Design"
-      }
-    }
-  ],
+  "id": 9007199254741759,
   "status": "active",
-  "url": "https://3.basecampapi.com/195539477/buckets/2085958495/schedule_entries/9007199254741764",
+  "created_at": "2016-06-22T16:40:55.620-05:00",
+  "updated_at": "2016-06-22T16:40:59.157-05:00",
+  "bucket_path": "/195539477/buckets/2085958498",
   "type": "Schedule::Entry",
+  "comments_count": 0,
+  "url": "https://3.basecampapi.com/195539477/buckets/2085958498/schedule_entries/9007199254741759.json",
+  "app_url": "https://3.basecamp.com/195539477/buckets/2085958498/schedule_entries/9007199254741759",
   "creator": {
     "id": 1007299143,
     "name": "Victor Cooper",
     "email_address": "victor@honchodesign.com",
     "personable_type": "User",
     "title": null,
-    "created_at": "2016-04-05T06:16:24.895-05:00",
-    "updated_at": "2016-04-13T04:34:12.591-05:00",
+    "created_at": "2016-06-22T16:37:56.840-05:00",
+    "updated_at": "2016-06-22T16:38:02.871-05:00",
     "admin": true,
     "owner": true,
-    "avatar_url": "https://3.basecamp-assets.com/195539477/people/BAhpBEcqCjw=--c632b967cec296b87363a697a67a87f9cc1e5b45/avatar-64-x4",
+    "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBEcqCjw=--c632b967cec296b87363a697a67a87f9cc1e5b45/avatar-64-x4",
     "company": {
       "id": 1033447817,
       "name": "Honcho Design"
     }
   },
   "bucket": {
-    "id": 1042979249,
+    "id": 1042979252,
     "account_id": 1009501286,
-    "name": "Annie's Corner",
-    "description": "Annie's Stuff. Keep Out. 😁",
-    "created_at": "2016-03-05T05:16:29.737-06:00",
-    "updated_at": "2016-03-05T05:16:29.737-06:00",
+    "name": "The Leto Laptop",
+    "description": "Laptop product launch.",
+    "created_at": "2016-05-28T16:39:25.413-05:00",
+    "updated_at": "2016-05-28T16:39:25.413-05:00",
     "creator_id": 1007299143,
     "client_company_id": null
   },
-  "bucket_path": "/195539477/buckets/2085958495",
   "parent": {
-    "id": 9007199254741016,
+    "id": 9007199254741436,
     "title": "Schedule",
-    "url": "https://3.basecampapi.com/195539477/buckets/2085958495/schedules/9007199254741015"
-  }
+    "url": "https://3.basecampapi.com/195539477/buckets/2085958498/schedules/9007199254741436.json",
+    "app_url": "https://3.basecamp.com/195539477/buckets/2085958498/schedules/9007199254741436"
+  },
+  "description_html": "Time to synergize!",
+  "description_text": "Time to synergize!",
+  "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7CEkiCGdpZAY6BkVUSSI0Z2lkOi8vYmMzL1JlY29yZGluZy85MDA3MTk5MjU0NzQxNzU5P2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg1yZWFkYWJsZQY7AFRJIg9leHBpcmVzX2F0BjsAVDA=--150340d7bf9e45970422758888bbf0176a1fdd2c.json",
+  "subscription_url": "https://3.basecampapi.com/195539477/buckets/2085958498/recordings/9007199254741759/subscription.json",
+  "summary": "Team Meeting",
+  "all_day": false,
+  "starts_at": "2016-06-23T23:40:55.599Z",
+  "ends_at": "2016-06-24T03:40:55.599Z",
+  "participants": [
+    {
+      "id": 1007299150,
+      "name": "Steve Marsh",
+      "email_address": "steve@honchodesign.com",
+      "personable_type": "User",
+      "title": "Legacy Directives Strategist",
+      "created_at": "2016-06-22T16:37:58.189-05:00",
+      "updated_at": "2016-06-22T16:37:58.189-05:00",
+      "admin": false,
+      "owner": false,
+      "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBE4qCjw=--b544b6a710bd76020abc076fc041895954025116/avatar-64-x4",
+      "company": {
+        "id": 1033447817,
+        "name": "Honcho Design"
+      }
+    }
+  ],
+  "description": "Time to synergize!"
 }
 ```
-
+<!-- END GET /buckets/1/schedule_entries/2.json -->
 ###### Copy as cURL
 
 ``` shell
