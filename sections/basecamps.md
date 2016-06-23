@@ -19,69 +19,80 @@ Get Basecamps
 * `GET /projects.json` will return all active Basecamps visible to the current user.
 
 ###### Example JSON Response
-
-``` json
+<!-- START GET /projects.json -->
+```json
 [
   {
     "id": 2085958498,
-    "created_at": "2016-01-27T11:02:32.061-06:00",
-    "updated_at": "2016-01-27T11:03:32.570-06:00",
     "status": "active",
-    "url": "https://3.basecampapi.com/195539477/projects/2085958498",
+    "created_at": "2016-06-22T16:39:25.421-05:00",
+    "updated_at": "2016-06-22T16:40:59.180-05:00",
     "name": "The Leto Laptop",
     "description": "Laptop product launch.",
-    "bookmarked": false,
-    "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7CEkiCGdpZAY6BkVUSSIrZ2lkOi8vYmMzL0J1Y2tldC8yMDg1OTU4NDk4P2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg1yZWFkYWJsZQY7AFRJIg9leHBpcmVzX2F0BjsAVDA=--c8e1a465de900eb9864fa79ae2f30345be158f71",
+    "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7CEkiCGdpZAY6BkVUSSIrZ2lkOi8vYmMzL0J1Y2tldC8yMDg1OTU4NDk4P2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg1yZWFkYWJsZQY7AFRJIg9leHBpcmVzX2F0BjsAVDA=--c8e1a465de900eb9864fa79ae2f30345be158f71.json",
+    "url": "https://3.basecampapi.com/195539477/projects/2085958498.json",
+    "app_url": "https://3.basecamp.com/195539477/projects/2085958498",
     "dock": [
       {
-        "id": 9007199254741432,
+        "id": 9007199254741433,
         "title": "Campfire",
         "name": "chat",
+        "enabled": true,
+        "position": 1,
         "url": "https://3.basecampapi.com/195539477/buckets/2085958498/chats/9007199254741433.json",
-        "enabled": true
+        "app_url": "https://3.basecamp.com/195539477/buckets/2085958498/chats/9007199254741433"
       },
       {
         "id": 9007199254741434,
         "title": "Message Board",
         "name": "message_board",
+        "enabled": true,
+        "position": 2,
         "url": "https://3.basecampapi.com/195539477/buckets/2085958498/message_boards/9007199254741434.json",
-        "enabled": true
+        "app_url": "https://3.basecamp.com/195539477/buckets/2085958498/message_boards/9007199254741434"
       },
       {
-        "id": 9007199254741436,
+        "id": 9007199254741435,
         "title": "To-dos",
         "name": "todoset",
+        "enabled": true,
+        "position": 3,
         "url": "https://3.basecampapi.com/195539477/buckets/2085958498/todosets/9007199254741435.json",
-        "enabled": true
+        "app_url": "https://3.basecamp.com/195539477/buckets/2085958498/todosets/9007199254741435"
       },
       {
         "id": 9007199254741436,
         "title": "Schedule",
         "name": "schedule",
+        "enabled": true,
+        "position": 4,
         "url": "https://3.basecampapi.com/195539477/buckets/2085958498/schedules/9007199254741436.json",
-        "enabled": true
+        "app_url": "https://3.basecamp.com/195539477/buckets/2085958498/schedules/9007199254741436"
       },
       {
-        "id": 9007199254741436,
+        "id": 9007199254741437,
         "title": "Automatic Check-ins",
         "name": "questionnaire",
+        "enabled": true,
+        "position": 5,
         "url": "https://3.basecampapi.com/195539477/buckets/2085958498/questionnaires/9007199254741437.json",
-        "enabled": true
+        "app_url": "https://3.basecamp.com/195539477/buckets/2085958498/questionnaires/9007199254741437"
       },
       {
         "id": 9007199254741442,
         "title": "Docs & Files",
         "name": "vault",
+        "enabled": true,
+        "position": 6,
         "url": "https://3.basecampapi.com/195539477/buckets/2085958498/vaults/9007199254741442.json",
-        "enabled": false
+        "app_url": "https://3.basecamp.com/195539477/buckets/2085958498/vaults/9007199254741442"
       }
-    ]
-  },
-  ...
+    ],
+    "bookmarked": false
+  }
 ]
 ```
-
-
+<!-- END GET /projects.json -->
 ###### Copy as cURL
 
 ``` shell
@@ -109,65 +120,77 @@ Get a Basecamp
 The `dock` key contains an array of the current tools for this Basecamp. The `enabled` flag will be `true` if the tool is turned on for use. You can use the `url` parameter from each tool to jump to the resources available inside of this Basecamp.
 
 ###### Example JSON Response
-
-``` json
+<!-- START GET /projects/1.json -->
+```json
 {
-  "id": 2085958495,
-  "created_at": "2016-01-27T11:00:20.701-06:00",
-  "updated_at": "2016-03-09T11:50:54.324-06:00",
+  "id": 2085958498,
   "status": "active",
-  "url": "https://3.basecampapi.com/195539477/projects/2085958495",
-  "name": "Annie's Corner",
-  "description": "Annie's Stuff. Keep Out. 😁",
-  "bookmarked": false,
-  "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7CEkiCGdpZAY6BkVUSSIrZ2lkOi8vYmMzL0J1Y2tldC8yMDg1OTU4NDk1P2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg1yZWFkYWJsZQY7AFRJIg9leHBpcmVzX2F0BjsAVDA=--06a5145963152c63ea56090695ec59e6d83fb21a",
+  "created_at": "2016-06-22T16:39:25.421-05:00",
+  "updated_at": "2016-06-22T16:40:59.180-05:00",
+  "name": "The Leto Laptop",
+  "description": "Laptop product launch.",
+  "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7CEkiCGdpZAY6BkVUSSIrZ2lkOi8vYmMzL0J1Y2tldC8yMDg1OTU4NDk4P2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg1yZWFkYWJsZQY7AFRJIg9leHBpcmVzX2F0BjsAVDA=--c8e1a465de900eb9864fa79ae2f30345be158f71.json",
+  "url": "https://3.basecampapi.com/195539477/projects/2085958498.json",
+  "app_url": "https://3.basecamp.com/195539477/projects/2085958498",
   "dock": [
     {
-      "id": 9007199254741012,
+      "id": 9007199254741433,
       "title": "Campfire",
       "name": "chat",
-      "url": "https://3.basecampapi.com/195539477/buckets/2085958495/chats/9007199254741012.json",
-      "enabled": true
+      "enabled": true,
+      "position": 1,
+      "url": "https://3.basecampapi.com/195539477/buckets/2085958498/chats/9007199254741433.json",
+      "app_url": "https://3.basecamp.com/195539477/buckets/2085958498/chats/9007199254741433"
     },
     {
-      "id": 9007199254741012,
+      "id": 9007199254741434,
       "title": "Message Board",
       "name": "message_board",
-      "url": "https://3.basecampapi.com/195539477/buckets/2085958495/message_boards/9007199254741013.json",
-      "enabled": true
+      "enabled": true,
+      "position": 2,
+      "url": "https://3.basecampapi.com/195539477/buckets/2085958498/message_boards/9007199254741434.json",
+      "app_url": "https://3.basecamp.com/195539477/buckets/2085958498/message_boards/9007199254741434"
     },
     {
-      "id": 9007199254741014,
+      "id": 9007199254741435,
       "title": "To-dos",
       "name": "todoset",
-      "url": "https://3.basecampapi.com/195539477/buckets/2085958495/todosets/9007199254741014.json",
-      "enabled": true
+      "enabled": true,
+      "position": 3,
+      "url": "https://3.basecampapi.com/195539477/buckets/2085958498/todosets/9007199254741435.json",
+      "app_url": "https://3.basecamp.com/195539477/buckets/2085958498/todosets/9007199254741435"
     },
     {
-      "id": 9007199254741016,
+      "id": 9007199254741436,
       "title": "Schedule",
       "name": "schedule",
-      "url": "https://3.basecampapi.com/195539477/buckets/2085958495/schedules/9007199254741015.json",
-      "enabled": true
+      "enabled": true,
+      "position": 4,
+      "url": "https://3.basecampapi.com/195539477/buckets/2085958498/schedules/9007199254741436.json",
+      "app_url": "https://3.basecamp.com/195539477/buckets/2085958498/schedules/9007199254741436"
     },
     {
-      "id": 9007199254741016,
+      "id": 9007199254741437,
       "title": "Automatic Check-ins",
       "name": "questionnaire",
-      "url": "https://3.basecampapi.com/195539477/buckets/2085958495/questionnaires/9007199254741016.json",
-      "enabled": true
+      "enabled": true,
+      "position": 5,
+      "url": "https://3.basecampapi.com/195539477/buckets/2085958498/questionnaires/9007199254741437.json",
+      "app_url": "https://3.basecamp.com/195539477/buckets/2085958498/questionnaires/9007199254741437"
     },
     {
-      "id": 9007199254741020,
+      "id": 9007199254741442,
       "title": "Docs & Files",
       "name": "vault",
-      "url": "https://3.basecampapi.com/195539477/buckets/2085958495/vaults/9007199254741021.json",
-      "enabled": false
+      "enabled": true,
+      "position": 6,
+      "url": "https://3.basecampapi.com/195539477/buckets/2085958498/vaults/9007199254741442.json",
+      "app_url": "https://3.basecamp.com/195539477/buckets/2085958498/vaults/9007199254741442"
     }
   ]
 }
 ```
-
+<!-- END GET /projects/1.json -->
 ###### Copy as cURL
 
 ``` shell

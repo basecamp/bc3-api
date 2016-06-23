@@ -17,48 +17,50 @@ Get schedule
 To get the schedule ID for a Basecamp, see the [Get a Basecamp][1] endpoint's `dock` payload. To retrieve its schedule entries lists, see the [Get schedule entries][2] endpoint.
 
 ###### Example JSON Response
-
-``` json
+<!-- START GET /buckets/1/schedules/2.json -->
+```json
 {
-  "id": 9007199254741016,
-  "created_at": "2016-04-05T06:16:29.846-05:00",
-  "updated_at": "2016-04-13T05:30:21.843-05:00",
-  "title": "Schedule",
-  "entries_count": 3,
-  "entries_url": "https://3.basecampapi.com/195539477/buckets/2085958495/schedules/9007199254741015/entries.json",
+  "id": 9007199254741436,
   "status": "active",
-  "url": "https://3.basecampapi.com/195539477/buckets/2085958495/schedules/9007199254741015",
+  "created_at": "2016-06-22T16:39:25.610-05:00",
+  "updated_at": "2016-06-22T16:40:59.174-05:00",
+  "bucket_path": "/195539477/buckets/2085958498",
   "type": "Schedule",
+  "comments_count": 0,
+  "url": "https://3.basecampapi.com/195539477/buckets/2085958498/schedules/9007199254741436.json",
+  "app_url": "https://3.basecamp.com/195539477/buckets/2085958498/schedules/9007199254741436",
   "creator": {
     "id": 1007299143,
     "name": "Victor Cooper",
     "email_address": "victor@honchodesign.com",
     "personable_type": "User",
     "title": null,
-    "created_at": "2016-04-05T06:16:24.895-05:00",
-    "updated_at": "2016-04-13T04:34:12.591-05:00",
+    "created_at": "2016-06-22T16:37:56.840-05:00",
+    "updated_at": "2016-06-22T16:38:02.871-05:00",
     "admin": true,
     "owner": true,
-    "avatar_url": "https://3.basecamp-assets.com/195539477/people/BAhpBEcqCjw=--c632b967cec296b87363a697a67a87f9cc1e5b45/avatar-64-x4",
+    "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBEcqCjw=--c632b967cec296b87363a697a67a87f9cc1e5b45/avatar-64-x4",
     "company": {
       "id": 1033447817,
       "name": "Honcho Design"
     }
   },
   "bucket": {
-    "id": 1042979249,
+    "id": 1042979252,
     "account_id": 1009501286,
-    "name": "Annie's Corner",
-    "description": "Annie's Stuff. Keep Out. 😁",
-    "created_at": "2016-03-05T05:16:29.737-06:00",
-    "updated_at": "2016-03-05T05:16:29.737-06:00",
+    "name": "The Leto Laptop",
+    "description": "Laptop product launch.",
+    "created_at": "2016-05-28T16:39:25.413-05:00",
+    "updated_at": "2016-05-28T16:39:25.413-05:00",
     "creator_id": 1007299143,
     "client_company_id": null
   },
-  "bucket_path": "/195539477/buckets/2085958495"
+  "title": "Schedule",
+  "entries_count": 1,
+  "entries_url": "https://3.basecampapi.com/195539477/buckets/2085958498/schedules/9007199254741436/entries.json"
 }
 ```
-
+<!-- END GET /buckets/1/schedules/2.json -->
 ###### Copy as cURL
 
 ``` shell

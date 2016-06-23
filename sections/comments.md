@@ -21,45 +21,53 @@ Get comments
 * `GET /buckets/1/recordings/3/comments.json` will return a [paginated list][pagination] of active comments in the Basecamp with an ID of `1` and the recording with ID of `3`.
 
 ###### Example JSON Response
-
-``` json
+<!-- START GET /buckets/1/recordings/3/comments.json -->
+```json
 [
   {
-    "id": 9007199254741064,
-    "created_at": "2016-01-27T12:41:33.975-06:00",
-    "updated_at": "2016-01-27T12:41:33.975-06:00",
+    "id": 9007199254741444,
     "status": "active",
-    "url": "https://3.basecampapi.com/195539477/buckets/2085958496/comments/9007199254741063",
-    "content_html": "I just want to echo what just about everyone already said. This is a big one for us, and I can't wait to get going. I'll be spinning up the project shortly!",
-    "content_text": "I just want to echo what just about everyone already said. This is a big one for us, and I can't wait to get going. I'll be spinning up the project shortly!",
+    "created_at": "2016-06-22T17:43:27.462-05:00",
+    "updated_at": "2016-06-22T17:43:27.462-05:00",
+    "bucket_path": "/195539477/buckets/2085958498",
     "type": "Comment",
+    "comments_count": 0,
+    "url": "https://3.basecampapi.com/195539477/buckets/2085958498/comments/9007199254741444.json",
+    "app_url": "https://3.basecamp.com/195539477/buckets/2085958498/comments/9007199254741444",
     "creator": {
-      "id": 1007299145,
-      "name": "Annie Bryan",
-      "email_address": "annie@honchodesign.com",
-      "avatar_url": "https://3.basecamp-assets.com/195539477/people/BAhpBEkqCjw=--7e8e5d9e90e4898faee5f69e72def9e58da85fbe/avatar-64-x4"
+      "id": 1007299152,
+      "name": "Andrew Wong",
+      "email_address": "andrew@honchodesign.com",
+      "personable_type": "User",
+      "title": "Senior Branding Strategist",
+      "created_at": "2016-06-22T16:37:58.562-05:00",
+      "updated_at": "2016-06-22T16:37:58.562-05:00",
+      "admin": false,
+      "owner": false,
+      "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBFAqCjw=--0413da7be3ef98ba6e3274f859fb29fc38698edf/avatar-64-x4"
     },
     "bucket": {
-      "id": 1042979250,
-      "account_id": 31989850,
-      "name": "Honcho Design Newsroom",
-      "description": "Let's talk about the company!",
-      "created_at": "2015-10-27T12:00:28.313-05:00",
-      "updated_at": "2015-10-27T12:00:28.313-05:00",
-      "creator_id": 1007299144,
+      "id": 1042979252,
+      "account_id": 1009501286,
+      "name": "The Leto Laptop",
+      "description": "Laptop product launch.",
+      "created_at": "2016-05-28T16:39:25.413-05:00",
+      "updated_at": "2016-05-28T16:39:25.413-05:00",
+      "creator_id": 1007299143,
       "client_company_id": null
     },
-    "bucket_path": "/195539477/buckets/2085958496",
     "parent": {
-      "id": 9007199254741052,
+      "id": 9007199254741443,
       "title": "We won Leto!",
-      "url": "https://3.basecampapi.com/195539477/buckets/2085958496/messages/9007199254741053"
-    }
-  },
-  ...
+      "url": "https://3.basecampapi.com/195539477/buckets/2085958498/messages/9007199254741443.json",
+      "app_url": "https://3.basecamp.com/195539477/buckets/2085958498/messages/9007199254741443"
+    },
+    "content_html": "Yeah! Great job everyone! Super excited to get going!",
+    "content_text": "Yeah! Great job everyone! Super excited to get going!"
+  }
 ]
 ```
-
+<!-- END GET /buckets/1/recordings/3/comments.json -->
 ###### Copy as cURL
 
 ``` shell
@@ -73,42 +81,55 @@ Get a comment
 * `GET /buckets/1/comments/2.json` will return the comment with an ID of `2` in the Basecamp with an ID of `1`.
 
 ###### Example JSON Response
-
-``` json
+<!-- START GET /buckets/1/comments/2.json -->
+```json
 {
-  "id": 9007199254741054,
-  "created_at": "2016-01-27T11:31:31.734-06:00",
-  "updated_at": "2016-01-27T11:31:31.734-06:00",
+  "id": 9007199254741453,
   "status": "active",
-  "url": "https://3.basecampapi.com/195539477/buckets/2085958496/comments/9007199254741054",
-  "content_html": "Yeah! Great job everyone! Super excited to get going!",
-  "content_text": "Yeah! Great job everyone! Super excited to get going!",
+  "created_at": "2016-06-22T16:49:29.310-05:00",
+  "updated_at": "2016-06-22T16:49:29.310-05:00",
+  "bucket_path": "/195539477/buckets/2085958498",
   "type": "Comment",
+  "comments_count": 0,
+  "url": "https://3.basecampapi.com/195539477/buckets/2085958498/comments/9007199254741453.json",
+  "app_url": "https://3.basecamp.com/195539477/buckets/2085958498/comments/9007199254741453",
   "creator": {
-    "id": 1007299153,
-    "name": "Andrew Wong",
-    "email_address": "andrew@honchodesign.com",
-    "avatar_url": "https://3.basecamp-assets.com/195539477/people/BAhpBFEqCjw=--f4f91a8c888e425d0d557f8f27d70dfb6f68505e/avatar-64-x4"
+    "id": 1007299144,
+    "name": "Annie Bryan",
+    "email_address": "annie@honchodesign.com",
+    "personable_type": "User",
+    "title": "Central Markets Manager",
+    "created_at": "2016-06-22T16:37:57.022-05:00",
+    "updated_at": "2016-06-22T16:37:57.022-05:00",
+    "admin": false,
+    "owner": false,
+    "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBEgqCjw=--8266bb0507508f3d46050d57b65924d5e2a005f3/avatar-64-x4",
+    "company": {
+      "id": 1033447817,
+      "name": "Honcho Design"
+    }
   },
   "bucket": {
-    "id": 1042979250,
-    "account_id": 31989850,
-    "name": "Honcho Design Newsroom",
-    "description": "Let's talk about the company!",
-    "created_at": "2015-10-27T12:00:28.313-05:00",
-    "updated_at": "2015-10-27T12:00:28.313-05:00",
-    "creator_id": 1007299144,
+    "id": 1042979252,
+    "account_id": 1009501286,
+    "name": "The Leto Laptop",
+    "description": "Laptop product launch.",
+    "created_at": "2016-05-28T16:39:25.413-05:00",
+    "updated_at": "2016-05-28T16:39:25.413-05:00",
+    "creator_id": 1007299143,
     "client_company_id": null
   },
-  "bucket_path": "/195539477/buckets/2085958496",
   "parent": {
-    "id": 9007199254741052,
+    "id": 9007199254741443,
     "title": "We won Leto!",
-    "url": "https://3.basecampapi.com/195539477/buckets/2085958496/messages/9007199254741053"
-  }
+    "url": "https://3.basecampapi.com/195539477/buckets/2085958498/messages/9007199254741443.json",
+    "app_url": "https://3.basecamp.com/195539477/buckets/2085958498/messages/9007199254741443"
+  },
+  "content_html": "I just want to echo what just about everyone already said. This is a big one for us, and I can't wait to get going. I'll be spinning up the project shortly!",
+  "content_text": "I just want to echo what just about everyone already said. This is a big one for us, and I can't wait to get going. I'll be spinning up the project shortly!"
 }
 ```
-
+<!-- END GET /buckets/1/comments/2.json -->
 ###### Copy as cURL
 
 ``` shell

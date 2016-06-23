@@ -11,33 +11,28 @@ Endpoints:
 
 Get all people
 --------------
-
-* `GET /people.json` will return all people on this account visible to the current user. This includes clients and people who may have been removed from the account.
-
-###### Example JSON Response
-
-``` json
+<!-- START GET /people.json -->
+```json
 [
   {
-    "id": 1007299144,
-    "created_at": "2016-01-27T11:00:15.486-06:00",
-    "updated_at": "2016-03-26T19:30:59.746-05:00",
+    "id": 1007299143,
     "name": "Victor Cooper",
     "email_address": "victor@honchodesign.com",
     "personable_type": "User",
     "title": null,
+    "created_at": "2016-06-22T16:37:56.840-05:00",
+    "updated_at": "2016-06-22T16:38:02.871-05:00",
     "admin": true,
     "owner": true,
-    "avatar_url": "https://3.basecamp-assets.com/195539477/people/BAhpBEgqCjw=--8266bb0507508f3d46050d57b65924d5e2a005f3/avatar-64-x4",
+    "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBEcqCjw=--c632b967cec296b87363a697a67a87f9cc1e5b45/avatar-64-x4",
     "company": {
-      "id": 1033447818,
+      "id": 1033447817,
       "name": "Honcho Design"
     }
-  },
-  ...
+  }
 ]
 ```
-
+<!-- END GET /people.json -->
 ###### Copy as cURL
 
 ``` shell
@@ -80,26 +75,22 @@ Get person
 * `GET /people/2.json` will return the profile for the user with the given ID.
 
 ###### Example JSON Response
-
-``` json
+<!-- START GET /people/2.json -->
+```json
 {
-  "id": 1007299173,
-  "created_at": "2016-01-27T11:00:20.599-06:00",
-  "updated_at": "2016-01-27T11:00:20.599-06:00",
-  "name": "Beth Allen",
-  "email_address": "beth@letobrand.com",
-  "personable_type": "Client",
-  "title": "Product Tactics Architect",
+  "id": 1007299169,
+  "name": "Zach Settles",
+  "email_address": "zach@honchodesign.com",
+  "personable_type": "User",
+  "title": "Customer Paradigm Supervisor",
+  "created_at": "2016-06-22T16:38:02.238-05:00",
+  "updated_at": "2016-06-22T16:38:02.238-05:00",
   "admin": false,
   "owner": false,
-  "avatar_url": "https://3.basecamp-assets.com/195539477/people/BAhpBGUqCjw=--e158da2fcd75374f7ef3d0c31d2995276e098296/avatar-64-x4",
-  "company": {
-    "id": 1033447819,
-    "name": "Leto Brand"
-  }
+  "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBGEqCjw=--f278ae7c0479355c2aa772cb3155e925954de561/avatar-64-x4"
 }
 ```
-
+<!-- END GET /people/2.json -->
 ###### Copy as cURL
 
 ``` shell
