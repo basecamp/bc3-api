@@ -5,6 +5,7 @@ Endpoints:
 
 - [Get all people](#get-all-people)
 - [Get people on a Basecamp](#get-people-on-a-basecamp)
+- [Update who can access a Basecamp](#update-who-can-access-a-basecamp)
 - [Get pingable people](#get-pingable-people)
 - [Get person](#get-person)
 - [Get my personal info](#get-my-personal-info)
@@ -52,6 +53,94 @@ See the [Get all people](#get-all-people) endpoint for an example of the JSON re
 ``` shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/projects/1/people.json
 ```
+
+Update who can access a Basecamp
+--------------------------------
+
+* `PUT /buckets/1/people/users.json` allows granting new and existing people access to a Basecamp, and revoking access from existing people.
+
+**Parameters**: Requests should include at least one of the following parameters.
+
+* `grant` - an array of people IDs.
+* `revoke` - an array of people IDs.
+* `create` - an array of new people with `name` and `email_address` properties, and optional `title` and `company_name` properties.
+
+###### Example JSON Request
+<!-- START PUT PAYLOAD /buckets/1/people/users.json -->
+```json
+{
+  "grant": [
+    1007299151
+  ],
+  "revoke": [
+    1007299150
+  ],
+  "create": [
+    {
+      "name": "Victor Copper",
+      "email_address": "victor@hanchodesign.com",
+      "title": "Prankster",
+      "company_name": "Hancho Design"
+    }
+  ]
+}
+```
+<!-- END PUT PAYLOAD /buckets/1/people/users.json -->
+###### Example JSON Response
+<!-- START PUT /buckets/1/people/users.json -->
+```json
+{
+  "granted": [
+    {
+      "id": 1007299151,
+      "name": "Amy Rivera",
+      "email_address": "amy@honchodesign.com",
+      "personable_type": "User",
+      "title": "Central Web Coordinator",
+      "created_at": "2016-06-23T16:26:03.813-05:00",
+      "updated_at": "2016-06-23T16:26:03.813-05:00",
+      "admin": false,
+      "owner": false,
+      "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBE8qCjw=--44a343c4ec0f62daf82484ec3539efc8c74a336a/avatar-64-x4"
+    },
+    {
+      "id": 1007299187,
+      "name": "Victor Copper",
+      "email_address": "victor@hanchodesign.com",
+      "personable_type": "User",
+      "title": "Prankster",
+      "created_at": "2016-06-23T17:59:28.901-05:00",
+      "updated_at": "2016-06-23T17:59:30.129-05:00",
+      "admin": false,
+      "owner": false,
+      "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBHMqCjw=--ada9bcdfb67bedc03799c4a4cd0c1b621790a734/avatar-64-x4",
+      "company": {
+        "id": 1033447819,
+        "name": "Hancho Design"
+      }
+    }
+  ],
+  "revoked": [
+    {
+      "id": 1007299150,
+      "name": "Steve Marsh",
+      "email_address": "steve@honchodesign.com",
+      "personable_type": "User",
+      "title": "Legacy Directives Strategist",
+      "created_at": "2016-06-23T16:26:03.660-05:00",
+      "updated_at": "2016-06-23T16:26:03.660-05:00",
+      "admin": false,
+      "owner": false,
+      "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBE4qCjw=--b544b6a710bd76020abc076fc041895954025116/avatar-64-x4",
+      "company": {
+        "id": 1033447817,
+        "name": "Honcho Design"
+      }
+    }
+  ]
+}
+```
+<!-- END PUT /buckets/1/people/users.json -->
 
 Get pingable people
 -------------------

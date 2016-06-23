@@ -169,7 +169,7 @@ API endpoints
 | ▾ **[People](sections/people.md#people)** | | |
 | [GET /people.json](sections/people.md#get-all-people) | Get all people | 👍|
 | [GET /projects/1/people.json](sections/people.md#get-people-on-a-basecamp) | Get people on a Basecamp | 👍|
-| PUT | Update who can access a Basecamp | 🚧 |
+| [PUT /projects/1/people/users.json](sections/people.md#update-who-can-access-a-basecamp) | Update who can access a Basecamp | 👍 |
 | [GET /circles/people.json](sections/people.md#get-pingable-people) | Get pingable people | 👍|
 | [GET /people/2.json](sections/people.md#get-person) | Get person | 👍|
 | [GET /my/profile.json](sections/people.md#get-my-personal-info) | Get my personal info | 👍|
