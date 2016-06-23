@@ -12,6 +12,10 @@ Endpoints:
 
 Get all people
 --------------
+
+* `GET /people.json` will return all people visible to the current user.
+
+###### Example JSON Response
 <!-- START GET /people.json -->
 ```json
 [
@@ -86,6 +90,14 @@ Update who can access a Basecamp
 }
 ```
 <!-- END PUT PAYLOAD /buckets/1/people/users.json -->
+###### Copy as cURL
+
+``` shell
+curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" \
+  -d '{"grant":[2],"revoke":[3,4]}' -X PUT \
+  https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/people/users.json
+```
+
 ###### Example JSON Response
 <!-- START PUT /buckets/1/people/users.json -->
 ```json
