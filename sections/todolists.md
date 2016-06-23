@@ -27,8 +27,8 @@ _Optional query parameters_:
   {
     "id": 9007199254741612,
     "status": "active",
-    "created_at": "2016-06-19T16:51:25.413-05:00",
-    "updated_at": "2016-06-22T16:40:03.901-05:00",
+    "created_at": "2016-06-20T09:26:17.309-05:00",
+    "updated_at": "2016-06-23T07:28:46.091-05:00",
     "bucket_path": "/195539477/buckets/2085958498",
     "type": "Todolist",
     "comments_count": 0,
@@ -40,8 +40,8 @@ _Optional query parameters_:
       "email_address": "annie@honchodesign.com",
       "personable_type": "User",
       "title": "Central Markets Manager",
-      "created_at": "2016-06-22T16:37:57.022-05:00",
-      "updated_at": "2016-06-22T16:37:57.022-05:00",
+      "created_at": "2016-06-23T07:27:08.540-05:00",
+      "updated_at": "2016-06-23T07:27:08.540-05:00",
       "admin": false,
       "owner": false,
       "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBEgqCjw=--8266bb0507508f3d46050d57b65924d5e2a005f3/avatar-64-x4",
@@ -55,8 +55,8 @@ _Optional query parameters_:
       "account_id": 1009501286,
       "name": "The Leto Laptop",
       "description": "Laptop product launch.",
-      "created_at": "2016-05-28T16:39:25.413-05:00",
-      "updated_at": "2016-05-28T16:39:25.413-05:00",
+      "created_at": "2016-05-29T07:28:17.309-05:00",
+      "updated_at": "2016-05-29T07:28:17.309-05:00",
       "creator_id": 1007299143,
       "client_company_id": null
     },
@@ -71,6 +71,7 @@ _Optional query parameters_:
     "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7CEkiCGdpZAY6BkVUSSI0Z2lkOi8vYmMzL1JlY29yZGluZy85MDA3MTk5MjU0NzQxNjEyP2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg1yZWFkYWJsZQY7AFRJIg9leHBpcmVzX2F0BjsAVDA=--86ec6f857b01309e234a304fe0bcdab3839c53f4.json",
     "subscription_url": "https://3.basecampapi.com/195539477/buckets/2085958498/recordings/9007199254741612/subscription.json",
     "name": "Strategy ideas",
+    "completed": false,
     "todos_url": "https://3.basecampapi.com/195539477/buckets/2085958498/todolists/9007199254741612/todos.json",
     "app_todos_url": "https://3.basecamp.com/195539477/buckets/2085958498/todolists/9007199254741612/todos"
   }
@@ -97,8 +98,8 @@ Note: Nesting under the to-do set resource is not necessary for this endpoint.
 {
   "id": 9007199254741461,
   "status": "active",
-  "created_at": "2016-05-31T18:30:25.413-05:00",
-  "updated_at": "2016-06-22T16:39:33.206-05:00",
+  "created_at": "2016-06-01T08:25:17.309-05:00",
+  "updated_at": "2016-06-23T07:28:23.454-05:00",
   "bucket_path": "/195539477/buckets/2085958498",
   "type": "Todolist",
   "comments_count": 0,
@@ -110,8 +111,8 @@ Note: Nesting under the to-do set resource is not necessary for this endpoint.
     "email_address": "andrew@honchodesign.com",
     "personable_type": "User",
     "title": "Senior Branding Strategist",
-    "created_at": "2016-06-22T16:37:58.562-05:00",
-    "updated_at": "2016-06-22T16:37:58.562-05:00",
+    "created_at": "2016-06-23T07:27:09.722-05:00",
+    "updated_at": "2016-06-23T07:27:09.722-05:00",
     "admin": false,
     "owner": false,
     "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBFAqCjw=--0413da7be3ef98ba6e3274f859fb29fc38698edf/avatar-64-x4"
@@ -121,8 +122,8 @@ Note: Nesting under the to-do set resource is not necessary for this endpoint.
     "account_id": 1009501286,
     "name": "The Leto Laptop",
     "description": "Laptop product launch.",
-    "created_at": "2016-05-28T16:39:25.413-05:00",
-    "updated_at": "2016-05-28T16:39:25.413-05:00",
+    "created_at": "2016-05-29T07:28:17.309-05:00",
+    "updated_at": "2016-05-29T07:28:17.309-05:00",
     "creator_id": 1007299143,
     "client_company_id": null
   },
@@ -137,6 +138,7 @@ Note: Nesting under the to-do set resource is not necessary for this endpoint.
   "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7CEkiCGdpZAY6BkVUSSI0Z2lkOi8vYmMzL1JlY29yZGluZy85MDA3MTk5MjU0NzQxNDYxP2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg1yZWFkYWJsZQY7AFRJIg9leHBpcmVzX2F0BjsAVDA=--36b09454741fb7bec702606062a54a837bfaa750.json",
   "subscription_url": "https://3.basecampapi.com/195539477/buckets/2085958498/recordings/9007199254741461/subscription.json",
   "name": "Background and research",
+  "completed": false,
   "todos_url": "https://3.basecampapi.com/195539477/buckets/2085958498/todolists/9007199254741461/todos.json",
   "app_todos_url": "https://3.basecamp.com/195539477/buckets/2085958498/todolists/9007199254741461/todos"
 }
