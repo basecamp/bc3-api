@@ -61,7 +61,7 @@ curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCO
 Update who can access a Basecamp
 --------------------------------
 
-* `PUT /buckets/1/people/users.json` allows granting new and existing people access to a Basecamp, and revoking access from existing people.
+* `PUT /projects/1/people/users.json` allows granting new and existing people access to a Basecamp, and revoking access from existing people.
 
 **Parameters**: Requests should include at least one of the following parameters.
 
@@ -70,7 +70,7 @@ Update who can access a Basecamp
 * `create` - an array of new people with `name` and `email_address` properties, and optional `title` and `company_name` properties.
 
 ###### Example JSON Request
-<!-- START PUT PAYLOAD /buckets/1/people/users.json -->
+<!-- START PUT PAYLOAD /projects/1/people/users.json -->
 ```json
 {
   "grant": [
@@ -89,17 +89,17 @@ Update who can access a Basecamp
   ]
 }
 ```
-<!-- END PUT PAYLOAD /buckets/1/people/users.json -->
+<!-- END PUT PAYLOAD /projects/1/people/users.json -->
 ###### Copy as cURL
 
 ``` shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" \
   -d '{"grant":[2],"revoke":[3,4]}' -X PUT \
-  https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/people/users.json
+  https://3.basecampapi.com/$ACCOUNT_ID/projects/1/people/users.json
 ```
 
 ###### Example JSON Response
-<!-- START PUT /buckets/1/people/users.json -->
+<!-- START PUT /projects/1/people/users.json -->
 ```json
 {
   "granted": [
@@ -152,7 +152,7 @@ curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/j
   ]
 }
 ```
-<!-- END PUT /buckets/1/people/users.json -->
+<!-- END PUT /projects/1/people/users.json -->
 
 Get pingable people
 -------------------
