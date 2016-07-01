@@ -198,14 +198,10 @@ API endpoints
 | [PUT /buckets/1/todos/2/position.json](sections/todos.md#reposition-a-to-do) | Reposition a to-do | 👍|
 | **[Attachments](sections/attachments.md#attachments)** | - | 🚧|
 | **[Automatic Check-ins](sections/automatic_check-ins.md)** | - | 🚧|
-| **[Bookmarks](sections/bookmarks.md#bookmarks)** | - | 🚧|
 | **[Campfires](sections/campfires.md#campfires)** | - | 🚧|
 | **[Client Correspondences](sections/client_correspondences.md)** | - | 🚧|
 | **[Client Approvals](sections/client_approvals.md)** | - | 🚧|
 | **[Documents](sections/documents.md#documents)** | - | 🚧|
-| **[Events](sections/events.md#events)** | - | 🚧|
-| **[My](sections/my.md#my)** | - | 🚧|
-| **[Pings](sections/pings.md#pings)** | - | 🚧|
 | **[Uploads](sections/uploads.md#uploads)** | - | 🚧|
 | **[Vaults](sections/vaults.md#vaults)** | - | 🚧|
 
