@@ -263,3 +263,5 @@ curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/j
   -d '{"content":"Good morning"}' \
   https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/chats/2/lines.json
 ```
+
+[pagination]: https://github.com/basecamp/bc3-api/blob/master/README.md#pagination
