@@ -154,6 +154,12 @@ API endpoints
 | [POST /projects.json](sections/basecamps.md#create-a-basecamp) | Create a Basecamp | 👍 |
 | [PUT /projects/1.json](sections/basecamps.md#update-a-basecamp) | Update a Basecamp | 👍 |
 | [DELETE /projects/1.json](sections/basecamps.md#trash-a-basecamp) | Trash a Basecamp | 👍 |
+| ▾ **[Campfires](sections/campfire.md#campfires)** | | |
+| [GET /chats.json](sections/campfires.md#get-campfires) | Get Campfires | 👍 |
+| [GET /buckets/1/chats/2.json](sections/campfires.md#get-a-campfire) | Get a Campfires | 👍 |
+| [GET /buckets/1/chats/2/lines.json](sections/campfires.md#get-campfire-lines) | Get Campfire lines | 👍 |
+| [GET /buckets/1/chats/2/lines/3.json](sections/campfires.md#get-a-campfire-line) | Get a Campfire line | 👍 |
+| [POST /buckets/1/chats/2/lines.json](sections/campfires.md#create-a-campfire-line) | Create a Campfire line | 👍 |
 | ▾ **[Comments](sections/comments.md#comments)** | | |
 | [GET /buckets/1/recordings/3/comments.json](sections/comments.md#get-comments) | Get comments | 👍 |
 | [GET /buckets/1/comments/2.json](sections/comments.md#get-a-comment) | Get a comment | 👍 |
@@ -198,7 +204,6 @@ API endpoints
 | [PUT /buckets/1/todos/2/position.json](sections/todos.md#reposition-a-to-do) | Reposition a to-do | 👍|
 | **[Attachments](sections/attachments.md#attachments)** | - | 🚧|
 | **[Automatic Check-ins](sections/automatic_check-ins.md)** | - | 🚧|
-| **[Campfires](sections/campfires.md#campfires)** | - | 🚧|
 | **[Client Correspondences](sections/client_correspondences.md)** | - | 🚧|
 | **[Client Approvals](sections/client_approvals.md)** | - | 🚧|
 | **[Documents](sections/documents.md#documents)** | - | 🚧|
