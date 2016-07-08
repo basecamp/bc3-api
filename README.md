@@ -219,10 +219,14 @@ API endpoints
 | [POST /buckets/1/todos/2/completion.json](sections/todos.md#complete-a-to-do) | Complete a to-do | 👍|
 | [DELETE /buckets/1/todos/2/completion.json](sections/todos.md#uncomplete-a-to-do) | Uncomplete a to-do | 👍|
 | [PUT /buckets/1/todos/2/position.json](sections/todos.md#reposition-a-to-do) | Reposition a to-do | 👍|
+| ▾ **[Vaults](sections/vaults.md#vaults)** | | |
+| [GET /buckets/1/vaults/2/vaults.json](sections/vaults.md#get-vaults) | Get vaults | 👍|
+| [GET /buckets/1/vaults/2.json](sections/vaults.md#get-a-vault) | Get a vault | 👍|
+| [POST /buckets/1/vaults/2/vaults.json](sections/vaults.md#create-a-vault) | Create a vault | 👍|
+| [PUT /buckets/1/vaults/3.json](sections/vaults.md#update-a-vault) | Update a vault | 👍|
 | **[Attachments](sections/attachments.md#attachments)** | - | 🚧|
 | **[Documents](sections/documents.md#documents)** | - | 🚧|
 | **[Uploads](sections/uploads.md#uploads)** | - | 🚧|
-| **[Vaults](sections/vaults.md#vaults)** | - | 🚧|
 
 API libraries
 -------------
