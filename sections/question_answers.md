@@ -18,40 +18,34 @@ Get question answers
   {
     "id": 9007199254741640,
     "status": "active",
-    "created_at": "2016-07-07T22:30:09.454Z",
-    "updated_at": "2016-07-07T22:30:09.454Z",
-    "bucket_path": "/195539477/buckets/2085958498",
+    "created_at": "2016-07-08T03:26:06.221Z",
+    "updated_at": "2016-07-08T03:26:06.221Z",
     "type": "Question::Answer",
-    "comments_count": 0,
     "url": "https://3.basecampapi.com/195539477/buckets/2085958498/question_answers/9007199254741640.json",
     "app_url": "https://3.basecamp.com/195539477/buckets/2085958498/questions/9007199254741454/answers/2016-07-07#__recording_9007199254741640",
+    "comments_count": 0,
+    "comments_url": "https://3.basecampapi.com/195539477/buckets/2085958498/recordings/9007199254741640/comments.json",
+    "bucket": {
+      "id": 2085958498,
+      "type": "Project"
+    },
+    "parent": {
+      "id": 9007199254741454,
+      "type": "Question",
+      "url": "https://3.basecampapi.com/195539477/buckets/2085958498/questions/9007199254741454.json",
+      "app_url": "https://3.basecamp.com/195539477/buckets/2085958498/questions/9007199254741454"
+    },
     "creator": {
       "id": 1007299165,
       "name": "Matt Donahue",
       "email_address": "matt@honchodesign.com",
       "personable_type": "User",
       "title": "Global Data Strategist",
-      "created_at": "2016-07-07T22:09:58.385Z",
-      "updated_at": "2016-07-07T22:09:58.385Z",
+      "created_at": "2016-07-08T02:16:10.850Z",
+      "updated_at": "2016-07-08T02:16:10.850Z",
       "admin": false,
       "owner": false,
       "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBF0qCjw=--21513efb0cf6f64f7a0720b2c56ac6145ae6680c/avatar-64-x4"
-    },
-    "bucket": {
-      "id": 1042979252,
-      "account_id": 1009501286,
-      "name": "The Leto Laptop",
-      "description": "Laptop product launch.",
-      "created_at": "2016-06-12T22:11:09.454Z",
-      "updated_at": "2016-06-12T22:11:09.454Z",
-      "creator_id": 1007299143,
-      "client_company_id": null
-    },
-    "parent": {
-      "id": 9007199254741454,
-      "title": "What did you work on today?",
-      "url": "https://3.basecampapi.com/195539477/buckets/2085958498/questions/9007199254741454.json",
-      "app_url": "https://3.basecamp.com/195539477/buckets/2085958498/questions/9007199254741454"
     },
     "content_html": "Preparing for the next presentation. Feeling good!",
     "content_text": "Preparing for the next presentation. Feeling good!",
@@ -77,40 +71,34 @@ Get a question answer
 {
   "id": 9007199254741640,
   "status": "active",
-  "created_at": "2016-07-07T22:30:09.454Z",
-  "updated_at": "2016-07-07T22:30:09.454Z",
-  "bucket_path": "/195539477/buckets/2085958498",
+  "created_at": "2016-07-08T03:26:06.221Z",
+  "updated_at": "2016-07-08T03:26:06.221Z",
   "type": "Question::Answer",
-  "comments_count": 0,
   "url": "https://3.basecampapi.com/195539477/buckets/2085958498/question_answers/9007199254741640.json",
   "app_url": "https://3.basecamp.com/195539477/buckets/2085958498/questions/9007199254741454/answers/2016-07-07#__recording_9007199254741640",
+  "comments_count": 0,
+  "comments_url": "https://3.basecampapi.com/195539477/buckets/2085958498/recordings/9007199254741640/comments.json",
+  "bucket": {
+    "id": 2085958498,
+    "type": "Project"
+  },
+  "parent": {
+    "id": 9007199254741454,
+    "type": "Question",
+    "url": "https://3.basecampapi.com/195539477/buckets/2085958498/questions/9007199254741454.json",
+    "app_url": "https://3.basecamp.com/195539477/buckets/2085958498/questions/9007199254741454"
+  },
   "creator": {
     "id": 1007299165,
     "name": "Matt Donahue",
     "email_address": "matt@honchodesign.com",
     "personable_type": "User",
     "title": "Global Data Strategist",
-    "created_at": "2016-07-07T22:09:58.385Z",
-    "updated_at": "2016-07-07T22:09:58.385Z",
+    "created_at": "2016-07-08T02:16:10.850Z",
+    "updated_at": "2016-07-08T02:16:10.850Z",
     "admin": false,
     "owner": false,
     "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBF0qCjw=--21513efb0cf6f64f7a0720b2c56ac6145ae6680c/avatar-64-x4"
-  },
-  "bucket": {
-    "id": 1042979252,
-    "account_id": 1009501286,
-    "name": "The Leto Laptop",
-    "description": "Laptop product launch.",
-    "created_at": "2016-06-12T22:11:09.454Z",
-    "updated_at": "2016-06-12T22:11:09.454Z",
-    "creator_id": 1007299143,
-    "client_company_id": null
-  },
-  "parent": {
-    "id": 9007199254741454,
-    "title": "What did you work on today?",
-    "url": "https://3.basecampapi.com/195539477/buckets/2085958498/questions/9007199254741454.json",
-    "app_url": "https://3.basecamp.com/195539477/buckets/2085958498/questions/9007199254741454"
   },
   "content_html": "Preparing for the next presentation. Feeling good!",
   "content_text": "Preparing for the next presentation. Feeling good!",

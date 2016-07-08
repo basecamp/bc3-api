@@ -21,21 +21,23 @@ Get Campfires
   {
     "id": 9007199254741043,
     "status": "active",
-    "created_at": "2016-04-10T03:43:39.958Z",
-    "updated_at": "2016-07-07T02:58:50.967Z",
-    "bucket_path": "/195539477/buckets/2085958496",
+    "created_at": "2016-04-11T03:58:15.137Z",
+    "updated_at": "2016-07-08T02:16:24.643Z",
     "type": "Chat::Transcript",
-    "comments_count": 0,
     "url": "https://3.basecampapi.com/195539477/buckets/2085958496/chats/9007199254741043.json",
     "app_url": "https://3.basecamp.com/195539477/buckets/2085958496/chats/9007199254741043",
+    "bucket": {
+      "id": 2085958496,
+      "type": "Project"
+    },
     "creator": {
       "id": 1007299143,
       "name": "Victor Cooper",
       "email_address": "victor@honchodesign.com",
       "personable_type": "User",
       "title": null,
-      "created_at": "2016-07-07T02:58:31.022Z",
-      "updated_at": "2016-07-07T02:58:35.795Z",
+      "created_at": "2016-07-08T02:16:07.483Z",
+      "updated_at": "2016-07-08T02:16:11.821Z",
       "admin": true,
       "owner": true,
       "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBEcqCjw=--c632b967cec296b87363a697a67a87f9cc1e5b45/avatar-64-x4",
@@ -43,16 +45,6 @@ Get Campfires
         "id": 1033447817,
         "name": "Honcho Design"
       }
-    },
-    "bucket": {
-      "id": 1042979250,
-      "account_id": 1009501286,
-      "name": "Honcho Design Newsroom",
-      "description": "Let's talk about the company!",
-      "created_at": "2016-04-07T02:58:39.958Z",
-      "updated_at": "2016-04-07T02:58:39.958Z",
-      "creator_id": 1007299143,
-      "client_company_id": null
     },
     "topic": "Campfire",
     "lines_url": "https://3.basecampapi.com/195539477/buckets/2085958496/chats/9007199254741043/lines.json"
@@ -77,21 +69,23 @@ Get a Campfire
 {
   "id": 9007199254741043,
   "status": "active",
-  "created_at": "2016-04-10T03:43:39.958Z",
-  "updated_at": "2016-07-07T02:58:50.967Z",
-  "bucket_path": "/195539477/buckets/2085958496",
+  "created_at": "2016-04-11T03:58:15.137Z",
+  "updated_at": "2016-07-08T02:16:24.643Z",
   "type": "Chat::Transcript",
-  "comments_count": 0,
   "url": "https://3.basecampapi.com/195539477/buckets/2085958496/chats/9007199254741043.json",
   "app_url": "https://3.basecamp.com/195539477/buckets/2085958496/chats/9007199254741043",
+  "bucket": {
+    "id": 2085958496,
+    "type": "Project"
+  },
   "creator": {
     "id": 1007299143,
     "name": "Victor Cooper",
     "email_address": "victor@honchodesign.com",
     "personable_type": "User",
     "title": null,
-    "created_at": "2016-07-07T02:58:31.022Z",
-    "updated_at": "2016-07-07T02:58:35.795Z",
+    "created_at": "2016-07-08T02:16:07.483Z",
+    "updated_at": "2016-07-08T02:16:11.821Z",
     "admin": true,
     "owner": true,
     "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBEcqCjw=--c632b967cec296b87363a697a67a87f9cc1e5b45/avatar-64-x4",
@@ -99,16 +93,6 @@ Get a Campfire
       "id": 1033447817,
       "name": "Honcho Design"
     }
-  },
-  "bucket": {
-    "id": 1042979250,
-    "account_id": 1009501286,
-    "name": "Honcho Design Newsroom",
-    "description": "Let's talk about the company!",
-    "created_at": "2016-04-07T02:58:39.958Z",
-    "updated_at": "2016-04-07T02:58:39.958Z",
-    "creator_id": 1007299143,
-    "client_company_id": null
   },
   "topic": "Campfire",
   "lines_url": "https://3.basecampapi.com/195539477/buckets/2085958496/chats/9007199254741043/lines.json"
@@ -133,40 +117,32 @@ Get Campfire lines
   {
     "id": 9007199254741125,
     "status": "active",
-    "created_at": "2016-04-12T18:13:39.958Z",
-    "updated_at": "2016-04-12T18:13:39.958Z",
-    "bucket_path": "/195539477/buckets/2085958496",
+    "created_at": "2016-04-14T13:22:15.137Z",
+    "updated_at": "2016-04-14T13:22:15.137Z",
     "type": "Chat::Lines::Text",
-    "comments_count": 0,
     "url": "https://3.basecampapi.com/195539477/buckets/2085958496/chats/9007199254741043/lines/9007199254741125.json",
     "app_url": "https://3.basecamp.com/195539477/buckets/2085958496/chats/9007199254741043@9007199254741125",
+    "bucket": {
+      "id": 2085958496,
+      "type": "Project"
+    },
+    "parent": {
+      "id": 9007199254741043,
+      "type": "Chat::Transcript",
+      "url": "https://3.basecampapi.com/195539477/buckets/2085958496/chats/9007199254741043.json",
+      "app_url": "https://3.basecamp.com/195539477/buckets/2085958496/chats/9007199254741043"
+    },
     "creator": {
       "id": 1007299165,
       "name": "Matt Donahue",
       "email_address": "matt@honchodesign.com",
       "personable_type": "User",
       "title": "Global Data Strategist",
-      "created_at": "2016-07-07T02:58:34.592Z",
-      "updated_at": "2016-07-07T02:58:34.592Z",
+      "created_at": "2016-07-08T02:16:10.850Z",
+      "updated_at": "2016-07-08T02:16:10.850Z",
       "admin": false,
       "owner": false,
       "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBF0qCjw=--21513efb0cf6f64f7a0720b2c56ac6145ae6680c/avatar-64-x4"
-    },
-    "bucket": {
-      "id": 1042979250,
-      "account_id": 1009501286,
-      "name": "Honcho Design Newsroom",
-      "description": "Let's talk about the company!",
-      "created_at": "2016-04-07T02:58:39.958Z",
-      "updated_at": "2016-04-07T02:58:39.958Z",
-      "creator_id": 1007299143,
-      "client_company_id": null
-    },
-    "parent": {
-      "id": 9007199254741043,
-      "title": "Campfire",
-      "url": "https://3.basecampapi.com/195539477/buckets/2085958496/chats/9007199254741043.json",
-      "app_url": "https://3.basecamp.com/195539477/buckets/2085958496/chats/9007199254741043"
     },
     "content": "I'm hungry"
   }
@@ -190,21 +166,29 @@ Get a Campfire line
 {
   "id": 9007199254741076,
   "status": "active",
-  "created_at": "2016-04-10T04:01:39.958Z",
-  "updated_at": "2016-04-10T04:01:39.958Z",
-  "bucket_path": "/195539477/buckets/2085958496",
+  "created_at": "2016-04-11T03:31:15.137Z",
+  "updated_at": "2016-04-11T03:31:15.137Z",
   "type": "Chat::Lines::Text",
-  "comments_count": 0,
   "url": "https://3.basecampapi.com/195539477/buckets/2085958496/chats/9007199254741043/lines/9007199254741076.json",
   "app_url": "https://3.basecamp.com/195539477/buckets/2085958496/chats/9007199254741043@9007199254741076",
+  "bucket": {
+    "id": 2085958496,
+    "type": "Project"
+  },
+  "parent": {
+    "id": 9007199254741043,
+    "type": "Chat::Transcript",
+    "url": "https://3.basecampapi.com/195539477/buckets/2085958496/chats/9007199254741043.json",
+    "app_url": "https://3.basecamp.com/195539477/buckets/2085958496/chats/9007199254741043"
+  },
   "creator": {
     "id": 1007299143,
     "name": "Victor Cooper",
     "email_address": "victor@honchodesign.com",
     "personable_type": "User",
     "title": null,
-    "created_at": "2016-07-07T02:58:31.022Z",
-    "updated_at": "2016-07-07T02:58:35.795Z",
+    "created_at": "2016-07-08T02:16:07.483Z",
+    "updated_at": "2016-07-08T02:16:11.821Z",
     "admin": true,
     "owner": true,
     "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBEcqCjw=--c632b967cec296b87363a697a67a87f9cc1e5b45/avatar-64-x4",
@@ -212,22 +196,6 @@ Get a Campfire line
       "id": 1033447817,
       "name": "Honcho Design"
     }
-  },
-  "bucket": {
-    "id": 1042979250,
-    "account_id": 1009501286,
-    "name": "Honcho Design Newsroom",
-    "description": "Let's talk about the company!",
-    "created_at": "2016-04-07T02:58:39.958Z",
-    "updated_at": "2016-04-07T02:58:39.958Z",
-    "creator_id": 1007299143,
-    "client_company_id": null
-  },
-  "parent": {
-    "id": 9007199254741043,
-    "title": "Campfire",
-    "url": "https://3.basecampapi.com/195539477/buckets/2085958496/chats/9007199254741043.json",
-    "app_url": "https://3.basecamp.com/195539477/buckets/2085958496/chats/9007199254741043"
   },
   "content": "Hey all!"
 }

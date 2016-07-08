@@ -22,21 +22,23 @@ To get the schedule ID for a Basecamp, see the [Get a Basecamp][1] endpoint's `d
 {
   "id": 9007199254741436,
   "status": "active",
-  "created_at": "2016-06-27T17:30:10.595Z",
-  "updated_at": "2016-06-27T17:31:29.756Z",
-  "bucket_path": "/195539477/buckets/2085958498",
+  "created_at": "2016-07-08T02:17:06.354Z",
+  "updated_at": "2016-07-08T02:18:18.394Z",
   "type": "Schedule",
-  "comments_count": 0,
   "url": "https://3.basecampapi.com/195539477/buckets/2085958498/schedules/9007199254741436.json",
   "app_url": "https://3.basecamp.com/195539477/buckets/2085958498/schedules/9007199254741436",
+  "bucket": {
+    "id": 2085958498,
+    "type": "Project"
+  },
   "creator": {
     "id": 1007299143,
     "name": "Victor Cooper",
     "email_address": "victor@honchodesign.com",
     "personable_type": "User",
     "title": null,
-    "created_at": "2016-06-27T17:29:12.654Z",
-    "updated_at": "2016-06-27T17:29:12.752Z",
+    "created_at": "2016-07-08T02:16:07.483Z",
+    "updated_at": "2016-07-08T02:16:11.821Z",
     "admin": true,
     "owner": true,
     "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBEcqCjw=--c632b967cec296b87363a697a67a87f9cc1e5b45/avatar-64-x4",
@@ -44,16 +46,6 @@ To get the schedule ID for a Basecamp, see the [Get a Basecamp][1] endpoint's `d
       "id": 1033447817,
       "name": "Honcho Design"
     }
-  },
-  "bucket": {
-    "id": 1042979252,
-    "account_id": 1009501286,
-    "name": "The Leto Laptop",
-    "description": "Laptop product launch.",
-    "created_at": "2016-06-02T17:30:10.480Z",
-    "updated_at": "2016-06-02T17:30:10.480Z",
-    "creator_id": 1007299143,
-    "client_company_id": null
   },
   "title": "Schedule",
   "entries_count": 1,

@@ -27,21 +27,31 @@ _Optional query parameters_:
   {
     "id": 9007199254741612,
     "status": "active",
-    "created_at": "2016-06-24T19:59:10.480Z",
-    "updated_at": "2016-06-27T17:30:35.575Z",
-    "bucket_path": "/195539477/buckets/2085958498",
+    "created_at": "2016-07-05T03:50:06.221Z",
+    "updated_at": "2016-07-08T02:17:29.822Z",
     "type": "Todolist",
-    "comments_count": 0,
     "url": "https://3.basecampapi.com/195539477/buckets/2085958498/todolists/9007199254741612.json",
     "app_url": "https://3.basecamp.com/195539477/buckets/2085958498/todolists/9007199254741612",
+    "comments_count": 0,
+    "comments_url": "https://3.basecampapi.com/195539477/buckets/2085958498/recordings/9007199254741612/comments.json",
+    "bucket": {
+      "id": 2085958498,
+      "type": "Project"
+    },
+    "parent": {
+      "id": 9007199254741435,
+      "type": "Todoset",
+      "url": "https://3.basecampapi.com/195539477/buckets/2085958498/todosets/9007199254741435.json",
+      "app_url": "https://3.basecamp.com/195539477/buckets/2085958498/todosets/9007199254741435"
+    },
     "creator": {
       "id": 1007299144,
       "name": "Annie Bryan",
       "email_address": "annie@honchodesign.com",
       "personable_type": "User",
       "title": "Central Markets Manager",
-      "created_at": "2016-06-27T17:29:12.772Z",
-      "updated_at": "2016-06-27T17:29:12.772Z",
+      "created_at": "2016-07-08T02:16:07.615Z",
+      "updated_at": "2016-07-08T02:16:07.615Z",
       "admin": false,
       "owner": false,
       "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBEgqCjw=--8266bb0507508f3d46050d57b65924d5e2a005f3/avatar-64-x4",
@@ -49,22 +59,6 @@ _Optional query parameters_:
         "id": 1033447817,
         "name": "Honcho Design"
       }
-    },
-    "bucket": {
-      "id": 1042979252,
-      "account_id": 1009501286,
-      "name": "The Leto Laptop",
-      "description": "Laptop product launch.",
-      "created_at": "2016-06-02T17:30:10.480Z",
-      "updated_at": "2016-06-02T17:30:10.480Z",
-      "creator_id": 1007299143,
-      "client_company_id": null
-    },
-    "parent": {
-      "id": 9007199254741435,
-      "title": "To-dos",
-      "url": "https://3.basecampapi.com/195539477/buckets/2085958498/todosets/9007199254741435.json",
-      "app_url": "https://3.basecamp.com/195539477/buckets/2085958498/todosets/9007199254741435"
     },
     "description_html": null,
     "description_text": null,
@@ -98,40 +92,34 @@ Note: Nesting under the to-do set resource is not necessary for this endpoint.
 {
   "id": 9007199254741461,
   "status": "active",
-  "created_at": "2016-06-05T17:45:10.480Z",
-  "updated_at": "2016-06-27T17:30:15.419Z",
-  "bucket_path": "/195539477/buckets/2085958498",
+  "created_at": "2016-06-16T02:27:06.221Z",
+  "updated_at": "2016-07-08T02:17:11.458Z",
   "type": "Todolist",
-  "comments_count": 0,
   "url": "https://3.basecampapi.com/195539477/buckets/2085958498/todolists/9007199254741461.json",
   "app_url": "https://3.basecamp.com/195539477/buckets/2085958498/todolists/9007199254741461",
+  "comments_count": 0,
+  "comments_url": "https://3.basecampapi.com/195539477/buckets/2085958498/recordings/9007199254741461/comments.json",
+  "bucket": {
+    "id": 2085958498,
+    "type": "Project"
+  },
+  "parent": {
+    "id": 9007199254741435,
+    "type": "Todoset",
+    "url": "https://3.basecampapi.com/195539477/buckets/2085958498/todosets/9007199254741435.json",
+    "app_url": "https://3.basecamp.com/195539477/buckets/2085958498/todosets/9007199254741435"
+  },
   "creator": {
     "id": 1007299152,
     "name": "Andrew Wong",
     "email_address": "andrew@honchodesign.com",
     "personable_type": "User",
     "title": "Senior Branding Strategist",
-    "created_at": "2016-06-27T17:29:13.939Z",
-    "updated_at": "2016-06-27T17:29:13.939Z",
+    "created_at": "2016-07-08T02:16:08.753Z",
+    "updated_at": "2016-07-08T02:16:08.753Z",
     "admin": false,
     "owner": false,
     "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBFAqCjw=--0413da7be3ef98ba6e3274f859fb29fc38698edf/avatar-64-x4"
-  },
-  "bucket": {
-    "id": 1042979252,
-    "account_id": 1009501286,
-    "name": "The Leto Laptop",
-    "description": "Laptop product launch.",
-    "created_at": "2016-06-02T17:30:10.480Z",
-    "updated_at": "2016-06-02T17:30:10.480Z",
-    "creator_id": 1007299143,
-    "client_company_id": null
-  },
-  "parent": {
-    "id": 9007199254741435,
-    "title": "To-dos",
-    "url": "https://3.basecampapi.com/195539477/buckets/2085958498/todosets/9007199254741435.json",
-    "app_url": "https://3.basecamp.com/195539477/buckets/2085958498/todosets/9007199254741435"
   },
   "description_html": null,
   "description_text": null,
