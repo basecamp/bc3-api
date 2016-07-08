@@ -21,8 +21,8 @@ Get documents
   {
     "id": 9007199254741197,
     "status": "active",
-    "created_at": "2016-05-28T18:13:15.023Z",
-    "updated_at": "2016-07-08T16:01:40.712Z",
+    "created_at": "2016-05-28T17:52:11.408Z",
+    "updated_at": "2016-07-08T16:48:34.237Z",
     "type": "Document",
     "url": "https://3.basecampapi.com/195539477/buckets/2085958496/documents/9007199254741197.json",
     "app_url": "https://3.basecamp.com/195539477/buckets/2085958496/documents/9007199254741197",
@@ -41,18 +41,18 @@ Get documents
       "type": "Project"
     },
     "creator": {
-      "id": 1007299180,
+      "id": 1007299210,
       "name": "Cheryl Walters",
       "email_address": "cheryl@honchodesign.com",
       "personable_type": "User",
       "title": "Corporate Integration Director",
-      "created_at": "2016-07-08T16:01:06.974Z",
-      "updated_at": "2016-07-08T16:01:06.974Z",
+      "created_at": "2016-07-08T16:48:02.776Z",
+      "updated_at": "2016-07-08T16:48:02.776Z",
       "admin": false,
       "owner": false,
-      "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBGwqCjw=--53be062e62be2f6b22f96f4c45921c91a34e049f/avatar-64-x4",
+      "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBIoqCjw=--62bce6c713db86b4c3d8a0b74dfb77e89f0d2cd2/avatar-64-x4",
       "company": {
-        "id": 1033447820,
+        "id": 1033447822,
         "name": "Honcho Design"
       }
     },
@@ -80,8 +80,8 @@ Get a document
 {
   "id": 9007199254741716,
   "status": "active",
-  "created_at": "2016-06-13T17:31:52.821Z",
-  "updated_at": "2016-06-13T17:31:52.821Z",
+  "created_at": "2016-06-13T17:18:44.210Z",
+  "updated_at": "2016-06-13T17:18:44.210Z",
   "type": "Document",
   "url": "https://3.basecampapi.com/195539477/buckets/2085958499/documents/9007199254741716.json",
   "app_url": "https://3.basecamp.com/195539477/buckets/2085958499/documents/9007199254741716",
@@ -93,16 +93,16 @@ Get a document
     "type": "Project"
   },
   "creator": {
-    "id": 1007299200,
+    "id": 1007299230,
     "name": "Matt Donahue",
     "email_address": "matt@honchodesign.com",
     "personable_type": "User",
     "title": "Global Data Strategist",
-    "created_at": "2016-07-08T16:01:09.977Z",
-    "updated_at": "2016-07-08T16:01:09.977Z",
+    "created_at": "2016-07-08T16:48:05.858Z",
+    "updated_at": "2016-07-08T16:48:05.858Z",
     "admin": false,
     "owner": false,
-    "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBIAqCjw=--08d58be7aaefc069ae1c6bd353be2d31f4ba4220/avatar-64-x4"
+    "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBJ4qCjw=--ff431338b1dfb8e245e454cc0ddaf0507bd859f7/avatar-64-x4"
   },
   "title": "Possible photos to show vulnerable laptops",
   "content_html": "We've been mulling over some possible photography and situations we want to show, particularly vulnerable laptops. Here are a few ideas, and we'll be adding to and changing this list quite a bit as it develops:<br><br>\n\n  <strong>Photography</strong><br>\n  <ol>\n    <li>Person at a coffee shop</li>\n    <li>Leaving laptop unsecured at work</li>\n    <li>Leaving laptop in hotel room out in the open, not in the safe</li>\n    <li>Animated gif of someone turning around and laptop being gone the next second</li>\n    <li>People leaving their computer in their bag and not paying attention</li>\n    <li>Security line at an airport, laptops out in the open</li>\n  </ol>",

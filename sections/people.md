@@ -20,18 +20,18 @@ Get all people
 ```json
 [
   {
-    "id": 1007299143,
+    "id": 1007299208,
     "name": "Victor Cooper",
     "email_address": "victor@honchodesign.com",
     "personable_type": "User",
     "title": null,
-    "created_at": "2016-07-08T02:16:07.483Z",
-    "updated_at": "2016-07-08T02:16:11.821Z",
+    "created_at": "2016-07-08T16:48:02.496Z",
+    "updated_at": "2016-07-08T16:48:02.592Z",
     "admin": true,
     "owner": true,
-    "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBEcqCjw=--c632b967cec296b87363a697a67a87f9cc1e5b45/avatar-64-x4",
+    "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBIgqCjw=--719e3f2aa4406cf5806c2c1522259710deb788e4/avatar-64-x4",
     "company": {
-      "id": 1033447817,
+      "id": 1033447822,
       "name": "Honcho Design"
     }
   }
@@ -74,10 +74,10 @@ Update who can access a Basecamp
 ```json
 {
   "grant": [
-    1007299151
+    1007299216
   ],
   "revoke": [
-    1007299150
+    1007299215
   ],
   "create": [
     {
@@ -104,48 +104,48 @@ curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/j
 {
   "granted": [
     {
-      "id": 1007299151,
+      "id": 1007299216,
       "name": "Amy Rivera",
       "email_address": "amy@honchodesign.com",
       "personable_type": "User",
       "title": "Central Web Coordinator",
-      "created_at": "2016-07-08T02:16:08.614Z",
-      "updated_at": "2016-07-08T02:16:08.614Z",
+      "created_at": "2016-07-08T16:48:03.671Z",
+      "updated_at": "2016-07-08T16:48:03.671Z",
       "admin": false,
       "owner": false,
-      "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBE8qCjw=--44a343c4ec0f62daf82484ec3539efc8c74a336a/avatar-64-x4"
+      "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBJAqCjw=--8d75d03d706bcee8a1165d52f5ef9fdaaee5d0c9/avatar-64-x4"
     },
     {
-      "id": 1007299177,
+      "id": 1007299238,
       "name": "Victor Copper",
       "email_address": "victor@hanchodesign.com",
       "personable_type": "User",
       "title": "Prankster",
-      "created_at": "2016-07-08T02:20:13.720Z",
-      "updated_at": "2016-07-08T02:20:13.808Z",
+      "created_at": "2016-07-08T16:50:31.360Z",
+      "updated_at": "2016-07-08T16:50:31.482Z",
       "admin": false,
       "owner": false,
-      "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBGkqCjw=--4e1853c29a71b8a9b94881c7adc8c865a8105737/avatar-64-x4",
+      "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBKYqCjw=--50cd369c3cc7f8c0c15174977d26f51925a7f268/avatar-64-x4",
       "company": {
-        "id": 1033447819,
+        "id": 1033447824,
         "name": "Hancho Design"
       }
     }
   ],
   "revoked": [
     {
-      "id": 1007299150,
+      "id": 1007299215,
       "name": "Steve Marsh",
       "email_address": "steve@honchodesign.com",
       "personable_type": "User",
       "title": "Legacy Directives Strategist",
-      "created_at": "2016-07-08T02:16:08.468Z",
-      "updated_at": "2016-07-08T02:16:08.468Z",
+      "created_at": "2016-07-08T16:48:03.518Z",
+      "updated_at": "2016-07-08T16:48:03.518Z",
       "admin": false,
       "owner": false,
-      "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBE4qCjw=--b544b6a710bd76020abc076fc041895954025116/avatar-64-x4",
+      "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBI8qCjw=--855220f904d26ccbc249233674ddb77b635aa8ba/avatar-64-x4",
       "company": {
-        "id": 1033447817,
+        "id": 1033447822,
         "name": "Honcho Design"
       }
     }
@@ -179,16 +179,16 @@ Get person
 <!-- START GET /people/2.json -->
 ```json
 {
-  "id": 1007299169,
+  "id": 1007299234,
   "name": "Zach Settles",
   "email_address": "zach@honchodesign.com",
   "personable_type": "User",
   "title": "Customer Paradigm Supervisor",
-  "created_at": "2016-07-08T02:16:11.439Z",
-  "updated_at": "2016-07-08T02:16:11.439Z",
+  "created_at": "2016-07-08T16:48:06.590Z",
+  "updated_at": "2016-07-08T16:48:06.590Z",
   "admin": false,
   "owner": false,
-  "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBGEqCjw=--f278ae7c0479355c2aa772cb3155e925954de561/avatar-64-x4"
+  "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBKIqCjw=--9febe99a5684d0d37541b642ff3a5b6985cf229f/avatar-64-x4"
 }
 ```
 <!-- END GET /people/2.json -->

@@ -27,36 +27,38 @@ _Optional query parameters_:
   {
     "id": 9007199254741612,
     "status": "active",
-    "created_at": "2016-07-05T03:50:06.221Z",
-    "updated_at": "2016-07-08T02:17:29.822Z",
+    "created_at": "2016-07-05T16:53:11.487Z",
+    "updated_at": "2016-07-08T16:49:41.056Z",
     "type": "Todolist",
     "url": "https://3.basecampapi.com/195539477/buckets/2085958498/todolists/9007199254741612.json",
     "app_url": "https://3.basecamp.com/195539477/buckets/2085958498/todolists/9007199254741612",
     "comments_count": 0,
     "comments_url": "https://3.basecampapi.com/195539477/buckets/2085958498/recordings/9007199254741612/comments.json",
-    "bucket": {
-      "id": 2085958498,
-      "type": "Project"
-    },
     "parent": {
       "id": 9007199254741435,
+      "title": "To-dos",
       "type": "Todoset",
       "url": "https://3.basecampapi.com/195539477/buckets/2085958498/todosets/9007199254741435.json",
       "app_url": "https://3.basecamp.com/195539477/buckets/2085958498/todosets/9007199254741435"
     },
+    "bucket": {
+      "id": 2085958498,
+      "name": "The Leto Laptop",
+      "type": "Project"
+    },
     "creator": {
-      "id": 1007299144,
+      "id": 1007299209,
       "name": "Annie Bryan",
       "email_address": "annie@honchodesign.com",
       "personable_type": "User",
       "title": "Central Markets Manager",
-      "created_at": "2016-07-08T02:16:07.615Z",
-      "updated_at": "2016-07-08T02:16:07.615Z",
+      "created_at": "2016-07-08T16:48:02.619Z",
+      "updated_at": "2016-07-08T16:48:02.619Z",
       "admin": false,
       "owner": false,
-      "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBEgqCjw=--8266bb0507508f3d46050d57b65924d5e2a005f3/avatar-64-x4",
+      "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBIkqCjw=--003094c5a28c4331af92401ec3675148e81d7bc1/avatar-64-x4",
       "company": {
-        "id": 1033447817,
+        "id": 1033447822,
         "name": "Honcho Design"
       }
     },
@@ -92,34 +94,36 @@ Note: Nesting under the to-do set resource is not necessary for this endpoint.
 {
   "id": 9007199254741461,
   "status": "active",
-  "created_at": "2016-06-16T02:27:06.221Z",
-  "updated_at": "2016-07-08T02:17:11.458Z",
+  "created_at": "2016-06-16T17:09:11.487Z",
+  "updated_at": "2016-07-08T16:49:18.302Z",
   "type": "Todolist",
   "url": "https://3.basecampapi.com/195539477/buckets/2085958498/todolists/9007199254741461.json",
   "app_url": "https://3.basecamp.com/195539477/buckets/2085958498/todolists/9007199254741461",
   "comments_count": 0,
   "comments_url": "https://3.basecampapi.com/195539477/buckets/2085958498/recordings/9007199254741461/comments.json",
-  "bucket": {
-    "id": 2085958498,
-    "type": "Project"
-  },
   "parent": {
     "id": 9007199254741435,
+    "title": "To-dos",
     "type": "Todoset",
     "url": "https://3.basecampapi.com/195539477/buckets/2085958498/todosets/9007199254741435.json",
     "app_url": "https://3.basecamp.com/195539477/buckets/2085958498/todosets/9007199254741435"
   },
+  "bucket": {
+    "id": 2085958498,
+    "name": "The Leto Laptop",
+    "type": "Project"
+  },
   "creator": {
-    "id": 1007299152,
+    "id": 1007299217,
     "name": "Andrew Wong",
     "email_address": "andrew@honchodesign.com",
     "personable_type": "User",
     "title": "Senior Branding Strategist",
-    "created_at": "2016-07-08T02:16:08.753Z",
-    "updated_at": "2016-07-08T02:16:08.753Z",
+    "created_at": "2016-07-08T16:48:03.825Z",
+    "updated_at": "2016-07-08T16:48:03.825Z",
     "admin": false,
     "owner": false,
-    "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBFAqCjw=--0413da7be3ef98ba6e3274f859fb29fc38698edf/avatar-64-x4"
+    "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBJEqCjw=--c0a96403d7ff55054664f0f43ae0bdcf5fca6331/avatar-64-x4"
   },
   "description_html": null,
   "description_text": null,

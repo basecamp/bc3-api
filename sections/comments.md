@@ -27,32 +27,34 @@ Get comments
   {
     "id": 9007199254741444,
     "status": "active",
-    "created_at": "2016-07-08T02:52:07.442Z",
-    "updated_at": "2016-07-08T02:52:07.442Z",
+    "created_at": "2016-07-08T17:24:13.130Z",
+    "updated_at": "2016-07-08T17:24:13.130Z",
     "type": "Comment",
     "url": "https://3.basecampapi.com/195539477/buckets/2085958498/comments/9007199254741444.json",
     "app_url": "https://3.basecamp.com/195539477/buckets/2085958498/messages/9007199254741443#__recording_9007199254741444",
-    "bucket": {
-      "id": 2085958498,
-      "type": "Project"
-    },
     "parent": {
       "id": 9007199254741443,
+      "title": "We won Leto!",
       "type": "Message",
       "url": "https://3.basecampapi.com/195539477/buckets/2085958498/messages/9007199254741443.json",
       "app_url": "https://3.basecamp.com/195539477/buckets/2085958498/messages/9007199254741443"
     },
+    "bucket": {
+      "id": 2085958498,
+      "name": "The Leto Laptop",
+      "type": "Project"
+    },
     "creator": {
-      "id": 1007299152,
+      "id": 1007299217,
       "name": "Andrew Wong",
       "email_address": "andrew@honchodesign.com",
       "personable_type": "User",
       "title": "Senior Branding Strategist",
-      "created_at": "2016-07-08T02:16:08.753Z",
-      "updated_at": "2016-07-08T02:16:08.753Z",
+      "created_at": "2016-07-08T16:48:03.825Z",
+      "updated_at": "2016-07-08T16:48:03.825Z",
       "admin": false,
       "owner": false,
-      "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBFAqCjw=--0413da7be3ef98ba6e3274f859fb29fc38698edf/avatar-64-x4"
+      "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBJEqCjw=--c0a96403d7ff55054664f0f43ae0bdcf5fca6331/avatar-64-x4"
     },
     "content_html": "Yeah! Great job everyone! Super excited to get going!",
     "content_text": "Yeah! Great job everyone! Super excited to get going!"
@@ -78,34 +80,36 @@ Get a comment
 {
   "id": 9007199254741453,
   "status": "active",
-  "created_at": "2016-07-08T03:42:08.594Z",
-  "updated_at": "2016-07-08T03:42:08.594Z",
+  "created_at": "2016-07-08T17:05:14.776Z",
+  "updated_at": "2016-07-08T17:05:14.776Z",
   "type": "Comment",
   "url": "https://3.basecampapi.com/195539477/buckets/2085958498/comments/9007199254741453.json",
   "app_url": "https://3.basecamp.com/195539477/buckets/2085958498/messages/9007199254741443#__recording_9007199254741453",
-  "bucket": {
-    "id": 2085958498,
-    "type": "Project"
-  },
   "parent": {
     "id": 9007199254741443,
+    "title": "We won Leto!",
     "type": "Message",
     "url": "https://3.basecampapi.com/195539477/buckets/2085958498/messages/9007199254741443.json",
     "app_url": "https://3.basecamp.com/195539477/buckets/2085958498/messages/9007199254741443"
   },
+  "bucket": {
+    "id": 2085958498,
+    "name": "The Leto Laptop",
+    "type": "Project"
+  },
   "creator": {
-    "id": 1007299144,
+    "id": 1007299209,
     "name": "Annie Bryan",
     "email_address": "annie@honchodesign.com",
     "personable_type": "User",
     "title": "Central Markets Manager",
-    "created_at": "2016-07-08T02:16:07.615Z",
-    "updated_at": "2016-07-08T02:16:07.615Z",
+    "created_at": "2016-07-08T16:48:02.619Z",
+    "updated_at": "2016-07-08T16:48:02.619Z",
     "admin": false,
     "owner": false,
-    "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBEgqCjw=--8266bb0507508f3d46050d57b65924d5e2a005f3/avatar-64-x4",
+    "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBIkqCjw=--003094c5a28c4331af92401ec3675148e81d7bc1/avatar-64-x4",
     "company": {
-      "id": 1033447817,
+      "id": 1033447822,
       "name": "Honcho Design"
     }
   },

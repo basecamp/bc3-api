@@ -22,34 +22,36 @@ Get vaults
   {
     "id": 9007199254741202,
     "status": "active",
-    "created_at": "2016-05-28T04:51:15.137Z",
-    "updated_at": "2016-07-08T02:16:35.662Z",
+    "created_at": "2016-05-28T18:33:11.408Z",
+    "updated_at": "2016-07-08T16:48:34.271Z",
     "type": "Vault",
     "url": "https://3.basecampapi.com/195539477/buckets/2085958496/vaults/9007199254741202.json",
     "app_url": "https://3.basecamp.com/195539477/buckets/2085958496/vaults/9007199254741202",
-    "bucket": {
-      "id": 2085958496,
-      "type": "Project"
-    },
     "parent": {
       "id": 9007199254741052,
+      "title": "Docs & Files",
       "type": "Vault",
       "url": "https://3.basecampapi.com/195539477/buckets/2085958496/vaults/9007199254741052.json",
       "app_url": "https://3.basecamp.com/195539477/buckets/2085958496/vaults/9007199254741052"
     },
+    "bucket": {
+      "id": 2085958496,
+      "name": "Honcho Design Newsroom",
+      "type": "Project"
+    },
     "creator": {
-      "id": 1007299143,
+      "id": 1007299208,
       "name": "Victor Cooper",
       "email_address": "victor@honchodesign.com",
       "personable_type": "User",
       "title": null,
-      "created_at": "2016-07-08T02:16:07.483Z",
-      "updated_at": "2016-07-08T02:16:11.821Z",
+      "created_at": "2016-07-08T16:48:02.496Z",
+      "updated_at": "2016-07-08T16:48:02.592Z",
       "admin": true,
       "owner": true,
-      "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBEcqCjw=--c632b967cec296b87363a697a67a87f9cc1e5b45/avatar-64-x4",
+      "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBIgqCjw=--719e3f2aa4406cf5806c2c1522259710deb788e4/avatar-64-x4",
       "company": {
-        "id": 1033447817,
+        "id": 1033447822,
         "name": "Honcho Design"
       }
     },
@@ -79,28 +81,29 @@ Get a vault
 {
   "id": 9007199254741052,
   "status": "active",
-  "created_at": "2016-07-08T02:16:15.367Z",
-  "updated_at": "2016-07-08T02:16:35.670Z",
+  "created_at": "2016-07-08T16:48:11.660Z",
+  "updated_at": "2016-07-08T16:48:34.283Z",
   "type": "Vault",
   "url": "https://3.basecampapi.com/195539477/buckets/2085958496/vaults/9007199254741052.json",
   "app_url": "https://3.basecamp.com/195539477/buckets/2085958496/vaults/9007199254741052",
   "bucket": {
     "id": 2085958496,
+    "name": "Honcho Design Newsroom",
     "type": "Project"
   },
   "creator": {
-    "id": 1007299143,
+    "id": 1007299208,
     "name": "Victor Cooper",
     "email_address": "victor@honchodesign.com",
     "personable_type": "User",
     "title": null,
-    "created_at": "2016-07-08T02:16:07.483Z",
-    "updated_at": "2016-07-08T02:16:11.821Z",
+    "created_at": "2016-07-08T16:48:02.496Z",
+    "updated_at": "2016-07-08T16:48:02.592Z",
     "admin": true,
     "owner": true,
-    "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBEcqCjw=--c632b967cec296b87363a697a67a87f9cc1e5b45/avatar-64-x4",
+    "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBIgqCjw=--719e3f2aa4406cf5806c2c1522259710deb788e4/avatar-64-x4",
     "company": {
-      "id": 1033447817,
+      "id": 1033447822,
       "name": "Honcho Design"
     }
   },

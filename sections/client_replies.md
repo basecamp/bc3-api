@@ -20,34 +20,36 @@ Get client replies
   {
     "id": 9007199254741656,
     "status": "active",
-    "created_at": "2016-07-08T03:11:33.363Z",
-    "updated_at": "2016-07-08T03:11:33.363Z",
+    "created_at": "2016-07-08T18:59:45.823Z",
+    "updated_at": "2016-07-08T18:59:45.823Z",
     "type": "Client::Reply",
     "url": "https://3.basecampapi.com/195539477/buckets/2085958499/client/replies/9007199254741656.json",
     "app_url": "https://3.basecamp.com/195539477/buckets/2085958499/client/correspondences/9007199254741655#__recording_9007199254741656",
-    "bucket": {
-      "id": 2085958499,
-      "type": "Project"
-    },
     "parent": {
       "id": 9007199254741655,
+      "title": "Project kickoff!",
       "type": "Client::Correspondence",
       "url": "https://3.basecampapi.com/195539477/buckets/2085958499/client/correspondences/9007199254741655.json",
       "app_url": "https://3.basecamp.com/195539477/buckets/2085958499/client/correspondences/9007199254741655"
     },
+    "bucket": {
+      "id": 2085958499,
+      "name": "The Leto Locator",
+      "type": "Project"
+    },
     "creator": {
-      "id": 1007299170,
+      "id": 1007299235,
       "name": "Stephen Early",
       "email_address": "stephen@letobrand.com",
       "personable_type": "Client",
       "title": "National Directives Director",
-      "created_at": "2016-07-08T02:16:11.461Z",
-      "updated_at": "2016-07-08T02:16:11.461Z",
+      "created_at": "2016-07-08T16:48:06.620Z",
+      "updated_at": "2016-07-08T16:48:06.620Z",
       "admin": false,
       "owner": false,
-      "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBGIqCjw=--30a34b0522d7ba3484b8c4dcd65d9087a1baef0e/avatar-64-x4",
+      "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBKMqCjw=--605a670338311d36b6cb93f8fc1e94a466a047b4/avatar-64-x4",
       "company": {
-        "id": 1033447818,
+        "id": 1033447823,
         "name": "Leto Brand"
       }
     },
@@ -74,34 +76,36 @@ Get a client reply
 {
   "id": 9007199254741660,
   "status": "active",
-  "created_at": "2016-07-08T02:39:33.832Z",
-  "updated_at": "2016-07-08T02:39:33.832Z",
+  "created_at": "2016-07-08T17:57:46.516Z",
+  "updated_at": "2016-07-08T17:57:46.516Z",
   "type": "Client::Reply",
   "url": "https://3.basecampapi.com/195539477/buckets/2085958499/client/replies/9007199254741660.json",
   "app_url": "https://3.basecamp.com/195539477/buckets/2085958499/client/correspondences/9007199254741655#__recording_9007199254741660",
-  "bucket": {
-    "id": 2085958499,
-    "type": "Project"
-  },
   "parent": {
     "id": 9007199254741655,
+    "title": "Project kickoff!",
     "type": "Client::Correspondence",
     "url": "https://3.basecampapi.com/195539477/buckets/2085958499/client/correspondences/9007199254741655.json",
     "app_url": "https://3.basecamp.com/195539477/buckets/2085958499/client/correspondences/9007199254741655"
   },
+  "bucket": {
+    "id": 2085958499,
+    "name": "The Leto Locator",
+    "type": "Project"
+  },
   "creator": {
-    "id": 1007299144,
+    "id": 1007299209,
     "name": "Annie Bryan",
     "email_address": "annie@honchodesign.com",
     "personable_type": "User",
     "title": "Central Markets Manager",
-    "created_at": "2016-07-08T02:16:07.615Z",
-    "updated_at": "2016-07-08T02:16:07.615Z",
+    "created_at": "2016-07-08T16:48:02.619Z",
+    "updated_at": "2016-07-08T16:48:02.619Z",
     "admin": false,
     "owner": false,
-    "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBEgqCjw=--8266bb0507508f3d46050d57b65924d5e2a005f3/avatar-64-x4",
+    "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBIkqCjw=--003094c5a28c4331af92401ec3675148e81d7bc1/avatar-64-x4",
     "company": {
-      "id": 1033447817,
+      "id": 1033447822,
       "name": "Honcho Design"
     }
   },

@@ -23,36 +23,38 @@ To get the message board ID for a Basecamp, see the [Get message board][3] endpo
   {
     "id": 9007199254741622,
     "status": "active",
-    "created_at": "2016-07-08T02:52:06.221Z",
-    "updated_at": "2016-07-08T02:17:31.713Z",
+    "created_at": "2016-07-08T18:26:11.487Z",
+    "updated_at": "2016-07-08T16:49:43.893Z",
     "type": "Message",
     "url": "https://3.basecampapi.com/195539477/buckets/2085958498/messages/9007199254741622.json",
     "app_url": "https://3.basecamp.com/195539477/buckets/2085958498/messages/9007199254741622",
     "comments_count": 1,
     "comments_url": "https://3.basecampapi.com/195539477/buckets/2085958498/recordings/9007199254741622/comments.json",
-    "bucket": {
-      "id": 2085958498,
-      "type": "Project"
-    },
     "parent": {
       "id": 9007199254741434,
+      "title": "Message Board",
       "type": "Message::Board",
       "url": "https://3.basecampapi.com/195539477/buckets/2085958498/message_boards/9007199254741434.json",
       "app_url": "https://3.basecamp.com/195539477/buckets/2085958498/message_boards/9007199254741434"
     },
+    "bucket": {
+      "id": 2085958498,
+      "name": "The Leto Laptop",
+      "type": "Project"
+    },
     "creator": {
-      "id": 1007299165,
+      "id": 1007299230,
       "name": "Matt Donahue",
       "email_address": "matt@honchodesign.com",
       "personable_type": "User",
       "title": "Global Data Strategist",
-      "created_at": "2016-07-08T02:16:10.850Z",
-      "updated_at": "2016-07-08T02:16:10.850Z",
+      "created_at": "2016-07-08T16:48:05.858Z",
+      "updated_at": "2016-07-08T16:48:05.858Z",
       "admin": false,
       "owner": false,
-      "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBF0qCjw=--21513efb0cf6f64f7a0720b2c56ac6145ae6680c/avatar-64-x4"
+      "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBJ4qCjw=--ff431338b1dfb8e245e454cc0ddaf0507bd859f7/avatar-64-x4"
     },
-    "content_html": "Hey all, here are some high res shots of the laptop hardware that we can use. These are not public yet, so be careful with how you share them. We don't want any leaks at all with these images.<div data-trix-attachment='{\"sgid\":\"BAh7CEkiCGdpZAY6BkVUSSIvZ2lkOi8vYmMzL0F0dGFjaG1lbnQvMTAxOTczMDUxMD9leHBpcmVzX2luBjsAVEkiDHB1cnBvc2UGOwBUSSIPYXR0YWNoYWJsZQY7AFRJIg9leHBpcmVzX2F0BjsAVDA=--592aadadb870f5984557f268717d9084d44ac29f\",\"contentType\":\"image/jpeg\",\"previewable\":true,\"filename\":\"images-laptop_1.jpg\",\"filesize\":18241,\"url\":\"https://3.basecamp.com/195539477/blobs/37e609eac3b489322cb4781d5859d865aaee5cb7/previews/full/images-laptop_1.jpg\"}' data-trix-attributes=\"{}\"></div><div data-trix-attachment='{\"sgid\":\"BAh7CEkiCGdpZAY6BkVUSSIvZ2lkOi8vYmMzL0F0dGFjaG1lbnQvMTAxOTczMDUxMT9leHBpcmVzX2luBjsAVEkiDHB1cnBvc2UGOwBUSSIPYXR0YWNoYWJsZQY7AFRJIg9leHBpcmVzX2F0BjsAVDA=--62a3d1cb555cd4e0e75c07d91fdbce65148e36b4\",\"contentType\":\"image/jpeg\",\"previewable\":true,\"filename\":\"images-laptop_2.jpg\",\"filesize\":30312,\"url\":\"https://3.basecamp.com/195539477/blobs/e3cb619f5ed8aea8a8a0372f06c0f98ca681cfe8/previews/full/images-laptop_2.jpg\"}' data-trix-attributes=\"{}\"></div><div data-trix-attachment='{\"sgid\":\"BAh7CEkiCGdpZAY6BkVUSSIvZ2lkOi8vYmMzL0F0dGFjaG1lbnQvMTAxOTczMDUxMj9leHBpcmVzX2luBjsAVEkiDHB1cnBvc2UGOwBUSSIPYXR0YWNoYWJsZQY7AFRJIg9leHBpcmVzX2F0BjsAVDA=--03e3397841118f2c697a7b34295803244128fd9b\",\"contentType\":\"image/jpeg\",\"previewable\":true,\"filename\":\"images-laptop_3.jpg\",\"filesize\":13852,\"url\":\"https://3.basecamp.com/195539477/blobs/13f9e94f8c251cf33904d952b5f7632e87667d3b/previews/full/images-laptop_3.jpg\"}' data-trix-attributes=\"{}\"></div><div data-trix-attachment='{\"sgid\":\"BAh7CEkiCGdpZAY6BkVUSSIvZ2lkOi8vYmMzL0F0dGFjaG1lbnQvMTAxOTczMDUxMz9leHBpcmVzX2luBjsAVEkiDHB1cnBvc2UGOwBUSSIPYXR0YWNoYWJsZQY7AFRJIg9leHBpcmVzX2F0BjsAVDA=--a848f869f12b3512835f6c33dac32f07b29f3733\",\"contentType\":\"image/jpeg\",\"previewable\":true,\"filename\":\"images-laptop_4.jpg\",\"filesize\":48488,\"url\":\"https://3.basecamp.com/195539477/blobs/9f66fe022052212f757495b88cb52a626db084c1/previews/full/images-laptop_4.jpg\"}' data-trix-attributes=\"{}\"></div><div data-trix-attachment='{\"sgid\":\"BAh7CEkiCGdpZAY6BkVUSSIvZ2lkOi8vYmMzL0F0dGFjaG1lbnQvMTAxOTczMDUxND9leHBpcmVzX2luBjsAVEkiDHB1cnBvc2UGOwBUSSIPYXR0YWNoYWJsZQY7AFRJIg9leHBpcmVzX2F0BjsAVDA=--759722abf530cb66824f6ba18e0ff45d7238bc94\",\"contentType\":\"image/jpeg\",\"previewable\":true,\"filename\":\"images-laptop_5.jpg\",\"filesize\":140435,\"url\":\"https://3.basecamp.com/195539477/blobs/7e8573c4f6aa93645285bda900449c05afae4bc5/previews/full/images-laptop_5.jpg\"}' data-trix-attributes=\"{}\"></div><div data-trix-attachment='{\"sgid\":\"BAh7CEkiCGdpZAY6BkVUSSIvZ2lkOi8vYmMzL0F0dGFjaG1lbnQvMTAxOTczMDUxNT9leHBpcmVzX2luBjsAVEkiDHB1cnBvc2UGOwBUSSIPYXR0YWNoYWJsZQY7AFRJIg9leHBpcmVzX2F0BjsAVDA=--a28c26f0b5a9d3374f145c0324aa7fc824a42147\",\"contentType\":\"image/jpeg\",\"previewable\":true,\"filename\":\"images-laptop_6.jpg\",\"filesize\":25658,\"url\":\"https://3.basecamp.com/195539477/blobs/cfdd471d367c9844868f613b7baa970a2c931778/previews/full/images-laptop_6.jpg\"}' data-trix-attributes=\"{}\"></div><div data-trix-attachment='{\"sgid\":\"BAh7CEkiCGdpZAY6BkVUSSIvZ2lkOi8vYmMzL0F0dGFjaG1lbnQvMTAxOTczMDUxNj9leHBpcmVzX2luBjsAVEkiDHB1cnBvc2UGOwBUSSIPYXR0YWNoYWJsZQY7AFRJIg9leHBpcmVzX2F0BjsAVDA=--62eca09ca83b3d553b8effd013bcaad37b206b85\",\"contentType\":\"image/jpeg\",\"previewable\":true,\"filename\":\"images-laptop_7.jpg\",\"filesize\":318977,\"url\":\"https://3.basecamp.com/195539477/blobs/5f1545b452c258c0c5f3a927847e12dea65108c4/previews/full/images-laptop_7.jpg\"}' data-trix-attributes=\"{}\"></div><div data-trix-attachment='{\"sgid\":\"BAh7CEkiCGdpZAY6BkVUSSIvZ2lkOi8vYmMzL0F0dGFjaG1lbnQvMTAxOTczMDUxNz9leHBpcmVzX2luBjsAVEkiDHB1cnBvc2UGOwBUSSIPYXR0YWNoYWJsZQY7AFRJIg9leHBpcmVzX2F0BjsAVDA=--4bbf6e7e4cee46a47d1b6c043bfa6c0a007db36b\",\"contentType\":\"image/jpeg\",\"previewable\":true,\"filename\":\"images-laptop_8.jpg\",\"filesize\":51341,\"url\":\"https://3.basecamp.com/195539477/blobs/a7b59e3fa46cc02620dd943e8b4306c54eb46642/previews/full/images-laptop_8.jpg\"}' data-trix-attributes=\"{}\"></div><div data-trix-attachment='{\"sgid\":\"BAh7CEkiCGdpZAY6BkVUSSIvZ2lkOi8vYmMzL0F0dGFjaG1lbnQvMTAxOTczMDUxOD9leHBpcmVzX2luBjsAVEkiDHB1cnBvc2UGOwBUSSIPYXR0YWNoYWJsZQY7AFRJIg9leHBpcmVzX2F0BjsAVDA=--b51983a66d102e7e3ca9d7f8e053916a421cf912\",\"contentType\":\"image/jpeg\",\"previewable\":true,\"filename\":\"images-laptop_9.jpg\",\"filesize\":369239,\"url\":\"https://3.basecamp.com/195539477/blobs/8d25ff67e0cd6806e04eb3bb28cd0513e9dcbd9d/previews/full/images-laptop_9.jpg\"}' data-trix-attributes=\"{}\"></div><div data-trix-attachment='{\"sgid\":\"BAh7CEkiCGdpZAY6BkVUSSIvZ2lkOi8vYmMzL0F0dGFjaG1lbnQvMTAxOTczMDUxOT9leHBpcmVzX2luBjsAVEkiDHB1cnBvc2UGOwBUSSIPYXR0YWNoYWJsZQY7AFRJIg9leHBpcmVzX2F0BjsAVDA=--43df281070f1a48f082e68ce18f03612c1cf3281\",\"contentType\":\"image/jpeg\",\"previewable\":true,\"filename\":\"images-laptop_10.jpg\",\"filesize\":25429,\"url\":\"https://3.basecamp.com/195539477/blobs/0a9063cc7e702663b0299002060239c70a9ea798/previews/full/images-laptop_10.jpg\"}' data-trix-attributes=\"{}\"></div><div data-trix-attachment='{\"sgid\":\"BAh7CEkiCGdpZAY6BkVUSSIvZ2lkOi8vYmMzL0F0dGFjaG1lbnQvMTAxOTczMDUyMD9leHBpcmVzX2luBjsAVEkiDHB1cnBvc2UGOwBUSSIPYXR0YWNoYWJsZQY7AFRJIg9leHBpcmVzX2F0BjsAVDA=--021113670f9861e151e4bac1b23efa43687f54b2\",\"contentType\":\"image/jpeg\",\"previewable\":true,\"filename\":\"images-laptop_11.jpg\",\"filesize\":20839,\"url\":\"https://3.basecamp.com/195539477/blobs/ab96b02d9032e38e124c1e6f24224ca6dc3d70ef/previews/full/images-laptop_11.jpg\"}' data-trix-attributes=\"{}\"></div><div data-trix-attachment='{\"sgid\":\"BAh7CEkiCGdpZAY6BkVUSSIvZ2lkOi8vYmMzL0F0dGFjaG1lbnQvMTAxOTczMDUyMT9leHBpcmVzX2luBjsAVEkiDHB1cnBvc2UGOwBUSSIPYXR0YWNoYWJsZQY7AFRJIg9leHBpcmVzX2F0BjsAVDA=--1ef625e29704c65ad2989f77e313593422b3fdee\",\"contentType\":\"image/jpeg\",\"previewable\":true,\"filename\":\"images-laptop_12.jpg\",\"filesize\":137872,\"url\":\"https://3.basecamp.com/195539477/blobs/1aa7771d49cabd3ede954e114aa98117a36b12a8/previews/full/images-laptop_12.jpg\"}' data-trix-attributes=\"{}\"></div><div data-trix-attachment='{\"sgid\":\"BAh7CEkiCGdpZAY6BkVUSSIvZ2lkOi8vYmMzL0F0dGFjaG1lbnQvMTAxOTczMDUyMj9leHBpcmVzX2luBjsAVEkiDHB1cnBvc2UGOwBUSSIPYXR0YWNoYWJsZQY7AFRJIg9leHBpcmVzX2F0BjsAVDA=--3f4dee05282595cde069001a4e4ca57593fabe77\",\"contentType\":\"image/jpeg\",\"previewable\":true,\"filename\":\"images-laptop_13.jpg\",\"filesize\":62024,\"url\":\"https://3.basecamp.com/195539477/blobs/7048f1769b27f59faf44ffc671fc57467d4af5be/previews/full/images-laptop_13.jpg\"}' data-trix-attributes=\"{}\"></div><div data-trix-attachment='{\"sgid\":\"BAh7CEkiCGdpZAY6BkVUSSIvZ2lkOi8vYmMzL0F0dGFjaG1lbnQvMTAxOTczMDUyMz9leHBpcmVzX2luBjsAVEkiDHB1cnBvc2UGOwBUSSIPYXR0YWNoYWJsZQY7AFRJIg9leHBpcmVzX2F0BjsAVDA=--7f1bfb82b57ece55d108c2762f1c34b35474e418\",\"contentType\":\"image/jpeg\",\"previewable\":true,\"filename\":\"images-laptop_14.jpg\",\"filesize\":81082,\"url\":\"https://3.basecamp.com/195539477/blobs/330a5adcb4d3bb136a8747f0fc02864bdf4d466e/previews/full/images-laptop_14.jpg\"}' data-trix-attributes=\"{}\"></div>",
+    "content_html": "Hey all, here are some high res shots of the laptop hardware that we can use. These are not public yet, so be careful with how you share them. We don't want any leaks at all with these images.<div data-trix-attachment='{\"sgid\":\"BAh7CEkiCGdpZAY6BkVUSSIvZ2lkOi8vYmMzL0F0dGFjaG1lbnQvMTAxOTczMDYzOD9leHBpcmVzX2luBjsAVEkiDHB1cnBvc2UGOwBUSSIPYXR0YWNoYWJsZQY7AFRJIg9leHBpcmVzX2F0BjsAVDA=--e1d254352da6988e3f93ab67fd41d35e380a2dbe\",\"contentType\":\"image/jpeg\",\"previewable\":true,\"filename\":\"images-laptop_1.jpg\",\"filesize\":18241,\"url\":\"https://3.basecamp.com/195539477/blobs/3780e7fca2065165113ad1b3d6ec84d27246855e/previews/full/images-laptop_1.jpg\"}' data-trix-attributes=\"{}\"></div><div data-trix-attachment='{\"sgid\":\"BAh7CEkiCGdpZAY6BkVUSSIvZ2lkOi8vYmMzL0F0dGFjaG1lbnQvMTAxOTczMDYzOT9leHBpcmVzX2luBjsAVEkiDHB1cnBvc2UGOwBUSSIPYXR0YWNoYWJsZQY7AFRJIg9leHBpcmVzX2F0BjsAVDA=--920a1ffa11bd68fc7bae02e9b1299e9c0f431f61\",\"contentType\":\"image/jpeg\",\"previewable\":true,\"filename\":\"images-laptop_2.jpg\",\"filesize\":30312,\"url\":\"https://3.basecamp.com/195539477/blobs/405d7c6a3ae9c95f68036644170eeb069c4a08d6/previews/full/images-laptop_2.jpg\"}' data-trix-attributes=\"{}\"></div><div data-trix-attachment='{\"sgid\":\"BAh7CEkiCGdpZAY6BkVUSSIvZ2lkOi8vYmMzL0F0dGFjaG1lbnQvMTAxOTczMDY0MD9leHBpcmVzX2luBjsAVEkiDHB1cnBvc2UGOwBUSSIPYXR0YWNoYWJsZQY7AFRJIg9leHBpcmVzX2F0BjsAVDA=--5bdd138c939efeb664310823a9ecb6a10b37b169\",\"contentType\":\"image/jpeg\",\"previewable\":true,\"filename\":\"images-laptop_3.jpg\",\"filesize\":13852,\"url\":\"https://3.basecamp.com/195539477/blobs/d58bd99c9073905103b08cfbab82012066d02712/previews/full/images-laptop_3.jpg\"}' data-trix-attributes=\"{}\"></div><div data-trix-attachment='{\"sgid\":\"BAh7CEkiCGdpZAY6BkVUSSIvZ2lkOi8vYmMzL0F0dGFjaG1lbnQvMTAxOTczMDY0MT9leHBpcmVzX2luBjsAVEkiDHB1cnBvc2UGOwBUSSIPYXR0YWNoYWJsZQY7AFRJIg9leHBpcmVzX2F0BjsAVDA=--9453d6ca2ca1a9a1292efc39bf7eab0c5324b0ed\",\"contentType\":\"image/jpeg\",\"previewable\":true,\"filename\":\"images-laptop_4.jpg\",\"filesize\":48488,\"url\":\"https://3.basecamp.com/195539477/blobs/c7fe0a6b9898ad2875191ec167b94d242c182820/previews/full/images-laptop_4.jpg\"}' data-trix-attributes=\"{}\"></div><div data-trix-attachment='{\"sgid\":\"BAh7CEkiCGdpZAY6BkVUSSIvZ2lkOi8vYmMzL0F0dGFjaG1lbnQvMTAxOTczMDY0Mj9leHBpcmVzX2luBjsAVEkiDHB1cnBvc2UGOwBUSSIPYXR0YWNoYWJsZQY7AFRJIg9leHBpcmVzX2F0BjsAVDA=--029dece186956f67bb0b71831dae24e3e240f660\",\"contentType\":\"image/jpeg\",\"previewable\":true,\"filename\":\"images-laptop_5.jpg\",\"filesize\":140435,\"url\":\"https://3.basecamp.com/195539477/blobs/d28e52067f0aa316a6636519b5b13b5af807f106/previews/full/images-laptop_5.jpg\"}' data-trix-attributes=\"{}\"></div><div data-trix-attachment='{\"sgid\":\"BAh7CEkiCGdpZAY6BkVUSSIvZ2lkOi8vYmMzL0F0dGFjaG1lbnQvMTAxOTczMDY0Mz9leHBpcmVzX2luBjsAVEkiDHB1cnBvc2UGOwBUSSIPYXR0YWNoYWJsZQY7AFRJIg9leHBpcmVzX2F0BjsAVDA=--7b4951c95dcab3802217664bec15a3578d7aaf6f\",\"contentType\":\"image/jpeg\",\"previewable\":true,\"filename\":\"images-laptop_6.jpg\",\"filesize\":25658,\"url\":\"https://3.basecamp.com/195539477/blobs/774547a276a27b18a73abec9b2afa68c411304fa/previews/full/images-laptop_6.jpg\"}' data-trix-attributes=\"{}\"></div><div data-trix-attachment='{\"sgid\":\"BAh7CEkiCGdpZAY6BkVUSSIvZ2lkOi8vYmMzL0F0dGFjaG1lbnQvMTAxOTczMDY0ND9leHBpcmVzX2luBjsAVEkiDHB1cnBvc2UGOwBUSSIPYXR0YWNoYWJsZQY7AFRJIg9leHBpcmVzX2F0BjsAVDA=--708b86b461d818a592020bb7daba654b4b052199\",\"contentType\":\"image/jpeg\",\"previewable\":true,\"filename\":\"images-laptop_7.jpg\",\"filesize\":318977,\"url\":\"https://3.basecamp.com/195539477/blobs/5b365c54b249a70e458f95531eda8571059ba5e0/previews/full/images-laptop_7.jpg\"}' data-trix-attributes=\"{}\"></div><div data-trix-attachment='{\"sgid\":\"BAh7CEkiCGdpZAY6BkVUSSIvZ2lkOi8vYmMzL0F0dGFjaG1lbnQvMTAxOTczMDY0NT9leHBpcmVzX2luBjsAVEkiDHB1cnBvc2UGOwBUSSIPYXR0YWNoYWJsZQY7AFRJIg9leHBpcmVzX2F0BjsAVDA=--6e4c71da03c44133ea3f00d053cf17fed5f0099b\",\"contentType\":\"image/jpeg\",\"previewable\":true,\"filename\":\"images-laptop_8.jpg\",\"filesize\":51341,\"url\":\"https://3.basecamp.com/195539477/blobs/13a033e4cefaba7d5298efeceae0150a19428a3b/previews/full/images-laptop_8.jpg\"}' data-trix-attributes=\"{}\"></div><div data-trix-attachment='{\"sgid\":\"BAh7CEkiCGdpZAY6BkVUSSIvZ2lkOi8vYmMzL0F0dGFjaG1lbnQvMTAxOTczMDY0Nj9leHBpcmVzX2luBjsAVEkiDHB1cnBvc2UGOwBUSSIPYXR0YWNoYWJsZQY7AFRJIg9leHBpcmVzX2F0BjsAVDA=--2f575303b8eebe4b004d951c17a0d82111c8a438\",\"contentType\":\"image/jpeg\",\"previewable\":true,\"filename\":\"images-laptop_9.jpg\",\"filesize\":369239,\"url\":\"https://3.basecamp.com/195539477/blobs/e5d0b856a66c09ae6c12da6a478da70844330194/previews/full/images-laptop_9.jpg\"}' data-trix-attributes=\"{}\"></div><div data-trix-attachment='{\"sgid\":\"BAh7CEkiCGdpZAY6BkVUSSIvZ2lkOi8vYmMzL0F0dGFjaG1lbnQvMTAxOTczMDY0Nz9leHBpcmVzX2luBjsAVEkiDHB1cnBvc2UGOwBUSSIPYXR0YWNoYWJsZQY7AFRJIg9leHBpcmVzX2F0BjsAVDA=--310e8cd4f210f2a81e1f1c44c37af697868a74a4\",\"contentType\":\"image/jpeg\",\"previewable\":true,\"filename\":\"images-laptop_10.jpg\",\"filesize\":25429,\"url\":\"https://3.basecamp.com/195539477/blobs/17389ad92ee40045375fd92c6d4c866c4b371a85/previews/full/images-laptop_10.jpg\"}' data-trix-attributes=\"{}\"></div><div data-trix-attachment='{\"sgid\":\"BAh7CEkiCGdpZAY6BkVUSSIvZ2lkOi8vYmMzL0F0dGFjaG1lbnQvMTAxOTczMDY0OD9leHBpcmVzX2luBjsAVEkiDHB1cnBvc2UGOwBUSSIPYXR0YWNoYWJsZQY7AFRJIg9leHBpcmVzX2F0BjsAVDA=--d510fe39f9e5f9bf4f50591249e4f6550270640b\",\"contentType\":\"image/jpeg\",\"previewable\":true,\"filename\":\"images-laptop_11.jpg\",\"filesize\":20839,\"url\":\"https://3.basecamp.com/195539477/blobs/8d71d655439ce48c83a009b53a77424a7e77c49b/previews/full/images-laptop_11.jpg\"}' data-trix-attributes=\"{}\"></div><div data-trix-attachment='{\"sgid\":\"BAh7CEkiCGdpZAY6BkVUSSIvZ2lkOi8vYmMzL0F0dGFjaG1lbnQvMTAxOTczMDY0OT9leHBpcmVzX2luBjsAVEkiDHB1cnBvc2UGOwBUSSIPYXR0YWNoYWJsZQY7AFRJIg9leHBpcmVzX2F0BjsAVDA=--1a60d6d2345b328752c1656f4aa79e478e1ccd58\",\"contentType\":\"image/jpeg\",\"previewable\":true,\"filename\":\"images-laptop_12.jpg\",\"filesize\":137872,\"url\":\"https://3.basecamp.com/195539477/blobs/e838e138fffa8bb4f0668006874846170f178a6f/previews/full/images-laptop_12.jpg\"}' data-trix-attributes=\"{}\"></div><div data-trix-attachment='{\"sgid\":\"BAh7CEkiCGdpZAY6BkVUSSIvZ2lkOi8vYmMzL0F0dGFjaG1lbnQvMTAxOTczMDY1MD9leHBpcmVzX2luBjsAVEkiDHB1cnBvc2UGOwBUSSIPYXR0YWNoYWJsZQY7AFRJIg9leHBpcmVzX2F0BjsAVDA=--0244ce80196375935623751921dcc8b58d5bf3a3\",\"contentType\":\"image/jpeg\",\"previewable\":true,\"filename\":\"images-laptop_13.jpg\",\"filesize\":62024,\"url\":\"https://3.basecamp.com/195539477/blobs/60df4b0591ac41f52cb12a5c78d7124bd0fc2a30/previews/full/images-laptop_13.jpg\"}' data-trix-attributes=\"{}\"></div><div data-trix-attachment='{\"sgid\":\"BAh7CEkiCGdpZAY6BkVUSSIvZ2lkOi8vYmMzL0F0dGFjaG1lbnQvMTAxOTczMDY1MT9leHBpcmVzX2luBjsAVEkiDHB1cnBvc2UGOwBUSSIPYXR0YWNoYWJsZQY7AFRJIg9leHBpcmVzX2F0BjsAVDA=--94e7383ecdef3e0ad5ae92e340784717e750c1de\",\"contentType\":\"image/jpeg\",\"previewable\":true,\"filename\":\"images-laptop_14.jpg\",\"filesize\":81082,\"url\":\"https://3.basecamp.com/195539477/blobs/a9afbb12573a45d4b1f4ad5dd66d76ad51f30543/previews/full/images-laptop_14.jpg\"}' data-trix-attributes=\"{}\"></div>",
     "content_text": "Hey all, here are some high res shots of the laptop hardware that we can use. These are not public yet, so be careful with how you share them. We don't want any leaks at all with these images.",
     "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7CEkiCGdpZAY6BkVUSSI0Z2lkOi8vYmMzL1JlY29yZGluZy85MDA3MTk5MjU0NzQxNjIyP2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg1yZWFkYWJsZQY7AFRJIg9leHBpcmVzX2F0BjsAVDA=--422f61efafb9879901eef751ef7ef4822741fea9.json",
     "subscription_url": "https://3.basecampapi.com/195539477/buckets/2085958498/recordings/9007199254741622/subscription.json",
@@ -79,36 +81,38 @@ Get a message
 {
   "id": 9007199254741443,
   "status": "active",
-  "created_at": "2016-06-14T03:55:06.221Z",
-  "updated_at": "2016-07-08T02:17:08.675Z",
+  "created_at": "2016-06-14T19:40:11.487Z",
+  "updated_at": "2016-07-08T16:49:14.872Z",
   "type": "Message",
   "url": "https://3.basecampapi.com/195539477/buckets/2085958498/messages/9007199254741443.json",
   "app_url": "https://3.basecamp.com/195539477/buckets/2085958498/messages/9007199254741443",
   "comments_count": 10,
   "comments_url": "https://3.basecampapi.com/195539477/buckets/2085958498/recordings/9007199254741443/comments.json",
-  "bucket": {
-    "id": 2085958498,
-    "type": "Project"
-  },
   "parent": {
     "id": 9007199254741434,
+    "title": "Message Board",
     "type": "Message::Board",
     "url": "https://3.basecampapi.com/195539477/buckets/2085958498/message_boards/9007199254741434.json",
     "app_url": "https://3.basecamp.com/195539477/buckets/2085958498/message_boards/9007199254741434"
   },
+  "bucket": {
+    "id": 2085958498,
+    "name": "The Leto Laptop",
+    "type": "Project"
+  },
   "creator": {
-    "id": 1007299143,
+    "id": 1007299208,
     "name": "Victor Cooper",
     "email_address": "victor@honchodesign.com",
     "personable_type": "User",
     "title": null,
-    "created_at": "2016-07-08T02:16:07.483Z",
-    "updated_at": "2016-07-08T02:16:11.821Z",
+    "created_at": "2016-07-08T16:48:02.496Z",
+    "updated_at": "2016-07-08T16:48:02.592Z",
     "admin": true,
     "owner": true,
-    "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBEcqCjw=--c632b967cec296b87363a697a67a87f9cc1e5b45/avatar-64-x4",
+    "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBIgqCjw=--719e3f2aa4406cf5806c2c1522259710deb788e4/avatar-64-x4",
     "company": {
-      "id": 1033447817,
+      "id": 1033447822,
       "name": "Honcho Design"
     }
   },

@@ -18,34 +18,36 @@ Get client correspondences
   {
     "id": 9007199254741734,
     "status": "active",
-    "created_at": "2016-07-03T04:00:32.028Z",
-    "updated_at": "2016-07-08T02:17:43.745Z",
+    "created_at": "2016-07-03T19:06:44.210Z",
+    "updated_at": "2016-07-08T16:49:58.839Z",
     "type": "Client::Correspondence",
     "url": "https://3.basecampapi.com/195539477/buckets/2085958499/client/correspondences/9007199254741734.json",
     "app_url": "https://3.basecamp.com/195539477/buckets/2085958499/client/correspondences/9007199254741734",
-    "bucket": {
-      "id": 2085958499,
-      "type": "Project"
-    },
     "parent": {
       "id": 9007199254741653,
+      "title": "The Clientside",
       "type": "Client::Board",
       "url": "https://3.basecampapi.com/195539477/buckets/2085958499/client/board.json",
       "app_url": "https://3.basecamp.com/195539477/buckets/2085958499/client/board"
     },
+    "bucket": {
+      "id": 2085958499,
+      "name": "The Leto Locator",
+      "type": "Project"
+    },
     "creator": {
-      "id": 1007299144,
+      "id": 1007299209,
       "name": "Annie Bryan",
       "email_address": "annie@honchodesign.com",
       "personable_type": "User",
       "title": "Central Markets Manager",
-      "created_at": "2016-07-08T02:16:07.615Z",
-      "updated_at": "2016-07-08T02:16:07.615Z",
+      "created_at": "2016-07-08T16:48:02.619Z",
+      "updated_at": "2016-07-08T16:48:02.619Z",
       "admin": false,
       "owner": false,
-      "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBEgqCjw=--8266bb0507508f3d46050d57b65924d5e2a005f3/avatar-64-x4",
+      "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBIkqCjw=--003094c5a28c4331af92401ec3675148e81d7bc1/avatar-64-x4",
       "company": {
-        "id": 1033447817,
+        "id": 1033447822,
         "name": "Honcho Design"
       }
     },
@@ -75,32 +77,34 @@ Get a client correspondence
 {
   "id": 9007199254741655,
   "status": "active",
-  "created_at": "2016-05-25T02:54:32.028Z",
-  "updated_at": "2016-07-08T02:17:33.911Z",
+  "created_at": "2016-05-25T19:11:44.210Z",
+  "updated_at": "2016-07-08T16:49:46.615Z",
   "type": "Client::Correspondence",
   "url": "https://3.basecampapi.com/195539477/buckets/2085958499/client/correspondences/9007199254741655.json",
   "app_url": "https://3.basecamp.com/195539477/buckets/2085958499/client/correspondences/9007199254741655",
-  "bucket": {
-    "id": 2085958499,
-    "type": "Project"
-  },
   "parent": {
     "id": 9007199254741653,
+    "title": "The Clientside",
     "type": "Client::Board",
     "url": "https://3.basecampapi.com/195539477/buckets/2085958499/client/board.json",
     "app_url": "https://3.basecamp.com/195539477/buckets/2085958499/client/board"
   },
+  "bucket": {
+    "id": 2085958499,
+    "name": "The Leto Locator",
+    "type": "Project"
+  },
   "creator": {
-    "id": 1007299158,
+    "id": 1007299223,
     "name": "Jay Edmonds",
     "email_address": "jay@honchodesign.com",
     "personable_type": "User",
     "title": "Internal Marketing Assistant",
-    "created_at": "2016-07-08T02:16:09.701Z",
-    "updated_at": "2016-07-08T02:16:09.701Z",
+    "created_at": "2016-07-08T16:48:04.750Z",
+    "updated_at": "2016-07-08T16:48:04.750Z",
     "admin": false,
     "owner": false,
-    "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBFYqCjw=--a96f4431592958f8d9d3e7c50f3b196ad46d9214/avatar-64-x4"
+    "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBJcqCjw=--67aca445eea5616b64015b2fc306f6d654bc02cb/avatar-64-x4"
   },
   "content_html": "Hi everyone! Welcome to the Basecamp that we'll be using to collaboroate and manage the Leto Locator project.\n\n  We're particularly excited to bring on board our friends from Leto - Stephen, Miranda, and Beth. I know you guys have used Basecamp before, but so we're on the same page, we'll post a bunch of discussions, things for review, and todos to make sure we stay on the same page. We'll do our best to keep everyone looped in this way, instead of using email (which can be hard to keep people up to date on stuff.)\n\n  I also want to take a moment to introduce our team. It will be evolving and growing soon, but right now we've got some core team members: Myself as the Account Director, Annie as the Senior PM, Jared is our tech lead, Matt is our ACD, and Victor, of course, you know. A few people will be coming on to support us, but this will be your core team. You can, of course, reach out to any one of us at any time, but I'll ultimately be the one responsible for making sure you're happy with our work.\n\n  Again, can't tell you how excited we are to get started on this and all the other projects. Let's go, Leto!\n\n  -Jay",
   "content_text": "Hi everyone! Welcome to the Basecamp that we'll be using to collaboroate and manage the Leto Locator project.\n\nWe're particularly excited to bring on board our friends from Leto - Stephen, Miranda, and Beth. I know you guys have used Basecamp before, but so we're on the same page, we'll post a bunch of discussions, things for review, and todos to make sure we stay on the same page. We'll do our best to keep everyone looped in this way, instead of using email (which can be hard to keep people up to date on stuff.)\n\nI also want to take a moment to introduce our team. It will be evolving and growing soon, but right now we've got some core team members: Myself as the Account Director, Annie as the Senior PM, Jared is our tech lead, Matt is our ACD, and Victor, of course, you know. A few people will be coming on to support us, but this will be your core team. You can, of course, reach out to any one of us at any time, but I'll ultimately be the one responsible for making sure you're happy with our work.\n\nAgain, can't tell you how excited we are to get started on this and all the other projects. Let's go, Leto!\n\n-Jay",
