@@ -174,6 +174,11 @@ API endpoints
 | [GET /buckets/1/comments/2.json](sections/comments.md#get-a-comment) | Get a comment | 👍 |
 | [POST /buckets/1/recordings/3/comments.json](sections/comments.md#create-a-comment) | Create a comment | 👍 |
 | [PUT /buckets/1/comments/2.json](sections/comments.md#update-a-comment) | Update a comment | 👍 |
+| ▾ **[Documents](sections/documents.md#documents)** | | |
+| [GET /buckets/1/vaults/2/documents.json](sections/documents.md#get-documents) | Get documents | 👍 |
+| [GET /buckets/1/documents/2.json](sections/documents.md#get-a-document) | Get a document | 👍 |
+| [POST /buckets/1/vaults/documents.json](sections/documents.md#create-a-ducment) | Create a document | 👍 |
+| [PUT /buckets/1/documents/2.json](sections/documents.md#update-a-ducment) | Update a document | 👍 |
 | ▾ **[Messages](sections/messages.md#messages)** | | |
 | [GET /buckets/1/messages/2.json](sections/messages.md#get-a-message) | Get a message | 👍 |
 | [POST /buckets/1/message_boards/3/messages.json](sections/messages.md#create-a-message) | Create a message | 👍 |
@@ -225,7 +230,6 @@ API endpoints
 | [POST /buckets/1/vaults/2/vaults.json](sections/vaults.md#create-a-vault) | Create a vault | 👍|
 | [PUT /buckets/1/vaults/3.json](sections/vaults.md#update-a-vault) | Update a vault | 👍|
 | **[Attachments](sections/attachments.md#attachments)** | - | 🚧|
-| **[Documents](sections/documents.md#documents)** | - | 🚧|
 | **[Uploads](sections/uploads.md#uploads)** | - | 🚧|
 
 API libraries
