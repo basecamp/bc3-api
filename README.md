@@ -179,6 +179,14 @@ API endpoints
 | [GET /circles/people.json](sections/people.md#get-pingable-people) | Get pingable people | 👍|
 | [GET /people/2.json](sections/people.md#get-person) | Get person | 👍|
 | [GET /my/profile.json](sections/people.md#get-my-personal-info) | Get my personal info | 👍|
+| ▾ **[Questionnaires](sections/questionnaires.md#questionnaires)** | | |
+| [GET /buckets/1/questionnaires/2.json](sections/questionnaires.md#get-a-questionnaire) | Get questionnaire | 👍|
+| ▾ **[Questions](sections/questions.md#questions)** | | |
+| [GET /buckets/1/questionnaires/2/questions.json](sections/questions.md#get-questions) | Get questions | 👍 |
+| [GET /buckets/1/questions/2.json](sections/questions.md#get-a-question) | Get a question | 👍 |
+| ▾ **[Question answers](sections/question_answers.md#question-answers)** | | |
+| [GET /buckets/1/questions/2/answers.json](sections/question_answers.md#get-question-answers) | Get question answers | 👍 |
+| [GET /buckets/1/question_answers/2.json](sections/question_answers.md#get-a=question-answer) | Get a question answer | 👍 |
 | ▾ **[Recordings](sections/recordings.md#recordings)** | | |
 | [PUT /buckets/1/recordings/2/status/trashed.json](sections/recordings.md#trash-a-recording) | Trash a recording | 👍|
 | ▾ **[Schedules](sections/schedules.md#schedules)** | | |
