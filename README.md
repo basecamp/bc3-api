@@ -202,6 +202,7 @@ API endpoints
 | [GET /buckets/1/questions/2/answers.json](sections/question_answers.md#get-question-answers) | Get question answers | 👍 |
 | [GET /buckets/1/question_answers/2.json](sections/question_answers.md#get-a=question-answer) | Get a question answer | 👍 |
 | ▾ **[Recordings](sections/recordings.md#recordings)** | | |
+| [GET /projects/recordings.json?type=](sections/recordings.md#get-recordings) | Get recordings by type | 👍|
 | [PUT /buckets/1/recordings/2/status/trashed.json](sections/recordings.md#trash-a-recording) | Trash a recording | 👍|
 | ▾ **[Schedules](sections/schedules.md#schedules)** | | |
 | [GET /buckets/1/schedules/2.json](sections/schedules.md#get-schedule) | Get a schedule | 👍 |
