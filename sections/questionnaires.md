@@ -63,7 +63,7 @@ To get the questionnaire ID for a Basecamp, see the [Get a Basecamp][basecamp] e
 ###### Copy as cURL
 
 ``` shell
-curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID//buckets/1/questionnaires/2.json
+curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/questionnaires/2.json
 ```
 
 [basecamp]: https://github.com/basecamp/bc3-api/blob/master/sections/basecamps.md#get-a-basecamp
