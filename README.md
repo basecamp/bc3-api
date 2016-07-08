@@ -211,7 +211,6 @@ API endpoints
 | [DELETE /buckets/1/todos/2/completion.json](sections/todos.md#uncomplete-a-to-do) | Uncomplete a to-do | 👍|
 | [PUT /buckets/1/todos/2/position.json](sections/todos.md#reposition-a-to-do) | Reposition a to-do | 👍|
 | **[Attachments](sections/attachments.md#attachments)** | - | 🚧|
-| **[Automatic Check-ins](sections/automatic_check-ins.md)** | - | 🚧|
 | **[Client Correspondences](sections/client_correspondences.md)** | - | 🚧|
 | **[Client Approvals](sections/client_approvals.md)** | - | 🚧|
 | **[Documents](sections/documents.md#documents)** | - | 🚧|
