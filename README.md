@@ -160,6 +160,15 @@ API endpoints
 | [GET /buckets/1/chats/2/lines.json](sections/campfires.md#get-campfire-lines) | Get Campfire lines | 👍 |
 | [GET /buckets/1/chats/2/lines/3.json](sections/campfires.md#get-a-campfire-line) | Get a Campfire line | 👍 |
 | [POST /buckets/1/chats/2/lines.json](sections/campfires.md#create-a-campfire-line) | Create a Campfire line | 👍 |
+| ▾ **[Client approvals](sections/client_approvals.md#client-approvals)** | | |
+| [GET /buckets/1/client/approvals.json](sections/client_approvals.md#get-client-approvals) | Get client approvals | 👍 |
+| [GET /buckets/1/client/approvals/2.json](sections/client_approvals.md#get-a-client-approvals) | Get a client approval | 👍 |
+| ▾ **[Client correspondences](sections/client_correspondences.md#client-correspondences)** | | |
+| [GET /buckets/1/client/correspondences.json](sections/client_correspondences.md#get-client-correspondences) | Get client correspondences | 👍 |
+| [GET /buckets/1/client/correspondences/2.json](sections/client_correspondences.md#get-a-client-correspondences) | Get a client correspondence | 👍 |
+| ▾ **[Client replies](sections/client_replies.md#client-replies)** | | |
+| [GET /buckets/1/client/recordings/2/replies.json](sections/client_replies.md#get-client-replies) | Get client replies | 👍 |
+| [GET /buckets/1/client/recordings/2/replies/3.json](sections/client_replies.md#get-a-client-reply) | Get a client reply | 👍 |
 | ▾ **[Comments](sections/comments.md#comments)** | | |
 | [GET /buckets/1/recordings/3/comments.json](sections/comments.md#get-comments) | Get comments | 👍 |
 | [GET /buckets/1/comments/2.json](sections/comments.md#get-a-comment) | Get a comment | 👍 |
@@ -211,8 +220,6 @@ API endpoints
 | [DELETE /buckets/1/todos/2/completion.json](sections/todos.md#uncomplete-a-to-do) | Uncomplete a to-do | 👍|
 | [PUT /buckets/1/todos/2/position.json](sections/todos.md#reposition-a-to-do) | Reposition a to-do | 👍|
 | **[Attachments](sections/attachments.md#attachments)** | - | 🚧|
-| **[Client Correspondences](sections/client_correspondences.md)** | - | 🚧|
-| **[Client Approvals](sections/client_approvals.md)** | - | 🚧|
 | **[Documents](sections/documents.md#documents)** | - | 🚧|
 | **[Uploads](sections/uploads.md#uploads)** | - | 🚧|
 | **[Vaults](sections/vaults.md#vaults)** | - | 🚧|
