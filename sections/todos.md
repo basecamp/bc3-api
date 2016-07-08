@@ -163,7 +163,7 @@ Create a to-do
 _Optional parameters_:
 
 * `description_html` - containing information about the to-do. See our [Rich content][3] guide for what HTML tags allowed.
-* `assignee_ids` - an array of people that will be assigned to this to-do. Please see the [Get people]() endpoints to retrieve them.
+* `assignee_ids` - an array of people that will be assigned to this to-do. Please see the [Get people][4] endpoints to retrieve them.
 * `notify` - when set to `true`, will notify the assignees about being assigned.
 * `due_on` - a date when the to-do should be completed.
 * `starts_on` - allows the to-do to run from this date to the `due_on` date.
@@ -174,7 +174,7 @@ This endpoint will return `201 Created` with the current JSON representation of 
 
 ``` json
 {
-  "name": "Program it",
+  "content": "Program it",
   "description_html": "<div><em>Try that new language!</em></div>",
   "due_on": "2016-05-01"
 }
@@ -184,7 +184,7 @@ This endpoint will return `201 Created` with the current JSON representation of 
 
 ``` shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" \
-  -d '{"name":"Program it","description_html":"<div><em>Try that new language!</em></div>","due_on":"2016-05-01"}' \
+  -d '{"content":"Program it","description_html":"<div><em>Try that new language!</em></div>","due_on":"2016-05-01"}' \
   https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/todolists/3/todos.json
 ```
 
@@ -192,18 +192,19 @@ curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/j
 Update a to-do
 --------------
 
-* `PUT /buckets/1/todos/2.json` allows changing the name and description of the to-do with an ID of `2` in the Basecamp with ID `1`.
-
-Nesting under the to-do list resource is not necessary for this endpoint.
+* `PUT /buckets/1/todos/2.json` allows changing the to-do with an ID of `2` in the Basecamp with ID `1`.
 
 This endpoint will return `200 OK` with the current JSON representation of the to-do if the update was a success. See the [Get a to-do](#get-a-to-do) endpoint for more info on the payload.
+
+**Required parameters**: Pass all existing parameters in addition to those being updated. For example, to update the to-do's `content` from [Create a to-do](#create-a-todo):
 
 ###### Example JSON Request
 
 ``` json
 {
-  "name": "Whiteboard it",
-  "description_html": "<div><strong>Maybe plan it out first.</strong></div>"
+  "content": "Only changing content! Passing the rest to preserve them.",
+  "description_html": "<div><em>Try that new language!</em></div>",
+  "due_on": "2016-05-01"
 }
 ```
 
@@ -211,7 +212,7 @@ This endpoint will return `200 OK` with the current JSON representation of the t
 
 ``` shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" \
-  -d '{"name":"Whiteboard it","description_html":"<div><strong>Maybe plan it out first.</strong></div>"}' -X PUT \
+  -d '{"content":"Only changing content! Passing the rest to preserve them.","description_html":"<div><em>Try that new language!</em></div>","due_on":"2016-05-01"}' -X PUT \
   https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/todos/2.json
 ```
 
@@ -275,3 +276,4 @@ curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/j
 [1]: https://github.com/basecamp/bc3-api/blob/master/sections/recordings.md#trash-a-recording
 [2]: https://github.com/basecamp/bc3-api/blob/master/README.md#pagination
 [3]: https://github.com/basecamp/bc3-api/blob/master/README.md#rich-content
+[4]: https://github.com/basecamp/bc3-api/blob/master/sections/people.md#get-all-people

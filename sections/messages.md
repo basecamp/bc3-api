@@ -166,8 +166,6 @@ Update a message
 
 * `PUT /buckets/1/messages/2.json` allows changing the subject and content of the message with an ID of `2` in the Basecamp with ID `1`.
 
-Nesting under the message board resource is not necessary for this endpoint. Clients may deliver `subject` or `content_html` parameters, or both if necessary.
-
 This endpoint will return `200 OK` with the current JSON representation of the message if the update was a success. See the [Get a message](#get-a-message) endpoint for more info on the payload.
 
 ###### Example JSON Request
