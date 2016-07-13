@@ -27,8 +27,8 @@ _Optional query parameters_:
   {
     "id": 9007199254741612,
     "status": "active",
-    "created_at": "2016-07-05T16:53:11.487Z",
-    "updated_at": "2016-07-08T16:49:41.056Z",
+    "created_at": "2016-07-10T15:55:20.237Z",
+    "updated_at": "2016-07-13T14:07:24.447Z",
     "type": "Todolist",
     "url": "https://3.basecampapi.com/195539477/buckets/2085958498/todolists/9007199254741612.json",
     "app_url": "https://3.basecamp.com/195539477/buckets/2085958498/todolists/9007199254741612",
@@ -47,23 +47,22 @@ _Optional query parameters_:
       "type": "Project"
     },
     "creator": {
-      "id": 1007299209,
+      "id": 1007299144,
       "name": "Annie Bryan",
       "email_address": "annie@honchodesign.com",
       "personable_type": "User",
       "title": "Central Markets Manager",
-      "created_at": "2016-07-08T16:48:02.619Z",
-      "updated_at": "2016-07-08T16:48:02.619Z",
+      "created_at": "2016-07-13T14:03:35.872Z",
+      "updated_at": "2016-07-13T14:03:35.872Z",
       "admin": false,
       "owner": false,
-      "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBIkqCjw=--003094c5a28c4331af92401ec3675148e81d7bc1/avatar-64-x4",
+      "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBEgqCjw=--8266bb0507508f3d46050d57b65924d5e2a005f3/avatar-64-x4",
       "company": {
-        "id": 1033447822,
+        "id": 1033447817,
         "name": "Honcho Design"
       }
     },
-    "description_html": null,
-    "description_text": null,
+    "description": "",
     "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7CEkiCGdpZAY6BkVUSSI0Z2lkOi8vYmMzL1JlY29yZGluZy85MDA3MTk5MjU0NzQxNjEyP2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg1yZWFkYWJsZQY7AFRJIg9leHBpcmVzX2F0BjsAVDA=--86ec6f857b01309e234a304fe0bcdab3839c53f4.json",
     "subscription_url": "https://3.basecampapi.com/195539477/buckets/2085958498/recordings/9007199254741612/subscription.json",
     "name": "Strategy ideas",
@@ -94,8 +93,8 @@ Note: Nesting under the to-do set resource is not necessary for this endpoint.
 {
   "id": 9007199254741461,
   "status": "active",
-  "created_at": "2016-06-16T17:09:11.487Z",
-  "updated_at": "2016-07-08T16:49:18.302Z",
+  "created_at": "2016-06-21T14:58:20.237Z",
+  "updated_at": "2016-07-13T14:06:35.355Z",
   "type": "Todolist",
   "url": "https://3.basecampapi.com/195539477/buckets/2085958498/todolists/9007199254741461.json",
   "app_url": "https://3.basecamp.com/195539477/buckets/2085958498/todolists/9007199254741461",
@@ -114,19 +113,18 @@ Note: Nesting under the to-do set resource is not necessary for this endpoint.
     "type": "Project"
   },
   "creator": {
-    "id": 1007299217,
+    "id": 1007299152,
     "name": "Andrew Wong",
     "email_address": "andrew@honchodesign.com",
     "personable_type": "User",
     "title": "Senior Branding Strategist",
-    "created_at": "2016-07-08T16:48:03.825Z",
-    "updated_at": "2016-07-08T16:48:03.825Z",
+    "created_at": "2016-07-13T14:03:37.570Z",
+    "updated_at": "2016-07-13T14:03:37.570Z",
     "admin": false,
     "owner": false,
-    "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBJEqCjw=--c0a96403d7ff55054664f0f43ae0bdcf5fca6331/avatar-64-x4"
+    "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBFAqCjw=--0413da7be3ef98ba6e3274f859fb29fc38698edf/avatar-64-x4"
   },
-  "description_html": null,
-  "description_text": null,
+  "description": "",
   "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7CEkiCGdpZAY6BkVUSSI0Z2lkOi8vYmMzL1JlY29yZGluZy85MDA3MTk5MjU0NzQxNDYxP2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg1yZWFkYWJsZQY7AFRJIg9leHBpcmVzX2F0BjsAVDA=--36b09454741fb7bec702606062a54a837bfaa750.json",
   "subscription_url": "https://3.basecampapi.com/195539477/buckets/2085958498/recordings/9007199254741461/subscription.json",
   "name": "Background and research",
@@ -150,7 +148,7 @@ Create a to-do list
 
 **Required parameters**: `name` of the to-do list.
 
-_Optional parameters_: `description_html` containing information about the to-do list. See our [Rich content][rich] guide for what HTML tags are allowed.
+_Optional parameters_: `description` containing information about the to-do list. See our [Rich content][rich] guide for what HTML tags are allowed.
 
 This endpoint will return `201 Created` with the current JSON representation of the to-do list if the creation was a success. See the [Get a to-do list](#get-a-to-do-list) endpoint for more info on the payload.
 
@@ -159,7 +157,7 @@ This endpoint will return `201 Created` with the current JSON representation of 
 ``` json
 {
   "name": "Launch",
-  "description_html": "<div><em>Finish it!</em></div>"
+  "description": "<div><em>Finish it!</em></div>"
 }
 ```
 
@@ -167,7 +165,7 @@ This endpoint will return `201 Created` with the current JSON representation of 
 
 ``` shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" \
-  -d '{"name":"Launch","description_html":"<div><em>Finish it!</em></div>"}' \
+  -d '{"name":"Launch","description":"<div><em>Finish it!</em></div>"}' \
   https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/todosets/3/todolists.json
 ```
 
@@ -184,7 +182,7 @@ This endpoint will return `200 OK` with the current JSON representation of the t
 ``` json
 {
   "name": "Relaunch",
-  "description_html": "<div><strong>Try this again.</strong></div>"
+  "description": "<div><strong>Try this again.</strong></div>"
 }
 ```
 
@@ -192,7 +190,7 @@ This endpoint will return `200 OK` with the current JSON representation of the t
 
 ``` shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" \
-  -d '{"name":"Relaunch","description_html":"<div><strong>Try this again.</strong></div>"}' -X PUT \
+  -d '{"name":"Relaunch","description":"<div><strong>Try this again.</strong></div>"}' -X PUT \
   https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/todolists/2.json
 ```
 

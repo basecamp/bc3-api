@@ -21,8 +21,8 @@ Get documents
   {
     "id": 9007199254741197,
     "status": "active",
-    "created_at": "2016-05-28T17:52:11.408Z",
-    "updated_at": "2016-07-08T16:48:34.237Z",
+    "created_at": "2016-06-02T17:00:53.082Z",
+    "updated_at": "2016-07-13T14:05:05.079Z",
     "type": "Document",
     "url": "https://3.basecampapi.com/195539477/buckets/2085958496/documents/9007199254741197.json",
     "app_url": "https://3.basecamp.com/195539477/buckets/2085958496/documents/9007199254741197",
@@ -41,24 +41,23 @@ Get documents
       "type": "Project"
     },
     "creator": {
-      "id": 1007299210,
+      "id": 1007299145,
       "name": "Cheryl Walters",
       "email_address": "cheryl@honchodesign.com",
       "personable_type": "User",
       "title": "Corporate Integration Director",
-      "created_at": "2016-07-08T16:48:02.776Z",
-      "updated_at": "2016-07-08T16:48:02.776Z",
+      "created_at": "2016-07-13T14:03:36.094Z",
+      "updated_at": "2016-07-13T14:03:36.094Z",
       "admin": false,
       "owner": false,
-      "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBIoqCjw=--62bce6c713db86b4c3d8a0b74dfb77e89f0d2cd2/avatar-64-x4",
+      "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBEkqCjw=--7e8e5d9e90e4898faee5f69e72def9e58da85fbe/avatar-64-x4",
       "company": {
-        "id": 1033447822,
+        "id": 1033447817,
         "name": "Honcho Design"
       }
     },
     "title": "New Hire Info, Benefits Summary, and Forms",
-    "content_html": "<strong>Health Insurance</strong>\n  We have just one health insurance policy. The company pays most of the premium, and you cover the rest. Domestic partnerships are covered, as well as marriages. Open enrollment starts in January.<br><br>\n\n  <strong>401K Retirement Plan</strong>\n  We match dollar-for-dollar up to 10% of your salary that you contribute to the plan. You are eligible to enroll in the 401K plan after your first paycheck.<br><br>\n\n  <strong>Flexible Spending Account (FSA)</strong>\n  The FSA is an account where you can set aside pre-tax money for out-of-pocket medical expenses, such as prescriptions, OTC medicine, vision care, etc.  You have to decide up front how much money you want to put in the account, and the max is $2500/year.<br><br>\n\n  <strong>Continuing Education Allowance</strong>\n  We provide you with $500 a year to take classes that help you professionally. Really, anything that helps you with your job.<br><br>\n\n  <strong>Matching Charitable Gifts</strong>\n  When you donate money to a qualified charity, we will make a matching gift to that charity on your behalf. The maximum for the year is $500 per employee.<br><br>\n\n  <strong>Paid Time Off</strong>\n  Paid time off doesn't really exist here - if you need a day (or week!) off, you just need to clear it with your team or others who would be affected by your absence. You should try to take at least 3 weeks off a year.",
-    "content_text": "Health Insurance\nWe have just one health insurance policy. The company pays most of the premium, and you cover the rest. Domestic partnerships are covered, as well as marriages. Open enrollment starts in January.\n\n401K Retirement Plan\nWe match dollar-for-dollar up to 10% of your salary that you contribute to the plan. You are eligible to enroll in the 401K plan after your first paycheck.\n\nFlexible Spending Account (FSA)\nThe FSA is an account where you can set aside pre-tax money for out-of-pocket medical expenses, such as prescriptions, OTC medicine, vision care, etc.  You have to decide up front how much money you want to put in the account, and the max is $2500/year.\n\nContinuing Education Allowance\nWe provide you with $500 a year to take classes that help you professionally. Really, anything that helps you with your job.\n\nMatching Charitable Gifts\nWhen you donate money to a qualified charity, we will make a matching gift to that charity on your behalf. The maximum for the year is $500 per employee.\n\nPaid Time Off\nPaid time off doesn't really exist here - if you need a day (or week!) off, you just need to clear it with your team or others who would be affected by your absence. You should try to take at least 3 weeks off a year."
+    "content": "<strong>Health Insurance</strong>\n  We have just one health insurance policy. The company pays most of the premium, and you cover the rest. Domestic partnerships are covered, as well as marriages. Open enrollment starts in January.<br><br>\n\n  <strong>401K Retirement Plan</strong>\n  We match dollar-for-dollar up to 10% of your salary that you contribute to the plan. You are eligible to enroll in the 401K plan after your first paycheck.<br><br>\n\n  <strong>Flexible Spending Account (FSA)</strong>\n  The FSA is an account where you can set aside pre-tax money for out-of-pocket medical expenses, such as prescriptions, OTC medicine, vision care, etc.  You have to decide up front how much money you want to put in the account, and the max is $2500/year.<br><br>\n\n  <strong>Continuing Education Allowance</strong>\n  We provide you with $500 a year to take classes that help you professionally. Really, anything that helps you with your job.<br><br>\n\n  <strong>Matching Charitable Gifts</strong>\n  When you donate money to a qualified charity, we will make a matching gift to that charity on your behalf. The maximum for the year is $500 per employee.<br><br>\n\n  <strong>Paid Time Off</strong>\n  Paid time off doesn't really exist here - if you need a day (or week!) off, you just need to clear it with your team or others who would be affected by your absence. You should try to take at least 3 weeks off a year."
   }
 ]
 ```
@@ -80,8 +79,8 @@ Get a document
 {
   "id": 9007199254741716,
   "status": "active",
-  "created_at": "2016-06-13T17:18:44.210Z",
-  "updated_at": "2016-06-13T17:18:44.210Z",
+  "created_at": "2016-06-18T16:24:30.037Z",
+  "updated_at": "2016-06-18T16:24:30.037Z",
   "type": "Document",
   "url": "https://3.basecampapi.com/195539477/buckets/2085958499/documents/9007199254741716.json",
   "app_url": "https://3.basecamp.com/195539477/buckets/2085958499/documents/9007199254741716",
@@ -93,20 +92,19 @@ Get a document
     "type": "Project"
   },
   "creator": {
-    "id": 1007299230,
+    "id": 1007299165,
     "name": "Matt Donahue",
     "email_address": "matt@honchodesign.com",
     "personable_type": "User",
     "title": "Global Data Strategist",
-    "created_at": "2016-07-08T16:48:05.858Z",
-    "updated_at": "2016-07-08T16:48:05.858Z",
+    "created_at": "2016-07-13T14:03:40.217Z",
+    "updated_at": "2016-07-13T14:03:40.217Z",
     "admin": false,
     "owner": false,
-    "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBJ4qCjw=--ff431338b1dfb8e245e454cc0ddaf0507bd859f7/avatar-64-x4"
+    "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBF0qCjw=--21513efb0cf6f64f7a0720b2c56ac6145ae6680c/avatar-64-x4"
   },
   "title": "Possible photos to show vulnerable laptops",
-  "content_html": "We've been mulling over some possible photography and situations we want to show, particularly vulnerable laptops. Here are a few ideas, and we'll be adding to and changing this list quite a bit as it develops:<br><br>\n\n  <strong>Photography</strong><br>\n  <ol>\n    <li>Person at a coffee shop</li>\n    <li>Leaving laptop unsecured at work</li>\n    <li>Leaving laptop in hotel room out in the open, not in the safe</li>\n    <li>Animated gif of someone turning around and laptop being gone the next second</li>\n    <li>People leaving their computer in their bag and not paying attention</li>\n    <li>Security line at an airport, laptops out in the open</li>\n  </ol>",
-  "content_text": "We've been mulling over some possible photography and situations we want to show, particularly vulnerable laptops. Here are a few ideas, and we'll be adding to and changing this list quite a bit as it develops:\n\nPhotography\n\n• Person at a coffee shop\n\n• Leaving laptop unsecured at work\n\n• Leaving laptop in hotel room out in the open, not in the safe\n\n• Animated gif of someone turning around and laptop being gone the next second\n\n• People leaving their computer in their bag and not paying attention\n\n• Security line at an airport, laptops out in the open"
+  "content": "We've been mulling over some possible photography and situations we want to show, particularly vulnerable laptops. Here are a few ideas, and we'll be adding to and changing this list quite a bit as it develops:<br><br>\n\n  <strong>Photography</strong><br>\n  <ol>\n    <li>Person at a coffee shop</li>\n    <li>Leaving laptop unsecured at work</li>\n    <li>Leaving laptop in hotel room out in the open, not in the safe</li>\n    <li>Animated gif of someone turning around and laptop being gone the next second</li>\n    <li>People leaving their computer in their bag and not paying attention</li>\n    <li>Security line at an airport, laptops out in the open</li>\n  </ol>"
 }
 ```
 <!-- END GET /buckets/1/documents/2.json -->

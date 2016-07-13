@@ -29,8 +29,8 @@ _Optional query parameters_:
   {
     "id": 9007199254741613,
     "status": "active",
-    "created_at": "2016-07-27T19:09:11.487Z",
-    "updated_at": "2016-07-27T19:09:11.487Z",
+    "created_at": "2016-08-01T18:15:20.237Z",
+    "updated_at": "2016-08-01T18:15:20.237Z",
     "type": "Todo",
     "url": "https://3.basecampapi.com/195539477/buckets/2085958498/todos/9007199254741613.json",
     "app_url": "https://3.basecamp.com/195539477/buckets/2085958498/todos/9007199254741613",
@@ -49,23 +49,22 @@ _Optional query parameters_:
       "type": "Project"
     },
     "creator": {
-      "id": 1007299209,
+      "id": 1007299144,
       "name": "Annie Bryan",
       "email_address": "annie@honchodesign.com",
       "personable_type": "User",
       "title": "Central Markets Manager",
-      "created_at": "2016-07-08T16:48:02.619Z",
-      "updated_at": "2016-07-08T16:48:02.619Z",
+      "created_at": "2016-07-13T14:03:35.872Z",
+      "updated_at": "2016-07-13T14:03:35.872Z",
       "admin": false,
       "owner": false,
-      "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBIkqCjw=--003094c5a28c4331af92401ec3675148e81d7bc1/avatar-64-x4",
+      "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBEgqCjw=--8266bb0507508f3d46050d57b65924d5e2a005f3/avatar-64-x4",
       "company": {
-        "id": 1033447822,
+        "id": 1033447817,
         "name": "Honcho Design"
       }
     },
-    "description_html": null,
-    "description_text": null,
+    "description": "",
     "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7CEkiCGdpZAY6BkVUSSI0Z2lkOi8vYmMzL1JlY29yZGluZy85MDA3MTk5MjU0NzQxNjEzP2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg1yZWFkYWJsZQY7AFRJIg9leHBpcmVzX2F0BjsAVDA=--0235c827eabaffecd5c75a7846e988fdec5a95a4.json",
     "subscription_url": "https://3.basecampapi.com/195539477/buckets/2085958498/recordings/9007199254741613/subscription.json",
     "content": "Go cutting edge: iOS8 and Android 4.5 only",
@@ -100,8 +99,8 @@ Nesting under the to-do lists resource is not necessary for this endpoint.
 {
   "id": 9007199254741617,
   "status": "active",
-  "created_at": "2016-07-27T17:35:11.487Z",
-  "updated_at": "2016-07-27T17:35:11.487Z",
+  "created_at": "2016-08-01T17:12:20.237Z",
+  "updated_at": "2016-08-01T17:12:20.237Z",
   "type": "Todo",
   "url": "https://3.basecampapi.com/195539477/buckets/2085958498/todos/9007199254741617.json",
   "app_url": "https://3.basecamp.com/195539477/buckets/2085958498/todos/9007199254741617",
@@ -120,23 +119,22 @@ Nesting under the to-do lists resource is not necessary for this endpoint.
     "type": "Project"
   },
   "creator": {
-    "id": 1007299209,
+    "id": 1007299144,
     "name": "Annie Bryan",
     "email_address": "annie@honchodesign.com",
     "personable_type": "User",
     "title": "Central Markets Manager",
-    "created_at": "2016-07-08T16:48:02.619Z",
-    "updated_at": "2016-07-08T16:48:02.619Z",
+    "created_at": "2016-07-13T14:03:35.872Z",
+    "updated_at": "2016-07-13T14:03:35.872Z",
     "admin": false,
     "owner": false,
-    "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBIkqCjw=--003094c5a28c4331af92401ec3675148e81d7bc1/avatar-64-x4",
+    "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBEgqCjw=--8266bb0507508f3d46050d57b65924d5e2a005f3/avatar-64-x4",
     "company": {
-      "id": 1033447822,
+      "id": 1033447817,
       "name": "Honcho Design"
     }
   },
-  "description_html": null,
-  "description_text": null,
+  "description": "",
   "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7CEkiCGdpZAY6BkVUSSI0Z2lkOi8vYmMzL1JlY29yZGluZy85MDA3MTk5MjU0NzQxNjE3P2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg1yZWFkYWJsZQY7AFRJIg9leHBpcmVzX2F0BjsAVDA=--6893ffc69d6c1a00220b470cf1a7ae4e60b73ae0.json",
   "subscription_url": "https://3.basecampapi.com/195539477/buckets/2085958498/recordings/9007199254741617/subscription.json",
   "content": "Get frequent (daily?) client feedback",
@@ -166,7 +164,7 @@ Create a to-do
 
 _Optional parameters_:
 
-* `description_html` - containing information about the to-do. See our [Rich content][3] guide for what HTML tags allowed.
+* `description` - containing information about the to-do. See our [Rich content][3] guide for what HTML tags allowed.
 * `assignee_ids` - an array of people that will be assigned to this to-do. Please see the [Get people][4] endpoints to retrieve them.
 * `notify` - when set to `true`, will notify the assignees about being assigned.
 * `due_on` - a date when the to-do should be completed.
@@ -179,7 +177,7 @@ This endpoint will return `201 Created` with the current JSON representation of 
 ``` json
 {
   "content": "Program it",
-  "description_html": "<div><em>Try that new language!</em></div>",
+  "description": "<div><em>Try that new language!</em></div>",
   "due_on": "2016-05-01"
 }
 ```
@@ -188,7 +186,7 @@ This endpoint will return `201 Created` with the current JSON representation of 
 
 ``` shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" \
-  -d '{"content":"Program it","description_html":"<div><em>Try that new language!</em></div>","due_on":"2016-05-01"}' \
+  -d '{"content":"Program it","description":"<div><em>Try that new language!</em></div>","due_on":"2016-05-01"}' \
   https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/todolists/3/todos.json
 ```
 
@@ -207,7 +205,7 @@ This endpoint will return `200 OK` with the current JSON representation of the t
 ``` json
 {
   "content": "Only changing content! Passing the rest to preserve them.",
-  "description_html": "<div><em>Try that new language!</em></div>",
+  "description": "<div><em>Try that new language!</em></div>",
   "due_on": "2016-05-01"
 }
 ```
@@ -216,7 +214,7 @@ This endpoint will return `200 OK` with the current JSON representation of the t
 
 ``` shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" \
-  -d '{"content":"Only changing content! Passing the rest to preserve them.","description_html":"<div><em>Try that new language!</em></div>","due_on":"2016-05-01"}' -X PUT \
+  -d '{"content":"Only changing content! Passing the rest to preserve them.","description":"<div><em>Try that new language!</em></div>","due_on":"2016-05-01"}' -X PUT \
   https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/todos/2.json
 ```
 

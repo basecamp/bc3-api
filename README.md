@@ -117,10 +117,6 @@ Many resources accept HTML for content to display in Basecamp. If you're accepti
 * `blockquote`
 * `br`
 
-For all fields that support rich content, our API provides two types of content to consume: one for rich content (for example, `description_html`), and one for plain text (`description_text`) that has any HTML tags removed. When sending data to our API, clients can only create and update resources with rich content (for example, the `description_html` field).
-
-Please note: The formatting/DOM layout of our HTML is subject to change. If you require or are relying on a more consistent format in your API integration, we'd love to hear about how you're using it. Open up an issue or [email us](support+api@basecamp.com) with how you're using rich content and we'll be happy to take a look!
-
 
 Use HTTP caching
 ----------------

@@ -27,8 +27,8 @@ Get comments
   {
     "id": 9007199254741444,
     "status": "active",
-    "created_at": "2016-07-08T17:24:13.130Z",
-    "updated_at": "2016-07-08T17:24:13.130Z",
+    "created_at": "2016-07-13T15:57:25.609Z",
+    "updated_at": "2016-07-13T15:57:25.609Z",
     "type": "Comment",
     "url": "https://3.basecampapi.com/195539477/buckets/2085958498/comments/9007199254741444.json",
     "app_url": "https://3.basecamp.com/195539477/buckets/2085958498/messages/9007199254741443#__recording_9007199254741444",
@@ -45,19 +45,18 @@ Get comments
       "type": "Project"
     },
     "creator": {
-      "id": 1007299217,
+      "id": 1007299152,
       "name": "Andrew Wong",
       "email_address": "andrew@honchodesign.com",
       "personable_type": "User",
       "title": "Senior Branding Strategist",
-      "created_at": "2016-07-08T16:48:03.825Z",
-      "updated_at": "2016-07-08T16:48:03.825Z",
+      "created_at": "2016-07-13T14:03:37.570Z",
+      "updated_at": "2016-07-13T14:03:37.570Z",
       "admin": false,
       "owner": false,
-      "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBJEqCjw=--c0a96403d7ff55054664f0f43ae0bdcf5fca6331/avatar-64-x4"
+      "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBFAqCjw=--0413da7be3ef98ba6e3274f859fb29fc38698edf/avatar-64-x4"
     },
-    "content_html": "Yeah! Great job everyone! Super excited to get going!",
-    "content_text": "Yeah! Great job everyone! Super excited to get going!"
+    "content": "Yeah! Great job everyone! Super excited to get going!"
   }
 ]
 ```
@@ -80,8 +79,8 @@ Get a comment
 {
   "id": 9007199254741453,
   "status": "active",
-  "created_at": "2016-07-08T17:05:14.776Z",
-  "updated_at": "2016-07-08T17:05:14.776Z",
+  "created_at": "2016-07-13T15:10:28.816Z",
+  "updated_at": "2016-07-13T15:10:28.816Z",
   "type": "Comment",
   "url": "https://3.basecampapi.com/195539477/buckets/2085958498/comments/9007199254741453.json",
   "app_url": "https://3.basecamp.com/195539477/buckets/2085958498/messages/9007199254741443#__recording_9007199254741453",
@@ -98,23 +97,22 @@ Get a comment
     "type": "Project"
   },
   "creator": {
-    "id": 1007299209,
+    "id": 1007299144,
     "name": "Annie Bryan",
     "email_address": "annie@honchodesign.com",
     "personable_type": "User",
     "title": "Central Markets Manager",
-    "created_at": "2016-07-08T16:48:02.619Z",
-    "updated_at": "2016-07-08T16:48:02.619Z",
+    "created_at": "2016-07-13T14:03:35.872Z",
+    "updated_at": "2016-07-13T14:03:35.872Z",
     "admin": false,
     "owner": false,
-    "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBIkqCjw=--003094c5a28c4331af92401ec3675148e81d7bc1/avatar-64-x4",
+    "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBEgqCjw=--8266bb0507508f3d46050d57b65924d5e2a005f3/avatar-64-x4",
     "company": {
-      "id": 1033447822,
+      "id": 1033447817,
       "name": "Honcho Design"
     }
   },
-  "content_html": "I just want to echo what just about everyone already said. This is a big one for us, and I can't wait to get going. I'll be spinning up the project shortly!",
-  "content_text": "I just want to echo what just about everyone already said. This is a big one for us, and I can't wait to get going. I'll be spinning up the project shortly!"
+  "content": "I just want to echo what just about everyone already said. This is a big one for us, and I can't wait to get going. I'll be spinning up the project shortly!"
 }
 ```
 <!-- END GET /buckets/1/comments/2.json -->
@@ -130,7 +128,7 @@ Create a comment
 
 * `POST /buckets/1/recordings/3/comments.json` publishes a comment in the Basecamp with ID `1` and under the recording with an ID of `3`.
 
-**Required parameters**: `content_html` as the body of the message. See our [Rich content][rich] guide for what HTML tags are allowed.
+**Required parameters**: `content` as the body of the message. See our [Rich content][rich] guide for what HTML tags are allowed.
 
 Note: All people who are subscribed to the recording will be notified when the comment is posted. Changing who is subscribed is coming soon!
 
@@ -140,7 +138,7 @@ This endpoint will return `201 Created` with the current JSON representation of 
 
 ``` json
 {
-  "content_html": "<div><em>Wow!</em> That is cool.</div>",
+  "content": "<div><em>Wow!</em> That is cool.</div>",
 }
 ```
 
@@ -148,7 +146,7 @@ This endpoint will return `201 Created` with the current JSON representation of 
 
 ``` shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" \
-  -d '{"content_html":"<div><em>Wow!</em> That is cool.</div>"}' \
+  -d '{"content":"<div><em>Wow!</em> That is cool.</div>"}' \
   https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/recordings/3/comments.json
 ```
 
@@ -164,7 +162,7 @@ This endpoint will return `200 OK` with the current JSON representation of the m
 
 ``` json
 {
-  "content_html": "<div><em>No way!</em> That isn't cool at all.</div>"
+  "content": "<div><em>No way!</em> That isn't cool at all.</div>"
 }
 ```
 
@@ -172,7 +170,7 @@ This endpoint will return `200 OK` with the current JSON representation of the m
 
 ``` shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" \
-  -d '{"content_html":"<div><em>No way!</em> That isn't cool at all.</div>"}' -X PUT \
+  -d '{"content":"<div><em>No way!</em> That isn't cool at all.</div>"}' -X PUT \
   https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/messages/2.json
 ```
 

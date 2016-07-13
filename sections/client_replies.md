@@ -20,8 +20,8 @@ Get client replies
   {
     "id": 9007199254741656,
     "status": "active",
-    "created_at": "2016-07-08T18:59:45.823Z",
-    "updated_at": "2016-07-08T18:59:45.823Z",
+    "created_at": "2016-07-13T14:56:33.291Z",
+    "updated_at": "2016-07-13T14:56:33.291Z",
     "type": "Client::Reply",
     "url": "https://3.basecampapi.com/195539477/buckets/2085958499/client/replies/9007199254741656.json",
     "app_url": "https://3.basecamp.com/195539477/buckets/2085958499/client/correspondences/9007199254741655#__recording_9007199254741656",
@@ -38,23 +38,22 @@ Get client replies
       "type": "Project"
     },
     "creator": {
-      "id": 1007299235,
+      "id": 1007299170,
       "name": "Stephen Early",
       "email_address": "stephen@letobrand.com",
       "personable_type": "Client",
       "title": "National Directives Director",
-      "created_at": "2016-07-08T16:48:06.620Z",
-      "updated_at": "2016-07-08T16:48:06.620Z",
+      "created_at": "2016-07-13T14:03:41.105Z",
+      "updated_at": "2016-07-13T14:03:41.105Z",
       "admin": false,
       "owner": false,
-      "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBKMqCjw=--605a670338311d36b6cb93f8fc1e94a466a047b4/avatar-64-x4",
+      "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBGIqCjw=--30a34b0522d7ba3484b8c4dcd65d9087a1baef0e/avatar-64-x4",
       "company": {
-        "id": 1033447823,
+        "id": 1033447818,
         "name": "Leto Brand"
       }
     },
-    "content_html": "Hi all - we're excited to get started too.",
-    "content_text": "Hi all - we're excited to get started too."
+    "content": "Hi all - we're excited to get started too."
   }
 ]
 ```
@@ -76,8 +75,8 @@ Get a client reply
 {
   "id": 9007199254741660,
   "status": "active",
-  "created_at": "2016-07-08T17:57:46.516Z",
-  "updated_at": "2016-07-08T17:57:46.516Z",
+  "created_at": "2016-07-13T16:54:34.369Z",
+  "updated_at": "2016-07-13T16:54:34.369Z",
   "type": "Client::Reply",
   "url": "https://3.basecampapi.com/195539477/buckets/2085958499/client/replies/9007199254741660.json",
   "app_url": "https://3.basecamp.com/195539477/buckets/2085958499/client/correspondences/9007199254741655#__recording_9007199254741660",
@@ -94,23 +93,22 @@ Get a client reply
     "type": "Project"
   },
   "creator": {
-    "id": 1007299209,
+    "id": 1007299144,
     "name": "Annie Bryan",
     "email_address": "annie@honchodesign.com",
     "personable_type": "User",
     "title": "Central Markets Manager",
-    "created_at": "2016-07-08T16:48:02.619Z",
-    "updated_at": "2016-07-08T16:48:02.619Z",
+    "created_at": "2016-07-13T14:03:35.872Z",
+    "updated_at": "2016-07-13T14:03:35.872Z",
     "admin": false,
     "owner": false,
-    "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBIkqCjw=--003094c5a28c4331af92401ec3675148e81d7bc1/avatar-64-x4",
+    "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBEgqCjw=--8266bb0507508f3d46050d57b65924d5e2a005f3/avatar-64-x4",
     "company": {
-      "id": 1033447822,
+      "id": 1033447817,
       "name": "Honcho Design"
     }
   },
-  "content_html": "Hi Leto team, this it's Annie. I'll be your day to day contact for the project, so keep me on your speed dial (or speed email, perhaps more accurately!) Feel free to reach out to me with any questions at all, and I'll be posting up some outlines, timelines, etc. very shortly.",
-  "content_text": "Hi Leto team, this it's Annie. I'll be your day to day contact for the project, so keep me on your speed dial (or speed email, perhaps more accurately!) Feel free to reach out to me with any questions at all, and I'll be posting up some outlines, timelines, etc. very shortly."
+  "content": "Hi Leto team, this it's Annie. I'll be your day to day contact for the project, so keep me on your speed dial (or speed email, perhaps more accurately!) Feel free to reach out to me with any questions at all, and I'll be posting up some outlines, timelines, etc. very shortly."
 }
 ```
 <!-- END GET /buckets/1/client/recordings/2/replies/3.json -->

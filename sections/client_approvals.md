@@ -36,44 +36,27 @@ Get client approvals
       "type": "Project"
     },
     "creator": {
-      "id": 1007299209,
+      "id": 1007299144,
       "name": "Annie Bryan",
       "email_address": "annie@honchodesign.com",
       "personable_type": "User",
       "title": "Central Markets Manager",
-      "created_at": "2016-07-08T16:48:02.619Z",
-      "updated_at": "2016-07-08T16:48:02.619Z",
+      "created_at": "2016-07-13T14:03:35.872Z",
+      "updated_at": "2016-07-13T14:03:35.872Z",
       "admin": false,
       "owner": false,
-      "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBIkqCjw=--003094c5a28c4331af92401ec3675148e81d7bc1/avatar-64-x4",
+      "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBEgqCjw=--8266bb0507508f3d46050d57b65924d5e2a005f3/avatar-64-x4",
       "company": {
-        "id": 1033447822,
+        "id": 1033447817,
         "name": "Honcho Design"
       }
     },
-    "content_html": "OK, here's another one! We've got this business card worked up, just need your yes or no to proceed. Thanks!<br><br><div data-trix-attachment='{\"sgid\":\"BAh7CEkiCGdpZAY6BkVUSSIvZ2lkOi8vYmMzL0F0dGFjaG1lbnQvMTAxOTczMDY2OT9leHBpcmVzX2luBjsAVEkiDHB1cnBvc2UGOwBUSSIPYXR0YWNoYWJsZQY7AFRJIg9leHBpcmVzX2F0BjsAVDA=--2d82d37e1b7f2fcb02cf8496f28248be744f23a4\",\"contentType\":\"image/jpeg\",\"previewable\":true,\"filename\":\"images-images-bcard-2.jpg\",\"filesize\":170483,\"url\":\"https://3.basecamp.com/195539477/blobs/67e03adc47a6339f7e22c76c2de266089c416b36/previews/full/images-images-bcard-2.jpg\"}' data-trix-attributes=\"{}\"></div>",
-    "content_text": "OK, here's another one! We've got this business card worked up, just need your yes or no to proceed. Thanks!",
+    "content": "OK, here's another one! We've got this business card worked up, just need your yes or no to proceed. Thanks!<br><br>\n<bc-attachment sgid=\"BAh7CEkiCGdpZAY6BkVUSSIvZ2lkOi8vYmMzL0F0dGFjaG1lbnQvMTAxOTczMDU0MT9leHBpcmVzX2luBjsAVEkiDHB1cnBvc2UGOwBUSSIPYXR0YWNoYWJsZQY7AFRJIg9leHBpcmVzX2F0BjsAVDA=--010588da163ae8b6777939a970136f79d55b48b8\" content-type=\"image/jpeg\" url=\"https://3.basecamp.com/195539477/blobs/0632f71e5413a0ef1c19ec783895a15e6c9b4501/previews/full/images-images-bcard-2.jpg\" href=\"https://3.basecamp.com/195539477/blobs/0632f71e5413a0ef1c19ec783895a15e6c9b4501/download/images-images-bcard-2.jpg\" filename=\"images-images-bcard-2.jpg\" filesize=\"170483\" width=\"1824\" height=\"992\" previewable=\"true\"><figure>\n    <img srcset=\"https://3.basecampapi.com/195539477/blobs/0632f71e5413a0ef1c19ec783895a15e6c9b4501/previews/full/images-images-bcard-2.jpg?dppx=1 1x, https://3.basecampapi.com/195539477/blobs/0632f71e5413a0ef1c19ec783895a15e6c9b4501/previews/full/images-images-bcard-2.jpg?dppx=2 2x, https://3.basecampapi.com/195539477/blobs/0632f71e5413a0ef1c19ec783895a15e6c9b4501/previews/full/images-images-bcard-2.jpg?dppx=3 3x, https://3.basecampapi.com/195539477/blobs/0632f71e5413a0ef1c19ec783895a15e6c9b4501/previews/full/images-images-bcard-2.jpg?dppx=4 4x\" src=\"https://3.basecampapi.com/195539477/blobs/0632f71e5413a0ef1c19ec783895a15e6c9b4501/previews/full/images-images-bcard-2.jpg\" alt=\"Images images bcard 2\">\n  <figcaption>\n      images-images-bcard-2.jpg\n  </figcaption>\n</figure></bc-attachment>",
     "subject": "Business card",
     "due_on": null,
     "replies_count": 0,
     "replies_url": "https://3.basecampapi.com/195539477/buckets/2085958499/client/recordings/9007199254741743/replies.json",
-    "approval_status": "pending",
-    "approver": {
-      "id": 1007299236,
-      "name": "Miranda Grant",
-      "email_address": "miranda@letobrand.com",
-      "personable_type": "Client",
-      "title": "Dynamic Markets Analyst",
-      "created_at": "2016-07-08T16:48:06.631Z",
-      "updated_at": "2016-07-08T16:48:06.631Z",
-      "admin": false,
-      "owner": false,
-      "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBKQqCjw=--584072d3a05649645bbb413e74b1e0306ab0b12a/avatar-64-x4",
-      "company": {
-        "id": 1033447823,
-        "name": "Leto Brand"
-      }
-    }
+    "approval_status": "pending"
   }
 ]
 ```
@@ -113,50 +96,33 @@ Get a client approval
     "type": "Project"
   },
   "creator": {
-    "id": 1007299209,
+    "id": 1007299144,
     "name": "Annie Bryan",
     "email_address": "annie@honchodesign.com",
     "personable_type": "User",
     "title": "Central Markets Manager",
-    "created_at": "2016-07-08T16:48:02.619Z",
-    "updated_at": "2016-07-08T16:48:02.619Z",
+    "created_at": "2016-07-13T14:03:35.872Z",
+    "updated_at": "2016-07-13T14:03:35.872Z",
     "admin": false,
     "owner": false,
-    "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBIkqCjw=--003094c5a28c4331af92401ec3675148e81d7bc1/avatar-64-x4",
+    "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBEgqCjw=--8266bb0507508f3d46050d57b65924d5e2a005f3/avatar-64-x4",
     "company": {
-      "id": 1033447822,
+      "id": 1033447817,
       "name": "Honcho Design"
     }
   },
-  "content_html": "Hey! We've wrapped up work on the new logo for the website and wanted to get your final sign off. What do you think? Let us know when you get a chance!<br><br><div data-trix-attachment='{\"sgid\":\"BAh7CEkiCGdpZAY6BkVUSSIvZ2lkOi8vYmMzL0F0dGFjaG1lbnQvMTAxOTczMDY2OD9leHBpcmVzX2luBjsAVEkiDHB1cnBvc2UGOwBUSSIPYXR0YWNoYWJsZQY7AFRJIg9leHBpcmVzX2F0BjsAVDA=--0bfcb4dabacf0e5f70f4ddd01655015a769fbd82\",\"contentType\":\"image/jpeg\",\"previewable\":true,\"filename\":\"images-coudal-logo.jpg\",\"filesize\":16536,\"url\":\"https://3.basecamp.com/195539477/blobs/5ac1085ad0117370c25f0221fe7683d4a0b06e9c/previews/full/images-coudal-logo.jpg\"}' data-trix-attributes=\"{}\"></div>",
-  "content_text": "Hey! We've wrapped up work on the new logo for the website and wanted to get your final sign off. What do you think? Let us know when you get a chance!",
+  "content": "Hey! We've wrapped up work on the new logo for the website and wanted to get your final sign off. What do you think? Let us know when you get a chance!<br><br>\n<bc-attachment sgid=\"BAh7CEkiCGdpZAY6BkVUSSIvZ2lkOi8vYmMzL0F0dGFjaG1lbnQvMTAxOTczMDU0MD9leHBpcmVzX2luBjsAVEkiDHB1cnBvc2UGOwBUSSIPYXR0YWNoYWJsZQY7AFRJIg9leHBpcmVzX2F0BjsAVDA=--fe2c0fa6ae2625f0bf4268dab8e3152aa67dbbc6\" content-type=\"image/jpeg\" url=\"https://3.basecamp.com/195539477/blobs/c221496c89cae594bda8cb212bd54111a77cb942/previews/full/images-coudal-logo.jpg\" href=\"https://3.basecamp.com/195539477/blobs/c221496c89cae594bda8cb212bd54111a77cb942/download/images-coudal-logo.jpg\" filename=\"images-coudal-logo.jpg\" filesize=\"16536\" width=\"400\" height=\"400\" previewable=\"true\"><figure>\n    <img srcset=\"https://3.basecampapi.com/195539477/blobs/c221496c89cae594bda8cb212bd54111a77cb942/previews/full/images-coudal-logo.jpg?dppx=1 1x, https://3.basecampapi.com/195539477/blobs/c221496c89cae594bda8cb212bd54111a77cb942/previews/full/images-coudal-logo.jpg?dppx=2 2x, https://3.basecampapi.com/195539477/blobs/c221496c89cae594bda8cb212bd54111a77cb942/previews/full/images-coudal-logo.jpg?dppx=3 3x, https://3.basecampapi.com/195539477/blobs/c221496c89cae594bda8cb212bd54111a77cb942/previews/full/images-coudal-logo.jpg?dppx=4 4x\" src=\"https://3.basecampapi.com/195539477/blobs/c221496c89cae594bda8cb212bd54111a77cb942/previews/full/images-coudal-logo.jpg\" alt=\"Images coudal logo\">\n  <figcaption>\n      images-coudal-logo.jpg\n  </figcaption>\n</figure></bc-attachment>",
   "subject": "New logo for the website",
   "due_on": null,
   "replies_count": 0,
   "replies_url": "https://3.basecampapi.com/195539477/buckets/2085958499/client/recordings/9007199254741740/replies.json",
   "approval_status": "approved",
-  "approver": {
-    "id": 1007299235,
-    "name": "Stephen Early",
-    "email_address": "stephen@letobrand.com",
-    "personable_type": "Client",
-    "title": "National Directives Director",
-    "created_at": "2016-07-08T16:48:06.620Z",
-    "updated_at": "2016-07-08T16:48:06.620Z",
-    "admin": false,
-    "owner": false,
-    "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBKMqCjw=--605a670338311d36b6cb93f8fc1e94a466a047b4/avatar-64-x4",
-    "company": {
-      "id": 1033447823,
-      "name": "Leto Brand"
-    }
-  },
   "responses": [
     {
       "id": 9007199254741742,
       "status": "active",
-      "created_at": "2016-07-04T20:34:44.210Z",
-      "updated_at": "2016-07-04T20:34:44.210Z",
+      "created_at": "2016-07-09T18:51:30.037Z",
+      "updated_at": "2016-07-09T18:51:30.037Z",
       "type": "Client::Approval::Response",
       "app_url": "https://3.basecamp.com/195539477/buckets/2085958499/client/approvals/9007199254741740#__recording_9007199254741742",
       "parent": {
@@ -170,22 +136,6 @@ Get a client approval
         "id": 2085958499,
         "name": "The Leto Locator",
         "type": "Project"
-      },
-      "creator": {
-        "id": 1007299237,
-        "name": "Beth Allen",
-        "email_address": "beth@letobrand.com",
-        "personable_type": "Client",
-        "title": "Product Tactics Architect",
-        "created_at": "2016-07-08T16:48:06.642Z",
-        "updated_at": "2016-07-08T16:48:06.642Z",
-        "admin": false,
-        "owner": false,
-        "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBKUqCjw=--f7a188667d86c05c148bb4f52caac7ab6d25d7f2/avatar-64-x4",
-        "company": {
-          "id": 1033447823,
-          "name": "Leto Brand"
-        }
       },
       "content": "Looks great! Thanks for all your hard work on this.",
       "approved": true
