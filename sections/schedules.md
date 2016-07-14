@@ -6,7 +6,6 @@ All schedule entries under a Basecamp are children of a schedule resource.
 Endpoints:
 
 - [Get schedule](#get-schedule)
-- [Hide schedule tool](#hide-schedule-tool)
 
 
 Get schedule
@@ -59,12 +58,6 @@ To get the schedule ID for a Basecamp, see the [Get a Basecamp][1] endpoint's `d
 ``` shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/schedules/2.json
 ```
-
-
-Hide schedule tool
-------------------
-
-If you'd like to remove schedules and schedule events from the list of active tools for a Basecamp, use the [Trash a recording][2] endpoint with the ID of the schedule as the recording ID.
 
 
 [1]: https://github.com/basecamp/bc3-api/blob/master/sections/basecamps.md#get-a-basecamp

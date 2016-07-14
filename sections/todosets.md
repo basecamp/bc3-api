@@ -6,7 +6,6 @@ All to-do lists under a Basecamp are children of a to-do set resource.
 Endpoints:
 
 - [Get to-do set](#get-to-do-set)
-- [Hide to-dos tool](#hide-to-dos-tool)
 
 
 Get to-do set
@@ -61,12 +60,6 @@ To get the to-do set ID for a Basecamp, see the [Get a Basecamp][1] endpoint's `
 ``` shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/todosets/2.json
 ```
-
-
-Hide to-dos tool
-----------------
-
-If you'd like to remove to-dos from the list of active tools for a Basecamp, use the [Trash a recording][2] endpoint with the ID of the to-do set as the recording ID.
 
 
 [1]: https://github.com/basecamp/bc3-api/blob/master/sections/basecamps.md#get-a-basecamp

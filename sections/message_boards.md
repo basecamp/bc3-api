@@ -6,7 +6,6 @@ All messages under a Basecamp are children of a Message Board resource.
 Endpoints:
 
 - [Get message board](#get-message-board)
-- [Hide message board tool](#hide-message-board)
 
 
 Get message board
@@ -60,12 +59,6 @@ To get the message board ID for a Basecamp, see the [Get a Basecamp][1] endpoint
 ``` shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/message_boards/2.json
 ```
-
-
-Hide message board tool
------------------------
-
-If you'd like to remove the message board from the list of active tools for a Basecamp, use the [Trash a recording][3] endpoint with the ID of the message board as the recording ID.
 
 
 [1]: https://github.com/basecamp/bc3-api/blob/master/sections/basecamps.md#get-a-basecamp
