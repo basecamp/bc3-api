@@ -234,6 +234,7 @@ API endpoints
   - [Get a vault](https://github.com/basecamp/bc3-api/blob/master/sections/vaults.md#get-a-vault)
   - [Create a vault](https://github.com/basecamp/bc3-api/blob/master/sections/vaults.md#create-a-vault)
   - [Update a vault](https://github.com/basecamp/bc3-api/blob/master/sections/vaults.md#update-a-vault)
+
 <!-- END API ENDPOINTS -->
 
 API libraries
