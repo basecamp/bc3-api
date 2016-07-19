@@ -18,11 +18,11 @@ Get question answers
   {
     "id": 9007199254741640,
     "status": "active",
-    "created_at": "2016-07-13T16:40:20.237Z",
-    "updated_at": "2016-07-13T16:40:20.237Z",
+    "created_at": "2016-07-19T17:50:30.492Z",
+    "updated_at": "2016-07-19T17:50:30.492Z",
     "type": "Question::Answer",
     "url": "https://3.basecampapi.com/195539477/buckets/2085958498/question_answers/9007199254741640.json",
-    "app_url": "https://3.basecamp.com/195539477/buckets/2085958498/questions/9007199254741454/answers/2016-07-13#__recording_9007199254741640",
+    "app_url": "https://3.basecamp.com/195539477/buckets/2085958498/questions/9007199254741454/answers/2016-07-19#__recording_9007199254741640",
     "comments_count": 0,
     "comments_url": "https://3.basecampapi.com/195539477/buckets/2085958498/recordings/9007199254741640/comments.json",
     "parent": {
@@ -39,18 +39,19 @@ Get question answers
     },
     "creator": {
       "id": 1007299165,
+      "attachable_sgid": "BAh7CEkiCGdpZAY6BkVUSSIrZ2lkOi8vYmMzL1BlcnNvbi8xMDA3Mjk5MTY1P2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg9hdHRhY2hhYmxlBjsAVEkiD2V4cGlyZXNfYXQGOwBUMA==--c28a27d0c490353fc1a5c2a50ce8eda0fae07370",
       "name": "Matt Donahue",
       "email_address": "matt@honchodesign.com",
       "personable_type": "User",
       "title": "Global Data Strategist",
-      "created_at": "2016-07-13T14:03:40.217Z",
-      "updated_at": "2016-07-13T14:03:40.217Z",
+      "created_at": "2016-07-19T16:46:37.604Z",
+      "updated_at": "2016-07-19T16:46:37.604Z",
       "admin": false,
       "owner": false,
       "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBF0qCjw=--21513efb0cf6f64f7a0720b2c56ac6145ae6680c/avatar-64-x4"
     },
     "content": "Preparing for the next presentation. Feeling good!",
-    "group_on": "2016-07-13"
+    "group_on": "2016-07-19"
   }
 ]
 ```
@@ -72,11 +73,11 @@ Get a question answer
 {
   "id": 9007199254741640,
   "status": "active",
-  "created_at": "2016-07-13T16:40:20.237Z",
-  "updated_at": "2016-07-13T16:40:20.237Z",
+  "created_at": "2016-07-19T17:50:30.492Z",
+  "updated_at": "2016-07-19T17:50:30.492Z",
   "type": "Question::Answer",
   "url": "https://3.basecampapi.com/195539477/buckets/2085958498/question_answers/9007199254741640.json",
-  "app_url": "https://3.basecamp.com/195539477/buckets/2085958498/questions/9007199254741454/answers/2016-07-13#__recording_9007199254741640",
+  "app_url": "https://3.basecamp.com/195539477/buckets/2085958498/questions/9007199254741454/answers/2016-07-19#__recording_9007199254741640",
   "comments_count": 0,
   "comments_url": "https://3.basecampapi.com/195539477/buckets/2085958498/recordings/9007199254741640/comments.json",
   "parent": {
@@ -93,18 +94,19 @@ Get a question answer
   },
   "creator": {
     "id": 1007299165,
+    "attachable_sgid": "BAh7CEkiCGdpZAY6BkVUSSIrZ2lkOi8vYmMzL1BlcnNvbi8xMDA3Mjk5MTY1P2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg9hdHRhY2hhYmxlBjsAVEkiD2V4cGlyZXNfYXQGOwBUMA==--c28a27d0c490353fc1a5c2a50ce8eda0fae07370",
     "name": "Matt Donahue",
     "email_address": "matt@honchodesign.com",
     "personable_type": "User",
     "title": "Global Data Strategist",
-    "created_at": "2016-07-13T14:03:40.217Z",
-    "updated_at": "2016-07-13T14:03:40.217Z",
+    "created_at": "2016-07-19T16:46:37.604Z",
+    "updated_at": "2016-07-19T16:46:37.604Z",
     "admin": false,
     "owner": false,
     "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBF0qCjw=--21513efb0cf6f64f7a0720b2c56ac6145ae6680c/avatar-64-x4"
   },
   "content": "Preparing for the next presentation. Feeling good!",
-  "group_on": "2016-07-13"
+  "group_on": "2016-07-19"
 }
 ```
 <!-- END GET /buckets/1/question_answers/2.json -->

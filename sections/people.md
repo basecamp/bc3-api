@@ -20,18 +20,19 @@ Get all people
 ```json
 [
   {
-    "id": 1007299208,
+    "id": 1007299143,
+    "attachable_sgid": "BAh7CEkiCGdpZAY6BkVUSSIrZ2lkOi8vYmMzL1BlcnNvbi8xMDA3Mjk5MTQzP2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg9hdHRhY2hhYmxlBjsAVEkiD2V4cGlyZXNfYXQGOwBUMA==--919d2c8b11ff403eefcab9db42dd26846d0c3102",
     "name": "Victor Cooper",
     "email_address": "victor@honchodesign.com",
     "personable_type": "User",
     "title": null,
-    "created_at": "2016-07-08T16:48:02.496Z",
-    "updated_at": "2016-07-08T16:48:02.592Z",
+    "created_at": "2016-07-19T16:46:34.338Z",
+    "updated_at": "2016-07-19T16:46:38.579Z",
     "admin": true,
     "owner": true,
-    "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBIgqCjw=--719e3f2aa4406cf5806c2c1522259710deb788e4/avatar-64-x4",
+    "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBEcqCjw=--c632b967cec296b87363a697a67a87f9cc1e5b45/avatar-64-x4",
     "company": {
-      "id": 1033447822,
+      "id": 1033447817,
       "name": "Honcho Design"
     }
   }
@@ -74,10 +75,10 @@ Update who can access a Basecamp
 ```json
 {
   "grant": [
-    1007299216
+    1007299151
   ],
   "revoke": [
-    1007299215
+    1007299150
   ],
   "create": [
     {
@@ -104,48 +105,51 @@ curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/j
 {
   "granted": [
     {
-      "id": 1007299216,
+      "id": 1007299151,
+      "attachable_sgid": "BAh7CEkiCGdpZAY6BkVUSSIrZ2lkOi8vYmMzL1BlcnNvbi8xMDA3Mjk5MTUxP2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg9hdHRhY2hhYmxlBjsAVEkiD2V4cGlyZXNfYXQGOwBUMA==--c2c6955487d989510c7cba74f95fb804ac9d0c7a",
       "name": "Amy Rivera",
       "email_address": "amy@honchodesign.com",
       "personable_type": "User",
       "title": "Central Web Coordinator",
-      "created_at": "2016-07-08T16:48:03.671Z",
-      "updated_at": "2016-07-08T16:48:03.671Z",
+      "created_at": "2016-07-19T16:46:35.478Z",
+      "updated_at": "2016-07-19T16:46:35.478Z",
       "admin": false,
       "owner": false,
-      "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBJAqCjw=--8d75d03d706bcee8a1165d52f5ef9fdaaee5d0c9/avatar-64-x4"
+      "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBE8qCjw=--44a343c4ec0f62daf82484ec3539efc8c74a336a/avatar-64-x4"
     },
     {
-      "id": 1007299238,
+      "id": 1007299178,
+      "attachable_sgid": "BAh7CEkiCGdpZAY6BkVUSSIrZ2lkOi8vYmMzL1BlcnNvbi8xMDA3Mjk5MTc4P2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg9hdHRhY2hhYmxlBjsAVEkiD2V4cGlyZXNfYXQGOwBUMA==--c156b3c6b3d440d96e0935587fe6622f07be815b",
       "name": "Victor Copper",
       "email_address": "victor@hanchodesign.com",
       "personable_type": "User",
       "title": "Prankster",
-      "created_at": "2016-07-08T16:50:31.360Z",
-      "updated_at": "2016-07-08T16:50:31.482Z",
+      "created_at": "2016-07-19T18:23:50.109Z",
+      "updated_at": "2016-07-19T18:23:51.301Z",
       "admin": false,
       "owner": false,
-      "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBKYqCjw=--50cd369c3cc7f8c0c15174977d26f51925a7f268/avatar-64-x4",
+      "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBGoqCjw=--e37d407834b0282948956597d6d39b341ef4f780/avatar-64-x4",
       "company": {
-        "id": 1033447824,
+        "id": 1033447819,
         "name": "Hancho Design"
       }
     }
   ],
   "revoked": [
     {
-      "id": 1007299215,
+      "id": 1007299150,
+      "attachable_sgid": "BAh7CEkiCGdpZAY6BkVUSSIrZ2lkOi8vYmMzL1BlcnNvbi8xMDA3Mjk5MTUwP2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg9hdHRhY2hhYmxlBjsAVEkiD2V4cGlyZXNfYXQGOwBUMA==--9856de8e8169dda9e2c441b7184985194b2d2296",
       "name": "Steve Marsh",
       "email_address": "steve@honchodesign.com",
       "personable_type": "User",
       "title": "Legacy Directives Strategist",
-      "created_at": "2016-07-08T16:48:03.518Z",
-      "updated_at": "2016-07-08T16:48:03.518Z",
+      "created_at": "2016-07-19T16:46:35.344Z",
+      "updated_at": "2016-07-19T16:46:35.344Z",
       "admin": false,
       "owner": false,
-      "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBI8qCjw=--855220f904d26ccbc249233674ddb77b635aa8ba/avatar-64-x4",
+      "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBE4qCjw=--b544b6a710bd76020abc076fc041895954025116/avatar-64-x4",
       "company": {
-        "id": 1033447822,
+        "id": 1033447817,
         "name": "Honcho Design"
       }
     }
@@ -179,16 +183,17 @@ Get person
 <!-- START GET /people/2.json -->
 ```json
 {
-  "id": 1007299234,
+  "id": 1007299169,
+  "attachable_sgid": "BAh7CEkiCGdpZAY6BkVUSSIrZ2lkOi8vYmMzL1BlcnNvbi8xMDA3Mjk5MTY5P2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg9hdHRhY2hhYmxlBjsAVEkiD2V4cGlyZXNfYXQGOwBUMA==--8d8252a8a833e327749aec047863a6246d6891dd",
   "name": "Zach Settles",
   "email_address": "zach@honchodesign.com",
   "personable_type": "User",
   "title": "Customer Paradigm Supervisor",
-  "created_at": "2016-07-08T16:48:06.590Z",
-  "updated_at": "2016-07-08T16:48:06.590Z",
+  "created_at": "2016-07-19T16:46:38.213Z",
+  "updated_at": "2016-07-19T16:46:38.213Z",
   "admin": false,
   "owner": false,
-  "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBKIqCjw=--9febe99a5684d0d37541b642ff3a5b6985cf229f/avatar-64-x4"
+  "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBGEqCjw=--f278ae7c0479355c2aa772cb3155e925954de561/avatar-64-x4"
 }
 ```
 <!-- END GET /people/2.json -->

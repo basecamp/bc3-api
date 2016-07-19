@@ -8,7 +8,7 @@ Endpoints:
 - [Get vaults](#get-vaults)
 - [Get a vault](#get-a-vault)
 - [Create a vault](#create-a-vault)
-- [Update a vault](#create-a-vault)
+- [Update a vault](#update-a-vault)
 
 Get vaults
 ----------
@@ -22,8 +22,8 @@ Get vaults
   {
     "id": 9007199254741202,
     "status": "active",
-    "created_at": "2016-06-07T15:57:17.524Z",
-    "updated_at": "2016-07-18T15:09:40.334Z",
+    "created_at": "2016-06-08T19:00:41.933Z",
+    "updated_at": "2016-07-19T16:47:00.621Z",
     "type": "Vault",
     "url": "https://3.basecampapi.com/195539477/buckets/2085958496/vaults/9007199254741202.json",
     "app_url": "https://3.basecamp.com/195539477/buckets/2085958496/vaults/9007199254741202",
@@ -46,8 +46,8 @@ Get vaults
       "email_address": "victor@honchodesign.com",
       "personable_type": "User",
       "title": null,
-      "created_at": "2016-07-18T15:09:08.707Z",
-      "updated_at": "2016-07-18T15:09:13.288Z",
+      "created_at": "2016-07-19T16:46:34.338Z",
+      "updated_at": "2016-07-19T16:46:38.579Z",
       "admin": true,
       "owner": true,
       "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBEcqCjw=--c632b967cec296b87363a697a67a87f9cc1e5b45/avatar-64-x4",
@@ -84,8 +84,8 @@ Get a vault
 {
   "id": 9007199254741052,
   "status": "active",
-  "created_at": "2016-07-18T15:09:17.791Z",
-  "updated_at": "2016-07-18T15:09:40.342Z",
+  "created_at": "2016-07-19T16:46:42.200Z",
+  "updated_at": "2016-07-19T16:47:00.628Z",
   "type": "Vault",
   "url": "https://3.basecampapi.com/195539477/buckets/2085958496/vaults/9007199254741052.json",
   "app_url": "https://3.basecamp.com/195539477/buckets/2085958496/vaults/9007199254741052",
@@ -101,8 +101,8 @@ Get a vault
     "email_address": "victor@honchodesign.com",
     "personable_type": "User",
     "title": null,
-    "created_at": "2016-07-18T15:09:08.707Z",
-    "updated_at": "2016-07-18T15:09:13.288Z",
+    "created_at": "2016-07-19T16:46:34.338Z",
+    "updated_at": "2016-07-19T16:46:38.579Z",
     "admin": true,
     "owner": true,
     "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBEcqCjw=--c632b967cec296b87363a697a67a87f9cc1e5b45/avatar-64-x4",

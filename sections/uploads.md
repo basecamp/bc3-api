@@ -19,15 +19,15 @@ Get uploads
 ```json
 [
   {
-    "id": 9007199254741774,
+    "id": 9007199254741761,
     "status": "active",
-    "created_at": "2016-07-19T00:24:29.407Z",
-    "updated_at": "2016-07-19T00:24:32.673Z",
+    "created_at": "2016-07-19T16:49:39.726Z",
+    "updated_at": "2016-07-19T16:49:42.955Z",
     "type": "Upload",
-    "url": "https://3.basecampapi.com/195539477/buckets/2085958498/uploads/9007199254741774.json",
-    "app_url": "https://3.basecamp.com/195539477/buckets/2085958498/uploads/9007199254741774",
+    "url": "https://3.basecampapi.com/195539477/buckets/2085958498/uploads/9007199254741761.json",
+    "app_url": "https://3.basecamp.com/195539477/buckets/2085958498/uploads/9007199254741761",
     "comments_count": 0,
-    "comments_url": "https://3.basecampapi.com/195539477/buckets/2085958498/recordings/9007199254741774/comments.json",
+    "comments_url": "https://3.basecampapi.com/195539477/buckets/2085958498/recordings/9007199254741761/comments.json",
     "parent": {
       "id": 9007199254741442,
       "title": "Docs & Files",
@@ -47,8 +47,8 @@ Get uploads
       "email_address": "victor@honchodesign.com",
       "personable_type": "User",
       "title": null,
-      "created_at": "2016-07-18T15:09:08.707Z",
-      "updated_at": "2016-07-18T15:09:13.288Z",
+      "created_at": "2016-07-19T16:46:34.338Z",
+      "updated_at": "2016-07-19T16:46:38.579Z",
       "admin": true,
       "owner": true,
       "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBEcqCjw=--c632b967cec296b87363a697a67a87f9cc1e5b45/avatar-64-x4",
@@ -63,8 +63,8 @@ Get uploads
     "byte_size": 1281,
     "width": 164,
     "height": 39,
-    "download_url": "https://3.basecampapi.com/195539477/buckets/2085958498/uploads/9007199254741774/download/company-logo.png",
-    "app_download_url": "https://3.basecamp.com/195539477/buckets/2085958498/uploads/9007199254741774/download/company-logo.png"
+    "download_url": "https://3.basecampapi.com/195539477/buckets/2085958498/uploads/9007199254741761/download/company-logo.png",
+    "app_download_url": "https://3.basecamp.com/195539477/buckets/2085958498/uploads/9007199254741761/download/company-logo.png"
   }
 ]
 ```
@@ -84,15 +84,15 @@ Get an upload
 <!-- START GET /buckets/1/uploads/2.json -->
 ```json
 {
-  "id": 9007199254741774,
+  "id": 9007199254741761,
   "status": "active",
-  "created_at": "2016-07-19T00:24:29.407Z",
-  "updated_at": "2016-07-19T00:24:32.673Z",
+  "created_at": "2016-07-19T16:49:39.726Z",
+  "updated_at": "2016-07-19T16:49:42.955Z",
   "type": "Upload",
-  "url": "https://3.basecampapi.com/195539477/buckets/2085958498/uploads/9007199254741774.json",
-  "app_url": "https://3.basecamp.com/195539477/buckets/2085958498/uploads/9007199254741774",
+  "url": "https://3.basecampapi.com/195539477/buckets/2085958498/uploads/9007199254741761.json",
+  "app_url": "https://3.basecamp.com/195539477/buckets/2085958498/uploads/9007199254741761",
   "comments_count": 0,
-  "comments_url": "https://3.basecampapi.com/195539477/buckets/2085958498/recordings/9007199254741774/comments.json",
+  "comments_url": "https://3.basecampapi.com/195539477/buckets/2085958498/recordings/9007199254741761/comments.json",
   "parent": {
     "id": 9007199254741442,
     "title": "Docs & Files",
@@ -112,8 +112,8 @@ Get an upload
     "email_address": "victor@honchodesign.com",
     "personable_type": "User",
     "title": null,
-    "created_at": "2016-07-18T15:09:08.707Z",
-    "updated_at": "2016-07-18T15:09:13.288Z",
+    "created_at": "2016-07-19T16:46:34.338Z",
+    "updated_at": "2016-07-19T16:46:38.579Z",
     "admin": true,
     "owner": true,
     "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBEcqCjw=--c632b967cec296b87363a697a67a87f9cc1e5b45/avatar-64-x4",
@@ -128,8 +128,8 @@ Get an upload
   "byte_size": 1281,
   "width": 164,
   "height": 39,
-  "download_url": "https://3.basecampapi.com/195539477/buckets/2085958498/uploads/9007199254741774/download/company-logo.png",
-  "app_download_url": "https://3.basecamp.com/195539477/buckets/2085958498/uploads/9007199254741774/download/company-logo.png"
+  "download_url": "https://3.basecampapi.com/195539477/buckets/2085958498/uploads/9007199254741761/download/company-logo.png",
+  "app_download_url": "https://3.basecamp.com/195539477/buckets/2085958498/uploads/9007199254741761/download/company-logo.png"
 }
 ```
 <!-- END GET /buckets/1/uploads/2.json -->

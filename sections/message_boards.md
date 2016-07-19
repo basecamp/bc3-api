@@ -21,8 +21,8 @@ To get the message board ID for a Basecamp, see the [Get a Basecamp][1] endpoint
 {
   "id": 9007199254741434,
   "status": "active",
-  "created_at": "2016-07-08T16:49:11.562Z",
-  "updated_at": "2016-07-08T16:49:43.917Z",
+  "created_at": "2016-07-19T16:47:30.572Z",
+  "updated_at": "2016-07-19T16:47:57.382Z",
   "type": "Message::Board",
   "url": "https://3.basecampapi.com/195539477/buckets/2085958498/message_boards/9007199254741434.json",
   "app_url": "https://3.basecamp.com/195539477/buckets/2085958498/message_boards/9007199254741434",
@@ -32,18 +32,19 @@ To get the message board ID for a Basecamp, see the [Get a Basecamp][1] endpoint
     "type": "Project"
   },
   "creator": {
-    "id": 1007299208,
+    "id": 1007299143,
+    "attachable_sgid": "BAh7CEkiCGdpZAY6BkVUSSIrZ2lkOi8vYmMzL1BlcnNvbi8xMDA3Mjk5MTQzP2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg9hdHRhY2hhYmxlBjsAVEkiD2V4cGlyZXNfYXQGOwBUMA==--919d2c8b11ff403eefcab9db42dd26846d0c3102",
     "name": "Victor Cooper",
     "email_address": "victor@honchodesign.com",
     "personable_type": "User",
     "title": null,
-    "created_at": "2016-07-08T16:48:02.496Z",
-    "updated_at": "2016-07-08T16:48:02.592Z",
+    "created_at": "2016-07-19T16:46:34.338Z",
+    "updated_at": "2016-07-19T16:46:38.579Z",
     "admin": true,
     "owner": true,
-    "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBIgqCjw=--719e3f2aa4406cf5806c2c1522259710deb788e4/avatar-64-x4",
+    "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBEcqCjw=--c632b967cec296b87363a697a67a87f9cc1e5b45/avatar-64-x4",
     "company": {
-      "id": 1033447822,
+      "id": 1033447817,
       "name": "Honcho Design"
     }
   },
