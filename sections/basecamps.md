@@ -201,7 +201,7 @@ curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCO
 Create a Basecamp
 -----------------
 
-* `POST /projects.json` with at least a name, and optionally a description, to kick off a new Basecamp.
+* `POST /projects.json` with at least a `name`, and optionally a `description`, to create a new Basecamp.
 
 ###### Example JSON Request
 
@@ -212,7 +212,7 @@ Create a Basecamp
 }
 ```
 
-This will return `201 Created` with the current JSON representation of the Basecamp if the creation was a success. See the [Get a Basecamp](#get-a-basecamp) endpoint for more info. If your the account is on a free subscription and you're trying to create a new Basecamp you'll see a `507 Insufficient Storage` and a response of:
+This will return `201 Created` with the current JSON representation of the Basecamp if the creation was a success. See the [Get a Basecamp](#get-a-basecamp) endpoint for more info. If the account is on a free subscription and you're trying to create a new Basecamp you'll see a `507 Insufficient Storage` and a response of:
 
 ``` json
 {

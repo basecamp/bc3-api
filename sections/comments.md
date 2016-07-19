@@ -1,11 +1,7 @@
 Comments
 ========
 
-Many [recordings][recordings] can be commented on, including:
-
-- [Messages][messages]
-- [To-do lists][todolists]
-- [To-dos][todos]
+To determine if a resource can be commented on, check for the presences of `comment_count` and `comments_url` attributes in its JSON response.
 
 Endpoints:
 
@@ -132,7 +128,7 @@ Create a comment
 
 **Required parameters**: `content` as the body of the message. See our [Rich text guide][rich] for what HTML tags are allowed.
 
-Note: All people who are subscribed to the recording will be notified when the comment is posted. Changing who is subscribed is coming soon!
+Note: All people who are subscribed to the recording will be notified when the comment is posted.
 
 This endpoint will return `201 Created` with the current JSON representation of the message if the creation was a success. See the [Get a comment](#get-a-comment) endpoint for more info on the payload. The `Location` header will contain a URL to the HTML version of the new comment.
 

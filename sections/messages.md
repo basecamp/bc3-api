@@ -142,7 +142,7 @@ Create a message
 
 _Optional parameters_: `content` as the body of the message. See our [Rich text guide][4] for what HTML tags are allowed.
 
-Note: All people on a Basecamp are notified of the new message when it's posted. Changing who is subscribed is coming soon!
+Note: All people on a Basecamp are notified of the new message when it's posted.
 
 This endpoint will return `201 Created` with the current JSON representation of the message if the creation was a success. See the [Get a message](#get-a-message) endpoint for more info on the payload.
 
@@ -168,7 +168,7 @@ curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/j
 Update a message
 ----------------
 
-* `PUT /buckets/1/messages/2.json` allows changing the subject and content of the message with an ID of `2` in the Basecamp with ID `1`.
+* `PUT /buckets/1/messages/2.json` allows changing the `subject` and `content` of the message with an ID of `2` in the Basecamp with ID `1`.
 
 This endpoint will return `200 OK` with the current JSON representation of the message if the update was a success. See the [Get a message](#get-a-message) endpoint for more info on the payload.
 

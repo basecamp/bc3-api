@@ -3,11 +3,6 @@ The Basecamp 3 API
 
 Welcome to the Basecamp 3 API! Looking to integrate your service with Basecamp 3, or create your own app in concert with data inside of Basecamp 3? We're happy to have you!
 
-If you have a specific feature request or if you found a bug, [please open a GitHub issue](https://github.com/basecamp/bc3-api/issues/new). We encourage forking these docs for local reference, and will happily accept pull request with improvements.
-
-To talk with us and other developers about the API, [post a question on StackOverflow](http://stackoverflow.com/questions/ask) tagged `basecamp` or [open a support ticket](https://basecamp.com/support) if you need help from us directly.
-
-**Please note:** During this early access period (while this repo is private), please hold on with announcing your API integration publicly. Once we're fully public you can go for it.
 
 Compatibility with previous Basecamp APIs
 -----------------------------------------
@@ -18,13 +13,12 @@ The Basecamp 3 API is not compatible with the [Basecamp Classic API](https://git
 What's different?
 -----------------
 
-If you've used a previous version of the Basecamp API, you will need to adapt your integration code. Here's a quick summary of changes:
+If you've used a previous version of the Basecamp API, you will need to adapt your integration code. Notable changes:
 
-- "Projects" are now Basecamps.
 - We're requiring OAuth for [authentication](#authentication). No more Basic auth.
 - All requests must end in `.json`
-- Many IDs are numeric, but many are now [Signed Global IDs (SGIDs)](https://github.com/rails/globalid#signed-global-ids), also known as "Squids"
 - [Pagination](#pagination) is now performed via the `Link` and `X-Total-Count` headers.
+- Projects are now called Basecamps.
 
 
 Making a request
@@ -91,13 +85,13 @@ You'll receive a `415 Unsupported Media Type` response code if you attempt to us
 Pagination
 ----------
 
-Most collection APIs paginate their results. The first request returns up to 50 records. The Basecamp 3 API follows the [RFC5988 convention](https://tools.ietf.org/html/rfc5988) of using the `Link` header to provide URLs for the `next` page. Follow this URLs to retrieve the next page of data, and please don't build the pagination URLs yourself! Here's an example from the [Messages API][2] for requesting the third page (of 50) when 300 are available:
+Most collection APIs paginate their results. The first request returns up to 50 records. The Basecamp 3 API follows the [RFC5988 convention](https://tools.ietf.org/html/rfc5988) of using the `Link` header to provide URLs for the `next` page. Follow this URLs to retrieve the next page of data, and please don't build the pagination URLs yourself! Here's an example response header from requesting the third page of [messages](sections/messages.md#messages):
 
 ```
-<https://3.basecampapi.com/999999999/buckets/2085958496/messages.json?page=4>; rel="next"
+Link: <https://3.basecampapi.com/999999999/buckets/2085958496/messages.json?page=4>; rel="next"
 ```
 
-Quick note: If the `Link` header is blank, and you have some results, then that's the only page of data! We also provide the `X-Total-Count` header, which displays the total amount of resources in the collection you are fetching.
+If the `Link` header is blank then that's the last page. We also provide the `X-Total-Count` header, which displays the total number of resources in the collection you are fetching.
 
 
 Use HTTP caching
@@ -228,10 +222,6 @@ API endpoints
 
 <!-- END API ENDPOINTS -->
 
-API libraries
--------------
-
-If you've got an API library for Basecamp 3, just [open a Pull Request](https://github.com/basecamp/bc3-api/compare) and let us know! We'd be happy to add it here.
 
 Conduct
 -------
@@ -243,3 +233,9 @@ License
 -------
 
 These API docs are licensed under [Creative Commons (CC BY-SA 4.0)](http://creativecommons.org/licenses/by-sa/4.0/). Please feel free to share (alike), remix, and distribute as you see fit.
+
+---
+
+If you have a specific feature request or if you found a bug, [please open a GitHub issue](https://github.com/basecamp/bc3-api/issues/new). We encourage forking these docs for local reference, and will happily accept pull request with improvements.
+
+To talk with us and other developers about the API, [post a question on StackOverflow](http://stackoverflow.com/questions/ask) tagged `basecamp` or [open a support ticket](https://basecamp.com/support) if you need help from us directly.

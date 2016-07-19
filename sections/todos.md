@@ -20,7 +20,7 @@ Get to-dos
 _Optional query parameters_:
 
 * `status` - when set to `archived` or `trashed`, will return archived or trashed to-dos that are in this list
-* `completed` - when set to `true`, will only return to-dos that were completed. Can be combined with the `status` parameter too.
+* `completed` - when set to `true`, will only return to-dos that are completed. Can be combined with the `status` parameter.
 
 ###### Example JSON Response
 <!-- START GET /buckets/1/todolists/3/todos.json -->
