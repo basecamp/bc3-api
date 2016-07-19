@@ -100,24 +100,6 @@ Most collection APIs paginate their results. The first request returns up to 50 
 Quick note: If the `Link` header is blank, and you have some results, then that's the only page of data! We also provide the `X-Total-Count` header, which displays the total amount of resources in the collection you are fetching.
 
 
-Rich content
-------------
-
-Many resources accept HTML for content to display in Basecamp. If you're accepting content from a web browser, we'd highly encourage you to check out [Trix](https://github.com/basecamp/trix), our rich content editor. If you are sending HTML tags directly, here's what we allow:
-
-* `div`
-* `strong`
-* `em`
-* `strike`
-* `a` (with `href` attribute)
-* `pre`
-* `ol`
-* `ul`
-* `li`
-* `blockquote`
-* `br`
-
-
 Use HTTP caching
 ----------------
 
@@ -136,6 +118,15 @@ Rate limiting
 You can perform up to 50 requests per 10 second period from the same IP address for the same account. If you exceed this limit, you'll get a [429 Too Many Requests](http://tools.ietf.org/html/draft-nottingham-http-new-status-02#section-4) response for subsequent requests. Check the `Retry-After` header to see how many seconds to wait before retrying the request.
 
 We recommend baking 429 response handling in to your HTTP handling at a low level so your integration gracefully and automatically handles retries.
+
+
+Rich text content
+-----------------
+
+Many resources, including messages, documents, and comments, represent their content as rich text in HTML. Rich text content may contain lists, block quotes, simple formatting, and inline attachments such as mentions, images, and files.
+
+See the [Rich Text guide](sections/rich_text.md) for more details on working with HTML and attachments in rich text content.
+
 
 API endpoints
 -------------

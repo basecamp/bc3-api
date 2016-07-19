@@ -122,7 +122,7 @@ Create a document
 
 * `POST /buckets/1/vaults/2/documents.json` publishes a document in the Basecamp with ID `1` and under the vault with an ID of `2`.
 
-**Required parameters**: `title` as the title of the document, and `content` as the body of the document. See our [Rich content][rich] guide for what HTML tags are allowed.
+**Required parameters**: `title` as the title of the document, and `content` as the body of the document. See our [Rich text guide][rich] for what HTML tags are allowed.
 
 _Optional parameters_: . `status`, set to `active` to publish immediately.
 
@@ -173,4 +173,4 @@ curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/j
 [pagination]: https://github.com/basecamp/bc3-api/blob/master/README.md#pagination
 [trash]: https://github.com/basecamp/bc3-api/blob/master/sections/recordings.md#trash-a-recording
 [vaults]: https://github.com/basecamp/bc3-api/blob/master/sections/vaults.md#vaults
-[rich]: https://github.com/basecamp/bc3-api/blob/master/README.md#rich-content
+[rich]: https://github.com/basecamp/bc3-api/blob/master/sections/rich_text.md
