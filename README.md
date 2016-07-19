@@ -142,6 +142,8 @@ API endpoints
 
 | URL | Endpoint | Ready to use? |
 | :--- | :--- | :---: |
+| ▾ **[Attachments](sections/attachments.md#attachment)** | | |
+| [POST /attachments.json](sections/attachments.md#create-an-attachment) | Create an attachment | 👍 |
 | ▾ **[Basecamps](sections/basecamps.md#basecamps)** | | |
 | [GET /projects.json](sections/basecamps.md#get-basecamps) | Get Basecamps | 👍 |
 | [GET /projects/archive.json](sections/basecamps.md#get-archived-basecamps) | Get archived Basecamps | 👍 |
@@ -221,13 +223,16 @@ API endpoints
 | [POST /buckets/1/todos/2/completion.json](sections/todos.md#complete-a-to-do) | Complete a to-do | 👍|
 | [DELETE /buckets/1/todos/2/completion.json](sections/todos.md#uncomplete-a-to-do) | Uncomplete a to-do | 👍|
 | [PUT /buckets/1/todos/2/position.json](sections/todos.md#reposition-a-to-do) | Reposition a to-do | 👍|
+| ▾ **[Uploads](sections/uploads.md#uploads)** | | |
+| [GET /buckets/1/vaults/2/uploads.json](sections/uploads.md#get-uploads) | Get uploads | 👍|
+| [GET /buckets/1/uploads/2.json](sections/uploads.md#get-an-upload) | Get an upload | 👍|
+| [POST /buckets/1/vaults/2/uploads.json](sections/uploads.md#create-an-upload) | Create an upload | 👍|
+| [PUT /buckets/1/uploads/3.json.json](sections/uploads.md#update-an-upload) | Update an upload | 👍|
 | ▾ **[Vaults](sections/vaults.md#vaults)** | | |
 | [GET /buckets/1/vaults/2/vaults.json](sections/vaults.md#get-vaults) | Get vaults | 👍|
 | [GET /buckets/1/vaults/2.json](sections/vaults.md#get-a-vault) | Get a vault | 👍|
 | [POST /buckets/1/vaults/2/vaults.json](sections/vaults.md#create-a-vault) | Create a vault | 👍|
 | [PUT /buckets/1/vaults/3.json](sections/vaults.md#update-a-vault) | Update a vault | 👍|
-| **[Attachments](sections/attachments.md#attachments)** | - | 🚧|
-| **[Uploads](sections/uploads.md#uploads)** | - | 🚧|
 
 API libraries
 -------------
