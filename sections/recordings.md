@@ -11,7 +11,7 @@ Endpoints:
 Get recordings
 --------------
 
-* `GET /projects/recordings.json?type=$TYPE` will return a [paginated list][1] of records for the given `type` of recording.
+* `GET /projects/recordings.json` will return a [paginated list][1] of records for the given `type` of recording.
 
 **Required parameters**: `type`, which must be `Comment`, `Document`, `Message`, `Question::Answer`, `Schedule::Entry`, `Todo`, `Todolist`, or `Upload`.
 
