@@ -140,7 +140,7 @@ Create a message
 
 **Required parameters**: `subject` as the title of the message, and `status`, set to `active` to publish immediately.
 
-_Optional parameters_: `content` as the body of the message. See our [Rich text content][4] guide for what HTML tags are allowed.
+_Optional parameters_: `content` as the body of the message. See our [Rich Text][4] guide for what HTML tags are allowed.
 
 Note: All people on a Basecamp are notified of the new message when it's posted. Changing who is subscribed is coming soon!
 
@@ -193,4 +193,4 @@ curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/j
 [1]: https://github.com/basecamp/bc3-api/blob/master/sections/recordings.md#trash-a-recording
 [2]: https://github.com/basecamp/bc3-api/blob/master/README.md#pagination
 [3]: https://github.com/basecamp/bc3-api/blob/master/sections/message_boards.md#message-boards
-[4]: https://github.com/basecamp/bc3-api/blob/master/README.md#rich-text-content
+[4]: https://github.com/basecamp/bc3-api/blob/master/sections/rich_text.md

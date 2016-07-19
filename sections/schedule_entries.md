@@ -200,7 +200,7 @@ Create a schedule entry
 
 _Optional parameters_:
 
-* `description` - containing more information about the schedule entry. See our [Rich text content][rich] guide for what HTML tags allowed.
+* `description` - containing more information about the schedule entry. See our [Rich Text][rich] guide for what HTML tags allowed.
 * `participant_ids` - an array of people IDs that will participate in this entry. Please see the [Get people][people] endpoints to retrieve them.
 * `all_day` - when set to `true`, the schedule entry will not have a specific start or end time, and instead will be held for the entire day or days denoted in `starts_at` and `ends_at`
 * `notify` - when set to `true`, will notify the participants about the entry
@@ -258,5 +258,5 @@ curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/j
 [trash]: https://github.com/basecamp/bc3-api/blob/master/sections/recordings.md#trash-a-recording
 [pagination]: https://github.com/basecamp/bc3-api/blob/master/README.md#pagination
 [schedule]: https://github.com/basecamp/bc3-api/blob/master/sections/schedules.md#get-schedule
-[rich]: https://github.com/basecamp/bc3-api/blob/master/README.md#rich-text-content
+[rich]: https://github.com/basecamp/bc3-api/blob/master/sections/rich_text.md
 [people]: https://github.com/basecamp/bc3-api/blob/master/sections/people.md#people

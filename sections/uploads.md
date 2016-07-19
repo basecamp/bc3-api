@@ -148,7 +148,7 @@ Create an upload
 **Required parameters**: `attachable_sgid` for an uploaded attachment. See the [Create an attachment][attachments] endpoint for more info on uploading attachments.
 
 _Optional parameters_:
-* `description` - containing information about the upload. See our [Rich text content][rich] guide for what HTML tags allowed.
+* `description` - containing information about the upload. See our [Rich Text][rich] guide for what HTML tags allowed.
 * `base_name` - an new file name for the upload. `base_name` should be a file name *without* an extension (e.g. `"pizza"` for `"pizza.png"`).
 
 This endpoint will return `201 Created` with the current JSON representation of the upload if the creation was a success. See the [Get an upload](#get-an-upload) endpoint for more info on the payload.
@@ -199,4 +199,4 @@ curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/j
 [attachments]: https://github.com/basecamp/bc3-api/blob/master/sections/attachments.md#create-an-attachment
 [trash]: https://github.com/basecamp/bc3-api/blob/master/sections/recordings.md#trash-a-recording
 [vaults]: https://github.com/basecamp/bc3-api/blob/master/sections/vaults.md#vaults
-[rich]: https://github.com/basecamp/bc3-api/blob/master/README.md#rich-text-content
+[rich]: https://github.com/basecamp/bc3-api/blob/master/sections/rich_text.md
