@@ -125,7 +125,7 @@ Rich text content
 
 Many resources, including messages, documents, and comments, represent their content as rich text in HTML. Rich text content may contain lists, block quotes, simple formatting, and inline attachments such as mentions, images, and files.
 
-See the [Rich Text documentation](sections/rich_text.md) for more details on working with HTML and attachments in rich text content.
+See the [Rich Text guide](sections/rich_text.md) for more details on working with HTML and attachments in rich text content.
 
 
 API endpoints

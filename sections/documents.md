@@ -122,7 +122,7 @@ Create a document
 
 * `POST /buckets/1/vaults/2/documents.json` publishes a document in the Basecamp with ID `1` and under the vault with an ID of `2`.
 
-**Required parameters**: `title` as the title of the document, and `content` as the body of the document. See our [Rich Text][rich] guide for what HTML tags are allowed.
+**Required parameters**: `title` as the title of the document, and `content` as the body of the document. See our [Rich Text guide][rich] for what HTML tags are allowed.
 
 _Optional parameters_: . `status`, set to `active` to publish immediately.
 

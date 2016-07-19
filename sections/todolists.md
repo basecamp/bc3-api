@@ -150,7 +150,7 @@ Create a to-do list
 
 **Required parameters**: `name` of the to-do list.
 
-_Optional parameters_: `description` containing information about the to-do list. See our [Rich Text][rich] guide for what HTML tags are allowed.
+_Optional parameters_: `description` containing information about the to-do list. See our [Rich Text guide][rich] for what HTML tags are allowed.
 
 This endpoint will return `201 Created` with the current JSON representation of the to-do list if the creation was a success. See the [Get a to-do list](#get-a-to-do-list) endpoint for more info on the payload.
 
