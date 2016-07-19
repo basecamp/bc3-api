@@ -166,7 +166,7 @@ Create a to-do
 
 _Optional parameters_:
 
-* `description` - containing information about the to-do. See our [Rich Text guide][3] for what HTML tags allowed.
+* `description` - containing information about the to-do. See our [Rich text guide][3] for what HTML tags allowed.
 * `assignee_ids` - an array of people that will be assigned to this to-do. Please see the [Get people][4] endpoints to retrieve them.
 * `notify` - when set to `true`, will notify the assignees about being assigned.
 * `due_on` - a date when the to-do should be completed.

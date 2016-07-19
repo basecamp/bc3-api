@@ -1,4 +1,4 @@
-Rich Text
+Rich text
 =========
 
 Many resources, including messages, documents, and comments, represent their content as rich text in HTML. Rich text content may contain lists, block quotes, simple formatting, and inline attachments such as mentions, images, and files.

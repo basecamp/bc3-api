@@ -200,7 +200,7 @@ Create a schedule entry
 
 _Optional parameters_:
 
-* `description` - containing more information about the schedule entry. See our [Rich Text guide][rich] for what HTML tags allowed.
+* `description` - containing more information about the schedule entry. See our [Rich text guide][rich] for what HTML tags allowed.
 * `participant_ids` - an array of people IDs that will participate in this entry. Please see the [Get people][people] endpoints to retrieve them.
 * `all_day` - when set to `true`, the schedule entry will not have a specific start or end time, and instead will be held for the entire day or days denoted in `starts_at` and `ends_at`
 * `notify` - when set to `true`, will notify the participants about the entry
