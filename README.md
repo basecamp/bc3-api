@@ -177,6 +177,8 @@ API endpoints
 | [GET /buckets/1/documents/2.json](sections/documents.md#get-a-document) | Get a document | 👍 |
 | [POST /buckets/1/vaults/documents.json](sections/documents.md#create-a-ducment) | Create a document | 👍 |
 | [PUT /buckets/1/documents/2.json](sections/documents.md#update-a-ducment) | Update a document | 👍 |
+| ▾ **[Events](sections/events.md#events)** | | |
+| [GET /buckets/1/recordings/2/events.json](sections/events.md#get-events) | Get events | 👍 |
 | ▾ **[Messages](sections/messages.md#messages)** | | |
 | [GET /buckets/1/messages/2.json](sections/messages.md#get-a-message) | Get a message | 👍 |
 | [POST /buckets/1/message_boards/3/messages.json](sections/messages.md#create-a-message) | Create a message | 👍 |
