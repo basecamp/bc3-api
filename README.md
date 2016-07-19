@@ -129,7 +129,7 @@ If your application reads Basecamp rich text content, it must be able to process
 
 Similarly, if your application writes rich text content, it must be able to generate well-formed HTML. At a minimum, this means properly encoding HTML entities and replacing line breaks with `<br>` tags.
 
-Applications that modify existing rich text content should take special care not to discard any formatting or attachments during processing. Consider using a full HTML parser to manipulate rich text content. Libraries such as [Nokogiri](http://www.nokogiri.org) (Ruby) and Cheerio (https://github.com/cheeriojs/cheerio) (Node.js) are good fits for this scenario.
+Applications that modify existing rich text content should take special care not to discard any formatting or attachments during processing. Consider using a full HTML parser to manipulate rich text content. Libraries such as [Nokogiri](http://www.nokogiri.org) (Ruby) and [Cheerio](https://github.com/cheeriojs/cheerio) (Node.js) are good fits for this scenario.
 
 ### Allowed HTML tags
 
