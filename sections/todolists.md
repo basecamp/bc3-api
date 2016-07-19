@@ -150,7 +150,7 @@ Create a to-do list
 
 **Required parameters**: `name` of the to-do list.
 
-_Optional parameters_: `description` containing information about the to-do list. See our [Rich content][rich] guide for what HTML tags are allowed.
+_Optional parameters_: `description` containing information about the to-do list. See our [Rich text content][rich] guide for what HTML tags are allowed.
 
 This endpoint will return `201 Created` with the current JSON representation of the to-do list if the creation was a success. See the [Get a to-do list](#get-a-to-do-list) endpoint for more info on the payload.
 
@@ -201,4 +201,4 @@ curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/j
 [pagination]: https://github.com/basecamp/bc3-api/blob/master/README.md#pagination
 [todoset]: https://github.com/basecamp/bc3-api/blob/master/sections/todosets.md#get-to-do-set
 [todos]: https://github.com/basecamp/bc3-api/blob/master/sections/todos.md#to-dos
-[rich]: https://github.com/basecamp/bc3-api/blob/master/README.md#rich-content
+[rich]: https://github.com/basecamp/bc3-api/blob/master/README.md#rich-text-content

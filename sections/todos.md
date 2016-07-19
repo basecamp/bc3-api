@@ -166,7 +166,7 @@ Create a to-do
 
 _Optional parameters_:
 
-* `description` - containing information about the to-do. See our [Rich content][3] guide for what HTML tags allowed.
+* `description` - containing information about the to-do. See our [Rich text content][3] guide for what HTML tags allowed.
 * `assignee_ids` - an array of people that will be assigned to this to-do. Please see the [Get people][4] endpoints to retrieve them.
 * `notify` - when set to `true`, will notify the assignees about being assigned.
 * `due_on` - a date when the to-do should be completed.
@@ -279,5 +279,5 @@ curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/j
 
 [1]: https://github.com/basecamp/bc3-api/blob/master/sections/recordings.md#trash-a-recording
 [2]: https://github.com/basecamp/bc3-api/blob/master/README.md#pagination
-[3]: https://github.com/basecamp/bc3-api/blob/master/README.md#rich-content
+[3]: https://github.com/basecamp/bc3-api/blob/master/README.md#rich-text-content
 [4]: https://github.com/basecamp/bc3-api/blob/master/sections/people.md#get-all-people
