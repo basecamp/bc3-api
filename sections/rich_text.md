@@ -19,7 +19,7 @@ Allowed HTML tags
 
 You may use the following standard HTML tags in rich text content: `div`, `br`, `strong`, `em`, `strike`, `a` (with an `href` attribute), `pre`, `ol`, `ul`, `li`, and `blockquote`. Any other tags will be removed automatically.
 
-The special `<bc-attachment>` tag allows you to insert an inline attachment. Each `<bc-attachment>` has an `sgid` attribute which points to the `attachable_sgid` value of an attachable Basecamp resource. Your application will receive a rendered representation of the attachable resource inside the `<bc-attachment>` tag in API responses.
+The special `<bc-attachment>` tag allows you to insert an inline attachment. Each `<bc-attachment>` has an `sgid` attribute which points to the `attachable_sgid` attribute of an attachable Basecamp resource. Your application will receive a rendered representation of the attachable resource inside the `<bc-attachment>` tag in API responses.
 
 
 Inserting a mention
@@ -92,3 +92,31 @@ The Basecamp API will return an expanded representation similar to the following
 ```
 
 Be sure to provide an appropriate `Content-Type` header when creating image attachments. If the attachment's content type does not start with `image/`, it will be presented as a file instead of an image with a preview.
+
+
+Appendix
+--------
+
+### Rich text content attributes
+
+The following attributes contain rich text content in HTML format:
+
+- [Comment `content`](comments.md#get-a-comment)
+- [Client approval `content`](client_approvals.md#get-a-client-approval)
+- [Client correspondence `content`](client_correspondences.md#get-a-client-correspondence)
+- [Client reply `content`](client_replies.md#get-a-client-reply)
+- [Document `content`](documents.md#get-a-document)
+- [Message `content`](messages.md#get-a-message)
+- [Question answer `content`](question_answers.md#get-a-question-answer)
+- [Schedule entry `description`](schedule_entries.md#get-a-schedule-entry)
+- [To-do list `description`](todolists.md#get-a-to-do-list)
+- [To-do `description`](todos.md#get-a-to-do)
+- [Upload `description`](uploads.md#get-an-upload)
+
+
+### Attachable resources
+
+The following resources contain an `attachable_sgid` attribute which can be used to create a `<bc-attachment>` tag in rich text content:
+
+- [Attachment](attachments.md)
+- [Person](people.md)
