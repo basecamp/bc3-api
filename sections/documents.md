@@ -21,8 +21,8 @@ Get documents
   {
     "id": 9007199254741197,
     "status": "active",
-    "created_at": "2016-06-08T18:41:41.933Z",
-    "updated_at": "2016-07-19T16:47:00.592Z",
+    "created_at": "2016-06-08T22:53:51.752Z",
+    "updated_at": "2016-07-19T21:28:10.095Z",
     "type": "Document",
     "url": "https://3.basecampapi.com/195539477/buckets/2085958496/documents/9007199254741197.json",
     "app_url": "https://3.basecamp.com/195539477/buckets/2085958496/documents/9007199254741197",
@@ -47,8 +47,8 @@ Get documents
       "email_address": "cheryl@honchodesign.com",
       "personable_type": "User",
       "title": "Corporate Integration Director",
-      "created_at": "2016-07-19T16:46:34.626Z",
-      "updated_at": "2016-07-19T16:46:34.626Z",
+      "created_at": "2016-07-19T21:27:44.858Z",
+      "updated_at": "2016-07-19T21:27:44.858Z",
       "admin": false,
       "owner": false,
       "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBEkqCjw=--7e8e5d9e90e4898faee5f69e72def9e58da85fbe/avatar-64-x4",
@@ -80,8 +80,8 @@ Get a document
 {
   "id": 9007199254741716,
   "status": "active",
-  "created_at": "2016-06-24T18:40:57.621Z",
-  "updated_at": "2016-06-24T18:40:57.621Z",
+  "created_at": "2016-06-24T23:32:09.095Z",
+  "updated_at": "2016-06-24T23:32:09.095Z",
   "type": "Document",
   "url": "https://3.basecampapi.com/195539477/buckets/2085958499/documents/9007199254741716.json",
   "app_url": "https://3.basecamp.com/195539477/buckets/2085958499/documents/9007199254741716",
@@ -99,14 +99,14 @@ Get a document
     "email_address": "matt@honchodesign.com",
     "personable_type": "User",
     "title": "Global Data Strategist",
-    "created_at": "2016-07-19T16:46:37.604Z",
-    "updated_at": "2016-07-19T16:46:37.604Z",
+    "created_at": "2016-07-19T21:27:47.654Z",
+    "updated_at": "2016-07-19T21:27:47.654Z",
     "admin": false,
     "owner": false,
     "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBF0qCjw=--21513efb0cf6f64f7a0720b2c56ac6145ae6680c/avatar-64-x4"
   },
   "title": "Possible photos to show vulnerable laptops",
-  "content": "We've been mulling over some possible photography and situations we want to show, particularly vulnerable laptops. Here are a few ideas, and we'll be adding to and changing this list quite a bit as it develops:<br><br>\n\n  <strong>Photography</strong><br>\n  <ol>\n    <li>Person at a coffee shop</li>\n    <li>Leaving laptop unsecured at work</li>\n    <li>Leaving laptop in hotel room out in the open, not in the safe</li>\n    <li>Animated gif of someone turning around and laptop being gone the next second</li>\n    <li>People leaving their computer in their bag and not paying attention</li>\n    <li>Security line at an airport, laptops out in the open</li>\n  </ol>"
+  "content": "<div>We've been mulling over some possible photography and situations we want to show, particularly vulnerable laptops. Here are a few ideas, and we'll be adding to and changing this list quite a bit as it develops:<br><br>\n\n  <strong>Photography</strong><br>\n  <ol>\n    <li>Person at a coffee shop</li>\n    <li>Leaving laptop unsecured at work</li>\n    <li>Leaving laptop in hotel room out in the open, not in the safe</li>\n    <li>Animated gif of someone turning around and laptop being gone the next second</li>\n    <li>People leaving their computer in their bag and not paying attention</li>\n    <li>Security line at an airport, laptops out in the open</li>\n  </ol></div>"
 }
 ```
 <!-- END GET /buckets/1/documents/2.json -->

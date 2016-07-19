@@ -21,8 +21,8 @@ Get uploads
   {
     "id": 9007199254741761,
     "status": "active",
-    "created_at": "2016-07-19T16:49:39.726Z",
-    "updated_at": "2016-07-19T16:49:42.955Z",
+    "created_at": "2016-07-19T21:36:12.137Z",
+    "updated_at": "2016-07-19T21:36:15.412Z",
     "type": "Upload",
     "url": "https://3.basecampapi.com/195539477/buckets/2085958498/uploads/9007199254741761.json",
     "app_url": "https://3.basecamp.com/195539477/buckets/2085958498/uploads/9007199254741761",
@@ -47,8 +47,8 @@ Get uploads
       "email_address": "victor@honchodesign.com",
       "personable_type": "User",
       "title": null,
-      "created_at": "2016-07-19T16:46:34.338Z",
-      "updated_at": "2016-07-19T16:46:38.579Z",
+      "created_at": "2016-07-19T21:27:44.597Z",
+      "updated_at": "2016-07-19T21:27:44.697Z",
       "admin": true,
       "owner": true,
       "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBEcqCjw=--c632b967cec296b87363a697a67a87f9cc1e5b45/avatar-64-x4",
@@ -57,7 +57,7 @@ Get uploads
         "name": "Honcho Design"
       }
     },
-    "description": "",
+    "description": "<div>Check out the new logo</div>",
     "filename": "company-logo.png",
     "content_type": "image/png",
     "byte_size": 1281,
@@ -86,8 +86,8 @@ Get an upload
 {
   "id": 9007199254741761,
   "status": "active",
-  "created_at": "2016-07-19T16:49:39.726Z",
-  "updated_at": "2016-07-19T16:49:42.955Z",
+  "created_at": "2016-07-19T21:36:12.137Z",
+  "updated_at": "2016-07-19T21:36:15.412Z",
   "type": "Upload",
   "url": "https://3.basecampapi.com/195539477/buckets/2085958498/uploads/9007199254741761.json",
   "app_url": "https://3.basecamp.com/195539477/buckets/2085958498/uploads/9007199254741761",
@@ -112,8 +112,8 @@ Get an upload
     "email_address": "victor@honchodesign.com",
     "personable_type": "User",
     "title": null,
-    "created_at": "2016-07-19T16:46:34.338Z",
-    "updated_at": "2016-07-19T16:46:38.579Z",
+    "created_at": "2016-07-19T21:27:44.597Z",
+    "updated_at": "2016-07-19T21:27:44.697Z",
     "admin": true,
     "owner": true,
     "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBEcqCjw=--c632b967cec296b87363a697a67a87f9cc1e5b45/avatar-64-x4",
@@ -122,7 +122,7 @@ Get an upload
       "name": "Honcho Design"
     }
   },
-  "description": "",
+  "description": "<div>Check out the new logo</div>",
   "filename": "company-logo.png",
   "content_type": "image/png",
   "byte_size": 1281,

@@ -20,8 +20,8 @@ Get client replies
   {
     "id": 9007199254741656,
     "status": "active",
-    "created_at": "2016-07-19T18:52:58.985Z",
-    "updated_at": "2016-07-19T18:52:58.985Z",
+    "created_at": "2016-07-19T23:13:10.515Z",
+    "updated_at": "2016-07-19T23:13:10.515Z",
     "type": "Client::Reply",
     "url": "https://3.basecampapi.com/195539477/buckets/2085958499/client/replies/9007199254741656.json",
     "app_url": "https://3.basecamp.com/195539477/buckets/2085958499/client/correspondences/9007199254741655#__recording_9007199254741656",
@@ -44,8 +44,8 @@ Get client replies
       "email_address": "stephen@letobrand.com",
       "personable_type": "Client",
       "title": "National Directives Director",
-      "created_at": "2016-07-19T16:46:38.235Z",
-      "updated_at": "2016-07-19T16:46:38.235Z",
+      "created_at": "2016-07-19T21:27:48.229Z",
+      "updated_at": "2016-07-19T21:27:48.229Z",
       "admin": false,
       "owner": false,
       "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBGIqCjw=--30a34b0522d7ba3484b8c4dcd65d9087a1baef0e/avatar-64-x4",
@@ -54,7 +54,7 @@ Get client replies
         "name": "Leto Brand"
       }
     },
-    "content": "Hi all - we're excited to get started too."
+    "content": "<div>Hi all - we're excited to get started too.</div>"
   }
 ]
 ```
@@ -76,8 +76,8 @@ Get a client reply
 {
   "id": 9007199254741660,
   "status": "active",
-  "created_at": "2016-07-19T17:33:59.504Z",
-  "updated_at": "2016-07-19T17:33:59.504Z",
+  "created_at": "2016-07-19T22:58:11.089Z",
+  "updated_at": "2016-07-19T22:58:11.089Z",
   "type": "Client::Reply",
   "url": "https://3.basecampapi.com/195539477/buckets/2085958499/client/replies/9007199254741660.json",
   "app_url": "https://3.basecamp.com/195539477/buckets/2085958499/client/correspondences/9007199254741655#__recording_9007199254741660",
@@ -100,8 +100,8 @@ Get a client reply
     "email_address": "annie@honchodesign.com",
     "personable_type": "User",
     "title": "Central Markets Manager",
-    "created_at": "2016-07-19T16:46:34.469Z",
-    "updated_at": "2016-07-19T16:46:34.469Z",
+    "created_at": "2016-07-19T21:27:44.718Z",
+    "updated_at": "2016-07-19T21:27:44.718Z",
     "admin": false,
     "owner": false,
     "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBEgqCjw=--8266bb0507508f3d46050d57b65924d5e2a005f3/avatar-64-x4",
@@ -110,7 +110,7 @@ Get a client reply
       "name": "Honcho Design"
     }
   },
-  "content": "Hi Leto team, this it's Annie. I'll be your day to day contact for the project, so keep me on your speed dial (or speed email, perhaps more accurately!) Feel free to reach out to me with any questions at all, and I'll be posting up some outlines, timelines, etc. very shortly."
+  "content": "<div>Hi Leto team, this it's Annie. I'll be your day to day contact for the project, so keep me on your speed dial (or speed email, perhaps more accurately!) Feel free to reach out to me with any questions at all, and I'll be posting up some outlines, timelines, etc. very shortly.</div>"
 }
 ```
 <!-- END GET /buckets/1/client/recordings/2/replies/3.json -->

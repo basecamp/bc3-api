@@ -27,8 +27,8 @@ Get comments
   {
     "id": 9007199254741444,
     "status": "active",
-    "created_at": "2016-07-19T17:20:31.842Z",
-    "updated_at": "2016-07-19T17:20:31.842Z",
+    "created_at": "2016-07-19T21:32:42.627Z",
+    "updated_at": "2016-07-19T21:32:42.627Z",
     "type": "Comment",
     "url": "https://3.basecampapi.com/195539477/buckets/2085958498/comments/9007199254741444.json",
     "app_url": "https://3.basecamp.com/195539477/buckets/2085958498/messages/9007199254741443#__recording_9007199254741444",
@@ -51,13 +51,13 @@ Get comments
       "email_address": "andrew@honchodesign.com",
       "personable_type": "User",
       "title": "Senior Branding Strategist",
-      "created_at": "2016-07-19T16:46:35.612Z",
-      "updated_at": "2016-07-19T16:46:35.612Z",
+      "created_at": "2016-07-19T21:27:45.830Z",
+      "updated_at": "2016-07-19T21:27:45.830Z",
       "admin": false,
       "owner": false,
       "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBFAqCjw=--0413da7be3ef98ba6e3274f859fb29fc38698edf/avatar-64-x4"
     },
-    "content": "Yeah! Great job everyone! Super excited to get going!"
+    "content": "<div>Yeah! Great job everyone! Super excited to get going!</div>"
   }
 ]
 ```
@@ -80,8 +80,8 @@ Get a comment
 {
   "id": 9007199254741453,
   "status": "active",
-  "created_at": "2016-07-19T17:04:33.207Z",
-  "updated_at": "2016-07-19T17:04:33.207Z",
+  "created_at": "2016-07-19T22:54:43.939Z",
+  "updated_at": "2016-07-19T22:54:43.939Z",
   "type": "Comment",
   "url": "https://3.basecampapi.com/195539477/buckets/2085958498/comments/9007199254741453.json",
   "app_url": "https://3.basecamp.com/195539477/buckets/2085958498/messages/9007199254741443#__recording_9007199254741453",
@@ -104,8 +104,8 @@ Get a comment
     "email_address": "annie@honchodesign.com",
     "personable_type": "User",
     "title": "Central Markets Manager",
-    "created_at": "2016-07-19T16:46:34.469Z",
-    "updated_at": "2016-07-19T16:46:34.469Z",
+    "created_at": "2016-07-19T21:27:44.718Z",
+    "updated_at": "2016-07-19T21:27:44.718Z",
     "admin": false,
     "owner": false,
     "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBEgqCjw=--8266bb0507508f3d46050d57b65924d5e2a005f3/avatar-64-x4",
@@ -114,7 +114,7 @@ Get a comment
       "name": "Honcho Design"
     }
   },
-  "content": "I just want to echo what just about everyone already said. This is a big one for us, and I can't wait to get going. I'll be spinning up the project shortly!"
+  "content": "<div>I just want to echo what just about everyone already said. This is a big one for us, and I can't wait to get going. I'll be spinning up the project shortly!</div>"
 }
 ```
 <!-- END GET /buckets/1/comments/2.json -->

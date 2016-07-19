@@ -18,8 +18,8 @@ Get client approvals
   {
     "id": 9007199254741743,
     "status": "active",
-    "created_at": "2016-07-18T19:22:57.621Z",
-    "updated_at": "2016-07-19T16:48:10.612Z",
+    "created_at": "2016-07-18T23:48:09.095Z",
+    "updated_at": "2016-07-19T21:29:21.806Z",
     "type": "Client::Approval",
     "url": "https://3.basecampapi.com/195539477/buckets/2085958499/client/approvals/9007199254741743.json",
     "app_url": "https://3.basecamp.com/195539477/buckets/2085958499/client/approvals/9007199254741743",
@@ -42,8 +42,8 @@ Get client approvals
       "email_address": "annie@honchodesign.com",
       "personable_type": "User",
       "title": "Central Markets Manager",
-      "created_at": "2016-07-19T16:46:34.469Z",
-      "updated_at": "2016-07-19T16:46:34.469Z",
+      "created_at": "2016-07-19T21:27:44.718Z",
+      "updated_at": "2016-07-19T21:27:44.718Z",
       "admin": false,
       "owner": false,
       "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBEgqCjw=--8266bb0507508f3d46050d57b65924d5e2a005f3/avatar-64-x4",
@@ -52,7 +52,7 @@ Get client approvals
         "name": "Honcho Design"
       }
     },
-    "content": "OK, here's another one! We've got this business card worked up, just need your yes or no to proceed. Thanks!<br><br>\n<bc-attachment sgid=\"BAh7CEkiCGdpZAY6BkVUSSIvZ2lkOi8vYmMzL0F0dGFjaG1lbnQvMTAxOTczMDU0MT9leHBpcmVzX2luBjsAVEkiDHB1cnBvc2UGOwBUSSIPYXR0YWNoYWJsZQY7AFRJIg9leHBpcmVzX2F0BjsAVDA=--010588da163ae8b6777939a970136f79d55b48b8\" content-type=\"image/jpeg\" url=\"https://3.basecamp.com/195539477/blobs/05371e68c092d624802282d876300cfd79cc82f1/previews/full/images-images-bcard-2.jpg\" href=\"https://3.basecamp.com/195539477/blobs/05371e68c092d624802282d876300cfd79cc82f1/download/images-images-bcard-2.jpg\" filename=\"images-images-bcard-2.jpg\" filesize=\"170483\" width=\"1824\" height=\"992\" previewable=\"true\"><figure>\n    <img srcset=\"https://3.basecampapi.com/195539477/blobs/05371e68c092d624802282d876300cfd79cc82f1/previews/full/images-images-bcard-2.jpg?dppx=1 1x, https://3.basecampapi.com/195539477/blobs/05371e68c092d624802282d876300cfd79cc82f1/previews/full/images-images-bcard-2.jpg?dppx=2 2x, https://3.basecampapi.com/195539477/blobs/05371e68c092d624802282d876300cfd79cc82f1/previews/full/images-images-bcard-2.jpg?dppx=3 3x, https://3.basecampapi.com/195539477/blobs/05371e68c092d624802282d876300cfd79cc82f1/previews/full/images-images-bcard-2.jpg?dppx=4 4x\" src=\"https://3.basecampapi.com/195539477/blobs/05371e68c092d624802282d876300cfd79cc82f1/previews/full/images-images-bcard-2.jpg\" alt=\"Images images bcard 2\">\n  <figcaption>\n      images-images-bcard-2.jpg\n  </figcaption>\n</figure></bc-attachment>",
+    "content": "<div>OK, here's another one! We've got this business card worked up, just need your yes or no to proceed. Thanks!<br><br></div>\n<bc-attachment sgid=\"BAh7CEkiCGdpZAY6BkVUSSIvZ2lkOi8vYmMzL0F0dGFjaG1lbnQvMTAxOTczMDU0MT9leHBpcmVzX2luBjsAVEkiDHB1cnBvc2UGOwBUSSIPYXR0YWNoYWJsZQY7AFRJIg9leHBpcmVzX2F0BjsAVDA=--010588da163ae8b6777939a970136f79d55b48b8\" content-type=\"image/jpeg\" url=\"https://3.basecamp.com/195539477/blobs/65eb219272af7a61ba216a85ef1f7032cf7a25e1/previews/full/images-images-bcard-2.jpg\" href=\"https://3.basecamp.com/195539477/blobs/65eb219272af7a61ba216a85ef1f7032cf7a25e1/download/images-images-bcard-2.jpg\" filename=\"images-images-bcard-2.jpg\" filesize=\"170483\" width=\"1824\" height=\"992\" previewable=\"true\"><figure>\n    <img srcset=\"https://3.basecampapi.com/195539477/blobs/65eb219272af7a61ba216a85ef1f7032cf7a25e1/previews/full/images-images-bcard-2.jpg?dppx=1 1x, https://3.basecampapi.com/195539477/blobs/65eb219272af7a61ba216a85ef1f7032cf7a25e1/previews/full/images-images-bcard-2.jpg?dppx=2 2x, https://3.basecampapi.com/195539477/blobs/65eb219272af7a61ba216a85ef1f7032cf7a25e1/previews/full/images-images-bcard-2.jpg?dppx=3 3x, https://3.basecampapi.com/195539477/blobs/65eb219272af7a61ba216a85ef1f7032cf7a25e1/previews/full/images-images-bcard-2.jpg?dppx=4 4x\" src=\"https://3.basecampapi.com/195539477/blobs/65eb219272af7a61ba216a85ef1f7032cf7a25e1/previews/full/images-images-bcard-2.jpg\" alt=\"Images images bcard 2\">\n  <figcaption>\n      images-images-bcard-2.jpg\n  </figcaption>\n</figure></bc-attachment>",
     "subject": "Business card",
     "due_on": null,
     "replies_count": 0,
@@ -65,8 +65,8 @@ Get client approvals
       "email_address": "miranda@letobrand.com",
       "personable_type": "Client",
       "title": "Dynamic Markets Analyst",
-      "created_at": "2016-07-19T16:46:38.243Z",
-      "updated_at": "2016-07-19T16:46:38.243Z",
+      "created_at": "2016-07-19T21:27:48.236Z",
+      "updated_at": "2016-07-19T21:27:48.236Z",
       "admin": false,
       "owner": false,
       "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBGMqCjw=--cdbd6d1f0b3acc23c9728cf4ffd5dfe9d2333e02/avatar-64-x4",
@@ -96,8 +96,8 @@ Get a client approval
 {
   "id": 9007199254741740,
   "status": "active",
-  "created_at": "2016-07-15T19:02:57.621Z",
-  "updated_at": "2016-07-19T16:48:10.347Z",
+  "created_at": "2016-07-16T00:14:09.095Z",
+  "updated_at": "2016-07-19T21:29:21.552Z",
   "type": "Client::Approval",
   "url": "https://3.basecampapi.com/195539477/buckets/2085958499/client/approvals/9007199254741740.json",
   "app_url": "https://3.basecamp.com/195539477/buckets/2085958499/client/approvals/9007199254741740",
@@ -120,8 +120,8 @@ Get a client approval
     "email_address": "annie@honchodesign.com",
     "personable_type": "User",
     "title": "Central Markets Manager",
-    "created_at": "2016-07-19T16:46:34.469Z",
-    "updated_at": "2016-07-19T16:46:34.469Z",
+    "created_at": "2016-07-19T21:27:44.718Z",
+    "updated_at": "2016-07-19T21:27:44.718Z",
     "admin": false,
     "owner": false,
     "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBEgqCjw=--8266bb0507508f3d46050d57b65924d5e2a005f3/avatar-64-x4",
@@ -130,7 +130,7 @@ Get a client approval
       "name": "Honcho Design"
     }
   },
-  "content": "Hey! We've wrapped up work on the new logo for the website and wanted to get your final sign off. What do you think? Let us know when you get a chance!<br><br>\n<bc-attachment sgid=\"BAh7CEkiCGdpZAY6BkVUSSIvZ2lkOi8vYmMzL0F0dGFjaG1lbnQvMTAxOTczMDU0MD9leHBpcmVzX2luBjsAVEkiDHB1cnBvc2UGOwBUSSIPYXR0YWNoYWJsZQY7AFRJIg9leHBpcmVzX2F0BjsAVDA=--fe2c0fa6ae2625f0bf4268dab8e3152aa67dbbc6\" content-type=\"image/jpeg\" url=\"https://3.basecamp.com/195539477/blobs/712fb726492373a40a7ce7174bf568c91cddc09d/previews/full/images-coudal-logo.jpg\" href=\"https://3.basecamp.com/195539477/blobs/712fb726492373a40a7ce7174bf568c91cddc09d/download/images-coudal-logo.jpg\" filename=\"images-coudal-logo.jpg\" filesize=\"16536\" width=\"400\" height=\"400\" previewable=\"true\"><figure>\n    <img srcset=\"https://3.basecampapi.com/195539477/blobs/712fb726492373a40a7ce7174bf568c91cddc09d/previews/full/images-coudal-logo.jpg?dppx=1 1x, https://3.basecampapi.com/195539477/blobs/712fb726492373a40a7ce7174bf568c91cddc09d/previews/full/images-coudal-logo.jpg?dppx=2 2x, https://3.basecampapi.com/195539477/blobs/712fb726492373a40a7ce7174bf568c91cddc09d/previews/full/images-coudal-logo.jpg?dppx=3 3x, https://3.basecampapi.com/195539477/blobs/712fb726492373a40a7ce7174bf568c91cddc09d/previews/full/images-coudal-logo.jpg?dppx=4 4x\" src=\"https://3.basecampapi.com/195539477/blobs/712fb726492373a40a7ce7174bf568c91cddc09d/previews/full/images-coudal-logo.jpg\" alt=\"Images coudal logo\">\n  <figcaption>\n      images-coudal-logo.jpg\n  </figcaption>\n</figure></bc-attachment>",
+  "content": "<div>Hey! We've wrapped up work on the new logo for the website and wanted to get your final sign off. What do you think? Let us know when you get a chance!<br><br></div>\n<bc-attachment sgid=\"BAh7CEkiCGdpZAY6BkVUSSIvZ2lkOi8vYmMzL0F0dGFjaG1lbnQvMTAxOTczMDU0MD9leHBpcmVzX2luBjsAVEkiDHB1cnBvc2UGOwBUSSIPYXR0YWNoYWJsZQY7AFRJIg9leHBpcmVzX2F0BjsAVDA=--fe2c0fa6ae2625f0bf4268dab8e3152aa67dbbc6\" content-type=\"image/jpeg\" url=\"https://3.basecamp.com/195539477/blobs/33eba5838c3bd11a303c6c46a2c4d9260f82369e/previews/full/images-coudal-logo.jpg\" href=\"https://3.basecamp.com/195539477/blobs/33eba5838c3bd11a303c6c46a2c4d9260f82369e/download/images-coudal-logo.jpg\" filename=\"images-coudal-logo.jpg\" filesize=\"16536\" width=\"400\" height=\"400\" previewable=\"true\"><figure>\n    <img srcset=\"https://3.basecampapi.com/195539477/blobs/33eba5838c3bd11a303c6c46a2c4d9260f82369e/previews/full/images-coudal-logo.jpg?dppx=1 1x, https://3.basecampapi.com/195539477/blobs/33eba5838c3bd11a303c6c46a2c4d9260f82369e/previews/full/images-coudal-logo.jpg?dppx=2 2x, https://3.basecampapi.com/195539477/blobs/33eba5838c3bd11a303c6c46a2c4d9260f82369e/previews/full/images-coudal-logo.jpg?dppx=3 3x, https://3.basecampapi.com/195539477/blobs/33eba5838c3bd11a303c6c46a2c4d9260f82369e/previews/full/images-coudal-logo.jpg?dppx=4 4x\" src=\"https://3.basecampapi.com/195539477/blobs/33eba5838c3bd11a303c6c46a2c4d9260f82369e/previews/full/images-coudal-logo.jpg\" alt=\"Images coudal logo\">\n  <figcaption>\n      images-coudal-logo.jpg\n  </figcaption>\n</figure></bc-attachment>",
   "subject": "New logo for the website",
   "due_on": null,
   "replies_count": 0,
@@ -143,8 +143,8 @@ Get a client approval
     "email_address": "stephen@letobrand.com",
     "personable_type": "Client",
     "title": "National Directives Director",
-    "created_at": "2016-07-19T16:46:38.235Z",
-    "updated_at": "2016-07-19T16:46:38.235Z",
+    "created_at": "2016-07-19T21:27:48.229Z",
+    "updated_at": "2016-07-19T21:27:48.229Z",
     "admin": false,
     "owner": false,
     "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBGIqCjw=--30a34b0522d7ba3484b8c4dcd65d9087a1baef0e/avatar-64-x4",
@@ -157,8 +157,8 @@ Get a client approval
     {
       "id": 9007199254741742,
       "status": "active",
-      "created_at": "2016-07-15T19:32:57.621Z",
-      "updated_at": "2016-07-15T19:32:57.621Z",
+      "created_at": "2016-07-16T02:53:09.095Z",
+      "updated_at": "2016-07-16T02:53:09.095Z",
       "type": "Client::Approval::Response",
       "app_url": "https://3.basecamp.com/195539477/buckets/2085958499/client/approvals/9007199254741740#__recording_9007199254741742",
       "parent": {
@@ -180,8 +180,8 @@ Get a client approval
         "email_address": "beth@letobrand.com",
         "personable_type": "Client",
         "title": "Product Tactics Architect",
-        "created_at": "2016-07-19T16:46:38.249Z",
-        "updated_at": "2016-07-19T16:46:38.249Z",
+        "created_at": "2016-07-19T21:27:48.243Z",
+        "updated_at": "2016-07-19T21:27:48.243Z",
         "admin": false,
         "owner": false,
         "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBGQqCjw=--0c364fe4f53105736bd410e8dad77e85c60e5465/avatar-64-x4",
@@ -190,7 +190,7 @@ Get a client approval
           "name": "Leto Brand"
         }
       },
-      "content": "Looks great! Thanks for all your hard work on this.",
+      "content": "<div>Looks great! Thanks for all your hard work on this.</div>",
       "approved": true
     }
   ]
