@@ -105,8 +105,6 @@ Get a schedule entry
 
 * `GET /buckets/1/schedule_entries/2.json` will return the schedule entry with an ID of `2` in the Basecamp with an ID of `1`.
 
-Note: Nesting under the schedule resource is not necessary for this endpoint.
-
 ###### Example JSON Response
 <!-- START GET /buckets/1/schedule_entries/2.json -->
 ```json
@@ -229,7 +227,7 @@ Update a schedule entry
 
 * `PUT /buckets/1/schedule_entries/2.json` allows changing of the schedule entry with an ID of `2` in the Basecamp with ID `1`.
 
-Nesting under the schedule resource is not necessary for this endpoint. Clients may change any of the required or optional parameters as listed in the [Create a schedule entry](#create-a-schedule-entry) endpoint.
+Clients may change any of the required or optional parameters as listed in the [Create a schedule entry](#create-a-schedule-entry) endpoint.
 
 This endpoint will return `200 OK` with the current JSON representation of the schedule entry if the update was a success. See the [Get a schedule entry](#get-a-schedule-entry) endpoint for more info on the payload.
 

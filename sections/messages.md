@@ -124,7 +124,6 @@ Get a message
 }
 ```
 <!-- END GET /buckets/1/messages/2.json -->
-Nesting under the message board resource is not necessary for this endpoint.
 
 ###### Copy as cURL
 
