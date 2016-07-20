@@ -25,7 +25,7 @@ The special `<bc-attachment>` tag allows you to insert an inline attachment. Eac
 Inserting a mention
 -------------------
 
-Mentions in rich text content are attachments that reference a [Person](sections/people.md) on the current [Basecamp](sections/basecamps.md). When you submit rich text content with mentions, Basecamp delivers a special notification to each mentioned person.
+Mentions in rich text content are attachments that reference a [Person](people.md) on the current [Basecamp](basecamps.md). When you submit rich text content with mentions, Basecamp delivers a special notification to each mentioned person.
 
 Create a mention in Basecamp's rich text editor by typing "@" and selecting a person from the drop-down list. Create mentions with the API by inserting a `<bc-attachment>` tag with an `sgid` attribute pointing to the person's `attachable_sgid`.
 
@@ -60,7 +60,7 @@ The Basecamp API will return an expanded representation similar to the following
 Inserting an image or file attachment
 -------------------------------------
 
-To insert an image or file attachment in rich text content, first [create an Attachment](sections/attachments.md#create-an-attachment). You will receive an `attachable_sgid` in response:
+To insert an image or file attachment in rich text content, first [create an Attachment](attachments.md#create-an-attachment). You will receive an `attachable_sgid` in response:
 
 ```json
   {
