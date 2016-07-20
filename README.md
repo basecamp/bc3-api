@@ -151,6 +151,11 @@ API endpoints
 
 <!-- END API ENDPOINTS -->
 
+List your integration
+---------------------
+
+To add your service to our public list of Basecamp 3 integrations, head to https://github.com/basecamp/bc3-integrations and open a pull request.
+
 
 Conduct
 -------
