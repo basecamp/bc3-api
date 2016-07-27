@@ -6,8 +6,6 @@ Basecamps
 Endpoints:
 
 - [Get Basecamps](#get-basecamps)
-- [Get archived Basecamps](#get-archived-basecamps)
-- [Get trashed Basecamps](#get-trashed-basecamps)
 - [Get a Basecamp](#get-a-basecamp)
 - [Create a Basecamp](#create-a-basecamp)
 - [Update a Basecamp](#update-a-basecamp)
@@ -17,6 +15,10 @@ Get Basecamps
 -------------
 
 * `GET /projects.json` will return all active Basecamps visible to the current user.
+
+_Optional parameters_:
+
+* `status` - when set to `archived` or `trashed`, will return archived or trashed Basecamps visible to the current user.
 
 ###### Example JSON Response
 <!-- START GET /projects.json -->
@@ -98,18 +100,6 @@ Get Basecamps
 ``` shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/projects.json
 ```
-
-
-Get archived Basecamps
-----------------------
-
-* `GET /projects/archive.json` will return all archived Basecamps visible to the current user.
-
-
-Get trashed Basecamps
----------------------
-
-* `GET /projects/trash.json` will return all trashed Basecamps visible to the current user.
 
 
 Get a Basecamp
