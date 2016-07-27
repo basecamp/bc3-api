@@ -14,7 +14,7 @@ Endpoints:
 Get Basecamps
 -------------
 
-* `GET /projects.json` will return all active Basecamps visible to the current user.
+* `GET /projects.json` will return a [paginated list][pagination] of active Basecamps visible to the current user.
 
 _Optional parameters_:
 
@@ -259,3 +259,5 @@ Trashed Basecamps will be deleted from Basecamp 3 after 30 days. No parameters r
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" -X DELETE \
   https://3.basecampapi.com/$ACCOUNT_ID/projects/2085958507.json
 ```
+
+[pagination]: https://github.com/basecamp/bc3-api/blob/master/README.md#pagination
