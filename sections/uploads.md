@@ -167,7 +167,7 @@ This endpoint will return `201 Created` with the current JSON representation of 
 
 ``` shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" \
-  -d '{"attachable_sgid":"BAh…9c1","description":"content":"<div><strong>Yum</strong></div>","base_name":"yummy_pizza"}' \
+  -d '{"attachable_sgid":"BAh…9c1","description":"<div><strong>Yum</strong></div>","base_name":"yummy_pizza"}' \
   https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/vaults/2/uploads.json
 ```
 
