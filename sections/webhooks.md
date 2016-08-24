@@ -1,6 +1,8 @@
 Webhooks
 ========
 
+*BETA WARNING: This webhooks API is currently in beta and may be subject to change. We will make a final version shortly.*
+
 Basecamp can notify your application when something is changed through webhooks. 
 A webhook consists of a payload URL to be called, which must be HTTPS, and a list of recordable types that'll trigger calls.
 
