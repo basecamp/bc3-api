@@ -21,6 +21,8 @@ A webhook can be subscribed to updates from the recordable types detailed below.
 - Todolist
 - Upload
 
+(Not that chat isn't amongst the options. We will be providing a chat bot API separately soon.)
+
 Whenever an event is created for any of the recordable types that webhook was created to match, Basecamp will call your payload URL. 
 All payloads follow the same JSON format:
 
@@ -178,10 +180,13 @@ curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/j
   https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/webhooks.json
 ```
 
-Update a vault
---------------
+Update a webhook
+----------------
 
 * `PUT /buckets/1/webhooks/3.json` allows changing the payload url and recordable types of the webhook with an ID of `3` in the Basecamp with ID `1`.
+
+**Required parameters**: `payload_url` for the HTTPS url that Basecamp will call.
+_Optional parameters_: `recordable_types` as an array of recordable types, options given in the introduction.
 
 This endpoint will return `200 OK` with the current JSON representation of the webhook if the update was a success. See the [Get webhooks](#get-webhooks) endpoint for more info on the payload.
 
@@ -190,7 +195,7 @@ This endpoint will return `200 OK` with the current JSON representation of the w
 ``` json
 {
   "payload_url": "https://example.com/endpoint",
-  ""
+  "recordable_types": ["Todo", "Todolist"]
 }
 ```
 
@@ -198,8 +203,20 @@ This endpoint will return `200 OK` with the current JSON representation of the w
 
 ``` shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" \
-  -d '{"title":"Important Materials"}' -X PUT \
-  https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/vaults/3.json
+  -d '{"payload_url":"https://example.com/endpoint","recordable_types":["Todo","Todolist"]}' -X PUT \
+  https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/webhooks/3.json
 ```
 
-[basecamp]: https://github.com/basecamp/bc3-api/blob/master/sections/basecamps.md#get-a-basecamp
+Destroy a webhook
+-----------------
+
+* `DELETE /buckets/1/webhooks/3.json` will delete the webhook with an ID of `3` in the Basecamp with ID `1`.
+
+This endpoint will return `204 No Content` if the destroy was a success.
+
+###### Copy as cURL
+
+``` shell
+curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -X DELETE \
+  https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/webhooks/3.json
+```
