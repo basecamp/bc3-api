@@ -4,13 +4,13 @@ Webhooks
 *BETA WARNING: This webhooks API is currently in beta and may be subject to change. We will make a final version shortly.*
 
 Basecamp can notify your application when something is changed through webhooks. 
-A webhook consists of a payload URL to be called, which must be HTTPS, and a list of recordable types that'll trigger calls.
+A webhook consists of a payload URL to be called, which must be HTTPS, and a list of types that'll trigger calls.
 
 Basecamp will attempt to call the payload URL up to 10 times before deactivating the webhook. The duration between attempts
 will grow exponentially longer to give your service time to recover. Basecamp will only consider a HTTP status code in 
 the 2xx range to be a successful response. We will not follow a 3xx redirect.
 
-A webhook can be subscribed to updates from the recordable types detailed below. The default is to subscribe to all of them:
+A webhook can be subscribed to updates from the types detailed below. The default is to subscribe to all of them:
 
 - Comment
 - Document
@@ -25,7 +25,7 @@ A webhook can be subscribed to updates from the recordable types detailed below.
 
 (Note that chat isn't amongst the options. We will be providing a chat bot API separately soon.)
 
-Whenever an event is created for any of the recordable types that webhook was created to match, Basecamp will call your payload URL. 
+Whenever an event is created for any of the types that webhook was created to match, Basecamp will call your payload URL. 
 All payloads follow the same JSON format:
 
 ```json
@@ -84,7 +84,7 @@ This gives status as to whether everything is working as expected. Potential res
 - Webhook failed to receive event: comment_created -- but instead returned 500
 - Webhook failed tenth attempt to relay event and was deactivated
 
-Basecamp will send the following lifecycle events for all recordable types, here using message as an example:
+Basecamp will send the following lifecycle events for all types, here using message as an example:
 
 - message_created / message_active
 - message_title_updated / message_content_updated
@@ -93,7 +93,7 @@ Basecamp will send the following lifecycle events for all recordable types, here
 - message_trashed / message_untrashed
 - message_deleted
 
-There are also a handful of shared operations around the recordable types that pertain to all types, again using message as an example:
+There are also a handful of shared operations around the types that pertain to all types, again using message as an example:
 
 - message_subscribers_changed
 - message_publicized
@@ -102,7 +102,7 @@ Comments added on any recording will trigger the following event:
 
 - comment_created
 
-Additionally, some recordable types have unique events. There are as follows:
+Additionally, some types have unique events. There are as follows:
 
 Todos:
 
@@ -135,7 +135,7 @@ Get webhooks
     "created_at": "2016-06-08T19:00:41.933Z",
     "updated_at": "2016-07-19T16:47:00.621Z",
     "payload_url": "https://example.com/endpoint",
-    "recordable_types": [ "all" ],
+    "types": [ "all" ],
     "last_response": "Webhook successfully received event: comment_created"
   },
   {
@@ -144,7 +144,7 @@ Get webhooks
     "created_at": "2016-06-08T19:00:41.933Z",
     "updated_at": "2016-07-19T16:47:00.621Z",
     "payload_url": "https://example.com/another/endpoint",
-    "recordable_types": [ "Todo", "Todolist" ],
+    "types": [ "Todo", "Todolist" ],
     "last_response": "Webhook failed tenth attempt to receive event and was deactivated"
   }  
 ]
@@ -161,7 +161,7 @@ Create a webhook
 * `POST /buckets/1/webhooks.json` creates a webhook in the Basecamp with ID `1`.
 
 **Required parameters**: `payload_url` for the HTTPS url that Basecamp will call.
-_Optional parameters_: `recordable_types` as an array of recordable types, options given in the introduction.
+_Optional parameters_: `types` as an array of types, options given in the introduction.
 
 This endpoint will return `201 Created` with the current JSON representation of the vault if the creation was a success. See the [Get webhooks](#get-webhooks) endpoint for more info on the payload.
 
@@ -170,7 +170,7 @@ This endpoint will return `201 Created` with the current JSON representation of 
 ``` json
 {
   "payload_url": "https://example.com/endpoint",
-  "recordable_types": [ "Todo", "Todolist" ]
+  "types": [ "Todo", "Todolist" ]
 }
 ```
 
@@ -178,17 +178,17 @@ This endpoint will return `201 Created` with the current JSON representation of 
 
 ``` shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" \
-  -d '{"payload_url":"https://example.com/endpoint","recordable_types":["Todo","Todolist"]}' \
+  -d '{"payload_url":"https://example.com/endpoint","types":["Todo","Todolist"]}' \
   https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/webhooks.json
 ```
 
 Update a webhook
 ----------------
 
-* `PUT /buckets/1/webhooks/3.json` allows changing the payload url and recordable types of the webhook with an ID of `3` in the Basecamp with ID `1`.
+* `PUT /buckets/1/webhooks/3.json` allows changing the payload url and types of the webhook with an ID of `3` in the Basecamp with ID `1`.
 
 **Required parameters**: `payload_url` for the HTTPS url that Basecamp will call.
-_Optional parameters_: `recordable_types` as an array of recordable types, options given in the introduction.
+_Optional parameters_: `types` as an array of types, options given in the introduction.
 
 This endpoint will return `200 OK` with the current JSON representation of the webhook if the update was a success. See the [Get webhooks](#get-webhooks) endpoint for more info on the payload.
 
@@ -197,7 +197,7 @@ This endpoint will return `200 OK` with the current JSON representation of the w
 ``` json
 {
   "payload_url": "https://example.com/endpoint",
-  "recordable_types": ["Todo", "Todolist"]
+  "types": ["Todo", "Todolist"]
 }
 ```
 
@@ -205,7 +205,7 @@ This endpoint will return `200 OK` with the current JSON representation of the w
 
 ``` shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" \
-  -d '{"payload_url":"https://example.com/endpoint","recordable_types":["Todo","Todolist"]}' -X PUT \
+  -d '{"payload_url":"https://example.com/endpoint","types":["Todo","Todolist"]}' -X PUT \
   https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/webhooks/3.json
 ```
 
