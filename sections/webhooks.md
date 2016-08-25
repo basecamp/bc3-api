@@ -23,7 +23,7 @@ A webhook can be subscribed to updates from the recordable types detailed below.
 - Todolist
 - Upload
 
-(Not that chat isn't amongst the options. We will be providing a chat bot API separately soon.)
+(Note that chat isn't amongst the options. We will be providing a chat bot API separately soon.)
 
 Whenever an event is created for any of the recordable types that webhook was created to match, Basecamp will call your payload URL. 
 All payloads follow the same JSON format:
