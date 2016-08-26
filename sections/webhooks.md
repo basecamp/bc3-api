@@ -77,12 +77,8 @@ All payloads follow the same JSON format:
 
 As you'll note, the recording format is the basic generic format that all other content endpoints share, with the addition of a title and content field.
 
-After sending the payload, Basecamp will record the last response on the webhook record itself. 
-This gives status as to whether everything is working as expected. Potential responses include:
-
-- Webhook successfully received event: comment_created
-- Webhook failed to receive event: comment_created -- but instead returned 500
-- Webhook failed tenth attempt to relay event and was deactivated
+After sending the payload, Basecamp will record the last response as a delivery record that can be introspected for debugging.
+The delivery record includes the full request and response that occurred for that specific event relay.
 
 Basecamp will send the following lifecycle events for all types, here using message as an example:
 
@@ -117,6 +113,7 @@ Questions:
 Endpoints:
 
 - [Get webhooks](#get-webhooks)
+- [Get a webhook](#get-a-webhook)
 - [Create a webhook](#create-a-webhook)
 - [Update a webhook](#update-a-webhook)
 - [Destroy a webhook](#destroy-a-webhook)
@@ -136,7 +133,6 @@ Get webhooks
     "updated_at": "2016-07-19T16:47:00.621Z",
     "payload_url": "https://example.com/endpoint",
     "types": [ "all" ],
-    "last_response": "Webhook successfully received event: comment_created",
     "url": "https://3.basecampapi.com/195539477/buckets/2085958498/webhooks/9007199254741202.json",
     "app_url": "https://3.basecamp.com/195539477/buckets/2085958498/webhooks/9007199254741202"
   },
@@ -147,7 +143,6 @@ Get webhooks
     "updated_at": "2016-07-19T16:47:00.621Z",
     "payload_url": "https://example.com/another/endpoint",
     "types": [ "Todo", "Todolist" ],
-    "last_response": "Webhook failed tenth attempt to receive event and was deactivated",
     "url": "https://3.basecampapi.com/195539477/buckets/2085958498/webhooks/9007199254741203.json",
     "app_url": "https://3.basecamp.com/195539477/buckets/2085958498/webhooks/9007199254741203"
   }  
@@ -157,6 +152,83 @@ Get webhooks
 
 ``` shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/webhooks.json
+```
+
+Get a webhook
+-------------
+
+* `GET /buckets/1/webhooks/1.json` will return the webhook with an ID of `3` in the Basecamp with ID `1`.
+
+The recent deliveries array will contain the 25 most recent delivery exchanges, sorted with the most recent first.
+
+###### Example JSON Response
+```json
+{
+"id": 9007199254741202,
+"active": "true",
+"created_at": "2016-06-08T19:00:41.933Z",
+"updated_at": "2016-07-19T16:47:00.621Z",
+"payload_url": "https://example.com/endpoint",
+"types": [ "all" ],
+"url": "https://3.basecampapi.com/195539477/buckets/2085958498/webhooks/9007199254741202.json",
+"app_url": "https://3.basecamp.com/195539477/buckets/2085958498/webhooks/9007199254741202",
+"recent_deliveries": [
+  {
+    id: 2,
+    created_at: "2016-08-26T18:36:09.988Z",
+    request: {
+      headers: {
+        Content-Type: "application/json",
+        User-Agent: "Basecamp3 Webhook",
+        X-Request-Id: "d9ba7dae-2ee0-4a89-bace-b7bbbe1a30d9"
+      },
+      body: {
+        id: 9007199254741828,
+        kind: "todo_completed",
+        details: { },
+        created_at: "2016-08-26T13:36:07.345-05:00",
+        recording: {
+          id: 9007199254741036,
+          status: "active",
+          created_at: "2016-08-05T15:02:19.588-05:00",
+          updated_at: "2016-08-26T13:36:07.340-05:00",
+          type: "Todo",
+          url: "http://bc3-api.dev/195539477/buckets/2085958495/todos/9007199254741036.json",
+          app_url: "http://bc3.dev/195539477/buckets/2085958495/todos/9007199254741036",
+          parent: {
+            id: 9007199254741034,
+            title: "Project stuff",
+            type: "Todolist",
+            url: "http://bc3-api.dev/195539477/buckets/2085958495/todolists/9007199254741034.json",
+            app_url: "http://bc3.dev/195539477/buckets/2085958495/todolists/9007199254741034"
+          },
+          bucket: {
+            id: 2085958495,
+            name: "Annie's Corner",
+            type: "Project"
+          },
+          title: "Add Leto folks to Basecamp",
+          content: "Add Leto folks to Basecamp"
+        }
+      }
+    },
+    response: {
+      code: 200,
+      headers: {
+        Content-Type: "text/html;charset=utf-8",
+        Content-Length: "0"
+      },
+      message: "OK",
+      body: ""
+    }
+  }
+]
+}
+```
+###### Copy as cURL
+
+``` shell
+curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/webhooks/1.json
 ```
 
 Create a webhook
