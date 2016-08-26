@@ -155,6 +155,7 @@ API endpoints
 - [To-do sets](https://github.com/basecamp/bc3-api/blob/master/sections/todosets.md#to-do-sets)
 - [Uploads](https://github.com/basecamp/bc3-api/blob/master/sections/uploads.md#uploads)
 - [Vaults](https://github.com/basecamp/bc3-api/blob/master/sections/vaults.md#vaults)
+- [Webhooks](https://github.com/basecamp/bc3-api/blob/master/sections/webhooks.md#webhooks)
 
 <!-- END API ENDPOINTS -->
 
