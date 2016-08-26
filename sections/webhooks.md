@@ -77,7 +77,7 @@ All payloads follow the same JSON format:
 
 As you'll note, the recording format is the basic generic format that all other content endpoints share, with the addition of a title and content field.
 
-After sending the payload, Basecamp will record the last response as a delivery record that can be introspected for debugging.
+After sending the payload, Basecamp will record the interaction with your application as a delivery record that can be introspected for debugging.
 The delivery record includes the full request and response that occurred for that specific event relay.
 
 Basecamp will send the following lifecycle events for all types, here using message as an example:
@@ -98,7 +98,7 @@ Comments added on any recording will trigger the following event:
 
 - comment_created
 
-Additionally, some types have unique events. There are as follows:
+Additionally, some types have unique events. They are as follows:
 
 Todos:
 
@@ -121,7 +121,7 @@ Endpoints:
 Get webhooks
 ------------
 
-* `GET /buckets/1/webhooks.json` will return all the webhooks in the Basecamp from the basecamp with an ID of `1`.
+* `GET /buckets/1/webhooks.json` will return all the webhooks from the basecamp with an ID of `1`.
 
 ###### Example JSON Response
 ```json
@@ -157,7 +157,7 @@ curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCO
 Get a webhook
 -------------
 
-* `GET /buckets/1/webhooks/1.json` will return the webhook with an ID of `3` in the Basecamp with ID `1`.
+* `GET /buckets/1/webhooks/3.json` will return the webhook with an ID of `3` in the Basecamp with ID `1`.
 
 The recent deliveries array will contain the 25 most recent delivery exchanges, sorted with the most recent first.
 
@@ -228,7 +228,7 @@ The recent deliveries array will contain the 25 most recent delivery exchanges, 
 ###### Copy as cURL
 
 ``` shell
-curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/webhooks/1.json
+curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/webhooks/3.json
 ```
 
 Create a webhook
@@ -236,10 +236,10 @@ Create a webhook
 
 * `POST /buckets/1/webhooks.json` creates a webhook in the Basecamp with ID `1`.
 
-**Required parameters**: `payload_url` for the HTTPS url that Basecamp will call.
+**Required parameters**: `payload_url` for the HTTPS url that Basecamp should call.
 _Optional parameters_: `types` as an array of types, options given in the introduction.
 
-This endpoint will return `201 Created` with the current JSON representation of the vault if the creation was a success. See the [Get webhooks](#get-webhooks) endpoint for more info on the payload.
+This endpoint will return `201 Created` with the current JSON representation of the vault if the creation was a success. See the [Get a webhook](#get-a-webhook) endpoint for more info on the payload.
 
 ###### Example JSON Request
 
@@ -266,7 +266,7 @@ Update a webhook
 **Required parameters**: `payload_url` for the HTTPS url that Basecamp will call.
 _Optional parameters_: `types` as an array of types, options given in the introduction. `active` as a boolean whether this webhook should be matching.
 
-This endpoint will return `200 OK` with the current JSON representation of the webhook if the update was a success. See the [Get webhooks](#get-webhooks) endpoint for more info on the payload.
+This endpoint will return `200 OK` with the current JSON representation of the webhook if the update was a success. See the [Get a webhook](#get-a-webhook) endpoint for more info on the payload.
 
 ###### Example JSON Request
 
