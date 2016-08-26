@@ -136,7 +136,9 @@ Get webhooks
     "updated_at": "2016-07-19T16:47:00.621Z",
     "payload_url": "https://example.com/endpoint",
     "types": [ "all" ],
-    "last_response": "Webhook successfully received event: comment_created"
+    "last_response": "Webhook successfully received event: comment_created",
+    "url": "https://3.basecampapi.com/195539477/buckets/2085958498/webhooks/9007199254741202.json",
+    "app_url": "https://3.basecamp.com/195539477/buckets/2085958498/webhooks/9007199254741202"
   },
   {
     "id": 9007199254741203,
@@ -145,7 +147,9 @@ Get webhooks
     "updated_at": "2016-07-19T16:47:00.621Z",
     "payload_url": "https://example.com/another/endpoint",
     "types": [ "Todo", "Todolist" ],
-    "last_response": "Webhook failed tenth attempt to receive event and was deactivated"
+    "last_response": "Webhook failed tenth attempt to receive event and was deactivated",
+    "url": "https://3.basecampapi.com/195539477/buckets/2085958498/webhooks/9007199254741203.json",
+    "app_url": "https://3.basecamp.com/195539477/buckets/2085958498/webhooks/9007199254741203"
   }  
 ]
 ```
@@ -188,7 +192,7 @@ Update a webhook
 * `PUT /buckets/1/webhooks/3.json` allows changing the payload url and types of the webhook with an ID of `3` in the Basecamp with ID `1`.
 
 **Required parameters**: `payload_url` for the HTTPS url that Basecamp will call.
-_Optional parameters_: `types` as an array of types, options given in the introduction.
+_Optional parameters_: `types` as an array of types, options given in the introduction. `active` as a boolean whether this webhook should be matching.
 
 This endpoint will return `200 OK` with the current JSON representation of the webhook if the update was a success. See the [Get webhooks](#get-webhooks) endpoint for more info on the payload.
 
@@ -197,7 +201,8 @@ This endpoint will return `200 OK` with the current JSON representation of the w
 ``` json
 {
   "payload_url": "https://example.com/endpoint",
-  "types": ["Todo", "Todolist"]
+  "types": ["Todo", "Todolist"],
+  "active": true
 }
 ```
 
@@ -205,7 +210,7 @@ This endpoint will return `200 OK` with the current JSON representation of the w
 
 ``` shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" \
-  -d '{"payload_url":"https://example.com/endpoint","types":["Todo","Todolist"]}' -X PUT \
+  -d '{"payload_url":"https://example.com/endpoint","types":["Todo","Todolist"],"active":true}' -X PUT \
   https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/webhooks/3.json
 ```
 
