@@ -180,7 +180,7 @@ The recent deliveries array will contain the 25 most recent delivery exchanges, 
       "headers": {
         "Content-Type": "application/json",
         "User-Agent": "Basecamp3 Webhook",
-        X"-Request-Id": "d9ba7dae-2ee0-4a89-bace-b7bbbe1a30d9"
+        "X-Request-Id": "d9ba7dae-2ee0-4a89-bace-b7bbbe1a30d9"
       },
       "body": {
         "id": 9007199254741828,
