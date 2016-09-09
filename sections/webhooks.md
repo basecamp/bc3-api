@@ -63,10 +63,12 @@ All payloads follow the same JSON format:
       "email_address": "matt@honchodesign.com",
       "personable_type": "User",
       "title": "Global Data Strategist",
+      "bio": null,
       "created_at": "2016-07-19T21:27:47.654Z",
       "updated_at": "2016-07-19T21:27:47.654Z",
       "admin": false,
       "owner": false,
+      "time_zone": "America/Chicago",
       "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBF0qCjw=--21513efb0cf6f64f7a0720b2c56ac6145ae6680c/avatar-64-x4"
     },
     "title": "Welcome to Basecamp!",
