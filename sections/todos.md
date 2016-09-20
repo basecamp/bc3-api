@@ -27,21 +27,21 @@ _Optional query parameters_:
 ```json
 [
   {
-    "id": 9007199254741613,
+    "id": 9007199254741624,
     "status": "active",
-    "created_at": "2016-08-07T21:11:30.492Z",
-    "updated_at": "2016-08-07T21:11:30.492Z",
+    "created_at": "2016-10-08T13:39:23.324Z",
+    "updated_at": "2016-10-08T13:39:23.324Z",
     "type": "Todo",
-    "url": "https://3.basecampapi.com/195539477/buckets/2085958498/todos/9007199254741613.json",
-    "app_url": "https://3.basecamp.com/195539477/buckets/2085958498/todos/9007199254741613",
+    "url": "https://3.basecampapi.com/195539477/buckets/2085958498/todos/9007199254741624.json",
+    "app_url": "https://3.basecamp.com/195539477/buckets/2085958498/todos/9007199254741624",
     "comments_count": 0,
-    "comments_url": "https://3.basecampapi.com/195539477/buckets/2085958498/recordings/9007199254741613/comments.json",
+    "comments_url": "https://3.basecampapi.com/195539477/buckets/2085958498/recordings/9007199254741624/comments.json",
     "parent": {
-      "id": 9007199254741612,
+      "id": 9007199254741623,
       "title": "Strategy ideas",
       "type": "Todolist",
-      "url": "https://3.basecampapi.com/195539477/buckets/2085958498/todolists/9007199254741612.json",
-      "app_url": "https://3.basecamp.com/195539477/buckets/2085958498/todolists/9007199254741612"
+      "url": "https://3.basecampapi.com/195539477/buckets/2085958498/todolists/9007199254741623.json",
+      "app_url": "https://3.basecamp.com/195539477/buckets/2085958498/todolists/9007199254741623"
     },
     "bucket": {
       "id": 2085958498,
@@ -56,8 +56,8 @@ _Optional query parameters_:
       "personable_type": "User",
       "title": "Central Markets Manager",
       "bio": "To open a store is easy, to keep it open is an art",
-      "created_at": "2016-09-09T22:58:27.734Z",
-      "updated_at": "2016-09-09T22:58:27.734Z",
+      "created_at": "2016-09-19T11:56:18.693Z",
+      "updated_at": "2016-09-19T11:56:18.693Z",
       "admin": false,
       "owner": false,
       "time_zone": "America/Chicago",
@@ -68,16 +68,16 @@ _Optional query parameters_:
       }
     },
     "description": "",
-    "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7CEkiCGdpZAY6BkVUSSI0Z2lkOi8vYmMzL1JlY29yZGluZy85MDA3MTk5MjU0NzQxNjEzP2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg1yZWFkYWJsZQY7AFRJIg9leHBpcmVzX2F0BjsAVDA=--0235c827eabaffecd5c75a7846e988fdec5a95a4.json",
-    "subscription_url": "https://3.basecampapi.com/195539477/buckets/2085958498/recordings/9007199254741613/subscription.json",
+    "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7CEkiCGdpZAY6BkVUSSI0Z2lkOi8vYmMzL1JlY29yZGluZy85MDA3MTk5MjU0NzQxNjI0P2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg1yZWFkYWJsZQY7AFRJIg9leHBpcmVzX2F0BjsAVDA=--66ea2416ea320f857e5a3b5eec1a25b9802dd9ab.json",
+    "subscription_url": "https://3.basecampapi.com/195539477/buckets/2085958498/recordings/9007199254741624/subscription.json",
+    "completed": false,
     "content": "Go cutting edge: iOS8 and Android 4.5 only",
     "starts_on": null,
     "due_on": null,
-    "completed": false,
-    "completion_url": "https://3.basecampapi.com/195539477/buckets/2085958498/todos/9007199254741613/completion.json",
     "assignees": [
 
-    ]
+    ],
+    "completion_url": "https://3.basecampapi.com/195539477/buckets/2085958498/todos/9007199254741624/completion.json"
   }
 ]
 ```
@@ -98,21 +98,21 @@ Get a to-do
 <!-- START GET /buckets/1/todos/2.json -->
 ```json
 {
-  "id": 9007199254741617,
+  "id": 9007199254741626,
   "status": "active",
-  "created_at": "2016-08-07T21:20:30.492Z",
-  "updated_at": "2016-08-07T21:20:30.492Z",
+  "created_at": "2016-10-08T14:29:23.324Z",
+  "updated_at": "2016-09-20T14:15:08.368Z",
   "type": "Todo",
-  "url": "https://3.basecampapi.com/195539477/buckets/2085958498/todos/9007199254741617.json",
-  "app_url": "https://3.basecamp.com/195539477/buckets/2085958498/todos/9007199254741617",
+  "url": "https://3.basecampapi.com/195539477/buckets/2085958498/todos/9007199254741626.json",
+  "app_url": "https://3.basecamp.com/195539477/buckets/2085958498/todos/9007199254741626",
   "comments_count": 0,
-  "comments_url": "https://3.basecampapi.com/195539477/buckets/2085958498/recordings/9007199254741617/comments.json",
+  "comments_url": "https://3.basecampapi.com/195539477/buckets/2085958498/recordings/9007199254741626/comments.json",
   "parent": {
-    "id": 9007199254741612,
+    "id": 9007199254741623,
     "title": "Strategy ideas",
     "type": "Todolist",
-    "url": "https://3.basecampapi.com/195539477/buckets/2085958498/todolists/9007199254741612.json",
-    "app_url": "https://3.basecamp.com/195539477/buckets/2085958498/todolists/9007199254741612"
+    "url": "https://3.basecampapi.com/195539477/buckets/2085958498/todolists/9007199254741623.json",
+    "app_url": "https://3.basecamp.com/195539477/buckets/2085958498/todolists/9007199254741623"
   },
   "bucket": {
     "id": 2085958498,
@@ -127,8 +127,8 @@ Get a to-do
     "personable_type": "User",
     "title": "Central Markets Manager",
     "bio": "To open a store is easy, to keep it open is an art",
-    "created_at": "2016-09-09T22:58:27.734Z",
-    "updated_at": "2016-09-09T22:58:27.734Z",
+    "created_at": "2016-09-19T11:56:18.693Z",
+    "updated_at": "2016-09-19T11:56:18.693Z",
     "admin": false,
     "owner": false,
     "time_zone": "America/Chicago",
@@ -139,16 +139,48 @@ Get a to-do
     }
   },
   "description": "",
-  "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7CEkiCGdpZAY6BkVUSSI0Z2lkOi8vYmMzL1JlY29yZGluZy85MDA3MTk5MjU0NzQxNjE3P2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg1yZWFkYWJsZQY7AFRJIg9leHBpcmVzX2F0BjsAVDA=--6893ffc69d6c1a00220b470cf1a7ae4e60b73ae0.json",
-  "subscription_url": "https://3.basecampapi.com/195539477/buckets/2085958498/recordings/9007199254741617/subscription.json",
-  "content": "Get frequent (daily?) client feedback",
+  "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7CEkiCGdpZAY6BkVUSSI0Z2lkOi8vYmMzL1JlY29yZGluZy85MDA3MTk5MjU0NzQxNjI2P2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg1yZWFkYWJsZQY7AFRJIg9leHBpcmVzX2F0BjsAVDA=--78b06851eb16ff93c7f7ddd72f17eb637b2deeb5.json",
+  "subscription_url": "https://3.basecampapi.com/195539477/buckets/2085958498/recordings/9007199254741626/subscription.json",
+  "completed": true,
+  "completion": {
+    "created_at": "2016-09-20T14:15:08.296Z",
+    "creator": {
+      "id": 1007299166,
+      "attachable_sgid": "BAh7CEkiCGdpZAY6BkVUSSIrZ2lkOi8vYmMzL1BlcnNvbi8xMDA3Mjk5MTY2P2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg9hdHRhY2hhYmxlBjsAVEkiD2V4cGlyZXNfYXQGOwBUMA==--8143046d5c9f87b54a535fa8dae76ca26ccc84c2",
+      "name": "Sharon Bradford",
+      "email_address": "sharon@honchodesign.com",
+      "personable_type": "User",
+      "title": "Principal Branding Administrator",
+      "bio": null,
+      "created_at": "2016-09-19T11:56:20.899Z",
+      "updated_at": "2016-09-19T11:56:20.899Z",
+      "admin": false,
+      "owner": false,
+      "time_zone": "America/Chicago",
+      "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBF4qCjw=--47a8a27e2ac9d767e10da2896edad39c5295aacf/avatar-64-x4"
+    }
+  },
+  "content": "Clear and simple UI",
   "starts_on": null,
   "due_on": null,
-  "completed": false,
-  "completion_url": "https://3.basecampapi.com/195539477/buckets/2085958498/todos/9007199254741617/completion.json",
   "assignees": [
-
-  ]
+    {
+      "id": 1007299166,
+      "attachable_sgid": "BAh7CEkiCGdpZAY6BkVUSSIrZ2lkOi8vYmMzL1BlcnNvbi8xMDA3Mjk5MTY2P2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg9hdHRhY2hhYmxlBjsAVEkiD2V4cGlyZXNfYXQGOwBUMA==--8143046d5c9f87b54a535fa8dae76ca26ccc84c2",
+      "name": "Sharon Bradford",
+      "email_address": "sharon@honchodesign.com",
+      "personable_type": "User",
+      "title": "Principal Branding Administrator",
+      "bio": null,
+      "created_at": "2016-09-19T11:56:20.899Z",
+      "updated_at": "2016-09-19T11:56:20.899Z",
+      "admin": false,
+      "owner": false,
+      "time_zone": "America/Chicago",
+      "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBF4qCjw=--47a8a27e2ac9d767e10da2896edad39c5295aacf/avatar-64-x4"
+    }
+  ],
+  "completion_url": "https://3.basecampapi.com/195539477/buckets/2085958498/todos/9007199254741626/completion.json"
 }
 ```
 <!-- END GET /buckets/1/todos/2.json -->
