@@ -108,7 +108,7 @@ Basecamp to get the callback URL for that Basecamp, but the chatbot will instant
 This also means that any edits or deletes of chatbots are account-wide. For this reason, chatbots can only be managed by administrators.
 But everyone is able to interact with interactive chatbots and all you need to post as a chatbot is that callback URL.
 
-Managing endpoints:
+Endpoints:
 
 - [Get chatbots](#get-chatbots)
 - [Get a chatbot](#get-a-chatbot)
