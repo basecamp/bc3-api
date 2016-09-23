@@ -119,66 +119,74 @@ Managing endpoints:
 Get chatbots
 ------------
 
-* `GET /buckets/1/chatbots.json` will return all the chatbots from the account with the line URL for the campfire on the basecamp with an ID of `1`.
+* `GET /buckets/1/chats/1/integrations.json` will return all the chatbots from the account with the line URL for the campfire on the basecamp with an ID of `1`.
 
 ###### Example JSON Response
+<!-- START GET /buckets/1/chats/1/integrations.json -->
 ```json
 [
   {
-    "id": 3,
+    "id": 1007299181,
     "created_at": "2016-09-23T00:04:47.833Z",
     "updated_at": "2016-09-23T00:04:47.833Z",
     "service_name": "dash",
     "command_url": "https://example.com/command",
-    "url": "https://3.basecampapi.com/195539477/buckets/2085958498/chats/9007199254741443/integrations/1007299181.json",
-    "app_url": "https://3.basecamp.com/195539477/buckets/2085958498/chats/9007199254741443/integrations/1007299181",
-    "lines_url": "https://3.basecamp.com/195539477/integrations/yFU7K9oKrcZyvYLDw4GfLU89/buckets/2085958498/chats/9007199254741443/lines"
+    "url": "https://3.basecampapi.com/195539477/buckets/2085958496/chats/9007199254741045/integrations/1007299181.json",
+    "app_url": "https://3.basecamp.com/195539477/buckets/2085958496/chats/9007199254741045/integrations/1007299181",
+    "lines_url": "https://3.basecampapi.com/195539477/integrations/yFU7K9oKrcZyvYLDw4GfLU89/buckets/2085958496/chats/9007199254741045/lines"
   },
   {
-    "id": 5,
-    "created_at": "2016-09-23T00:04:47.833Z",
-    "updated_at": "2016-09-23T00:04:47.833Z",
-    "service_name": "status",
-    "url": "https://3.basecampapi.com/195539477/buckets/2085958498/chats/9007199254741443/integrations/1007299185.json",
-    "app_url": "https://3.basecamp.com/195539477/buckets/2085958498/chats/9007199254741443/integrations/1007299185",
-    "lines_url": "https://3.basecamp.com/195539477/integrations/yFU7K9oKrcZyvYLDw4GfLUvk/buckets/2085958498/chats/9007199254741443/lines"
+    "id": 1007299180,
+    "created_at": "2016-09-23T00:00:10.707Z",
+    "updated_at": "2016-09-23T00:00:10.707Z",
+    "service_name": "up",
+    "command_url": "",
+    "url": "https://3.basecampapi.com/195539477/buckets/2085958496/chats/9007199254741045/integrations/1007299180.json",
+    "app_url": "https://3.basecamp.com/195539477/buckets/2085958496/chats/9007199254741045/integrations/1007299180",
+    "lines_url": "https://3.basecampapi.com/195539477/integrations/Ax6riJJxijABnciPMbiuZ4dk/buckets/2085958496/chats/9007199254741045/lines"
   }
 ]
+```
+<!-- END GET /buckets/1/chats/1/integrations.json -->
 ```
 ###### Copy as cURL
 
 ``` shell
-curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/chatbots.json
+curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/chats/1/integrations.json
 ```
 
 Get a chatbot
 -------------
 
-* `GET /buckets/1/chatbots/3.json` will return the chatbot with an ID of `3` with the line URL from the Basecamp with ID `1`.
+* `GET /buckets/1/chats/1/integrations/3.json` will return the chatbot with an ID of `3` with the line URL from the Basecamp with ID `1`.
 
 ###### Example JSON Response
+<!-- START GET /buckets/1/chats/1/integrations/3.json -->
 ```json
-{
-  "id": 3,
-  "created_at": "2016-09-23T00:04:47.833Z",
-  "updated_at": "2016-09-23T00:04:47.833Z",
-  "service_name": "dash",
-  "command_url": "https://example.com/command",
-  "url": "https://3.basecampapi.com/195539477/buckets/2085958498/chats/9007199254741443/integrations/1007299181.json",
-  "app_url": "https://3.basecamp.com/195539477/buckets/2085958498/chats/9007199254741443/integrations/1007299181",
-  "lines_url": "https://3.basecamp.com/195539477/integrations/yFU7K9oKrcZyvYLDw4GfLU89/buckets/2085958498/chats/9007199254741443/lines"
-}
+[
+  {
+    "id": 1007299181,
+    "created_at": "2016-09-23T00:04:47.833Z",
+    "updated_at": "2016-09-23T00:04:47.833Z",
+    "service_name": "dash",
+    "command_url": "https://example.com/command",
+    "url": "https://3.basecampapi.com/195539477/buckets/2085958496/chats/9007199254741045/integrations/1007299181.json",
+    "app_url": "https://3.basecamp.com/195539477/buckets/2085958496/chats/9007199254741045/integrations/1007299181",
+    "lines_url": "https://3.basecampapi.com/195539477/integrations/yFU7K9oKrcZyvYLDw4GfLU89/buckets/2085958496/chats/9007199254741045/lines"
+  }
+]
 ```
+<!-- END GET /buckets/1/chats/1/integrations/3.json -->
 ###### Copy as cURL
 
 ``` shell
-curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/chatbots/3.json
+curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/chats/1/integrations/3.json
 ```
 
 Create a chatbot
 ----------------
 
-* `POST /buckets/1/chatbots.json` creates a chatbot on the account and returns the new chatbot with the lines URL from the Basecamp with ID `1`.
+* `POST /buckets/1/chats/1/integrations.json` creates a chatbot on the account and returns the new chatbot with the lines URL from the Basecamp with ID `1`.
 
 **Required parameters**: `service_name` for the chatbot name, which will be used to invoke queries and commands on interactive bots. 
 No spaces, emoji or non-word characters are allowed, as you need to be able to call it like `!tally myCommand`
@@ -200,13 +208,13 @@ This endpoint will return `201 Created` with the current JSON representation of 
 ``` shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" \
   -d '{"service_name":"tally","command_url":"https://example.com/endpoint"' \
-  https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/chatbots.json
+  https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/chats/1/integrations.json
 ```
 
 Update a chatbot
 ----------------
 
-* `PUT /buckets/1/chatbots/3.json` allows changing the service name and commandURL of the chatbot with an ID of `3` in the Basecamp with ID `1`.
+* `PUT /buckets/1/buckets/1/chats/1/integrations/3.json` allows changing the service name and commandURL of the chatbot with an ID of `3` in the Basecamp with ID `1`.
 
 **Required parameters**: `service_name` for the chatbot name, which will be used to invoke queries and commands on interactive bots. 
 No spaces, emoji or non-word characters are allowed, as you need to be able to call it like `!tally myCommand`
@@ -228,13 +236,13 @@ This endpoint will return `200 OK` with the current JSON representation of the c
 ``` shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" \
   -d '{"service_name":"uptime","command_url":"https://example.com/endpoint"' -X PUT \
-  https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/chatbots/3.json
+  https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/buckets/1/chats/1/integrations/3.json
 ```
 
 Destroy a chatbot
 -----------------
 
-* `DELETE /buckets/1/chatbots/3.json` will delete the chatbot with an ID of `3` across the account.
+* `DELETE /buckets/1/chats/1/integrations/3.json` will delete the chatbot with an ID of `3` across the account.
 
 This endpoint will return `204 No Content` if the destroy was a success.
 
