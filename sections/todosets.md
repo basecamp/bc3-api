@@ -19,42 +19,43 @@ To get the to-do set ID for a Basecamp, see the [Get a Basecamp][1] endpoint's `
 <!-- START GET /buckets/1/todosets/2.json -->
 ```json
 {
-  "id": 9007199254741435,
+  "id": 9007199254741445,
   "status": "active",
-  "created_at": "2016-07-19T16:47:30.597Z",
-  "updated_at": "2016-07-19T16:47:55.221Z",
+  "created_at": "2016-09-28T14:25:24.543Z",
+  "updated_at": "2016-09-28T14:25:52.344Z",
   "type": "Todoset",
-  "url": "https://3.basecampapi.com/195539477/buckets/2085958498/todosets/9007199254741435.json",
-  "app_url": "https://3.basecamp.com/195539477/buckets/2085958498/todosets/9007199254741435",
+  "url": "https://3.basecampapi.com/195539477/buckets/2085958498/todosets/9007199254741445.json",
+  "app_url": "https://3.basecamp.com/195539477/buckets/2085958498/todosets/9007199254741445",
   "bucket": {
     "id": 2085958498,
     "name": "The Leto Laptop",
     "type": "Project"
   },
   "creator": {
-    "id": 1007299143,
-    "attachable_sgid": "BAh7CEkiCGdpZAY6BkVUSSIrZ2lkOi8vYmMzL1BlcnNvbi8xMDA3Mjk5MTQzP2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg9hdHRhY2hhYmxlBjsAVEkiD2V4cGlyZXNfYXQGOwBUMA==--919d2c8b11ff403eefcab9db42dd26846d0c3102",
+    "id": 1007299144,
+    "attachable_sgid": "BAh7CEkiCGdpZAY6BkVUSSIrZ2lkOi8vYmMzL1BlcnNvbi8xMDA3Mjk5MTQ0P2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg9hdHRhY2hhYmxlBjsAVEkiD2V4cGlyZXNfYXQGOwBUMA==--2e34d7611a9fcaeb82342d015a671cf5e998c036",
     "name": "Victor Cooper",
     "email_address": "victor@honchodesign.com",
     "personable_type": "User",
     "title": "Chief Strategist",
     "bio": "Don't let your dreams be dreams",
-    "created_at": "2016-09-09T22:58:27.559Z",
-    "updated_at": "2016-09-09T22:58:31.296Z",
+    "created_at": "2016-09-28T14:24:20.217Z",
+    "updated_at": "2016-09-28T14:24:23.289Z",
     "admin": true,
     "owner": true,
     "time_zone": "America/Chicago",
-    "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBEcqCjw=--c632b967cec296b87363a697a67a87f9cc1e5b45/avatar-64-x4",
+    "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBEgqCjw=--8266bb0507508f3d46050d57b65924d5e2a005f3/avatar-64-x4",
     "company": {
       "id": 1033447817,
       "name": "Honcho Design"
     }
   },
-  "name": "To-dos",
   "completed": false,
+  "completed_ratio": "14/60",
+  "name": "To-dos",
   "todolists_count": 10,
-  "todolists_url": "https://3.basecampapi.com/195539477/buckets/2085958498/todosets/9007199254741435/todolists.json",
-  "app_todoslists_url": "https://3.basecamp.com/195539477/buckets/2085958498/todosets/9007199254741435/todolists"
+  "todolists_url": "https://3.basecampapi.com/195539477/buckets/2085958498/todosets/9007199254741445/todolists.json",
+  "app_todoslists_url": "https://3.basecamp.com/195539477/buckets/2085958498/todosets/9007199254741445/todolists"
 }
 ```
 <!-- END GET /buckets/1/todosets/2.json -->
