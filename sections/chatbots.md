@@ -148,7 +148,7 @@ Get chatbots
 ]
 ```
 <!-- END GET /buckets/1/chats/1/integrations.json -->
-```
+
 ###### Copy as cURL
 
 ``` shell
