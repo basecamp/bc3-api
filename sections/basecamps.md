@@ -14,7 +14,7 @@ Endpoints:
 Get Basecamps
 -------------
 
-* `GET /projects.json` will return a [paginated list][pagination] of active Basecamps visible to the current user.
+* `GET /projects.json` will return a [paginated list][pagination] of active Basecamps visible to the current user sorted by most recently created Basecamp first.
 
 _Optional parameters_:
 
