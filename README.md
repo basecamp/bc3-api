@@ -153,6 +153,7 @@ API endpoints
 - [Recordings](https://github.com/basecamp/bc3-api/blob/master/sections/recordings.md#recordings)
 - [Schedule entries](https://github.com/basecamp/bc3-api/blob/master/sections/schedule_entries.md#schedule-entries)
 - [Schedules](https://github.com/basecamp/bc3-api/blob/master/sections/schedules.md#schedules)
+- [Templates](https://github.com/basecamp/bc3-api/blob/master/sections/templates.md#templates)
 - [To-do lists](https://github.com/basecamp/bc3-api/blob/master/sections/todolists.md#to-do-lists)
 - [To-dos](https://github.com/basecamp/bc3-api/blob/master/sections/todos.md#to-dos)
 - [To-do sets](https://github.com/basecamp/bc3-api/blob/master/sections/todosets.md#to-do-sets)
