@@ -17,7 +17,7 @@ Applications that modify existing rich text content should take special care not
 Allowed HTML tags
 -----------------
 
-You may use the following standard HTML tags in rich text content: `div`, `br`, `strong`, `em`, `strike`, `a` (with an `href` attribute), `pre`, `ol`, `ul`, `li`, and `blockquote`. Any other tags will be removed automatically.
+You may use the following standard HTML tags in rich text content: `div`, `h1`, `br`, `strong`, `em`, `strike`, `a` (with an `href` attribute), `pre`, `ol`, `ul`, `li`, and `blockquote`. Any other tags will be removed automatically.
 
 The special `<bc-attachment>` tag allows you to insert an inline attachment. Each `<bc-attachment>` has an `sgid` attribute which points to the `attachable_sgid` attribute of an attachable Basecamp resource. Your application will receive a rendered representation of the attachable resource inside the `<bc-attachment>` tag in API responses.
 
