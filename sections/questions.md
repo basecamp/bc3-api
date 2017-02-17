@@ -16,50 +16,57 @@ Get questions
 ```json
 [
   {
-    "id": 9007199254741438,
+    "id": 9007199254741453,
     "status": "active",
-    "created_at": "2016-07-19T16:47:30.665Z",
-    "updated_at": "2016-07-19T18:24:05.529Z",
+    "created_at": "2017-02-15T13:37:19.641Z",
+    "updated_at": "2017-02-15T13:37:19.935Z",
     "type": "Question",
-    "url": "https://3.basecampapi.com/195539477/buckets/2085958498/questions/9007199254741438.json",
-    "app_url": "https://3.basecamp.com/195539477/buckets/2085958498/questions/9007199254741438",
+    "url": "https://3.basecampapi.com/195539477/buckets/2085958499/questions/9007199254741453.json",
+    "app_url": "https://3.basecamp.com/195539477/buckets/2085958499/questions/9007199254741453",
     "parent": {
-      "id": 9007199254741437,
+      "id": 9007199254741452,
       "title": "Automatic Check-ins",
       "type": "Questionnaire",
-      "url": "https://3.basecampapi.com/195539477/buckets/2085958498/questionnaires/9007199254741437.json",
-      "app_url": "https://3.basecamp.com/195539477/buckets/2085958498/questionnaires/9007199254741437"
+      "url": "https://3.basecampapi.com/195539477/buckets/2085958499/questionnaires/9007199254741452.json",
+      "app_url": "https://3.basecamp.com/195539477/buckets/2085958499/questionnaires/9007199254741452"
     },
     "bucket": {
-      "id": 2085958498,
+      "id": 2085958499,
       "name": "The Leto Laptop",
       "type": "Project"
     },
     "creator": {
-      "id": 1007299143,
-      "attachable_sgid": "BAh7CEkiCGdpZAY6BkVUSSIrZ2lkOi8vYmMzL1BlcnNvbi8xMDA3Mjk5MTQzP2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg9hdHRhY2hhYmxlBjsAVEkiD2V4cGlyZXNfYXQGOwBUMA==--919d2c8b11ff403eefcab9db42dd26846d0c3102",
+      "id": 1049715914,
+      "attachable_sgid": "BAh7CEkiCGdpZAY6BkVUSSIrZ2lkOi8vYmMzL1BlcnNvbi8xMDQ5NzE1OTE0P2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg9hdHRhY2hhYmxlBjsAVEkiD2V4cGlyZXNfYXQGOwBUMA==--f7a107e8e50594823dc25f59b44aeefc7b1a4bc8",
       "name": "Victor Cooper",
       "email_address": "victor@honchodesign.com",
       "personable_type": "User",
       "title": "Chief Strategist",
       "bio": "Don't let your dreams be dreams",
-      "created_at": "2016-09-09T22:58:27.559Z",
-      "updated_at": "2016-09-09T22:58:31.296Z",
+      "created_at": "2017-02-15T13:35:18.642Z",
+      "updated_at": "2017-02-15T13:37:50.616Z",
       "admin": true,
       "owner": true,
       "time_zone": "America/Chicago",
-      "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBEcqCjw=--c632b967cec296b87363a697a67a87f9cc1e5b45/avatar-64-x4",
+      "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBMpkkT4=--83f46d5bcb97c314029a53364e3b0444a55759b3/avatar-64-x4",
       "company": {
         "id": 1033447817,
         "name": "Honcho Design"
       }
     },
     "paused": true,
-    "title": "See anything great lately that inspired you?",
-    "schedule_code": "every_friday",
-    "schedule_time_of_day": "evening",
+    "title": "How do you think the project’s been going so far?",
+    "schedule": {
+      "frequency": "every_week",
+      "days": [
+        5
+      ],
+      "hour": 16,
+      "minute": 30,
+      "start_date": "2017-02-15"
+    },
     "answers_count": 0,
-    "answers_url": "https://3.basecampapi.com/195539477/buckets/2085958498/questions/9007199254741438/answers.json"
+    "answers_url": "https://3.basecampapi.com/195539477/buckets/2085958499/questions/9007199254741453/answers.json"
   }
 ]
 ```
@@ -79,39 +86,39 @@ Get a question
 <!-- START GET /buckets/1/questions/2.json -->
 ```json
 {
-  "id": 9007199254741454,
+  "id": 9007199254741468,
   "status": "active",
-  "created_at": "2016-06-25T16:54:30.492Z",
-  "updated_at": "2016-07-19T18:24:05.559Z",
+  "created_at": "2017-02-16T15:22:19.512Z",
+  "updated_at": "2017-02-15T13:37:49.481Z",
   "type": "Question",
-  "url": "https://3.basecampapi.com/195539477/buckets/2085958498/questions/9007199254741454.json",
-  "app_url": "https://3.basecamp.com/195539477/buckets/2085958498/questions/9007199254741454",
+  "url": "https://3.basecampapi.com/195539477/buckets/2085958499/questions/9007199254741468.json",
+  "app_url": "https://3.basecamp.com/195539477/buckets/2085958499/questions/9007199254741468",
   "parent": {
-    "id": 9007199254741437,
+    "id": 9007199254741452,
     "title": "Automatic Check-ins",
     "type": "Questionnaire",
-    "url": "https://3.basecampapi.com/195539477/buckets/2085958498/questionnaires/9007199254741437.json",
-    "app_url": "https://3.basecamp.com/195539477/buckets/2085958498/questionnaires/9007199254741437"
+    "url": "https://3.basecampapi.com/195539477/buckets/2085958499/questionnaires/9007199254741452.json",
+    "app_url": "https://3.basecamp.com/195539477/buckets/2085958499/questionnaires/9007199254741452"
   },
   "bucket": {
-    "id": 2085958498,
+    "id": 2085958499,
     "name": "The Leto Laptop",
     "type": "Project"
   },
   "creator": {
-    "id": 1007299144,
-    "attachable_sgid": "BAh7CEkiCGdpZAY6BkVUSSIrZ2lkOi8vYmMzL1BlcnNvbi8xMDA3Mjk5MTQ0P2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg9hdHRhY2hhYmxlBjsAVEkiD2V4cGlyZXNfYXQGOwBUMA==--2e34d7611a9fcaeb82342d015a671cf5e998c036",
+    "id": 1049715915,
+    "attachable_sgid": "BAh7CEkiCGdpZAY6BkVUSSIrZ2lkOi8vYmMzL1BlcnNvbi8xMDQ5NzE1OTE1P2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg9hdHRhY2hhYmxlBjsAVEkiD2V4cGlyZXNfYXQGOwBUMA==--8c53de5ec1a145d6f44a5b40c1051628ea38a9e2",
     "name": "Annie Bryan",
     "email_address": "annie@honchodesign.com",
     "personable_type": "User",
     "title": "Central Markets Manager",
     "bio": "To open a store is easy, to keep it open is an art",
-    "created_at": "2016-09-09T22:58:27.734Z",
-    "updated_at": "2016-09-09T22:58:27.734Z",
+    "created_at": "2017-02-15T13:35:19.313Z",
+    "updated_at": "2017-02-15T13:35:19.313Z",
     "admin": false,
     "owner": false,
     "time_zone": "America/Chicago",
-    "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBEgqCjw=--8266bb0507508f3d46050d57b65924d5e2a005f3/avatar-64-x4",
+    "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBMtkkT4=--8f9d15263df7a830cc0228be25bf1cf6ffdda3a8/avatar-64-x4",
     "company": {
       "id": 1033447817,
       "name": "Honcho Design"
@@ -119,10 +126,21 @@ Get a question
   },
   "paused": false,
   "title": "What did you work on today?",
-  "schedule_code": "every_weekday",
-  "schedule_time_of_day": "evening",
+  "schedule": {
+    "frequency": "every_day",
+    "days": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "hour": 17,
+    "minute": 0,
+    "start_date": "2017-02-15"
+  },
   "answers_count": 32,
-  "answers_url": "https://3.basecampapi.com/195539477/buckets/2085958498/questions/9007199254741454/answers.json"
+  "answers_url": "https://3.basecampapi.com/195539477/buckets/2085958499/questions/9007199254741468/answers.json"
 }
 ```
 <!-- END GET /buckets/1/questions/2.json -->
