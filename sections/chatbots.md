@@ -9,9 +9,9 @@ Interactive chatbots have their queries and commands POST'ed directly to them wi
 that POST is inserted into the room where the conversation is happening.
 
 Alternatively, if a chatbot needs to post on their own, there's a special key'ed URL that's all that is needed. It's returned 
-as `lines URL`. See the [Get a chatbot](#get-a-chatbot) endpoint for more info. If you have that URL, you can post content 
-as that chatbot to that room. But what you can't do is read anything from the room. This is not a streaming service. It's 
-intended purely for request/reply and blind reply interactions.
+as `lines_url` when creating a chatbot. See the [Create a chatbot](#create-a-chatbot) endpoint for more info. If you have that 
+URL, you can post content as that chatbot to that room. But what you can't do is read anything from the room. This is not a 
+streaming service. It's intended purely for request/reply and blind reply interactions.
 
 When an interactive chatbot is invoked, it'll receive a JSON payload like this:
 
