@@ -208,14 +208,14 @@ This endpoint will return `201 Created` with the current JSON representation of 
 
 ``` shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" \
-  -d '{"service_name":"tally","command_url":"https://example.com/endpoint"' \
+  -d '{"service_name":"tally","command_url":"https://example.com/endpoint"}' \
   https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/chats/1/integrations.json
 ```
 
 Update a chatbot
 ----------------
 
-* `PUT /buckets/1/buckets/1/chats/1/integrations/3.json` allows changing the service name and commandURL of the chatbot with an ID of `3` in the Basecamp with ID `1`.
+* `PUT /buckets/1/chats/1/integrations/3.json` allows changing the service name and commandURL of the chatbot with an ID of `3` in the Basecamp with ID `1`.
 
 **Required parameters**: `service_name` for the chatbot name, which will be used to invoke queries and commands on interactive bots. 
 No spaces, emoji or non-word characters are allowed, as you need to be able to call it like `!tally myCommand`
@@ -236,8 +236,8 @@ This endpoint will return `200 OK` with the current JSON representation of the c
 
 ``` shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" \
-  -d '{"service_name":"uptime","command_url":"https://example.com/endpoint"' -X PUT \
-  https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/buckets/1/chats/1/integrations/3.json
+  -d '{"service_name":"uptime","command_url":"https://example.com/endpoint"}' -X PUT \
+  https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/chats/1/integrations/3.json
 ```
 
 Destroy a chatbot
