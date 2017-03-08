@@ -226,7 +226,7 @@ curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCO
 Create a Campfire line
 ----------------------
 
-* `POST /buckets/1/chats/2/lines.json` creates a line in the Campfire with ID `2` in the Basecamp with ID `2`.
+* `POST /buckets/1/chats/2/lines.json` creates a line in the Campfire with ID `2` in the Basecamp with ID `1`.
 
 **Required parameters**: `content` as the plain text body for the Campfire line.
 

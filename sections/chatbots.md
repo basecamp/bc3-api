@@ -115,6 +115,7 @@ Endpoints:
 - [Create a chatbot](#create-a-chatbot)
 - [Update a chatbot](#update-a-chatbot)
 - [Destroy a chatbot](#destroy-a-chatbot)
+- [Create a line](#create-a-line)
 
 Get chatbots
 ------------
@@ -251,4 +252,28 @@ This endpoint will return `204 No Content` if the destroy was a success.
 ``` shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -X DELETE \
   https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/chatbots/3.json
+```
+
+Create a line
+-------------
+
+* `POST /integrations/$CHATBOT_KEY/buckets/1/chats/2/lines.json` creates a line in the Campfire with ID `2` in the Basecamp with ID `1`.
+
+**Required parameters**: `content` as the plain text body for the Campfire line.
+
+This endpoint will return `201 Created` if the creation was a success.
+
+###### Example JSON Request
+
+``` json
+{
+  "content": "Good morning"
+}
+```
+
+###### Copy as cURL
+
+``` shell
+curl -s -H "Content-Type: application/json" -d '{"content":"Good morning"}' \
+  https://3.basecampapi.com/$ACCOUNT_ID/integrations/$CHATBOT_KEY/buckets/1/chats/2/lines.json
 ```
