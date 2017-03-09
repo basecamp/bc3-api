@@ -1,11 +1,11 @@
 Webhooks
 ========
 
-Basecamp can notify your application when something is changed through webhooks. 
+Basecamp can notify your application when something is changed through webhooks.
 A webhook consists of a payload URL to be called, which must be HTTPS, and a list of types that'll trigger calls.
 
 Basecamp will attempt to call the payload URL up to 10 times before deactivating the webhook. The duration between attempts
-will grow exponentially longer to give your service time to recover. Basecamp will only consider a HTTP status code in 
+will grow exponentially longer to give your service time to recover. Basecamp will only consider a HTTP status code in
 the 2xx range to be a successful response. We will not follow a 3xx redirect.
 
 A webhook can be subscribed to updates from the types detailed below. The default is to subscribe to all of them:
@@ -23,7 +23,7 @@ A webhook can be subscribed to updates from the types detailed below. The defaul
 
 (Note that chat isn't amongst the options. We will be providing a chat bot API separately soon.)
 
-Whenever an event is created for any of the types that webhook was created to match, Basecamp will call your payload URL. 
+Whenever an event is created for any of the types that webhook was created to match, Basecamp will call your payload URL.
 All payloads follow the same JSON format:
 
 ```json
@@ -71,6 +71,21 @@ All payloads follow the same JSON format:
     },
     "title": "Welcome to Basecamp!",
     "content": "<div>Hey all, here are some high res shots of the laptop hardware that we can use. These are not public yet, so be careful with how you share them. We don't want any leaks at all with these images.</div>"
+  },
+  "creator": {
+    "id": 1007299165,
+    "attachable_sgid": "BAh7CEkiCGdpZAY6BkVUSSIrZ2lkOi8vYmMzL1BlcnNvbi8xMDA3Mjk5MTY1P2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg9hdHRhY2hhYmxlBjsAVEkiD2V4cGlyZXNfYXQGOwBUMA==--c28a27d0c490353fc1a5c2a50ce8eda0fae07370",
+    "name": "Matt Donahue",
+    "email_address": "matt@honchodesign.com",
+    "personable_type": "User",
+    "title": "Global Data Strategist",
+    "bio": null,
+    "created_at": "2016-07-19T21:27:47.654Z",
+    "updated_at": "2016-07-19T21:27:47.654Z",
+    "admin": false,
+    "owner": false,
+    "time_zone": "America/Chicago",
+    "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBF0qCjw=--21513efb0cf6f64f7a0720b2c56ac6145ae6680c/avatar-64-x4"
   }
 }
 ```
