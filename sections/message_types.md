@@ -32,8 +32,10 @@ Get message types
     "created_at": "2017-03-28T15:25:09.450Z",
     "updated_at": "2017-03-28T15:25:09.450Z"
   }
-]```
+]
+```
 <!-- END GET /buckets/1/categories.json -->
+
 ###### Copy as cURL
 
 ``` shell
@@ -54,8 +56,10 @@ Get a message type
   "icon": "📢",
   "created_at": "2017-03-28T15:25:09.455Z",
   "updated_at": "2017-03-28T15:25:09.455Z"
-}```
+}
+```
 <!-- END GET /buckets/1/categories/2.json -->
+
 ###### Copy as cURL
 
 ``` shell
