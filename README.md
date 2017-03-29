@@ -146,6 +146,7 @@ API endpoints
 - [Inboxes](https://github.com/basecamp/bc3-api/blob/master/sections/inboxes.md#inboxes)
 - [Message Boards](https://github.com/basecamp/bc3-api/blob/master/sections/message_boards.md#message-boards)
 - [Messages](https://github.com/basecamp/bc3-api/blob/master/sections/messages.md#messages)
+- [Message Types](https://github.com/basecamp/bc3-api/blob/master/sections/message_types.md#get-message-types)
 - [People](https://github.com/basecamp/bc3-api/blob/master/sections/people.md#people)
 - [Question answers](https://github.com/basecamp/bc3-api/blob/master/sections/question_answers.md#question-answers)
 - [Questionnaires](https://github.com/basecamp/bc3-api/blob/master/sections/questionnaires.md#questionnaires)

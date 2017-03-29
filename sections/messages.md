@@ -119,6 +119,11 @@ Get a message
       "name": "Honcho Design"
     }
   },
+  "category": {
+    "id": 823758530,
+    "name": "Update",
+    "icon": "❤️"
+  },
   "content": "<div>Hey guys,\n\n  We won the Leto account! This is huge for us, it really marks a turning point for the company.\n\n  As you know we've been pursuing bigger clients in the consumer space, but we've done so carefully. We've never been about getting the biggest clients - those are easy to get. We've been trying to get the best clients for us - ones that will challenge us, grow us, make us better, and ultimately giving us a platform to show how awesome you guys all are. And now we have that!\n\n  A big congrats to everyone who worked so hard to make this happen, and now the fun really begins. Most of the pitch team will stay on as leading members of the first project, the Leto Microsite.\n\n  Again, great job everyone, and let's go kick some more butt!\n\n  -Victor</div>",
   "bookmark_url": "https://3.basecamp.com/195539477/my/bookmarks/BAh7CEkiCGdpZAY6BkVUSSI0Z2lkOi8vYmMzL1JlY29yZGluZy85MDA3MTk5MjU0NzQxNDQzP2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg1yZWFkYWJsZQY7AFRJIg9leHBpcmVzX2F0BjsAVDA=--0cea494978131a59de5436e67e7f01b6db1fb8f0",
   "subscription_url": "https://3.basecamp.com/195539477/buckets/2085958498/recordings/9007199254741443/subscription",
@@ -141,7 +146,10 @@ Create a message
 
 **Required parameters**: `subject` as the title of the message, and `status`, set to `active` to publish immediately.
 
-_Optional parameters_: `content` as the body of the message. See our [Rich text guide][4] for what HTML tags are allowed.
+_Optional parameters_: 
+
+* `content` as the body of the message. See our [Rich text guide][4] for what HTML tags are allowed.
+* `category_id` to set a type for the message. To get a list of all the message types for a Basecamp, see the [Get message types][5] endpoint. 
 
 Note: All people on a Basecamp are notified of the new message when it's posted.
 
@@ -169,7 +177,7 @@ curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/j
 Update a message
 ----------------
 
-* `PUT /buckets/1/messages/2.json` allows changing the `subject` and `content` of the message with an ID of `2` in the Basecamp with ID `1`.
+* `PUT /buckets/1/messages/2.json` allows changing the `subject`, `content` and `category_id` of the message with an ID of `2` in the Basecamp with ID `1`.
 
 This endpoint will return `200 OK` with the current JSON representation of the message if the update was a success. See the [Get a message](#get-a-message) endpoint for more info on the payload.
 
@@ -195,3 +203,4 @@ curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/j
 [2]: https://github.com/basecamp/bc3-api/blob/master/README.md#pagination
 [3]: https://github.com/basecamp/bc3-api/blob/master/sections/message_boards.md#message-boards
 [4]: https://github.com/basecamp/bc3-api/blob/master/sections/rich_text.md
+[5]: https://github.com/basecamp/bc3-api/blob/master/sections/message_types.md#get-message-types
