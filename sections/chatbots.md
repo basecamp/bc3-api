@@ -8,9 +8,10 @@ Both types of chatbots are authenticated differently from how the rest of the AP
 Interactive chatbots have their queries and commands POST'ed directly to them with a piece of JSON. Whatever they return to
 that POST is inserted into the room where the conversation is happening.
 
-Alternatively, if a chatbot needs to post on their own, there's a special key'ed URL that's all that is needed. If you have
-that URL, you can post content as that chatbot to that room. But what you can't do is read anything from the room. This is not
-a streaming service. It's intended purely for request/reply and blind reply interactions.
+Alternatively, if a chatbot needs to post on their own, there's a special key'ed URL that's all that is needed. It's returned 
+as `lines_url` when creating a chatbot. See the [Create a chatbot](#create-a-chatbot) endpoint for more info. If you have that 
+URL, you can post content as that chatbot to that room. But what you can't do is read anything from the room. This is not a 
+streaming service. It's intended purely for request/reply and blind reply interactions.
 
 When an interactive chatbot is invoked, it'll receive a JSON payload like this:
 
@@ -115,6 +116,7 @@ Endpoints:
 - [Create a chatbot](#create-a-chatbot)
 - [Update a chatbot](#update-a-chatbot)
 - [Destroy a chatbot](#destroy-a-chatbot)
+- [Create a line](#create-a-line)
 
 Get chatbots
 ------------
@@ -251,4 +253,28 @@ This endpoint will return `204 No Content` if the destroy was a success.
 ``` shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -X DELETE \
   https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/chatbots/3.json
+```
+
+Create a line
+-------------
+
+* `POST /integrations/$CHATBOT_KEY/buckets/1/chats/2/lines.json` creates a line in the Campfire with ID `2` in the Basecamp with ID `1`.
+
+**Required parameters**: `content` as the plain text body for the Campfire line.
+
+This endpoint will return `201 Created` if the creation was a success.
+
+###### Example JSON Request
+
+``` json
+{
+  "content": "Good morning"
+}
+```
+
+###### Copy as cURL
+
+``` shell
+curl -s -H "Content-Type: application/json" -d '{"content":"Good morning"}' \
+  https://3.basecampapi.com/$ACCOUNT_ID/integrations/$CHATBOT_KEY/buckets/1/chats/2/lines.json
 ```
