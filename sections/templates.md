@@ -183,12 +183,9 @@ If creation was successful, this returns `201 Created` along with the current JS
 Get a Project Construction
 --------------------------------
 
-* `GET /templates/1/project_constructions/2.json` will return the current state of the project construction.
+* `GET /templates/1/project_constructions/2.json` will return the project construction with an ID of `2` for the template with an ID of `1`.
 
-Where `1` is the template id and `2` is the contructor id returned by `POST`.
-
-This endpoint can be polled at regular intervals (no more than once a second) to see when the project is complete. When complete, the construction will have a status of "completed" and look like this, including the url of the
-created project:
+This endpoint can be polled at regular intervals (no more than once a second) to see when construction is complete. When complete, the construction will have a status of "completed" and will provide information about the newly-created project:
 
 <!-- START GET /templates/1/project_constructions/1.json -->
 ```json
