@@ -16,6 +16,7 @@ A webhook can be subscribed to updates from the types detailed below. The defaul
 - Message
 - Question
 - Question::Answer
+- Inbox::Forward
 - Schedule::Entry
 - Todo
 - Todolist
