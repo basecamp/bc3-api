@@ -1,7 +1,7 @@
 Vaults
 ======
 
-All Basecamps have a primary vault (folder), to get its ID see the [Get a Basecamp][basecamp] endpoint's `dock` payload. Additional vaults may be nested under the primary vault or any child vault.
+All projects have a primary vault (folder), to get its ID see the [Get a project][project] endpoint's `dock` payload. Additional vaults may be nested under the primary vault or any child vault.
 
 Endpoints:
 
@@ -13,7 +13,7 @@ Endpoints:
 Get vaults
 ----------
 
-* `GET /buckets/1/vaults/2/vaults.json` will return a [paginated list][pagination] of vaults in the Basecamp with an ID of `1` and the vault with ID of `2`.
+* `GET /buckets/1/vaults/2/vaults.json` will return a [paginated list][pagination] of vaults in the project with an ID of `1` and the vault with ID of `2`.
 
 ###### Example JSON Response
 <!-- START GET /buckets/1/vaults/2/vaults.json -->
@@ -78,7 +78,7 @@ curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCO
 Get a vault
 -----------
 
-* `GET /buckets/1/vaults/2.json` will return the vault with an ID of `2` in the Basecamp with an ID of `1`.
+* `GET /buckets/1/vaults/2.json` will return the vault with an ID of `2` in the project with an ID of `1`.
 
 ###### Example JSON Response
 <!-- START GET /buckets/1/vaults/2.json -->
@@ -134,7 +134,7 @@ curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCO
 Create a vault
 --------------
 
-* `POST /buckets/1/vaults/2/vaults.json` creates a vault in the Basecamp with ID `1` and under the vault with an ID of `2`.
+* `POST /buckets/1/vaults/2/vaults.json` creates a vault in the project with ID `1` and under the vault with an ID of `2`.
 
 **Required parameters**: `title` for the name of the vault.
 
@@ -159,7 +159,7 @@ curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/j
 Update a vault
 --------------
 
-* `PUT /buckets/1/vaults/3.json` allows changing the title of the vault with an ID of `3` in the Basecamp with ID `1`.
+* `PUT /buckets/1/vaults/3.json` allows changing the title of the vault with an ID of `3` in the project with ID `1`.
 
 This endpoint will return `200 OK` with the current JSON representation of the to-do if the update was a success. See the [Get a vault](#get-a-vault) endpoint for more info on the payload.
 
@@ -179,5 +179,5 @@ curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/j
   https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/vaults/3.json
 ```
 
-[basecamp]: https://github.com/basecamp/bc3-api/blob/master/sections/basecamps.md#get-a-basecamp
+[project]: https://github.com/basecamp/bc3-api/blob/master/sections/projects.md#get-a-project
 [pagination]: https://github.com/basecamp/bc3-api/blob/master/README.md#pagination

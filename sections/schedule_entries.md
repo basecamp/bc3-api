@@ -12,9 +12,9 @@ Endpoints:
 Get schedule entries
 --------------------
 
-* `GET /buckets/1/schedules/3/entries.json` will return a [paginated list][pagination] of active schedule entries in the Basecamp with an ID of `1` and the schedule with ID of `3`.
+* `GET /buckets/1/schedules/3/entries.json` will return a [paginated list][pagination] of active schedule entries in the project with an ID of `1` and the schedule with ID of `3`.
 
-To get the schedule ID for a Basecamp, see the [Get schedule][schedule] endpoint.
+To get the schedule ID for a project, see the [Get schedule][schedule] endpoint.
 
 _Optional query parameters_:
 
@@ -107,7 +107,7 @@ curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCO
 Get a schedule entry
 --------------------
 
-* `GET /buckets/1/schedule_entries/2.json` will return the schedule entry with an ID of `2` in the Basecamp with an ID of `1`.
+* `GET /buckets/1/schedule_entries/2.json` will return the schedule entry with an ID of `2` in the project with an ID of `1`.
 
 ###### Example JSON Response
 <!-- START GET /buckets/1/schedule_entries/2.json -->
@@ -194,7 +194,7 @@ curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCO
 Create a schedule entry
 -----------------------
 
-* `POST /buckets/1/schedules/3/entries.json` creates a schedule entry in the Basecamp with ID `1` and under the schedule with an ID of `3`.
+* `POST /buckets/1/schedules/3/entries.json` creates a schedule entry in the project with ID `1` and under the schedule with an ID of `3`.
 
 **Required parameters**:
 
@@ -233,7 +233,7 @@ curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/j
 Update a schedule entry
 -----------------------
 
-* `PUT /buckets/1/schedule_entries/2.json` allows changing of the schedule entry with an ID of `2` in the Basecamp with ID `1`.
+* `PUT /buckets/1/schedule_entries/2.json` allows changing of the schedule entry with an ID of `2` in the project with ID `1`.
 
 Clients may change any of the required or optional parameters as listed in the [Create a schedule entry](#create-a-schedule-entry) endpoint.
 

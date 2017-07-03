@@ -12,7 +12,7 @@ Endpoints:
 Get uploads
 -----------
 
-* `GET /buckets/1/vaults/2/uploads.json` will return a [paginated list][pagination] of active uploads in the Basecamp with an ID of `1` and the [vault][vaults] with ID of `2`.
+* `GET /buckets/1/vaults/2/uploads.json` will return a [paginated list][pagination] of active uploads in the project with an ID of `1` and the [vault][vaults] with ID of `2`.
 
 ###### Example JSON Response
 <!-- START GET /buckets/1/vaults/2/uploads.json -->
@@ -80,7 +80,7 @@ curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCO
 Get an upload
 -------------
 
-* `GET /buckets/1/uploads/2.json` will return the upload with an ID of `2` in the Basecamp with an ID of `1`.
+* `GET /buckets/1/uploads/2.json` will return the upload with an ID of `2` in the project with an ID of `1`.
 
 ###### Example JSON Response
 <!-- START GET /buckets/1/uploads/2.json -->
@@ -147,7 +147,7 @@ curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCO
 Create an upload
 ----------------
 
-* `POST /buckets/1/vaults/2/uploads.json` creates an upload in the Basecamp with ID `1` and under the vault with an ID of `2`.
+* `POST /buckets/1/vaults/2/uploads.json` creates an upload in the project with ID `1` and under the vault with an ID of `2`.
 
 **Required parameters**: `attachable_sgid` for an uploaded attachment. See the [Create an attachment][attachments] endpoint for more info on uploading attachments.
 
@@ -178,7 +178,7 @@ curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/j
 Update an upload
 ----------------
 
-* `PUT /buckets/1/uploads/2.json` allows changing the `description` and `base_name` of the upload with an ID of `2` in the Basecamp with ID `1`.
+* `PUT /buckets/1/uploads/2.json` allows changing the `description` and `base_name` of the upload with an ID of `2` in the project with ID `1`.
 
 This endpoint will return `200 OK` with the current JSON representation of the upload if the update was a success. See the [Get an upload](#get-an-upload) endpoint for more info on the payload.
 

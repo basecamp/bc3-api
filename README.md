@@ -18,7 +18,6 @@ If you've used a previous version of the Basecamp API, you need to adapt your in
 - We require OAuth 2.0 for [authentication](#authentication)—no more Basic authentication
 - All requests must end in `.json`
 - [Pagination](#pagination) is performed via the `Link` and `X-Total-Count` headers
-- Projects are called Basecamps
 
 
 Making a request
@@ -133,7 +132,6 @@ API endpoints
 -------------
 <!-- START API ENDPOINTS -->
 - [Attachments](https://github.com/basecamp/bc3-api/blob/master/sections/attachments.md#attachments)
-- [Basecamps](https://github.com/basecamp/bc3-api/blob/master/sections/basecamps.md#basecamps)
 - [Campfires](https://github.com/basecamp/bc3-api/blob/master/sections/campfires.md#campfires)
 - [Chatbots](https://github.com/basecamp/bc3-api/blob/master/sections/chatbots.md#chatbots)
 - [Client approvals](https://github.com/basecamp/bc3-api/blob/master/sections/client_approvals.md#client-approvals)
@@ -148,6 +146,7 @@ API endpoints
 - [Messages](https://github.com/basecamp/bc3-api/blob/master/sections/messages.md#messages)
 - [Message Types](https://github.com/basecamp/bc3-api/blob/master/sections/message_types.md#get-message-types)
 - [People](https://github.com/basecamp/bc3-api/blob/master/sections/people.md#people)
+- [Projects](https://github.com/basecamp/bc3-api/blob/master/sections/projects.md#projects)
 - [Question answers](https://github.com/basecamp/bc3-api/blob/master/sections/question_answers.md#question-answers)
 - [Questionnaires](https://github.com/basecamp/bc3-api/blob/master/sections/questionnaires.md#questionnaires)
 - [Questions](https://github.com/basecamp/bc3-api/blob/master/sections/questions.md#questions)

@@ -17,7 +17,7 @@ Get recordings
 
 _Optional parameters_:
 
-* `bucket` - Single or comma separated list of [Basecamp][2] IDs. Default: All active Basecamps visible to the current user.
+* `bucket` - Single or comma separated list of [project][2] IDs. Default: All active projects visible to the current user.
 * `status` - Options: `active`, `archived`, or `trashed`. Default: `active`
 * `sort` - Options: `created_at` or `updated_at`. Default: `created_at`.
 * `direction` - Options: `desc` or `asc`. Default: `desc`.
@@ -28,7 +28,7 @@ Examples: `/projects/recordings.json?type=Todo`, `/projects/recordings.json?type
 Trash a recording
 -----------------
 
-* `PUT /buckets/1/recordings/2/status/trashed.json` will mark the recording with an ID of `2`in the Basecamp with ID `1` as trashed.
+* `PUT /buckets/1/recordings/2/status/trashed.json` will mark the recording with an ID of `2`in the project with ID `1` as trashed.
 
 No parameters required. Returns `204 No Content` if successful.
 
@@ -40,4 +40,4 @@ curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/j
 ```
 
 [1]: https://github.com/basecamp/bc3-api/blob/master/README.md#pagination
-[2]: https://github.com/basecamp/bc3-api/blob/master/sections/basecamps.md#basecamps
+[2]: https://github.com/basecamp/bc3-api/blob/master/sections/projects.md#projects

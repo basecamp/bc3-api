@@ -9,7 +9,7 @@ Endpoints:
 Get question answers
 --------------------
 
-* `GET /buckets/1/questions/2/answers.json` will return a [paginated list][pagination] of answers in the Basecamp with an ID of `1` and the question with ID of `2`.
+* `GET /buckets/1/questions/2/answers.json` will return a [paginated list][pagination] of answers in the project with an ID of `1` and the question with ID of `2`.
 
 ###### Example JSON Response
 <!-- START GET /buckets/1/questions/2/answers.json -->
@@ -67,7 +67,7 @@ curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCO
 Get a question answer
 ---------------------
 
-* `GET /buckets/1/question_answers/2.json` will return the answer with an ID of `2` in the Basecamp with an ID of `1`.
+* `GET /buckets/1/question_answers/2.json` will return the answer with an ID of `2` in the project with an ID of `1`.
 
 ###### Example JSON Response
 <!-- START GET /buckets/1/question_answers/2.json -->

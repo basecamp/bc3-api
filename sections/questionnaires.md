@@ -1,7 +1,7 @@
 Questionnaires
 ==============
 
-All automatic check-ins questions under a Basecamp are children of a questionnaire resource.
+All automatic check-ins questions under a project are children of a questionnaire resource.
 
 Endpoints:
 
@@ -10,9 +10,9 @@ Endpoints:
 Get questionnaire
 -----------------
 
-* `GET /buckets/1/questionnaires/2.json` will return the questionnaire for the Basecamp with an ID of `1`.
+* `GET /buckets/1/questionnaires/2.json` will return the questionnaire for the project with an ID of `1`.
 
-To get the questionnaire ID for a Basecamp, see the [Get a Basecamp][basecamp] endpoint's `dock` payload. To retrieve its questions, see the [Get questions][questions] endpoint.
+To get the questionnaire ID for a project, see the [Get a Project][project] endpoint's `dock` payload. To retrieve its questions, see the [Get questions][questions] endpoint.
 
 ###### Example JSON Response
 <!-- START GET /buckets/1/questionnaires/2.json -->
@@ -62,5 +62,5 @@ To get the questionnaire ID for a Basecamp, see the [Get a Basecamp][basecamp] e
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/questionnaires/2.json
 ```
 
-[basecamp]: https://github.com/basecamp/bc3-api/blob/master/sections/basecamps.md#get-a-basecamp
+[project]: https://github.com/basecamp/bc3-api/blob/master/sections/projects.md#get-a-project
 [questions]: https://github.com/basecamp/bc3-api/blob/master/sections/questions.md#get-questions

@@ -4,8 +4,8 @@ People
 Endpoints:
 
 - [Get all people](#get-all-people)
-- [Get people on a Basecamp](#get-people-on-a-basecamp)
-- [Update who can access a Basecamp](#update-who-can-access-a-basecamp)
+- [Get people on a project](#get-people-on-a-project)
+- [Update who can access a project](#update-who-can-access-a-project)
 - [Get pingable people](#get-pingable-people)
 - [Get person](#get-person)
 - [Get my personal info](#get-my-personal-info)
@@ -48,10 +48,10 @@ curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCO
 ```
 
 
-Get people on a Basecamp
+Get people on a project
 ------------------------
 
-* `GET /projects/1/people.json` will return all active people on the Basecamp with the given ID.
+* `GET /projects/1/people.json` will return all active people on the project with the given ID.
 
 See the [Get all people](#get-all-people) endpoint for an example of the JSON response.
 
@@ -61,10 +61,10 @@ See the [Get all people](#get-all-people) endpoint for an example of the JSON re
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/projects/1/people.json
 ```
 
-Update who can access a Basecamp
+Update who can access a project
 --------------------------------
 
-* `PUT /projects/1/people/users.json` allows granting new and existing people access to a Basecamp, and revoking access from existing people.
+* `PUT /projects/1/people/users.json` allows granting new and existing people access to a project, and revoking access from existing people.
 
 **Parameters**: Requests should include at least one of the following parameters.
 

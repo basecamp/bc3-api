@@ -15,7 +15,7 @@ Endpoints:
 Get to-dos
 ----------
 
-* `GET /buckets/1/todolists/3/todos.json` will return a [paginated list][2] of active to-dos in the Basecamp with an ID of `1` and the to-do list with ID of `3`.
+* `GET /buckets/1/todolists/3/todos.json` will return a [paginated list][2] of active to-dos in the project with an ID of `1` and the to-do list with ID of `3`.
 
 _Optional query parameters_:
 
@@ -92,7 +92,7 @@ curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCO
 Get a to-do
 -----------
 
-* `GET /buckets/1/todos/2.json` will return the to-do with an ID of `2` in the Basecamp with an ID of `1`.
+* `GET /buckets/1/todos/2.json` will return the to-do with an ID of `2` in the project with an ID of `1`.
 
 ###### Example JSON Response
 <!-- START GET /buckets/1/todos/2.json -->
@@ -194,7 +194,7 @@ curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCO
 Create a to-do
 --------------
 
-* `POST /buckets/1/todolists/3/todos.json` creates a to-do in the Basecamp with ID `1` and under the to-do list with an ID of `3`.
+* `POST /buckets/1/todolists/3/todos.json` creates a to-do in the project with ID `1` and under the to-do list with an ID of `3`.
 
 **Required parameters**: `content` for what the to-do is for.
 
@@ -230,7 +230,7 @@ curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/j
 Update a to-do
 --------------
 
-* `PUT /buckets/1/todos/2.json` allows changing the to-do with an ID of `2` in the Basecamp with ID `1`.
+* `PUT /buckets/1/todos/2.json` allows changing the to-do with an ID of `2` in the project with ID `1`.
 
 This endpoint will return `200 OK` with the current JSON representation of the to-do if the update was a success. See the [Get a to-do](#get-a-to-do) endpoint for more info on the payload.
 
@@ -258,7 +258,7 @@ curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/j
 Complete a to-do
 ----------------
 
-* `POST /buckets/1/todos/2/completion.json` will mark the to-do with an ID of `2` in the Basecamp with ID `1` as completed.
+* `POST /buckets/1/todos/2/completion.json` will mark the to-do with an ID of `2` in the project with ID `1` as completed.
 
 This endpoint will return `204 No Content` if successful. No parameters are required.
 
@@ -273,7 +273,7 @@ curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/j
 Uncomplete a to-do
 ------------------
 
-* `DELETE /buckets/1/todos/2/completion.json` will mark the to-do with an ID of `2` in the Basecamp with ID `1` as uncompleted.
+* `DELETE /buckets/1/todos/2/completion.json` will mark the to-do with an ID of `2` in the project with ID `1` as uncompleted.
 
 This endpoint will return `204 No Content` if successful. No parameters are required.
 
@@ -288,7 +288,7 @@ curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/j
 Reposition a to-do
 ------------------
 
-* `PUT /buckets/1/todos/2/position.json` allows changing the position of the to-do with an ID of `2` in the Basecamp with ID `1`.
+* `PUT /buckets/1/todos/2/position.json` allows changing the position of the to-do with an ID of `2` in the project with ID `1`.
 
 **Required parameters**: `position` greater than or equal to one.
 

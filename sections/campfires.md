@@ -63,7 +63,7 @@ curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCO
 Get a Campfire
 --------------
 
-* `GET /buckets/1/chats/2.json` will return the Campfire with ID `2` in the Basecamp with ID `1`.
+* `GET /buckets/1/chats/2.json` will return the Campfire with ID `2` in the project with ID `1`.
 
 ###### Example JSON Response
 <!-- START GET /buckets/1/chats/2.json -->
@@ -114,7 +114,7 @@ curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCO
 Get Campfire lines
 ------------------
 
-* `GET /buckets/1/chats/2/lines.json` will return a [paginated list][pagination] of Campfire lines of the Campfire with ID `2` in the Basecamp with ID `1`.
+* `GET /buckets/1/chats/2/lines.json` will return a [paginated list][pagination] of Campfire lines of the Campfire with ID `2` in the project with ID `1`.
 
 ###### Example JSON Response
 <!-- START GET /buckets/1/chats/2/lines.json -->
@@ -169,7 +169,7 @@ curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCO
 Get a Campfire line
 -------------------
 
-* `GET /buckets/1/chats/2/lines/3.json` will return the Campfire line with ID `3` in the Campfire with ID `2` in the Basecamp with ID `1`.
+* `GET /buckets/1/chats/2/lines/3.json` will return the Campfire line with ID `3` in the Campfire with ID `2` in the project with ID `1`.
 
 ###### Example JSON Response
 <!-- START GET /buckets/1/chats/2/lines/3.json -->
@@ -226,7 +226,7 @@ curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCO
 Create a Campfire line
 ----------------------
 
-* `POST /buckets/1/chats/2/lines.json` creates a line in the Campfire with ID `2` in the Basecamp with ID `1`.
+* `POST /buckets/1/chats/2/lines.json` creates a line in the Campfire with ID `2` in the project with ID `1`.
 
 **Required parameters**: `content` as the plain text body for the Campfire line.
 

@@ -9,7 +9,7 @@ Endpoints:
 Get client approvals
 --------------------
 
-* `GET /buckets/1/client/approvals.json` will return a [paginated list][pagination] of client approvals in the Basecamp with an ID of `1`.
+* `GET /buckets/1/client/approvals.json` will return a [paginated list][pagination] of client approvals in the project with an ID of `1`.
 
 ###### Example JSON Response
 <!-- START GET /buckets/1/client/approvals.json -->
@@ -92,7 +92,7 @@ curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCO
 Get a client approval
 ---------------------
 
-* `GET /buckets/1/client/approvals/2.json` will return the client approval with an ID of `2` in the Basecamp with an ID of `1`.
+* `GET /buckets/1/client/approvals/2.json` will return the client approval with an ID of `2` in the project with an ID of `1`.
 
 ###### Example JSON Response
 <!-- START GET /buckets/1/client/approvals/2.json -->

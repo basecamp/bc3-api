@@ -12,7 +12,7 @@ Endpoints:
 Get documents
 -------------
 
-* `GET /buckets/1/vaults/2/documents.json` will return a [paginated list][pagination] of active documents in the Basecamp with an ID of `1` and the [vault][vaults] with ID of `2`.
+* `GET /buckets/1/vaults/2/documents.json` will return a [paginated list][pagination] of active documents in the project with an ID of `1` and the [vault][vaults] with ID of `2`.
 
 ###### Example JSON Response
 <!-- START GET /buckets/1/vaults/2/documents.json -->
@@ -74,7 +74,7 @@ curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCO
 Get a document
 --------------
 
-* `GET /buckets/1/documents/2.json` will return the document with an ID of `2` in the Basecamp with an ID of `1`.
+* `GET /buckets/1/documents/2.json` will return the document with an ID of `2` in the project with an ID of `1`.
 
 ###### Example JSON Response
 <!-- START GET /buckets/1/documents/2.json -->
@@ -124,7 +124,7 @@ curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCO
 Create a document
 -----------------
 
-* `POST /buckets/1/vaults/2/documents.json` publishes a document in the Basecamp with ID `1` and under the vault with an ID of `2`.
+* `POST /buckets/1/vaults/2/documents.json` publishes a document in the project with ID `1` and under the vault with an ID of `2`.
 
 **Required parameters**: `title` as the title of the document, and `content` as the body of the document. See our [Rich text guide][rich] for what HTML tags are allowed.
 
@@ -153,7 +153,7 @@ curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/j
 Update a document
 -----------------
 
-* `PUT /buckets/1/documents/2.json` allows changing the title and content of the document with an ID of `2` in the Basecamp with ID `1`.
+* `PUT /buckets/1/documents/2.json` allows changing the title and content of the document with an ID of `2` in the project with ID `1`.
 
 This endpoint will return `200 OK` with the current JSON representation of the document if the update was a success. See the [Get a document](#get-a-document) endpoint for more info on the payload.
 

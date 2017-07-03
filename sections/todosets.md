@@ -1,7 +1,7 @@
 To-do sets
 ==========
 
-All to-do lists under a Basecamp are children of a to-do set resource.
+All to-do lists under a project are children of a to-do set resource.
 
 Endpoints:
 
@@ -11,9 +11,9 @@ Endpoints:
 Get to-do set
 -------------
 
-* `GET /buckets/1/todosets/2.json` will return the to-do set for the Basecamp with an ID of `1`.
+* `GET /buckets/1/todosets/2.json` will return the to-do set for the project with an ID of `1`.
 
-To get the to-do set ID for a Basecamp, see the [Get a Basecamp][1] endpoint's `dock` payload. To retrieve its to-do lists, see the [Get to-do lists][2] endpoint.
+To get the to-do set ID for a project, see the [Get a project][1] endpoint's `dock` payload. To retrieve its to-do lists, see the [Get to-do lists][2] endpoint.
 
 ###### Example JSON Response
 <!-- START GET /buckets/1/todosets/2.json -->
@@ -66,6 +66,6 @@ curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCO
 ```
 
 
-[1]: https://github.com/basecamp/bc3-api/blob/master/sections/basecamps.md#get-a-basecamp
+[1]: https://github.com/basecamp/bc3-api/blob/master/sections/projects.md#get-a-project
 [2]: https://github.com/basecamp/bc3-api/blob/master/sections/todolists.md#get-to-do-lists
 [3]: https://github.com/basecamp/bc3-api/blob/master/sections/recordings.md#trash-a-recording

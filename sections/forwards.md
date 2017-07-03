@@ -11,9 +11,9 @@ Endpoints:
 Get forwards
 ------------
 
-* `GET /buckets/1/inboxes/3/forwards.json` will return a [paginated list][2] of active forwards in the Basecamp with an ID of `1` and the inbox with an ID of `3`.
+* `GET /buckets/1/inboxes/3/forwards.json` will return a [paginated list][2] of active forwards in the project with an ID of `1` and the inbox with an ID of `3`.
 
-To get the inbox ID for a Basecamp, see the [Get inbox][3] endpoint.
+To get the inbox ID for a project, see the [Get inbox][3] endpoint.
 
 ###### Example JSON Response
 <!-- START GET /buckets/1/inboxes/3/forwards.json -->
@@ -80,7 +80,7 @@ curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCO
 Get a forward
 -------------
 
-* `GET /buckets/1/inbox_forwards/2.json` will return the forward with an ID of `2` in the Basecamp with an ID of `1`.
+* `GET /buckets/1/inbox_forwards/2.json` will return the forward with an ID of `2` in the project with an ID of `1`.
 
 ###### Example JSON Response
 <!-- START GET /buckets/1/inbox_forwards/2.json -->

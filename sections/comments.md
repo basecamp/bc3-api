@@ -14,7 +14,7 @@ Endpoints:
 Get comments
 ------------
 
-* `GET /buckets/1/recordings/3/comments.json` will return a [paginated list][pagination] of active comments in the Basecamp with an ID of `1` and the recording with ID of `3`.
+* `GET /buckets/1/recordings/3/comments.json` will return a [paginated list][pagination] of active comments in the project with an ID of `1` and the recording with ID of `3`.
 
 ###### Example JSON Response
 <!-- START GET /buckets/1/recordings/3/comments.json -->
@@ -70,7 +70,7 @@ curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCO
 Get a comment
 -------------
 
-* `GET /buckets/1/comments/2.json` will return the comment with an ID of `2` in the Basecamp with an ID of `1`.
+* `GET /buckets/1/comments/2.json` will return the comment with an ID of `2` in the project with an ID of `1`.
 
 ###### Example JSON Response
 <!-- START GET /buckets/1/comments/2.json -->
@@ -128,7 +128,7 @@ curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCO
 Create a comment
 ----------------
 
-* `POST /buckets/1/recordings/3/comments.json` publishes a comment in the Basecamp with ID `1` and under the recording with an ID of `3`.
+* `POST /buckets/1/recordings/3/comments.json` publishes a comment in the project with ID `1` and under the recording with an ID of `3`.
 
 **Required parameters**: `content` as the body of the message. See our [Rich text guide][rich] for what HTML tags are allowed.
 
@@ -156,7 +156,7 @@ curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/j
 Update a comment
 ----------------
 
-* `PUT /buckets/1/comments/2.json` allows changing content of the message with an ID of `2` in the Basecamp with ID `1`.
+* `PUT /buckets/1/comments/2.json` allows changing content of the message with an ID of `2` in the project with ID `1`.
 
 This endpoint will return `200 OK` with the current JSON representation of the message if the update was a success. See the [Get a comment](#get-a-comment) endpoint for more info on the payload. The `Location` header will contain a URL to the HTML version of the updated comment.
 

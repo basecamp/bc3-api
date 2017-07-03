@@ -9,7 +9,7 @@ Endpoints:
 Get client correspondences
 --------------------------
 
-* `GET /buckets/1/client/correspondences.json` will return a [paginated list][pagination] of client correspondences in the Basecamp with an ID of `1`.
+* `GET /buckets/1/client/correspondences.json` will return a [paginated list][pagination] of client correspondences in the project with an ID of `1`.
 
 ###### Example JSON Response
 <!-- START GET /buckets/1/client/correspondences.json -->
@@ -71,7 +71,7 @@ curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCO
 Get a client correspondence
 ---------------------------
 
-* `GET /buckets/1/client/correspondences/2.json` will return the client correspondence with an ID of `2` in the Basecamp with an ID of `1`.
+* `GET /buckets/1/client/correspondences/2.json` will return the client correspondence with an ID of `2` in the project with an ID of `1`.
 
 ###### Example JSON Response
 <!-- START GET /buckets/1/client/correspondences/2.json -->

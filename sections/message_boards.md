@@ -1,7 +1,7 @@
 Message Boards
 ==============
 
-All messages under a Basecamp are children of a Message Board resource.
+All messages under a project are children of a Message Board resource.
 
 Endpoints:
 
@@ -11,9 +11,9 @@ Endpoints:
 Get message board
 -----------------
 
-* `GET /buckets/1/message_boards/2.json` will return the message board for the Basecamp with an ID of `1`.
+* `GET /buckets/1/message_boards/2.json` will return the message board for the project with an ID of `1`.
 
-To get the message board ID for a Basecamp, see the [Get a Basecamp][1] endpoint's `dock` payload. To retrieve its messages, see the [Get messages][2] endpoint.
+To get the message board ID for a project, see the [Get a project][1] endpoint's `dock` payload. To retrieve its messages, see the [Get messages][2] endpoint.
 
 ###### Example JSON Response
 <!-- START GET /buckets/1/message_boards/2.json -->
@@ -64,6 +64,6 @@ curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCO
 ```
 
 
-[1]: https://github.com/basecamp/bc3-api/blob/master/sections/basecamps.md#get-a-basecamp
+[1]: https://github.com/basecamp/bc3-api/blob/master/sections/projects.md#get-a-project
 [2]: https://github.com/basecamp/bc3-api/blob/master/sections/messages.md#get-messages
 [3]: https://github.com/basecamp/bc3-api/blob/master/sections/recordings.md#trash-a-recording

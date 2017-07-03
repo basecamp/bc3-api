@@ -11,7 +11,7 @@ Endpoints:
 Get client replies
 ------------------
 
-* `GET /buckets/1/client/recordings/2/replies.json` will return a [paginated list][pagination] of client replies in the Basecamp with an ID of `1` and the recording with ID of `2`.
+* `GET /buckets/1/client/recordings/2/replies.json` will return a [paginated list][pagination] of client replies in the project with an ID of `1` and the recording with ID of `2`.
 
 ###### Example JSON Response
 <!-- START GET /buckets/1/client/recordings/2/replies.json -->
@@ -70,7 +70,7 @@ curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCO
 Get a client reply
 ------------------
 
-* `GET /buckets/1/client/recordings/2/replies/3.json` will return the client reply with an ID of `3` for the recording with an ID of `2` in the Basecamp with an ID of `1`.
+* `GET /buckets/1/client/recordings/2/replies/3.json` will return the client reply with an ID of `3` for the recording with an ID of `2` in the project with an ID of `1`.
 
 ###### Example JSON Response
 <!-- START GET /buckets/1/client/recordings/2/replies/3.json -->

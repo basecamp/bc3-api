@@ -1,7 +1,7 @@
 Inboxes
 =======
 
-All forwards in a Basecamp are children of an Inbox resource.
+All forwards in a project are children of an Inbox resource.
 
 Endpoints:
 
@@ -11,9 +11,9 @@ Endpoints:
 Get inbox
 ---------
 
-* `GET /buckets/1/inboxes/2.json` will return the inbox with an ID of `2` for the Basecamp with an ID of `1`.
+* `GET /buckets/1/inboxes/2.json` will return the inbox with an ID of `2` for the project with an ID of `1`.
 
-To get the inbox ID for a Basecamp, see the [Get a Basecamp][1] endpoint's `dock` payload. To retrieve its forwards, see the [Get forwards][2] endpoint.
+To get the inbox ID for a project, see the [Get a project][1] endpoint's `dock` payload. To retrieve its forwards, see the [Get forwards][2] endpoint.
 
 ###### Example JSON Response
 <!-- START GET /buckets/1/inboxes/2.json -->
@@ -64,5 +64,5 @@ curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCO
 ```
 
 
-[1]: https://github.com/basecamp/bc3-api/blob/master/sections/basecamps.md#get-a-basecamp
+[1]: https://github.com/basecamp/bc3-api/blob/master/sections/projects.md#get-a-project
 [2]: https://github.com/basecamp/bc3-api/blob/master/sections/forwards.md#get-forwards

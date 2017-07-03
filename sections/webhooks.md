@@ -173,7 +173,7 @@ curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCO
 Get a webhook
 -------------
 
-* `GET /buckets/1/webhooks/3.json` will return the webhook with an ID of `3` in the Basecamp with ID `1`.
+* `GET /buckets/1/webhooks/3.json` will return the webhook with an ID of `3` in the project with ID `1`.
 
 The recent deliveries array will contain the 25 most recent delivery exchanges, sorted with the most recent first.
 
@@ -250,7 +250,7 @@ curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCO
 Create a webhook
 ----------------
 
-* `POST /buckets/1/webhooks.json` creates a webhook in the Basecamp with ID `1`.
+* `POST /buckets/1/webhooks.json` creates a webhook in the project with ID `1`.
 
 **Required parameters**: `payload_url` for the HTTPS url that Basecamp should call.
 _Optional parameters_: `types` as an array of types, options given in the introduction.
@@ -277,7 +277,7 @@ curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/j
 Update a webhook
 ----------------
 
-* `PUT /buckets/1/webhooks/3.json` allows changing the payload url and types of the webhook with an ID of `3` in the Basecamp with ID `1`.
+* `PUT /buckets/1/webhooks/3.json` allows changing the payload url and types of the webhook with an ID of `3` in the project with ID `1`.
 
 **Required parameters**: `payload_url` for the HTTPS url that Basecamp will call.
 _Optional parameters_: `types` as an array of types, options given in the introduction. `active` as a boolean whether this webhook should be matching.
@@ -305,7 +305,7 @@ curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/j
 Destroy a webhook
 -----------------
 
-* `DELETE /buckets/1/webhooks/3.json` will delete the webhook with an ID of `3` in the Basecamp with ID `1`.
+* `DELETE /buckets/1/webhooks/3.json` will delete the webhook with an ID of `3` in the project with ID `1`.
 
 This endpoint will return `204 No Content` if the destroy was a success.
 

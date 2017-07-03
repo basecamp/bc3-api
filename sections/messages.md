@@ -12,9 +12,9 @@ Endpoints:
 Get messages
 ------------
 
-* `GET /buckets/1/message_boards/3/messages.json` will return a [paginated list][2] of active messages in the Basecamp with an ID of `1` and the message board with ID of `3`.
+* `GET /buckets/1/message_boards/3/messages.json` will return a [paginated list][2] of active messages in the project with an ID of `1` and the message board with ID of `3`.
 
-To get the message board ID for a Basecamp, see the [Get message board][3] endpoint.
+To get the message board ID for a project, see the [Get message board][3] endpoint.
 
 ###### Example JSON Response
 <!-- START GET /buckets/1/message_boards/3/messages.json -->
@@ -73,7 +73,7 @@ curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCO
 Get a message
 -------------
 
-* `GET /buckets/1/messages/2.json` will return the message with an ID of `2` in the Basecamp with an ID of `1`.
+* `GET /buckets/1/messages/2.json` will return the message with an ID of `2` in the project with an ID of `1`.
 
 ###### Example JSON Response
 <!-- START GET /buckets/1/messages/2.json -->
@@ -142,16 +142,16 @@ curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCO
 Create a message
 ----------------
 
-* `POST /buckets/1/message_boards/3/messages.json` publishes a message in the Basecamp with ID `1` and under the message board with an ID of `3`.
+* `POST /buckets/1/message_boards/3/messages.json` publishes a message in the project with ID `1` and under the message board with an ID of `3`.
 
 **Required parameters**: `subject` as the title of the message, and `status`, set to `active` to publish immediately.
 
 _Optional parameters_: 
 
 * `content` as the body of the message. See our [Rich text guide][4] for what HTML tags are allowed.
-* `category_id` to set a type for the message. To get a list of all the message types for a Basecamp, see the [Get message types][5] endpoint. 
+* `category_id` to set a type for the message. To get a list of all the message types for a project, see the [Get message types][5] endpoint. 
 
-Note: All people on a Basecamp are notified of the new message when it's posted.
+Note: All people on a project are notified of the new message when it's posted.
 
 This endpoint will return `201 Created` with the current JSON representation of the message if the creation was a success. See the [Get a message](#get-a-message) endpoint for more info on the payload.
 
@@ -177,7 +177,7 @@ curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/j
 Update a message
 ----------------
 
-* `PUT /buckets/1/messages/2.json` allows changing the `subject`, `content` and `category_id` of the message with an ID of `2` in the Basecamp with ID `1`.
+* `PUT /buckets/1/messages/2.json` allows changing the `subject`, `content` and `category_id` of the message with an ID of `2` in the project with ID `1`.
 
 This endpoint will return `200 OK` with the current JSON representation of the message if the update was a success. See the [Get a message](#get-a-message) endpoint for more info on the payload.
 

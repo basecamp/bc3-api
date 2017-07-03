@@ -160,7 +160,7 @@ curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCO
 Get a chatbot
 -------------
 
-* `GET /buckets/1/chats/1/integrations/3.json` will return the chatbot with an ID of `3` with the line URL from the Basecamp with ID `1`.
+* `GET /buckets/1/chats/1/integrations/3.json` will return the chatbot with an ID of `3` with the line URL from the project with ID `1`.
 
 ###### Example JSON Response
 <!-- START GET /buckets/1/chats/1/integrations/3.json -->
@@ -188,7 +188,7 @@ curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCO
 Create a chatbot
 ----------------
 
-* `POST /buckets/1/chats/1/integrations.json` creates a chatbot on the account and returns the new chatbot with the lines URL from the Basecamp with ID `1`.
+* `POST /buckets/1/chats/1/integrations.json` creates a chatbot on the account and returns the new chatbot with the lines URL from the project with ID `1`.
 
 **Required parameters**: `service_name` for the chatbot name, which will be used to invoke queries and commands on interactive bots. 
 No spaces, emoji or non-word characters are allowed, as you need to be able to call it like `!tally myCommand`
@@ -216,7 +216,7 @@ curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/j
 Update a chatbot
 ----------------
 
-* `PUT /buckets/1/chats/1/integrations/3.json` allows changing the service name and commandURL of the chatbot with an ID of `3` in the Basecamp with ID `1`.
+* `PUT /buckets/1/chats/1/integrations/3.json` allows changing the service name and commandURL of the chatbot with an ID of `3` in the project with ID `1`.
 
 **Required parameters**: `service_name` for the chatbot name, which will be used to invoke queries and commands on interactive bots. 
 No spaces, emoji or non-word characters are allowed, as you need to be able to call it like `!tally myCommand`
@@ -258,7 +258,7 @@ curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -X DELETE \
 Create a line
 -------------
 
-* `POST /integrations/$CHATBOT_KEY/buckets/1/chats/2/lines.json` creates a line in the Campfire with ID `2` in the Basecamp with ID `1`.
+* `POST /integrations/$CHATBOT_KEY/buckets/1/chats/2/lines.json` creates a line in the Campfire with ID `2` in the project with ID `1`.
 
 **Required parameters**: `content` as the plain text body for the Campfire line.
 

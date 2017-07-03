@@ -10,7 +10,7 @@ Endpoints:
 Get events
 ----------
 
-* `GET /buckets/1/recordings/2/events.json` will return a [paginated list][pagination] of events for the recording with an ID of `2` in the Basecamp with an ID of `1`.
+* `GET /buckets/1/recordings/2/events.json` will return a [paginated list][pagination] of events for the recording with an ID of `2` in the project with an ID of `1`.
 
 ###### Example JSON Response
 <!-- START GET /buckets/1/recordings/2/events.json -->

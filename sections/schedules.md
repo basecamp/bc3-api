@@ -1,7 +1,7 @@
 Schedules
 =========
 
-All schedule entries under a Basecamp are children of a schedule resource.
+All schedule entries under a project are children of a schedule resource.
 
 Endpoints:
 
@@ -11,9 +11,9 @@ Endpoints:
 Get schedule
 ------------
 
-* `GET /buckets/1/schedules/2.json` will return the schedule for the Basecamp with an ID of `1`.
+* `GET /buckets/1/schedules/2.json` will return the schedule for the project with an ID of `1`.
 
-To get the schedule ID for a Basecamp, see the [Get a Basecamp][1] endpoint's `dock` payload. To retrieve its schedule entries lists, see the [Get schedule entries][2] endpoint.
+To get the schedule ID for a project, see the [Get a project][1] endpoint's `dock` payload. To retrieve its schedule entries lists, see the [Get schedule entries][2] endpoint.
 
 ###### Example JSON Response
 <!-- START GET /buckets/1/schedules/2.json -->
@@ -63,6 +63,6 @@ curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCO
 ```
 
 
-[1]: https://github.com/basecamp/bc3-api/blob/master/sections/basecamps.md#get-a-basecamp
+[1]: https://github.com/basecamp/bc3-api/blob/master/sections/projects.md#get-a-project
 [2]: https://github.com/basecamp/bc3-api/blob/master/sections/schedule_entries.md#get-schedule-entries
 [3]: https://github.com/basecamp/bc3-api/blob/master/sections/recordings.md#trash-a-recording

@@ -12,7 +12,7 @@ Endpoints:
 Get message types
 -----------------
 
-* `GET /buckets/1/categories.json` will return a list of all the message types in the Basecamp with an ID of `1`.
+* `GET /buckets/1/categories.json` will return a list of all the message types in the project with an ID of `1`.
 
 ###### Example JSON Response
 <!-- START GET /buckets/1/categories.json -->
@@ -45,7 +45,7 @@ curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCO
 Get a message type
 ------------------
 
-* `GET /buckets/1/categories/2.json` will return the message type with ID `2` in the Basecamp with ID `1`.
+* `GET /buckets/1/categories/2.json` will return the message type with ID `2` in the project with ID `1`.
 
 ###### Example JSON Response
 <!-- START GET /buckets/1/categories/2.json -->
@@ -69,7 +69,7 @@ curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCO
 Create a message type
 ---------------------
 
-* `POST /buckets/1/categories.json` creates a new message type in the Basecamp with ID `1`.
+* `POST /buckets/1/categories.json` creates a new message type in the project with ID `1`.
 
 **Required parameters**: `name` and `icon` for the new message type.
 
@@ -95,7 +95,7 @@ curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/j
 Update a message type
 ---------------------
 
-* `PUT /buckets/1/categories/2.json` allows changing the message type with an ID of `2` in the Basecamp with ID `1`.
+* `PUT /buckets/1/categories/2.json` allows changing the message type with an ID of `2` in the project with ID `1`.
 
 This endpoint will return `200 OK` with the current JSON representation of the message type if the update was a success. See the [Get a message type](#get-a-message-type) endpoint for more info on the payload.
 
@@ -119,7 +119,7 @@ curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/j
 Destroy a message type
 ----------------------
 
-* `DELETE /buckets/1/categories/2.json` will delete the message type with an ID of `2`in the Basecamp with ID `1`.
+* `DELETE /buckets/1/categories/2.json` will delete the message type with an ID of `2`in the project with ID `1`.
 
 No parameters required. Returns `204 No Content` if successful.
 

@@ -12,9 +12,9 @@ Endpoints:
 Get to-do lists
 ---------------
 
-* `GET /buckets/1/todosets/3/todolists.json` will return a [paginated list][pagination] of active to-do lists in the Basecamp with an ID of `1` and the to-do set with ID of `3`.
+* `GET /buckets/1/todosets/3/todolists.json` will return a [paginated list][pagination] of active to-do lists in the project with an ID of `1` and the to-do set with ID of `3`.
 
-To get the to-do set ID for a Basecamp, see the [Get to-do set][todoset] endpoint.
+To get the to-do set ID for a project, see the [Get to-do set][todoset] endpoint.
 
 _Optional query parameters_:
 
@@ -87,7 +87,7 @@ curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCO
 Get a to-do list
 ----------------
 
-* `GET /buckets/1/todolists/2.json` will return the to-do list with an ID of `2` in the Basecamp with an ID of `1`.
+* `GET /buckets/1/todolists/2.json` will return the to-do list with an ID of `2` in the project with an ID of `1`.
 
 ###### Example JSON Response
 <!-- START GET /buckets/1/todolists/2.json -->
@@ -150,7 +150,7 @@ curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCO
 Create a to-do list
 -------------------
 
-* `POST /buckets/1/todosets/3/todolists.json` creates a to-do list in the Basecamp with ID `1` and under the to-do set with an ID of `3`.
+* `POST /buckets/1/todosets/3/todolists.json` creates a to-do list in the project with ID `1` and under the to-do set with an ID of `3`.
 
 **Required parameters**: `name` of the to-do list.
 
@@ -179,7 +179,7 @@ curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/j
 Update a to-do list
 -------------------
 
-* `PUT /buckets/1/todolists/2.json` allows changing the name and description of the to-do list with an ID of `2` in the Basecamp with ID `1`.
+* `PUT /buckets/1/todolists/2.json` allows changing the name and description of the to-do list with an ID of `2` in the project with ID `1`.
 
 This endpoint will return `200 OK` with the current JSON representation of the to-do list if the update was a success. See the [Get a to-do list](#get-a-to-do-list) endpoint for more info on the payload.
 
