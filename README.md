@@ -16,7 +16,7 @@ What's different?
 If you've used a previous version of the Basecamp API, you need to adapt your integration code. Here are some notable changes for the Basecamp 3 API:
 
 - We require OAuth 2.0 for [authentication](#authentication)—no more Basic authentication
-- All requests must end in `.json`
+- All requests must end in `.json` (That is, the `Accept` header is entirely ignored-- only the JSON format is returned.)
 - [Pagination](#pagination) is performed via the `Link` and `X-Total-Count` headers
 
 
@@ -40,6 +40,8 @@ curl -H "Authorization: Bearer $ACCESS_TOKEN" \
   -d '{ "name": "My new project!" }' \
   https://3.basecampapi.com/999999999/projects.json
 ```
+
+The `Content-Type` is required for the payload to be parsed as JSON.
 
 Throughout the Basecamp 3 API docs, we include "Copy as cURL" examples. To try the examples in your shell, copy your OAuth 2.0 access token into your clipboard and run:
 
