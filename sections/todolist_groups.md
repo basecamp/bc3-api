@@ -234,3 +234,5 @@ curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/j
   -d '{"position":3}' -X PUT \
   https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/todolists/groups/3/position.json
 ```
+
+[pagination]: https://github.com/basecamp/bc3-api/blob/master/README.md#pagination
