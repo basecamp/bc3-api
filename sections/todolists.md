@@ -7,7 +7,6 @@ Endpoints:
 - [Get a to-do list](#get-a-to-do-list)
 - [Create a to-do list](#create-a-to-do-list)
 - [Update a to-do list](#update-a-to-do-list)
-- [Trash a to-do list][trash]
 
 Get to-do lists
 ---------------
