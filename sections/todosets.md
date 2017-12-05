@@ -11,7 +11,7 @@ Endpoints:
 Get to-do set
 -------------
 
-* `GET /buckets/1/todosets/2.json` will return the to-do set for the project with an ID of `1`.
+* `GET /buckets/1/todosets/2.json` will return the to-do set for the project with an ID of `1` and a to-do set ID of `2`.
 
 To get the to-do set ID for a project, see the [Get a project][1] endpoint's `dock` payload. To retrieve its to-do lists, see the [Get to-do lists][2] endpoint.
 
