@@ -27,49 +27,49 @@ _Optional query parameters_:
 ```json
 [
   {
-    "id": 9007199254741624,
+    "id": 1064091228,
     "status": "active",
-    "created_at": "2016-10-08T13:39:23.324Z",
-    "updated_at": "2016-10-08T13:39:23.324Z",
+    "created_at": "2018-03-30T17:49:44.384Z",
+    "updated_at": "2018-03-30T17:49:44.384Z",
     "type": "Todo",
-    "url": "https://3.basecampapi.com/195539477/buckets/2085958498/todos/9007199254741624.json",
-    "app_url": "https://3.basecamp.com/195539477/buckets/2085958498/todos/9007199254741624",
+    "url": "https://3.basecampapi.com/195539477/buckets/2085958499/todos/1064091228.json",
+    "app_url": "https://3.basecamp.com/195539477/buckets/2085958499/todos/1064091228",
     "comments_count": 0,
-    "comments_url": "https://3.basecampapi.com/195539477/buckets/2085958498/recordings/9007199254741624/comments.json",
+    "comments_url": "https://3.basecampapi.com/195539477/buckets/2085958499/recordings/1064091228/comments.json",
     "parent": {
-      "id": 9007199254741623,
+      "id": 1064091227,
       "title": "Strategy ideas",
       "type": "Todolist",
-      "url": "https://3.basecampapi.com/195539477/buckets/2085958498/todolists/9007199254741623.json",
-      "app_url": "https://3.basecamp.com/195539477/buckets/2085958498/todolists/9007199254741623"
+      "url": "https://3.basecampapi.com/195539477/buckets/2085958499/todolists/1064091227.json",
+      "app_url": "https://3.basecamp.com/195539477/buckets/2085958499/todolists/1064091227"
     },
     "bucket": {
-      "id": 2085958498,
+      "id": 2085958499,
       "name": "The Leto Laptop",
       "type": "Project"
     },
     "creator": {
-      "id": 1007299144,
-      "attachable_sgid": "BAh7CEkiCGdpZAY6BkVUSSIrZ2lkOi8vYmMzL1BlcnNvbi8xMDA3Mjk5MTQ0P2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg9hdHRhY2hhYmxlBjsAVEkiD2V4cGlyZXNfYXQGOwBUMA==--2e34d7611a9fcaeb82342d015a671cf5e998c036",
+      "id": 1049715915,
+      "attachable_sgid": "BAh7CEkiCGdpZAY6BkVUSSIrZ2lkOi8vYmMzL1BlcnNvbi8xMDQ5NzE1OTE1P2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg9hdHRhY2hhYmxlBjsAVEkiD2V4cGlyZXNfYXQGOwBUMA==--5f103c46d4f123f0068fcd0192a0f7fea7f26193",
       "name": "Annie Bryan",
       "email_address": "annie@honchodesign.com",
       "personable_type": "User",
       "title": "Central Markets Manager",
       "bio": "To open a store is easy, to keep it open is an art",
-      "created_at": "2016-09-19T11:56:18.693Z",
-      "updated_at": "2016-09-19T11:56:18.693Z",
+      "created_at": "2018-02-14T17:02:25.043Z",
+      "updated_at": "2018-02-14T17:02:25.043Z",
       "admin": false,
       "owner": false,
       "time_zone": "America/Chicago",
-      "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBEgqCjw=--8266bb0507508f3d46050d57b65924d5e2a005f3/avatar-64-x4",
+      "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBMtkkT4=--e609ef146e39f9ca5e4bb7242fdfd50aec4c3b3f/avatar-64-x4",
       "company": {
         "id": 1033447817,
         "name": "Honcho Design"
       }
     },
     "description": "",
-    "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7CEkiCGdpZAY6BkVUSSI0Z2lkOi8vYmMzL1JlY29yZGluZy85MDA3MTk5MjU0NzQxNjI0P2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg1yZWFkYWJsZQY7AFRJIg9leHBpcmVzX2F0BjsAVDA=--66ea2416ea320f857e5a3b5eec1a25b9802dd9ab.json",
-    "subscription_url": "https://3.basecampapi.com/195539477/buckets/2085958498/recordings/9007199254741624/subscription.json",
+    "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7CEkiCGdpZAY6BkVUSSIuZ2lkOi8vYmMzL1JlY29yZGluZy8xMDY0MDkxMjI4P2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg1yZWFkYWJsZQY7AFRJIg9leHBpcmVzX2F0BjsAVDA=--abda14ea7de0795ff95c916d92fc5348d6e8e268.json",
+    "subscription_url": "https://3.basecampapi.com/195539477/buckets/2085958499/recordings/1064091228/subscription.json",
     "completed": false,
     "content": "Go cutting edge: iOS8 and Android 4.5 only",
     "starts_on": null,
@@ -77,7 +77,10 @@ _Optional query parameters_:
     "assignees": [
 
     ],
-    "completion_url": "https://3.basecampapi.com/195539477/buckets/2085958498/todos/9007199254741624/completion.json"
+    "completion_subscribers": [
+
+    ],
+    "completion_url": "https://3.basecampapi.com/195539477/buckets/2085958499/todos/1064091228/completion.json"
   }
 ]
 ```
@@ -98,66 +101,66 @@ Get a to-do
 <!-- START GET /buckets/1/todos/2.json -->
 ```json
 {
-  "id": 9007199254741626,
+  "id": 1064091230,
   "status": "active",
-  "created_at": "2016-10-08T14:29:23.324Z",
-  "updated_at": "2016-09-20T14:15:08.368Z",
+  "created_at": "2018-03-30T16:52:44.384Z",
+  "updated_at": "2018-02-14T17:17:00.414Z",
   "type": "Todo",
-  "url": "https://3.basecampapi.com/195539477/buckets/2085958498/todos/9007199254741626.json",
-  "app_url": "https://3.basecamp.com/195539477/buckets/2085958498/todos/9007199254741626",
+  "url": "https://3.basecampapi.com/195539477/buckets/2085958499/todos/1064091230.json",
+  "app_url": "https://3.basecamp.com/195539477/buckets/2085958499/todos/1064091230",
   "comments_count": 0,
-  "comments_url": "https://3.basecampapi.com/195539477/buckets/2085958498/recordings/9007199254741626/comments.json",
+  "comments_url": "https://3.basecampapi.com/195539477/buckets/2085958499/recordings/1064091230/comments.json",
   "parent": {
-    "id": 9007199254741623,
+    "id": 1064091227,
     "title": "Strategy ideas",
     "type": "Todolist",
-    "url": "https://3.basecampapi.com/195539477/buckets/2085958498/todolists/9007199254741623.json",
-    "app_url": "https://3.basecamp.com/195539477/buckets/2085958498/todolists/9007199254741623"
+    "url": "https://3.basecampapi.com/195539477/buckets/2085958499/todolists/1064091227.json",
+    "app_url": "https://3.basecamp.com/195539477/buckets/2085958499/todolists/1064091227"
   },
   "bucket": {
-    "id": 2085958498,
+    "id": 2085958499,
     "name": "The Leto Laptop",
     "type": "Project"
   },
   "creator": {
-    "id": 1007299144,
-    "attachable_sgid": "BAh7CEkiCGdpZAY6BkVUSSIrZ2lkOi8vYmMzL1BlcnNvbi8xMDA3Mjk5MTQ0P2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg9hdHRhY2hhYmxlBjsAVEkiD2V4cGlyZXNfYXQGOwBUMA==--2e34d7611a9fcaeb82342d015a671cf5e998c036",
+    "id": 1049715915,
+    "attachable_sgid": "BAh7CEkiCGdpZAY6BkVUSSIrZ2lkOi8vYmMzL1BlcnNvbi8xMDQ5NzE1OTE1P2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg9hdHRhY2hhYmxlBjsAVEkiD2V4cGlyZXNfYXQGOwBUMA==--5f103c46d4f123f0068fcd0192a0f7fea7f26193",
     "name": "Annie Bryan",
     "email_address": "annie@honchodesign.com",
     "personable_type": "User",
     "title": "Central Markets Manager",
     "bio": "To open a store is easy, to keep it open is an art",
-    "created_at": "2016-09-19T11:56:18.693Z",
-    "updated_at": "2016-09-19T11:56:18.693Z",
+    "created_at": "2018-02-14T17:02:25.043Z",
+    "updated_at": "2018-02-14T17:02:25.043Z",
     "admin": false,
     "owner": false,
     "time_zone": "America/Chicago",
-    "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBEgqCjw=--8266bb0507508f3d46050d57b65924d5e2a005f3/avatar-64-x4",
+    "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBMtkkT4=--e609ef146e39f9ca5e4bb7242fdfd50aec4c3b3f/avatar-64-x4",
     "company": {
       "id": 1033447817,
       "name": "Honcho Design"
     }
   },
   "description": "",
-  "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7CEkiCGdpZAY6BkVUSSI0Z2lkOi8vYmMzL1JlY29yZGluZy85MDA3MTk5MjU0NzQxNjI2P2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg1yZWFkYWJsZQY7AFRJIg9leHBpcmVzX2F0BjsAVDA=--78b06851eb16ff93c7f7ddd72f17eb637b2deeb5.json",
-  "subscription_url": "https://3.basecampapi.com/195539477/buckets/2085958498/recordings/9007199254741626/subscription.json",
+  "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7CEkiCGdpZAY6BkVUSSIuZ2lkOi8vYmMzL1JlY29yZGluZy8xMDY0MDkxMjMwP2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg1yZWFkYWJsZQY7AFRJIg9leHBpcmVzX2F0BjsAVDA=--ded3231329b6811041190ddfe4574b2f1e3e6d00.json",
+  "subscription_url": "https://3.basecampapi.com/195539477/buckets/2085958499/recordings/1064091230/subscription.json",
   "completed": true,
   "completion": {
-    "created_at": "2016-09-20T14:15:08.296Z",
+    "created_at": "2018-02-14T17:17:00.327Z",
     "creator": {
-      "id": 1007299166,
-      "attachable_sgid": "BAh7CEkiCGdpZAY6BkVUSSIrZ2lkOi8vYmMzL1BlcnNvbi8xMDA3Mjk5MTY2P2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg9hdHRhY2hhYmxlBjsAVEkiD2V4cGlyZXNfYXQGOwBUMA==--8143046d5c9f87b54a535fa8dae76ca26ccc84c2",
+      "id": 1049715937,
+      "attachable_sgid": "BAh7CEkiCGdpZAY6BkVUSSIrZ2lkOi8vYmMzL1BlcnNvbi8xMDQ5NzE1OTM3P2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg9hdHRhY2hhYmxlBjsAVEkiD2V4cGlyZXNfYXQGOwBUMA==--dd9d83aa32ec6460d22cfc005318ede2eab8d1db",
       "name": "Sharon Bradford",
       "email_address": "sharon@honchodesign.com",
       "personable_type": "User",
       "title": "Principal Branding Administrator",
       "bio": null,
-      "created_at": "2016-09-19T11:56:20.899Z",
-      "updated_at": "2016-09-19T11:56:20.899Z",
+      "created_at": "2018-02-14T17:02:27.471Z",
+      "updated_at": "2018-02-14T17:02:27.471Z",
       "admin": false,
       "owner": false,
       "time_zone": "America/Chicago",
-      "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBF4qCjw=--47a8a27e2ac9d767e10da2896edad39c5295aacf/avatar-64-x4"
+      "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBOFkkT4=--670d9a341dbd488beb88db159403b895e50ac933/avatar-64-x4"
     }
   },
   "content": "Clear and simple UI",
@@ -165,22 +168,39 @@ Get a to-do
   "due_on": null,
   "assignees": [
     {
-      "id": 1007299166,
-      "attachable_sgid": "BAh7CEkiCGdpZAY6BkVUSSIrZ2lkOi8vYmMzL1BlcnNvbi8xMDA3Mjk5MTY2P2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg9hdHRhY2hhYmxlBjsAVEkiD2V4cGlyZXNfYXQGOwBUMA==--8143046d5c9f87b54a535fa8dae76ca26ccc84c2",
+      "id": 1049715937,
+      "attachable_sgid": "BAh7CEkiCGdpZAY6BkVUSSIrZ2lkOi8vYmMzL1BlcnNvbi8xMDQ5NzE1OTM3P2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg9hdHRhY2hhYmxlBjsAVEkiD2V4cGlyZXNfYXQGOwBUMA==--dd9d83aa32ec6460d22cfc005318ede2eab8d1db",
       "name": "Sharon Bradford",
       "email_address": "sharon@honchodesign.com",
       "personable_type": "User",
       "title": "Principal Branding Administrator",
       "bio": null,
-      "created_at": "2016-09-19T11:56:20.899Z",
-      "updated_at": "2016-09-19T11:56:20.899Z",
+      "created_at": "2018-02-14T17:02:27.471Z",
+      "updated_at": "2018-02-14T17:02:27.471Z",
       "admin": false,
       "owner": false,
       "time_zone": "America/Chicago",
-      "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBF4qCjw=--47a8a27e2ac9d767e10da2896edad39c5295aacf/avatar-64-x4"
+      "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBOFkkT4=--670d9a341dbd488beb88db159403b895e50ac933/avatar-64-x4"
     }
   ],
-  "completion_url": "https://3.basecampapi.com/195539477/buckets/2085958498/todos/9007199254741626/completion.json"
+  "completion_subscribers": [
+    {
+      "id": 1049715937,
+      "attachable_sgid": "BAh7CEkiCGdpZAY6BkVUSSIrZ2lkOi8vYmMzL1BlcnNvbi8xMDQ5NzE1OTM3P2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg9hdHRhY2hhYmxlBjsAVEkiD2V4cGlyZXNfYXQGOwBUMA==--dd9d83aa32ec6460d22cfc005318ede2eab8d1db",
+      "name": "Sharon Bradford",
+      "email_address": "sharon@honchodesign.com",
+      "personable_type": "User",
+      "title": "Principal Branding Administrator",
+      "bio": null,
+      "created_at": "2018-02-14T17:02:27.471Z",
+      "updated_at": "2018-02-14T17:02:27.471Z",
+      "admin": false,
+      "owner": false,
+      "time_zone": "America/Chicago",
+      "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBOFkkT4=--670d9a341dbd488beb88db159403b895e50ac933/avatar-64-x4"
+    }
+  ],
+  "completion_url": "https://3.basecampapi.com/195539477/buckets/2085958499/todos/1064091230/completion.json"
 }
 ```
 <!-- END GET /buckets/1/todos/2.json -->
@@ -202,6 +222,7 @@ _Optional parameters_:
 
 * `description` - containing information about the to-do. See our [Rich text guide][3] for what HTML tags allowed.
 * `assignee_ids` - an array of people that will be assigned to this to-do. Please see the [Get people][4] endpoints to retrieve them.
+* `completion_subscriber_ids` - an array of people that will be notified on to-do completion. Please see the [Get people][4] endpoints to retrieve them.
 * `notify` - when set to `true`, will notify the assignees about being assigned.
 * `due_on` - a date when the to-do should be completed.
 * `starts_on` - allows the to-do to run from this date to the `due_on` date.
