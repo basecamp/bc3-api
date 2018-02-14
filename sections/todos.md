@@ -29,8 +29,8 @@ _Optional query parameters_:
   {
     "id": 1064091228,
     "status": "active",
-    "created_at": "2018-03-30T00:13:35.294Z",
-    "updated_at": "2018-03-30T00:13:35.294Z",
+    "created_at": "2018-03-30T17:49:44.384Z",
+    "updated_at": "2018-03-30T17:49:44.384Z",
     "type": "Todo",
     "url": "https://3.basecampapi.com/195539477/buckets/2085958499/todos/1064091228.json",
     "app_url": "https://3.basecamp.com/195539477/buckets/2085958499/todos/1064091228",
@@ -56,8 +56,8 @@ _Optional query parameters_:
       "personable_type": "User",
       "title": "Central Markets Manager",
       "bio": "To open a store is easy, to keep it open is an art",
-      "created_at": "2018-02-13T19:48:13.826Z",
-      "updated_at": "2018-02-13T19:48:13.826Z",
+      "created_at": "2018-02-14T17:02:25.043Z",
+      "updated_at": "2018-02-14T17:02:25.043Z",
       "admin": false,
       "owner": false,
       "time_zone": "America/Chicago",
@@ -103,8 +103,8 @@ Get a to-do
 {
   "id": 1064091230,
   "status": "active",
-  "created_at": "2018-03-29T22:49:35.294Z",
-  "updated_at": "2018-02-13T19:59:42.880Z",
+  "created_at": "2018-03-30T16:52:44.384Z",
+  "updated_at": "2018-02-14T17:17:00.414Z",
   "type": "Todo",
   "url": "https://3.basecampapi.com/195539477/buckets/2085958499/todos/1064091230.json",
   "app_url": "https://3.basecamp.com/195539477/buckets/2085958499/todos/1064091230",
@@ -130,8 +130,8 @@ Get a to-do
     "personable_type": "User",
     "title": "Central Markets Manager",
     "bio": "To open a store is easy, to keep it open is an art",
-    "created_at": "2018-02-13T19:48:13.826Z",
-    "updated_at": "2018-02-13T19:48:13.826Z",
+    "created_at": "2018-02-14T17:02:25.043Z",
+    "updated_at": "2018-02-14T17:02:25.043Z",
     "admin": false,
     "owner": false,
     "time_zone": "America/Chicago",
@@ -146,7 +146,7 @@ Get a to-do
   "subscription_url": "https://3.basecampapi.com/195539477/buckets/2085958499/recordings/1064091230/subscription.json",
   "completed": true,
   "completion": {
-    "created_at": "2018-02-13T19:59:42.834Z",
+    "created_at": "2018-02-14T17:17:00.327Z",
     "creator": {
       "id": 1049715937,
       "attachable_sgid": "BAh7CEkiCGdpZAY6BkVUSSIrZ2lkOi8vYmMzL1BlcnNvbi8xMDQ5NzE1OTM3P2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg9hdHRhY2hhYmxlBjsAVEkiD2V4cGlyZXNfYXQGOwBUMA==--dd9d83aa32ec6460d22cfc005318ede2eab8d1db",
@@ -155,8 +155,8 @@ Get a to-do
       "personable_type": "User",
       "title": "Principal Branding Administrator",
       "bio": null,
-      "created_at": "2018-02-13T19:48:16.536Z",
-      "updated_at": "2018-02-13T19:48:16.536Z",
+      "created_at": "2018-02-14T17:02:27.471Z",
+      "updated_at": "2018-02-14T17:02:27.471Z",
       "admin": false,
       "owner": false,
       "time_zone": "America/Chicago",
@@ -175,8 +175,8 @@ Get a to-do
       "personable_type": "User",
       "title": "Principal Branding Administrator",
       "bio": null,
-      "created_at": "2018-02-13T19:48:16.536Z",
-      "updated_at": "2018-02-13T19:48:16.536Z",
+      "created_at": "2018-02-14T17:02:27.471Z",
+      "updated_at": "2018-02-14T17:02:27.471Z",
       "admin": false,
       "owner": false,
       "time_zone": "America/Chicago",
@@ -184,7 +184,21 @@ Get a to-do
     }
   ],
   "completion_subscribers": [
-
+    {
+      "id": 1049715937,
+      "attachable_sgid": "BAh7CEkiCGdpZAY6BkVUSSIrZ2lkOi8vYmMzL1BlcnNvbi8xMDQ5NzE1OTM3P2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg9hdHRhY2hhYmxlBjsAVEkiD2V4cGlyZXNfYXQGOwBUMA==--dd9d83aa32ec6460d22cfc005318ede2eab8d1db",
+      "name": "Sharon Bradford",
+      "email_address": "sharon@honchodesign.com",
+      "personable_type": "User",
+      "title": "Principal Branding Administrator",
+      "bio": null,
+      "created_at": "2018-02-14T17:02:27.471Z",
+      "updated_at": "2018-02-14T17:02:27.471Z",
+      "admin": false,
+      "owner": false,
+      "time_zone": "America/Chicago",
+      "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBOFkkT4=--670d9a341dbd488beb88db159403b895e50ac933/avatar-64-x4"
+    }
   ],
   "completion_url": "https://3.basecampapi.com/195539477/buckets/2085958499/todos/1064091230/completion.json"
 }
