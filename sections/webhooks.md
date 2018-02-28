@@ -13,14 +13,15 @@ A webhook can be subscribed to updates from the types detailed below. The defaul
 - Comment
 - Document
 - GoogleDocument
+- Inbox::Forward
 - Message
 - Question
 - Question::Answer
-- Inbox::Forward
 - Schedule::Entry
 - Todo
 - Todolist
 - Upload
+- Vault
 
 (Note that chat isn't amongst the options. We will be providing a chat bot API separately soon.)
 
