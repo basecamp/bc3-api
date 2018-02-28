@@ -8,6 +8,7 @@ Endpoints:
 - [Get Campfire lines](#get-campfire-lines)
 - [Get a Campfire line](#get-a-campfire-line)
 - [Create a Campfire line](#create-a-campfire-line)
+- [Delete a Campfire line](#delete-a-campfire-line)
 
 Get Campfires
 -------------
@@ -246,6 +247,19 @@ This endpoint will return `201 Created` with the current JSON representation of 
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" \
   -d '{"content":"Good morning"}' \
   https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/chats/2/lines.json
+```
+
+Delete a Campfire line
+----------------------
+
+* `DELETE /buckets/1/chats/2/lines/3.json` will delete the Campfire line with ID `3` in the Campfire with ID `2` in the project with ID `1`.
+
+Returns `204 No Content` if successful.
+
+###### Copy as cURL
+
+``` shell
+curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/chats/2/lines/3.json
 ```
 
 [pagination]: https://github.com/basecamp/bc3-api/blob/master/README.md#pagination
