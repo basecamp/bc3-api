@@ -109,15 +109,22 @@ You must use HTTP freshness headers to speed up your application and lighten the
 Handling errors
 ---------------
 
-If Basecamp is having trouble, you might get a 5xx error. `500` means that the application is entirely down, but `502 Bad Gateway`, `503 Service Unavailable`, or `504 Gateway Timeout` errors are also possible. In all of these cases, it's your responsibility to retry your request later.
+API clients must expect and gracefully handle transient errors, such as rate limiting or server errors. We recommend baking 5xx and 429 response handling into your low-level HTTP client so your integration can handle most errors automatically.
 
+### Rate limiting (429 Too Many Requests)
 
-Rate limiting
--------------
+You can perform up to 50 requests per 10-second period from the same IP address for the same account. If you exceed this limit, you'll get a [429 Too Many Requests](http://tools.ietf.org/html/draft-nottingham-http-new-status-02#section-4) response for subsequent requests. Check the `Retry-After` header to see how many seconds to wait before retrying the request.
 
-You can perform up to 50 requests per 10-second period from the same IP address for the same account. If you exceed this limit, you'll get a [429 Too Many Requests](http://tools.ietf.org/html/draft-nottingham-http-new-status-02#section-4) response for subsequent requests. Check the `Retry-After` header to learn how many seconds to wait before retrying the request.
+### [5xx server errors](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes#5xx_Server_errors)
 
-We recommend baking 429 response-handling in to your HTTP handling at a low level so your integration handles retries gracefully and automatically.
+If Basecamp is having trouble, you will get a response with a 5xx status code indicating a server error. 500 (Internal Server Error), 502 (Bad Gateway), 503 (Service Unavailable), and 504 (Gateway Timeout) may be retried with [exponential backoff](https://en.wikipedia.org/wiki/Exponential_backoff).
+
+### 404 Not Found
+
+API requests may 404 due to deleted content, an inactive account, missing user permissions, etc. Detect these conditions to give your users a clear explanation about why they can't connect to Basecamp. Do not automatically retry these requests.
+
+* Inactive account. 404 Not Found response with a `Reason: Account Inactive` header. Due to an expired trial or account suspension. All API requests to an inactive account will fail, so we recommend detecting and disabling the account in your integration as well.
+* Inaccessible items. 404 Not Found response. Due to a deleted item or insufficient permissions.
 
 
 Rich text content
