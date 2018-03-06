@@ -29,6 +29,7 @@ _Optional parameters_:
     "updated_at": "2016-09-20T14:50:48.007Z",
     "name": "The Leto Laptop",
     "description": "Laptop product launch.",
+    "purpose": "topic",
     "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7CEkiCGdpZAY6BkVUSSIrZ2lkOi8vYmMzL0J1Y2tldC8yMDg1OTU4NDk4P2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg1yZWFkYWJsZQY7AFRJIg9leHBpcmVzX2F0BjsAVDA=--c8e1a465de900eb9864fa79ae2f30345be158f71.json",
     "url": "https://3.basecampapi.com/195539477/projects/2085958498.json",
     "app_url": "https://3.basecamp.com/195539477/projects/2085958498",
@@ -98,6 +99,92 @@ _Optional parameters_:
       }
     ],
     "bookmarked": false
+  },
+  {
+    "id": 2085958500,
+    "status": "active",
+    "created_at": "2018-02-27T11:11:55.423Z",
+    "updated_at": "2018-02-27T11:13:46.317Z",
+    "name": "The Leto Locator",
+    "description": "New software and hardware built for locating and securing Leto products.",
+    "purpose": "topic",
+    "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7CEkiCGdpZAY6BkVUSSIrZ2lkOi8vYmMzL0J1Y2tldC8yMDg1OTU4NTAwP2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg1yZWFkYWJsZQY7AFRJIg9leHBpcmVzX2F0BjsAVDA=--0a4a96352e7a1f0a1ab7ed7fd35dfa9b41a28d06.json",
+    "url": "https://3.basecampapi.com/195539477/projects/2085958500.json",
+    "app_url": "https://3.basecamp.com/195539477/projects/2085958500",
+    "client_company": {
+      "id": 1033447819,
+      "name": "Leto Brand"
+    },
+    "clientside": {
+      "url": "https://3.basecampapi.com/195539477/buckets/2085958500/client/board.json",
+      "app_url": "https://3.basecamp.com/195539477/buckets/2085958500/client/board"
+    },
+    "dock": [
+      {
+        "id": 1064091258,
+        "title": "Campfire",
+        "name": "chat",
+        "enabled": true,
+        "position": 1,
+        "url": "https://3.basecampapi.com/195539477/buckets/2085958500/chats/1064091258.json",
+        "app_url": "https://3.basecamp.com/195539477/buckets/2085958500/chats/1064091258"
+      },
+      {
+        "id": 1064091259,
+        "title": "Message Board",
+        "name": "message_board",
+        "enabled": true,
+        "position": 2,
+        "url": "https://3.basecampapi.com/195539477/buckets/2085958500/message_boards/1064091259.json",
+        "app_url": "https://3.basecamp.com/195539477/buckets/2085958500/message_boards/1064091259"
+      },
+      {
+        "id": 1064091260,
+        "title": "To-dos",
+        "name": "todoset",
+        "enabled": true,
+        "position": 3,
+        "url": "https://3.basecampapi.com/195539477/buckets/2085958500/todosets/1064091260.json",
+        "app_url": "https://3.basecamp.com/195539477/buckets/2085958500/todosets/1064091260"
+      },
+      {
+        "id": 1064091261,
+        "title": "Schedule",
+        "name": "schedule",
+        "enabled": true,
+        "position": 4,
+        "url": "https://3.basecampapi.com/195539477/buckets/2085958500/schedules/1064091261.json",
+        "app_url": "https://3.basecamp.com/195539477/buckets/2085958500/schedules/1064091261"
+      },
+      {
+        "id": 1064091262,
+        "title": "Automatic Check-ins",
+        "name": "questionnaire",
+        "enabled": true,
+        "position": 5,
+        "url": "https://3.basecampapi.com/195539477/buckets/2085958500/questionnaires/1064091262.json",
+        "app_url": "https://3.basecamp.com/195539477/buckets/2085958500/questionnaires/1064091262"
+      },
+      {
+        "id": 1064091265,
+        "title": "Docs & Files",
+        "name": "vault",
+        "enabled": true,
+        "position": 6,
+        "url": "https://3.basecampapi.com/195539477/buckets/2085958500/vaults/1064091265.json",
+        "app_url": "https://3.basecamp.com/195539477/buckets/2085958500/vaults/1064091265"
+      },
+      {
+        "id": 1064091266,
+        "title": "Email Forwards",
+        "name": "inbox",
+        "enabled": false,
+        "position": null,
+        "url": "https://3.basecampapi.com/195539477/buckets/2085958500/inboxes/1064091266.json",
+        "app_url": "https://3.basecamp.com/195539477/buckets/2085958500/inboxes/1064091266"
+      }
+    ],
+    "bookmarked": false
   }
 ]
 ```
@@ -126,6 +213,7 @@ The `dock` key contains an array of the current tools for this project. The `ena
   "updated_at": "2016-09-20T14:50:48.007Z",
   "name": "The Leto Laptop",
   "description": "Laptop product launch.",
+  "purpose": "topic",
   "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7CEkiCGdpZAY6BkVUSSIrZ2lkOi8vYmMzL0J1Y2tldC8yMDg1OTU4NDk4P2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg1yZWFkYWJsZQY7AFRJIg9leHBpcmVzX2F0BjsAVDA=--c8e1a465de900eb9864fa79ae2f30345be158f71.json",
   "url": "https://3.basecampapi.com/195539477/projects/2085958498.json",
   "app_url": "https://3.basecamp.com/195539477/projects/2085958498",
