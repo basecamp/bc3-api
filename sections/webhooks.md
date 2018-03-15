@@ -11,6 +11,9 @@ the 2xx range to be a successful response. We will not follow a 3xx redirect.
 A webhook can be subscribed to updates from the types detailed below. The default is to subscribe to all of them:
 
 - Comment
+- Client::Approval::Response
+- Client::Forward
+- Client::Reply
 - Document
 - GoogleDocument
 - Inbox::Forward
@@ -23,7 +26,7 @@ A webhook can be subscribed to updates from the types detailed below. The defaul
 - Upload
 - Vault
 
-(Note that chat isn't amongst the options. We will be providing a chat bot API separately soon.)
+(Note that chat isn't amongst the options. Check our [chat bot API][1] for that.)
 
 Whenever an event is created for any of the types that webhook was created to match, Basecamp will call your payload URL.
 All payloads follow the same JSON format:
@@ -316,3 +319,5 @@ This endpoint will return `204 No Content` if the destroy was a success.
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -X DELETE \
   https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/webhooks/3.json
 ```
+
+[1]: https://github.com/basecamp/bc3-api/blob/master/sections/chatbots.md
