@@ -95,7 +95,7 @@ All payloads follow the same JSON format:
 }
 ```
 
-As you'll note, the recording format is the basic generic format that all other content endpoints share, with the addition of a title and content field.
+As you'll note, the recording format is the basic generic format that all other content endpoints share, with the addition of a title and content field. This format won't include as many details about the recording as other specific endpoints return. For example, for a [todo][2], this won't include fields such as `description`, `completed` or `assignees`.
 
 After sending the payload, Basecamp will record the interaction with your application as a delivery record that can be introspected for debugging.
 The delivery record includes the full request and response that occurred for that specific event relay.
@@ -321,3 +321,4 @@ curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -X DELETE \
 ```
 
 [1]: https://github.com/basecamp/bc3-api/blob/master/sections/chatbots.md
+[2]: https://github.com/basecamp/bc3-api/blob/master/sections/todos.md#get-a-to-do
