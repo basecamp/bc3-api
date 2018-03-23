@@ -97,8 +97,126 @@ All payloads follow the same JSON format:
 
 As you'll note, the recording format is the basic generic format that all other content endpoints share, with the addition of a title and content field. This format won't include as many details about the recording as other specific endpoints return. For example, for a [todo][2], this won't include fields such as `description`, `completed` or `assignees`.
 
+The payload for copy/move events will also include details on the copied recording under `"copy"`, following the basic recording format just described. For example:
+```json
+{
+   "id":1479523571,
+   "kind":"todo_copied",
+   "details":{
+      "copy_id":981721240
+   },
+   "created_at":"2018-03-23T10:19:33.908+01:00",
+   "copy":{
+      "id":981721240,
+      "status":"active",
+      "created_at":"2018-03-16T12:17:04.938+01:00",
+      "updated_at":"2018-03-23T10:19:33.174+01:00",
+      "title":"Go cutting edge: iOS8 and Android 4.5 only",
+      "type":"Todo",
+      "url":"https://3.basecampapi.com/195539477/buckets/2085958499/todos/981721240.json",
+      "app_url":"https://3.basecamp.com/195539477/buckets/2085958499/todos/981721240",
+      "bookmark_url":"https://3.basecampapi.com/195539477/my/bookmarks/BAh7CEkiCGdpZAY6BkVUSSIuZ2lkOi8vYmMzL1JlY29yZGluZy8xMDY0MDkxMjI4P2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg1yZWFkYWJsZQY7AFRJIg9leHBpcmVzX2F0BjsAVDA=--abda14ea7de0795ff95c916d92fc5348d6e8e268.json",
+      "parent":{
+         "id":977155547,
+         "title":"Things to do",
+         "type":"Todolist",
+         "url":"https://3.basecampapi.com/195539477/buckets/2085958499/todolists/977155547.json",
+         "app_url":"https://3.basecamp.com/195539477/buckets/2085958499/todolists/977155547"
+      },
+      "bucket":{
+         "id":2085958499,
+         "name": "The Leto Laptop Revamp",
+         "type":"Project"
+      },
+      "creator": {
+        "id": 1049715915,
+        "attachable_sgid": "BAh7CEkiCGdpZAY6BkVUSSIrZ2lkOi8vYmMzL1BlcnNvbi8xMDQ5NzE1OTE1P2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg9hdHRhY2hhYmxlBjsAVEkiD2V4cGlyZXNfYXQGOwBUMA==--5f103c46d4f123f0068fcd0192a0f7fea7f26193",
+        "name": "Annie Bryan",
+        "email_address": "annie@honchodesign.com",
+        "personable_type": "User",
+        "title": "Central Markets Manager",
+        "bio": "To open a store is easy, to keep it open is an art",
+        "created_at": "2018-02-14T17:02:25.043Z",
+        "updated_at": "2018-02-14T17:02:25.043Z",
+        "admin": false,
+        "owner": false,
+        "time_zone": "America/Chicago",
+        "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBMtkkT4=--e609ef146e39f9ca5e4bb7242fdfd50aec4c3b3f/avatar-64-x4",
+        "company": {
+          "id": 1033447817,
+          "name": "Honcho Design"
+        }
+      },
+   },
+   "recording":{
+      "id":968814335,
+      "status":"active",
+      "created_at":"2018-03-16T12:17:04.938+01:00",
+      "updated_at":"2018-03-19T09:31:12.753+01:00",
+      "title":"Go cutting edge: iOS8 and Android 4.5 only",
+      "type":"Todo",
+      "url":"https://3.basecampapi.com/195539477/buckets/68833643212/todos/968814335.json",
+      "app_url":"https://3.basecamp.com/195539477/buckets/68833643212/todos/968814335",
+      "bookmark_url":"https://3.basecampapi.com/195539477/my/bookmarks/BAh7CEkiCGdpZAY6BkVUSSItZ2lkOi8vYmMzL1JlY29yZGluZy85Njg4MTQzMzU_ZXhwaXJlc19pbgY7AFRJIgxwdXJwb3NlBjsAVEkiDXJlYWRhYmxlBjsAVEkiD2V4cGlyZXNfYXQGOwBUMA==--9c496c78316f7ff7c52fbbbc957f198efd1c338c.json",
+      "parent":{
+         "id":968814030,
+         "title": "Strategy ideas",
+         "type":"Todolist",
+         "url":"https://3.basecampapi.com/195539477/buckets/68833643212/todolists/968814030.json",
+         "app_url":"https://3.basecamp.com/195539477/buckets/68833643212/todolists/968814030"
+      },
+      "bucket":{
+         "id":68833643212,
+         "name":"The Leto Laptop",
+         "type":"Project"
+      },
+      "creator": {
+        "id": 1049715915,
+        "attachable_sgid": "BAh7CEkiCGdpZAY6BkVUSSIrZ2lkOi8vYmMzL1BlcnNvbi8xMDQ5NzE1OTE1P2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg9hdHRhY2hhYmxlBjsAVEkiD2V4cGlyZXNfYXQGOwBUMA==--5f103c46d4f123f0068fcd0192a0f7fea7f26193",
+        "name": "Annie Bryan",
+        "email_address": "annie@honchodesign.com",
+        "personable_type": "User",
+        "title": "Central Markets Manager",
+        "bio": "To open a store is easy, to keep it open is an art",
+        "created_at": "2018-02-14T17:02:25.043Z",
+        "updated_at": "2018-02-14T17:02:25.043Z",
+        "admin": false,
+        "owner": false,
+        "time_zone": "America/Chicago",
+        "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBMtkkT4=--e609ef146e39f9ca5e4bb7242fdfd50aec4c3b3f/avatar-64-x4",
+        "company": {
+          "id": 1033447817,
+          "name": "Honcho Design"
+        }
+      },
+      "content":"Go cutting edge: iOS8 and Android 4.5 only"
+   },
+  "creator": {
+    "id": 1049715915,
+    "attachable_sgid": "BAh7CEkiCGdpZAY6BkVUSSIrZ2lkOi8vYmMzL1BlcnNvbi8xMDQ5NzE1OTE1P2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg9hdHRhY2hhYmxlBjsAVEkiD2V4cGlyZXNfYXQGOwBUMA==--5f103c46d4f123f0068fcd0192a0f7fea7f26193",
+    "name": "Annie Bryan",
+    "email_address": "annie@honchodesign.com",
+    "personable_type": "User",
+    "title": "Central Markets Manager",
+    "bio": "To open a store is easy, to keep it open is an art",
+    "created_at": "2018-02-14T17:02:25.043Z",
+    "updated_at": "2018-02-14T17:02:25.043Z",
+    "admin": false,
+    "owner": false,
+    "time_zone": "America/Chicago",
+    "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBMtkkT4=--e609ef146e39f9ca5e4bb7242fdfd50aec4c3b3f/avatar-64-x4",
+    "company": {
+      "id": 1033447817,
+      "name": "Honcho Design"
+    }
+  }
+}
+```
+
 After sending the payload, Basecamp will record the interaction with your application as a delivery record that can be introspected for debugging.
 The delivery record includes the full request and response that occurred for that specific event relay.
+
+###### Events triggering webhooks
 
 Basecamp will send the following lifecycle events for all types, here using message as an example:
 
