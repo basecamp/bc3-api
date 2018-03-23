@@ -29,6 +29,7 @@ _Optional query parameters_:
     "status": "active",
     "created_at": "2016-07-19T21:33:36.406Z",
     "updated_at": "2016-07-19T21:33:39.692Z",
+    "title": "Team Meeting",
     "type": "Schedule::Entry",
     "url": "https://3.basecampapi.com/195539477/buckets/2085958498/schedule_entries/9007199254741759.json",
     "app_url": "https://3.basecamp.com/195539477/buckets/2085958498/schedule_entries/9007199254741759",

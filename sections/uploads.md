@@ -23,9 +23,11 @@ Get uploads
     "status": "active",
     "created_at": "2016-07-19T21:36:12.137Z",
     "updated_at": "2016-07-19T21:36:15.412Z",
+    "title": "company-logo.png",
     "type": "Upload",
     "url": "https://3.basecampapi.com/195539477/buckets/2085958498/uploads/9007199254741761.json",
     "app_url": "https://3.basecamp.com/195539477/buckets/2085958498/uploads/9007199254741761",
+    "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7CEkiCGdpZAY6BkVUSSIuZ2lkOi8vYmMzL1JlY29yZGluZy8xMDY0MDkxNTM5P2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg1yZWFkYWJsZQY7AFRJIg9leHBpcmVzX2F0BjsAVDA=--a96c68e0b0a985bd924462ea91fc2ab4d77d320e.json",
     "comments_count": 0,
     "comments_url": "https://3.basecampapi.com/195539477/buckets/2085958498/recordings/9007199254741761/comments.json",
     "parent": {
@@ -90,9 +92,11 @@ Get an upload
   "status": "active",
   "created_at": "2016-07-19T21:36:12.137Z",
   "updated_at": "2016-07-19T21:36:15.412Z",
+  "title": "company-logo.png",
   "type": "Upload",
   "url": "https://3.basecampapi.com/195539477/buckets/2085958498/uploads/9007199254741761.json",
   "app_url": "https://3.basecamp.com/195539477/buckets/2085958498/uploads/9007199254741761",
+  "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7CEkiCGdpZAY6BkVUSSIuZ2lkOi8vYmMzL1JlY29yZGluZy8xMDY0MDkxNTM5P2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg1yZWFkYWJsZQY7AFRJIg9leHBpcmVzX2F0BjsAVDA=--a96c68e0b0a985bd924462ea91fc2ab4d77d320e.json",
   "comments_count": 0,
   "comments_url": "https://3.basecampapi.com/195539477/buckets/2085958498/recordings/9007199254741761/comments.json",
   "parent": {

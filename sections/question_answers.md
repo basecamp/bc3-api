@@ -20,9 +20,11 @@ Get question answers
     "status": "active",
     "created_at": "2016-07-19T22:53:41.446Z",
     "updated_at": "2016-07-19T22:53:41.446Z",
+    "title": "Answer to “What did you work on today?”",
     "type": "Question::Answer",
     "url": "https://3.basecampapi.com/195539477/buckets/2085958498/question_answers/9007199254741640.json",
     "app_url": "https://3.basecamp.com/195539477/buckets/2085958498/questions/9007199254741454/answers/2016-07-19#__recording_9007199254741640",
+    "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7CEkiCGdpZAY6BkVUSSIuZ2lkOi8vYmMzL1JlY29yZGluZy8xMDY0MDkxMjU0P2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg1yZWFkYWJsZQY7AFRJIg9leHBpcmVzX2F0BjsAVDA=--06444efacad452ffc5fdd0fd0d27912f5697f29d.json",
     "comments_count": 0,
     "comments_url": "https://3.basecampapi.com/195539477/buckets/2085958498/recordings/9007199254741640/comments.json",
     "parent": {
@@ -77,9 +79,11 @@ Get a question answer
   "status": "active",
   "created_at": "2016-07-19T22:53:41.446Z",
   "updated_at": "2016-07-19T22:53:41.446Z",
+  "title": "Answer to “What did you work on today?”",
   "type": "Question::Answer",
   "url": "https://3.basecampapi.com/195539477/buckets/2085958498/question_answers/9007199254741640.json",
   "app_url": "https://3.basecamp.com/195539477/buckets/2085958498/questions/9007199254741454/answers/2016-07-19#__recording_9007199254741640",
+  "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7CEkiCGdpZAY6BkVUSSIuZ2lkOi8vYmMzL1JlY29yZGluZy8xMDY0MDkxMjU0P2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg1yZWFkYWJsZQY7AFRJIg9leHBpcmVzX2F0BjsAVDA=--06444efacad452ffc5fdd0fd0d27912f5697f29d.json",
   "comments_count": 0,
   "comments_url": "https://3.basecampapi.com/195539477/buckets/2085958498/recordings/9007199254741640/comments.json",
   "parent": {

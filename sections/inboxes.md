@@ -23,9 +23,11 @@ To get the inbox ID for a project, see the [Get a project][1] endpoint's `dock` 
   "status": "active",
   "created_at": "2016-09-20T14:32:33.236Z",
   "updated_at": "2016-09-20T14:32:58.127Z",
+  "title": "Email Forwards",
   "type": "Inbox",
   "url": "https://3.basecampapi.com/195539477/buckets/2085958496/inboxes/9007199254741055.json",
   "app_url": "https://3.basecamp.com/195539477/buckets/2085958496/inboxes/9007199254741055",
+  "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7CEkiCGdpZAY6BkVUSSIuZ2lkOi8vYmMzL1JlY29yZGluZy8xMDY0MDkwNjU3P2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg1yZWFkYWJsZQY7AFRJIg9leHBpcmVzX2F0BjsAVDA=--07c5a6e5559c95f6f35baaa489dae326746916bb.json",
   "bucket": {
     "id": 2085958496,
     "name": "Honcho Design Newsroom",
@@ -50,7 +52,6 @@ To get the inbox ID for a project, see the [Get a project][1] endpoint's `dock` 
       "name": "Honcho Design"
     }
   },
-  "title": "Forwards",
   "forwards_count": 2,
   "forwards_url": "https://3.basecampapi.com/195539477/buckets/2085958496/inboxes/9007199254741055/forwards.json"
 }

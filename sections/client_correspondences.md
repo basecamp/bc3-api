@@ -20,9 +20,11 @@ Get client correspondences
     "status": "active",
     "created_at": "2016-07-14T22:39:09.095Z",
     "updated_at": "2016-07-19T21:29:21.237Z",
+    "title": "Final deliverables and launch are right around the corner",
     "type": "Client::Correspondence",
     "url": "https://3.basecampapi.com/195539477/buckets/2085958499/client/correspondences/9007199254741734.json",
     "app_url": "https://3.basecamp.com/195539477/buckets/2085958499/client/correspondences/9007199254741734",
+    "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7CEkiCGdpZAY6BkVUSSIuZ2lkOi8vYmMzL1JlY29yZGluZy8xMDY0MDkxMzQ4P2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg1yZWFkYWJsZQY7AFRJIg9leHBpcmVzX2F0BjsAVDA=--0876e06c485ee7522095eb2f3940a4dc70b8f0b3.json",
     "parent": {
       "id": 9007199254741653,
       "title": "The Clientside",
@@ -81,9 +83,11 @@ Get a client correspondence
   "status": "active",
   "created_at": "2016-06-05T21:55:09.095Z",
   "updated_at": "2016-07-19T21:29:11.180Z",
+  "title": "Project kickoff!",
   "type": "Client::Correspondence",
   "url": "https://3.basecampapi.com/195539477/buckets/2085958499/client/correspondences/9007199254741655.json",
   "app_url": "https://3.basecamp.com/195539477/buckets/2085958499/client/correspondences/9007199254741655",
+  "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7CEkiCGdpZAY6BkVUSSIuZ2lkOi8vYmMzL1JlY29yZGluZy8xMDY0MDkxMjY5P2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg1yZWFkYWJsZQY7AFRJIg9leHBpcmVzX2F0BjsAVDA=--21fc92e6787c10d5f3e563b197e446f45342a511.json",
   "parent": {
     "id": 9007199254741653,
     "title": "The Clientside",

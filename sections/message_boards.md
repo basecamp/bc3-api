@@ -26,6 +26,7 @@ To get the message board ID for a project, see the [Get a project][1] endpoint's
   "type": "Message::Board",
   "url": "https://3.basecampapi.com/195539477/buckets/2085958498/message_boards/9007199254741434.json",
   "app_url": "https://3.basecamp.com/195539477/buckets/2085958498/message_boards/9007199254741434",
+  "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7CEkiCGdpZAY6BkVUSSIuZ2lkOi8vYmMzL1JlY29yZGluZy8xMDY0MDkxMDUwP2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg1yZWFkYWJsZQY7AFRJIg9leHBpcmVzX2F0BjsAVDA=--c202bdaaa7e968fbc6355784b614ebac2d87ea88.json",
   "bucket": {
     "id": 2085958498,
     "name": "The Leto Laptop",

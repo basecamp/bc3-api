@@ -24,12 +24,13 @@ To get the inbox ID for a project, see the [Get inbox][3] endpoint.
     "status": "active",
     "created_at": "2016-09-20T14:32:57.168Z",
     "updated_at": "2016-09-20T14:32:58.104Z",
+    "title": "Can we make the logo pop?",
     "type": "Inbox::Forward",
     "url": "https://3.basecampapi.com/195539477/buckets/2085958496/inbox_forwards/9007199254741145.json",
     "app_url": "https://3.basecamp.com/195539477/buckets/2085958496/inbox_forwards/9007199254741145",
     "parent": {
       "id": 9007199254741055,
-      "title": "Forwards",
+      "title": "Email Forwards",
       "type": "Inbox",
       "url": "https://3.basecampapi.com/195539477/buckets/2085958496/inboxes/9007199254741055.json",
       "app_url": "https://3.basecamp.com/195539477/buckets/2085958496/inboxes/9007199254741055"
@@ -90,12 +91,13 @@ Get a forward
   "status": "active",
   "created_at": "2016-09-20T14:32:55.810Z",
   "updated_at": "2016-09-20T14:32:55.888Z",
+  "title": "Some technical details",
   "type": "Inbox::Forward",
   "url": "https://3.basecampapi.com/195539477/buckets/2085958496/inbox_forwards/9007199254741144.json",
   "app_url": "https://3.basecamp.com/195539477/buckets/2085958496/inbox_forwards/9007199254741144",
   "parent": {
     "id": 9007199254741055,
-    "title": "Forwards",
+    "title": "Email Forwards",
     "type": "Inbox",
     "url": "https://3.basecampapi.com/195539477/buckets/2085958496/inboxes/9007199254741055.json",
     "app_url": "https://3.basecamp.com/195539477/buckets/2085958496/inboxes/9007199254741055"

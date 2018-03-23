@@ -22,9 +22,11 @@ Get client replies
     "status": "active",
     "created_at": "2016-07-19T23:13:10.515Z",
     "updated_at": "2016-07-19T23:13:10.515Z",
+    "title": "Re: Project kickoff!",
     "type": "Client::Reply",
     "url": "https://3.basecampapi.com/195539477/buckets/2085958499/client/replies/9007199254741656.json",
     "app_url": "https://3.basecamp.com/195539477/buckets/2085958499/client/correspondences/9007199254741655#__recording_9007199254741656",
+    "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7CEkiCGdpZAY6BkVUSSIuZ2lkOi8vYmMzL1JlY29yZGluZy8xMDY0MDkxMjcwP2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg1yZWFkYWJsZQY7AFRJIg9leHBpcmVzX2F0BjsAVDA=--dbac34df24579b2b0a67afdee2a8d1f8c624b4e1.json",
     "parent": {
       "id": 9007199254741655,
       "title": "Project kickoff!",
@@ -80,9 +82,11 @@ Get a client reply
   "status": "active",
   "created_at": "2016-07-19T22:58:11.089Z",
   "updated_at": "2016-07-19T22:58:11.089Z",
+  "title": "Re: Project kickoff!",
   "type": "Client::Reply",
   "url": "https://3.basecampapi.com/195539477/buckets/2085958499/client/replies/9007199254741660.json",
   "app_url": "https://3.basecamp.com/195539477/buckets/2085958499/client/correspondences/9007199254741655#__recording_9007199254741660",
+  "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7CEkiCGdpZAY6BkVUSSIuZ2lkOi8vYmMzL1JlY29yZGluZy8xMDY0MDkxMjc0P2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg1yZWFkYWJsZQY7AFRJIg9leHBpcmVzX2F0BjsAVDA=--9ba5e73e9afb793b197db3730ec802eea14232cc.json",
   "parent": {
     "id": 9007199254741655,
     "title": "Project kickoff!",

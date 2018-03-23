@@ -24,9 +24,11 @@ Get Campfires
     "status": "active",
     "created_at": "2016-04-22T18:23:41.933Z",
     "updated_at": "2016-07-19T16:46:50.302Z",
+    "title": "Campfire"
     "type": "Chat::Transcript",
     "url": "https://3.basecampapi.com/195539477/buckets/2085958496/chats/9007199254741043.json",
     "app_url": "https://3.basecamp.com/195539477/buckets/2085958496/chats/9007199254741043",
+    "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7CEkiCGdpZAY6BkVUSSIuZ2lkOi8vYmMzL1JlY29yZGluZy8xMDY0MDkwNzE2P2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg1yZWFkYWJsZQY7AFRJIg9leHBpcmVzX2F0BjsAVDA=--8916ab722ffa94d313bdc67ccdfeda12754d9de3.json",
     "bucket": {
       "id": 2085958496,
       "name": "Honcho Design Newsroom",
@@ -38,12 +40,13 @@ Get Campfires
       "name": "Victor Cooper",
       "email_address": "victor@honchodesign.com",
       "personable_type": "User",
-      "title": null,
+      "title": "Chief Strategist",
       "created_at": "2016-07-19T16:46:34.338Z",
       "updated_at": "2016-07-19T16:46:38.579Z",
       "admin": true,
       "owner": true,
-      "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBEcqCjw=--c632b967cec296b87363a697a67a87f9cc1e5b45/avatar-64-x4",
+      "time_zone": "America/Chicago",
+      "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBMpkkT4=--86eedd88a242694f40fc5d74fd928eef41fcc219/avatar-64-x4?v=1",
       "company": {
         "id": 1033447817,
         "name": "Honcho Design"
@@ -74,9 +77,11 @@ Get a Campfire
   "status": "active",
   "created_at": "2016-04-22T18:23:41.933Z",
   "updated_at": "2016-07-19T16:46:50.302Z",
+  "title": "Campfire",
   "type": "Chat::Transcript",
   "url": "https://3.basecampapi.com/195539477/buckets/2085958496/chats/9007199254741043.json",
   "app_url": "https://3.basecamp.com/195539477/buckets/2085958496/chats/9007199254741043",
+  "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7CEkiCGdpZAY6BkVUSSIuZ2lkOi8vYmMzL1JlY29yZGluZy8xMDY0MDkwNjQ5P2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg1yZWFkYWJsZQY7AFRJIg9leHBpcmVzX2F0BjsAVDA=--affb988ddf1f1c2753051aa72b18707fe23e4dd7.json",
   "bucket": {
     "id": 2085958496,
     "name": "Honcho Design Newsroom",
@@ -126,9 +131,11 @@ Get Campfire lines
     "status": "active",
     "created_at": "2016-04-25T21:30:41.933Z",
     "updated_at": "2016-04-25T21:30:41.933Z",
+    "title": "I'm hungry",
     "type": "Chat::Lines::Text",
     "url": "https://3.basecampapi.com/195539477/buckets/2085958496/chats/9007199254741043/lines/9007199254741125.json",
     "app_url": "https://3.basecamp.com/195539477/buckets/2085958496/chats/9007199254741043@9007199254741125",
+    "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7CEkiCGdpZAY6BkVUSSIuZ2lkOi8vYmMzL1JlY29yZGluZy8xMDY0MDkwNzMwP2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg1yZWFkYWJsZQY7AFRJIg9leHBpcmVzX2F0BjsAVDA=--b700ba3f2004806497dd0594a62970aebef6ab3f.json",
     "parent": {
       "id": 9007199254741043,
       "title": "Campfire",

@@ -25,9 +25,11 @@ Get comments
     "status": "active",
     "created_at": "2016-07-19T21:32:42.627Z",
     "updated_at": "2016-07-19T21:32:42.627Z",
+    "title": "Re: We won Leto!",
     "type": "Comment",
     "url": "https://3.basecampapi.com/195539477/buckets/2085958498/comments/9007199254741444.json",
     "app_url": "https://3.basecamp.com/195539477/buckets/2085958498/messages/9007199254741443#__recording_9007199254741444",
+    "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7CEkiCGdpZAY6BkVUSSIuZ2lkOi8vYmMzL1JlY29yZGluZy8xMDY0MDkxMDY4P2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg1yZWFkYWJsZQY7AFRJIg9leHBpcmVzX2F0BjsAVDA=--8c119c5f0532a854e2d2d84ea0ffeb5462277bda.json",
     "parent": {
       "id": 9007199254741443,
       "title": "We won Leto!",
@@ -80,9 +82,11 @@ Get a comment
   "status": "active",
   "created_at": "2016-07-19T22:54:43.939Z",
   "updated_at": "2016-07-19T22:54:43.939Z",
+  "title": "Re: We won Leto!",
   "type": "Comment",
   "url": "https://3.basecampapi.com/195539477/buckets/2085958498/comments/9007199254741453.json",
   "app_url": "https://3.basecamp.com/195539477/buckets/2085958498/messages/9007199254741443#__recording_9007199254741453",
+  "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7CEkiCGdpZAY6BkVUSSIuZ2lkOi8vYmMzL1JlY29yZGluZy8xMDY0MDkxMDY4P2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg1yZWFkYWJsZQY7AFRJIg9leHBpcmVzX2F0BjsAVDA=--8c119c5f0532a854e2d2d84ea0ffeb5462277bda.json",
   "parent": {
     "id": 9007199254741443,
     "title": "We won Leto!",
