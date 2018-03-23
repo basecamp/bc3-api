@@ -95,7 +95,7 @@ All payloads follow the same JSON format:
 }
 ```
 
-As you'll note, the recording format is the basic generic format that all other content endpoints share, with the addition of a title and content field. This format won't include as many details about the recording as other specific endpoints return. For example, for a [todo][2], this won't include fields such as `description`, `completed` or `assignees`.
+As you'll note, the recording format is the basic generic format that all other content endpoints share, with the addition of a `content` field. This format won't include as many details about the recording as other specific endpoints return. For example, for a [todo][2], this won't include fields such as `description`, `completed` or `assignees`.
 
 The payload for copy/move events will also include details on the copied recording under `"copy"`, following the basic recording format just described. For example:
 ```json
