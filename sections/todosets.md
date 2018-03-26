@@ -24,6 +24,7 @@ To get the to-do set ID for a project, see the [Get a project][1] endpoint's `do
   "created_at": "2016-09-28T14:25:24.543Z",
   "updated_at": "2016-09-28T14:25:52.344Z",
   "title": "To-dos",
+  "inherits_status": true,
   "type": "Todoset",
   "url": "https://3.basecampapi.com/195539477/buckets/2085958498/todosets/9007199254741445.json",
   "app_url": "https://3.basecamp.com/195539477/buckets/2085958498/todosets/9007199254741445",

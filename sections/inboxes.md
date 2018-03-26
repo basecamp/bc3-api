@@ -24,6 +24,7 @@ To get the inbox ID for a project, see the [Get a project][1] endpoint's `dock` 
   "created_at": "2016-09-20T14:32:33.236Z",
   "updated_at": "2016-09-20T14:32:58.127Z",
   "title": "Email Forwards",
+  "inherits_status": true,
   "type": "Inbox",
   "url": "https://3.basecampapi.com/195539477/buckets/2085958496/inboxes/9007199254741055.json",
   "app_url": "https://3.basecamp.com/195539477/buckets/2085958496/inboxes/9007199254741055",

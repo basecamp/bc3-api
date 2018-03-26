@@ -1,3 +1,4 @@
+
 Question answers
 ================
 
@@ -21,6 +22,7 @@ Get question answers
     "created_at": "2016-07-19T22:53:41.446Z",
     "updated_at": "2016-07-19T22:53:41.446Z",
     "title": "Answer to “What did you work on today?”",
+    "inherits_status": true,
     "type": "Question::Answer",
     "url": "https://3.basecampapi.com/195539477/buckets/2085958498/question_answers/9007199254741640.json",
     "app_url": "https://3.basecamp.com/195539477/buckets/2085958498/questions/9007199254741454/answers/2016-07-19#__recording_9007199254741640",
@@ -80,6 +82,7 @@ Get a question answer
   "created_at": "2016-07-19T22:53:41.446Z",
   "updated_at": "2016-07-19T22:53:41.446Z",
   "title": "Answer to “What did you work on today?”",
+  "inherits_status": true,
   "type": "Question::Answer",
   "url": "https://3.basecampapi.com/195539477/buckets/2085958498/question_answers/9007199254741640.json",
   "app_url": "https://3.basecamp.com/195539477/buckets/2085958498/questions/9007199254741454/answers/2016-07-19#__recording_9007199254741640",

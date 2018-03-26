@@ -24,6 +24,7 @@ To get the schedule ID for a project, see the [Get a project][1] endpoint's `doc
   "created_at": "2016-07-19T16:47:30.623Z",
   "updated_at": "2016-07-19T16:49:32.877Z",
   "title": "Schedule",
+  "inherits_status": true,
   "type": "Schedule",
   "url": "https://3.basecampapi.com/195539477/buckets/2085958498/schedules/9007199254741436.json",
   "app_url": "https://3.basecamp.com/195539477/buckets/2085958498/schedules/9007199254741436",

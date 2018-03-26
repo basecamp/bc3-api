@@ -23,6 +23,7 @@ To get the questionnaire ID for a project, see the [Get a Project][project] endp
   "created_at": "2016-07-19T16:47:30.653Z",
   "updated_at": "2016-07-19T18:24:05.737Z",
   "title": "Automatic Check-ins",
+  "inherits_status": true,
   "type": "Questionnaire",
   "url": "https://3.basecampapi.com/195539477/buckets/2085958498/questionnaires/9007199254741437.json",
   "app_url": "https://3.basecamp.com/195539477/buckets/2085958498/questionnaires/9007199254741437",

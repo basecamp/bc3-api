@@ -23,6 +23,7 @@ To get the message board ID for a project, see the [Get a project][1] endpoint's
   "status": "active",
   "created_at": "2016-07-19T16:47:30.572Z",
   "updated_at": "2016-07-19T16:47:57.382Z",
+  "inherits_status": true,
   "type": "Message::Board",
   "url": "https://3.basecampapi.com/195539477/buckets/2085958498/message_boards/9007199254741434.json",
   "app_url": "https://3.basecamp.com/195539477/buckets/2085958498/message_boards/9007199254741434",
