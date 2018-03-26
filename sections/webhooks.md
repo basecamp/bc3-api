@@ -42,6 +42,8 @@ All payloads follow the same JSON format:
     "status": "active",
     "created_at": "2016-07-20T00:21:41.446Z",
     "updated_at": "2016-07-19T21:29:08.739Z",
+    "title": "Welcome to Basecamp!",
+    "inherits_status": true,
     "type": "Message",
     "url": "https://3.basecampapi.com/195539477/buckets/2085958498/messages/9007199254741622.json",
     "app_url": "https://3.basecamp.com/195539477/buckets/2085958498/messages/9007199254741622",
@@ -74,7 +76,6 @@ All payloads follow the same JSON format:
       "time_zone": "America/Chicago",
       "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBF0qCjw=--21513efb0cf6f64f7a0720b2c56ac6145ae6680c/avatar-64-x4"
     },
-    "title": "Welcome to Basecamp!",
     "content": "<div>Hey all, here are some high res shots of the laptop hardware that we can use. These are not public yet, so be careful with how you share them. We don't want any leaks at all with these images.</div>"
   },
   "creator": {
@@ -154,6 +155,7 @@ The payload for copy/move events will also include details on the copied recordi
       "created_at":"2018-03-16T12:17:04.938+01:00",
       "updated_at":"2018-03-19T09:31:12.753+01:00",
       "title":"Go cutting edge: iOS8 and Android 4.5 only",
+      "inherits_status": true,
       "type":"Todo",
       "url":"https://3.basecampapi.com/195539477/buckets/68833643212/todos/968814335.json",
       "app_url":"https://3.basecamp.com/195539477/buckets/68833643212/todos/968814335",
@@ -216,7 +218,7 @@ The payload for copy/move events will also include details on the copied recordi
 After sending the payload, Basecamp will record the interaction with your application as a delivery record that can be introspected for debugging.
 The delivery record includes the full request and response that occurred for that specific event relay.
 
-###### Events triggering webhooks
+##### Events triggering webhooks
 
 Basecamp will send the following lifecycle events for all types, here using message as an example:
 
@@ -248,7 +250,13 @@ Questions:
 - question_paused
 - question_resumed
 
-Endpoints:
+
+###### Inherited status
+
+Note that some events triggered for a recording will also be triggered for its children. For example, when a message is archived or trashed, so are its comments. To differentiate between a recording that changed its status because of an action performed directly on it vs. an action performed on the parent, use `inherits_status` attribute. This indicates whether a recording's non-active status is inherited from its parent.
+
+
+###### Endpoints:
 
 - [Get webhooks](#get-webhooks)
 - [Get a webhook](#get-a-webhook)
@@ -330,6 +338,8 @@ The recent deliveries array will contain the 25 most recent delivery exchanges, 
           "status": "active",
           "created_at": "2016-08-05T15:02:19.588-05:00",
           "updated_at": "2016-08-26T13:36:07.340-05:00",
+          "title": "Add Leto folks to Basecamp",
+          "inherits_status": true,
           "type": "Todo",
           "url": "http://bc3-api.dev/195539477/buckets/2085958495/todos/9007199254741036.json",
           "app_url": "http://bc3.dev/195539477/buckets/2085958495/todos/9007199254741036",
@@ -345,7 +355,6 @@ The recent deliveries array will contain the 25 most recent delivery exchanges, 
             "name": "Annie's Corner",
             "type": "Project"
           },
-          "title": "Add Leto folks to Basecamp",
           "content": "Add Leto folks to Basecamp"
         }
       }
