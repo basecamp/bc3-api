@@ -31,6 +31,7 @@ Get documents
     "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7CEkiCGdpZAY6BkVUSSIuZ2lkOi8vYmMzL1JlY29yZGluZy8xMDY0MDkwODA4P2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg1yZWFkYWJsZQY7AFRJIg9leHBpcmVzX2F0BjsAVDA=--aad26f345c9b02d4589e1770cb291c60a701fef1.json",
     "comments_count": 1,
     "comments_url": "https://3.basecampapi.com/195539477/buckets/2085958496/recordings/9007199254741197/comments.json",
+    "position": 1,
     "parent": {
       "id": 9007199254741202,
       "title": "HR Stuff",
@@ -94,6 +95,7 @@ Get a document
   "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7CEkiCGdpZAY6BkVUSSIuZ2lkOi8vYmMzL1JlY29yZGluZy8xMDY0MDkxNTM0P2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg1yZWFkYWJsZQY7AFRJIg9leHBpcmVzX2F0BjsAVDA=--fc4f56a3012071774da8748d168ede347d927e2e.json",
   "comments_count": 0,
   "comments_url": "https://3.basecampapi.com/195539477/buckets/2085958499/recordings/9007199254741716/comments.json",
+  "position": 2,
   "parent": {
     "id": 1064091394,
     "title": "Docs & Files",

@@ -29,6 +29,7 @@ To get the schedule ID for a project, see the [Get a project][1] endpoint's `doc
   "url": "https://3.basecampapi.com/195539477/buckets/2085958498/schedules/9007199254741436.json",
   "app_url": "https://3.basecamp.com/195539477/buckets/2085958498/schedules/9007199254741436",
   "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7CEkiCGdpZAY6BkVUSSIuZ2lkOi8vYmMzL1JlY29yZGluZy8xMDY0MDkxMDUyP2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg1yZWFkYWJsZQY7AFRJIg9leHBpcmVzX2F0BjsAVDA=--afe4247e9002cf93fd17af00155adeae73b3a726.json",
+  "position": 4,
   "bucket": {
     "id": 2085958498,
     "name": "The Leto Laptop",

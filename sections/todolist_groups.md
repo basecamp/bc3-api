@@ -33,6 +33,7 @@ _Optional query parameters_:
     "app_url": "https://3.basecamp.com/195539477/buckets/2085958497/todolists/1046491627",
     "comments_count": 0,
     "comments_url": "https://3.basecampapi.com/195539477/buckets/2085958497/recordings/1046491627/comments.json",
+    "position": 1,
     "parent": {
       "id": 1046491626,
       "title": "Ping pong tournament",
@@ -82,6 +83,7 @@ _Optional query parameters_:
     "app_url": "https://3.basecamp.com/195539477/buckets/2085958497/todolists/1046491630",
     "comments_count": 0,
     "comments_url": "https://3.basecampapi.com/195539477/buckets/2085958497/recordings/1046491630/comments.json",
+    "position": 2,
     "parent": {
       "id": 1046491626,
       "title": "Ping pong tournament",
@@ -151,6 +153,7 @@ include a groups_url in its response, while a group will have a group_position_u
   "app_url": "https://3.basecamp.com/195539477/buckets/2085958497/todolists/1046491627",
   "comments_count": 0,
   "comments_url": "https://3.basecampapi.com/195539477/buckets/2085958497/recordings/1046491627/comments.json",
+  "position": 1,
   "parent": {
     "id": 1046491626,
     "title": "Ping pong tournament",

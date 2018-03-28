@@ -38,6 +38,7 @@ _Optional query parameters_:
     "app_url": "https://3.basecamp.com/195539477/buckets/2085958499/todos/1064091228",
     "comments_count": 0,
     "comments_url": "https://3.basecampapi.com/195539477/buckets/2085958499/recordings/1064091228/comments.json",
+    "position": 1,
     "parent": {
       "id": 1064091227,
       "title": "Strategy ideas",
