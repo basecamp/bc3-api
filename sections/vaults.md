@@ -30,6 +30,7 @@ Get vaults
     "url": "https://3.basecampapi.com/195539477/buckets/2085958496/vaults/9007199254741202.json",
     "app_url": "https://3.basecamp.com/195539477/buckets/2085958496/vaults/9007199254741202",
     "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7CEkiCGdpZAY6BkVUSSIuZ2lkOi8vYmMzL1JlY29yZGluZy8xMDY0MDkwODEzP2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg1yZWFkYWJsZQY7AFRJIg9leHBpcmVzX2F0BjsAVDA=--664db16bee61b4238dcef9ae6e1f48cb51b70c69.json",
+    "position": 1,
     "parent": {
       "id": 9007199254741052,
       "title": "Docs & Files",
@@ -96,6 +97,7 @@ Get a vault
   "url": "https://3.basecampapi.com/195539477/buckets/2085958496/vaults/9007199254741052.json",
   "app_url": "https://3.basecamp.com/195539477/buckets/2085958496/vaults/9007199254741052",
   "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7CEkiCGdpZAY6BkVUSSIuZ2lkOi8vYmMzL1JlY29yZGluZy8xMDY0MDkwNjU2P2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg1yZWFkYWJsZQY7AFRJIg9leHBpcmVzX2F0BjsAVDA=--4d5758765159e49b7d1a4076c78cbcc3a70faf4c.json",
+  "position": 6,
   "bucket": {
     "id": 2085958496,
     "name": "Honcho Design Newsroom",
