@@ -9,7 +9,7 @@ Endpoints:
 - [Update a to-do](#update-a-to-do)
 - [Complete a to-do](#complete-a-to-do)
 - [Uncomplete a to-do](#uncomplete-a-to-do)
-- [Reposition a to-do](#move-a-to-do)
+- [Reposition a to-do](#reposition-a-to-do)
 - [Trash a to-do][1]
 
 Get to-dos
