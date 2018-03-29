@@ -113,7 +113,7 @@ The payload for copy/move events will also include some details on the copied re
       "app_url":"https://3.basecamp.com/195539477/buckets/2085958499/todos/981721240",
       "bucket":{
          "id":2085958499,
-      },
+      }
    },
    "recording":{
       "id":968814335,
