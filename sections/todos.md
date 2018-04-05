@@ -261,6 +261,7 @@ Update a to-do
 This endpoint will return `200 OK` with the current JSON representation of the to-do if the update was a success. See the [Get a to-do](#get-a-to-do) endpoint for more info on the payload.
 
 **Required parameters**: Pass _all existing parameters_ in addition to those being updated. Omitting a parameter will clear its value, for example, empty/missing `assignee_ids` clears existing assignees.
+* `content` for what the to-do is for. This one is always required, it can't be omitted as it can't be blank.
 * `description` - containing information about the to-do. See our [Rich text guide][3] for what HTML tags allowed.
 * `assignee_ids` - an array of people that will be assigned to this to-do. Please see the [Get people][4] endpoints to retrieve them.
 * `completion_subscriber_ids` - an array of people that will be notified on to-do completion. Please see the [Get people][4] endpoints to retrieve them. 
