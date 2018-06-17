@@ -1,16 +1,16 @@
 Chatbots
 ========
 
-There are two types of chatbots in Basecamp: Those that are interactive and those that only post content on their own. 
+There are two types of chatbots in Basecamp: Those that are interactive and those that only post content on their own.
 Interactive chatbots can be queried or commanded by anyone in any room. You can even start a ping conversation with one.
 
 Both types of chatbots are authenticated differently from how the rest of the API works. There's no OAuth exchange to perform.
 Interactive chatbots have their queries and commands POST'ed directly to them with a piece of JSON. Whatever they return to
 that POST is inserted into the room where the conversation is happening.
 
-Alternatively, if a chatbot needs to post on their own, there's a special key'ed URL that's all that is needed. It's returned 
-as `lines_url` when creating a chatbot. See the [Create a chatbot](#create-a-chatbot) endpoint for more info. If you have that 
-URL, you can post content as that chatbot to that room. But what you can't do is read anything from the room. This is not a 
+Alternatively, if a chatbot needs to post on their own, there's a special key'ed URL that's all that is needed. It's returned
+as `lines_url` when creating a chatbot. See the [Create a chatbot](#create-a-chatbot) endpoint for more info. If you have that
+URL, you can post content as that chatbot to that room. But what you can't do is read anything from the room. This is not a
 streaming service. It's intended purely for request/reply and blind reply interactions.
 
 When an interactive chatbot is invoked, it'll receive a JSON payload like this:
@@ -44,9 +44,9 @@ When an interactive chatbot is invoked, it'll receive a JSON payload like this:
 You can use the information in the creator block to enforce permission controls. If you have a deploy bot, then maybe only certain
 people, with pre-specified IDs, will be able to interact with it.
 
-If the interactive chatbot is able to provide a response right away, it can, as stated above, just return that as part 
-of a text/html content-typed response with status code 200. This response has the same format as all other rich text in Basecamp, 
-but also accepts these additional tags: `table tr td th thead tbody details summary`. The pair of details/summary is particularly 
+If the interactive chatbot is able to provide a response right away, it can, as stated above, just return that as part
+of a text/html content-typed response with status code 200. This response has the same format as all other rich text in Basecamp,
+but also accepts these additional tags: `table tr td th thead tbody details summary`. The pair of details/summary is particularly
 useful for providing large chunks of information hidden behind a show/hide.
 
 Here are a few examples of return content or content sent to the callback URL from what we use at Basecamp:
@@ -190,7 +190,7 @@ Create a chatbot
 
 * `POST /buckets/1/chats/1/integrations.json` creates a chatbot on the account and returns the new chatbot with the lines URL from the project with ID `1`.
 
-**Required parameters**: `service_name` for the chatbot name, which will be used to invoke queries and commands on interactive bots. 
+**Required parameters**: `service_name` for the chatbot name, which will be used to invoke queries and commands on interactive bots.
 No spaces, emoji or non-word characters are allowed, as you need to be able to call it like `!tally myCommand`
 _Optional parameters_: `command_url` for the HTTPS url that Basecamp should call when the bot is addressed.
 
@@ -218,7 +218,7 @@ Update a chatbot
 
 * `PUT /buckets/1/chats/1/integrations/3.json` allows changing the service name and commandURL of the chatbot with an ID of `3` in the project with ID `1`.
 
-**Required parameters**: `service_name` for the chatbot name, which will be used to invoke queries and commands on interactive bots. 
+**Required parameters**: `service_name` for the chatbot name, which will be used to invoke queries and commands on interactive bots.
 No spaces, emoji or non-word characters are allowed, as you need to be able to call it like `!tally myCommand`
 _Optional parameters_: `command_url` for the HTTPS url that Basecamp should call when the bot is addressed.
 
@@ -260,7 +260,9 @@ Create a line
 
 * `POST /integrations/$CHATBOT_KEY/buckets/1/chats/2/lines.json` creates a line in the Campfire with ID `2` in the project with ID `1`.
 
-**Required parameters**: `content` as the plain text body for the Campfire line.
+**Required parameters**: `content` as the body for the Campfire line. See our [Rich text guide][1] for what HTML tags are allowed.
+
+In addition to the tags permitted for all rich text, the following tags are permitted for chatbot lines: `table`, `tr`, `td`, `th`, `thead`, `tbody`, `details`, and `summary`.
 
 This endpoint will return `201 Created` if the creation was a success.
 
@@ -278,3 +280,5 @@ This endpoint will return `201 Created` if the creation was a success.
 curl -s -H "Content-Type: application/json" -d '{"content":"Good morning"}' \
   https://3.basecampapi.com/$ACCOUNT_ID/integrations/$CHATBOT_KEY/buckets/1/chats/2/lines.json
 ```
+
+[1]: https://github.com/basecamp/bc3-api/blob/master/sections/rich_text.md
