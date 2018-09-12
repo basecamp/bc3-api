@@ -14,6 +14,7 @@ A webhook can be subscribed to updates from the types detailed below. The defaul
 - Client::Approval::Response
 - Client::Forward
 - Client::Reply
+- CloudFile
 - Document
 - GoogleDocument
 - Inbox::Forward
@@ -26,7 +27,7 @@ A webhook can be subscribed to updates from the types detailed below. The defaul
 - Upload
 - Vault
 
-(Note that chat isn't amongst the options. Check our [chat bot API][1] for that.)
+Note that chat isn't amongst the options. Check our [chat bot API][1] for that. Also, `CloudFile` type corresponds to files linked from any cloud provider different from Google Drive (which has its separate `GoogleDocument` type). 
 
 Whenever an event is created for any of the types that webhook was created to match, Basecamp will call your payload URL.
 All payloads follow the same JSON format:
