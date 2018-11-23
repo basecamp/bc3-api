@@ -191,6 +191,12 @@ Update a to-do list
 
 This endpoint will return `200 OK` with the current JSON representation of the to-do list if the update was a success. See the [Get a to-do list](#get-a-to-do-list) endpoint for more info on the payload.
 
+**Required parameters**: Pass all existing parameters in addition to those being updated. Omitting a parameter will clear its value.
+
+* `name` of the to-do list. This one is always required, it can't be omitted as it can't be blank.
+
+* `description` containing information about the to-do list. See our [Rich text guide][rich] for what HTML tags are allowed.
+
 ###### Example JSON Request
 
 ``` json
