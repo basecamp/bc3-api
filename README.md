@@ -144,6 +144,7 @@ API endpoints
 - [Client approvals](https://github.com/basecamp/bc3-api/blob/master/sections/client_approvals.md#client-approvals)
 - [Client correspondences](https://github.com/basecamp/bc3-api/blob/master/sections/client_correspondences.md#client-correspondences)
 - [Client replies](https://github.com/basecamp/bc3-api/blob/master/sections/client_replies.md#client-replies)
+- [Client visibility](https://github.com/basecamp/bc3-api/blob/master/sections/client_visibility.md#client-visibility)
 - [Comments](https://github.com/basecamp/bc3-api/blob/master/sections/comments.md#comments)
 - [Documents](https://github.com/basecamp/bc3-api/blob/master/sections/documents.md#documents)
 - [Events](https://github.com/basecamp/bc3-api/blob/master/sections/events.md#events)
