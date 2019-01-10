@@ -111,6 +111,10 @@ Get a schedule entry
 
 * `GET /buckets/1/schedule_entries/2.json` will return the schedule entry with an ID of `2` in the project with an ID of `1`.
 
+Note: this endpoint redirects to the first individual occurrence of the entry, for **recurring schedule entries**. It's also possible to access a recurring schedule entry via any of the individual occurrences: `GET /buckets/1/schedule_entries/2/occurrences/20190218.json` will return the occurrence for a recurring schedule entry with an ID of `2`, happening on `2019-02-18`, in the project with an ID of `1`. It'll return 404 for invalid occurrences.
+
+Note:
+
 ###### Example JSON Response
 <!-- START GET /buckets/1/schedule_entries/2.json -->
 ```json
@@ -187,6 +191,23 @@ Get a schedule entry
 }
 ```
 <!-- END GET /buckets/1/schedule_entries/2.json -->
+
+Recurring schedule entries will include an additional `recurrence_schedule` attribute. For example:
+
+```json
+"recurrence_schedule": {
+    "frequency": "every_month",
+    "days": [
+        1
+    ],
+    "hour": 10,
+    "minute": 30,
+    "week_instance": 3,
+    "start_date": "2019-02-18",
+    "end_date": "2019-10-25"
+}
+```
+
 ###### Copy as cURL
 
 ``` shell
