@@ -16,7 +16,6 @@ What's different?
 If you've used a previous version of the Basecamp API, you need to adapt your integration code. Here are some notable changes for the Basecamp 3 API:
 
 - We require OAuth 2.0 for [authentication](#authentication)—no more Basic authentication
-- All requests must end in `.json`
 - [Pagination](#pagination) is performed via the `Link` and `X-Total-Count` headers
 
 
@@ -81,9 +80,9 @@ If you don't include a `User-Agent` header, you'll get a `400 Bad Request` respo
 JSON only
 ---------
 
-We use JSON for all API data. The style is no root element and snake\_case for object keys. This means that you have to send the `Content-Type` header `Content-Type: application/json; charset=utf-8` when you're POSTing or PUTing data into Basecamp. All API URLs end in `.json` to indicate that they return JSON.
+We use JSON for all API data. The style is no root element and snake\_case for object keys. This means that you have to send the `Content-Type` header `Content-Type: application/json; charset=utf-8` when you're POSTing or PUTing data into Basecamp. All API URLs end in `.json` to indicate that they return JSON. Alternatively you can send `Accept: application/json`. 
 
-You'll receive a `415 Unsupported Media Type` response code if you don't include the `Content-Type` header or you try to use a different URL suffix than `.json`.
+You'll receive a `415 Unsupported Media Type` response code if you don't include the `Content-Type` header.
 
 
 Pagination
