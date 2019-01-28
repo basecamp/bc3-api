@@ -59,7 +59,72 @@ Get a Template
   "name": "Honcho Onboarding",
   "description": "Getting started on the right foot",
   "url": "https://3.basecampapi.com/195539477/templates/2085958501.json",
-  "app_url": "https://3.basecamp.com/195539477/templates/2085958501"
+  "app_url": "https://3.basecamp.com/195539477/templates/2085958501",
+  "dock": [
+      {
+          "id": 548670657,
+          "title": "Campfire",
+          "name": "chat",
+          "enabled": true,
+          "position": 1,
+          "url": "https://3.basecampapi.com/195539477/buckets/2085958501/chats/548670657.json",
+          "app_url": "https://3.basecamp.com/195539477/buckets/2085958501/chats/548670657"
+      },
+      {
+          "id": 548670658,
+          "title": "Message Board",
+          "name": "message_board",
+          "enabled": true,
+          "position": 2,
+          "url": "https://3.basecampapi.com/195539477/buckets/2085958501/message_boards/548670658.json",
+          "app_url": "https://3.basecamp.com/195539477/buckets/2085958501/message_boards/548670658"
+      },
+      {
+          "id": 548670659,
+          "title": "To-dos",
+          "name": "todoset",
+          "enabled": true,
+          "position": 3,
+          "url": "https://3.basecampapi.com/195539477/buckets/2085958501/todosets/548670659.json",
+          "app_url": "https://3.basecamp.com/195539477/buckets/2085958501/todosets/548670659"
+      },
+      {
+          "id": 548670661,
+          "title": "Schedule",
+          "name": "schedule",
+          "enabled": true,
+          "position": 4,
+          "url": "https://3.basecampapi.com/195539477/buckets/2085958501/schedules/548670661.json",
+          "app_url": "https://3.basecamp.com/195539477/buckets/2085958501/schedules/548670661"
+      },
+      {
+          "id": 548670662,
+          "title": "Automatic Check-ins",
+          "name": "questionnaire",
+          "enabled": true,
+          "position": 5,
+          "url": "https://3.basecampapi.com/195539477/buckets/2085958501/questionnaires/548670662.json",
+          "app_url": "https://3.basecamp.com/195539477/buckets/2085958501/questionnaires/548670662"
+      },
+      {
+          "id": 548670666,
+          "title": "Docs & Files",
+          "name": "vault",
+          "enabled": true,
+          "position": 6,
+          "url": "https://3.basecampapi.com/195539477/buckets/2085958501/vaults/548670666.json",
+          "app_url": "https://3.basecamp.com/195539477/buckets/2085958501/vaults/548670666"
+      },
+      {
+          "id": 548670667,
+          "title": "Email Forwards",
+          "name": "inbox",
+          "enabled": false,
+          "position": null,
+          "url": "https://3.basecampapi.com/195539477/buckets/2085958501/inboxes/548670667.json",
+          "app_url": "https://3.basecamp.com/195539477/buckets/2085958501/inboxes/548670667"
+      }
+  ]  
 }
 ```
 <!-- END GET /templates/1.json -->
