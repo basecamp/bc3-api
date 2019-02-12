@@ -19,7 +19,9 @@ Get to-dos
 
 _Optional query parameters_:
 
-* `status` - when set to `archived` or `trashed`, will return archived or trashed to-dos that are in this list
+This endpoint without any parameters returns only active, pending (i.e. not completed) to-dos. 
+
+* `status` - when set to `archived` or `trashed`, will return archived or trashed to-dos that are in this list, including both pending and completed.
 * `completed` - when set to `true`, will only return to-dos that are completed. Can be combined with the `status` parameter.
 
 ###### Example JSON Response
