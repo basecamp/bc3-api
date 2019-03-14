@@ -148,6 +148,7 @@ API endpoints
 - [Documents](https://github.com/basecamp/bc3-api/blob/master/sections/documents.md#documents)
 - [Events](https://github.com/basecamp/bc3-api/blob/master/sections/events.md#events)
 - [Forwards](https://github.com/basecamp/bc3-api/blob/master/sections/forwards.md#forwards)
+- [Inbox replies](https://github.com/basecamp/bc3-api/blob/master/sections/inbox_replies.md#inbox-replies)
 - [Inboxes](https://github.com/basecamp/bc3-api/blob/master/sections/inboxes.md#inboxes)
 - [Message Boards](https://github.com/basecamp/bc3-api/blob/master/sections/message_boards.md#message-boards)
 - [Message Types](https://github.com/basecamp/bc3-api/blob/master/sections/message_types.md#message-types)

@@ -6,7 +6,7 @@ Inbox replies are nested under the recording ID of a [forward][forwards].
 Endpoints:
 
 - [Get inbox replies](#get-inbox-replies)
-- [Get an inbox reply](#get-a-inbox-reply)
+- [Get an inbox reply](#get-an-inbox-reply)
 
 Get inbox replies
 -------------------
