@@ -11,7 +11,7 @@ Endpoints:
 Get message board
 -----------------
 
-* `GET /buckets/1/message_boards/2.json` will return the message board for the project with an ID of `1`.
+* `GET /buckets/1/message_boards/2.json` will return the message board for the project with an ID of `1` and a message board ID of `2`.
 
 To get the message board ID for a project, see the [Get a project][1] endpoint's `dock` payload. To retrieve its messages, see the [Get messages][2] endpoint.
 
