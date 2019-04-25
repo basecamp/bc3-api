@@ -27,6 +27,7 @@ Get question answers
     "url": "https://3.basecampapi.com/195539477/buckets/2085958498/question_answers/9007199254741640.json",
     "app_url": "https://3.basecamp.com/195539477/buckets/2085958498/questions/9007199254741454/answers/2016-07-19#__recording_9007199254741640",
     "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7CEkiCGdpZAY6BkVUSSIuZ2lkOi8vYmMzL1JlY29yZGluZy8xMDY0MDkxMjU0P2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg1yZWFkYWJsZQY7AFRJIg9leHBpcmVzX2F0BjsAVDA=--06444efacad452ffc5fdd0fd0d27912f5697f29d.json",
+    "subscription_url": "https://3.basecampapi.com/195539477/buckets/2085958498/recordings/9007199254741640/subscription.json",
     "position": 5,
     "comments_count": 0,
     "comments_url": "https://3.basecampapi.com/195539477/buckets/2085958498/recordings/9007199254741640/comments.json",
@@ -88,6 +89,7 @@ Get a question answer
   "url": "https://3.basecampapi.com/195539477/buckets/2085958498/question_answers/9007199254741640.json",
   "app_url": "https://3.basecamp.com/195539477/buckets/2085958498/questions/9007199254741454/answers/2016-07-19#__recording_9007199254741640",
   "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7CEkiCGdpZAY6BkVUSSIuZ2lkOi8vYmMzL1JlY29yZGluZy8xMDY0MDkxMjU0P2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg1yZWFkYWJsZQY7AFRJIg9leHBpcmVzX2F0BjsAVDA=--06444efacad452ffc5fdd0fd0d27912f5697f29d.json",
+  "subscription_url": "https://3.basecampapi.com/195539477/buckets/2085958498/recordings/9007199254741640/subscription.json",
   "comments_count": 0,
   "comments_url": "https://3.basecampapi.com/195539477/buckets/2085958498/recordings/9007199254741640/comments.json",
   "parent": {
