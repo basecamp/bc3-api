@@ -223,13 +223,15 @@ Questions:
 Note that some events triggered for a recording will also be triggered for its children. For example, when a message is archived or trashed, so are its comments. To differentiate between a recording that changed its status because of an action performed directly on it vs. an action performed on the parent, use `inherits_status` attribute. This indicates whether a recording's non-active status is inherited from its parent.
 
 
-###### Endpoints:
+###### Endpoints
 
 - [Get webhooks](#get-webhooks)
 - [Get a webhook](#get-a-webhook)
 - [Create a webhook](#create-a-webhook)
 - [Update a webhook](#update-a-webhook)
 - [Destroy a webhook](#destroy-a-webhook)
+
+**Note:** client users aren't allowed to perform any of the webhook related actions, so calling these endpoints while being authenticated with a client user will get a `403 Forbidden` response. 
 
 Get webhooks
 ------------
