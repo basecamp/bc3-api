@@ -93,6 +93,14 @@ The Basecamp API will return an expanded representation similar to the following
 
 Be sure to provide an appropriate `Content-Type` header when creating image attachments. If the attachment's content type does not start with `image/`, it will be presented as a file instead of an image with a preview.
 
+### Image galleries
+You can also present image attachments grouped in a _gallery_. For this, you need to include the `presentation="gallery"` attribute to the `bc-attachment` element and they need to be inside their own container element, typically a `<div>`. That is:
+```
+<div>
+  <bc-attachment presentation="gallery" sgid="BAh7CEki..."></bc-attachment>
+  <bc-attachment presentation="gallery" sgid="BAh7CEki..."></bc-attachment>
+</div>
+```
 
 Appendix
 --------
