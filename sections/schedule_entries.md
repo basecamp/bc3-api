@@ -221,8 +221,8 @@ Create a schedule entry
 **Required parameters**:
 
 * `summary` - what this schedule entry is about
-* `starts_at` - timestamp for when this schedule entry begins
-* `ends_at` - timestamp for when this schedule entry ends
+* `starts_at` - date-time (ISO 8601) for when this schedule entry begins
+* `ends_at` - date-time (ISO 8601) for when this schedule entry ends
 
 _Optional parameters_:
 
