@@ -56,7 +56,7 @@ curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/99999
 Authentication
 --------------
 
-If you're making a public integration with Basecamp for others to enjoy, you must use OAuth 2.0. OAuth 2.0 allows users to authorize your application to use Basecamp on their behalf without having to copy/paste API tokens or touch sensitive login information.
+As mentioned above, to authenticate you must use OAuth 2.0. OAuth 2.0 allows users to authorize your application to use Basecamp on their behalf without having to copy/paste API tokens or touch sensitive login information.
 
 Read the [authentication guide](https://github.com/basecamp/api/blob/master/sections/authentication.md) to get started.
 
