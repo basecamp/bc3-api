@@ -243,7 +243,7 @@ Get webhooks
 [
   {
     "id": 9007199254741202,
-    "active": "true",
+    "active": true,
     "created_at": "2016-06-08T19:00:41.933Z",
     "updated_at": "2016-07-19T16:47:00.621Z",
     "payload_url": "https://example.com/endpoint",
@@ -280,7 +280,7 @@ The recent deliveries array will contain the 25 most recent delivery exchanges, 
 ```json
 {
 "id": 9007199254741202,
-"active": "true",
+"active": true,
 "created_at": "2016-06-08T19:00:41.933Z",
 "updated_at": "2016-07-19T16:47:00.621Z",
 "payload_url": "https://example.com/endpoint",
