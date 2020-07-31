@@ -1,7 +1,7 @@
 Comments
 ========
 
-To determine if a resource can be commented on, check for the presences of `comment_count` and `comments_url` attributes in its JSON response.
+To determine if a resource can be commented on, check for the presences of `comments_count` and `comments_url` attributes in its JSON response.
 
 Endpoints:
 
