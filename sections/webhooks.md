@@ -220,7 +220,7 @@ Questions:
 
 ###### Status propagation to children recordings
 
-Basecamp won't notify on changes that are automatically propagated to children recordings. For example, when archiving a project, all its contained recordings will get archived too. In this case, Basecamp will only notify of the change of status in the parent project, not on each of the contained items.
+Basecamp won't notify on changes that are automatically propagated to children recordings. For example, when archiving a project, all its contained recordings will get archived too. In this case, Basecamp will only notify the status change on the parent project, not on each of the contained items.
 
 ###### Endpoints
 
