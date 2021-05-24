@@ -218,10 +218,9 @@ Questions:
 - question_resumed
 
 
-###### Inherited status
+###### Status propagation to children recordings
 
-Note that some events triggered for a recording will also be triggered for its children. For example, when a message is archived or trashed, so are its comments. To differentiate between a recording that changed its status because of an action performed directly on it vs. an action performed on the parent, use `inherits_status` attribute. This indicates whether a recording's non-active status is inherited from its parent.
-
+Basecamp won't notify on changes that are automatically propagated to children recordings. For example, when archiving a project, all its contained recordings will get archived too. In this case, Basecamp will only notify the status change on the parent project, not on each of the contained items.
 
 ###### Endpoints
 
