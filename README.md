@@ -27,7 +27,7 @@ All URLs start with **`https://3.basecampapi.com/999999999/`**. URLs are HTTPS o
 To make a request for all the projects on your account, append the `projects` index path to the base URL to form something like `https://3.basecampapi.com/999999999/projects.json`. In cURL, it looks like this:
 
 ``` shell
-curl -H "Authorization: Bearer $ACCESS_TOKEN" -H 'User-Agent: MyApp (yourname@example.com)' https://3.basecampapi.com/999999999/projects.json
+curl -H "Authorization: Bearer $ACCESS_TOKEN" -A 'MyApp (yourname@example.com)' https://3.basecampapi.com/999999999/projects.json
 ```
 
 To create something, it's the same idea, but you also have to include the `Content-Type` header and the JSON data:
@@ -35,7 +35,7 @@ To create something, it's the same idea, but you also have to include the `Conte
 ``` shell
 curl -H "Authorization: Bearer $ACCESS_TOKEN" \
   -H 'Content-Type: application/json' \
-  -H 'User-Agent: MyApp (yourname@example.com)' \
+  -A 'User-Agent: MyApp (yourname@example.com)' \
   -d '{ "name": "My new project!" }' \
   https://3.basecampapi.com/999999999/projects.json
 ```
