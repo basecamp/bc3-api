@@ -154,8 +154,6 @@ _Optional parameters_:
 * `category_id` to set a type for the message. To get a list of all the message types for a project, see the [Get message types][5] endpoint. 
 * `subscriptions` an array of people IDs to be notified of the new message when it's posted and subscribed to it. If not present, all people on the project will be notified and subscribed.
 
-Note: 
-
 This endpoint will return `201 Created` with the current JSON representation of the message if the creation was a success. See the [Get a message](#get-a-message) endpoint for more info on the payload.
 
 ###### Example JSON Request
