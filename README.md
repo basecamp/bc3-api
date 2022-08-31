@@ -80,7 +80,7 @@ If you don't include a `User-Agent` header, you'll get a `400 Bad Request` respo
 JSON only
 ---------
 
-We use JSON for all API data. The style is no root element and snake\_case for object keys. This means that you have to send the `Content-Type` header `Content-Type: application/json; charset=utf-8` when you're POSTing or PUTing data into Basecamp. All API URLs end in `.json` to indicate that they return JSON. Alternatively you can send `Accept: application/json`. 
+We use JSON for all API data. The style is no root element and snake\_case for object keys. This means that you have to send the `Content-Type` header `Content-Type: application/json; charset=utf-8` when you're POSTing or PUTing data into Basecamp. All API URLs end in `.json` to indicate that they return JSON. Alternatively you can send `Accept: application/json`.
 
 You'll receive a `415 Unsupported Media Type` response code if you don't include the `Content-Type` header.
 
@@ -181,7 +181,7 @@ To add your application to our public list of Basecamp 3 integrations, go to [ht
 Getting Help
 ------------
 
-If you have a question about the API, please [open a support ticket](https://basecamp.com/support). 
+If you have a question about the API, please [open a support ticket](https://basecamp.com/support).
 
 
 Conduct
@@ -194,9 +194,3 @@ License
 -------
 
 These API docs are licensed under [Creative Commons (CC BY-SA 4.0)](http://creativecommons.org/licenses/by-sa/4.0/). Please share, remix, and distribute as you see fit.
-
----
-
-If you have a specific feature request or find a bug, [please open a GitHub issue](https://github.com/basecamp/bc3-api/issues/new). We encourage you to fork these docs for local reference and happily accept pull requests with improvements.
-
-To talk with us and other developers about the API, [post a question on StackOverflow](http://stackoverflow.com/questions/ask) tagged `basecamp`. If you need help from us directly, please [open a support ticket](https://basecamp.com/support).
