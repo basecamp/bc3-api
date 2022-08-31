@@ -178,6 +178,11 @@ Listing your application
 
 To add your application to our public list of Basecamp 3 integrations, go to [https://github.com/basecamp/bc3-integrations](https://github.com/basecamp/bc3-integrations) and open a pull request.
 
+Getting Help
+------------
+
+If you have a question about the API, please [open a support ticket](https://basecamp.com/support). 
+
 
 Conduct
 -------
