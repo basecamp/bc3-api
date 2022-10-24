@@ -1,7 +1,7 @@
 Webhooks
 ========
 
-Basecamp can notify your application when something is changed through webhooks.
+Basecamp can notify your application through webhooks when something is changed.
 A webhook consists of a payload URL to be called, which must be HTTPS, and a list of types that'll trigger calls.
 
 Basecamp will attempt to call the payload URL up to 10 times before deactivating the webhook. The duration between attempts
