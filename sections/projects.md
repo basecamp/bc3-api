@@ -330,12 +330,32 @@ Update a project
 
 * `PUT /projects/1.json` will allow updating of a project's name and description.
 
+**Required parameters**: `name` of the project.
+
+_Optional parameters_:
+
+* `description` - containing more information about the project.
+* `schedule_attributes[start_date]` - project start date (ISO 8601). If provided also the end_date is
+    required.
+* `schedule_attributes[end_date]` - project end date (ISO 8601). If provided also the start_date is
+    required.
+* `admissions` - specifies access policy for a project within the same account. Available options
+    are:
+    * `invite` - only invited users can see the project.
+    * `employee` - anyone from the account can see the project.
+    * `team` - anyone from the account (except clients) can see the project.
+
 ###### Example JSON Request
 
 ``` json
 {
-  "name": "Marketing Campaign for Xyz Corp",
-  "description": "2016-2017 Strategy"
+  "name": "Marketing Campaign",
+  "description": "For Client: Xyz Corp Conference",
+  "admissions": "team",
+  "schedule_attributes": {
+    "start_date": "2022-01-01",
+    "end_date": "2022-04-01"
+  }
 }
 ```
 
