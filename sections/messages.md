@@ -7,6 +7,7 @@ Endpoints:
 - [Get a message](#get-a-message)
 - [Create a message](#create-a-message)
 - [Update a message](#update-a-message)
+- [Pin a message](#pin-a-message)
 - [Trash a message][1]
 
 Get messages
@@ -210,6 +211,26 @@ curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/j
   https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/messages/2.json
 ```
 
+Pin a message
+----------------
+
+* `POST /buckets/1/recordings/2/pin.json` pins the message with ID `2` in the project with id `1`.
+* `DELETE /buckets/1/recordings/2/pin.json` unpins the message with ID `2` in the project with id `1`.
+
+This endpoint will return `204 No content` if the operation was a success.
+
+###### Copy as cURL
+
+``` shell
+curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" \
+  -X POST \
+  https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/recordings/2/pin.json
+```
+``` shell
+curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" \
+  -X DELETE \
+  https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/recordings/2/pin.json
+```
 
 [1]: https://github.com/basecamp/bc3-api/blob/master/sections/recordings.md#trash-a-recording
 [2]: https://github.com/basecamp/bc3-api/blob/master/README.md#pagination
