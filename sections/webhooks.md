@@ -8,7 +8,9 @@ Basecamp will attempt to call the payload URL up to 10 times before deactivating
 will grow exponentially longer to give your service time to recover. Basecamp will only consider a HTTP status code in
 the 2xx range to be a successful response. We will not follow a 3xx redirect.
 
-A webhook can be subscribed to updates from the types detailed below. The default is to subscribe to all of them:
+A webhook can be subscribed to updates from the types detailed below. The default is to subscribe to all of them.
+
+Endpoints:
 
 - Comment
 - Client::Approval::Response
@@ -276,6 +278,7 @@ Get a webhook
 The recent deliveries array will contain the 25 most recent delivery exchanges, sorted with the most recent first.
 
 ###### Example JSON Response
+<!-- START GET /buckets/1/webhooks/3.json -->
 ```json
 {
 "id": 9007199254741202,
@@ -340,6 +343,7 @@ The recent deliveries array will contain the 25 most recent delivery exchanges, 
 ]
 }
 ```
+<!-- END GET /buckets/1/webhooks/3.json -->
 ###### Copy as cURL
 
 ``` shell

@@ -20,54 +20,60 @@ Get vaults
 ```json
 [
   {
-    "id": 9007199254741202,
+    "id": 1069479099,
     "status": "active",
-    "created_at": "2016-06-08T19:00:41.933Z",
-    "updated_at": "2016-07-19T16:47:00.621Z",
-    "title": "HR Stuff",
+    "visible_to_clients": false,
+    "created_at": "2022-10-14T17:36:37.216Z",
+    "updated_at": "2022-10-14T17:36:37.216Z",
+    "title": "Benefits",
     "inherits_status": true,
     "type": "Vault",
-    "url": "https://3.basecampapi.com/195539477/buckets/2085958496/vaults/9007199254741202.json",
-    "app_url": "https://3.basecamp.com/195539477/buckets/2085958496/vaults/9007199254741202",
-    "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7CEkiCGdpZAY6BkVUSSIuZ2lkOi8vYmMzL1JlY29yZGluZy8xMDY0MDkwODEzP2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg1yZWFkYWJsZQY7AFRJIg9leHBpcmVzX2F0BjsAVDA=--664db16bee61b4238dcef9ae6e1f48cb51b70c69.json",
+    "url": "https://3.basecampapi.com/195539477/buckets/2085958497/vaults/1069479099.json",
+    "app_url": "https://3.basecamp.com/195539477/buckets/2085958497/vaults/1069479099",
+    "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7CEkiCGdpZAY6BkVUSSIuZ2lkOi8vYmMzL1JlY29yZGluZy8xMDY5NDc5MDk5P2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg1yZWFkYWJsZQY7AFRJIg9leHBpcmVzX2F0BjsAVDA=--339c1f524eabce1418819d1259d8b0b8804199c0.json",
     "position": 1,
     "parent": {
-      "id": 9007199254741052,
-      "title": "Docs & Files",
+      "id": 1069479098,
+      "title": "HR Stuff",
       "type": "Vault",
-      "url": "https://3.basecampapi.com/195539477/buckets/2085958496/vaults/9007199254741052.json",
-      "app_url": "https://3.basecamp.com/195539477/buckets/2085958496/vaults/9007199254741052"
+      "url": "https://3.basecampapi.com/195539477/buckets/2085958497/vaults/1069479098.json",
+      "app_url": "https://3.basecamp.com/195539477/buckets/2085958497/vaults/1069479098"
     },
     "bucket": {
-      "id": 2085958496,
+      "id": 2085958497,
       "name": "Honcho Design Newsroom",
       "type": "Project"
     },
     "creator": {
-      "id": 1007299143,
-      "attachable_sgid": "BAh7CEkiCGdpZAY6BkVUSSIrZ2lkOi8vYmMzL1BlcnNvbi8xMDA3Mjk5MTQzP2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg9hdHRhY2hhYmxlBjsAVEkiD2V4cGlyZXNfYXQGOwBUMA==--919d2c8b11ff403eefcab9db42dd26846d0c3102",
+      "id": 1049715914,
+      "attachable_sgid": "BAh7CEkiCGdpZAY6BkVUSSIrZ2lkOi8vYmMzL1BlcnNvbi8xMDQ5NzE1OTE0P2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg9hdHRhY2hhYmxlBjsAVEkiD2V4cGlyZXNfYXQGOwBUMA==--ff006accb6e013cca785190fa38f42c091d24f1e",
       "name": "Victor Cooper",
       "email_address": "victor@honchodesign.com",
       "personable_type": "User",
       "title": "Chief Strategist",
-      "bio": "Don't let your dreams be dreams",
-      "created_at": "2016-09-09T22:58:27.559Z",
-      "updated_at": "2016-09-09T22:58:31.296Z",
+      "bio": "Don’t let your dreams be dreams",
+      "location": "Chicago, IL",
+      "created_at": "2022-11-25T16:24:33.557Z",
+      "updated_at": "2022-11-25T16:24:33.854Z",
       "admin": true,
       "owner": true,
+      "client": false,
+      "employee": true,
       "time_zone": "America/Chicago",
-      "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBEcqCjw=--c632b967cec296b87363a697a67a87f9cc1e5b45/avatar-64-x4",
+      "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBMpkkT4=--5520caeec1845b5090bbfc993ffe8eca8d138e14/avatar?v=1",
       "company": {
         "id": 1033447817,
         "name": "Honcho Design"
-      }
+      },
+      "can_manage_projects": true,
+      "can_manage_people": true
     },
-    "documents_count": 1,
-    "documents_url": "https://3.basecampapi.com/195539477/buckets/2085958496/vaults/9007199254741202/documents.json",
+    "documents_count": 0,
+    "documents_url": "https://3.basecampapi.com/195539477/buckets/2085958497/vaults/1069479099/documents.json",
     "uploads_count": 0,
-    "uploads_url": "https://3.basecampapi.com/195539477/buckets/2085958496/vaults/9007199254741202/uploads.json",
+    "uploads_url": "https://3.basecampapi.com/195539477/buckets/2085958497/vaults/1069479099/uploads.json",
     "vaults_count": 0,
-    "vaults_url": "https://3.basecampapi.com/195539477/buckets/2085958496/vaults/9007199254741202/vaults.json"
+    "vaults_url": "https://3.basecampapi.com/195539477/buckets/2085958497/vaults/1069479099/vaults.json"
   }
 ]
 ```
@@ -87,47 +93,53 @@ Get a vault
 <!-- START GET /buckets/1/vaults/2.json -->
 ```json
 {
-  "id": 9007199254741052,
+  "id": 1069478932,
   "status": "active",
-  "created_at": "2016-07-19T16:46:42.200Z",
-  "updated_at": "2016-07-19T16:47:00.628Z",
+  "visible_to_clients": false,
+  "created_at": "2022-11-25T16:24:37.280Z",
+  "updated_at": "2022-11-25T16:24:50.564Z",
   "title": "Docs & Files",
   "inherits_status": true,
   "type": "Vault",
-  "url": "https://3.basecampapi.com/195539477/buckets/2085958496/vaults/9007199254741052.json",
-  "app_url": "https://3.basecamp.com/195539477/buckets/2085958496/vaults/9007199254741052",
-  "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7CEkiCGdpZAY6BkVUSSIuZ2lkOi8vYmMzL1JlY29yZGluZy8xMDY0MDkwNjU2P2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg1yZWFkYWJsZQY7AFRJIg9leHBpcmVzX2F0BjsAVDA=--4d5758765159e49b7d1a4076c78cbcc3a70faf4c.json",
-  "position": 6,
+  "url": "https://3.basecampapi.com/195539477/buckets/2085958497/vaults/1069478932.json",
+  "app_url": "https://3.basecamp.com/195539477/buckets/2085958497/vaults/1069478932",
+  "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7CEkiCGdpZAY6BkVUSSIuZ2lkOi8vYmMzL1JlY29yZGluZy8xMDY5NDc4OTMyP2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg1yZWFkYWJsZQY7AFRJIg9leHBpcmVzX2F0BjsAVDA=--019700aaa4b8222137474a665bd3f88dc0329ad1.json",
+  "position": 3,
   "bucket": {
-    "id": 2085958496,
+    "id": 2085958497,
     "name": "Honcho Design Newsroom",
     "type": "Project"
   },
   "creator": {
-    "id": 1007299143,
-    "attachable_sgid": "BAh7CEkiCGdpZAY6BkVUSSIrZ2lkOi8vYmMzL1BlcnNvbi8xMDA3Mjk5MTQzP2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg9hdHRhY2hhYmxlBjsAVEkiD2V4cGlyZXNfYXQGOwBUMA==--919d2c8b11ff403eefcab9db42dd26846d0c3102",
+    "id": 1049715914,
+    "attachable_sgid": "BAh7CEkiCGdpZAY6BkVUSSIrZ2lkOi8vYmMzL1BlcnNvbi8xMDQ5NzE1OTE0P2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg9hdHRhY2hhYmxlBjsAVEkiD2V4cGlyZXNfYXQGOwBUMA==--ff006accb6e013cca785190fa38f42c091d24f1e",
     "name": "Victor Cooper",
     "email_address": "victor@honchodesign.com",
     "personable_type": "User",
     "title": "Chief Strategist",
-    "bio": "Don't let your dreams be dreams",
-    "created_at": "2016-09-09T22:58:27.559Z",
-    "updated_at": "2016-09-09T22:58:31.296Z",
+    "bio": "Don’t let your dreams be dreams",
+    "location": "Chicago, IL",
+    "created_at": "2022-11-25T16:24:33.557Z",
+    "updated_at": "2022-11-25T16:24:33.854Z",
     "admin": true,
     "owner": true,
+    "client": false,
+    "employee": true,
     "time_zone": "America/Chicago",
-    "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBEcqCjw=--c632b967cec296b87363a697a67a87f9cc1e5b45/avatar-64-x4",
+    "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBMpkkT4=--5520caeec1845b5090bbfc993ffe8eca8d138e14/avatar?v=1",
     "company": {
       "id": 1033447817,
       "name": "Honcho Design"
-    }
+    },
+    "can_manage_projects": true,
+    "can_manage_people": true
   },
   "documents_count": 0,
-  "documents_url": "https://3.basecampapi.com/195539477/buckets/2085958496/vaults/9007199254741052/documents.json",
+  "documents_url": "https://3.basecampapi.com/195539477/buckets/2085958497/vaults/1069478932/documents.json",
   "uploads_count": 0,
-  "uploads_url": "https://3.basecampapi.com/195539477/buckets/2085958496/vaults/9007199254741052/uploads.json",
-  "vaults_count": 1,
-  "vaults_url": "https://3.basecampapi.com/195539477/buckets/2085958496/vaults/9007199254741052/vaults.json"
+  "uploads_url": "https://3.basecampapi.com/195539477/buckets/2085958497/vaults/1069478932/uploads.json",
+  "vaults_count": 0,
+  "vaults_url": "https://3.basecampapi.com/195539477/buckets/2085958497/vaults/1069478932/vaults.json"
 }
 ```
 <!-- END GET /buckets/1/vaults/2.json -->

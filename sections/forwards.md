@@ -20,53 +20,59 @@ To get the inbox ID for a project, see the [Get inbox][3] endpoint.
 ```json
 [
   {
-    "id": 9007199254741145,
+    "id": 1069479031,
     "status": "active",
-    "created_at": "2016-09-20T14:32:57.168Z",
-    "updated_at": "2016-09-20T14:32:58.104Z",
-    "title": "Can we make the logo pop?",
+    "visible_to_clients": false,
+    "created_at": "2022-09-01T10:16:24.930Z",
+    "updated_at": "2022-09-01T10:16:24.930Z",
+    "title": "Fwd: Some technical details",
     "inherits_status": true,
     "type": "Inbox::Forward",
-    "url": "https://3.basecampapi.com/195539477/buckets/2085958496/inbox_forwards/9007199254741145.json",
-    "app_url": "https://3.basecamp.com/195539477/buckets/2085958496/inbox_forwards/9007199254741145",
+    "url": "https://3.basecampapi.com/195539477/buckets/2085958497/inbox_forwards/1069479031.json",
+    "app_url": "https://3.basecamp.com/195539477/buckets/2085958497/inbox_forwards/1069479031",
+    "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7CEkiCGdpZAY6BkVUSSIuZ2lkOi8vYmMzL1JlY29yZGluZy8xMDY5NDc5MDMxP2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg1yZWFkYWJsZQY7AFRJIg9leHBpcmVzX2F0BjsAVDA=--4891627f80344c55f5a27c306dff50d689e6cbf1.json",
+    "subscription_url": "https://3.basecampapi.com/195539477/buckets/2085958497/recordings/1069479031/subscription.json",
     "parent": {
-      "id": 9007199254741055,
+      "id": 1069478936,
       "title": "Email Forwards",
       "type": "Inbox",
-      "url": "https://3.basecampapi.com/195539477/buckets/2085958496/inboxes/9007199254741055.json",
-      "app_url": "https://3.basecamp.com/195539477/buckets/2085958496/inboxes/9007199254741055"
+      "url": "https://3.basecampapi.com/195539477/buckets/2085958497/inboxes/1069478936.json",
+      "app_url": "https://3.basecamp.com/195539477/buckets/2085958497/inboxes/1069478936"
     },
     "bucket": {
-      "id": 2085958496,
+      "id": 2085958497,
       "name": "Honcho Design Newsroom",
       "type": "Project"
     },
     "creator": {
-      "id": 1007299143,
-      "attachable_sgid": "BAh7CEkiCGdpZAY6BkVUSSIrZ2lkOi8vYmMzL1BlcnNvbi8xMDA3Mjk5MTQzP2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg9hdHRhY2hhYmxlBjsAVEkiD2V4cGlyZXNfYXQGOwBUMA==--919d2c8b11ff403eefcab9db42dd26846d0c3102",
-      "name": "Victor Cooper",
-      "email_address": "victor@honchodesign.com",
+      "id": 1049715915,
+      "attachable_sgid": "BAh7CEkiCGdpZAY6BkVUSSIrZ2lkOi8vYmMzL1BlcnNvbi8xMDQ5NzE1OTE1P2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg9hdHRhY2hhYmxlBjsAVEkiD2V4cGlyZXNfYXQGOwBUMA==--aeb392ebf54ffd820e45f27add22bae3a8c7da56",
+      "name": "Annie Bryan",
+      "email_address": "annie@honchodesign.com",
       "personable_type": "User",
-      "title": "Chief Strategist",
-      "bio": "Don't let your dreams be dreams",
-      "created_at": "2016-09-20T14:32:21.421Z",
-      "updated_at": "2016-09-20T14:32:26.986Z",
-      "admin": true,
-      "owner": true,
+      "title": "Central Markets Manager",
+      "bio": "To open a store is easy, to keep it open is an art",
+      "location": null,
+      "created_at": "2022-11-22T08:23:21.911Z",
+      "updated_at": "2022-11-22T08:23:21.911Z",
+      "admin": false,
+      "owner": false,
+      "client": false,
+      "employee": true,
       "time_zone": "America/Chicago",
-      "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBEcqCjw=--c632b967cec296b87363a697a67a87f9cc1e5b45/avatar-64-x4",
+      "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBMtkkT4=--9927c47a4cbee30a7f9aea667882496aba799149/avatar?v=1",
       "company": {
         "id": 1033447817,
         "name": "Honcho Design"
-      }
+      },
+      "can_manage_projects": true,
+      "can_manage_people": true
     },
-    "content": "Hey Victor,\n\nI know it's late at night, but I had a quick thought about the logo. It feels, I dunno, flat. Is there anything you could do to make it pop? I'm thinking it needs more sizzle. More... SOMETHING. Maybe we could try adding a rainbow?\n\nLet's take a look mid-day tomorrow and re-group with the rest of the team.\n\nCheers,\nHenry",
-    "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7CEkiCGdpZAY6BkVUSSI0Z2lkOi8vYmMzL1JlY29yZGluZy85MDA3MTk5MjU0NzQxMTQ1P2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg1yZWFkYWJsZQY7AFRJIg9leHBpcmVzX2F0BjsAVDA=--5e4e8dc00837d110504a8bdeb9a07bc75db16853.json",
-    "subscription_url": "https://3.basecampapi.com/195539477/buckets/2085958496/recordings/9007199254741145/subscription.json",
-    "subject": "Can we make the logo pop?",
-    "from": "henry@letobrand.com",
-    "replies_count": 2,
-    "replies_url": "https://3.basecampapi.com/195539477/buckets/2085958496/inbox_forwards/9007199254741145/replies.json"
+    "content": "---------- Forwarded message ----------\nFrom: \"Beth Allen\" \nDate: Oct 13, 2013 1:38 PM\nSubject: Some technical details\nTo: \"Annie Bryan\" \n\nHey Team Honcho,\n\nJust wanted to let you know I'm a big fan of your blog. Your writing is so inspiring. Thanks for sharing!",
+    "subject": "Fwd: Some technical details",
+    "from": "beth@letobrand.com",
+    "replies_count": 0,
+    "replies_url": "https://3.basecampapi.com/195539477/buckets/2085958497/inbox_forwards/1069479031/replies.json"
   }
 ]
 ```
@@ -88,53 +94,59 @@ Get a forward
 <!-- START GET /buckets/1/inbox_forwards/2.json -->
 ```json
 {
-  "id": 9007199254741144,
+  "id": 1069479032,
   "status": "active",
-  "created_at": "2016-09-20T14:32:55.810Z",
-  "updated_at": "2016-09-20T14:32:55.888Z",
-  "title": "Some technical details",
+  "visible_to_clients": false,
+  "created_at": "2022-09-01T09:04:24.930Z",
+  "updated_at": "2022-11-22T08:23:32.496Z",
+  "title": "Fwd: Can we make the logo pop?",
   "inherits_status": true,
   "type": "Inbox::Forward",
-  "url": "https://3.basecampapi.com/195539477/buckets/2085958496/inbox_forwards/9007199254741144.json",
-  "app_url": "https://3.basecamp.com/195539477/buckets/2085958496/inbox_forwards/9007199254741144",
+  "url": "https://3.basecampapi.com/195539477/buckets/2085958497/inbox_forwards/1069479032.json",
+  "app_url": "https://3.basecamp.com/195539477/buckets/2085958497/inbox_forwards/1069479032",
+  "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7CEkiCGdpZAY6BkVUSSIuZ2lkOi8vYmMzL1JlY29yZGluZy8xMDY5NDc5MDMyP2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg1yZWFkYWJsZQY7AFRJIg9leHBpcmVzX2F0BjsAVDA=--22643a88456d69fada6fdb7e215bdc16aaa20b84.json",
+  "subscription_url": "https://3.basecampapi.com/195539477/buckets/2085958497/recordings/1069479032/subscription.json",
   "parent": {
-    "id": 9007199254741055,
+    "id": 1069478936,
     "title": "Email Forwards",
     "type": "Inbox",
-    "url": "https://3.basecampapi.com/195539477/buckets/2085958496/inboxes/9007199254741055.json",
-    "app_url": "https://3.basecamp.com/195539477/buckets/2085958496/inboxes/9007199254741055"
+    "url": "https://3.basecampapi.com/195539477/buckets/2085958497/inboxes/1069478936.json",
+    "app_url": "https://3.basecamp.com/195539477/buckets/2085958497/inboxes/1069478936"
   },
   "bucket": {
-    "id": 2085958496,
+    "id": 2085958497,
     "name": "Honcho Design Newsroom",
     "type": "Project"
   },
   "creator": {
-    "id": 1007299144,
-    "attachable_sgid": "BAh7CEkiCGdpZAY6BkVUSSIrZ2lkOi8vYmMzL1BlcnNvbi8xMDA3Mjk5MTQ0P2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg9hdHRhY2hhYmxlBjsAVEkiD2V4cGlyZXNfYXQGOwBUMA==--2e34d7611a9fcaeb82342d015a671cf5e998c036",
-    "name": "Annie Bryan",
-    "email_address": "annie@honchodesign.com",
+    "id": 1049715914,
+    "attachable_sgid": "BAh7CEkiCGdpZAY6BkVUSSIrZ2lkOi8vYmMzL1BlcnNvbi8xMDQ5NzE1OTE0P2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg9hdHRhY2hhYmxlBjsAVEkiD2V4cGlyZXNfYXQGOwBUMA==--ff006accb6e013cca785190fa38f42c091d24f1e",
+    "name": "Victor Cooper",
+    "email_address": "victor@honchodesign.com",
     "personable_type": "User",
-    "title": "Central Markets Manager",
-    "bio": "To open a store is easy, to keep it open is an art",
-    "created_at": "2016-09-20T14:32:21.623Z",
-    "updated_at": "2016-09-20T14:32:21.623Z",
-    "admin": false,
-    "owner": false,
+    "title": "Chief Strategist",
+    "bio": "Don’t let your dreams be dreams",
+    "location": "Chicago, IL",
+    "created_at": "2022-11-22T08:23:21.732Z",
+    "updated_at": "2022-11-22T08:23:21.904Z",
+    "admin": true,
+    "owner": true,
+    "client": false,
+    "employee": true,
     "time_zone": "America/Chicago",
-    "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBEgqCjw=--8266bb0507508f3d46050d57b65924d5e2a005f3/avatar-64-x4",
+    "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBMpkkT4=--5520caeec1845b5090bbfc993ffe8eca8d138e14/avatar?v=1",
     "company": {
       "id": 1033447817,
       "name": "Honcho Design"
-    }
+    },
+    "can_manage_projects": true,
+    "can_manage_people": true
   },
-  "content": "Hey Team Honcho,\n\nJust wanted to let you know I'm a big fan of your blog. Your writing is so inspiring. Thanks for sharing!",
-  "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7CEkiCGdpZAY6BkVUSSI0Z2lkOi8vYmMzL1JlY29yZGluZy85MDA3MTk5MjU0NzQxMTQ0P2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg1yZWFkYWJsZQY7AFRJIg9leHBpcmVzX2F0BjsAVDA=--66b8dce4e70f3854809cf9a4ac1e47d353e405b8.json",
-  "subscription_url": "https://3.basecampapi.com/195539477/buckets/2085958496/recordings/9007199254741144/subscription.json",
-  "subject": "Some technical details",
-  "from": "beth@letobrand.com",
-  "replies_count": 0,
-  "replies_url": "https://3.basecampapi.com/195539477/buckets/2085958496/inbox_forwards/9007199254741144/replies.json"
+  "content": "---------- Forwarded message ----------\nFrom: \"Henry Bowman\" \nDate: Oct 15, 2013 1:13 AM\nSubject: Can we make the logo pop?\nTo: \"Victor Cooper\" \n\nHey Victor,\n\nI know it's late at night, but I had a quick thought about the logo. It feels, I dunno, flat. Is there anything you could do to make it pop? I'm thinking it needs more sizzle. More... SOMETHING. Maybe we could try adding a rainbow?\n\nLet's take a look mid-day tomorrow and re-group with the rest of the team.\n\nCheers,\nHenry",
+  "subject": "Fwd: Can we make the logo pop?",
+  "from": "henry@letobrand.com",
+  "replies_count": 2,
+  "replies_url": "https://3.basecampapi.com/195539477/buckets/2085958497/inbox_forwards/1069479032/replies.json"
 }
 ```
 <!-- END GET /buckets/1/inbox_forwards/2.json -->

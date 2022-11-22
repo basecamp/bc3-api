@@ -25,74 +25,85 @@ _Optional query parameters_:
 ```json
 [
   {
-    "id": 9007199254741759,
+    "id": 1069479847,
     "status": "active",
-    "created_at": "2016-07-19T21:33:36.406Z",
-    "updated_at": "2016-07-19T21:33:39.692Z",
+    "visible_to_clients": false,
+    "created_at": "2022-11-22T08:25:04.190Z",
+    "updated_at": "2022-11-22T08:25:04.316Z",
     "title": "Team Meeting",
     "inherits_status": true,
     "type": "Schedule::Entry",
-    "url": "https://3.basecampapi.com/195539477/buckets/2085958498/schedule_entries/9007199254741759.json",
-    "app_url": "https://3.basecamp.com/195539477/buckets/2085958498/schedule_entries/9007199254741759",
+    "url": "https://3.basecampapi.com/195539477/buckets/2085958499/schedule_entries/1069479847.json",
+    "app_url": "https://3.basecamp.com/195539477/buckets/2085958499/schedule_entries/1069479847",
+    "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7CEkiCGdpZAY6BkVUSSIuZ2lkOi8vYmMzL1JlY29yZGluZy8xMDY5NDc5ODQ3P2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg1yZWFkYWJsZQY7AFRJIg9leHBpcmVzX2F0BjsAVDA=--1c0cc0c23c279ac645718b2ea9912d5513075d97.json",
+    "subscription_url": "https://3.basecampapi.com/195539477/buckets/2085958499/recordings/1069479847/subscription.json",
     "comments_count": 0,
-    "comments_url": "https://3.basecampapi.com/195539477/buckets/2085958498/recordings/9007199254741759/comments.json",
+    "comments_url": "https://3.basecampapi.com/195539477/buckets/2085958499/recordings/1069479847/comments.json",
     "parent": {
-      "id": 9007199254741436,
+      "id": 1069479342,
       "title": "Schedule",
       "type": "Schedule",
-      "url": "https://3.basecampapi.com/195539477/buckets/2085958498/schedules/9007199254741436.json",
-      "app_url": "https://3.basecamp.com/195539477/buckets/2085958498/schedules/9007199254741436"
+      "url": "https://3.basecampapi.com/195539477/buckets/2085958499/schedules/1069479342.json",
+      "app_url": "https://3.basecamp.com/195539477/buckets/2085958499/schedules/1069479342"
     },
     "bucket": {
-      "id": 2085958498,
+      "id": 2085958499,
       "name": "The Leto Laptop",
       "type": "Project"
     },
     "creator": {
-      "id": 1007299143,
-      "attachable_sgid": "BAh7CEkiCGdpZAY6BkVUSSIrZ2lkOi8vYmMzL1BlcnNvbi8xMDA3Mjk5MTQzP2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg9hdHRhY2hhYmxlBjsAVEkiD2V4cGlyZXNfYXQGOwBUMA==--919d2c8b11ff403eefcab9db42dd26846d0c3102",
+      "id": 1049715914,
+      "attachable_sgid": "BAh7CEkiCGdpZAY6BkVUSSIrZ2lkOi8vYmMzL1BlcnNvbi8xMDQ5NzE1OTE0P2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg9hdHRhY2hhYmxlBjsAVEkiD2V4cGlyZXNfYXQGOwBUMA==--ff006accb6e013cca785190fa38f42c091d24f1e",
       "name": "Victor Cooper",
       "email_address": "victor@honchodesign.com",
       "personable_type": "User",
       "title": "Chief Strategist",
-      "bio": "Don't let your dreams be dreams",
-      "created_at": "2016-09-09T22:58:27.559Z",
-      "updated_at": "2016-09-09T22:58:31.296Z",
+      "bio": "Don’t let your dreams be dreams",
+      "location": "Chicago, IL",
+      "created_at": "2022-11-22T08:23:21.732Z",
+      "updated_at": "2022-11-22T08:23:21.904Z",
       "admin": true,
       "owner": true,
+      "client": false,
+      "employee": true,
       "time_zone": "America/Chicago",
-      "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBEcqCjw=--c632b967cec296b87363a697a67a87f9cc1e5b45/avatar-64-x4",
+      "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBMpkkT4=--5520caeec1845b5090bbfc993ffe8eca8d138e14/avatar?v=1",
       "company": {
         "id": 1033447817,
         "name": "Honcho Design"
-      }
+      },
+      "can_manage_projects": true,
+      "can_manage_people": true
     },
     "description": "<div>Time to synergize!</div>",
-    "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7CEkiCGdpZAY6BkVUSSI0Z2lkOi8vYmMzL1JlY29yZGluZy85MDA3MTk5MjU0NzQxNzU5P2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg1yZWFkYWJsZQY7AFRJIg9leHBpcmVzX2F0BjsAVDA=--150340d7bf9e45970422758888bbf0176a1fdd2c.json",
-    "subscription_url": "https://3.basecampapi.com/195539477/buckets/2085958498/recordings/9007199254741759/subscription.json",
     "summary": "Team Meeting",
     "all_day": false,
-    "starts_at": "2016-07-20T23:33:36.369Z",
-    "ends_at": "2016-07-21T03:33:36.369Z",
+    "starts_at": "2022-11-23T10:25:04.177Z",
+    "ends_at": "2022-11-23T14:25:04.177Z",
     "participants": [
       {
-        "id": 1007299150,
-        "attachable_sgid": "BAh7CEkiCGdpZAY6BkVUSSIrZ2lkOi8vYmMzL1BlcnNvbi8xMDA3Mjk5MTUwP2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg9hdHRhY2hhYmxlBjsAVEkiD2V4cGlyZXNfYXQGOwBUMA==--9856de8e8169dda9e2c441b7184985194b2d2296",
+        "id": 1049715921,
+        "attachable_sgid": "BAh7CEkiCGdpZAY6BkVUSSIrZ2lkOi8vYmMzL1BlcnNvbi8xMDQ5NzE1OTIxP2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg9hdHRhY2hhYmxlBjsAVEkiD2V4cGlyZXNfYXQGOwBUMA==--61b488a9fa97d2e628aee86cf51a4ba0171888c2",
         "name": "Steve Marsh",
         "email_address": "steve@honchodesign.com",
         "personable_type": "User",
         "title": "Legacy Directives Strategist",
         "bio": "You can do it!",
-        "created_at": "2016-09-09T22:58:28.369Z",
-        "updated_at": "2016-09-09T22:58:28.369Z",
+        "location": null,
+        "created_at": "2022-11-22T08:23:21.991Z",
+        "updated_at": "2022-11-22T08:23:21.991Z",
         "admin": false,
         "owner": false,
-        "time_zone": "America/Chicago",
-        "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBE4qCjw=--b544b6a710bd76020abc076fc041895954025116/avatar-64-x4",
+        "client": false,
+        "employee": true,
+        "time_zone": "Etc/UTC",
+        "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBNFkkT4=--c57bba9b44447be39d4a79a5e7f2a592cae9e82c/avatar?v=1",
         "company": {
           "id": 1033447817,
           "name": "Honcho Design"
-        }
+        },
+        "can_manage_projects": true,
+        "can_manage_people": true
       }
     ]
   }
@@ -117,73 +128,85 @@ Get a schedule entry
 <!-- START GET /buckets/1/schedule_entries/2.json -->
 ```json
 {
-  "id": 9007199254741759,
+  "id": 1069479847,
   "status": "active",
-  "created_at": "2016-07-19T21:33:36.406Z",
-  "updated_at": "2016-07-19T21:33:39.692Z",
+  "visible_to_clients": false,
+  "created_at": "2022-11-22T08:25:04.190Z",
+  "updated_at": "2022-11-22T08:25:04.316Z",
+  "title": "Team Meeting",
   "inherits_status": true,
   "type": "Schedule::Entry",
-  "url": "https://3.basecampapi.com/195539477/buckets/2085958498/schedule_entries/9007199254741759.json",
-  "app_url": "https://3.basecamp.com/195539477/buckets/2085958498/schedule_entries/9007199254741759",
+  "url": "https://3.basecampapi.com/195539477/buckets/2085958499/schedule_entries/1069479847.json",
+  "app_url": "https://3.basecamp.com/195539477/buckets/2085958499/schedule_entries/1069479847",
+  "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7CEkiCGdpZAY6BkVUSSIuZ2lkOi8vYmMzL1JlY29yZGluZy8xMDY5NDc5ODQ3P2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg1yZWFkYWJsZQY7AFRJIg9leHBpcmVzX2F0BjsAVDA=--1c0cc0c23c279ac645718b2ea9912d5513075d97.json",
+  "subscription_url": "https://3.basecampapi.com/195539477/buckets/2085958499/recordings/1069479847/subscription.json",
   "comments_count": 0,
-  "comments_url": "https://3.basecampapi.com/195539477/buckets/2085958498/recordings/9007199254741759/comments.json",
+  "comments_url": "https://3.basecampapi.com/195539477/buckets/2085958499/recordings/1069479847/comments.json",
   "parent": {
-    "id": 9007199254741436,
+    "id": 1069479342,
     "title": "Schedule",
     "type": "Schedule",
-    "url": "https://3.basecampapi.com/195539477/buckets/2085958498/schedules/9007199254741436.json",
-    "app_url": "https://3.basecamp.com/195539477/buckets/2085958498/schedules/9007199254741436"
+    "url": "https://3.basecampapi.com/195539477/buckets/2085958499/schedules/1069479342.json",
+    "app_url": "https://3.basecamp.com/195539477/buckets/2085958499/schedules/1069479342"
   },
   "bucket": {
-    "id": 2085958498,
+    "id": 2085958499,
     "name": "The Leto Laptop",
     "type": "Project"
   },
   "creator": {
-    "id": 1007299143,
-    "attachable_sgid": "BAh7CEkiCGdpZAY6BkVUSSIrZ2lkOi8vYmMzL1BlcnNvbi8xMDA3Mjk5MTQzP2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg9hdHRhY2hhYmxlBjsAVEkiD2V4cGlyZXNfYXQGOwBUMA==--919d2c8b11ff403eefcab9db42dd26846d0c3102",
+    "id": 1049715914,
+    "attachable_sgid": "BAh7CEkiCGdpZAY6BkVUSSIrZ2lkOi8vYmMzL1BlcnNvbi8xMDQ5NzE1OTE0P2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg9hdHRhY2hhYmxlBjsAVEkiD2V4cGlyZXNfYXQGOwBUMA==--ff006accb6e013cca785190fa38f42c091d24f1e",
     "name": "Victor Cooper",
     "email_address": "victor@honchodesign.com",
     "personable_type": "User",
     "title": "Chief Strategist",
-    "bio": "Don't let your dreams be dreams",
-    "created_at": "2016-09-09T22:58:27.559Z",
-    "updated_at": "2016-09-09T22:58:31.296Z",
+    "bio": "Don’t let your dreams be dreams",
+    "location": "Chicago, IL",
+    "created_at": "2022-11-22T08:23:21.732Z",
+    "updated_at": "2022-11-22T08:23:21.904Z",
     "admin": true,
     "owner": true,
+    "client": false,
+    "employee": true,
     "time_zone": "America/Chicago",
-    "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBEcqCjw=--c632b967cec296b87363a697a67a87f9cc1e5b45/avatar-64-x4",
+    "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBMpkkT4=--5520caeec1845b5090bbfc993ffe8eca8d138e14/avatar?v=1",
     "company": {
       "id": 1033447817,
       "name": "Honcho Design"
-    }
+    },
+    "can_manage_projects": true,
+    "can_manage_people": true
   },
   "description": "<div>Time to synergize!</div>",
-  "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7CEkiCGdpZAY6BkVUSSI0Z2lkOi8vYmMzL1JlY29yZGluZy85MDA3MTk5MjU0NzQxNzU5P2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg1yZWFkYWJsZQY7AFRJIg9leHBpcmVzX2F0BjsAVDA=--150340d7bf9e45970422758888bbf0176a1fdd2c.json",
-  "subscription_url": "https://3.basecampapi.com/195539477/buckets/2085958498/recordings/9007199254741759/subscription.json",
   "summary": "Team Meeting",
   "all_day": false,
-  "starts_at": "2016-07-20T23:33:36.369Z",
-  "ends_at": "2016-07-21T03:33:36.369Z",
+  "starts_at": "2022-11-23T10:25:04.177Z",
+  "ends_at": "2022-11-23T14:25:04.177Z",
   "participants": [
     {
-      "id": 1007299150,
-      "attachable_sgid": "BAh7CEkiCGdpZAY6BkVUSSIrZ2lkOi8vYmMzL1BlcnNvbi8xMDA3Mjk5MTUwP2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg9hdHRhY2hhYmxlBjsAVEkiD2V4cGlyZXNfYXQGOwBUMA==--9856de8e8169dda9e2c441b7184985194b2d2296",
+      "id": 1049715921,
+      "attachable_sgid": "BAh7CEkiCGdpZAY6BkVUSSIrZ2lkOi8vYmMzL1BlcnNvbi8xMDQ5NzE1OTIxP2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg9hdHRhY2hhYmxlBjsAVEkiD2V4cGlyZXNfYXQGOwBUMA==--61b488a9fa97d2e628aee86cf51a4ba0171888c2",
       "name": "Steve Marsh",
       "email_address": "steve@honchodesign.com",
       "personable_type": "User",
       "title": "Legacy Directives Strategist",
       "bio": "You can do it!",
-      "created_at": "2016-09-09T22:58:28.369Z",
-      "updated_at": "2016-09-09T22:58:28.369Z",
+      "location": null,
+      "created_at": "2022-11-22T08:23:21.991Z",
+      "updated_at": "2022-11-22T08:23:21.991Z",
       "admin": false,
       "owner": false,
-      "time_zone": "America/Chicago",
-      "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBE4qCjw=--b544b6a710bd76020abc076fc041895954025116/avatar-64-x4",
+      "client": false,
+      "employee": true,
+      "time_zone": "Etc/UTC",
+      "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBNFkkT4=--c57bba9b44447be39d4a79a5e7f2a592cae9e82c/avatar?v=1",
       "company": {
         "id": 1033447817,
         "name": "Honcho Design"
-      }
+      },
+      "can_manage_projects": true,
+      "can_manage_people": true
     }
   ]
 }

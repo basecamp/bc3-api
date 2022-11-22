@@ -19,59 +19,65 @@ Get uploads
 ```json
 [
   {
-    "id": 9007199254741761,
+    "id": 1069479848,
     "status": "active",
-    "created_at": "2016-07-19T21:36:12.137Z",
-    "updated_at": "2016-07-19T21:36:15.412Z",
+    "visible_to_clients": false,
+    "created_at": "2022-11-22T08:25:04.400Z",
+    "updated_at": "2022-11-22T08:25:04.408Z",
     "title": "company-logo.png",
     "inherits_status": true,
     "type": "Upload",
-    "url": "https://3.basecampapi.com/195539477/buckets/2085958498/uploads/9007199254741761.json",
-    "app_url": "https://3.basecamp.com/195539477/buckets/2085958498/uploads/9007199254741761",
-    "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7CEkiCGdpZAY6BkVUSSIuZ2lkOi8vYmMzL1JlY29yZGluZy8xMDY0MDkxNTM5P2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg1yZWFkYWJsZQY7AFRJIg9leHBpcmVzX2F0BjsAVDA=--a96c68e0b0a985bd924462ea91fc2ab4d77d320e.json",
-    "subscription_url": "https://3.basecampapi.com/195539477/buckets/2085958498/recordings/9007199254741761/subscription.json",
+    "url": "https://3.basecampapi.com/195539477/buckets/2085958499/uploads/1069479848.json",
+    "app_url": "https://3.basecamp.com/195539477/buckets/2085958499/uploads/1069479848",
+    "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7CEkiCGdpZAY6BkVUSSIuZ2lkOi8vYmMzL1JlY29yZGluZy8xMDY5NDc5ODQ4P2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg1yZWFkYWJsZQY7AFRJIg9leHBpcmVzX2F0BjsAVDA=--b125776d2d29e638ecfefc0fd5bf4957f79ae0d5.json",
+    "subscription_url": "https://3.basecampapi.com/195539477/buckets/2085958499/recordings/1069479848/subscription.json",
     "comments_count": 0,
-    "comments_url": "https://3.basecampapi.com/195539477/buckets/2085958498/recordings/9007199254741761/comments.json",
+    "comments_url": "https://3.basecampapi.com/195539477/buckets/2085958499/recordings/1069479848/comments.json",
     "position": 1,
     "parent": {
-      "id": 9007199254741442,
+      "id": 1069479340,
       "title": "Docs & Files",
       "type": "Vault",
-      "url": "https://3.basecampapi.com/195539477/buckets/2085958498/vaults/9007199254741442.json",
-      "app_url": "https://3.basecamp.com/195539477/buckets/2085958498/vaults/9007199254741442"
+      "url": "https://3.basecampapi.com/195539477/buckets/2085958499/vaults/1069479340.json",
+      "app_url": "https://3.basecamp.com/195539477/buckets/2085958499/vaults/1069479340"
     },
     "bucket": {
-      "id": 2085958498,
+      "id": 2085958499,
       "name": "The Leto Laptop",
       "type": "Project"
     },
     "creator": {
-      "id": 1007299143,
-      "attachable_sgid": "BAh7CEkiCGdpZAY6BkVUSSIrZ2lkOi8vYmMzL1BlcnNvbi8xMDA3Mjk5MTQzP2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg9hdHRhY2hhYmxlBjsAVEkiD2V4cGlyZXNfYXQGOwBUMA==--919d2c8b11ff403eefcab9db42dd26846d0c3102",
+      "id": 1049715914,
+      "attachable_sgid": "BAh7CEkiCGdpZAY6BkVUSSIrZ2lkOi8vYmMzL1BlcnNvbi8xMDQ5NzE1OTE0P2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg9hdHRhY2hhYmxlBjsAVEkiD2V4cGlyZXNfYXQGOwBUMA==--ff006accb6e013cca785190fa38f42c091d24f1e",
       "name": "Victor Cooper",
       "email_address": "victor@honchodesign.com",
       "personable_type": "User",
       "title": "Chief Strategist",
-      "bio": "Don't let your dreams be dreams",
-      "created_at": "2016-09-09T22:58:27.559Z",
-      "updated_at": "2016-09-09T22:58:31.296Z",
+      "bio": "Don’t let your dreams be dreams",
+      "location": "Chicago, IL",
+      "created_at": "2022-11-22T08:23:21.732Z",
+      "updated_at": "2022-11-22T08:23:21.904Z",
       "admin": true,
       "owner": true,
+      "client": false,
+      "employee": true,
       "time_zone": "America/Chicago",
-      "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBEcqCjw=--c632b967cec296b87363a697a67a87f9cc1e5b45/avatar-64-x4",
+      "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBMpkkT4=--5520caeec1845b5090bbfc993ffe8eca8d138e14/avatar?v=1",
       "company": {
         "id": 1033447817,
         "name": "Honcho Design"
-      }
+      },
+      "can_manage_projects": true,
+      "can_manage_people": true
     },
     "description": "<div>Check out the new logo</div>",
-    "filename": "company-logo.png",
     "content_type": "image/png",
     "byte_size": 1281,
+    "filename": "company-logo.png",
+    "download_url": "https://3.basecampapi.com/195539477/buckets/2085958499/uploads/1069479848/download/company-logo.png",
+    "app_download_url": "http://storage.3.basecamp.test/195539477/buckets/2085958499/uploads/1069479848/download/company-logo.png",
     "width": 164,
-    "height": 39,
-    "download_url": "https://3.basecampapi.com/195539477/buckets/2085958498/uploads/9007199254741761/download/company-logo.png",
-    "app_download_url": "https://3.basecamp.com/195539477/buckets/2085958498/uploads/9007199254741761/download/company-logo.png"
+    "height": 39
   }
 ]
 ```
@@ -91,59 +97,65 @@ Get an upload
 <!-- START GET /buckets/1/uploads/2.json -->
 ```json
 {
-  "id": 9007199254741761,
+  "id": 1069479848,
   "status": "active",
-  "created_at": "2016-07-19T21:36:12.137Z",
-  "updated_at": "2016-07-19T21:36:15.412Z",
+  "visible_to_clients": false,
+  "created_at": "2022-11-22T08:25:04.400Z",
+  "updated_at": "2022-11-22T08:25:04.408Z",
   "title": "company-logo.png",
   "inherits_status": true,
   "type": "Upload",
-  "url": "https://3.basecampapi.com/195539477/buckets/2085958498/uploads/9007199254741761.json",
-  "app_url": "https://3.basecamp.com/195539477/buckets/2085958498/uploads/9007199254741761",
-  "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7CEkiCGdpZAY6BkVUSSIuZ2lkOi8vYmMzL1JlY29yZGluZy8xMDY0MDkxNTM5P2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg1yZWFkYWJsZQY7AFRJIg9leHBpcmVzX2F0BjsAVDA=--a96c68e0b0a985bd924462ea91fc2ab4d77d320e.json",
-  "subscription_url": "https://3.basecampapi.com/195539477/buckets/2085958498/recordings/9007199254741761/subscription.json",
+  "url": "https://3.basecampapi.com/195539477/buckets/2085958499/uploads/1069479848.json",
+  "app_url": "https://3.basecamp.com/195539477/buckets/2085958499/uploads/1069479848",
+  "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7CEkiCGdpZAY6BkVUSSIuZ2lkOi8vYmMzL1JlY29yZGluZy8xMDY5NDc5ODQ4P2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg1yZWFkYWJsZQY7AFRJIg9leHBpcmVzX2F0BjsAVDA=--b125776d2d29e638ecfefc0fd5bf4957f79ae0d5.json",
+  "subscription_url": "https://3.basecampapi.com/195539477/buckets/2085958499/recordings/1069479848/subscription.json",
   "comments_count": 0,
-  "comments_url": "https://3.basecampapi.com/195539477/buckets/2085958498/recordings/9007199254741761/comments.json",
+  "comments_url": "https://3.basecampapi.com/195539477/buckets/2085958499/recordings/1069479848/comments.json",
   "position": 1,
   "parent": {
-    "id": 9007199254741442,
+    "id": 1069479340,
     "title": "Docs & Files",
     "type": "Vault",
-    "url": "https://3.basecampapi.com/195539477/buckets/2085958498/vaults/9007199254741442.json",
-    "app_url": "https://3.basecamp.com/195539477/buckets/2085958498/vaults/9007199254741442"
+    "url": "https://3.basecampapi.com/195539477/buckets/2085958499/vaults/1069479340.json",
+    "app_url": "https://3.basecamp.com/195539477/buckets/2085958499/vaults/1069479340"
   },
   "bucket": {
-    "id": 2085958498,
+    "id": 2085958499,
     "name": "The Leto Laptop",
     "type": "Project"
   },
   "creator": {
-    "id": 1007299143,
-    "attachable_sgid": "BAh7CEkiCGdpZAY6BkVUSSIrZ2lkOi8vYmMzL1BlcnNvbi8xMDA3Mjk5MTQzP2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg9hdHRhY2hhYmxlBjsAVEkiD2V4cGlyZXNfYXQGOwBUMA==--919d2c8b11ff403eefcab9db42dd26846d0c3102",
+    "id": 1049715914,
+    "attachable_sgid": "BAh7CEkiCGdpZAY6BkVUSSIrZ2lkOi8vYmMzL1BlcnNvbi8xMDQ5NzE1OTE0P2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg9hdHRhY2hhYmxlBjsAVEkiD2V4cGlyZXNfYXQGOwBUMA==--ff006accb6e013cca785190fa38f42c091d24f1e",
     "name": "Victor Cooper",
     "email_address": "victor@honchodesign.com",
     "personable_type": "User",
     "title": "Chief Strategist",
-    "bio": "Don't let your dreams be dreams",
-    "created_at": "2016-09-09T22:58:27.559Z",
-    "updated_at": "2016-09-09T22:58:31.296Z",
+    "bio": "Don’t let your dreams be dreams",
+    "location": "Chicago, IL",
+    "created_at": "2022-11-22T08:23:21.732Z",
+    "updated_at": "2022-11-22T08:23:21.904Z",
     "admin": true,
     "owner": true,
+    "client": false,
+    "employee": true,
     "time_zone": "America/Chicago",
-    "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBEcqCjw=--c632b967cec296b87363a697a67a87f9cc1e5b45/avatar-64-x4",
+    "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBMpkkT4=--5520caeec1845b5090bbfc993ffe8eca8d138e14/avatar?v=1",
     "company": {
       "id": 1033447817,
       "name": "Honcho Design"
-    }
+    },
+    "can_manage_projects": true,
+    "can_manage_people": true
   },
   "description": "<div>Check out the new logo</div>",
-  "filename": "company-logo.png",
   "content_type": "image/png",
   "byte_size": 1281,
+  "filename": "company-logo.png",
+  "download_url": "https://3.basecampapi.com/195539477/buckets/2085958499/uploads/1069479848/download/company-logo.png",
+  "app_download_url": "http://storage.3.basecamp.test/195539477/buckets/2085958499/uploads/1069479848/download/company-logo.png",
   "width": 164,
-  "height": 39,
-  "download_url": "https://3.basecampapi.com/195539477/buckets/2085958498/uploads/9007199254741761/download/company-logo.png",
-  "app_download_url": "https://3.basecamp.com/195539477/buckets/2085958498/uploads/9007199254741761/download/company-logo.png"
+  "height": 39
 }
 ```
 <!-- END GET /buckets/1/uploads/2.json -->

@@ -18,44 +18,49 @@ To get the questionnaire ID for a project, see the [Get a Project][project] endp
 <!-- START GET /buckets/1/questionnaires/2.json -->
 ```json
 {
-  "id": 9007199254741437,
+  "id": 1069479343,
   "status": "active",
-  "created_at": "2016-07-19T16:47:30.653Z",
-  "updated_at": "2016-07-19T18:24:05.737Z",
+  "visible_to_clients": false,
+  "created_at": "2022-11-22T08:23:58.246Z",
+  "updated_at": "2022-11-22T08:25:12.647Z",
   "title": "Automatic Check-ins",
   "inherits_status": true,
   "type": "Questionnaire",
-  "url": "https://3.basecampapi.com/195539477/buckets/2085958498/questionnaires/9007199254741437.json",
-  "app_url": "https://3.basecamp.com/195539477/buckets/2085958498/questionnaires/9007199254741437",
-  "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7CEkiCGdpZAY6BkVUSSIuZ2lkOi8vYmMzL1JlY29yZGluZy8xMDY0MDkxMDUzP2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg1yZWFkYWJsZQY7AFRJIg9leHBpcmVzX2F0BjsAVDA=--e028731626fb4f0e4665ba42e349ce5c72031b31.json",
-  "position": 5,
+  "url": "https://3.basecampapi.com/195539477/buckets/2085958499/questionnaires/1069479343.json",
+  "app_url": "https://3.basecamp.com/195539477/buckets/2085958499/questionnaires/1069479343",
+  "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7CEkiCGdpZAY6BkVUSSIuZ2lkOi8vYmMzL1JlY29yZGluZy8xMDY5NDc5MzQzP2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg1yZWFkYWJsZQY7AFRJIg9leHBpcmVzX2F0BjsAVDA=--6954f9a736e1acaa2632328b7ff8a9bcda0b1a10.json",
   "bucket": {
-    "id": 2085958498,
+    "id": 2085958499,
     "name": "The Leto Laptop",
     "type": "Project"
   },
   "creator": {
-    "id": 1007299143,
-    "attachable_sgid": "BAh7CEkiCGdpZAY6BkVUSSIrZ2lkOi8vYmMzL1BlcnNvbi8xMDA3Mjk5MTQzP2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg9hdHRhY2hhYmxlBjsAVEkiD2V4cGlyZXNfYXQGOwBUMA==--919d2c8b11ff403eefcab9db42dd26846d0c3102",
+    "id": 1049715914,
+    "attachable_sgid": "BAh7CEkiCGdpZAY6BkVUSSIrZ2lkOi8vYmMzL1BlcnNvbi8xMDQ5NzE1OTE0P2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg9hdHRhY2hhYmxlBjsAVEkiD2V4cGlyZXNfYXQGOwBUMA==--ff006accb6e013cca785190fa38f42c091d24f1e",
     "name": "Victor Cooper",
     "email_address": "victor@honchodesign.com",
     "personable_type": "User",
     "title": "Chief Strategist",
-    "bio": "Don't let your dreams be dreams",
-    "created_at": "2016-09-09T22:58:27.559Z",
-    "updated_at": "2016-09-09T22:58:31.296Z",
+    "bio": "Don’t let your dreams be dreams",
+    "location": "Chicago, IL",
+    "created_at": "2022-11-22T08:23:21.732Z",
+    "updated_at": "2022-11-22T08:23:21.904Z",
     "admin": true,
     "owner": true,
+    "client": false,
+    "employee": true,
     "time_zone": "America/Chicago",
-    "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBEcqCjw=--c632b967cec296b87363a697a67a87f9cc1e5b45/avatar-64-x4",
+    "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBMpkkT4=--5520caeec1845b5090bbfc993ffe8eca8d138e14/avatar?v=1",
     "company": {
       "id": 1033447817,
       "name": "Honcho Design"
-    }
+    },
+    "can_manage_projects": true,
+    "can_manage_people": true
   },
   "name": "Automatic Check-ins",
-  "questions_count": 5,
-  "questions_url": "https://3.basecampapi.com/195539477/buckets/2085958498/questionnaires/9007199254741437/questions.json"
+  "questions_count": 1,
+  "questions_url": "https://3.basecampapi.com/195539477/buckets/2085958499/questionnaires/1069479343/questions.json"
 }
 ```
 <!-- END GET /buckets/1/questionnaires/2.json -->

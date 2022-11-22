@@ -23,96 +23,107 @@ _Optional parameters_:
 ```json
 [
   {
-    "id": 2085958498,
+    "id": 2085958499,
     "status": "active",
-    "created_at": "2016-09-20T14:34:10.467Z",
-    "updated_at": "2016-09-20T14:50:48.007Z",
+    "created_at": "2022-10-28T08:23:58.169Z",
+    "updated_at": "2022-11-22T17:56:27.363Z",
     "name": "The Leto Laptop",
     "description": "Laptop product launch.",
     "purpose": "topic",
-    "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7CEkiCGdpZAY6BkVUSSIrZ2lkOi8vYmMzL0J1Y2tldC8yMDg1OTU4NDk4P2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg1yZWFkYWJsZQY7AFRJIg9leHBpcmVzX2F0BjsAVDA=--c8e1a465de900eb9864fa79ae2f30345be158f71.json",
-    "url": "https://3.basecampapi.com/195539477/projects/2085958498.json",
-    "app_url": "https://3.basecamp.com/195539477/projects/2085958498",
+    "clients_enabled": false,
+    "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7CEkiCGdpZAY6BkVUSSIrZ2lkOi8vYmMzL0J1Y2tldC8yMDg1OTU4NDk5P2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg1yZWFkYWJsZQY7AFRJIg9leHBpcmVzX2F0BjsAVDA=--691d627098347705738640552798539681dcd3b6.json",
+    "url": "https://3.basecampapi.com/195539477/projects/2085958499.json",
+    "app_url": "https://3.basecamp.com/195539477/projects/2085958499",
     "dock": [
       {
-        "id": 9007199254741443,
-        "title": "Campfire",
-        "name": "chat",
-        "enabled": true,
-        "position": 1,
-        "url": "https://3.basecampapi.com/195539477/buckets/2085958498/chats/9007199254741443.json",
-        "app_url": "https://3.basecamp.com/195539477/buckets/2085958498/chats/9007199254741443"
-      },
-      {
-        "id": 9007199254741444,
+        "id": 1069479338,
         "title": "Message Board",
         "name": "message_board",
         "enabled": true,
-        "position": 2,
-        "url": "https://3.basecampapi.com/195539477/buckets/2085958498/message_boards/9007199254741444.json",
-        "app_url": "https://3.basecamp.com/195539477/buckets/2085958498/message_boards/9007199254741444"
+        "position": 1,
+        "url": "https://3.basecampapi.com/195539477/buckets/2085958499/message_boards/1069479338.json",
+        "app_url": "https://3.basecamp.com/195539477/buckets/2085958499/message_boards/1069479338"
       },
       {
-        "id": 9007199254741445,
+        "id": 1069479339,
         "title": "To-dos",
         "name": "todoset",
         "enabled": true,
-        "position": 3,
-        "url": "https://3.basecampapi.com/195539477/buckets/2085958498/todosets/9007199254741445.json",
-        "app_url": "https://3.basecamp.com/195539477/buckets/2085958498/todosets/9007199254741445"
+        "position": 2,
+        "url": "https://3.basecampapi.com/195539477/buckets/2085958499/todosets/1069479339.json",
+        "app_url": "https://3.basecamp.com/195539477/buckets/2085958499/todosets/1069479339"
       },
       {
-        "id": 9007199254741446,
-        "title": "Schedule",
-        "name": "schedule",
-        "enabled": true,
-        "position": 4,
-        "url": "https://3.basecampapi.com/195539477/buckets/2085958498/schedules/9007199254741446.json",
-        "app_url": "https://3.basecamp.com/195539477/buckets/2085958498/schedules/9007199254741446"
-      },
-      {
-        "id": 9007199254741447,
-        "title": "Automatic Check-ins",
-        "name": "questionnaire",
-        "enabled": true,
-        "position": 5,
-        "url": "https://3.basecampapi.com/195539477/buckets/2085958498/questionnaires/9007199254741447.json",
-        "app_url": "https://3.basecamp.com/195539477/buckets/2085958498/questionnaires/9007199254741447"
-      },
-      {
-        "id": 9007199254741452,
+        "id": 1069479340,
         "title": "Docs & Files",
         "name": "vault",
         "enabled": true,
-        "position": 6,
-        "url": "https://3.basecampapi.com/195539477/buckets/2085958498/vaults/9007199254741452.json",
-        "app_url": "https://3.basecamp.com/195539477/buckets/2085958498/vaults/9007199254741452"
+        "position": 3,
+        "url": "https://3.basecampapi.com/195539477/buckets/2085958499/vaults/1069479340.json",
+        "app_url": "https://3.basecamp.com/195539477/buckets/2085958499/vaults/1069479340"
       },
       {
-        "id": 9007199254741453,
-        "title": "Forwards",
+        "id": 1069479341,
+        "title": "Campfire",
+        "name": "chat",
+        "enabled": true,
+        "position": 4,
+        "url": "https://3.basecampapi.com/195539477/buckets/2085958499/chats/1069479341.json",
+        "app_url": "https://3.basecamp.com/195539477/buckets/2085958499/chats/1069479341"
+      },
+      {
+        "id": 1069479342,
+        "title": "Schedule",
+        "name": "schedule",
+        "enabled": true,
+        "position": 5,
+        "url": "https://3.basecampapi.com/195539477/buckets/2085958499/schedules/1069479342.json",
+        "app_url": "https://3.basecamp.com/195539477/buckets/2085958499/schedules/1069479342"
+      },
+      {
+        "id": 1069479343,
+        "title": "Automatic Check-ins",
+        "name": "questionnaire",
+        "enabled": false,
+        "position": null,
+        "url": "https://3.basecampapi.com/195539477/buckets/2085958499/questionnaires/1069479343.json",
+        "app_url": "https://3.basecamp.com/195539477/buckets/2085958499/questionnaires/1069479343"
+      },
+      {
+        "id": 1069479344,
+        "title": "Email Forwards",
         "name": "inbox",
         "enabled": false,
         "position": null,
-        "url": "https://3.basecampapi.com/195539477/buckets/2085958498/inboxes/9007199254741453.json",
-        "app_url": "https://3.basecamp.com/195539477/buckets/2085958498/inboxes/9007199254741453"
+        "url": "https://3.basecampapi.com/195539477/buckets/2085958499/inboxes/1069479344.json",
+        "app_url": "https://3.basecamp.com/195539477/buckets/2085958499/inboxes/1069479344"
+      },
+      {
+        "id": 1069479345,
+        "title": "Card Table",
+        "name": "kanban_board",
+        "enabled": false,
+        "position": null,
+        "url": "https://3.basecampapi.com/195539477/buckets/2085958499/card_tables/1069479345.json",
+        "app_url": "https://3.basecamp.com/195539477/buckets/2085958499/card_tables/1069479345"
       }
     ],
-    "bookmarked": false
+    "bookmarked": true
   },
   {
     "id": 2085958500,
     "status": "active",
-    "created_at": "2018-02-27T11:11:55.423Z",
-    "updated_at": "2018-02-27T11:13:46.317Z",
+    "created_at": "2022-10-08T08:24:14.049Z",
+    "updated_at": "2022-11-22T08:25:24.633Z",
     "name": "The Leto Locator",
     "description": "New software and hardware built for locating and securing Leto products.",
     "purpose": "topic",
-    "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7CEkiCGdpZAY6BkVUSSIrZ2lkOi8vYmMzL0J1Y2tldC8yMDg1OTU4NTAwP2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg1yZWFkYWJsZQY7AFRJIg9leHBpcmVzX2F0BjsAVDA=--0a4a96352e7a1f0a1ab7ed7fd35dfa9b41a28d06.json",
+    "clients_enabled": false,
+    "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7CEkiCGdpZAY6BkVUSSIrZ2lkOi8vYmMzL0J1Y2tldC8yMDg1OTU4NTAwP2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg1yZWFkYWJsZQY7AFRJIg9leHBpcmVzX2F0BjsAVDA=--3792afdce2e0fb99a38a2fcecf198313a428c478.json",
     "url": "https://3.basecampapi.com/195539477/projects/2085958500.json",
     "app_url": "https://3.basecamp.com/195539477/projects/2085958500",
     "client_company": {
-      "id": 1033447819,
+      "id": 1033447818,
       "name": "Leto Brand"
     },
     "clientside": {
@@ -121,70 +132,79 @@ _Optional parameters_:
     },
     "dock": [
       {
-        "id": 1064091258,
-        "title": "Campfire",
-        "name": "chat",
-        "enabled": true,
-        "position": 1,
-        "url": "https://3.basecampapi.com/195539477/buckets/2085958500/chats/1064091258.json",
-        "app_url": "https://3.basecamp.com/195539477/buckets/2085958500/chats/1064091258"
-      },
-      {
-        "id": 1064091259,
+        "id": 1069479551,
         "title": "Message Board",
         "name": "message_board",
         "enabled": true,
-        "position": 2,
-        "url": "https://3.basecampapi.com/195539477/buckets/2085958500/message_boards/1064091259.json",
-        "app_url": "https://3.basecamp.com/195539477/buckets/2085958500/message_boards/1064091259"
+        "position": 1,
+        "url": "https://3.basecampapi.com/195539477/buckets/2085958500/message_boards/1069479551.json",
+        "app_url": "https://3.basecamp.com/195539477/buckets/2085958500/message_boards/1069479551"
       },
       {
-        "id": 1064091260,
+        "id": 1069479552,
         "title": "To-dos",
         "name": "todoset",
         "enabled": true,
-        "position": 3,
-        "url": "https://3.basecampapi.com/195539477/buckets/2085958500/todosets/1064091260.json",
-        "app_url": "https://3.basecamp.com/195539477/buckets/2085958500/todosets/1064091260"
+        "position": 2,
+        "url": "https://3.basecampapi.com/195539477/buckets/2085958500/todosets/1069479552.json",
+        "app_url": "https://3.basecamp.com/195539477/buckets/2085958500/todosets/1069479552"
       },
       {
-        "id": 1064091261,
-        "title": "Schedule",
-        "name": "schedule",
-        "enabled": true,
-        "position": 4,
-        "url": "https://3.basecampapi.com/195539477/buckets/2085958500/schedules/1064091261.json",
-        "app_url": "https://3.basecamp.com/195539477/buckets/2085958500/schedules/1064091261"
-      },
-      {
-        "id": 1064091262,
-        "title": "Automatic Check-ins",
-        "name": "questionnaire",
-        "enabled": true,
-        "position": 5,
-        "url": "https://3.basecampapi.com/195539477/buckets/2085958500/questionnaires/1064091262.json",
-        "app_url": "https://3.basecamp.com/195539477/buckets/2085958500/questionnaires/1064091262"
-      },
-      {
-        "id": 1064091265,
+        "id": 1069479553,
         "title": "Docs & Files",
         "name": "vault",
         "enabled": true,
-        "position": 6,
-        "url": "https://3.basecampapi.com/195539477/buckets/2085958500/vaults/1064091265.json",
-        "app_url": "https://3.basecamp.com/195539477/buckets/2085958500/vaults/1064091265"
+        "position": 3,
+        "url": "https://3.basecampapi.com/195539477/buckets/2085958500/vaults/1069479553.json",
+        "app_url": "https://3.basecamp.com/195539477/buckets/2085958500/vaults/1069479553"
       },
       {
-        "id": 1064091266,
+        "id": 1069479554,
+        "title": "Campfire",
+        "name": "chat",
+        "enabled": true,
+        "position": 4,
+        "url": "https://3.basecampapi.com/195539477/buckets/2085958500/chats/1069479554.json",
+        "app_url": "https://3.basecamp.com/195539477/buckets/2085958500/chats/1069479554"
+      },
+      {
+        "id": 1069479555,
+        "title": "Schedule",
+        "name": "schedule",
+        "enabled": true,
+        "position": 5,
+        "url": "https://3.basecampapi.com/195539477/buckets/2085958500/schedules/1069479555.json",
+        "app_url": "https://3.basecamp.com/195539477/buckets/2085958500/schedules/1069479555"
+      },
+      {
+        "id": 1069479556,
+        "title": "Automatic Check-ins",
+        "name": "questionnaire",
+        "enabled": false,
+        "position": null,
+        "url": "https://3.basecampapi.com/195539477/buckets/2085958500/questionnaires/1069479556.json",
+        "app_url": "https://3.basecamp.com/195539477/buckets/2085958500/questionnaires/1069479556"
+      },
+      {
+        "id": 1069479557,
         "title": "Email Forwards",
         "name": "inbox",
         "enabled": false,
         "position": null,
-        "url": "https://3.basecampapi.com/195539477/buckets/2085958500/inboxes/1064091266.json",
-        "app_url": "https://3.basecamp.com/195539477/buckets/2085958500/inboxes/1064091266"
+        "url": "https://3.basecampapi.com/195539477/buckets/2085958500/inboxes/1069479557.json",
+        "app_url": "https://3.basecamp.com/195539477/buckets/2085958500/inboxes/1069479557"
+      },
+      {
+        "id": 1069479558,
+        "title": "Card Table",
+        "name": "kanban_board",
+        "enabled": false,
+        "position": null,
+        "url": "https://3.basecampapi.com/195539477/buckets/2085958500/card_tables/1069479558.json",
+        "app_url": "https://3.basecamp.com/195539477/buckets/2085958500/card_tables/1069479558"
       }
     ],
-    "bookmarked": false
+    "bookmarked": true
   }
 ]
 ```
@@ -207,79 +227,89 @@ The `dock` key contains an array of the current tools for this project. The `ena
 <!-- START GET /projects/1.json -->
 ```json
 {
-  "id": 2085958498,
+  "id": 2085958499,
   "status": "active",
-  "created_at": "2016-09-20T14:34:10.467Z",
-  "updated_at": "2016-09-20T14:50:48.007Z",
+  "created_at": "2022-10-28T08:23:58.169Z",
+  "updated_at": "2022-11-22T17:56:27.363Z",
   "name": "The Leto Laptop",
   "description": "Laptop product launch.",
   "purpose": "topic",
-  "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7CEkiCGdpZAY6BkVUSSIrZ2lkOi8vYmMzL0J1Y2tldC8yMDg1OTU4NDk4P2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg1yZWFkYWJsZQY7AFRJIg9leHBpcmVzX2F0BjsAVDA=--c8e1a465de900eb9864fa79ae2f30345be158f71.json",
-  "url": "https://3.basecampapi.com/195539477/projects/2085958498.json",
-  "app_url": "https://3.basecamp.com/195539477/projects/2085958498",
+  "clients_enabled": false,
+  "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7CEkiCGdpZAY6BkVUSSIrZ2lkOi8vYmMzL0J1Y2tldC8yMDg1OTU4NDk5P2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg1yZWFkYWJsZQY7AFRJIg9leHBpcmVzX2F0BjsAVDA=--691d627098347705738640552798539681dcd3b6.json",
+  "url": "https://3.basecampapi.com/195539477/projects/2085958499.json",
+  "app_url": "https://3.basecamp.com/195539477/projects/2085958499",
   "dock": [
     {
-      "id": 9007199254741443,
-      "title": "Campfire",
-      "name": "chat",
-      "enabled": true,
-      "position": 1,
-      "url": "https://3.basecampapi.com/195539477/buckets/2085958498/chats/9007199254741443.json",
-      "app_url": "https://3.basecamp.com/195539477/buckets/2085958498/chats/9007199254741443"
-    },
-    {
-      "id": 9007199254741444,
+      "id": 1069479338,
       "title": "Message Board",
       "name": "message_board",
       "enabled": true,
-      "position": 2,
-      "url": "https://3.basecampapi.com/195539477/buckets/2085958498/message_boards/9007199254741444.json",
-      "app_url": "https://3.basecamp.com/195539477/buckets/2085958498/message_boards/9007199254741444"
+      "position": 1,
+      "url": "https://3.basecampapi.com/195539477/buckets/2085958499/message_boards/1069479338.json",
+      "app_url": "https://3.basecamp.com/195539477/buckets/2085958499/message_boards/1069479338"
     },
     {
-      "id": 9007199254741445,
+      "id": 1069479339,
       "title": "To-dos",
       "name": "todoset",
       "enabled": true,
-      "position": 3,
-      "url": "https://3.basecampapi.com/195539477/buckets/2085958498/todosets/9007199254741445.json",
-      "app_url": "https://3.basecamp.com/195539477/buckets/2085958498/todosets/9007199254741445"
+      "position": 2,
+      "url": "https://3.basecampapi.com/195539477/buckets/2085958499/todosets/1069479339.json",
+      "app_url": "https://3.basecamp.com/195539477/buckets/2085958499/todosets/1069479339"
     },
     {
-      "id": 9007199254741446,
-      "title": "Schedule",
-      "name": "schedule",
-      "enabled": true,
-      "position": 4,
-      "url": "https://3.basecampapi.com/195539477/buckets/2085958498/schedules/9007199254741446.json",
-      "app_url": "https://3.basecamp.com/195539477/buckets/2085958498/schedules/9007199254741446"
-    },
-    {
-      "id": 9007199254741447,
-      "title": "Automatic Check-ins",
-      "name": "questionnaire",
-      "enabled": true,
-      "position": 5,
-      "url": "https://3.basecampapi.com/195539477/buckets/2085958498/questionnaires/9007199254741447.json",
-      "app_url": "https://3.basecamp.com/195539477/buckets/2085958498/questionnaires/9007199254741447"
-    },
-    {
-      "id": 9007199254741452,
+      "id": 1069479340,
       "title": "Docs & Files",
       "name": "vault",
       "enabled": true,
-      "position": 6,
-      "url": "https://3.basecampapi.com/195539477/buckets/2085958498/vaults/9007199254741452.json",
-      "app_url": "https://3.basecamp.com/195539477/buckets/2085958498/vaults/9007199254741452"
+      "position": 3,
+      "url": "https://3.basecampapi.com/195539477/buckets/2085958499/vaults/1069479340.json",
+      "app_url": "https://3.basecamp.com/195539477/buckets/2085958499/vaults/1069479340"
     },
     {
-      "id": 9007199254741453,
-      "title": "Forwards",
+      "id": 1069479341,
+      "title": "Campfire",
+      "name": "chat",
+      "enabled": true,
+      "position": 4,
+      "url": "https://3.basecampapi.com/195539477/buckets/2085958499/chats/1069479341.json",
+      "app_url": "https://3.basecamp.com/195539477/buckets/2085958499/chats/1069479341"
+    },
+    {
+      "id": 1069479342,
+      "title": "Schedule",
+      "name": "schedule",
+      "enabled": true,
+      "position": 5,
+      "url": "https://3.basecampapi.com/195539477/buckets/2085958499/schedules/1069479342.json",
+      "app_url": "https://3.basecamp.com/195539477/buckets/2085958499/schedules/1069479342"
+    },
+    {
+      "id": 1069479343,
+      "title": "Automatic Check-ins",
+      "name": "questionnaire",
+      "enabled": false,
+      "position": null,
+      "url": "https://3.basecampapi.com/195539477/buckets/2085958499/questionnaires/1069479343.json",
+      "app_url": "https://3.basecamp.com/195539477/buckets/2085958499/questionnaires/1069479343"
+    },
+    {
+      "id": 1069479344,
+      "title": "Email Forwards",
       "name": "inbox",
       "enabled": false,
       "position": null,
-      "url": "https://3.basecampapi.com/195539477/buckets/2085958498/inboxes/9007199254741453.json",
-      "app_url": "https://3.basecamp.com/195539477/buckets/2085958498/inboxes/9007199254741453"
+      "url": "https://3.basecampapi.com/195539477/buckets/2085958499/inboxes/1069479344.json",
+      "app_url": "https://3.basecamp.com/195539477/buckets/2085958499/inboxes/1069479344"
+    },
+    {
+      "id": 1069479345,
+      "title": "Card Table",
+      "name": "kanban_board",
+      "enabled": false,
+      "position": null,
+      "url": "https://3.basecampapi.com/195539477/buckets/2085958499/card_tables/1069479345.json",
+      "app_url": "https://3.basecamp.com/195539477/buckets/2085958499/card_tables/1069479345"
     }
   ]
 }
