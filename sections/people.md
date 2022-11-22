@@ -20,23 +20,28 @@ Get all people
 ```json
 [
   {
-    "id": 1007299143,
-    "attachable_sgid": "BAh7CEkiCGdpZAY6BkVUSSIrZ2lkOi8vYmMzL1BlcnNvbi8xMDA3Mjk5MTQzP2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg9hdHRhY2hhYmxlBjsAVEkiD2V4cGlyZXNfYXQGOwBUMA==--919d2c8b11ff403eefcab9db42dd26846d0c3102",
+    "id": 1049715914,
+    "attachable_sgid": "BAh7CEkiCGdpZAY6BkVUSSIrZ2lkOi8vYmMzL1BlcnNvbi8xMDQ5NzE1OTE0P2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg9hdHRhY2hhYmxlBjsAVEkiD2V4cGlyZXNfYXQGOwBUMA==--ff006accb6e013cca785190fa38f42c091d24f1e",
     "name": "Victor Cooper",
     "email_address": "victor@honchodesign.com",
     "personable_type": "User",
     "title": "Chief Strategist",
-    "bio": "Don't let your dreams be dreams",
-    "created_at": "2016-09-09T22:58:27.559Z",
-    "updated_at": "2016-09-09T22:58:31.296Z",
+    "bio": "Don’t let your dreams be dreams",
+    "location": "Chicago, IL",
+    "created_at": "2022-11-22T08:23:21.732Z",
+    "updated_at": "2022-11-22T08:23:21.904Z",
     "admin": true,
     "owner": true,
+    "client": false,
+    "employee": true,
     "time_zone": "America/Chicago",
-    "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBEcqCjw=--c632b967cec296b87363a697a67a87f9cc1e5b45/avatar-64-x4",
+    "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBMpkkT4=--5520caeec1845b5090bbfc993ffe8eca8d138e14/avatar?v=1",
     "company": {
       "id": 1033447817,
       "name": "Honcho Design"
-    }
+    },
+    "can_manage_projects": true,
+    "can_manage_people": true
   }
 ]
 ```
@@ -77,10 +82,10 @@ Update who can access a project
 ```json
 {
   "grant": [
-    1007299151
+    1049715922
   ],
   "revoke": [
-    1007299150
+    1049715921
   ],
   "create": [
     {
@@ -107,59 +112,74 @@ curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/j
 {
   "granted": [
     {
-      "id": 1007299151,
-      "attachable_sgid": "BAh7CEkiCGdpZAY6BkVUSSIrZ2lkOi8vYmMzL1BlcnNvbi8xMDA3Mjk5MTUxP2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg9hdHRhY2hhYmxlBjsAVEkiD2V4cGlyZXNfYXQGOwBUMA==--c2c6955487d989510c7cba74f95fb804ac9d0c7a",
+      "id": 1049715922,
+      "attachable_sgid": "BAh7CEkiCGdpZAY6BkVUSSIrZ2lkOi8vYmMzL1BlcnNvbi8xMDQ5NzE1OTIyP2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg9hdHRhY2hhYmxlBjsAVEkiD2V4cGlyZXNfYXQGOwBUMA==--90ea53b2b0ce32a96bcc6ef712c1fac0dbb0a0cd",
       "name": "Amy Rivera",
       "email_address": "amy@honchodesign.com",
       "personable_type": "User",
       "title": "Central Web Coordinator",
       "bio": "I never said most of the things I said",
-      "created_at": "2016-09-09T22:58:28.471Z",
-      "updated_at": "2016-09-09T22:58:28.471Z",
+      "location": null,
+      "created_at": "2022-11-22T08:23:22.005Z",
+      "updated_at": "2022-11-22T08:23:22.005Z",
       "admin": false,
       "owner": false,
-      "time_zone": "America/Chicago",
-      "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBE8qCjw=--44a343c4ec0f62daf82484ec3539efc8c74a336a/avatar-64-x4"
+      "client": false,
+      "employee": false,
+      "time_zone": "Etc/UTC",
+      "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBNJkkT4=--6ef93d58440c2ed1fec4457e3eb5f09572e866a4/avatar?v=1",
+      "can_manage_projects": true,
+      "can_manage_people": true
     },
     {
-      "id": 1007299179,
-      "attachable_sgid": "BAh7CEkiCGdpZAY6BkVUSSIrZ2lkOi8vYmMzL1BlcnNvbi8xMDA3Mjk5MTc5P2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg9hdHRhY2hhYmxlBjsAVEkiD2V4cGlyZXNfYXQGOwBUMA==--5b7aee1ec5cf2236ccda51788e506f82c6b208a0",
+      "id": 1049715969,
+      "attachable_sgid": "BAh7CEkiCGdpZAY6BkVUSSIrZ2lkOi8vYmMzL1BlcnNvbi8xMDQ5NzE1OTY5P2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg9hdHRhY2hhYmxlBjsAVEkiD2V4cGlyZXNfYXQGOwBUMA==--f94940da9b0adc1ec997382934419905904c8692",
       "name": "Victor Copper",
       "email_address": "victor@hanchodesign.com",
       "personable_type": "User",
       "title": "Prankster",
       "bio": null,
-      "created_at": "2016-09-09T21:48:42.516Z",
-      "updated_at": "2016-09-09T21:48:42.669Z",
+      "location": null,
+      "created_at": "2022-11-22T17:56:23.633Z",
+      "updated_at": "2022-11-22T17:56:23.633Z",
       "admin": false,
       "owner": false,
-      "time_zone": "Etc/UTC",
-      "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBGsqCjw=--4d718d305d97766ff1c41f0976c209897a495900/avatar-64-x4",
+      "client": false,
+      "employee": false,
+      "time_zone": "America/Chicago",
+      "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBAFlkT4=--b48efd42c6425ae51e7205e157d902971934e5b8/avatar?v=1",
       "company": {
-        "id": 1033447820,
+        "id": 1033447819,
         "name": "Hancho Design"
-      }
+      },
+      "can_manage_projects": true,
+      "can_manage_people": true
     }
   ],
   "revoked": [
     {
-      "id": 1007299150,
-      "attachable_sgid": "BAh7CEkiCGdpZAY6BkVUSSIrZ2lkOi8vYmMzL1BlcnNvbi8xMDA3Mjk5MTUwP2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg9hdHRhY2hhYmxlBjsAVEkiD2V4cGlyZXNfYXQGOwBUMA==--9856de8e8169dda9e2c441b7184985194b2d2296",
+      "id": 1049715921,
+      "attachable_sgid": "BAh7CEkiCGdpZAY6BkVUSSIrZ2lkOi8vYmMzL1BlcnNvbi8xMDQ5NzE1OTIxP2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg9hdHRhY2hhYmxlBjsAVEkiD2V4cGlyZXNfYXQGOwBUMA==--61b488a9fa97d2e628aee86cf51a4ba0171888c2",
       "name": "Steve Marsh",
       "email_address": "steve@honchodesign.com",
       "personable_type": "User",
       "title": "Legacy Directives Strategist",
       "bio": "You can do it!",
-      "created_at": "2016-09-09T22:58:28.369Z",
-      "updated_at": "2016-09-09T22:58:28.369Z",
+      "location": null,
+      "created_at": "2022-11-22T08:23:21.991Z",
+      "updated_at": "2022-11-22T08:23:21.991Z",
       "admin": false,
       "owner": false,
-      "time_zone": "America/Chicago",
-      "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBE4qCjw=--b544b6a710bd76020abc076fc041895954025116/avatar-64-x4",
+      "client": false,
+      "employee": true,
+      "time_zone": "Etc/UTC",
+      "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBNFkkT4=--c57bba9b44447be39d4a79a5e7f2a592cae9e82c/avatar?v=1",
       "company": {
         "id": 1033447817,
         "name": "Honcho Design"
-      }
+      },
+      "can_manage_projects": true,
+      "can_manage_people": true
     }
   ]
 }
@@ -191,19 +211,24 @@ Get person
 <!-- START GET /people/2.json -->
 ```json
 {
-  "id": 1007299169,
-  "attachable_sgid": "BAh7CEkiCGdpZAY6BkVUSSIrZ2lkOi8vYmMzL1BlcnNvbi8xMDA3Mjk5MTY5P2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg9hdHRhY2hhYmxlBjsAVEkiD2V4cGlyZXNfYXQGOwBUMA==--8d8252a8a833e327749aec047863a6246d6891dd",
-  "name": "Zach Settles",
-  "email_address": "zach@honchodesign.com",
+  "id": 1049715927,
+  "attachable_sgid": "BAh7CEkiCGdpZAY6BkVUSSIrZ2lkOi8vYmMzL1BlcnNvbi8xMDQ5NzE1OTI3P2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg9hdHRhY2hhYmxlBjsAVEkiD2V4cGlyZXNfYXQGOwBUMA==--91fc84e70b851466d15f747bb3e5238b4005b35b",
+  "name": "Charles Koga",
+  "email_address": "charles@honchodesign.com",
   "personable_type": "User",
-  "title": "Customer Paradigm Supervisor",
-  "bio": "Procrastination is the art of keeping up with yesterday",
-  "created_at": "2016-09-09T22:58:30.350Z",
-  "updated_at": "2016-09-09T22:58:30.350Z",
+  "title": "Principal Solutions Technician",
+  "bio": null,
+  "location": null,
+  "created_at": "2022-11-22T08:23:22.066Z",
+  "updated_at": "2022-11-22T08:23:22.066Z",
   "admin": false,
   "owner": false,
-  "time_zone": "America/Chicago",
-  "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBGEqCjw=--f278ae7c0479355c2aa772cb3155e925954de561/avatar-64-x4"
+  "client": false,
+  "employee": false,
+  "time_zone": "Etc/UTC",
+  "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBNdkkT4=--6b5d8dd66434670c75d33036ca0fb8e13fa7be94/avatar?v=1",
+  "can_manage_projects": true,
+  "can_manage_people": true
 }
 ```
 <!-- END GET /people/2.json -->

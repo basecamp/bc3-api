@@ -16,22 +16,24 @@ Get questions
 ```json
 [
   {
-    "id": 9007199254741453,
+    "id": 1069479362,
     "status": "active",
-    "created_at": "2017-02-15T13:37:19.641Z",
-    "updated_at": "2017-02-15T13:37:19.935Z",
-    "title": "How do you think the project’s been going so far?",
+    "visible_to_clients": false,
+    "created_at": "2022-10-29T10:56:58.169Z",
+    "updated_at": "2022-11-22T08:25:12.645Z",
+    "title": "What did you work on today?",
     "inherits_status": true,
     "type": "Question",
-    "url": "https://3.basecampapi.com/195539477/buckets/2085958499/questions/9007199254741453.json",
-    "app_url": "https://3.basecamp.com/195539477/buckets/2085958499/questions/9007199254741453",
-    "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7CEkiCGdpZAY6BkVUSSIuZ2lkOi8vYmMzL1JlY29yZGluZy8xMDY0MDkxMDY5P2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg1yZWFkYWJsZQY7AFRJIg9leHBpcmVzX2F0BjsAVDA=--d8bf83b21fff569e5e491b4613646f7fa0838fc6.json",
+    "url": "https://3.basecampapi.com/195539477/buckets/2085958499/questions/1069479362.json",
+    "app_url": "https://3.basecamp.com/195539477/buckets/2085958499/questions/1069479362",
+    "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7CEkiCGdpZAY6BkVUSSIuZ2lkOi8vYmMzL1JlY29yZGluZy8xMDY5NDc5MzYyP2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg1yZWFkYWJsZQY7AFRJIg9leHBpcmVzX2F0BjsAVDA=--98a22f48366f2b97eda3cc5996bcbd018f2118e3.json",
+    "subscription_url": "https://3.basecampapi.com/195539477/buckets/2085958499/recordings/1069479362/subscription.json",
     "parent": {
-      "id": 9007199254741452,
+      "id": 1069479343,
       "title": "Automatic Check-ins",
       "type": "Questionnaire",
-      "url": "https://3.basecampapi.com/195539477/buckets/2085958499/questionnaires/9007199254741452.json",
-      "app_url": "https://3.basecamp.com/195539477/buckets/2085958499/questionnaires/9007199254741452"
+      "url": "https://3.basecampapi.com/195539477/buckets/2085958499/questionnaires/1069479343.json",
+      "app_url": "https://3.basecamp.com/195539477/buckets/2085958499/questionnaires/1069479343"
     },
     "bucket": {
       "id": 2085958499,
@@ -40,35 +42,48 @@ Get questions
     },
     "creator": {
       "id": 1049715914,
-      "attachable_sgid": "BAh7CEkiCGdpZAY6BkVUSSIrZ2lkOi8vYmMzL1BlcnNvbi8xMDQ5NzE1OTE0P2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg9hdHRhY2hhYmxlBjsAVEkiD2V4cGlyZXNfYXQGOwBUMA==--f7a107e8e50594823dc25f59b44aeefc7b1a4bc8",
+      "attachable_sgid": "BAh7CEkiCGdpZAY6BkVUSSIrZ2lkOi8vYmMzL1BlcnNvbi8xMDQ5NzE1OTE0P2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg9hdHRhY2hhYmxlBjsAVEkiD2V4cGlyZXNfYXQGOwBUMA==--ff006accb6e013cca785190fa38f42c091d24f1e",
       "name": "Victor Cooper",
       "email_address": "victor@honchodesign.com",
       "personable_type": "User",
       "title": "Chief Strategist",
-      "bio": "Don't let your dreams be dreams",
-      "created_at": "2017-02-15T13:35:18.642Z",
-      "updated_at": "2017-02-15T13:37:50.616Z",
+      "bio": "Don’t let your dreams be dreams",
+      "location": "Chicago, IL",
+      "created_at": "2022-11-22T08:23:21.732Z",
+      "updated_at": "2022-11-22T08:23:21.904Z",
       "admin": true,
       "owner": true,
+      "client": false,
+      "employee": true,
       "time_zone": "America/Chicago",
-      "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBMpkkT4=--83f46d5bcb97c314029a53364e3b0444a55759b3/avatar-64-x4",
+      "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBMpkkT4=--5520caeec1845b5090bbfc993ffe8eca8d138e14/avatar?v=1",
       "company": {
         "id": 1033447817,
         "name": "Honcho Design"
-      }
+      },
+      "can_manage_projects": true,
+      "can_manage_people": true
     },
-    "paused": true,
+    "paused": false,
     "schedule": {
-      "frequency": "every_week",
+      "frequency": "every_day",
       "days": [
+        1,
+        2,
+        3,
+        4,
         5
       ],
-      "hour": 16,
-      "minute": 30,
-      "start_date": "2017-02-15"
+      "hour": 17,
+      "minute": 0,
+      "week_instance": null,
+      "week_interval": null,
+      "month_interval": null,
+      "start_date": "2022-11-22",
+      "end_date": null
     },
-    "answers_count": 0,
-    "answers_url": "https://3.basecampapi.com/195539477/buckets/2085958499/questions/9007199254741453/answers.json"
+    "answers_count": 32,
+    "answers_url": "https://3.basecampapi.com/195539477/buckets/2085958499/questions/1069479362/answers.json"
   }
 ]
 ```
@@ -88,20 +103,24 @@ Get a question
 <!-- START GET /buckets/1/questions/2.json -->
 ```json
 {
-  "id": 9007199254741468,
+  "id": 1069479362,
   "status": "active",
-  "created_at": "2017-02-16T15:22:19.512Z",
-  "updated_at": "2017-02-15T13:37:49.481Z",
+  "visible_to_clients": false,
+  "created_at": "2022-10-29T10:56:58.169Z",
+  "updated_at": "2022-11-22T08:25:12.645Z",
+  "title": "What did you work on today?",
   "inherits_status": true,
   "type": "Question",
-  "url": "https://3.basecampapi.com/195539477/buckets/2085958499/questions/9007199254741468.json",
-  "app_url": "https://3.basecamp.com/195539477/buckets/2085958499/questions/9007199254741468",
+  "url": "https://3.basecampapi.com/195539477/buckets/2085958499/questions/1069479362.json",
+  "app_url": "https://3.basecamp.com/195539477/buckets/2085958499/questions/1069479362",
+  "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7CEkiCGdpZAY6BkVUSSIuZ2lkOi8vYmMzL1JlY29yZGluZy8xMDY5NDc5MzYyP2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg1yZWFkYWJsZQY7AFRJIg9leHBpcmVzX2F0BjsAVDA=--98a22f48366f2b97eda3cc5996bcbd018f2118e3.json",
+  "subscription_url": "https://3.basecampapi.com/195539477/buckets/2085958499/recordings/1069479362/subscription.json",
   "parent": {
-    "id": 9007199254741452,
+    "id": 1069479343,
     "title": "Automatic Check-ins",
     "type": "Questionnaire",
-    "url": "https://3.basecampapi.com/195539477/buckets/2085958499/questionnaires/9007199254741452.json",
-    "app_url": "https://3.basecamp.com/195539477/buckets/2085958499/questionnaires/9007199254741452"
+    "url": "https://3.basecampapi.com/195539477/buckets/2085958499/questionnaires/1069479343.json",
+    "app_url": "https://3.basecamp.com/195539477/buckets/2085958499/questionnaires/1069479343"
   },
   "bucket": {
     "id": 2085958499,
@@ -109,26 +128,30 @@ Get a question
     "type": "Project"
   },
   "creator": {
-    "id": 1049715915,
-    "attachable_sgid": "BAh7CEkiCGdpZAY6BkVUSSIrZ2lkOi8vYmMzL1BlcnNvbi8xMDQ5NzE1OTE1P2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg9hdHRhY2hhYmxlBjsAVEkiD2V4cGlyZXNfYXQGOwBUMA==--8c53de5ec1a145d6f44a5b40c1051628ea38a9e2",
-    "name": "Annie Bryan",
-    "email_address": "annie@honchodesign.com",
+    "id": 1049715914,
+    "attachable_sgid": "BAh7CEkiCGdpZAY6BkVUSSIrZ2lkOi8vYmMzL1BlcnNvbi8xMDQ5NzE1OTE0P2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg9hdHRhY2hhYmxlBjsAVEkiD2V4cGlyZXNfYXQGOwBUMA==--ff006accb6e013cca785190fa38f42c091d24f1e",
+    "name": "Victor Cooper",
+    "email_address": "victor@honchodesign.com",
     "personable_type": "User",
-    "title": "Central Markets Manager",
-    "bio": "To open a store is easy, to keep it open is an art",
-    "created_at": "2017-02-15T13:35:19.313Z",
-    "updated_at": "2017-02-15T13:35:19.313Z",
-    "admin": false,
-    "owner": false,
+    "title": "Chief Strategist",
+    "bio": "Don’t let your dreams be dreams",
+    "location": "Chicago, IL",
+    "created_at": "2022-11-22T08:23:21.732Z",
+    "updated_at": "2022-11-22T08:23:21.904Z",
+    "admin": true,
+    "owner": true,
+    "client": false,
+    "employee": true,
     "time_zone": "America/Chicago",
-    "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBMtkkT4=--8f9d15263df7a830cc0228be25bf1cf6ffdda3a8/avatar-64-x4",
+    "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBMpkkT4=--5520caeec1845b5090bbfc993ffe8eca8d138e14/avatar?v=1",
     "company": {
       "id": 1033447817,
       "name": "Honcho Design"
-    }
+    },
+    "can_manage_projects": true,
+    "can_manage_people": true
   },
   "paused": false,
-  "title": "What did you work on today?",
   "schedule": {
     "frequency": "every_day",
     "days": [
@@ -140,10 +163,14 @@ Get a question
     ],
     "hour": 17,
     "minute": 0,
-    "start_date": "2017-02-15"
+    "week_instance": null,
+    "week_interval": null,
+    "month_interval": null,
+    "start_date": "2022-11-22",
+    "end_date": null
   },
   "answers_count": 32,
-  "answers_url": "https://3.basecampapi.com/195539477/buckets/2085958499/questions/9007199254741468/answers.json"
+  "answers_url": "https://3.basecampapi.com/195539477/buckets/2085958499/questions/1069479362/answers.json"
 }
 ```
 <!-- END GET /buckets/1/questions/2.json -->

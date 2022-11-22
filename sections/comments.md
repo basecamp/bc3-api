@@ -21,42 +21,48 @@ Get comments
 ```json
 [
   {
-    "id": 9007199254741444,
+    "id": 1069479352,
     "status": "active",
-    "created_at": "2016-07-19T21:32:42.627Z",
-    "updated_at": "2016-07-19T21:32:42.627Z",
+    "visible_to_clients": false,
+    "created_at": "2022-10-29T10:32:58.169Z",
+    "updated_at": "2022-10-29T10:32:58.169Z",
     "title": "Re: We won Leto!",
     "inherits_status": true,
     "type": "Comment",
-    "url": "https://3.basecampapi.com/195539477/buckets/2085958498/comments/9007199254741444.json",
-    "app_url": "https://3.basecamp.com/195539477/buckets/2085958498/messages/9007199254741443#__recording_9007199254741444",
-    "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7CEkiCGdpZAY6BkVUSSIuZ2lkOi8vYmMzL1JlY29yZGluZy8xMDY0MDkxMDY4P2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg1yZWFkYWJsZQY7AFRJIg9leHBpcmVzX2F0BjsAVDA=--8c119c5f0532a854e2d2d84ea0ffeb5462277bda.json",
+    "url": "https://3.basecampapi.com/195539477/buckets/2085958499/comments/1069479352.json",
+    "app_url": "https://3.basecamp.com/195539477/buckets/2085958499/messages/1069479351#__recording_1069479352",
+    "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7CEkiCGdpZAY6BkVUSSIuZ2lkOi8vYmMzL1JlY29yZGluZy8xMDY5NDc5MzUyP2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg1yZWFkYWJsZQY7AFRJIg9leHBpcmVzX2F0BjsAVDA=--776378f4118807d7eea7c42ddd2a8ab6079b2788.json",
     "parent": {
-      "id": 9007199254741443,
+      "id": 1069479351,
       "title": "We won Leto!",
       "type": "Message",
-      "url": "https://3.basecampapi.com/195539477/buckets/2085958498/messages/9007199254741443.json",
-      "app_url": "https://3.basecamp.com/195539477/buckets/2085958498/messages/9007199254741443"
+      "url": "https://3.basecampapi.com/195539477/buckets/2085958499/messages/1069479351.json",
+      "app_url": "https://3.basecamp.com/195539477/buckets/2085958499/messages/1069479351"
     },
     "bucket": {
-      "id": 2085958498,
+      "id": 2085958499,
       "name": "The Leto Laptop",
       "type": "Project"
     },
     "creator": {
-      "id": 1007299152,
-      "attachable_sgid": "BAh7CEkiCGdpZAY6BkVUSSIrZ2lkOi8vYmMzL1BlcnNvbi8xMDA3Mjk5MTUyP2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg9hdHRhY2hhYmxlBjsAVEkiD2V4cGlyZXNfYXQGOwBUMA==--c70d0dcbf061acc7ca36da4b88819f15af03df52",
+      "id": 1049715923,
+      "attachable_sgid": "BAh7CEkiCGdpZAY6BkVUSSIrZ2lkOi8vYmMzL1BlcnNvbi8xMDQ5NzE1OTIzP2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg9hdHRhY2hhYmxlBjsAVEkiD2V4cGlyZXNfYXQGOwBUMA==--cc7313cd0fef7654f37f813c000bf892d80e2e2f",
       "name": "Andrew Wong",
       "email_address": "andrew@honchodesign.com",
       "personable_type": "User",
       "title": "Senior Branding Strategist",
       "bio": null,
-      "created_at": "2016-09-09T22:58:28.576Z",
-      "updated_at": "2016-09-09T22:58:28.576Z",
+      "location": null,
+      "created_at": "2022-11-22T08:23:22.017Z",
+      "updated_at": "2022-11-22T08:23:22.017Z",
       "admin": false,
       "owner": false,
-      "time_zone": "America/Chicago",
-      "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBFAqCjw=--0413da7be3ef98ba6e3274f859fb29fc38698edf/avatar-64-x4"
+      "client": false,
+      "employee": false,
+      "time_zone": "Etc/UTC",
+      "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBNNkkT4=--e3c2676dde30e7c13f87642e3a3dd46ad657f731/avatar?v=1",
+      "can_manage_projects": true,
+      "can_manage_people": true
     },
     "content": "<div>Yeah! Great job everyone! Super excited to get going!</div>"
   }
@@ -79,46 +85,52 @@ Get a comment
 <!-- START GET /buckets/1/comments/2.json -->
 ```json
 {
-  "id": 9007199254741453,
+  "id": 1069479361,
   "status": "active",
-  "created_at": "2016-07-19T22:54:43.939Z",
-  "updated_at": "2016-07-19T22:54:43.939Z",
+  "visible_to_clients": false,
+  "created_at": "2022-10-30T01:01:58.169Z",
+  "updated_at": "2022-10-30T01:01:58.169Z",
   "title": "Re: We won Leto!",
   "inherits_status": true,
   "type": "Comment",
-  "url": "https://3.basecampapi.com/195539477/buckets/2085958498/comments/9007199254741453.json",
-  "app_url": "https://3.basecamp.com/195539477/buckets/2085958498/messages/9007199254741443#__recording_9007199254741453",
-  "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7CEkiCGdpZAY6BkVUSSIuZ2lkOi8vYmMzL1JlY29yZGluZy8xMDY0MDkxMDY4P2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg1yZWFkYWJsZQY7AFRJIg9leHBpcmVzX2F0BjsAVDA=--8c119c5f0532a854e2d2d84ea0ffeb5462277bda.json",
+  "url": "https://3.basecampapi.com/195539477/buckets/2085958499/comments/1069479361.json",
+  "app_url": "https://3.basecamp.com/195539477/buckets/2085958499/messages/1069479351#__recording_1069479361",
+  "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7CEkiCGdpZAY6BkVUSSIuZ2lkOi8vYmMzL1JlY29yZGluZy8xMDY5NDc5MzYxP2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg1yZWFkYWJsZQY7AFRJIg9leHBpcmVzX2F0BjsAVDA=--8b7691463c92f63fe45627584ed759b44fe7bdaa.json",
   "parent": {
-    "id": 9007199254741443,
+    "id": 1069479351,
     "title": "We won Leto!",
     "type": "Message",
-    "url": "https://3.basecampapi.com/195539477/buckets/2085958498/messages/9007199254741443.json",
-    "app_url": "https://3.basecamp.com/195539477/buckets/2085958498/messages/9007199254741443"
+    "url": "https://3.basecampapi.com/195539477/buckets/2085958499/messages/1069479351.json",
+    "app_url": "https://3.basecamp.com/195539477/buckets/2085958499/messages/1069479351"
   },
   "bucket": {
-    "id": 2085958498,
+    "id": 2085958499,
     "name": "The Leto Laptop",
     "type": "Project"
   },
   "creator": {
-    "id": 1007299144,
-    "attachable_sgid": "BAh7CEkiCGdpZAY6BkVUSSIrZ2lkOi8vYmMzL1BlcnNvbi8xMDA3Mjk5MTQ0P2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg9hdHRhY2hhYmxlBjsAVEkiD2V4cGlyZXNfYXQGOwBUMA==--2e34d7611a9fcaeb82342d015a671cf5e998c036",
+    "id": 1049715915,
+    "attachable_sgid": "BAh7CEkiCGdpZAY6BkVUSSIrZ2lkOi8vYmMzL1BlcnNvbi8xMDQ5NzE1OTE1P2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg9hdHRhY2hhYmxlBjsAVEkiD2V4cGlyZXNfYXQGOwBUMA==--aeb392ebf54ffd820e45f27add22bae3a8c7da56",
     "name": "Annie Bryan",
     "email_address": "annie@honchodesign.com",
     "personable_type": "User",
     "title": "Central Markets Manager",
     "bio": "To open a store is easy, to keep it open is an art",
-    "created_at": "2016-09-09T22:58:27.734Z",
-    "updated_at": "2016-09-09T22:58:27.734Z",
+    "location": null,
+    "created_at": "2022-11-22T08:23:21.911Z",
+    "updated_at": "2022-11-22T08:23:21.911Z",
     "admin": false,
     "owner": false,
+    "client": false,
+    "employee": true,
     "time_zone": "America/Chicago",
-    "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBEgqCjw=--8266bb0507508f3d46050d57b65924d5e2a005f3/avatar-64-x4",
+    "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBMtkkT4=--9927c47a4cbee30a7f9aea667882496aba799149/avatar?v=1",
     "company": {
       "id": 1033447817,
       "name": "Honcho Design"
-    }
+    },
+    "can_manage_projects": true,
+    "can_manage_people": true
   },
   "content": "<div>I just want to echo what just about everyone already said. This is a big one for us, and I can't wait to get going. I'll be spinning up the project shortly!</div>"
 }

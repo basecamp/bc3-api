@@ -25,24 +25,27 @@ _Optional query parameters_:
 ```json
 [
   {
-    "id": 1046492039,
+    "id": 1069479520,
     "status": "active",
-    "created_at": "2017-12-01T11:00:53.586Z",
-    "updated_at": "2017-11-09T09:48:17.217Z",
+    "visible_to_clients": false,
+    "created_at": "2022-11-19T10:49:58.169Z",
+    "updated_at": "2022-11-22T13:36:50.727Z",
     "title": "Strategy ideas",
     "inherits_status": true,
     "type": "Todolist",
-    "url": "https://3.basecampapi.com/195539477/buckets/2085958499/todolists/1046492039.json",
-    "app_url": "https://3.basecamp.com/195539477/buckets/2085958499/todolists/1046492039",
+    "url": "https://3.basecampapi.com/195539477/buckets/2085958499/todolists/1069479520.json",
+    "app_url": "https://3.basecamp.com/195539477/buckets/2085958499/todolists/1069479520",
+    "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7CEkiCGdpZAY6BkVUSSIuZ2lkOi8vYmMzL1JlY29yZGluZy8xMDY5NDc5NTIwP2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg1yZWFkYWJsZQY7AFRJIg9leHBpcmVzX2F0BjsAVDA=--24332fbdc81b06784de7e8f2b6c1e29021bbae58.json",
+    "subscription_url": "https://3.basecampapi.com/195539477/buckets/2085958499/recordings/1069479520/subscription.json",
     "comments_count": 0,
-    "comments_url": "https://3.basecampapi.com/195539477/buckets/2085958499/recordings/1046492039/comments.json",
+    "comments_url": "https://3.basecampapi.com/195539477/buckets/2085958499/recordings/1069479520/comments.json",
     "position": 1,
     "parent": {
-      "id": 1046491863,
+      "id": 1069479339,
       "title": "To-dos",
       "type": "Todoset",
-      "url": "https://3.basecampapi.com/195539477/buckets/2085958499/todosets/1046491863.json",
-      "app_url": "https://3.basecamp.com/195539477/buckets/2085958499/todosets/1046491863"
+      "url": "https://3.basecampapi.com/195539477/buckets/2085958499/todosets/1069479339.json",
+      "app_url": "https://3.basecamp.com/195539477/buckets/2085958499/todosets/1069479339"
     },
     "bucket": {
       "id": 2085958499,
@@ -51,32 +54,35 @@ _Optional query parameters_:
     },
     "creator": {
       "id": 1049715915,
-      "attachable_sgid": "BAh7CEkiCGdpZAY6BkVUSSIrZ2lkOi8vYmMzL1BlcnNvbi8xMDQ5NzE1OTE1P2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg9hdHRhY2hhYmxlBjsAVEkiD2V4cGlyZXNfYXQGOwBUMA==--5f103c46d4f123f0068fcd0192a0f7fea7f26193",
+      "attachable_sgid": "BAh7CEkiCGdpZAY6BkVUSSIrZ2lkOi8vYmMzL1BlcnNvbi8xMDQ5NzE1OTE1P2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg9hdHRhY2hhYmxlBjsAVEkiD2V4cGlyZXNfYXQGOwBUMA==--aeb392ebf54ffd820e45f27add22bae3a8c7da56",
       "name": "Annie Bryan",
       "email_address": "annie@honchodesign.com",
       "personable_type": "User",
       "title": "Central Markets Manager",
       "bio": "To open a store is easy, to keep it open is an art",
-      "created_at": "2017-11-09T09:46:39.287Z",
-      "updated_at": "2017-11-09T09:46:39.287Z",
+      "location": null,
+      "created_at": "2022-11-22T08:23:21.911Z",
+      "updated_at": "2022-11-22T08:23:21.911Z",
       "admin": false,
       "owner": false,
+      "client": false,
+      "employee": true,
       "time_zone": "America/Chicago",
-      "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBMtkkT4=--e609ef146e39f9ca5e4bb7242fdfd50aec4c3b3f/avatar-64-x4",
+      "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBMtkkT4=--9927c47a4cbee30a7f9aea667882496aba799149/avatar?v=1",
       "company": {
         "id": 1033447817,
         "name": "Honcho Design"
-      }
+      },
+      "can_manage_projects": true,
+      "can_manage_people": true
     },
     "description": "",
-    "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7CEkiCGdpZAY6BkVUSSIuZ2lkOi8vYmMzL1JlY29yZGluZy8xMDQ2NDkyMDM5P2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg1yZWFkYWJsZQY7AFRJIg9leHBpcmVzX2F0BjsAVDA=--86725cce5d06ac1ebeb3ff3833e950a91815ec9c.json",
-    "subscription_url": "https://3.basecampapi.com/195539477/buckets/2085958499/recordings/1046492039/subscription.json",
     "completed": false,
     "completed_ratio": "2/5",
     "name": "Strategy ideas",
-    "todos_url": "https://3.basecampapi.com/195539477/buckets/2085958499/todolists/1046492039/todos.json",
-    "groups_url": "https://3.basecampapi.com/195539477/buckets/2085958499/todolists/1046492039/groups.json",
-    "app_todos_url": "https://3.basecamp.com/195539477/buckets/2085958499/todolists/1046492039/todos"
+    "todos_url": "https://3.basecampapi.com/195539477/buckets/2085958499/todolists/1069479520/todos.json",
+    "groups_url": "https://3.basecampapi.com/195539477/buckets/2085958499/todolists/1069479520/groups.json",
+    "app_todos_url": "https://3.basecamp.com/195539477/buckets/2085958499/todolists/1069479520/todos"
   }
 ]
 ```
@@ -97,24 +103,27 @@ Get a to-do list
 <!-- START GET /buckets/1/todolists/2.json -->
 ```json
 {
-  "id": 1046491888,
+  "id": 1069479369,
   "status": "active",
-  "created_at": "2017-11-12T10:35:53.586Z",
-  "updated_at": "2017-11-09T09:47:57.585Z",
+  "visible_to_clients": false,
+  "created_at": "2022-10-31T08:24:58.169Z",
+  "updated_at": "2022-11-22T08:24:00.825Z",
   "title": "Background and research",
   "inherits_status": true,
   "type": "Todolist",
-  "url": "https://3.basecampapi.com/195539477/buckets/2085958499/todolists/1046491888.json",
-  "app_url": "https://3.basecamp.com/195539477/buckets/2085958499/todolists/1046491888",
+  "url": "https://3.basecampapi.com/195539477/buckets/2085958499/todolists/1069479369.json",
+  "app_url": "https://3.basecamp.com/195539477/buckets/2085958499/todolists/1069479369",
+  "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7CEkiCGdpZAY6BkVUSSIuZ2lkOi8vYmMzL1JlY29yZGluZy8xMDY5NDc5MzY5P2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg1yZWFkYWJsZQY7AFRJIg9leHBpcmVzX2F0BjsAVDA=--4b6309a7d4c2ec4c0ca573bd0caeedbcb3e49a2f.json",
+  "subscription_url": "https://3.basecampapi.com/195539477/buckets/2085958499/recordings/1069479369/subscription.json",
   "comments_count": 0,
-  "comments_url": "https://3.basecampapi.com/195539477/buckets/2085958499/recordings/1046491888/comments.json",
+  "comments_url": "https://3.basecampapi.com/195539477/buckets/2085958499/recordings/1069479369/comments.json",
   "position": 10,
   "parent": {
-    "id": 1046491863,
+    "id": 1069479339,
     "title": "To-dos",
     "type": "Todoset",
-    "url": "https://3.basecampapi.com/195539477/buckets/2085958499/todosets/1046491863.json",
-    "app_url": "https://3.basecamp.com/195539477/buckets/2085958499/todosets/1046491863"
+    "url": "https://3.basecampapi.com/195539477/buckets/2085958499/todosets/1069479339.json",
+    "app_url": "https://3.basecamp.com/195539477/buckets/2085958499/todosets/1069479339"
   },
   "bucket": {
     "id": 2085958499,
@@ -123,28 +132,31 @@ Get a to-do list
   },
   "creator": {
     "id": 1049715923,
-    "attachable_sgid": "BAh7CEkiCGdpZAY6BkVUSSIrZ2lkOi8vYmMzL1BlcnNvbi8xMDQ5NzE1OTIzP2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg9hdHRhY2hhYmxlBjsAVEkiD2V4cGlyZXNfYXQGOwBUMA==--0097e07e5ccce36073f440e82fb4af95d149923a",
+    "attachable_sgid": "BAh7CEkiCGdpZAY6BkVUSSIrZ2lkOi8vYmMzL1BlcnNvbi8xMDQ5NzE1OTIzP2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg9hdHRhY2hhYmxlBjsAVEkiD2V4cGlyZXNfYXQGOwBUMA==--cc7313cd0fef7654f37f813c000bf892d80e2e2f",
     "name": "Andrew Wong",
     "email_address": "andrew@honchodesign.com",
     "personable_type": "User",
     "title": "Senior Branding Strategist",
     "bio": null,
-    "created_at": "2017-11-09T09:46:39.990Z",
-    "updated_at": "2017-11-09T09:46:39.990Z",
+    "location": null,
+    "created_at": "2022-11-22T08:23:22.017Z",
+    "updated_at": "2022-11-22T08:23:22.017Z",
     "admin": false,
     "owner": false,
-    "time_zone": "America/Chicago",
-    "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBNNkkT4=--2d4c6d1c153687c71c54960854a6d672311b536e/avatar-64-x4"
+    "client": false,
+    "employee": false,
+    "time_zone": "Etc/UTC",
+    "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBNNkkT4=--e3c2676dde30e7c13f87642e3a3dd46ad657f731/avatar?v=1",
+    "can_manage_projects": true,
+    "can_manage_people": true
   },
   "description": "",
-  "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7CEkiCGdpZAY6BkVUSSIuZ2lkOi8vYmMzL1JlY29yZGluZy8xMDQ2NDkxODg4P2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg1yZWFkYWJsZQY7AFRJIg9leHBpcmVzX2F0BjsAVDA=--73828ccc551554287ab8958db2050a59696ff06c.json",
-  "subscription_url": "https://3.basecampapi.com/195539477/buckets/2085958499/recordings/1046491888/subscription.json",
   "completed": false,
   "completed_ratio": "0/4",
   "name": "Background and research",
-  "todos_url": "https://3.basecampapi.com/195539477/buckets/2085958499/todolists/1046491888/todos.json",
-  "groups_url": "https://3.basecampapi.com/195539477/buckets/2085958499/todolists/1046491888/groups.json",
-  "app_todos_url": "https://3.basecamp.com/195539477/buckets/2085958499/todolists/1046491888/todos"
+  "todos_url": "https://3.basecampapi.com/195539477/buckets/2085958499/todolists/1069479369/todos.json",
+  "groups_url": "https://3.basecampapi.com/195539477/buckets/2085958499/todolists/1069479369/groups.json",
+  "app_todos_url": "https://3.basecamp.com/195539477/buckets/2085958499/todolists/1069479369/todos"
 }
 ```
 <!-- END GET /buckets/1/todolists/2.json -->

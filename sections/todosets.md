@@ -19,47 +19,53 @@ To get the to-do set ID for a project, see the [Get a project][1] endpoint's `do
 <!-- START GET /buckets/1/todosets/2.json -->
 ```json
 {
-  "id": 9007199254741445,
+  "id": 1069479339,
   "status": "active",
-  "created_at": "2016-09-28T14:25:24.543Z",
-  "updated_at": "2016-09-28T14:25:52.344Z",
+  "visible_to_clients": false,
+  "created_at": "2022-11-22T08:23:58.206Z",
+  "updated_at": "2022-11-22T13:36:50.731Z",
   "title": "To-dos",
   "inherits_status": true,
   "type": "Todoset",
-  "url": "https://3.basecampapi.com/195539477/buckets/2085958498/todosets/9007199254741445.json",
-  "app_url": "https://3.basecamp.com/195539477/buckets/2085958498/todosets/9007199254741445",
-  "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7CEkiCGdpZAY6BkVUSSIuZ2lkOi8vYmMzL1JlY29yZGluZy8xMDY0MDkxMDUxP2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg1yZWFkYWJsZQY7AFRJIg9leHBpcmVzX2F0BjsAVDA=--f2553cc8ed9cc5d51512488eab51773bad6d59b0.json",
-  "position": 3,
+  "url": "https://3.basecampapi.com/195539477/buckets/2085958499/todosets/1069479339.json",
+  "app_url": "https://3.basecamp.com/195539477/buckets/2085958499/todosets/1069479339",
+  "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7CEkiCGdpZAY6BkVUSSIuZ2lkOi8vYmMzL1JlY29yZGluZy8xMDY5NDc5MzM5P2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg1yZWFkYWJsZQY7AFRJIg9leHBpcmVzX2F0BjsAVDA=--51a5eae687ae2189e66551c48e347d8666aa7629.json",
+  "position": 2,
   "bucket": {
-    "id": 2085958498,
+    "id": 2085958499,
     "name": "The Leto Laptop",
     "type": "Project"
   },
   "creator": {
-    "id": 1007299144,
-    "attachable_sgid": "BAh7CEkiCGdpZAY6BkVUSSIrZ2lkOi8vYmMzL1BlcnNvbi8xMDA3Mjk5MTQ0P2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg9hdHRhY2hhYmxlBjsAVEkiD2V4cGlyZXNfYXQGOwBUMA==--2e34d7611a9fcaeb82342d015a671cf5e998c036",
+    "id": 1049715914,
+    "attachable_sgid": "BAh7CEkiCGdpZAY6BkVUSSIrZ2lkOi8vYmMzL1BlcnNvbi8xMDQ5NzE1OTE0P2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg9hdHRhY2hhYmxlBjsAVEkiD2V4cGlyZXNfYXQGOwBUMA==--ff006accb6e013cca785190fa38f42c091d24f1e",
     "name": "Victor Cooper",
     "email_address": "victor@honchodesign.com",
     "personable_type": "User",
     "title": "Chief Strategist",
-    "bio": "Don't let your dreams be dreams",
-    "created_at": "2016-09-28T14:24:20.217Z",
-    "updated_at": "2016-09-28T14:24:23.289Z",
+    "bio": "Don’t let your dreams be dreams",
+    "location": "Chicago, IL",
+    "created_at": "2022-11-22T08:23:21.732Z",
+    "updated_at": "2022-11-22T08:23:21.904Z",
     "admin": true,
     "owner": true,
+    "client": false,
+    "employee": true,
     "time_zone": "America/Chicago",
-    "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBEgqCjw=--8266bb0507508f3d46050d57b65924d5e2a005f3/avatar-64-x4",
+    "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBMpkkT4=--5520caeec1845b5090bbfc993ffe8eca8d138e14/avatar?v=1",
     "company": {
       "id": 1033447817,
       "name": "Honcho Design"
-    }
+    },
+    "can_manage_projects": true,
+    "can_manage_people": true
   },
   "completed": false,
   "completed_ratio": "14/60",
   "name": "To-dos",
   "todolists_count": 10,
-  "todolists_url": "https://3.basecampapi.com/195539477/buckets/2085958498/todosets/9007199254741445/todolists.json",
-  "app_todoslists_url": "https://3.basecamp.com/195539477/buckets/2085958498/todosets/9007199254741445/todolists"
+  "todolists_url": "https://3.basecampapi.com/195539477/buckets/2085958499/todosets/1069479339/todolists.json",
+  "app_todoslists_url": "https://3.basecamp.com/195539477/buckets/2085958499/todosets/1069479339/todolists"
 }
 ```
 <!-- END GET /buckets/1/todosets/2.json -->
