@@ -1,19 +1,19 @@
-The Basecamp 3 API
+The Basecamp 4 API
 ==================
 
-Welcome to the Basecamp 3 API! If you're looking to integrate your application with Basecamp 3 or create your own application in concert with data inside of Basecamp 3, you're in the right place. We're happy to have you!
+Welcome to the Basecamp 4 API! If you're looking to integrate your application with Basecamp 4 or create your own application in concert with data inside of Basecamp 4, you're in the right place. We're happy to have you!
 
 
 Compatibility with previous Basecamp APIs
 -----------------------------------------
 
-The Basecamp 3 API is not compatible with the [Basecamp Classic API](https://github.com/basecamp/basecamp-classic-api) or the [Basecamp 2 API](https://github.com/basecamp/bcx-api). All integrations will start fresh with the new API. The core ingredients are the same, though: Basecamp 3 is a REST-style API that uses JSON for serialization and OAuth 2.0 for authentication.
+The Basecamp 4 API is not compatible with the [Basecamp Classic API](https://github.com/basecamp/basecamp-classic-api) or the [Basecamp 2 API](https://github.com/basecamp/bcx-api). All integrations will start fresh with the new API. The core ingredients are the same, though: Basecamp 4 is a REST-style API that uses JSON for serialization and OAuth 2.0 for authentication.
 
 
 What's different?
 -----------------
 
-If you've used a previous version of the Basecamp API, you need to adapt your integration code. Here are some notable changes for the Basecamp 3 API:
+If you've used a previous version of the Basecamp API, you need to adapt your integration code. Here are some notable changes for the Basecamp 4 API:
 
 - We require OAuth 2.0 for [authentication](#authentication)—no more Basic authentication
 - [Pagination](#pagination) is performed via the `Link` and `X-Total-Count` headers
@@ -40,7 +40,7 @@ curl -H "Authorization: Bearer $ACCESS_TOKEN" \
   https://3.basecampapi.com/999999999/projects.json
 ```
 
-Throughout the Basecamp 3 API docs, we include "Copy as cURL" examples. To try the examples in your shell, copy your OAuth 2.0 access token into your clipboard and run:
+Throughout the Basecamp 4 API docs, we include "Copy as cURL" examples. To try the examples in your shell, copy your OAuth 2.0 access token into your clipboard and run:
 
 ``` shell
 export ACCESS_TOKEN=PASTE_ACCESS_TOKEN_HERE
@@ -88,7 +88,7 @@ You'll receive a `415 Unsupported Media Type` response code if you don't include
 Pagination
 ----------
 
-Most collection APIs paginate their results. The number of requests that'll appear on each page is variable. In most cases, we use a [geared pagination ratio](https://github.com/basecamp/geared_pagination) with 15 results on page 1, 30 on page 2, 50 on 3, and then 100 on 4 and above. The Basecamp 3 API follows the [RFC5988 convention](https://tools.ietf.org/html/rfc5988) of using the `Link` header to provide URLs for the `next` page. Follow this convention to retrieve the next page of data—please don't build the pagination URLs yourself!
+Most collection APIs paginate their results. The number of requests that'll appear on each page is variable. In most cases, we use a [geared pagination ratio](https://github.com/basecamp/geared_pagination) with 15 results on page 1, 30 on page 2, 50 on 3, and then 100 on 4 and above. The Basecamp 4 API follows the [RFC5988 convention](https://tools.ietf.org/html/rfc5988) of using the `Link` header to provide URLs for the `next` page. Follow this convention to retrieve the next page of data—please don't build the pagination URLs yourself!
 
 Here's an example response header from requesting the third page of [messages](sections/messages.md#messages):
 
@@ -96,7 +96,7 @@ Here's an example response header from requesting the third page of [messages](s
 Link: <https://3.basecampapi.com/999999999/buckets/2085958496/messages.json?page=4>; rel="next"
 ```
 
-If the `Link` header is blank, that's the last page. The Basecamp 3 API also provides the `X-Total-Count` header, which displays the total number of resources in the collection you are fetching.
+If the `Link` header is blank, that's the last page. The Basecamp 4 API also provides the `X-Total-Count` header, which displays the total number of resources in the collection you are fetching.
 
 
 Using HTTP caching
@@ -179,7 +179,7 @@ API endpoints
 Listing your application
 ------------------------
 
-To add your application to our public list of Basecamp 3 integrations, go to [https://github.com/basecamp/bc3-integrations](https://github.com/basecamp/bc3-integrations) and open a pull request.
+To add your application to our public list of Basecamp 4 integrations, go to [https://github.com/basecamp/bc3-integrations](https://github.com/basecamp/bc3-integrations) and open a pull request.
 
 Getting Help
 ------------
@@ -190,7 +190,7 @@ If you have a question about the API, please [open a support ticket](https://bas
 Conduct
 -------
 
-Please note that this project is released with a [Contributor Code of Conduct](https://github.com/basecamp/bc3-api/blob/master/CONDUCT.md). By participating in discussions about the Basecamp 3 API, you agree to abide by these terms.
+Please note that this project is released with a [Contributor Code of Conduct](https://github.com/basecamp/bc3-api/blob/master/CONDUCT.md). By participating in discussions about the Basecamp 4 API, you agree to abide by these terms.
 
 
 License
