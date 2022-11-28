@@ -219,6 +219,10 @@ Create a to-do list group
 
 **Required parameters**: `name` of the to-do list group.
 
+_Optional parameters_:
+
+* `color` - the color. Available values: `[ white red orange yellow green blue aqua purple gray pink brown ]`
+
 This endpoint will return `201 Created` with the current JSON representation of the to-do list if the creation was a success. See the [Get a to-do list](#get-a-to-do-list) endpoint for more info on the payload.
 
 ###### Example JSON Request
