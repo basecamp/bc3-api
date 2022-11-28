@@ -405,7 +405,7 @@ Trash a project
 
 * `DELETE /projects/1.json` will mark the project with the given ID as trashed.
 
-Trashed projects will be deleted from Basecamp 3 after 30 days. No parameters required. Returns `204 No Content` if successful.
+Trashed projects will be deleted from Basecamp 4 after 30 days. No parameters required. Returns `204 No Content` if successful.
 
 ###### Copy as cURL
 
