@@ -108,11 +108,15 @@ You must use HTTP freshness headers to speed up your application and lighten the
 Handling errors
 ---------------
 
-API clients must expect and gracefully handle transient errors, such as rate limiting or server errors. We recommend baking 5xx and 429 response handling into your low-level HTTP client so your integration can handle most errors automatically.
+API clients must expect and gracefully handle transient server errors and rate limits. We recommend baking graceful 5xx and 429 retries into your integration from the beginning so errors are handled automatically.
 
 ### Rate limiting (429 Too Many Requests)
 
-You can perform up to 50 requests per 10-second period from the same IP address. If you exceed this limit, you'll get a [429 Too Many Requests](http://tools.ietf.org/html/draft-nottingham-http-new-status-02#section-4) response for subsequent requests. Check the `Retry-After` header to see how many seconds to wait before retrying the request.
+We return a [429 Too Many Requests](http://tools.ietf.org/html/draft-nottingham-http-new-status-02#section-4) response when you've exceeded a rate limit. Consult the `Retry-After` response header to determine how long to wait (in seconds) before retrying the request.
+
+Plan ahead to gracefully handle the failure modes that API backpressure will exert on your integration. Multiple rate limits are in effect, e.g. for GET vs POST requests and per-second/hour/day limits, and they're adjusted dynamically, so responding to them dynamically is essential, particularly at high traffic levels.
+
+For a sense of scale, the first rate limit you'll commonly encounter is currently 50 requests per 10 second period per IP address.
 
 ### [5xx server errors](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes#5xx_Server_errors)
 
