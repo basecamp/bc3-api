@@ -101,8 +101,10 @@ This endpoint will return `201 Created` with the current JSON representation of 
 
 ``` json
 {
-  "title": "In progress",
-  "description": "Stuff we are working on actively"
+  "kanban_column": {
+    "title": "In progress",
+    "description": "Stuff we are working on actively"
+  }
 }
 ```
 
@@ -125,8 +127,10 @@ This endpoint will return `200 OK` with the current JSON representation of the c
 
 ``` json
 {
-  "title": "On it",
-  "description": "Stuff we are doing right now"
+  "kanban_column": {
+    "title": "On it",
+    "description": "Stuff we are doing right now"
+  }
 }
 ```
 
