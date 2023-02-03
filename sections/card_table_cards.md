@@ -191,11 +191,9 @@ This endpoint will return `201 Created` with the current JSON representation of 
 
 ``` json
 {
-  "kanban_card": {
-    "title": "Investigation",
-    "content": "Investigate on an issue in our todo list.",
-    "due_on": "2021-01-01"
-  }
+  "title": "Investigation",
+  "content": "Investigate on an issue in our todo list.",
+  "due_on": "2021-01-01"
 }
 ```
 
@@ -225,9 +223,7 @@ This endpoint will return `200 OK` with the current JSON representation of the c
 
 ``` json
 {
-  "kanban_card": {
-    "title": "Updated investigation"
-  }
+  "title": "Updated investigation"
 }
 ```
 
