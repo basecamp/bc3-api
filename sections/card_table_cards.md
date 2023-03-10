@@ -248,7 +248,7 @@ This endpoint will return `204 No content` if the update was a success.
 
 ``` json
 {
-  "column_id": 3,
+  "column_id": 3
 }
 ```
 ###### Copy as cURL
