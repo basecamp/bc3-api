@@ -163,7 +163,84 @@ Get a card
 
   ],
   "completion_url": "https://3.basecampapi.com/195539477/buckets/2085958499/todos/1069482295/completion.json",
-  "comment_count": 0
+  "comment_count": 0,
+  "steps": [
+    {
+      "id": 1069483883,
+      "status": "active",
+      "visible_to_clients": false,
+      "created_at": "2023-04-11T19:03:00.000Z",
+      "updated_at": "2023-04-11T19:03:00.000Z",
+      "title": "Find inspiration",
+      "inherits_status": true,
+      "type": "Kanban::Step",
+      "url": "https://3.basecampapi.com/195539477/buckets/2085958499/card_tables/steps/1069483883.json",
+      "app_url": "https://3.basecamp.com/195539477/buckets/2085958499/card_tables/cards/1069483882#__recording_1069483883",
+      "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7CEkiCGdpZAY6BkVUSSIuZ2lkOi8vYmMzL1JlY29yZGluZy8xMDY5NDgzODgzP2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg1yZWFkYWJsZQY7AFRJIg9leHBpcmVzX2F0BjsAVDA=--a6b622a4a8155f7db3ade5304666300199d8e4cf.json",
+      "position": 1,
+      "parent": {
+        "id": 1069483882,
+        "title": "New and fancy UI",
+        "type": "Kanban::Card",
+        "url": "https://3.basecampapi.com/195539477/buckets/2085958499/card_tables/cards/1069483882.json",
+        "app_url": "https://3.basecamp.com/195539477/buckets/2085958499/card_tables/cards/1069483882"
+      },
+      "bucket": {
+        "id": 2085958499,
+        "name": "The Leto Laptop",
+        "type": "Project"
+      },
+      "creator": {
+        "id": 1049716108,
+        "attachable_sgid": "BAh7CEkiCGdpZAY6BkVUSSIrZ2lkOi8vYmMzL1BlcnNvbi8xMDQ5NzE2MTA4P2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg9hdHRhY2hhYmxlBjsAVEkiD2V4cGlyZXNfYXQGOwBUMA==--33a0d8ee2b0bbcc0136cc0405d56b65b76e98b56",
+        "name": "Victor Cooper",
+        "email_address": "victor@honchodesign.com",
+        "personable_type": "User",
+        "title": "Chief Strategist",
+        "bio": "Don’t let your dreams be dreams",
+        "location": "Chicago, IL",
+        "created_at": "2023-04-25T09:09:57.914Z",
+        "updated_at": "2023-04-25T09:10:02.829Z",
+        "admin": true,
+        "owner": true,
+        "client": false,
+        "employee": true,
+        "time_zone": "America/Chicago",
+        "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBIxlkT4=--f8ea82b59ac303fe025fd537009cbeda9c381290/avatar?v=1",
+        "company": {
+          "id": 1033447830,
+          "name": "Honcho Design"
+        },
+        "can_manage_projects": true,
+        "can_manage_people": true
+      },
+      "completed": false,
+      "due_on": "2023-04-29",
+      "assignees": [
+        {
+          "id": 1049716126,
+          "attachable_sgid": "BAh7CEkiCGdpZAY6BkVUSSIrZ2lkOi8vYmMzL1BlcnNvbi8xMDQ5NzE2MTI2P2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg9hdHRhY2hhYmxlBjsAVEkiD2V4cGlyZXNfYXQGOwBUMA==--54e94dd33334db927ffaa203f3eebf85b24f352a",
+          "name": "Tashia Hughes",
+          "email_address": "tashia@honchodesign.com",
+          "personable_type": "User",
+          "title": "District Integration Architect",
+          "bio": null,
+          "location": null,
+          "created_at": "2023-04-25T09:10:07.254Z",
+          "updated_at": "2023-04-25T09:10:07.254Z",
+          "admin": false,
+          "owner": false,
+          "client": false,
+          "employee": false,
+          "time_zone": "America/Chicago",
+          "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBJ5lkT4=--2d1100b45114d017a5327b8dce82ebc351fcbbd4/avatar?v=1",
+          "can_manage_projects": true,
+          "can_manage_people": true
+        }
+      ],
+      "completion_url": "/195539477/buckets/2085958499/card_tables/steps/1069483883/completions.json"
+    }
+  ]
 }
 ```
 <!-- END GET /buckets/1/card_tables/cards/2.json -->
