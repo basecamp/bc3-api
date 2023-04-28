@@ -99,7 +99,7 @@ This endpoint will return `200 OK` with the current JSON representation of the s
 ``` shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" \
   -d '{"kanban_step": {"completion": "on"}}' -X PUT \
-  https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/card_tables/steps/2/completion.json
+  https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/card_tables/steps/2/completions.json
 ```
 
 Reposition a step
@@ -125,7 +125,7 @@ This endpoint will return `204 No Content` if successful.
 
 ``` shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" \
-  -d '{"source_id": 1069484048, "position": 4}' -X POST \
+  -d '{"source_id": 3, "position": 4}' -X POST \
   https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/card_tables/cards/2/positions.json
 ```
 
