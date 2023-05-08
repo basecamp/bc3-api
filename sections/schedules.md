@@ -60,6 +60,7 @@ To get the schedule ID for a project, see the [Get a project][1] endpoint's `doc
     "can_manage_projects": true,
     "can_manage_people": true
   },
+  "includes_due_dates": true,
   "entries_count": 1,
   "entries_url": "https://3.basecampapi.com/195539477/buckets/2085958499/schedules/1069479342/entries.json"
 }
