@@ -6,6 +6,7 @@ All schedule entries under a project are children of a schedule resource.
 Endpoints:
 
 - [Get schedule](#get-schedule)
+- [Update a schedule](#update-a-schedule)
 
 
 Get schedule
@@ -70,6 +71,33 @@ To get the schedule ID for a project, see the [Get a project][1] endpoint's `doc
 
 ``` shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/schedules/2.json
+```
+
+Update a schedule
+-----------------------
+
+* `PUT /buckets/1/schedules/2.json` allows changing of the schedule with an ID of `2` in the project with ID `1`.
+
+**Required parameters**:
+
+* `includes_due_dates` - whether the schedule should include due dates from to-dos, cards and steps.
+
+This endpoint will return `200 OK` with the current JSON representation of the schedule if the update was a success.
+
+###### Example JSON Request
+
+``` json
+{
+  "includes_due_dates": "false"
+}
+```
+
+###### Copy as cURL
+
+``` shell
+curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" \
+  -d '{"schedule": {"includes_due_dates": "false"}}' -X PUT \
+  https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/schedules/2.json
 ```
 
 
