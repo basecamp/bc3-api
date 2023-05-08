@@ -145,6 +145,7 @@ API endpoints
 - [Campfires](https://github.com/basecamp/bc3-api/blob/master/sections/campfires.md#campfires)
 - [Card table cards](https://github.com/basecamp/bc3-api/blob/master/sections/card_table_cards.md#card-table-cards)
 - [Card table columns](https://github.com/basecamp/bc3-api/blob/master/sections/card_table_columns.md#card-table-columns)
+- [Card table steps](https://github.com/basecamp/bc3-api/blob/master/sections/card_table_steps.md#card-table-steps)
 - [Card tables](https://github.com/basecamp/bc3-api/blob/master/sections/card_tables.md#card-tables)
 - [Chatbots](https://github.com/basecamp/bc3-api/blob/master/sections/chatbots.md#chatbots)
 - [Client approvals](https://github.com/basecamp/bc3-api/blob/master/sections/client_approvals.md#client-approvals)
