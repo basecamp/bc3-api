@@ -61,7 +61,7 @@ To get the schedule ID for a project, see the [Get a project][1] endpoint's `doc
     "can_manage_projects": true,
     "can_manage_people": true
   },
-  "includes_due_dates": true,
+  "include_due_assignments": true,
   "entries_count": 1,
   "entries_url": "https://3.basecampapi.com/195539477/buckets/2085958499/schedules/1069479342/entries.json"
 }
@@ -80,7 +80,7 @@ Update a schedule
 
 **Required parameters**:
 
-* `includes_due_dates` - whether the schedule should include due dates from to-dos, cards and steps.
+* `include_due_assignments` - whether the schedule should include due dates from to-dos, cards and steps.
 
 This endpoint will return `200 OK` with the current JSON representation of the schedule if the update was a success.
 
@@ -88,7 +88,7 @@ This endpoint will return `200 OK` with the current JSON representation of the s
 
 ``` json
 {
-  "includes_due_dates": "false"
+  "include_due_assignments": "false"
 }
 ```
 
@@ -96,7 +96,7 @@ This endpoint will return `200 OK` with the current JSON representation of the s
 
 ``` shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" \
-  -d '{"schedule": {"includes_due_dates": "false"}}' -X PUT \
+  -d '{"schedule": {"include_due_assignments": "false"}}' -X PUT \
   https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/schedules/2.json
 ```
 
