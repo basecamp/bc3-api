@@ -32,9 +32,11 @@ This endpoint will return `201 Created` with the current JSON representation of 
 
 ``` json
 {
-  "title": "Inspiration",
-  "due_on": "2021-01-01",
-  "assignees": "30068628,270913789"
+  "kanban_step": {
+    "title": "Inspiration",
+    "due_on": "2021-01-01",
+    "assignees": "30068628,270913789"
+  }
 }
 ```
 
