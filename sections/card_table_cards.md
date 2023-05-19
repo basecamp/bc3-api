@@ -278,7 +278,7 @@ This endpoint will return `201 Created` with the current JSON representation of 
 
 ``` shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" \
-  -d '{"kanban_card": {"title":"Investigation", "content": "Investigate on an issue in our todo list.", "due_on": "2021-01-01"}}' \
+  -d '{"title":"Investigation", "content": "Investigate on an issue in our todo list.", "due_on": "2021-01-01"}' \
   https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/card_tables/lists/2/cards.json
 ```
 
@@ -308,7 +308,7 @@ This endpoint will return `200 OK` with the current JSON representation of the c
 
 ``` shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" \
-  -d '{"kanban_card": {"title":"Updated investigation"}}' -X PUT \
+  -d '{"title":"Updated investigation"}' -X PUT \
   https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/card_tables/cards/2.json
 ```
 

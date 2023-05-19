@@ -32,11 +32,9 @@ This endpoint will return `201 Created` with the current JSON representation of 
 
 ``` json
 {
-  "kanban_step": {
-    "title": "Inspiration",
-    "due_on": "2021-01-01",
-    "assignees": "30068628,270913789"
-  }
+  "title": "Inspiration",
+  "due_on": "2021-01-01",
+  "assignees": "30068628,270913789"
 }
 ```
 
@@ -44,7 +42,7 @@ This endpoint will return `201 Created` with the current JSON representation of 
 
 ``` shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" \
-  -d '{"kanban_step": {"title": "Inspiration", "due_on": "2021-01-01", "assignees": "30068628,270913789"}}' \
+  -d '{"title": "Inspiration", "due_on": "2021-01-01", "assignees": "30068628,270913789"}' \
   https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/card_tables/cards/2/steps.json
 ```
 
@@ -73,7 +71,7 @@ This endpoint will return `200 OK` with the current JSON representation of the s
 
 ``` shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" \
-  -d '{"kanban_step": {"title": "Updated inspiration"}}' -X PUT \
+  -d '{"title": "Updated inspiration"}' -X PUT \
   https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/card_tables/steps/2.json
 ```
 
@@ -100,7 +98,7 @@ This endpoint will return `200 OK` with the current JSON representation of the s
 
 ``` shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" \
-  -d '{"kanban_step": {"completion": "on"}}' -X PUT \
+  -d '{"completion": "on"}' -X PUT \
   https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/card_tables/steps/2/completions.json
 ```
 
