@@ -257,10 +257,11 @@ Create a card
 
 **Required parameters**: `title` of the card.
 
-_Optional parameters_: 
+_Optional parameters_:
 
 * `content` - containing information about the card. See our [Rich text guide][rich] for what HTML tags are allowed.
 * `due_on` - due date (ISO 8601) of the card
+* `notify` - whether to notify assignees, value `true` or `false`. Defaults to `false`.
 
 This endpoint will return `201 Created` with the current JSON representation of the card if the creation was a success. See the [Get a card](#get-a-card) endpoint for more info on the payload.
 
@@ -287,7 +288,7 @@ Update a card
 
 * `PUT /buckets/1/card_tables/cards/2.json` allows changing of the card with an ID of `2` in the project with ID `1`.
 
-_Optional parameters_: 
+_Optional parameters_:
 
 * `title` - of the card.
 * `content` - containing information about the card. See our [Rich text guide][rich] for what HTML tags are allowed.
