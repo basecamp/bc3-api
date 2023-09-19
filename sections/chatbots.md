@@ -252,6 +252,10 @@ Create a line
 
 **Required parameters**: `content` as the body for the Campfire line. See our [Rich text guide][1] for what HTML tags are allowed.
 
+_Optional parameters_:
+
+* `content_param` - modifies the name of the required `content` param to support webhooks from a third-party, e.g. Slack with a `text` param
+
 In addition to the tags permitted for all rich text, the following tags are permitted for chatbot lines: `table`, `tr`, `td`, `th`, `thead`, `tbody`, `details`, and `summary`.
 
 This endpoint will return `201 Created` if the creation was a success.
@@ -269,6 +273,13 @@ This endpoint will return `201 Created` if the creation was a success.
 ``` shell
 curl -s -H "Content-Type: application/json" -d '{"content":"Good morning"}' \
   https://3.basecampapi.com/$ACCOUNT_ID/integrations/$CHATBOT_KEY/buckets/1/chats/2/lines.json
+```
+
+or, with a custom content_param called `text`:
+
+``` shell
+curl -s -H "Content-Type: application/json" -d '{"text":"Good morning"}' \
+  https://3.basecampapi.com/$ACCOUNT_ID/integrations/$CHATBOT_KEY/buckets/1/chats/2/lines.json?content_param=text
 ```
 
 [1]: https://github.com/basecamp/bc3-api/blob/master/sections/rich_text.md
