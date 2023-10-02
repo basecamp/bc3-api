@@ -35,3 +35,8 @@ curl -s -H "Authorization: Bearer $ACCESS_TOKEN" \
   -H "Content-Type: image/png" -H "Content-Length: 123" \
   https://3.basecampapi.com/$ACCOUNT_ID/attachments.json?name=pizza.png  
 ```
+
+Including attachments in rich text in other recordings
+------------------------------------------------------
+
+Check [Inserting an image or file attachment](https://github.com/basecamp/bc3-api/blob/master/sections/rich_text.md#inserting-an-image-or-file-attachment) for details on how to do this.
