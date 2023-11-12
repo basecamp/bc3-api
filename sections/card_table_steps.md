@@ -78,7 +78,7 @@ curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/j
 Change step completion status
 -----------------------------
 
-* `PUT /buckets/1/card_tables/steps/2/completion.json` will mark the step with an ID of `2` in the project with ID `1` as completed or uncompleted depending on the completion parameter.
+* `PUT /buckets/1/card_tables/steps/2/completions.json` will mark the step with an ID of `2` in the project with ID `1` as completed or uncompleted depending on the completion parameter.
 
 **Required parameters**:
 
