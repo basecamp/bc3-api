@@ -219,6 +219,10 @@ Questions:
 - question_paused
 - question_resumed
 
+###### Status propagation to children recordings
+
+Starting the 1st of July 2024, Basecamp won't notify of changes that are automatically propagated to children's recordings. For example, when archiving a project, all its contained recordings will get archived too. In this case, Basecamp will only notify the status change on the parent project, not on each of the contained items.
+
 ###### Endpoints
 
 - [Get webhooks](#get-webhooks)
