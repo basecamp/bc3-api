@@ -172,6 +172,7 @@ API endpoints
 - [Schedules](https://github.com/basecamp/bc3-api/blob/master/sections/schedules.md#schedules)
 - [Subscriptions](https://github.com/basecamp/bc3-api/blob/master/sections/subscriptions.md#subscriptions)
 - [Templates](https://github.com/basecamp/bc3-api/blob/master/sections/templates.md#templates)
+- [Timesheets](https://github.com/basecamp/bc3-api/blob/master/sections/timesheets.md#timesheets)
 - [To-do list groups](https://github.com/basecamp/bc3-api/blob/master/sections/todolist_groups.md#to-do-list-groups)
 - [To-do lists](https://github.com/basecamp/bc3-api/blob/master/sections/todolists.md#to-do-lists)
 - [To-do sets](https://github.com/basecamp/bc3-api/blob/master/sections/todosets.md#to-do-sets)
