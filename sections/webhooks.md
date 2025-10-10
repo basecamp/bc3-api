@@ -20,6 +20,8 @@ Endpoints:
 - Document
 - GoogleDocument
 - Inbox::Forward
+- Kanban::Card
+- Kanban::Step
 - Message
 - Question
 - Question::Answer
