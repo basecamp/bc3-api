@@ -170,6 +170,7 @@ API endpoints
 - [Recordings](https://github.com/basecamp/bc3-api/blob/master/sections/recordings.md#recordings)
 - [Schedule entries](https://github.com/basecamp/bc3-api/blob/master/sections/schedule_entries.md#schedule-entries)
 - [Schedules](https://github.com/basecamp/bc3-api/blob/master/sections/schedules.md#schedules)
+- [Search](https://github.com/basecamp/bc3-api/blob/master/sections/search.md#search)
 - [Subscriptions](https://github.com/basecamp/bc3-api/blob/master/sections/subscriptions.md#subscriptions)
 - [Templates](https://github.com/basecamp/bc3-api/blob/master/sections/templates.md#templates)
 - [Timesheets](https://github.com/basecamp/bc3-api/blob/master/sections/timesheets.md#timesheets)
