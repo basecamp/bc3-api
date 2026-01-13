@@ -334,7 +334,7 @@ This endpoint will return `204 No content` if the update was a success.
 ``` shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" \
   -d '{"column_id": 3}' \
-  https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/card_tables/2/moves.json
+  https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/card_tables/cards/2/moves.json
 ```
 
 [pagination]: https://github.com/basecamp/bc3-api/blob/master/README.md#pagination
