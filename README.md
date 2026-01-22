@@ -164,7 +164,7 @@ A **recording** is an entry in a bucket. Every piece of content—to-dos, messag
 - **Visibility**: whether clients can see the content
 - **Subscriptions**: who gets notified of changes
 
-The [recordings endpoint](sections/recordings.md) queries across all types. Filter with `?type=Todo`, `?type=Message`, etc.
+The [recordings endpoint](sections/recordings.md) queries across projects by type (required): `?type=Todo`, `?type=Message`, etc.
 
 ### The dock: project tools
 
