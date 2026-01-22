@@ -138,6 +138,122 @@ Many resources, including messages, documents, and comments, represent their con
 See the [Rich text](sections/rich_text.md) section for more information about working with HTML and attachments in rich text content.
 
 
+Key concepts
+------------
+
+Understanding Basecamp's domain model helps you navigate the API effectively.
+
+### The bucket/project relationship
+
+Every project has exactly one **bucket**—its storage container for all content. In API URLs, `bucket_id` and project ID are the same value:
+
+```
+/buckets/12345/todolists/67890.json
+         ↑
+    This is the project ID
+```
+
+When you see `/buckets/{id}/...` in the API, think "project." (Templates also have buckets internally, but they use `/templates/...` endpoints.)
+
+### Recordings: bucket contents
+
+A **recording** is an entry in a bucket. Every piece of content—to-dos, messages, documents, comments, uploads, schedule entries, and 50+ other types—has a recording that tracks:
+
+- **Status**: `active`, `archived`, `trashed` (publication state, separate from completion)
+- **Tree structure**: parent/child relationships for nesting
+- **Visibility**: whether clients can see the content
+- **Subscriptions**: who gets notified of changes
+
+The [recordings endpoint](sections/recordings.md) queries across projects by type (required): `?type=Todo`, `?type=Message`, etc.
+
+### The dock: project tools
+
+Each project has a **dock**—a list of available tools. Check the dock to discover what's enabled:
+
+```json
+"dock": [
+  { "name": "message_board", "enabled": true, "url": "...", "id": 123 },
+  { "name": "todoset", "enabled": true, "url": "...", "id": 456 },
+  { "name": "schedule", "enabled": false, "url": "...", "id": 789 }
+]
+```
+
+The dock is your source of truth for available tools. Common ones: `message_board`, `todoset`, `vault` (files), `schedule`, `chat` (campfire), `questionnaire` (automatic check-ins), `inbox` (email forwards), `kanban_board` (card table).
+
+**Always check `enabled: true`** before using a tool—not all projects have all tools turned on.
+
+### To-do hierarchy
+
+To-dos have a specific container structure:
+
+```
+Project
+  └── To-do set (exactly one per project, find via dock)
+        ├── To-do list "Launch tasks"
+        │     ├── To-do item
+        │     └── To-do item
+        └── To-do list "Research"
+              └── To-do item
+```
+
+To create a to-do list, POST to the **to-do set**, not the project:
+`POST /buckets/{project_id}/todosets/{todoset_id}/todolists.json`
+
+### Similar patterns for other tools
+
+The to-do set pattern repeats for other tools. Each is a singleton container accessed via the dock:
+
+| Tool | Container | Contains |
+|------|-----------|----------|
+| Message board | One per project | Messages |
+| Vault | One per project | Documents, uploads, folders |
+| Schedule | One per project | Schedule entries |
+| Questionnaire | One per project | Questions (check-ins) |
+| Card table | One per project | Columns → Cards |
+
+### Parent relationships
+
+Content items have a `parent` object showing their container:
+
+```json
+{
+  "id": 67890,
+  "type": "Todo",
+  "parent": {
+    "id": 11111,
+    "type": "Todolist",
+    "title": "Launch tasks",
+    "url": "..."
+  }
+}
+```
+
+Use `parent` for navigation. A to-do's parent is its to-do list. A message's parent is the message board.
+
+### People, not users
+
+The resource is called **person** (not user). Endpoints:
+- `/people.json` — list people in account
+- `/people/{id}.json` — single person
+- `/projects/{id}/people.json` — people in a project
+- `/my/profile.json` — current authenticated user
+
+### To-do specifics
+
+**Completion**: To-dos have a boolean `completed` field. By default, endpoints return active, pending (not completed) items. Use `?completed=true` for completed items. Use `?status=archived` or `?status=trashed` to see those.
+
+**Assignees**: Always an array, even for single assignment. When creating: `"assignee_ids": [123]`.
+
+### Status vs completion
+
+Don't confuse **recording status** with **to-do completion**:
+
+- **Status** (`active`, `archived`, `trashed`): Publication state. Applies to all recordings.
+- **Completed** (`true`/`false`): Whether a to-do is done. Only applies to to-dos, cards, and card steps.
+
+A to-do can be `completed: true` and `status: "active"` (done but not archived).
+
+
 API endpoints
 -------------
 <!-- START API ENDPOINTS -->
