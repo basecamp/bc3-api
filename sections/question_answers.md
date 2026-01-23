@@ -5,6 +5,9 @@ Endpoints:
 
 - [Get question answers](#get-question-answers)
 - [Get a question answer](#get-a-question-answer)
+- [Create a question answer](#create-a-question-answer)
+- [Update a question answer](#update-a-question-answer)
+- [Trash a question answer][trash]
 
 Get question answers
 --------------------
@@ -148,4 +151,65 @@ Get a question answer
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/question_answers/2.json
 ```
 
+
+Create a question answer
+------------------------
+
+* `POST /buckets/1/questions/2/answers.json` creates an answer to the question with ID `2` in the project with ID `1`.
+
+**Required parameters**: `content` containing the answer text. See our [Rich text guide][rich_text] for what HTML tags are allowed.
+
+_Optional parameters_:
+* `group_on` - a date (ISO 8601) to group this answer with others from the same day.
+
+This endpoint will return `201 Created` with the current JSON representation of the answer if the creation was a success. See the [Get a question answer](#get-a-question-answer) endpoint for more info on the payload.
+
+###### Example JSON Request
+
+``` json
+{
+  "question_answer": {
+    "content": "<div>Today I worked on the API documentation.</div>",
+    "group_on": "2024-01-22"
+  }
+}
+```
+
+###### Copy as cURL
+
+``` shell
+curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" \
+  -d '{"question_answer":{"content":"<div>Today I worked on the API documentation.</div>","group_on":"2024-01-22"}}' \
+  https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/questions/2/answers.json
+```
+
+
+Update a question answer
+------------------------
+
+* `PUT /buckets/1/question_answers/2.json` allows changing the answer with an ID of `2` in the project with ID `1`.
+
+This endpoint will return `204 No Content` if the update was a success.
+
+###### Example JSON Request
+
+``` json
+{
+  "question_answer": {
+    "content": "<div>Updated: Today I finished the API documentation.</div>"
+  }
+}
+```
+
+###### Copy as cURL
+
+``` shell
+curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" \
+  -d '{"question_answer":{"content":"<div>Updated: Today I finished the API documentation.</div>"}}' -X PUT \
+  https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/question_answers/2.json
+```
+
+
 [pagination]: https://github.com/basecamp/bc3-api/blob/master/README.md#pagination
+[rich_text]: https://github.com/basecamp/bc3-api/blob/master/sections/rich_text.md
+[trash]: https://github.com/basecamp/bc3-api/blob/master/sections/recordings.md#trash-a-recording
