@@ -5,6 +5,9 @@ Endpoints:
 
 - [Get questions](#get-questions)
 - [Get a question](#get-a-question)
+- [Create a question](#create-a-question)
+- [Update a question](#update-a-question)
+- [Trash a question][trash]
 
 Get questions
 -------------
@@ -180,4 +183,75 @@ Get a question
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/questions/2.json
 ```
 
+
+Create a question
+-----------------
+
+* `POST /buckets/1/questionnaires/2/questions.json` creates a question in the project with ID `1` and under the questionnaire with ID `2`.
+
+**Required parameters**:
+* `question[title]` - the question to ask.
+* `question[schedule]` - a hash containing the schedule configuration:
+  * `frequency` - one of `every_day`, `every_week`, `every_other_week`, `every_month`, or `on_certain_days`.
+  * `time_of_day` - the time to ask, e.g. `"9:00am"`.
+  * `days` - an array of day numbers (0=Sunday through 6=Saturday), e.g. `["1","2","3","4","5"]` for weekdays.
+
+This endpoint will return `201 Created` with the current JSON representation of the question if the creation was a success. See the [Get a question](#get-a-question) endpoint for more info on the payload.
+
+###### Example JSON Request
+
+``` json
+{
+  "question": {
+    "title": "What did you work on today?",
+    "schedule": {
+      "frequency": "every_day",
+      "time_of_day": "5:00pm",
+      "days": ["1", "2", "3", "4", "5"]
+    }
+  }
+}
+```
+
+###### Copy as cURL
+
+``` shell
+curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" \
+  -d '{"question":{"title":"What did you work on today?","schedule":{"frequency":"every_day","time_of_day":"5:00pm","days":["1","2","3","4","5"]}}}' \
+  https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/questionnaires/2/questions.json
+```
+
+
+Update a question
+-----------------
+
+* `PUT /buckets/1/questions/2.json` allows changing the question with an ID of `2` in the project with ID `1`.
+
+This endpoint will return `200 OK` with the current JSON representation of the question if the update was a success. See the [Get a question](#get-a-question) endpoint for more info on the payload.
+
+###### Example JSON Request
+
+``` json
+{
+  "question": {
+    "title": "What are you working on this week?",
+    "schedule": {
+      "frequency": "every_week",
+      "time_of_day": "9:00am",
+      "days": ["1"]
+    }
+  }
+}
+```
+
+###### Copy as cURL
+
+``` shell
+curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" \
+  -d '{"question":{"title":"What are you working on this week?","schedule":{"frequency":"every_week","time_of_day":"9:00am","days":["1"]}}}' -X PUT \
+  https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/questions/2.json
+```
+
+
 [pagination]: https://github.com/basecamp/bc3-api/blob/master/README.md#pagination
+[trash]: https://github.com/basecamp/bc3-api/blob/master/sections/recordings.md#trash-a-recording
