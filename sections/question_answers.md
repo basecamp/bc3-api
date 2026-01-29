@@ -4,6 +4,8 @@ Question answers
 Endpoints:
 
 - [Get question answers](#get-question-answers)
+- [List answerers](#list-answerers)
+- [Get answers by person](#get-answers-by-person)
 - [Get a question answer](#get-a-question-answer)
 - [Create a question answer](#create-a-question-answer)
 - [Update a question answer](#update-a-question-answer)
@@ -13,6 +15,11 @@ Get question answers
 --------------------
 
 * `GET /buckets/1/questions/2/answers.json` will return a [paginated list][pagination] of answers in the project with an ID of `1` and the question with ID of `2`.
+
+_Optional query parameters_:
+
+* `date` - an ISO 8601 date string to filter answers by day, e.g. `2024-01-22`.
+* `creator_id` - a person ID to filter answers by author.
 
 ###### Example JSON Response
 <!-- START GET /buckets/1/questions/2/answers.json -->
@@ -79,6 +86,32 @@ Get question answers
 
 ``` shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/questions/2/answers.json
+```
+
+List answerers
+--------------
+
+* `GET /buckets/1/questions/2/answers/by.json` will return a [paginated list][pagination] of people who have answered the question with ID `2` in the project with an ID of `1`.
+
+By default, long-deceased people are filtered out. Pass `?deceased=true` to include them.
+
+Each entry is a person object.
+
+###### Copy as cURL
+
+``` shell
+curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/questions/2/answers/by.json
+```
+
+Get answers by person
+---------------------
+
+* `GET /buckets/1/questions/2/answers/by/3.json` will return a [paginated list][pagination] of answers to the question with ID `2` in the project with an ID of `1`, filtered to only answers by the person with ID `3`.
+
+###### Copy as cURL
+
+``` shell
+curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/questions/2/answers/by/3.json
 ```
 
 Get a question answer
