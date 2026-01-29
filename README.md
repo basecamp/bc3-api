@@ -281,6 +281,7 @@ API endpoints
 - [People](https://github.com/basecamp/bc3-api/blob/master/sections/people.md#people)
 - [Projects](https://github.com/basecamp/bc3-api/blob/master/sections/projects.md#projects)
 - [Question answers](https://github.com/basecamp/bc3-api/blob/master/sections/question_answers.md#question-answers)
+- [Question reminders](https://github.com/basecamp/bc3-api/blob/master/sections/question_reminders.md#question-reminders)
 - [Questionnaires](https://github.com/basecamp/bc3-api/blob/master/sections/questionnaires.md#questionnaires)
 - [Questions](https://github.com/basecamp/bc3-api/blob/master/sections/questions.md#questions)
 - [Recordings](https://github.com/basecamp/bc3-api/blob/master/sections/recordings.md#recordings)
