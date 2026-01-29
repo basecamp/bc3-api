@@ -7,6 +7,9 @@ Endpoints:
 - [Get a question](#get-a-question)
 - [Create a question](#create-a-question)
 - [Update a question](#update-a-question)
+- [Pause a question](#pause-a-question)
+- [Resume a question](#resume-a-question)
+- [Update notification settings](#update-notification-settings)
 - [Trash a question][trash]
 
 Get questions
@@ -250,6 +253,66 @@ This endpoint will return `200 OK` with the current JSON representation of the q
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" \
   -d '{"question":{"title":"What are you working on this week?","schedule":{"frequency":"every_week","time_of_day":"9:00am","days":["1"]}}}' -X PUT \
   https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/questions/2.json
+```
+
+
+Pause a question
+----------------
+
+* `POST /buckets/1/questions/2/pause.json` pauses the question with an ID of `2` in the project with ID `1`.
+
+Returns `200 OK` with `{"paused": true}`.
+
+###### Copy as cURL
+
+``` shell
+curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -X POST \
+  https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/questions/2/pause.json
+```
+
+
+Resume a question
+-----------------
+
+* `DELETE /buckets/1/questions/2/pause.json` resumes the question with an ID of `2` in the project with ID `1`.
+
+Returns `200 OK` with `{"paused": false}`.
+
+###### Copy as cURL
+
+``` shell
+curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -X DELETE \
+  https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/questions/2/pause.json
+```
+
+
+Update notification settings
+----------------------------
+
+* `PUT /buckets/1/questions/2/notification_settings.json` toggles notification settings for the question with an ID of `2` in the project with ID `1`.
+
+_Optional parameters_:
+
+* `responding` - boolean, whether the authenticated user is responding to this question.
+* `subscribed` - boolean, whether the authenticated user is subscribed to notifications for this question.
+
+Returns `200 OK` with `{"responding": true/false, "subscribed": true/false}`.
+
+###### Example JSON Request
+
+``` json
+{
+  "responding": true,
+  "subscribed": false
+}
+```
+
+###### Copy as cURL
+
+``` shell
+curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" \
+  -d '{"responding":true,"subscribed":false}' -X PUT \
+  https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/questions/2/notification_settings.json
 ```
 
 
