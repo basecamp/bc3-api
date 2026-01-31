@@ -356,6 +356,10 @@ Reposition a to-do
 
 **Required parameters**: `position` greater than or equal to one.
 
+_Optional parameters_:
+
+* `parent_id` - the ID of a to-do list to move this to-do into. When provided, the to-do will be repositioned within the specified to-do list instead of its current parent.
+
 This endpoint will return `204 No Content` if the update was a success.
 
 ###### Example JSON Request
@@ -363,6 +367,15 @@ This endpoint will return `204 No Content` if the update was a success.
 ``` json
 {
   "position": 3
+}
+```
+
+To move a to-do to a different to-do list and set its position:
+
+``` json
+{
+  "position": 1,
+  "parent_id": 5
 }
 ```
 

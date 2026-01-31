@@ -359,7 +359,9 @@ Create a webhook
 **Required parameters**: `payload_url` for the HTTPS url that Basecamp should call.
 _Optional parameters_: `types` as an array of types, options given in the introduction.
 
-This endpoint will return `201 Created` with the current JSON representation of the vault if the creation was a success. See the [Get a webhook](#get-a-webhook) endpoint for more info on the payload.
+This endpoint will return `201 Created` with the current JSON representation of the webhook if the creation was a success. See the [Get a webhook](#get-a-webhook) endpoint for more info on the payload.
+
+This endpoint will return `400 Bad Request` if the payload URL is not a valid HTTPS URL or other validation errors occur. It will return `507 Insufficient Storage` if the account has reached its webhook limit.
 
 ###### Example JSON Request
 
@@ -387,6 +389,8 @@ Update a webhook
 _Optional parameters_: `types` as an array of types, options given in the introduction. `active` as a boolean whether this webhook should be matching.
 
 This endpoint will return `200 OK` with the current JSON representation of the webhook if the update was a success. See the [Get a webhook](#get-a-webhook) endpoint for more info on the payload.
+
+This endpoint will return `400 Bad Request` if the payload URL is not a valid HTTPS URL or other validation errors occur. It will return `507 Insufficient Storage` if the account has reached its webhook limit.
 
 ###### Example JSON Request
 
