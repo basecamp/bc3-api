@@ -320,7 +320,7 @@ Move a card
 
 **Required parameters**: `column_id` of the column destination
 
-This endpoint will return `204 No content` if the update was a success.
+This endpoint will return `204 No Content` if the update was a success.
 
 ###### Example JSON Request
 
