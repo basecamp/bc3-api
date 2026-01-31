@@ -152,7 +152,7 @@ _Optional parameters_:
 
 * `position` - index among the columns (ignoring Triage, Not Now or Done). Default: `1`
 
-This endpoint will return `204 No content` if the update was a success.
+This endpoint will return `204 No Content` if the update was a success.
 
 ###### Example JSON Request
 
@@ -176,7 +176,7 @@ Watch a column
 * `POST /buckets/1/card_tables/lists/2/subscription.json` starts watching the column with id `2` in the project with ID `1`.
 * `DELETE /buckets/1/card_tables/lists/2/subscription.json` stops watching the column with id `2` in the project with ID `1`.
 
-This endpoint will return `204 No content` if the update was a success.
+This endpoint will return `204 No Content` if the update was a success.
 
 ###### Copy as cURL
 ``` shell
@@ -196,7 +196,7 @@ Change on hold on a column
 * `POST /buckets/1/card_tables/columns/2/on_hold.json` creates an on_hold section in the column with ID `2` in the project with id `1`.
 * `DELETE /buckets/1/card_tables/columns/2/on_hold.json` removes an on_hold section in the column with ID `2` in the project with id `1`.
 
-This endpoint will return `200 Success` with the current JSON representation of the column if the operation was a success. See the [Get a column](#get-a-column) endpoint for more info on the payload.
+This endpoint will return `200 OK` with the current JSON representation of the column if the operation was a success. See the [Get a column](#get-a-column) endpoint for more info on the payload.
 
 ###### Copy as cURL
 

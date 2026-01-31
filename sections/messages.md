@@ -217,7 +217,7 @@ Pin a message
 * `POST /buckets/1/recordings/2/pin.json` pins the message with ID `2` in the project with id `1`.
 * `DELETE /buckets/1/recordings/2/pin.json` unpins the message with ID `2` in the project with id `1`.
 
-This endpoint will return `204 No content` if the operation was a success.
+This endpoint will return `204 No Content` if the operation was a success.
 
 ###### Copy as cURL
 
