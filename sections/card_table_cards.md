@@ -101,144 +101,149 @@ Get a card
 <!-- START GET /buckets/1/card_tables/cards/2.json -->
 ```json
 {
-  "id": 1069482295,
+  "id": 1069479602,
   "status": "active",
   "visible_to_clients": false,
-  "created_at": "2022-11-18T13:42:27.150Z",
-  "updated_at": "2022-11-18T13:42:27.150Z",
+  "created_at": "2026-01-17T17:39:00.000Z",
+  "updated_at": "2026-01-31T08:33:00.671Z",
   "title": "New and fancy UI",
   "inherits_status": true,
   "type": "Kanban::Card",
-  "url": "https://3.basecampapi.com/195539477/buckets/2085958499/card_tables/cards/1069482295.json",
-  "app_url": "https://3.basecamp.com/195539477/buckets/2085958499/card_tables/cards/1069482295",
-  "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7CEkiCGdpZAY6BkVUSSIuZ2lkOi8vYmMzL1JlY29yZGluZy8xMDY5NDgyMjk1P2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg1yZWFkYWJsZQY7AFRJIg9leHBpcmVzX2F0BjsAVDA=--6957f5ec7e664f8ae36f368e6e61e6d7ab20b3a7.json",
-  "subscription_url": "https://3.basecampapi.com/195539477/buckets/2085958499/recordings/1069482295/subscription.json",
+  "url": "https://3.basecampapi.com/195539477/buckets/2085958504/card_tables/cards/1069479602.json",
+  "app_url": "https://3.basecamp.com/195539477/buckets/2085958504/card_tables/cards/1069479602",
+  "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiLmdpZDovL2JjMy9SZWNvcmRpbmcvMTA2OTQ3OTYwMj9leHBpcmVzX2luBjsAVEkiCHB1cgY7AFRJIg1yZWFkYWJsZQY7AFQ=--01e3068d33dbdea13db18776ee65cba52606a42f.json",
+  "subscription_url": "https://3.basecampapi.com/195539477/buckets/2085958504/recordings/1069479602/subscription.json",
   "comments_count": 0,
-  "comments_url": "https://3.basecampapi.com/195539477/buckets/2085958499/recordings/1069482295/comments.json",
+  "comments_url": "https://3.basecampapi.com/195539477/buckets/2085958504/recordings/1069479602/comments.json",
   "position": 1,
   "parent": {
-    "id": 1069482092,
+    "id": 1069479400,
     "title": "Triage",
     "type": "Kanban::Triage",
-    "url": "https://3.basecampapi.com/195539477/buckets/2085958499/card_tables/columns/1069482092.json",
-    "app_url": "https://3.basecamp.com/195539477/buckets/2085958499/card_tables/columns/1069482092"
+    "url": "https://3.basecampapi.com/195539477/buckets/2085958504/card_tables/columns/1069479400.json",
+    "app_url": "https://3.basecamp.com/195539477/buckets/2085958504/card_tables/columns/1069479400"
   },
   "bucket": {
-    "id": 2085958499,
+    "id": 2085958504,
     "name": "The Leto Laptop",
     "type": "Project"
   },
   "creator": {
-    "id": 1049716070,
-    "attachable_sgid": "BAh7CEkiCGdpZAY6BkVUSSIrZ2lkOi8vYmMzL1BlcnNvbi8xMDQ5NzE2MDcwP2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg9hdHRhY2hhYmxlBjsAVEkiD2V4cGlyZXNfYXQGOwBUMA==--5cfb1d97d8544362aa74062bc84b66fbf1d7a853",
+    "id": 1049715913,
+    "attachable_sgid": "BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiK2dpZDovL2JjMy9QZXJzb24vMTA0OTcxNTkxMz9leHBpcmVzX2luBjsAVEkiCHB1cgY7AFRJIg9hdHRhY2hhYmxlBjsAVA==--e627c45e6b34e08862da23906862412620e4d5d9",
     "name": "Victor Cooper",
     "email_address": "victor@honchodesign.com",
     "personable_type": "User",
     "title": "Chief Strategist",
     "bio": "Don’t let your dreams be dreams",
     "location": "Chicago, IL",
-    "created_at": "2022-11-18T09:50:54.566Z",
-    "updated_at": "2022-11-18T09:50:54.760Z",
+    "created_at": "2026-01-31T08:29:28.365Z",
+    "updated_at": "2026-01-31T08:29:32.599Z",
     "admin": true,
     "owner": true,
     "client": false,
     "employee": true,
     "time_zone": "America/Chicago",
-    "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBGZlkT4=--b295b0b432557d4a03760f78668284d4f39bf563/avatar?v=1",
+    "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBMlkkT4=--5fe7b70fbee7a7f0e2e1e19df7579e5d880c753d/avatar?v=1",
     "company": {
-      "id": 1033447825,
+      "id": 1033447817,
       "name": "Honcho Design"
     },
+    "can_ping": true,
     "can_manage_projects": true,
-    "can_manage_people": true
+    "can_manage_people": true,
+    "can_access_timesheet": true,
+    "can_access_hill_charts": true
   },
   "description": "Design a new and fancy UI",
   "completed": false,
   "content": "Design a new and fancy UI",
   "due_on": null,
-  "assignees": [
-
-  ],
-  "completion_subscribers": [
-
-  ],
-  "completion_url": "https://3.basecampapi.com/195539477/buckets/2085958499/todos/1069482295/completion.json",
+  "assignees": [],
+  "completion_subscribers": [],
+  "completion_url": "https://3.basecampapi.com/195539477/buckets/2085958504/todos/1069479602/completion.json",
   "comment_count": 0,
   "steps": [
     {
-      "id": 1069483883,
+      "id": 1069479603,
       "status": "active",
       "visible_to_clients": false,
-      "created_at": "2023-04-11T19:03:00.000Z",
-      "updated_at": "2023-04-11T19:03:00.000Z",
+      "created_at": "2026-01-17T18:31:00.000Z",
+      "updated_at": "2026-01-17T18:31:00.000Z",
       "title": "Find inspiration",
       "inherits_status": true,
       "type": "Kanban::Step",
-      "url": "https://3.basecampapi.com/195539477/buckets/2085958499/card_tables/steps/1069483883.json",
-      "app_url": "https://3.basecamp.com/195539477/buckets/2085958499/card_tables/cards/1069483882#__recording_1069483883",
-      "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7CEkiCGdpZAY6BkVUSSIuZ2lkOi8vYmMzL1JlY29yZGluZy8xMDY5NDgzODgzP2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg1yZWFkYWJsZQY7AFRJIg9leHBpcmVzX2F0BjsAVDA=--a6b622a4a8155f7db3ade5304666300199d8e4cf.json",
+      "url": "https://3.basecampapi.com/195539477/buckets/2085958504/card_tables/steps/1069479603.json",
+      "app_url": "https://3.basecamp.com/195539477/buckets/2085958504/card_tables/cards/1069479602#__recording_1069479603",
+      "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiLmdpZDovL2JjMy9SZWNvcmRpbmcvMTA2OTQ3OTYwMz9leHBpcmVzX2luBjsAVEkiCHB1cgY7AFRJIg1yZWFkYWJsZQY7AFQ=--9177e066a0dca31ce3492f80287c43b48df9f482.json",
       "position": 1,
       "parent": {
-        "id": 1069483882,
+        "id": 1069479602,
         "title": "New and fancy UI",
         "type": "Kanban::Card",
-        "url": "https://3.basecampapi.com/195539477/buckets/2085958499/card_tables/cards/1069483882.json",
-        "app_url": "https://3.basecamp.com/195539477/buckets/2085958499/card_tables/cards/1069483882"
+        "url": "https://3.basecampapi.com/195539477/buckets/2085958504/card_tables/cards/1069479602.json",
+        "app_url": "https://3.basecamp.com/195539477/buckets/2085958504/card_tables/cards/1069479602"
       },
       "bucket": {
-        "id": 2085958499,
+        "id": 2085958504,
         "name": "The Leto Laptop",
         "type": "Project"
       },
       "creator": {
-        "id": 1049716108,
-        "attachable_sgid": "BAh7CEkiCGdpZAY6BkVUSSIrZ2lkOi8vYmMzL1BlcnNvbi8xMDQ5NzE2MTA4P2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg9hdHRhY2hhYmxlBjsAVEkiD2V4cGlyZXNfYXQGOwBUMA==--33a0d8ee2b0bbcc0136cc0405d56b65b76e98b56",
+        "id": 1049715913,
+        "attachable_sgid": "BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiK2dpZDovL2JjMy9QZXJzb24vMTA0OTcxNTkxMz9leHBpcmVzX2luBjsAVEkiCHB1cgY7AFRJIg9hdHRhY2hhYmxlBjsAVA==--e627c45e6b34e08862da23906862412620e4d5d9",
         "name": "Victor Cooper",
         "email_address": "victor@honchodesign.com",
         "personable_type": "User",
         "title": "Chief Strategist",
         "bio": "Don’t let your dreams be dreams",
         "location": "Chicago, IL",
-        "created_at": "2023-04-25T09:09:57.914Z",
-        "updated_at": "2023-04-25T09:10:02.829Z",
+        "created_at": "2026-01-31T08:29:28.365Z",
+        "updated_at": "2026-01-31T08:29:32.599Z",
         "admin": true,
         "owner": true,
         "client": false,
         "employee": true,
         "time_zone": "America/Chicago",
-        "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBIxlkT4=--f8ea82b59ac303fe025fd537009cbeda9c381290/avatar?v=1",
+        "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBMlkkT4=--5fe7b70fbee7a7f0e2e1e19df7579e5d880c753d/avatar?v=1",
         "company": {
-          "id": 1033447830,
+          "id": 1033447817,
           "name": "Honcho Design"
         },
+        "can_ping": true,
         "can_manage_projects": true,
-        "can_manage_people": true
+        "can_manage_people": true,
+        "can_access_timesheet": true,
+        "can_access_hill_charts": true
       },
       "completed": false,
-      "due_on": "2023-04-29",
+      "due_on": "2026-02-04",
       "assignees": [
         {
-          "id": 1049716126,
-          "attachable_sgid": "BAh7CEkiCGdpZAY6BkVUSSIrZ2lkOi8vYmMzL1BlcnNvbi8xMDQ5NzE2MTI2P2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg9hdHRhY2hhYmxlBjsAVEkiD2V4cGlyZXNfYXQGOwBUMA==--54e94dd33334db927ffaa203f3eebf85b24f352a",
+          "id": 1049715931,
+          "attachable_sgid": "BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiK2dpZDovL2JjMy9QZXJzb24vMTA0OTcxNTkzMT9leHBpcmVzX2luBjsAVEkiCHB1cgY7AFRJIg9hdHRhY2hhYmxlBjsAVA==--0c0826b2c47fc879d171cb99aa564d38e5a54a67",
           "name": "Tashia Hughes",
           "email_address": "tashia@honchodesign.com",
           "personable_type": "User",
           "title": "District Integration Architect",
           "bio": null,
           "location": null,
-          "created_at": "2023-04-25T09:10:07.254Z",
-          "updated_at": "2023-04-25T09:10:07.254Z",
+          "created_at": "2026-01-31T08:29:41.371Z",
+          "updated_at": "2026-01-31T08:29:41.371Z",
           "admin": false,
           "owner": false,
           "client": false,
           "employee": false,
           "time_zone": "America/Chicago",
-          "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBJ5lkT4=--2d1100b45114d017a5327b8dce82ebc351fcbbd4/avatar?v=1",
+          "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBNtkkT4=--b72a5df90f237e00570273b726a82176287186e4/avatar?v=1",
+          "can_ping": true,
           "can_manage_projects": true,
-          "can_manage_people": true
+          "can_manage_people": true,
+          "can_access_timesheet": true,
+          "can_access_hill_charts": true
         }
       ],
-      "completion_url": "/195539477/buckets/2085958499/card_tables/steps/1069483883/completions.json"
+      "completion_url": "/195539477/buckets/2085958504/card_tables/steps/1069479603/completions.json"
     }
   ]
 }
@@ -320,7 +325,7 @@ Move a card
 
 **Required parameters**: `column_id` of the column destination
 
-This endpoint will return `204 No content` if the update was a success.
+This endpoint will return `204 No Content` if the update was a success.
 
 ###### Example JSON Request
 

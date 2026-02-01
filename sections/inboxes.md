@@ -19,49 +19,52 @@ To get the inbox ID for a project, see the [Get a project][1] endpoint's `dock` 
 <!-- START GET /buckets/1/inboxes/2.json -->
 ```json
 {
-  "id": 1069478936,
+  "id": 1069478988,
   "status": "active",
   "visible_to_clients": false,
-  "created_at": "2022-11-22T08:23:25.010Z",
-  "updated_at": "2022-11-22T08:23:32.501Z",
+  "created_at": "2026-01-31T08:29:58.961Z",
+  "updated_at": "2026-01-31T08:30:28.950Z",
   "title": "Email Forwards",
   "inherits_status": true,
   "type": "Inbox",
-  "url": "https://3.basecampapi.com/195539477/buckets/2085958497/inboxes/1069478936.json",
-  "app_url": "https://3.basecamp.com/195539477/buckets/2085958497/inboxes/1069478936",
-  "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7CEkiCGdpZAY6BkVUSSIuZ2lkOi8vYmMzL1JlY29yZGluZy8xMDY5NDc4OTM2P2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg1yZWFkYWJsZQY7AFRJIg9leHBpcmVzX2F0BjsAVDA=--02c84e4d8421bf89b7325129cbdabce35ac11eaf.json",
+  "url": "https://3.basecampapi.com/195539477/buckets/2085958502/inboxes/1069478988.json",
+  "app_url": "https://3.basecamp.com/195539477/buckets/2085958502/inboxes/1069478988",
+  "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiLmdpZDovL2JjMy9SZWNvcmRpbmcvMTA2OTQ3ODk4OD9leHBpcmVzX2luBjsAVEkiCHB1cgY7AFRJIg1yZWFkYWJsZQY7AFQ=--c30a3b3a7389e33d17a5e10f6c82070ad9efa4e8.json",
   "position": 6,
   "bucket": {
-    "id": 2085958497,
+    "id": 2085958502,
     "name": "Honcho Design Newsroom",
     "type": "Project"
   },
   "creator": {
-    "id": 1049715914,
-    "attachable_sgid": "BAh7CEkiCGdpZAY6BkVUSSIrZ2lkOi8vYmMzL1BlcnNvbi8xMDQ5NzE1OTE0P2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg9hdHRhY2hhYmxlBjsAVEkiD2V4cGlyZXNfYXQGOwBUMA==--ff006accb6e013cca785190fa38f42c091d24f1e",
+    "id": 1049715913,
+    "attachable_sgid": "BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiK2dpZDovL2JjMy9QZXJzb24vMTA0OTcxNTkxMz9leHBpcmVzX2luBjsAVEkiCHB1cgY7AFRJIg9hdHRhY2hhYmxlBjsAVA==--e627c45e6b34e08862da23906862412620e4d5d9",
     "name": "Victor Cooper",
     "email_address": "victor@honchodesign.com",
     "personable_type": "User",
     "title": "Chief Strategist",
     "bio": "Don’t let your dreams be dreams",
     "location": "Chicago, IL",
-    "created_at": "2022-11-22T08:23:21.732Z",
-    "updated_at": "2022-11-22T08:23:21.904Z",
+    "created_at": "2026-01-31T08:29:28.365Z",
+    "updated_at": "2026-01-31T08:29:32.599Z",
     "admin": true,
     "owner": true,
     "client": false,
     "employee": true,
     "time_zone": "America/Chicago",
-    "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBMpkkT4=--5520caeec1845b5090bbfc993ffe8eca8d138e14/avatar?v=1",
+    "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBMlkkT4=--5fe7b70fbee7a7f0e2e1e19df7579e5d880c753d/avatar?v=1",
     "company": {
       "id": 1033447817,
       "name": "Honcho Design"
     },
+    "can_ping": true,
     "can_manage_projects": true,
-    "can_manage_people": true
+    "can_manage_people": true,
+    "can_access_timesheet": true,
+    "can_access_hill_charts": true
   },
   "forwards_count": 2,
-  "forwards_url": "https://3.basecampapi.com/195539477/buckets/2085958497/inboxes/1069478936/forwards.json"
+  "forwards_url": "https://3.basecampapi.com/195539477/buckets/2085958502/inboxes/1069478988/forwards.json"
 }
 ```
 <!-- END GET /buckets/1/inboxes/2.json -->

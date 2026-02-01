@@ -26,58 +26,61 @@ _Optional query parameters_:
 ```json
 [
   {
-    "id": 1069479547,
+    "id": 1069479545,
     "status": "active",
     "visible_to_clients": false,
-    "created_at": "2022-11-22T12:05:58.169Z",
-    "updated_at": "2022-11-22T12:05:58.169Z",
+    "created_at": "2026-01-26T22:11:00.000Z",
+    "updated_at": "2026-01-26T22:11:00.000Z",
     "title": "Answer to “What did you work on today?”",
     "inherits_status": true,
     "type": "Question::Answer",
-    "url": "https://3.basecampapi.com/195539477/buckets/2085958499/question_answers/1069479547.json",
-    "app_url": "https://3.basecamp.com/195539477/buckets/2085958499/question_answers/1069479547",
-    "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7CEkiCGdpZAY6BkVUSSIuZ2lkOi8vYmMzL1JlY29yZGluZy8xMDY5NDc5NTQ3P2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg1yZWFkYWJsZQY7AFRJIg9leHBpcmVzX2F0BjsAVDA=--d845e9d18c423a5f3d1d84039d37c670ba8b0066.json",
-    "subscription_url": "https://3.basecampapi.com/195539477/buckets/2085958499/recordings/1069479547/subscription.json",
+    "url": "https://3.basecampapi.com/195539477/buckets/2085958504/question_answers/1069479545.json",
+    "app_url": "https://3.basecamp.com/195539477/buckets/2085958504/question_answers/1069479545",
+    "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiLmdpZDovL2JjMy9SZWNvcmRpbmcvMTA2OTQ3OTU0NT9leHBpcmVzX2luBjsAVEkiCHB1cgY7AFRJIg1yZWFkYWJsZQY7AFQ=--4ecc639365c1b1091bba2cebaad8b5d8bd1be402.json",
+    "subscription_url": "https://3.basecampapi.com/195539477/buckets/2085958504/recordings/1069479545/subscription.json",
     "comments_count": 0,
-    "comments_url": "https://3.basecampapi.com/195539477/buckets/2085958499/recordings/1069479547/comments.json",
+    "comments_url": "https://3.basecampapi.com/195539477/buckets/2085958504/recordings/1069479545/comments.json",
     "parent": {
-      "id": 1069479362,
+      "id": 1069479417,
       "title": "What did you work on today?",
       "type": "Question",
-      "url": "https://3.basecampapi.com/195539477/buckets/2085958499/questions/1069479362.json",
-      "app_url": "https://3.basecamp.com/195539477/buckets/2085958499/questions/1069479362"
+      "url": "https://3.basecampapi.com/195539477/buckets/2085958504/questions/1069479417.json",
+      "app_url": "https://3.basecamp.com/195539477/buckets/2085958504/questions/1069479417"
     },
     "bucket": {
-      "id": 2085958499,
+      "id": 2085958504,
       "name": "The Leto Laptop",
       "type": "Project"
     },
     "creator": {
-      "id": 1049715915,
-      "attachable_sgid": "BAh7CEkiCGdpZAY6BkVUSSIrZ2lkOi8vYmMzL1BlcnNvbi8xMDQ5NzE1OTE1P2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg9hdHRhY2hhYmxlBjsAVEkiD2V4cGlyZXNfYXQGOwBUMA==--aeb392ebf54ffd820e45f27add22bae3a8c7da56",
-      "name": "Annie Bryan",
-      "email_address": "annie@honchodesign.com",
+      "id": 1049715940,
+      "attachable_sgid": "BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiK2dpZDovL2JjMy9QZXJzb24vMTA0OTcxNTk0MD9leHBpcmVzX2luBjsAVEkiCHB1cgY7AFRJIg9hdHRhY2hhYmxlBjsAVA==--8a036dc6e0dee6b7db74851189b981fe69f4172d",
+      "name": "Jared Davis",
+      "email_address": "jared@honchodesign.com",
       "personable_type": "User",
-      "title": "Central Markets Manager",
-      "bio": "To open a store is easy, to keep it open is an art",
+      "title": "International Tactics Facilitator",
+      "bio": "Oh, so they have internet on computers now!",
       "location": null,
-      "created_at": "2022-11-22T08:23:21.911Z",
-      "updated_at": "2022-11-22T08:23:21.911Z",
+      "created_at": "2026-01-31T08:29:43.792Z",
+      "updated_at": "2026-01-31T08:29:43.792Z",
       "admin": false,
       "owner": false,
       "client": false,
       "employee": true,
       "time_zone": "America/Chicago",
-      "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBMtkkT4=--9927c47a4cbee30a7f9aea667882496aba799149/avatar?v=1",
+      "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBORkkT4=--2667d9ced3ec021946197cbb6c3083f0f95f3b6a/avatar?v=1",
       "company": {
         "id": 1033447817,
         "name": "Honcho Design"
       },
+      "can_ping": true,
       "can_manage_projects": true,
-      "can_manage_people": true
+      "can_manage_people": true,
+      "can_access_timesheet": true,
+      "can_access_hill_charts": true
     },
-    "content": "<div>Last week or so was tough, but I think we're back on track. The next design presentation is coming up and we're in good shape.</div>",
-    "group_on": "2022-11-22"
+    "content": "Prototype is done, components in really good shape. I think we're going to split for now and come back when design is more settled.",
+    "group_on": "2026-01-26"
   }
 ]
 ```
@@ -123,58 +126,61 @@ Get a question answer
 <!-- START GET /buckets/1/question_answers/2.json -->
 ```json
 {
-  "id": 1069479547,
+  "id": 1069479545,
   "status": "active",
   "visible_to_clients": false,
-  "created_at": "2022-11-22T12:05:58.169Z",
-  "updated_at": "2022-11-22T12:05:58.169Z",
+  "created_at": "2026-01-26T22:11:00.000Z",
+  "updated_at": "2026-01-26T22:11:00.000Z",
   "title": "Answer to “What did you work on today?”",
   "inherits_status": true,
   "type": "Question::Answer",
-  "url": "https://3.basecampapi.com/195539477/buckets/2085958499/question_answers/1069479547.json",
-  "app_url": "https://3.basecamp.com/195539477/buckets/2085958499/question_answers/1069479547",
-  "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7CEkiCGdpZAY6BkVUSSIuZ2lkOi8vYmMzL1JlY29yZGluZy8xMDY5NDc5NTQ3P2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg1yZWFkYWJsZQY7AFRJIg9leHBpcmVzX2F0BjsAVDA=--d845e9d18c423a5f3d1d84039d37c670ba8b0066.json",
-  "subscription_url": "https://3.basecampapi.com/195539477/buckets/2085958499/recordings/1069479547/subscription.json",
+  "url": "https://3.basecampapi.com/195539477/buckets/2085958504/question_answers/1069479545.json",
+  "app_url": "https://3.basecamp.com/195539477/buckets/2085958504/question_answers/1069479545",
+  "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiLmdpZDovL2JjMy9SZWNvcmRpbmcvMTA2OTQ3OTU0NT9leHBpcmVzX2luBjsAVEkiCHB1cgY7AFRJIg1yZWFkYWJsZQY7AFQ=--4ecc639365c1b1091bba2cebaad8b5d8bd1be402.json",
+  "subscription_url": "https://3.basecampapi.com/195539477/buckets/2085958504/recordings/1069479545/subscription.json",
   "comments_count": 0,
-  "comments_url": "https://3.basecampapi.com/195539477/buckets/2085958499/recordings/1069479547/comments.json",
+  "comments_url": "https://3.basecampapi.com/195539477/buckets/2085958504/recordings/1069479545/comments.json",
   "parent": {
-    "id": 1069479362,
+    "id": 1069479417,
     "title": "What did you work on today?",
     "type": "Question",
-    "url": "https://3.basecampapi.com/195539477/buckets/2085958499/questions/1069479362.json",
-    "app_url": "https://3.basecamp.com/195539477/buckets/2085958499/questions/1069479362"
+    "url": "https://3.basecampapi.com/195539477/buckets/2085958504/questions/1069479417.json",
+    "app_url": "https://3.basecamp.com/195539477/buckets/2085958504/questions/1069479417"
   },
   "bucket": {
-    "id": 2085958499,
+    "id": 2085958504,
     "name": "The Leto Laptop",
     "type": "Project"
   },
   "creator": {
-    "id": 1049715915,
-    "attachable_sgid": "BAh7CEkiCGdpZAY6BkVUSSIrZ2lkOi8vYmMzL1BlcnNvbi8xMDQ5NzE1OTE1P2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg9hdHRhY2hhYmxlBjsAVEkiD2V4cGlyZXNfYXQGOwBUMA==--aeb392ebf54ffd820e45f27add22bae3a8c7da56",
-    "name": "Annie Bryan",
-    "email_address": "annie@honchodesign.com",
+    "id": 1049715940,
+    "attachable_sgid": "BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiK2dpZDovL2JjMy9QZXJzb24vMTA0OTcxNTk0MD9leHBpcmVzX2luBjsAVEkiCHB1cgY7AFRJIg9hdHRhY2hhYmxlBjsAVA==--8a036dc6e0dee6b7db74851189b981fe69f4172d",
+    "name": "Jared Davis",
+    "email_address": "jared@honchodesign.com",
     "personable_type": "User",
-    "title": "Central Markets Manager",
-    "bio": "To open a store is easy, to keep it open is an art",
+    "title": "International Tactics Facilitator",
+    "bio": "Oh, so they have internet on computers now!",
     "location": null,
-    "created_at": "2022-11-22T08:23:21.911Z",
-    "updated_at": "2022-11-22T08:23:21.911Z",
+    "created_at": "2026-01-31T08:29:43.792Z",
+    "updated_at": "2026-01-31T08:29:43.792Z",
     "admin": false,
     "owner": false,
     "client": false,
     "employee": true,
     "time_zone": "America/Chicago",
-    "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBMtkkT4=--9927c47a4cbee30a7f9aea667882496aba799149/avatar?v=1",
+    "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBORkkT4=--2667d9ced3ec021946197cbb6c3083f0f95f3b6a/avatar?v=1",
     "company": {
       "id": 1033447817,
       "name": "Honcho Design"
     },
+    "can_ping": true,
     "can_manage_projects": true,
-    "can_manage_people": true
+    "can_manage_people": true,
+    "can_access_timesheet": true,
+    "can_access_hill_charts": true
   },
-  "content": "<div>Last week or so was tough, but I think we're back on track. The next design presentation is coming up and we're in good shape.</div>",
-  "group_on": "2022-11-22"
+  "content": "Prototype is done, components in really good shape. I think we're going to split for now and come back when design is more settled.",
+  "group_on": "2026-01-26"
 }
 ```
 <!-- END GET /buckets/1/question_answers/2.json -->

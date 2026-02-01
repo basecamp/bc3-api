@@ -25,86 +25,86 @@ _Optional parameters_:
 ```json
 [
   {
-    "id": 2085958501,
+    "id": 2085958506,
     "status": "active",
-    "created_at": "2022-11-22T08:24:21.291Z",
-    "updated_at": "2022-11-22T17:54:57.317Z",
+    "created_at": "2026-01-31T09:28:25.505Z",
+    "updated_at": "2026-01-31T08:33:27.996Z",
     "name": "Honcho Onboarding",
     "description": "Getting started on the right foot",
-    "url": "https://3.basecampapi.com/195539477/templates/2085958501.json",
-    "app_url": "https://3.basecamp.com/195539477/templates/2085958501",
+    "url": "https://3.basecampapi.com/195539477/templates/2085958506.json",
+    "app_url": "https://3.basecamp.com/195539477/templates/2085958506",
     "dock": [
       {
-        "id": 1069479657,
+        "id": 1069479712,
         "title": "Message Board",
         "name": "message_board",
         "enabled": true,
         "position": 1,
-        "url": "https://3.basecampapi.com/195539477/buckets/2085958501/message_boards/1069479657.json",
-        "app_url": "https://3.basecamp.com/195539477/buckets/2085958501/message_boards/1069479657"
+        "url": "https://3.basecampapi.com/195539477/buckets/2085958506/message_boards/1069479712.json",
+        "app_url": "https://3.basecamp.com/195539477/buckets/2085958506/message_boards/1069479712"
       },
       {
-        "id": 1069479658,
+        "id": 1069479713,
         "title": "To-dos",
         "name": "todoset",
         "enabled": true,
         "position": 2,
-        "url": "https://3.basecampapi.com/195539477/buckets/2085958501/todosets/1069479658.json",
-        "app_url": "https://3.basecamp.com/195539477/buckets/2085958501/todosets/1069479658"
+        "url": "https://3.basecampapi.com/195539477/buckets/2085958506/todosets/1069479713.json",
+        "app_url": "https://3.basecamp.com/195539477/buckets/2085958506/todosets/1069479713"
       },
       {
-        "id": 1069479659,
+        "id": 1069479714,
         "title": "Docs & Files",
         "name": "vault",
         "enabled": true,
         "position": 3,
-        "url": "https://3.basecampapi.com/195539477/buckets/2085958501/vaults/1069479659.json",
-        "app_url": "https://3.basecamp.com/195539477/buckets/2085958501/vaults/1069479659"
+        "url": "https://3.basecampapi.com/195539477/buckets/2085958506/vaults/1069479714.json",
+        "app_url": "https://3.basecamp.com/195539477/buckets/2085958506/vaults/1069479714"
       },
       {
-        "id": 1069479660,
-        "title": "Campfire",
+        "id": 1069479715,
+        "title": "Chat",
         "name": "chat",
         "enabled": true,
         "position": 4,
-        "url": "https://3.basecampapi.com/195539477/buckets/2085958501/chats/1069479660.json",
-        "app_url": "https://3.basecamp.com/195539477/buckets/2085958501/chats/1069479660"
+        "url": "https://3.basecampapi.com/195539477/buckets/2085958506/chats/1069479715.json",
+        "app_url": "https://3.basecamp.com/195539477/buckets/2085958506/chats/1069479715"
       },
       {
-        "id": 1069479661,
+        "id": 1069479716,
         "title": "Schedule",
         "name": "schedule",
         "enabled": true,
         "position": 5,
-        "url": "https://3.basecampapi.com/195539477/buckets/2085958501/schedules/1069479661.json",
-        "app_url": "https://3.basecamp.com/195539477/buckets/2085958501/schedules/1069479661"
+        "url": "https://3.basecampapi.com/195539477/buckets/2085958506/schedules/1069479716.json",
+        "app_url": "https://3.basecamp.com/195539477/buckets/2085958506/schedules/1069479716"
       },
       {
-        "id": 1069479662,
+        "id": 1069479717,
         "title": "Automatic Check-ins",
         "name": "questionnaire",
         "enabled": false,
         "position": null,
-        "url": "https://3.basecampapi.com/195539477/buckets/2085958501/questionnaires/1069479662.json",
-        "app_url": "https://3.basecamp.com/195539477/buckets/2085958501/questionnaires/1069479662"
+        "url": "https://3.basecampapi.com/195539477/buckets/2085958506/questionnaires/1069479717.json",
+        "app_url": "https://3.basecamp.com/195539477/buckets/2085958506/questionnaires/1069479717"
       },
       {
-        "id": 1069479663,
+        "id": 1069479718,
         "title": "Email Forwards",
         "name": "inbox",
         "enabled": false,
         "position": null,
-        "url": "https://3.basecampapi.com/195539477/buckets/2085958501/inboxes/1069479663.json",
-        "app_url": "https://3.basecamp.com/195539477/buckets/2085958501/inboxes/1069479663"
+        "url": "https://3.basecampapi.com/195539477/buckets/2085958506/inboxes/1069479718.json",
+        "app_url": "https://3.basecamp.com/195539477/buckets/2085958506/inboxes/1069479718"
       },
       {
-        "id": 1069479664,
+        "id": 1069479719,
         "title": "Card Table",
         "name": "kanban_board",
         "enabled": false,
         "position": null,
-        "url": "https://3.basecampapi.com/195539477/buckets/2085958501/card_tables/1069479664.json",
-        "app_url": "https://3.basecamp.com/195539477/buckets/2085958501/card_tables/1069479664"
+        "url": "https://3.basecampapi.com/195539477/buckets/2085958506/card_tables/1069479719.json",
+        "app_url": "https://3.basecamp.com/195539477/buckets/2085958506/card_tables/1069479719"
       }
     ]
   }
@@ -126,86 +126,86 @@ Get a Template
 <!-- START GET /templates/1.json -->
 ```json
 {
-  "id": 2085958501,
+  "id": 2085958506,
   "status": "active",
-  "created_at": "2022-11-22T08:24:21.291Z",
-  "updated_at": "2022-11-22T17:54:57.317Z",
+  "created_at": "2026-01-31T09:28:25.505Z",
+  "updated_at": "2026-01-31T08:33:27.996Z",
   "name": "Honcho Onboarding",
   "description": "Getting started on the right foot",
-  "url": "https://3.basecampapi.com/195539477/templates/2085958501.json",
-  "app_url": "https://3.basecamp.com/195539477/templates/2085958501",
+  "url": "https://3.basecampapi.com/195539477/templates/2085958506.json",
+  "app_url": "https://3.basecamp.com/195539477/templates/2085958506",
   "dock": [
     {
-      "id": 1069479657,
+      "id": 1069479712,
       "title": "Message Board",
       "name": "message_board",
       "enabled": true,
       "position": 1,
-      "url": "https://3.basecampapi.com/195539477/buckets/2085958501/message_boards/1069479657.json",
-      "app_url": "https://3.basecamp.com/195539477/buckets/2085958501/message_boards/1069479657"
+      "url": "https://3.basecampapi.com/195539477/buckets/2085958506/message_boards/1069479712.json",
+      "app_url": "https://3.basecamp.com/195539477/buckets/2085958506/message_boards/1069479712"
     },
     {
-      "id": 1069479658,
+      "id": 1069479713,
       "title": "To-dos",
       "name": "todoset",
       "enabled": true,
       "position": 2,
-      "url": "https://3.basecampapi.com/195539477/buckets/2085958501/todosets/1069479658.json",
-      "app_url": "https://3.basecamp.com/195539477/buckets/2085958501/todosets/1069479658"
+      "url": "https://3.basecampapi.com/195539477/buckets/2085958506/todosets/1069479713.json",
+      "app_url": "https://3.basecamp.com/195539477/buckets/2085958506/todosets/1069479713"
     },
     {
-      "id": 1069479659,
+      "id": 1069479714,
       "title": "Docs & Files",
       "name": "vault",
       "enabled": true,
       "position": 3,
-      "url": "https://3.basecampapi.com/195539477/buckets/2085958501/vaults/1069479659.json",
-      "app_url": "https://3.basecamp.com/195539477/buckets/2085958501/vaults/1069479659"
+      "url": "https://3.basecampapi.com/195539477/buckets/2085958506/vaults/1069479714.json",
+      "app_url": "https://3.basecamp.com/195539477/buckets/2085958506/vaults/1069479714"
     },
     {
-      "id": 1069479660,
-      "title": "Campfire",
+      "id": 1069479715,
+      "title": "Chat",
       "name": "chat",
       "enabled": true,
       "position": 4,
-      "url": "https://3.basecampapi.com/195539477/buckets/2085958501/chats/1069479660.json",
-      "app_url": "https://3.basecamp.com/195539477/buckets/2085958501/chats/1069479660"
+      "url": "https://3.basecampapi.com/195539477/buckets/2085958506/chats/1069479715.json",
+      "app_url": "https://3.basecamp.com/195539477/buckets/2085958506/chats/1069479715"
     },
     {
-      "id": 1069479661,
+      "id": 1069479716,
       "title": "Schedule",
       "name": "schedule",
       "enabled": true,
       "position": 5,
-      "url": "https://3.basecampapi.com/195539477/buckets/2085958501/schedules/1069479661.json",
-      "app_url": "https://3.basecamp.com/195539477/buckets/2085958501/schedules/1069479661"
+      "url": "https://3.basecampapi.com/195539477/buckets/2085958506/schedules/1069479716.json",
+      "app_url": "https://3.basecamp.com/195539477/buckets/2085958506/schedules/1069479716"
     },
     {
-      "id": 1069479662,
+      "id": 1069479717,
       "title": "Automatic Check-ins",
       "name": "questionnaire",
       "enabled": false,
       "position": null,
-      "url": "https://3.basecampapi.com/195539477/buckets/2085958501/questionnaires/1069479662.json",
-      "app_url": "https://3.basecamp.com/195539477/buckets/2085958501/questionnaires/1069479662"
+      "url": "https://3.basecampapi.com/195539477/buckets/2085958506/questionnaires/1069479717.json",
+      "app_url": "https://3.basecamp.com/195539477/buckets/2085958506/questionnaires/1069479717"
     },
     {
-      "id": 1069479663,
+      "id": 1069479718,
       "title": "Email Forwards",
       "name": "inbox",
       "enabled": false,
       "position": null,
-      "url": "https://3.basecampapi.com/195539477/buckets/2085958501/inboxes/1069479663.json",
-      "app_url": "https://3.basecamp.com/195539477/buckets/2085958501/inboxes/1069479663"
+      "url": "https://3.basecampapi.com/195539477/buckets/2085958506/inboxes/1069479718.json",
+      "app_url": "https://3.basecamp.com/195539477/buckets/2085958506/inboxes/1069479718"
     },
     {
-      "id": 1069479664,
+      "id": 1069479719,
       "title": "Card Table",
       "name": "kanban_board",
       "enabled": false,
       "position": null,
-      "url": "https://3.basecampapi.com/195539477/buckets/2085958501/card_tables/1069479664.json",
-      "app_url": "https://3.basecamp.com/195539477/buckets/2085958501/card_tables/1069479664"
+      "url": "https://3.basecampapi.com/195539477/buckets/2085958506/card_tables/1069479719.json",
+      "app_url": "https://3.basecamp.com/195539477/buckets/2085958506/card_tables/1069479719"
     }
   ]
 }
@@ -321,9 +321,9 @@ If creation was successful, this returns `201 Created` along with the current JS
 <!-- START POST /templates/1/project_constructions.json -->
 ```json
 {
-  "id": 598194969,
+  "id": 598194959,
   "status": "pending",
-  "url": "https://3.basecampapi.com/195539477/templates/2085958501/project_constructions/598194969.json"
+  "url": "https://3.basecampapi.com/195539477/templates/2085958506/project_constructions/598194959.json"
 }
 ```
 <!-- END POST /templates/1/project_constructions.json -->
@@ -338,93 +338,98 @@ This endpoint can be polled at regular intervals (no more than once a second) to
 <!-- START GET /templates/1/project_constructions/1.json -->
 ```json
 {
-  "id": 598194969,
+  "id": 598194959,
   "status": "completed",
-  "url": "https://3.basecampapi.com/195539477/templates/2085958501/project_constructions/598194969.json",
+  "url": "https://3.basecampapi.com/195539477/templates/2085958506/project_constructions/598194959.json",
   "project": {
-    "id": 2085958514,
+    "id": 2085958509,
     "status": "active",
-    "created_at": "2022-11-22T17:56:18.770Z",
-    "updated_at": "2022-11-22T17:56:19.411Z",
+    "created_at": "2026-02-01T02:53:28.819Z",
+    "updated_at": "2026-02-01T02:53:29.751Z",
     "name": "New project from template",
     "description": null,
     "purpose": "topic",
     "clients_enabled": false,
-    "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7CEkiCGdpZAY6BkVUSSIrZ2lkOi8vYmMzL0J1Y2tldC8yMDg1OTU4NTE0P2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg1yZWFkYWJsZQY7AFRJIg9leHBpcmVzX2F0BjsAVDA=--38de51f1a6ce6255e51bda4b58893cc5f3b81e9a.json",
-    "url": "https://3.basecampapi.com/195539477/projects/2085958514.json",
-    "app_url": "https://3.basecamp.com/195539477/projects/2085958514",
+    "timesheet_enabled": false,
+    "color": null,
+    "last_needle_color": "green",
+    "last_needle_position": null,
+    "previous_needle_position": null,
+    "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiK2dpZDovL2JjMy9CdWNrZXQvMjA4NTk1ODUwOT9leHBpcmVzX2luBjsAVEkiCHB1cgY7AFRJIg1yZWFkYWJsZQY7AFQ=--91136c7757b8825fbf10b5d62db1ccbdd9fce343.json",
+    "url": "https://3.basecampapi.com/195539477/projects/2085958509.json",
+    "app_url": "https://3.basecamp.com/195539477/projects/2085958509",
     "dock": [
       {
-        "id": 1069480107,
+        "id": 1069479919,
         "title": "Message Board",
         "name": "message_board",
         "enabled": true,
         "position": 1,
-        "url": "https://3.basecampapi.com/195539477/buckets/2085958514/message_boards/1069480107.json",
-        "app_url": "https://3.basecamp.com/195539477/buckets/2085958514/message_boards/1069480107"
+        "url": "https://3.basecampapi.com/195539477/buckets/2085958509/message_boards/1069479919.json",
+        "app_url": "https://3.basecamp.com/195539477/buckets/2085958509/message_boards/1069479919"
       },
       {
-        "id": 1069480108,
+        "id": 1069479920,
         "title": "To-dos",
         "name": "todoset",
         "enabled": true,
         "position": 2,
-        "url": "https://3.basecampapi.com/195539477/buckets/2085958514/todosets/1069480108.json",
-        "app_url": "https://3.basecamp.com/195539477/buckets/2085958514/todosets/1069480108"
+        "url": "https://3.basecampapi.com/195539477/buckets/2085958509/todosets/1069479920.json",
+        "app_url": "https://3.basecamp.com/195539477/buckets/2085958509/todosets/1069479920"
       },
       {
-        "id": 1069480113,
+        "id": 1069479925,
         "title": "Docs & Files",
         "name": "vault",
         "enabled": true,
         "position": 3,
-        "url": "https://3.basecampapi.com/195539477/buckets/2085958514/vaults/1069480113.json",
-        "app_url": "https://3.basecamp.com/195539477/buckets/2085958514/vaults/1069480113"
+        "url": "https://3.basecampapi.com/195539477/buckets/2085958509/vaults/1069479925.json",
+        "app_url": "https://3.basecamp.com/195539477/buckets/2085958509/vaults/1069479925"
       },
       {
-        "id": 1069480114,
-        "title": "Campfire",
+        "id": 1069479926,
+        "title": "Chat",
         "name": "chat",
         "enabled": true,
         "position": 4,
-        "url": "https://3.basecampapi.com/195539477/buckets/2085958514/chats/1069480114.json",
-        "app_url": "https://3.basecamp.com/195539477/buckets/2085958514/chats/1069480114"
+        "url": "https://3.basecampapi.com/195539477/buckets/2085958509/chats/1069479926.json",
+        "app_url": "https://3.basecamp.com/195539477/buckets/2085958509/chats/1069479926"
       },
       {
-        "id": 1069480115,
+        "id": 1069479927,
         "title": "Schedule",
         "name": "schedule",
         "enabled": true,
         "position": 5,
-        "url": "https://3.basecampapi.com/195539477/buckets/2085958514/schedules/1069480115.json",
-        "app_url": "https://3.basecamp.com/195539477/buckets/2085958514/schedules/1069480115"
+        "url": "https://3.basecampapi.com/195539477/buckets/2085958509/schedules/1069479927.json",
+        "app_url": "https://3.basecamp.com/195539477/buckets/2085958509/schedules/1069479927"
       },
       {
-        "id": 1069480116,
+        "id": 1069479928,
         "title": "Automatic Check-ins",
         "name": "questionnaire",
         "enabled": false,
         "position": null,
-        "url": "https://3.basecampapi.com/195539477/buckets/2085958514/questionnaires/1069480116.json",
-        "app_url": "https://3.basecamp.com/195539477/buckets/2085958514/questionnaires/1069480116"
+        "url": "https://3.basecampapi.com/195539477/buckets/2085958509/questionnaires/1069479928.json",
+        "app_url": "https://3.basecamp.com/195539477/buckets/2085958509/questionnaires/1069479928"
       },
       {
-        "id": 1069480117,
+        "id": 1069479929,
         "title": "Email Forwards",
         "name": "inbox",
         "enabled": false,
         "position": null,
-        "url": "https://3.basecampapi.com/195539477/buckets/2085958514/inboxes/1069480117.json",
-        "app_url": "https://3.basecamp.com/195539477/buckets/2085958514/inboxes/1069480117"
+        "url": "https://3.basecampapi.com/195539477/buckets/2085958509/inboxes/1069479929.json",
+        "app_url": "https://3.basecamp.com/195539477/buckets/2085958509/inboxes/1069479929"
       },
       {
-        "id": 1069480118,
+        "id": 1069479930,
         "title": "Card Table",
         "name": "kanban_board",
         "enabled": false,
         "position": null,
-        "url": "https://3.basecampapi.com/195539477/buckets/2085958514/card_tables/1069480118.json",
-        "app_url": "https://3.basecamp.com/195539477/buckets/2085958514/card_tables/1069480118"
+        "url": "https://3.basecampapi.com/195539477/buckets/2085958509/card_tables/1069479930.json",
+        "app_url": "https://3.basecamp.com/195539477/buckets/2085958509/card_tables/1069479930"
       }
     ]
   }

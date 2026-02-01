@@ -30,48 +30,48 @@ This endpoint without any parameters returns only timesheet entries for the last
 ```json
 [
   {
-    "id": 1069480964,
+    "id": 1069479915,
     "status": "active",
     "visible_to_clients": false,
-    "created_at": "2025-10-10T11:47:23.018Z",
-    "updated_at": "2025-10-10T11:47:23.018Z",
+    "created_at": "2026-01-31T08:37:37.811Z",
+    "updated_at": "2026-01-31T08:37:37.811Z",
     "title": "Timesheet entry",
     "inherits_status": true,
     "type": "Timesheet::Entry",
-    "url": "https://3.basecampapi.com/195539477/projects/2085958503/timesheet/entries/1069480964.json",
-    "app_url": "https://3.basecamp.com/195539477/projects/2085958503/timesheet/entries/1069480964",
-    "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiLmdpZDovL2JjMy9SZWNvcmRpbmcvMTA2OTQ4MDk2ND9leHBpcmVzX2luBjsAVEkiCHB1cgY7AFRJIg1yZWFkYWJsZQY7AFQ=--09a2201048c3c68eba357073056b1c3676de382b.json",
+    "url": "https://3.basecampapi.com/195539477/projects/2085958504/timesheet/entries/1069479915.json",
+    "app_url": "https://3.basecamp.com/195539477/projects/2085958504/timesheet/entries/1069479915",
+    "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiLmdpZDovL2JjMy9SZWNvcmRpbmcvMTA2OTQ3OTkxNT9leHBpcmVzX2luBjsAVEkiCHB1cgY7AFRJIg1yZWFkYWJsZQY7AFQ=--eedd8d56e2e90002cdb2a96028846f61e1ae34f9.json",
     "parent": {
-      "id": 1069480455,
+      "id": 1069479406,
       "title": "We won Leto!",
       "type": "Message",
-      "url": "https://3.basecampapi.com/195539477/buckets/2085958503/messages/1069480455.json",
-      "app_url": "https://3.basecamp.com/195539477/buckets/2085958503/messages/1069480455"
+      "url": "https://3.basecampapi.com/195539477/buckets/2085958504/messages/1069479406.json",
+      "app_url": "https://3.basecamp.com/195539477/buckets/2085958504/messages/1069479406"
     },
     "bucket": {
-      "id": 2085958503,
+      "id": 2085958504,
       "name": "The Leto Laptop",
       "type": "Project"
     },
     "creator": {
-      "id": 1049715955,
-      "attachable_sgid": "BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiK2dpZDovL2JjMy9QZXJzb24vMTA0OTcxNTk1NT9leHBpcmVzX2luBjsAVEkiCHB1cgY7AFRJIg9hdHRhY2hhYmxlBjsAVA==--6a8affd82c540e7c1f7e846b2b02fedb01bcd3f0",
+      "id": 1049715913,
+      "attachable_sgid": "BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiK2dpZDovL2JjMy9QZXJzb24vMTA0OTcxNTkxMz9leHBpcmVzX2luBjsAVEkiCHB1cgY7AFRJIg9hdHRhY2hhYmxlBjsAVA==--e627c45e6b34e08862da23906862412620e4d5d9",
       "name": "Victor Cooper",
       "email_address": "victor@honchodesign.com",
       "personable_type": "User",
       "title": "Chief Strategist",
       "bio": "Don’t let your dreams be dreams",
       "location": "Chicago, IL",
-      "created_at": "2025-10-10T11:41:42.284Z",
-      "updated_at": "2025-10-10T11:41:43.054Z",
+      "created_at": "2026-01-31T08:29:28.365Z",
+      "updated_at": "2026-01-31T08:29:32.599Z",
       "admin": true,
       "owner": true,
       "client": false,
       "employee": true,
       "time_zone": "America/Chicago",
-      "avatar_url": "http://bc3-cdn.localhost:3001/195539477/people/BAhpBPNkkT4=--5049939da9ea89df60ade5a1c42d324c1651c66c/avatar?v=1",
+      "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBMlkkT4=--5fe7b70fbee7a7f0e2e1e19df7579e5d880c753d/avatar?v=1",
       "company": {
-        "id": 1033447819,
+        "id": 1033447817,
         "name": "Honcho Design"
       },
       "can_ping": true,
@@ -80,7 +80,7 @@ This endpoint without any parameters returns only timesheet entries for the last
       "can_access_timesheet": true,
       "can_access_hill_charts": true
     },
-    "date": "2025-10-09",
+    "date": "2026-01-30",
     "description": "Team Meeting Prep",
     "hours": "2.0"
   }
@@ -103,48 +103,48 @@ Get timesheet for a project
 ```json
 [
   {
-    "id": 1069480964,
+    "id": 1069479915,
     "status": "active",
     "visible_to_clients": false,
-    "created_at": "2025-10-10T11:47:23.018Z",
-    "updated_at": "2025-10-10T11:47:23.018Z",
+    "created_at": "2026-01-31T08:37:37.811Z",
+    "updated_at": "2026-01-31T08:37:37.811Z",
     "title": "Timesheet entry",
     "inherits_status": true,
     "type": "Timesheet::Entry",
-    "url": "https://3.basecampapi.com/195539477/projects/2085958503/timesheet/entries/1069480964.json",
-    "app_url": "https://3.basecamp.com/195539477/projects/2085958503/timesheet/entries/1069480964",
-    "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiLmdpZDovL2JjMy9SZWNvcmRpbmcvMTA2OTQ4MDk2ND9leHBpcmVzX2luBjsAVEkiCHB1cgY7AFRJIg1yZWFkYWJsZQY7AFQ=--09a2201048c3c68eba357073056b1c3676de382b.json",
+    "url": "https://3.basecampapi.com/195539477/projects/2085958504/timesheet/entries/1069479915.json",
+    "app_url": "https://3.basecamp.com/195539477/projects/2085958504/timesheet/entries/1069479915",
+    "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiLmdpZDovL2JjMy9SZWNvcmRpbmcvMTA2OTQ3OTkxNT9leHBpcmVzX2luBjsAVEkiCHB1cgY7AFRJIg1yZWFkYWJsZQY7AFQ=--eedd8d56e2e90002cdb2a96028846f61e1ae34f9.json",
     "parent": {
-      "id": 1069480455,
+      "id": 1069479406,
       "title": "We won Leto!",
       "type": "Message",
-      "url": "https://3.basecampapi.com/195539477/buckets/2085958503/messages/1069480455.json",
-      "app_url": "https://3.basecamp.com/195539477/buckets/2085958503/messages/1069480455"
+      "url": "https://3.basecampapi.com/195539477/buckets/2085958504/messages/1069479406.json",
+      "app_url": "https://3.basecamp.com/195539477/buckets/2085958504/messages/1069479406"
     },
     "bucket": {
-      "id": 2085958503,
+      "id": 2085958504,
       "name": "The Leto Laptop",
       "type": "Project"
     },
     "creator": {
-      "id": 1049715955,
-      "attachable_sgid": "BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiK2dpZDovL2JjMy9QZXJzb24vMTA0OTcxNTk1NT9leHBpcmVzX2luBjsAVEkiCHB1cgY7AFRJIg9hdHRhY2hhYmxlBjsAVA==--6a8affd82c540e7c1f7e846b2b02fedb01bcd3f0",
+      "id": 1049715913,
+      "attachable_sgid": "BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiK2dpZDovL2JjMy9QZXJzb24vMTA0OTcxNTkxMz9leHBpcmVzX2luBjsAVEkiCHB1cgY7AFRJIg9hdHRhY2hhYmxlBjsAVA==--e627c45e6b34e08862da23906862412620e4d5d9",
       "name": "Victor Cooper",
       "email_address": "victor@honchodesign.com",
       "personable_type": "User",
       "title": "Chief Strategist",
       "bio": "Don’t let your dreams be dreams",
       "location": "Chicago, IL",
-      "created_at": "2025-10-10T11:41:42.284Z",
-      "updated_at": "2025-10-10T11:41:43.054Z",
+      "created_at": "2026-01-31T08:29:28.365Z",
+      "updated_at": "2026-01-31T08:29:32.599Z",
       "admin": true,
       "owner": true,
       "client": false,
       "employee": true,
       "time_zone": "America/Chicago",
-      "avatar_url": "http://bc3-cdn.localhost:3001/195539477/people/BAhpBPNkkT4=--5049939da9ea89df60ade5a1c42d324c1651c66c/avatar?v=1",
+      "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBMlkkT4=--5fe7b70fbee7a7f0e2e1e19df7579e5d880c753d/avatar?v=1",
       "company": {
-        "id": 1033447819,
+        "id": 1033447817,
         "name": "Honcho Design"
       },
       "can_ping": true,
@@ -153,7 +153,7 @@ Get timesheet for a project
       "can_access_timesheet": true,
       "can_access_hill_charts": true
     },
-    "date": "2025-10-09",
+    "date": "2026-01-30",
     "description": "Team Meeting Prep",
     "hours": "2.0"
   }
@@ -176,48 +176,48 @@ Get timesheet for a recording
 ```json
 [
   {
-    "id": 1069480964,
+    "id": 1069479915,
     "status": "active",
     "visible_to_clients": false,
-    "created_at": "2025-10-10T11:47:23.018Z",
-    "updated_at": "2025-10-10T11:47:23.018Z",
+    "created_at": "2026-01-31T08:37:37.811Z",
+    "updated_at": "2026-01-31T08:37:37.811Z",
     "title": "Timesheet entry",
     "inherits_status": true,
     "type": "Timesheet::Entry",
-    "url": "https://3.basecampapi.com/195539477/projects/2085958503/timesheet/entries/1069480964.json",
-    "app_url": "https://3.basecamp.com/195539477/projects/2085958503/timesheet/entries/1069480964",
-    "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiLmdpZDovL2JjMy9SZWNvcmRpbmcvMTA2OTQ4MDk2ND9leHBpcmVzX2luBjsAVEkiCHB1cgY7AFRJIg1yZWFkYWJsZQY7AFQ=--09a2201048c3c68eba357073056b1c3676de382b.json",
+    "url": "https://3.basecampapi.com/195539477/projects/2085958504/timesheet/entries/1069479915.json",
+    "app_url": "https://3.basecamp.com/195539477/projects/2085958504/timesheet/entries/1069479915",
+    "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiLmdpZDovL2JjMy9SZWNvcmRpbmcvMTA2OTQ3OTkxNT9leHBpcmVzX2luBjsAVEkiCHB1cgY7AFRJIg1yZWFkYWJsZQY7AFQ=--eedd8d56e2e90002cdb2a96028846f61e1ae34f9.json",
     "parent": {
-      "id": 1069480455,
+      "id": 1069479406,
       "title": "We won Leto!",
       "type": "Message",
-      "url": "https://3.basecampapi.com/195539477/buckets/2085958503/messages/1069480455.json",
-      "app_url": "https://3.basecamp.com/195539477/buckets/2085958503/messages/1069480455"
+      "url": "https://3.basecampapi.com/195539477/buckets/2085958504/messages/1069479406.json",
+      "app_url": "https://3.basecamp.com/195539477/buckets/2085958504/messages/1069479406"
     },
     "bucket": {
-      "id": 2085958503,
+      "id": 2085958504,
       "name": "The Leto Laptop",
       "type": "Project"
     },
     "creator": {
-      "id": 1049715955,
-      "attachable_sgid": "BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiK2dpZDovL2JjMy9QZXJzb24vMTA0OTcxNTk1NT9leHBpcmVzX2luBjsAVEkiCHB1cgY7AFRJIg9hdHRhY2hhYmxlBjsAVA==--6a8affd82c540e7c1f7e846b2b02fedb01bcd3f0",
+      "id": 1049715913,
+      "attachable_sgid": "BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiK2dpZDovL2JjMy9QZXJzb24vMTA0OTcxNTkxMz9leHBpcmVzX2luBjsAVEkiCHB1cgY7AFRJIg9hdHRhY2hhYmxlBjsAVA==--e627c45e6b34e08862da23906862412620e4d5d9",
       "name": "Victor Cooper",
       "email_address": "victor@honchodesign.com",
       "personable_type": "User",
       "title": "Chief Strategist",
       "bio": "Don’t let your dreams be dreams",
       "location": "Chicago, IL",
-      "created_at": "2025-10-10T11:41:42.284Z",
-      "updated_at": "2025-10-10T11:41:43.054Z",
+      "created_at": "2026-01-31T08:29:28.365Z",
+      "updated_at": "2026-01-31T08:29:32.599Z",
       "admin": true,
       "owner": true,
       "client": false,
       "employee": true,
       "time_zone": "America/Chicago",
-      "avatar_url": "http://bc3-cdn.localhost:3001/195539477/people/BAhpBPNkkT4=--5049939da9ea89df60ade5a1c42d324c1651c66c/avatar?v=1",
+      "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBMlkkT4=--5fe7b70fbee7a7f0e2e1e19df7579e5d880c753d/avatar?v=1",
       "company": {
-        "id": 1033447819,
+        "id": 1033447817,
         "name": "Honcho Design"
       },
       "can_ping": true,
@@ -226,7 +226,7 @@ Get timesheet for a recording
       "can_access_timesheet": true,
       "can_access_hill_charts": true
     },
-    "date": "2025-10-09",
+    "date": "2026-01-30",
     "description": "Team Meeting Prep",
     "hours": "2.0"
   }

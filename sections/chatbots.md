@@ -128,14 +128,14 @@ Get chatbots
 ```json
 [
   {
-    "id": 1049715958,
-    "created_at": "2022-11-22T08:25:04.466Z",
-    "updated_at": "2022-11-22T08:25:04.466Z",
+    "id": 1049715954,
+    "created_at": "2026-01-31T08:36:22.772Z",
+    "updated_at": "2026-01-31T08:36:22.772Z",
     "service_name": "Capistrano",
     "command_url": null,
-    "url": "https://3.basecampapi.com/195539477/buckets/2085958497/chats/1069478933/integrations/1049715958.json",
-    "app_url": "https://3.basecamp.com/195539477/buckets/2085958497/chats/1069478933/integrations/1049715958",
-    "lines_url": "https://3.basecampapi.com/195539477/integrations/B5JQYvHsNWCoDvYGZfH1xNR9/buckets/2085958497/chats/1069478933/lines"
+    "url": "https://3.basecampapi.com/195539477/buckets/2085958502/chats/1069478985/integrations/1049715954.json",
+    "app_url": "https://3.basecamp.com/195539477/buckets/2085958502/chats/1069478985/integrations/1049715954",
+    "lines_url": "https://3.basecampapi.com/195539477/integrations/HF51iGR8Mz8xzb7MmCz7PryX/buckets/2085958502/chats/1069478985/lines"
   }
 ]
 ```

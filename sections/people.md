@@ -20,28 +20,31 @@ Get all people
 ```json
 [
   {
-    "id": 1049715914,
-    "attachable_sgid": "BAh7CEkiCGdpZAY6BkVUSSIrZ2lkOi8vYmMzL1BlcnNvbi8xMDQ5NzE1OTE0P2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg9hdHRhY2hhYmxlBjsAVEkiD2V4cGlyZXNfYXQGOwBUMA==--ff006accb6e013cca785190fa38f42c091d24f1e",
+    "id": 1049715913,
+    "attachable_sgid": "BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiK2dpZDovL2JjMy9QZXJzb24vMTA0OTcxNTkxMz9leHBpcmVzX2luBjsAVEkiCHB1cgY7AFRJIg9hdHRhY2hhYmxlBjsAVA==--e627c45e6b34e08862da23906862412620e4d5d9",
     "name": "Victor Cooper",
     "email_address": "victor@honchodesign.com",
     "personable_type": "User",
     "title": "Chief Strategist",
     "bio": "Don’t let your dreams be dreams",
     "location": "Chicago, IL",
-    "created_at": "2022-11-22T08:23:21.732Z",
-    "updated_at": "2022-11-22T08:23:21.904Z",
+    "created_at": "2026-01-31T08:29:28.365Z",
+    "updated_at": "2026-01-31T08:29:32.599Z",
     "admin": true,
     "owner": true,
     "client": false,
     "employee": true,
     "time_zone": "America/Chicago",
-    "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBMpkkT4=--5520caeec1845b5090bbfc993ffe8eca8d138e14/avatar?v=1",
+    "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBMlkkT4=--5fe7b70fbee7a7f0e2e1e19df7579e5d880c753d/avatar?v=1",
     "company": {
       "id": 1033447817,
       "name": "Honcho Design"
     },
+    "can_ping": true,
     "can_manage_projects": true,
-    "can_manage_people": true
+    "can_manage_people": true,
+    "can_access_timesheet": true,
+    "can_access_hill_charts": true
   }
 ]
 ```
@@ -82,10 +85,10 @@ Update who can access a project
 ```json
 {
   "grant": [
-    1049715922
+    1049715915
   ],
   "revoke": [
-    1049715921
+    1049715944
   ],
   "create": [
     {
@@ -112,74 +115,83 @@ curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/j
 {
   "granted": [
     {
-      "id": 1049715922,
-      "attachable_sgid": "BAh7CEkiCGdpZAY6BkVUSSIrZ2lkOi8vYmMzL1BlcnNvbi8xMDQ5NzE1OTIyP2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg9hdHRhY2hhYmxlBjsAVEkiD2V4cGlyZXNfYXQGOwBUMA==--90ea53b2b0ce32a96bcc6ef712c1fac0dbb0a0cd",
+      "id": 1049715915,
+      "attachable_sgid": "BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiK2dpZDovL2JjMy9QZXJzb24vMTA0OTcxNTkxNT9leHBpcmVzX2luBjsAVEkiCHB1cgY7AFRJIg9hdHRhY2hhYmxlBjsAVA==--56bb1f99675fd8fe08f93a706a5d2ddaa8412625",
       "name": "Amy Rivera",
       "email_address": "amy@honchodesign.com",
       "personable_type": "User",
       "title": "Central Web Coordinator",
       "bio": "I never said most of the things I said",
       "location": null,
-      "created_at": "2022-11-22T08:23:22.005Z",
-      "updated_at": "2022-11-22T08:23:22.005Z",
+      "created_at": "2026-01-31T08:29:32.987Z",
+      "updated_at": "2026-01-31T08:29:32.987Z",
       "admin": false,
       "owner": false,
       "client": false,
       "employee": false,
-      "time_zone": "Etc/UTC",
-      "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBNJkkT4=--6ef93d58440c2ed1fec4457e3eb5f09572e866a4/avatar?v=1",
+      "time_zone": "America/Chicago",
+      "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBMtkkT4=--9927c47a4cbee30a7f9aea667882496aba799149/avatar?v=1",
+      "can_ping": true,
       "can_manage_projects": true,
-      "can_manage_people": true
+      "can_manage_people": true,
+      "can_access_timesheet": true,
+      "can_access_hill_charts": true
     },
     {
-      "id": 1049715969,
-      "attachable_sgid": "BAh7CEkiCGdpZAY6BkVUSSIrZ2lkOi8vYmMzL1BlcnNvbi8xMDQ5NzE1OTY5P2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg9hdHRhY2hhYmxlBjsAVEkiD2V4cGlyZXNfYXQGOwBUMA==--f94940da9b0adc1ec997382934419905904c8692",
+      "id": 1049715955,
+      "attachable_sgid": "BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiK2dpZDovL2JjMy9QZXJzb24vMTA0OTcxNTk1NT9leHBpcmVzX2luBjsAVEkiCHB1cgY7AFRJIg9hdHRhY2hhYmxlBjsAVA==--6a8affd82c540e7c1f7e846b2b02fedb01bcd3f0",
       "name": "Victor Copper",
       "email_address": "victor@hanchodesign.com",
       "personable_type": "User",
       "title": "Prankster",
       "bio": null,
       "location": null,
-      "created_at": "2022-11-22T17:56:23.633Z",
-      "updated_at": "2022-11-22T17:56:23.633Z",
+      "created_at": "2026-02-01T02:53:35.423Z",
+      "updated_at": "2026-02-01T02:53:35.423Z",
       "admin": false,
       "owner": false,
       "client": false,
       "employee": false,
       "time_zone": "America/Chicago",
-      "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBAFlkT4=--b48efd42c6425ae51e7205e157d902971934e5b8/avatar?v=1",
+      "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBPNkkT4=--5049939da9ea89df60ade5a1c42d324c1651c66c/avatar?v=1",
       "company": {
         "id": 1033447819,
         "name": "Hancho Design"
       },
+      "can_ping": true,
       "can_manage_projects": true,
-      "can_manage_people": true
+      "can_manage_people": true,
+      "can_access_timesheet": true,
+      "can_access_hill_charts": true
     }
   ],
   "revoked": [
     {
-      "id": 1049715921,
-      "attachable_sgid": "BAh7CEkiCGdpZAY6BkVUSSIrZ2lkOi8vYmMzL1BlcnNvbi8xMDQ5NzE1OTIxP2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg9hdHRhY2hhYmxlBjsAVEkiD2V4cGlyZXNfYXQGOwBUMA==--61b488a9fa97d2e628aee86cf51a4ba0171888c2",
+      "id": 1049715944,
+      "attachable_sgid": "BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiK2dpZDovL2JjMy9QZXJzb24vMTA0OTcxNTk0ND9leHBpcmVzX2luBjsAVEkiCHB1cgY7AFRJIg9hdHRhY2hhYmxlBjsAVA==--5c49e7f857f7a2aea319ae399f8b00eb63123ef9",
       "name": "Steve Marsh",
       "email_address": "steve@honchodesign.com",
       "personable_type": "User",
       "title": "Legacy Directives Strategist",
       "bio": "You can do it!",
       "location": null,
-      "created_at": "2022-11-22T08:23:21.991Z",
-      "updated_at": "2022-11-22T08:23:21.991Z",
+      "created_at": "2026-01-31T08:29:46.012Z",
+      "updated_at": "2026-01-31T08:29:46.012Z",
       "admin": false,
       "owner": false,
       "client": false,
       "employee": true,
-      "time_zone": "Etc/UTC",
-      "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBNFkkT4=--c57bba9b44447be39d4a79a5e7f2a592cae9e82c/avatar?v=1",
+      "time_zone": "America/Chicago",
+      "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBOhkkT4=--b169e35b345bcc26eca6964b7ef7de2c16b6f238/avatar?v=1",
       "company": {
         "id": 1033447817,
         "name": "Honcho Design"
       },
+      "can_ping": true,
       "can_manage_projects": true,
-      "can_manage_people": true
+      "can_manage_people": true,
+      "can_access_timesheet": true,
+      "can_access_hill_charts": true
     }
   ]
 }
@@ -211,24 +223,27 @@ Get person
 <!-- START GET /people/2.json -->
 ```json
 {
-  "id": 1049715927,
-  "attachable_sgid": "BAh7CEkiCGdpZAY6BkVUSSIrZ2lkOi8vYmMzL1BlcnNvbi8xMDQ5NzE1OTI3P2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg9hdHRhY2hhYmxlBjsAVEkiD2V4cGlyZXNfYXQGOwBUMA==--91fc84e70b851466d15f747bb3e5238b4005b35b",
-  "name": "Charles Koga",
-  "email_address": "charles@honchodesign.com",
+  "id": 1049715928,
+  "attachable_sgid": "BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiK2dpZDovL2JjMy9QZXJzb24vMTA0OTcxNTkyOD9leHBpcmVzX2luBjsAVEkiCHB1cgY7AFRJIg9hdHRhY2hhYmxlBjsAVA==--35b1370e6239e9a565c0e8f66bed307c7cc488b6",
+  "name": "Mark Campbell",
+  "email_address": "mark@honchodesign.com",
   "personable_type": "User",
-  "title": "Principal Solutions Technician",
+  "title": "Principal Markets Supervisor",
   "bio": null,
   "location": null,
-  "created_at": "2022-11-22T08:23:22.066Z",
-  "updated_at": "2022-11-22T08:23:22.066Z",
+  "created_at": "2026-01-31T08:29:39.861Z",
+  "updated_at": "2026-01-31T08:29:39.861Z",
   "admin": false,
   "owner": false,
   "client": false,
   "employee": false,
-  "time_zone": "Etc/UTC",
-  "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBNdkkT4=--6b5d8dd66434670c75d33036ca0fb8e13fa7be94/avatar?v=1",
+  "time_zone": "America/Chicago",
+  "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBNhkkT4=--cef810620a2f44a2144ab788d90679e478ea2344/avatar?v=1",
+  "can_ping": true,
   "can_manage_projects": true,
-  "can_manage_people": true
+  "can_manage_people": true,
+  "can_access_timesheet": true,
+  "can_access_hill_charts": true
 }
 ```
 <!-- END GET /people/2.json -->

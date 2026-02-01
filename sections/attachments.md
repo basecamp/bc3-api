@@ -20,12 +20,27 @@ Create an attachment
 This endpoint will return `201 Created` with the attachment's `attachable_sgid` in the JSON representation.
 
 ###### Example JSON Response
-
+<!-- START POST /attachments.json -->
 ```json
 {
-  "attachable_sgid": "BAh2CEkiCGdpZAY6BkVUSSIsZ2lkOi7vYmMzL0F0dGFjaG1lbnQvNzM4NDcyNj9leHBpcmVzX2luBjsAVEkiDHB1cnBvc2UGOwBUSSIPYXR0YWNoYWJsZQY7AFRJIg9leHBpcmVzX2F0BjsAVDA=--13982201abe18044c897e32979c7dccfe8add9c1"
+  "id": 1046628522,
+  "attachable_sgid": "BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiL2dpZDovL2JjMy9BdHRhY2htZW50LzEwNDY2Mjg1MjI_ZXhwaXJlc19pbgY7AFRJIghwdXIGOwBUSSIPYXR0YWNoYWJsZQY7AFQ=--67bd596fd0fe6862dcaa2a30ac40d587e4130988",
+  "sgid": "BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiL2dpZDovL2JjMy9BdHRhY2htZW50LzEwNDY2Mjg1MjI_ZXhwaXJlc19pbgY7AFRJIghwdXIGOwBUSSIPYXR0YWNoYWJsZQY7AFQ=--67bd596fd0fe6862dcaa2a30ac40d587e4130988",
+  "status_url": "https://3.basecampapi.com/195539477/attachments/BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiL2dpZDovL2JjMy9BdHRhY2htZW50LzEwNDY2Mjg1MjI_ZXhwaXJlc19pbgY7AFRJIghwdXIGOwBUSSIPYXR0YWNoYWJsZQY7AFQ=--67bd596fd0fe6862dcaa2a30ac40d587e4130988.json",
+  "caption": null,
+  "byte_size": 1281,
+  "content_type": "image/png",
+  "width": 164,
+  "height": 39,
+  "key": "63129eb69b03a8ec0cd941eb5cd44a2da646397a",
+  "filename": "company-logo.png",
+  "download_url": "https://3.basecamp-static.com/195539477/blobs/63129eb69b03a8ec0cd941eb5cd44a2da646397a/download/company-logo.png",
+  "previewable": true,
+  "preview_url": "https://3.basecamp-static.com/195539477/blobs/63129eb69b03a8ec0cd941eb5cd44a2da646397a/previews/full",
+  "thumbnail_url": "https://3.basecamp-static.com/195539477/blobs/63129eb69b03a8ec0cd941eb5cd44a2da646397a/previews/card"
 }
 ```
+<!-- END POST /attachments.json -->
 
 ###### Copy as cURL
 
