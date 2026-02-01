@@ -19,58 +19,61 @@ Get documents
 ```json
 [
   {
-    "id": 1069479093,
+    "id": 1069479147,
     "status": "active",
     "visible_to_clients": false,
-    "created_at": "2022-10-11T09:08:24.930Z",
-    "updated_at": "2022-11-22T08:24:37.813Z",
+    "created_at": "2025-12-23T10:43:00.000Z",
+    "updated_at": "2026-01-31T08:34:25.618Z",
     "title": "New Hire Info, Benefits Summary, and Forms",
     "inherits_status": true,
     "type": "Document",
-    "url": "https://3.basecampapi.com/195539477/buckets/2085958497/documents/1069479093.json",
-    "app_url": "https://3.basecamp.com/195539477/buckets/2085958497/documents/1069479093",
-    "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7CEkiCGdpZAY6BkVUSSIuZ2lkOi8vYmMzL1JlY29yZGluZy8xMDY5NDc5MDkzP2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg1yZWFkYWJsZQY7AFRJIg9leHBpcmVzX2F0BjsAVDA=--d5a19e835d576ed355c002664a8ea7a1567c362f.json",
-    "subscription_url": "https://3.basecampapi.com/195539477/buckets/2085958497/recordings/1069479093/subscription.json",
+    "url": "https://3.basecampapi.com/195539477/buckets/2085958502/documents/1069479147.json",
+    "app_url": "https://3.basecamp.com/195539477/buckets/2085958502/documents/1069479147",
+    "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiLmdpZDovL2JjMy9SZWNvcmRpbmcvMTA2OTQ3OTE0Nz9leHBpcmVzX2luBjsAVEkiCHB1cgY7AFRJIg1yZWFkYWJsZQY7AFQ=--7d1a4e571d9352315554d871bda4d46313701285.json",
+    "subscription_url": "https://3.basecampapi.com/195539477/buckets/2085958502/recordings/1069479147/subscription.json",
     "comments_count": 1,
-    "comments_url": "https://3.basecampapi.com/195539477/buckets/2085958497/recordings/1069479093/comments.json",
+    "comments_url": "https://3.basecampapi.com/195539477/buckets/2085958502/recordings/1069479147/comments.json",
     "position": 1,
     "parent": {
-      "id": 1069479098,
+      "id": 1069479146,
       "title": "HR Stuff",
       "type": "Vault",
-      "url": "https://3.basecampapi.com/195539477/buckets/2085958497/vaults/1069479098.json",
-      "app_url": "https://3.basecamp.com/195539477/buckets/2085958497/vaults/1069479098"
+      "url": "https://3.basecampapi.com/195539477/buckets/2085958502/vaults/1069479146.json",
+      "app_url": "https://3.basecamp.com/195539477/buckets/2085958502/vaults/1069479146"
     },
     "bucket": {
-      "id": 2085958497,
+      "id": 2085958502,
       "name": "Honcho Design Newsroom",
       "type": "Project"
     },
     "creator": {
-      "id": 1049715916,
-      "attachable_sgid": "BAh7CEkiCGdpZAY6BkVUSSIrZ2lkOi8vYmMzL1BlcnNvbi8xMDQ5NzE1OTE2P2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg9hdHRhY2hhYmxlBjsAVEkiD2V4cGlyZXNfYXQGOwBUMA==--c94599eef0a4237fbaa56ff2648f57f1dae89ffd",
+      "id": 1049715939,
+      "attachable_sgid": "BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiK2dpZDovL2JjMy9QZXJzb24vMTA0OTcxNTkzOT9leHBpcmVzX2luBjsAVEkiCHB1cgY7AFRJIg9hdHRhY2hhYmxlBjsAVA==--91bd4d39e2f4af1d814a0b480e809d15a51df239",
       "name": "Cheryl Walters",
       "email_address": "cheryl@honchodesign.com",
       "personable_type": "User",
       "title": "Corporate Integration Director",
       "bio": "A joke is a very serious thing",
       "location": null,
-      "created_at": "2022-11-22T08:23:21.926Z",
-      "updated_at": "2022-11-22T08:23:21.926Z",
+      "created_at": "2026-01-31T08:29:43.313Z",
+      "updated_at": "2026-01-31T08:29:43.313Z",
       "admin": false,
       "owner": false,
       "client": false,
       "employee": true,
-      "time_zone": "Etc/UTC",
-      "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBMxkkT4=--0ea74d7e5d39ad2d120da79250b179b7e0b00c44/avatar?v=1",
+      "time_zone": "America/Chicago",
+      "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBONkkT4=--b57b5a44335d4c3ba1a2585abd6e5c7e4c85fdd6/avatar?v=1",
       "company": {
         "id": 1033447817,
         "name": "Honcho Design"
       },
+      "can_ping": true,
       "can_manage_projects": true,
-      "can_manage_people": true
+      "can_manage_people": true,
+      "can_access_timesheet": true,
+      "can_access_hill_charts": true
     },
-    "content": "<strong>Health Insurance</strong>\n  We have just one health insurance policy. The company pays most of the premium, and you cover the rest. Domestic partnerships are covered, as well as marriages. Open enrollment starts in January.<br><br>\n\n  <strong>401K Retirement Plan</strong>\n  We match dollar-for-dollar up to 10% of your salary that you contribute to the plan. You are eligible to enroll in the 401K plan after your first paycheck.<br><br>\n\n  <strong>Flexible Spending Account (FSA)</strong>\n  The FSA is an account where you can set aside pre-tax money for out-of-pocket medical expenses, such as prescriptions, OTC medicine, vision care, etc.  You have to decide up front how much money you want to put in the account, and the max is $2500/year.<br><br>\n\n  <strong>Continuing Education Allowance</strong>\n  We provide you with $500 a year to take classes that help you professionally. Really, anything that helps you with your job.<br><br>\n\n  <strong>Matching Charitable Gifts</strong>\n  When you donate money to a qualified charity, we will make a matching gift to that charity on your behalf. The maximum for the year is $500 per employee.<br><br>\n\n  <strong>Paid Time Off</strong>\n  Paid time off doesn't really exist here - if you need a day (or week!) off, you just need to clear it with your team or others who would be affected by your absence. You should try to take at least 3 weeks off a year."
+    "content": "<strong>Health Insurance</strong>\nWe have just one health insurance policy. The company pays most of the premium, and you cover the rest. Domestic partnerships are covered, as well as marriages. Open enrollment starts in January.<br><br>\n\n<strong>401K Retirement Plan</strong>\nWe match dollar-for-dollar up to 10% of your salary that you contribute to the plan. You are eligible to enroll in the 401K plan after your first paycheck.<br><br>\n\n<strong>Flexible Spending Account (FSA)</strong>\nThe FSA is an account where you can set aside pre-tax money for out-of-pocket medical expenses, such as prescriptions, OTC medicine, vision care, etc.  You have to decide up front how much money you want to put in the account, and the max is $2500/year.<br><br>\n\n<strong>Continuing Education Allowance</strong>\nWe provide you with $500 a year to take classes that help you professionally. Really, anything that helps you with your job.<br><br>\n\n<strong>Matching Charitable Gifts</strong>\nWhen you donate money to a qualified charity, we will make a matching gift to that charity on your behalf. The maximum for the year is $500 per employee.<br><br>\n\n<strong>Paid Time Off</strong>\nPaid time off doesn't really exist here - if you need a day (or week!) off, you just need to clear it with your team or others who would be affected by your absence. You should try to take at least 3 weeks off a year."
   }
 ]
 ```
@@ -90,54 +93,57 @@ Get a document
 <!-- START GET /buckets/1/documents/2.json -->
 ```json
 {
-  "id": 1069479844,
+  "id": 1069479860,
   "status": "active",
   "visible_to_clients": false,
-  "created_at": "2022-11-22T08:24:27.213Z",
-  "updated_at": "2022-11-22T08:24:27.213Z",
-  "title": "Meetups - schedule/protocol",
+  "created_at": "2026-01-31T22:32:00.000Z",
+  "updated_at": "2026-01-31T22:32:00.000Z",
+  "title": "Project Tool Tips",
   "inherits_status": true,
   "type": "Document",
-  "url": "https://3.basecampapi.com/195539477/buckets/2085958503/documents/1069479844.json",
-  "app_url": "https://3.basecamp.com/195539477/buckets/2085958503/documents/1069479844",
-  "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7CEkiCGdpZAY6BkVUSSIuZ2lkOi8vYmMzL1JlY29yZGluZy8xMDY5NDc5ODQ0P2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg1yZWFkYWJsZQY7AFRJIg9leHBpcmVzX2F0BjsAVDA=--bbb92805fb8e8bebab7b6b1db2265355db1f7e9e.json",
-  "subscription_url": "https://3.basecampapi.com/195539477/buckets/2085958503/recordings/1069479844/subscription.json",
+  "url": "https://3.basecampapi.com/195539477/buckets/2085958508/documents/1069479860.json",
+  "app_url": "https://3.basecamp.com/195539477/buckets/2085958508/documents/1069479860",
+  "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiLmdpZDovL2JjMy9SZWNvcmRpbmcvMTA2OTQ3OTg2MD9leHBpcmVzX2luBjsAVEkiCHB1cgY7AFRJIg1yZWFkYWJsZQY7AFQ=--6e3c21a333aa7ca5da3b9a9372022b4b19083f73.json",
+  "subscription_url": "https://3.basecampapi.com/195539477/buckets/2085958508/recordings/1069479860/subscription.json",
   "comments_count": 0,
-  "comments_url": "https://3.basecampapi.com/195539477/buckets/2085958503/recordings/1069479844/comments.json",
-  "position": 2,
+  "comments_url": "https://3.basecampapi.com/195539477/buckets/2085958508/recordings/1069479860/comments.json",
+  "position": 1,
   "parent": {
-    "id": 1069479695,
+    "id": 1069479845,
     "title": "Docs & Files",
     "type": "Vault",
-    "url": "https://3.basecampapi.com/195539477/buckets/2085958503/vaults/1069479695.json",
-    "app_url": "https://3.basecamp.com/195539477/buckets/2085958503/vaults/1069479695"
+    "url": "https://3.basecampapi.com/195539477/buckets/2085958508/vaults/1069479845.json",
+    "app_url": "https://3.basecamp.com/195539477/buckets/2085958508/vaults/1069479845"
   },
   "bucket": {
-    "id": 2085958503,
-    "name": "Customer Support",
+    "id": 2085958508,
+    "name": "Getting Started",
     "type": "Project"
   },
   "creator": {
-    "id": 1049715948,
-    "attachable_sgid": "BAh7CEkiCGdpZAY6BkVUSSIrZ2lkOi8vYmMzL1BlcnNvbi8xMDQ5NzE1OTQ4P2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg9hdHRhY2hhYmxlBjsAVEkiD2V4cGlyZXNfYXQGOwBUMA==--6c901c238dc342abb5415ee4d64309e44526e213",
-    "name": "Melissa Vasquez",
-    "email_address": "melissavasquez@example.com",
+    "id": 1049715953,
+    "attachable_sgid": "BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiK2dpZDovL2JjMy9QZXJzb24vMTA0OTcxNTk1Mz9leHBpcmVzX2luBjsAVEkiCHB1cgY7AFRJIg9hdHRhY2hhYmxlBjsAVA==--d8a46d8065dbf49cd0c5a9c75aabdcf58c1ef9f6",
+    "name": "Basecamp",
+    "email_address": null,
     "personable_type": "DummyUser",
     "title": null,
     "bio": null,
     "location": null,
-    "created_at": "2022-11-22T08:24:24.573Z",
-    "updated_at": "2022-11-22T08:24:24.573Z",
+    "created_at": "2026-01-31T08:34:03.075Z",
+    "updated_at": "2026-01-31T08:34:03.075Z",
     "admin": false,
     "owner": false,
     "client": false,
     "employee": false,
-    "time_zone": "Etc/UTC",
-    "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBOxkkT4=--e059cc49b1e3717e79b4ea0f745254637f63b45d/avatar?v=1",
+    "time_zone": "America/Chicago",
+    "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBPFkkT4=--684a9fd741b7edab076c407cfcc729da47aadbbf/avatar?v=1",
+    "can_ping": true,
     "can_manage_projects": false,
-    "can_manage_people": false
+    "can_manage_people": false,
+    "can_access_timesheet": false,
+    "can_access_hill_charts": false
   },
-  "content": "<h1>Support Team Scheduling - The Low Down</h1><br>\n        Everyone generally works one, four hour shift per day. There are a few different shifts in a day, and they all work together in a way that allows for shifts to be balanced and offer enough coverage.<br><br>\n        <h1>Meetup Scheduling Example</h1><br>\n        <strong>Morning shifts:</strong><br>\n        7am - 11am: (2 people)<br>\n        8am -12pm: (4 people)<br><br>\n        <strong>Midday shift:</strong><br>\n        10am - 2pm (3 people)<br><br>\n        <strong>Afternoon shifts:</strong><br>\n        12 pm - 4pm: (3 people)<br>\n        1pm - 5pm: (2 people)<br><br>\n        <h1>Preparation for the Meetup</h1><br>\n        <strong>Friday before meetup:</strong><br>\n        Ask Matt to set up announcement on the Support page letting users know we are answering emails M-F 7am - 5pm CST due to a company meetup.<br><br>\n        <strong>Monday - Friday of the meetup:</strong><br>\n        Shifts will look like the example above, with an afternoon off to have a support outing.<br><br>\n        <strong>Sunday after:</strong><br>\n        Coverage by US support team member (take following Friday off)<br><br>\n        <strong>Monday after:</strong><br>\n        Those travelling to the other side of the world have the day off<br>\n        recruit 2-3 people from the company to help with cases<br><br>\n        <h1>FAQs</h1><br>\n        <strong>When will we know the schedule?</strong><br>\n        Exact schedules for meetups will be shared at least 2-3 weeks before the meetup<br><br>\n        <strong>Where will the schedule be posted?</strong><br>\n        In the schedule section of the Support Team project.<br><br>\n        <strong>What if I'm unhappy with my shifts?</strong><br>\n        You can swap out shifts if needed - swapping will be done between people who want to swap. Let Kurt know your changes so he can update that in the schedule.<br><br>\n        <strong>What are the expectations for the meetup as a member of Support?</strong>\n        The overall expectation is to work when you are scheduled - for a few focused hours per day. After those hours are done, you are free to mingle with the Basecamp crew! Everyone is on call Monday to help with cases as it's usually the busiest day of the week with talks, events and a backlog of cases.<br><br>\n        The most important expectation is to have fun, get to know more of your non support teammates if you are so inclined and have time to relax off cases.<br><br>\n        <strong>When you are working:</strong><br>\n        When there’s a talk going on by Liza/Matthew or something else, feel free to stop working until the talk is over and then swarm the cases when it is through.<br><br>\n        <strong>When you are not scheduled for cases (excluding Mondays):</strong><br>\n        On your time not scheduled for cases, feel free to mingle and get to know your company teammates! Go get coffee with a teammate, play games, talk one on one at the office. If you need clarification regarding this, ask <bc-attachment sgid=\"BAh7CEkiCGdpZAY6BkVUSSIrZ2lkOi8vYmMzL1BlcnNvbi8xMDQ5NzE1OTQ4P2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg9hdHRhY2hhYmxlBjsAVEkiD2V4cGlyZXNfYXQGOwBUMA==--6c901c238dc342abb5415ee4d64309e44526e213\" content-type=\"application/vnd.basecamp.mention\"><figure>\n  <img data-avatar-for-person-id=\"1049715948\" alt=\"Melissa Vasquez\" title=\"Melissa Vasquez\" class=\"avatar\" src=\"https://3.basecamp-static.com/195539477/people/BAhpBOxkkT4=--e059cc49b1e3717e79b4ea0f745254637f63b45d/avatar?v=1\" width=\"20\" height=\"20\">\n  <figcaption>\n    Melissa\n  </figcaption>\n</figure></bc-attachment>!<br><br>\n        <strong>Swarming and being on call on Mondays:</strong>\n        On Mondays, more people might be needed to clear the case queue throughout the day. In that case, everyone is considered on call on Mondays and someone will ask everyone in Campfire to come onto cases to swarm them. This will typically only happen after talks done by Jason and David. Let's work together to get those cases clear!<br><br>\n        <strong>Phones</strong> - They will be OFF<br>\n        <strong>Twitter</strong> - Will be scheduled<br>\n        <strong>Meals</strong> - If you are scheduled to be on cases during a meal, feel free to take a break to eat and swarm the cases after you are done eating. Staggering meals might also work, but it's up to you!<br>\n        <strong>Talks</strong> - If you are scheduled to be on cases during a talk, feel free to listen and swarm the cases after the talk is over.<br>\n        <strong>Extra Events</strong> - There are events during the day and after work - feel free to join them if you are not scheduled for cases - see if someone will switch shifts with you if you are scheduled and you want to go to an event. They will usually be scheduled into the support schedule already."
+  "content": "This overview of the available project tools will help you know when and how to use them.           <br><br><strong>To-dos</strong><br>           To-dos keep everyone on a project in the loop about the work that needs to be done and who’s responsible. Let’s dig into to-dos.           <ul>             <li>\n<a href=\"https://3.basecamp-help.com/article/48-to-dos#assigning\" target=\"_blank\" rel=\"noreferrer\">Assignments</a> let you divvy up the work and manage accountability.</li>             <li>\n<a href=\"https://3.basecamp-help.com/article/48-to-dos#group-to-dos\" target=\"_blank\" rel=\"noreferrer\">Groups</a> are a great way to organize and color-code related tasks.</li>             <li>\n<a href=\"https://3.basecamp-help.com/article/48-to-dos#bulk-assign-archive-edit-due-dates\" target=\"_blank\" rel=\"noreferrer\">Bulk actions</a> let you make multiple changes at once.</li>             <li>\n<a href=\"https://3.basecamp-help.com/article/66-templates#creating-a-new-to-do-list-template\" target=\"_blank\" rel=\"noreferrer\">To-do templates</a> makes it possible to use the same list without recreating it every time.</li>           </ul>           <a href=\"https://3.basecamp-help.com/article/48-to-dos\" target=\"_blank\" rel=\"noreferrer\">Learn more about To-dos</a>           <br><br><strong>Docs &amp; Files</strong><br>           Docs and Files are great for how-tos, best practices, shared files, photos, brand assets, and much more. Here are a few helpful details.           <ul>             <li>Files can be uploaded, linked from the cloud, or you can drag and drop them into Basecamp.</li>             <li>Documents can be edited by multiple people, but not at once.</li>             <li>Every version of a document is stored so you can see the history of changes. Click the three dot menu ••• on the doc, then View changes.</li>             <li>Folders let you group stuff together and can be color-coded to organize things visually.</li>           </ul>           <a href=\"https://3.basecamp-help.com/article/51-docs-files\" target=\"_blank\" rel=\"noreferrer\">Learn more about Docs &amp; Files</a>           <br><br><strong>Message Board</strong><br>           When you want to make an announcement, start a discussion, or share progress, Messages are the answer. At Basecamp, messages have           replaced email internally. Everyone gets notified and can comment, boost, or ask questions in one place without a long email thread.           <ul>             <li>\n<a href=\"https://3.basecamp-help.com/article/46-message-board#pinning\" target=\"_blank\" rel=\"noreferrer\">Pin a message</a> to keep the important stuff at the top, whether a welcome message or the project overview.</li>             <li>\n<a href=\"https://3.basecamp-help.com/article/46-message-board#message-categories\" target=\"_blank\" rel=\"noreferrer\">Use categories</a> to organize your posts and gives the people context about the information they’re going to read. You can customize those categories for your organization, too. You’ll find the option in Adminland.</li>             <li>\n<a href=\"https://3.basecamp-help.com/article/46-message-board#schedule\" target=\"_blank\" rel=\"noreferrer\">Schedule a post</a> to publish it at the optimal time, perfect if you’re in another time zone from your team or are working after hours.</li>           </ul>           <a href=\"https://basecamp.com/learn/beyond-the-basics/message-board\" target=\"_blank\" rel=\"noreferrer\">Learn more about Messages</a>           <br><br><strong>Schedule</strong><br>           The Schedule keeps you on track for each project. In one place, you can see the meetings, milestones, and upcoming due dates. Let’s get into more tips:           <ul>             <li>Click My Stuff &gt; My Schedule to see events from across all of your projects.</li>             <li>Go to the specific project to <a href=\"https://3.basecamp-help.com/article/49-schedule#add-events\" target=\"_blank\" rel=\"noreferrer\">add events</a>.</li>             <li>\n<a href=\"https://3.basecamp-help.com/article/49-schedule#recurring-events\" target=\"_blank\" rel=\"noreferrer\">Create recurring events</a> for meetings that happen on a regular schedule.</li>             <li>Want your Basecamp schedule in your calendar app? <a href=\"https://3.basecamp-help.com/article/49-schedule#sync-your-schedule-with-an-external-calendar\" target=\"_blank\" rel=\"noreferrer\">Here’s how to sync it</a>.</li>             <li>By default, the Schedule includes assignments with due dates. If you only want to see meetings and events, you can <a href=\"https://3.basecamp-help.com/article/49-schedule#Choose-what-to-show-on-a-Schedule-rs5BI\" target=\"_blank\" rel=\"noreferrer\">change what’s shown</a>.</li>           </ul>           <a href=\"https://3.basecamp-help.com/article/49-schedule\" target=\"_blank\" rel=\"noreferrer\">Learn more about the Schedule</a>           <br><br><strong>Card Table</strong><br>           Card tables are Basecamp’s way to manage process-driven and reactive work, similar to Kanban boards in other tools. A support team           that needs to triage customer requests? Card table. A creative team that needs to move an item from ideation through to completion?           Card table. From event planning to real estate, cards help you manage all kinds of work.           <ul>             <li>\n<a href=\"https://3.basecamp-help.com/article/676-card-tables#add-card\" target=\"_blank\" rel=\"noreferrer\">Add a card</a>, then assign it to someone, give it a due date, and include any needed notes or attachments. All of the conversation about the card will happen right there.</li>             <li>\n<a href=\"https://3.basecamp-help.com/article/676-card-tables#steps\" target=\"_blank\" rel=\"noreferrer\">Add steps to cards</a> to break down the work into a checklist. You can assign each step and give it a due date, which is great for when multiple people are working together.</li>             <li>\n<a href=\"https://3.basecamp-help.com/article/676-card-tables#watch-column\" target=\"_blank\" rel=\"noreferrer\">Watch a column</a> to be notified about new cards added or moved to that space.</li>             <li>\n<a href=\"https://3.basecamp-help.com/article/676-card-tables#organizing-columns\" target=\"_blank\" rel=\"noreferrer\">Organize the columns</a> so that each stage is relevant to the work.</li>           </ul>           <a href=\"https://basecamp.com/learn/beyond-the-basics/card-table\" target=\"_blank\" rel=\"noreferrer\">Learn more about Card Tables</a>           <br><br><strong>Chat</strong><br>           Chat is where real-time group conversation happens in a project. Sometimes getting on the same page requires live conversation and Chat is a           great solution.<br><br>It’s also a fun place to say good morning and share a bit about your day, the water cooler conversations that           keeps people connected. If the chatter is ever too much, you can turn off notifications from within the chat itself.           <br><br>           Curious when to use Chat, Pings, or Messages? <a href=\"https://basecamp.com/learn/beyond-the-basics/communication-tools\" target=\"_blank\" rel=\"noreferrer\">This short video</a>           will walk you through it.           <br><br>           <a href=\"https://3.basecamp-help.com/article/40-campfire\" target=\"_blank\" rel=\"noreferrer\">Learn more about Chat</a>           <br><br><strong>Automatic Check-ins</strong><br>           Automatic check-ins allow everyone on the project to share responses to the same prompt, collected in one place. You can set up           questions for just about anything, on any cadence. These questions can be project related, goal specific, or just for fun.           <br><br>           <a href=\"https://basecamp.com/learn/beyond-the-basics/automatic-check-ins\" target=\"_blank\" rel=\"noreferrer\">Watch this quick video</a> to learn more and see how we           use check-ins at Basecamp."
 }
 ```
 <!-- END GET /buckets/1/documents/2.json -->

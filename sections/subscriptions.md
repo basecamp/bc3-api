@@ -22,55 +22,61 @@ Get subscription
 {
   "subscribed": true,
   "count": 2,
-  "url": "https://3.basecampapi.com/195539477/buckets/2085958499/recordings/1069479351/subscription.json",
+  "url": "https://3.basecampapi.com/195539477/buckets/2085958504/recordings/1069479406/subscription.json",
   "subscribers": [
     {
-      "id": 1049715914,
-      "attachable_sgid": "BAh7CEkiCGdpZAY6BkVUSSIrZ2lkOi8vYmMzL1BlcnNvbi8xMDQ5NzE1OTE0P2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg9hdHRhY2hhYmxlBjsAVEkiD2V4cGlyZXNfYXQGOwBUMA==--ff006accb6e013cca785190fa38f42c091d24f1e",
+      "id": 1049715913,
+      "attachable_sgid": "BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiK2dpZDovL2JjMy9QZXJzb24vMTA0OTcxNTkxMz9leHBpcmVzX2luBjsAVEkiCHB1cgY7AFRJIg9hdHRhY2hhYmxlBjsAVA==--e627c45e6b34e08862da23906862412620e4d5d9",
       "name": "Victor Cooper",
       "email_address": "victor@honchodesign.com",
       "personable_type": "User",
       "title": "Chief Strategist",
       "bio": "Don’t let your dreams be dreams",
       "location": "Chicago, IL",
-      "created_at": "2022-11-22T08:23:21.732Z",
-      "updated_at": "2022-11-22T08:23:21.904Z",
+      "created_at": "2026-01-31T08:29:28.365Z",
+      "updated_at": "2026-01-31T08:29:32.599Z",
       "admin": true,
       "owner": true,
       "client": false,
       "employee": true,
       "time_zone": "America/Chicago",
-      "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBMpkkT4=--5520caeec1845b5090bbfc993ffe8eca8d138e14/avatar?v=1",
+      "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBMlkkT4=--5fe7b70fbee7a7f0e2e1e19df7579e5d880c753d/avatar?v=1",
       "company": {
         "id": 1033447817,
         "name": "Honcho Design"
       },
+      "can_ping": true,
       "can_manage_projects": true,
-      "can_manage_people": true
+      "can_manage_people": true,
+      "can_access_timesheet": true,
+      "can_access_hill_charts": true
     },
     {
-      "id": 1049715915,
-      "attachable_sgid": "BAh7CEkiCGdpZAY6BkVUSSIrZ2lkOi8vYmMzL1BlcnNvbi8xMDQ5NzE1OTE1P2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg9hdHRhY2hhYmxlBjsAVEkiD2V4cGlyZXNfYXQGOwBUMA==--aeb392ebf54ffd820e45f27add22bae3a8c7da56",
+      "id": 1049715938,
+      "attachable_sgid": "BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiK2dpZDovL2JjMy9QZXJzb24vMTA0OTcxNTkzOD9leHBpcmVzX2luBjsAVEkiCHB1cgY7AFRJIg9hdHRhY2hhYmxlBjsAVA==--4ccc567a0a3b10e354bca909b704637b601f0b16",
       "name": "Annie Bryan",
       "email_address": "annie@honchodesign.com",
       "personable_type": "User",
       "title": "Central Markets Manager",
       "bio": "To open a store is easy, to keep it open is an art",
       "location": null,
-      "created_at": "2022-11-22T08:23:21.911Z",
-      "updated_at": "2022-11-22T08:23:21.911Z",
+      "created_at": "2026-01-31T08:29:42.795Z",
+      "updated_at": "2026-01-31T08:29:42.795Z",
       "admin": false,
       "owner": false,
       "client": false,
       "employee": true,
       "time_zone": "America/Chicago",
-      "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBMtkkT4=--9927c47a4cbee30a7f9aea667882496aba799149/avatar?v=1",
+      "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBOJkkT4=--732a71fbd28ec10d9bf4466abd3588a8bea40bdb/avatar?v=1",
       "company": {
         "id": 1033447817,
         "name": "Honcho Design"
       },
+      "can_ping": true,
       "can_manage_projects": true,
-      "can_manage_people": true
+      "can_manage_people": true,
+      "can_access_timesheet": true,
+      "can_access_hill_charts": true
     }
   ]
 }
@@ -122,10 +128,10 @@ Update subscription
 ```json
 {
   "subscriptions": [
-    1049715916
+    1049715939
   ],
   "unsubscriptions": [
-    1049715914
+    1049715913
   ]
 }
 ```
@@ -146,55 +152,61 @@ curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/j
 {
   "subscribed": false,
   "count": 2,
-  "url": "https://3.basecampapi.com/195539477/buckets/2085958499/recordings/1069479351/subscription.json",
+  "url": "https://3.basecampapi.com/195539477/buckets/2085958504/recordings/1069479406/subscription.json",
   "subscribers": [
     {
-      "id": 1049715915,
-      "attachable_sgid": "BAh7CEkiCGdpZAY6BkVUSSIrZ2lkOi8vYmMzL1BlcnNvbi8xMDQ5NzE1OTE1P2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg9hdHRhY2hhYmxlBjsAVEkiD2V4cGlyZXNfYXQGOwBUMA==--aeb392ebf54ffd820e45f27add22bae3a8c7da56",
+      "id": 1049715938,
+      "attachable_sgid": "BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiK2dpZDovL2JjMy9QZXJzb24vMTA0OTcxNTkzOD9leHBpcmVzX2luBjsAVEkiCHB1cgY7AFRJIg9hdHRhY2hhYmxlBjsAVA==--4ccc567a0a3b10e354bca909b704637b601f0b16",
       "name": "Annie Bryan",
       "email_address": "annie@honchodesign.com",
       "personable_type": "User",
       "title": "Central Markets Manager",
       "bio": "To open a store is easy, to keep it open is an art",
       "location": null,
-      "created_at": "2022-11-22T08:23:21.911Z",
-      "updated_at": "2022-11-22T08:23:21.911Z",
+      "created_at": "2026-01-31T08:29:42.795Z",
+      "updated_at": "2026-01-31T08:29:42.795Z",
       "admin": false,
       "owner": false,
       "client": false,
       "employee": true,
       "time_zone": "America/Chicago",
-      "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBMtkkT4=--9927c47a4cbee30a7f9aea667882496aba799149/avatar?v=1",
+      "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBOJkkT4=--732a71fbd28ec10d9bf4466abd3588a8bea40bdb/avatar?v=1",
       "company": {
         "id": 1033447817,
         "name": "Honcho Design"
       },
+      "can_ping": true,
       "can_manage_projects": true,
-      "can_manage_people": true
+      "can_manage_people": true,
+      "can_access_timesheet": true,
+      "can_access_hill_charts": true
     },
     {
-      "id": 1049715916,
-      "attachable_sgid": "BAh7CEkiCGdpZAY6BkVUSSIrZ2lkOi8vYmMzL1BlcnNvbi8xMDQ5NzE1OTE2P2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg9hdHRhY2hhYmxlBjsAVEkiD2V4cGlyZXNfYXQGOwBUMA==--c94599eef0a4237fbaa56ff2648f57f1dae89ffd",
+      "id": 1049715939,
+      "attachable_sgid": "BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiK2dpZDovL2JjMy9QZXJzb24vMTA0OTcxNTkzOT9leHBpcmVzX2luBjsAVEkiCHB1cgY7AFRJIg9hdHRhY2hhYmxlBjsAVA==--91bd4d39e2f4af1d814a0b480e809d15a51df239",
       "name": "Cheryl Walters",
       "email_address": "cheryl@honchodesign.com",
       "personable_type": "User",
       "title": "Corporate Integration Director",
       "bio": "A joke is a very serious thing",
       "location": null,
-      "created_at": "2022-11-22T08:23:21.926Z",
-      "updated_at": "2022-11-22T08:23:21.926Z",
+      "created_at": "2026-01-31T08:29:43.313Z",
+      "updated_at": "2026-01-31T08:29:43.313Z",
       "admin": false,
       "owner": false,
       "client": false,
       "employee": true,
-      "time_zone": "Etc/UTC",
-      "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBMxkkT4=--0ea74d7e5d39ad2d120da79250b179b7e0b00c44/avatar?v=1",
+      "time_zone": "America/Chicago",
+      "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBONkkT4=--b57b5a44335d4c3ba1a2585abd6e5c7e4c85fdd6/avatar?v=1",
       "company": {
         "id": 1033447817,
         "name": "Honcho Design"
       },
+      "can_ping": true,
       "can_manage_projects": true,
-      "can_manage_people": true
+      "can_manage_people": true,
+      "can_access_timesheet": true,
+      "can_access_hill_charts": true
     }
   ]
 }

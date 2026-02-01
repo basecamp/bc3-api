@@ -20,26 +20,22 @@ This endpoint is useful for building a list of people to then retrieve their ind
 ```json
 [
   {
-    "id": 1049715914,
-    "attachable_sgid": "BAh7CEkiCGdpZAY6BkVUSSIrZ2lkOi8vYmMzL1BlcnNvbi8xMDQ5NzE1OTE0P2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg9hdHRhY2hhYmxlBjsAVEkiD2V4cGlyZXNfYXQGOwBUMA==--ff006accb6e013cca785190fa38f42c091d24f1e",
-    "name": "Victor Cooper",
-    "email_address": "victor@honchodesign.com",
+    "id": 1049715915,
+    "attachable_sgid": "BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiK2dpZDovL2JjMy9QZXJzb24vMTA0OTcxNTkxNT9leHBpcmVzX2luBjsAVEkiCHB1cgY7AFRJIg9hdHRhY2hhYmxlBjsAVA==--56bb1f99675fd8fe08f93a706a5d2ddaa8412625",
+    "name": "Amy Rivera",
+    "email_address": "amy@honchodesign.com",
     "personable_type": "User",
-    "title": "Chief Strategist",
-    "bio": "Don't let your dreams be dreams",
-    "location": "Chicago, IL",
-    "created_at": "2025-10-10T11:41:42.284Z",
-    "updated_at": "2025-10-10T11:41:43.054Z",
-    "admin": true,
-    "owner": true,
+    "title": "Central Web Coordinator",
+    "bio": "I never said most of the things I said",
+    "location": null,
+    "created_at": "2026-01-31T08:29:32.987Z",
+    "updated_at": "2026-01-31T08:29:32.987Z",
+    "admin": false,
+    "owner": false,
     "client": false,
-    "employee": true,
+    "employee": false,
     "time_zone": "America/Chicago",
-    "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBPNkkT4=--5049939da9ea89df60ade5a1c42d324c1651c66c/avatar?v=1",
-    "company": {
-      "id": 1033447819,
-      "name": "Honcho Design"
-    },
+    "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBMtkkT4=--9927c47a4cbee30a7f9aea667882496aba799149/avatar?v=1",
     "can_ping": true,
     "can_manage_projects": true,
     "can_manage_people": true,
@@ -69,26 +65,22 @@ _Optional query parameters_:
 ```json
 {
   "person": {
-    "id": 1049715914,
-    "attachable_sgid": "BAh7CEkiCGdpZAY6BkVUSSIrZ2lkOi8vYmMzL1BlcnNvbi8xMDQ5NzE1OTE0P2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg9hdHRhY2hhYmxlBjsAVEkiD2V4cGlyZXNfYXQGOwBUMA==--ff006accb6e013cca785190fa38f42c091d24f1e",
-    "name": "Victor Cooper",
-    "email_address": "victor@honchodesign.com",
+    "id": 1049715915,
+    "attachable_sgid": "BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiK2dpZDovL2JjMy9QZXJzb24vMTA0OTcxNTkxNT9leHBpcmVzX2luBjsAVEkiCHB1cgY7AFRJIg9hdHRhY2hhYmxlBjsAVA==--56bb1f99675fd8fe08f93a706a5d2ddaa8412625",
+    "name": "Amy Rivera",
+    "email_address": "amy@honchodesign.com",
     "personable_type": "User",
-    "title": "Chief Strategist",
-    "bio": "Don't let your dreams be dreams",
-    "location": "Chicago, IL",
-    "created_at": "2025-10-10T11:41:42.284Z",
-    "updated_at": "2025-10-10T11:41:43.054Z",
-    "admin": true,
-    "owner": true,
+    "title": "Central Web Coordinator",
+    "bio": "I never said most of the things I said",
+    "location": null,
+    "created_at": "2026-01-31T08:29:32.987Z",
+    "updated_at": "2026-01-31T08:29:32.987Z",
+    "admin": false,
+    "owner": false,
     "client": false,
-    "employee": true,
+    "employee": false,
     "time_zone": "America/Chicago",
-    "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBPNkkT4=--5049939da9ea89df60ade5a1c42d324c1651c66c/avatar?v=1",
-    "company": {
-      "id": 1033447819,
-      "name": "Honcho Design"
-    },
+    "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBMtkkT4=--9927c47a4cbee30a7f9aea667882496aba799149/avatar?v=1",
     "can_ping": true,
     "can_manage_projects": true,
     "can_manage_people": true,
@@ -98,54 +90,50 @@ _Optional query parameters_:
   "grouped_by": "bucket",
   "todos": [
     {
-      "id": 1069479521,
+      "id": 1069479164,
       "status": "active",
       "visible_to_clients": false,
-      "created_at": "2025-10-10T12:43:58.169Z",
-      "updated_at": "2025-10-10T12:43:58.169Z",
-      "title": "Go cutting edge: iOS8 and Android 4.5 only",
+      "created_at": "2026-01-02T02:59:00.000Z",
+      "updated_at": "2026-01-02T02:59:00.000Z",
+      "title": "Amy vs. Sharon",
       "inherits_status": true,
       "type": "Todo",
-      "url": "https://3.basecampapi.com/195539477/buckets/2085958499/todos/1069479521.json",
-      "app_url": "https://3.basecamp.com/195539477/buckets/2085958499/todos/1069479521",
-      "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7CEkiCGdpZAY6BkVUSSIuZ2lkOi8vYmMzL1JlY29yZGluZy8xMDY5NDc5NTIxP2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg1yZWFkYWJsZQY7AFRJIg9leHBpcmVzX2F0BjsAVDA=--ca42d4aed48383928eedbeb305bbc7667ce0418e.json",
-      "subscription_url": "https://3.basecampapi.com/195539477/buckets/2085958499/recordings/1069479521/subscription.json",
+      "url": "https://3.basecampapi.com/195539477/buckets/2085958502/todos/1069479164.json",
+      "app_url": "https://3.basecamp.com/195539477/buckets/2085958502/todos/1069479164",
+      "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiLmdpZDovL2JjMy9SZWNvcmRpbmcvMTA2OTQ3OTE2ND9leHBpcmVzX2luBjsAVEkiCHB1cgY7AFRJIg1yZWFkYWJsZQY7AFQ=--8af0e81cbcfd171784f476df4fcd8a0defb0d525.json",
+      "subscription_url": "https://3.basecampapi.com/195539477/buckets/2085958502/recordings/1069479164/subscription.json",
       "comments_count": 0,
-      "comments_url": "https://3.basecampapi.com/195539477/buckets/2085958499/recordings/1069479521/comments.json",
-      "position": 1,
+      "comments_url": "https://3.basecampapi.com/195539477/buckets/2085958502/recordings/1069479164/comments.json",
+      "position": 2,
       "parent": {
-        "id": 1069479520,
-        "title": "Strategy ideas",
+        "id": 1069479162,
+        "title": "Group D",
         "type": "Todolist",
-        "url": "https://3.basecampapi.com/195539477/buckets/2085958499/todolists/1069479520.json",
-        "app_url": "https://3.basecamp.com/195539477/buckets/2085958499/todolists/1069479520"
+        "url": "https://3.basecampapi.com/195539477/buckets/2085958502/todolists/1069479162.json",
+        "app_url": "https://3.basecamp.com/195539477/buckets/2085958502/todolists/1069479162"
       },
       "bucket": {
-        "id": 2085958499,
-        "name": "The Leto Laptop",
+        "id": 2085958502,
+        "name": "Honcho Design Newsroom",
         "type": "Project"
       },
       "creator": {
-        "id": 1049715915,
-        "attachable_sgid": "BAh7CEkiCGdpZAY6BkVUSSIrZ2lkOi8vYmMzL1BlcnNvbi8xMDQ5NzE1OTE1P2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg9hdHRhY2hhYmxlBjsAVEkiD2V4cGlyZXNfYXQGOwBUMA==--aeb392ebf54ffd820e45f27add22bae3a8c7da56",
-        "name": "Annie Bryan",
-        "email_address": "annie@honchodesign.com",
+        "id": 1049715918,
+        "attachable_sgid": "BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiK2dpZDovL2JjMy9QZXJzb24vMTA0OTcxNTkxOD9leHBpcmVzX2luBjsAVEkiCHB1cgY7AFRJIg9hdHRhY2hhYmxlBjsAVA==--d6212bd7e60bf63ea61797589b2638cbbf2d4ed7",
+        "name": "Brian Jenks",
+        "email_address": "brian@honchodesign.com",
         "personable_type": "User",
-        "title": "Central Markets Manager",
-        "bio": "To open a store is easy, to keep it open is an art",
+        "title": "International Branding Liason",
+        "bio": null,
         "location": null,
-        "created_at": "2025-10-10T11:41:42.284Z",
-        "updated_at": "2025-10-10T11:41:42.284Z",
+        "created_at": "2026-01-31T08:29:34.525Z",
+        "updated_at": "2026-01-31T08:29:34.525Z",
         "admin": false,
         "owner": false,
         "client": false,
-        "employee": true,
+        "employee": false,
         "time_zone": "America/Chicago",
-        "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBMtkkT4=--9927c47a4cbee30a7f9aea667882496aba799149/avatar?v=1",
-        "company": {
-          "id": 1033447819,
-          "name": "Honcho Design"
-        },
+        "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBM5kkT4=--50075f17f313c1198fb6f27e5d466327804dfd22/avatar?v=1",
         "can_ping": true,
         "can_manage_projects": true,
         "can_manage_people": true,
@@ -154,31 +142,27 @@ _Optional query parameters_:
       },
       "description": "",
       "completed": false,
-      "content": "Go cutting edge: iOS8 and Android 4.5 only",
+      "content": "Amy vs. Sharon",
       "starts_on": null,
-      "due_on": "2025-10-15",
+      "due_on": null,
       "assignees": [
         {
-          "id": 1049715914,
-          "attachable_sgid": "BAh7CEkiCGdpZAY6BkVUSSIrZ2lkOi8vYmMzL1BlcnNvbi8xMDQ5NzE1OTE0P2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg9hdHRhY2hhYmxlBjsAVEkiD2V4cGlyZXNfYXQGOwBUMA==--ff006accb6e013cca785190fa38f42c091d24f1e",
-          "name": "Victor Cooper",
-          "email_address": "victor@honchodesign.com",
+          "id": 1049715915,
+          "attachable_sgid": "BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiK2dpZDovL2JjMy9QZXJzb24vMTA0OTcxNTkxNT9leHBpcmVzX2luBjsAVEkiCHB1cgY7AFRJIg9hdHRhY2hhYmxlBjsAVA==--56bb1f99675fd8fe08f93a706a5d2ddaa8412625",
+          "name": "Amy Rivera",
+          "email_address": "amy@honchodesign.com",
           "personable_type": "User",
-          "title": "Chief Strategist",
-          "bio": "Don't let your dreams be dreams",
-          "location": "Chicago, IL",
-          "created_at": "2025-10-10T11:41:42.284Z",
-          "updated_at": "2025-10-10T11:41:43.054Z",
-          "admin": true,
-          "owner": true,
+          "title": "Central Web Coordinator",
+          "bio": "I never said most of the things I said",
+          "location": null,
+          "created_at": "2026-01-31T08:29:32.987Z",
+          "updated_at": "2026-01-31T08:29:32.987Z",
+          "admin": false,
+          "owner": false,
           "client": false,
-          "employee": true,
+          "employee": false,
           "time_zone": "America/Chicago",
-          "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBPNkkT4=--5049939da9ea89df60ade5a1c42d324c1651c66c/avatar?v=1",
-          "company": {
-            "id": 1033447819,
-            "name": "Honcho Design"
-          },
+          "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBMtkkT4=--9927c47a4cbee30a7f9aea667882496aba799149/avatar?v=1",
           "can_ping": true,
           "can_manage_projects": true,
           "can_manage_people": true,
@@ -187,7 +171,7 @@ _Optional query parameters_:
         }
       ],
       "completion_subscribers": [],
-      "completion_url": "https://3.basecampapi.com/195539477/buckets/2085958499/todos/1069479521/completion.json"
+      "completion_url": "https://3.basecampapi.com/195539477/buckets/2085958502/todos/1069479164/completion.json"
     }
   ]
 }
@@ -214,72 +198,7 @@ The response includes four groups:
 <!-- START GET /reports/todos/overdue.json -->
 ```json
 {
-  "under_a_week_late": [
-    {
-      "id": 1069479521,
-      "status": "active",
-      "visible_to_clients": false,
-      "created_at": "2025-10-10T12:43:58.169Z",
-      "updated_at": "2025-10-10T12:43:58.169Z",
-      "title": "Review budget proposal",
-      "inherits_status": true,
-      "type": "Todo",
-      "url": "https://3.basecampapi.com/195539477/buckets/2085958499/todos/1069479521.json",
-      "app_url": "https://3.basecamp.com/195539477/buckets/2085958499/todos/1069479521",
-      "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7CEkiCGdpZAY6BkVUSSIuZ2lkOi8vYmMzL1JlY29yZGluZy8xMDY5NDc5NTIxP2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg1yZWFkYWJsZQY7AFRJIg9leHBpcmVzX2F0BjsAVDA=--ca42d4aed48383928eedbeb305bbc7667ce0418e.json",
-      "subscription_url": "https://3.basecampapi.com/195539477/buckets/2085958499/recordings/1069479521/subscription.json",
-      "comments_count": 0,
-      "comments_url": "https://3.basecampapi.com/195539477/buckets/2085958499/recordings/1069479521/comments.json",
-      "position": 1,
-      "parent": {
-        "id": 1069479520,
-        "title": "Finance tasks",
-        "type": "Todolist",
-        "url": "https://3.basecampapi.com/195539477/buckets/2085958499/todolists/1069479520.json",
-        "app_url": "https://3.basecamp.com/195539477/buckets/2085958499/todolists/1069479520"
-      },
-      "bucket": {
-        "id": 2085958499,
-        "name": "The Leto Laptop",
-        "type": "Project"
-      },
-      "creator": {
-        "id": 1049715914,
-        "attachable_sgid": "BAh7CEkiCGdpZAY6BkVUSSIrZ2lkOi8vYmMzL1BlcnNvbi8xMDQ5NzE1OTE0P2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg9hdHRhY2hhYmxlBjsAVEkiD2V4cGlyZXNfYXQGOwBUMA==--ff006accb6e013cca785190fa38f42c091d24f1e",
-        "name": "Victor Cooper",
-        "email_address": "victor@honchodesign.com",
-        "personable_type": "User",
-        "title": "Chief Strategist",
-        "bio": "Don't let your dreams be dreams",
-        "location": "Chicago, IL",
-        "created_at": "2025-10-10T11:41:42.284Z",
-        "updated_at": "2025-10-10T11:41:43.054Z",
-        "admin": true,
-        "owner": true,
-        "client": false,
-        "employee": true,
-        "time_zone": "America/Chicago",
-        "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBPNkkT4=--5049939da9ea89df60ade5a1c42d324c1651c66c/avatar?v=1",
-        "company": {
-          "id": 1033447819,
-          "name": "Honcho Design"
-        },
-        "can_ping": true,
-        "can_manage_projects": true,
-        "can_manage_people": true,
-        "can_access_timesheet": true,
-        "can_access_hill_charts": true
-      },
-      "description": "",
-      "completed": false,
-      "content": "Review budget proposal",
-      "starts_on": null,
-      "due_on": "2025-10-08",
-      "assignees": [],
-      "completion_subscribers": [],
-      "completion_url": "https://3.basecampapi.com/195539477/buckets/2085958499/todos/1069479521/completion.json"
-    }
-  ],
+  "under_a_week_late": [],
   "over_a_week_late": [],
   "over_a_month_late": [],
   "over_three_months_late": []
@@ -313,89 +232,64 @@ The response includes:
 {
   "schedule_entries": [
     {
-      "id": 1069479847,
+      "id": 1069479912,
       "status": "active",
       "visible_to_clients": false,
-      "url": "https://3.basecampapi.com/195539477/buckets/2085958499/schedule_entries/1069479847.json",
-      "app_url": "https://3.basecamp.com/195539477/buckets/2085958499/schedule_entries/1069479847",
+      "url": "https://3.basecampapi.com/195539477/buckets/2085958504/schedule_entries/1069479912.json",
+      "app_url": "https://3.basecamp.com/195539477/buckets/2085958504/schedule_entries/1069479912",
       "type": "ScheduleEntry",
       "summary": "Team Meeting",
       "all_day": false,
       "recurring": false,
-      "starts_at": "2025-10-11T10:00:00.000Z",
-      "ends_at": "2025-10-11T11:00:00.000Z",
+      "starts_at": "2026-02-01T10:36:20.949Z",
+      "ends_at": "2026-02-01T14:36:20.950Z",
       "creator": {
-        "id": 1049715914,
+        "id": 1049715913,
         "name": "Victor Cooper",
-        "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBPNkkT4=--5049939da9ea89df60ade5a1c42d324c1651c66c/avatar?v=1"
+        "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBMlkkT4=--5fe7b70fbee7a7f0e2e1e19df7579e5d880c753d/avatar?v=1"
       },
       "participants": [
         {
-          "id": 1049715921,
+          "id": 1049715944,
           "name": "Steve Marsh",
-          "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBNFkkT4=--c57bba9b44447be39d4a79a5e7f2a592cae9e82c/avatar?v=1"
+          "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBOhkkT4=--b169e35b345bcc26eca6964b7ef7de2c16b6f238/avatar?v=1"
         }
       ],
       "bucket": {
-        "id": 2085958499,
+        "id": 2085958504,
         "name": "The Leto Laptop"
       },
       "comments_count": 0
     }
   ],
-  "recurring_schedule_entry_occurrences": [
-    {
-      "id": 1069479850,
-      "status": "active",
-      "visible_to_clients": false,
-      "url": "https://3.basecampapi.com/195539477/buckets/2085958499/schedule_entries/1069479850.json",
-      "app_url": "https://3.basecamp.com/195539477/buckets/2085958499/schedule_entries/1069479850/occurrences/20251014",
-      "type": "ScheduleEntry",
-      "summary": "Weekly Standup",
-      "all_day": false,
-      "recurring": true,
-      "starts_at": "2025-10-14T09:00:00.000Z",
-      "ends_at": "2025-10-14T09:30:00.000Z",
-      "creator": {
-        "id": 1049715914,
-        "name": "Victor Cooper",
-        "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBPNkkT4=--5049939da9ea89df60ade5a1c42d324c1651c66c/avatar?v=1"
-      },
-      "participants": [],
-      "bucket": {
-        "id": 2085958499,
-        "name": "The Leto Laptop"
-      },
-      "comments_count": 0
-    }
-  ],
+  "recurring_schedule_entry_occurrences": [],
   "assignables": [
     {
-      "id": 1069479521,
+      "id": 1069479603,
       "status": "active",
       "visible_to_clients": false,
-      "url": "https://3.basecampapi.com/195539477/buckets/2085958499/todos/1069479521.json",
-      "app_url": "https://3.basecamp.com/195539477/buckets/2085958499/todos/1069479521",
+      "url": "https://3.basecampapi.com/195539477/buckets/2085958504/card_tables/steps/1069479603.json",
+      "app_url": "https://3.basecamp.com/195539477/buckets/2085958504/card_tables/cards/1069479602#__recording_1069479603",
       "starts_on": null,
-      "due_on": "2025-10-15",
-      "type": "Todo",
-      "content": "Go cutting edge: iOS8 and Android 4.5 only",
+      "due_on": "2026-02-04",
+      "type": "step",
+      "content": "Find inspiration",
       "assignees": [
         {
-          "id": 1049715914,
-          "name": "Victor Cooper",
-          "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBPNkkT4=--5049939da9ea89df60ade5a1c42d324c1651c66c/avatar?v=1"
+          "id": 1049715931,
+          "name": "Tashia Hughes",
+          "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBNtkkT4=--b72a5df90f237e00570273b726a82176287186e4/avatar?v=1"
         }
       ],
       "bucket": {
-        "id": 2085958499,
+        "id": 2085958504,
         "name": "The Leto Laptop"
       },
       "parent": {
-        "id": 1069479520,
-        "title": "Strategy ideas"
+        "id": 1069479602,
+        "title": "New and fancy UI"
       },
-      "completion_url": "https://3.basecampapi.com/195539477/buckets/2085958499/todos/1069479521/completion.json",
+      "completion_url": "/195539477/buckets/2085958504/card_tables/steps/1069479603/completions.json",
       "completed": false,
       "repeating": false,
       "comments_count": 0

@@ -17,371 +17,237 @@ Get events
 ```json
 [
   {
-    "id": 1071915175,
-    "recording_id": 1069479523,
-    "action": "assignment_changed",
+    "id": 1071915468,
+    "recording_id": 1069479766,
+    "action": "adopted",
     "details": {
-      "added_person_ids": [
-        1049715937
-      ],
-      "removed_person_ids": [
-
-      ]
+      "new_parent_id": 1069479743,
+      "parent_id_was": 1069479745,
+      "notified_recipient_ids": []
     },
-    "created_at": "2022-12-11T13:25:58.169Z",
+    "created_at": "2026-01-31T08:33:38.190Z",
     "creator": {
-      "id": 1049715915,
-      "attachable_sgid": "BAh7CEkiCGdpZAY6BkVUSSIrZ2lkOi8vYmMzL1BlcnNvbi8xMDQ5NzE1OTE1P2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg9hdHRhY2hhYmxlBjsAVEkiD2V4cGlyZXNfYXQGOwBUMA==--aeb392ebf54ffd820e45f27add22bae3a8c7da56",
-      "name": "Annie Bryan",
-      "email_address": "annie@honchodesign.com",
-      "personable_type": "User",
-      "title": "Central Markets Manager",
-      "bio": "To open a store is easy, to keep it open is an art",
+      "id": 1049715945,
+      "attachable_sgid": "BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiK2dpZDovL2JjMy9QZXJzb24vMTA0OTcxNTk0NT9leHBpcmVzX2luBjsAVEkiCHB1cgY7AFRJIg9hdHRhY2hhYmxlBjsAVA==--573c6935f53af21625ccfd45e28af57c2bbeff49",
+      "name": "Victor Cooper",
+      "email_address": null,
+      "personable_type": "DummyUser",
+      "title": null,
+      "bio": null,
       "location": null,
-      "created_at": "2022-11-22T08:23:21.911Z",
-      "updated_at": "2022-11-22T08:23:21.911Z",
+      "created_at": "2026-01-31T08:33:28.806Z",
+      "updated_at": "2026-01-31T08:33:28.806Z",
       "admin": false,
       "owner": false,
       "client": false,
-      "employee": true,
+      "employee": false,
       "time_zone": "America/Chicago",
-      "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBMtkkT4=--9927c47a4cbee30a7f9aea667882496aba799149/avatar?v=1",
-      "company": {
-        "id": 1033447817,
-        "name": "Honcho Design"
-      },
-      "can_manage_projects": true,
-      "can_manage_people": true
+      "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBOlkkT4=--eebbe1ab1b28f5fcf32a1c0ff3644e06931fbcfa/avatar?v=1",
+      "can_ping": true,
+      "can_manage_projects": false,
+      "can_manage_people": false,
+      "can_access_timesheet": false,
+      "can_access_hill_charts": false
     }
   },
   {
-    "id": 1071915174,
-    "recording_id": 1069479523,
+    "id": 1071915469,
+    "recording_id": 1069479766,
+    "action": "completed",
+    "details": {
+      "notified_recipient_ids": []
+    },
+    "created_at": "2026-01-26T17:43:00.000Z",
+    "creator": {
+      "id": 1049715945,
+      "attachable_sgid": "BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiK2dpZDovL2JjMy9QZXJzb24vMTA0OTcxNTk0NT9leHBpcmVzX2luBjsAVEkiCHB1cgY7AFRJIg9hdHRhY2hhYmxlBjsAVA==--573c6935f53af21625ccfd45e28af57c2bbeff49",
+      "name": "Victor Cooper",
+      "email_address": null,
+      "personable_type": "DummyUser",
+      "title": null,
+      "bio": null,
+      "location": null,
+      "created_at": "2026-01-31T08:33:28.806Z",
+      "updated_at": "2026-01-31T08:33:28.806Z",
+      "admin": false,
+      "owner": false,
+      "client": false,
+      "employee": false,
+      "time_zone": "America/Chicago",
+      "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBOlkkT4=--eebbe1ab1b28f5fcf32a1c0ff3644e06931fbcfa/avatar?v=1",
+      "can_ping": true,
+      "can_manage_projects": false,
+      "can_manage_people": false,
+      "can_access_timesheet": false,
+      "can_access_hill_charts": false
+    }
+  },
+  {
+    "id": 1071915467,
+    "recording_id": 1069479766,
+    "action": "adopted",
+    "details": {
+      "new_parent_id": 1069479745,
+      "parent_id_was": 1069479742,
+      "notified_recipient_ids": []
+    },
+    "created_at": "2026-01-25T17:43:00.000Z",
+    "creator": {
+      "id": 1049715945,
+      "attachable_sgid": "BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiK2dpZDovL2JjMy9QZXJzb24vMTA0OTcxNTk0NT9leHBpcmVzX2luBjsAVEkiCHB1cgY7AFRJIg9hdHRhY2hhYmxlBjsAVA==--573c6935f53af21625ccfd45e28af57c2bbeff49",
+      "name": "Victor Cooper",
+      "email_address": null,
+      "personable_type": "DummyUser",
+      "title": null,
+      "bio": null,
+      "location": null,
+      "created_at": "2026-01-31T08:33:28.806Z",
+      "updated_at": "2026-01-31T08:33:28.806Z",
+      "admin": false,
+      "owner": false,
+      "client": false,
+      "employee": false,
+      "time_zone": "America/Chicago",
+      "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBOlkkT4=--eebbe1ab1b28f5fcf32a1c0ff3644e06931fbcfa/avatar?v=1",
+      "can_ping": true,
+      "can_manage_projects": false,
+      "can_manage_people": false,
+      "can_access_timesheet": false,
+      "can_access_hill_charts": false
+    }
+  },
+  {
+    "id": 1071915466,
+    "recording_id": 1069479766,
+    "action": "adopted",
+    "details": {
+      "new_parent_id": 1069479742,
+      "parent_id_was": 1069479744,
+      "notified_recipient_ids": []
+    },
+    "created_at": "2026-01-23T17:43:00.000Z",
+    "creator": {
+      "id": 1049715945,
+      "attachable_sgid": "BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiK2dpZDovL2JjMy9QZXJzb24vMTA0OTcxNTk0NT9leHBpcmVzX2luBjsAVEkiCHB1cgY7AFRJIg9hdHRhY2hhYmxlBjsAVA==--573c6935f53af21625ccfd45e28af57c2bbeff49",
+      "name": "Victor Cooper",
+      "email_address": null,
+      "personable_type": "DummyUser",
+      "title": null,
+      "bio": null,
+      "location": null,
+      "created_at": "2026-01-31T08:33:28.806Z",
+      "updated_at": "2026-01-31T08:33:28.806Z",
+      "admin": false,
+      "owner": false,
+      "client": false,
+      "employee": false,
+      "time_zone": "America/Chicago",
+      "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBOlkkT4=--eebbe1ab1b28f5fcf32a1c0ff3644e06931fbcfa/avatar?v=1",
+      "can_ping": true,
+      "can_manage_projects": false,
+      "can_manage_people": false,
+      "can_access_timesheet": false,
+      "can_access_hill_charts": false
+    }
+  },
+  {
+    "id": 1071915465,
+    "recording_id": 1069479766,
+    "action": "adopted",
+    "details": {
+      "new_parent_id": 1069479744,
+      "parent_id_was": 1069479741,
+      "notified_recipient_ids": []
+    },
+    "created_at": "2026-01-21T17:43:00.000Z",
+    "creator": {
+      "id": 1049715945,
+      "attachable_sgid": "BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiK2dpZDovL2JjMy9QZXJzb24vMTA0OTcxNTk0NT9leHBpcmVzX2luBjsAVEkiCHB1cgY7AFRJIg9hdHRhY2hhYmxlBjsAVA==--573c6935f53af21625ccfd45e28af57c2bbeff49",
+      "name": "Victor Cooper",
+      "email_address": null,
+      "personable_type": "DummyUser",
+      "title": null,
+      "bio": null,
+      "location": null,
+      "created_at": "2026-01-31T08:33:28.806Z",
+      "updated_at": "2026-01-31T08:33:28.806Z",
+      "admin": false,
+      "owner": false,
+      "client": false,
+      "employee": false,
+      "time_zone": "America/Chicago",
+      "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBOlkkT4=--eebbe1ab1b28f5fcf32a1c0ff3644e06931fbcfa/avatar?v=1",
+      "can_ping": true,
+      "can_manage_projects": false,
+      "can_manage_people": false,
+      "can_access_timesheet": false,
+      "can_access_hill_charts": false
+    }
+  },
+  {
+    "id": 1071915464,
+    "recording_id": 1069479766,
+    "action": "adopted",
+    "details": {
+      "new_parent_id": 1069479741,
+      "parent_id_was": 1069479739,
+      "notified_recipient_ids": []
+    },
+    "created_at": "2026-01-21T17:43:00.000Z",
+    "creator": {
+      "id": 1049715945,
+      "attachable_sgid": "BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiK2dpZDovL2JjMy9QZXJzb24vMTA0OTcxNTk0NT9leHBpcmVzX2luBjsAVEkiCHB1cgY7AFRJIg9hdHRhY2hhYmxlBjsAVA==--573c6935f53af21625ccfd45e28af57c2bbeff49",
+      "name": "Victor Cooper",
+      "email_address": null,
+      "personable_type": "DummyUser",
+      "title": null,
+      "bio": null,
+      "location": null,
+      "created_at": "2026-01-31T08:33:28.806Z",
+      "updated_at": "2026-01-31T08:33:28.806Z",
+      "admin": false,
+      "owner": false,
+      "client": false,
+      "employee": false,
+      "time_zone": "America/Chicago",
+      "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBOlkkT4=--eebbe1ab1b28f5fcf32a1c0ff3644e06931fbcfa/avatar?v=1",
+      "can_ping": true,
+      "can_manage_projects": false,
+      "can_manage_people": false,
+      "can_access_timesheet": false,
+      "can_access_hill_charts": false
+    }
+  },
+  {
+    "id": 1071915463,
+    "recording_id": 1069479766,
     "action": "created",
     "details": {
-      "notified_recipient_ids": [
-
-      ]
+      "notified_recipient_ids": []
     },
-    "created_at": "2022-12-11T13:25:58.169Z",
+    "created_at": "2026-01-11T17:43:00.000Z",
     "creator": {
-      "id": 1049715915,
-      "attachable_sgid": "BAh7CEkiCGdpZAY6BkVUSSIrZ2lkOi8vYmMzL1BlcnNvbi8xMDQ5NzE1OTE1P2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg9hdHRhY2hhYmxlBjsAVEkiD2V4cGlyZXNfYXQGOwBUMA==--aeb392ebf54ffd820e45f27add22bae3a8c7da56",
-      "name": "Annie Bryan",
-      "email_address": "annie@honchodesign.com",
-      "personable_type": "User",
-      "title": "Central Markets Manager",
-      "bio": "To open a store is easy, to keep it open is an art",
+      "id": 1049715945,
+      "attachable_sgid": "BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiK2dpZDovL2JjMy9QZXJzb24vMTA0OTcxNTk0NT9leHBpcmVzX2luBjsAVEkiCHB1cgY7AFRJIg9hdHRhY2hhYmxlBjsAVA==--573c6935f53af21625ccfd45e28af57c2bbeff49",
+      "name": "Victor Cooper",
+      "email_address": null,
+      "personable_type": "DummyUser",
+      "title": null,
+      "bio": null,
       "location": null,
-      "created_at": "2022-11-22T08:23:21.911Z",
-      "updated_at": "2022-11-22T08:23:21.911Z",
+      "created_at": "2026-01-31T08:33:28.806Z",
+      "updated_at": "2026-01-31T08:33:28.806Z",
       "admin": false,
       "owner": false,
       "client": false,
-      "employee": true,
+      "employee": false,
       "time_zone": "America/Chicago",
-      "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBMtkkT4=--9927c47a4cbee30a7f9aea667882496aba799149/avatar?v=1",
-      "company": {
-        "id": 1033447817,
-        "name": "Honcho Design"
-      },
-      "can_manage_projects": true,
-      "can_manage_people": true
-    }
-  },
-  {
-    "id": 1071915870,
-    "recording_id": 1069479523,
-    "action": "uncompleted",
-    "details": {
-    },
-    "created_at": "2022-11-22T17:56:31.272Z",
-    "creator": {
-      "id": 1049715937,
-      "attachable_sgid": "BAh7CEkiCGdpZAY6BkVUSSIrZ2lkOi8vYmMzL1BlcnNvbi8xMDQ5NzE1OTM3P2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg9hdHRhY2hhYmxlBjsAVEkiD2V4cGlyZXNfYXQGOwBUMA==--1255eb7c3d72232ea454ba0b42aaee71238c1d07",
-      "name": "Sharon Bradford",
-      "email_address": "sharon@honchodesign.com",
-      "personable_type": "User",
-      "title": "Principal Branding Administrator",
-      "bio": null,
-      "location": null,
-      "created_at": "2022-11-22T08:23:22.231Z",
-      "updated_at": "2022-11-22T08:23:22.231Z",
-      "admin": false,
-      "owner": false,
-      "client": false,
-      "employee": false,
-      "time_zone": "Etc/UTC",
-      "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBOFkkT4=--560f7fa1330d4341e3c089226bcb7fefb82dbfd1/avatar?v=1",
-      "can_manage_projects": true,
-      "can_manage_people": true
-    }
-  },
-  {
-    "id": 1071915869,
-    "recording_id": 1069479523,
-    "action": "completed",
-    "details": {
-      "notified_recipient_ids": [
-        1049715915
-      ]
-    },
-    "created_at": "2022-11-22T17:56:30.792Z",
-    "creator": {
-      "id": 1049715937,
-      "attachable_sgid": "BAh7CEkiCGdpZAY6BkVUSSIrZ2lkOi8vYmMzL1BlcnNvbi8xMDQ5NzE1OTM3P2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg9hdHRhY2hhYmxlBjsAVEkiD2V4cGlyZXNfYXQGOwBUMA==--1255eb7c3d72232ea454ba0b42aaee71238c1d07",
-      "name": "Sharon Bradford",
-      "email_address": "sharon@honchodesign.com",
-      "personable_type": "User",
-      "title": "Principal Branding Administrator",
-      "bio": null,
-      "location": null,
-      "created_at": "2022-11-22T08:23:22.231Z",
-      "updated_at": "2022-11-22T08:23:22.231Z",
-      "admin": false,
-      "owner": false,
-      "client": false,
-      "employee": false,
-      "time_zone": "Etc/UTC",
-      "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBOFkkT4=--560f7fa1330d4341e3c089226bcb7fefb82dbfd1/avatar?v=1",
-      "can_manage_projects": true,
-      "can_manage_people": true
-    }
-  },
-  {
-    "id": 1071915776,
-    "recording_id": 1069479523,
-    "action": "uncompleted",
-    "details": {
-    },
-    "created_at": "2022-11-22T13:36:50.725Z",
-    "creator": {
-      "id": 1049715937,
-      "attachable_sgid": "BAh7CEkiCGdpZAY6BkVUSSIrZ2lkOi8vYmMzL1BlcnNvbi8xMDQ5NzE1OTM3P2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg9hdHRhY2hhYmxlBjsAVEkiD2V4cGlyZXNfYXQGOwBUMA==--1255eb7c3d72232ea454ba0b42aaee71238c1d07",
-      "name": "Sharon Bradford",
-      "email_address": "sharon@honchodesign.com",
-      "personable_type": "User",
-      "title": "Principal Branding Administrator",
-      "bio": null,
-      "location": null,
-      "created_at": "2022-11-22T08:23:22.231Z",
-      "updated_at": "2022-11-22T08:23:22.231Z",
-      "admin": false,
-      "owner": false,
-      "client": false,
-      "employee": false,
-      "time_zone": "Etc/UTC",
-      "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBOFkkT4=--560f7fa1330d4341e3c089226bcb7fefb82dbfd1/avatar?v=1",
-      "can_manage_projects": true,
-      "can_manage_people": true
-    }
-  },
-  {
-    "id": 1071915775,
-    "recording_id": 1069479523,
-    "action": "completed",
-    "details": {
-      "notified_recipient_ids": [
-        1049715915
-      ]
-    },
-    "created_at": "2022-11-22T13:36:50.255Z",
-    "creator": {
-      "id": 1049715937,
-      "attachable_sgid": "BAh7CEkiCGdpZAY6BkVUSSIrZ2lkOi8vYmMzL1BlcnNvbi8xMDQ5NzE1OTM3P2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg9hdHRhY2hhYmxlBjsAVEkiD2V4cGlyZXNfYXQGOwBUMA==--1255eb7c3d72232ea454ba0b42aaee71238c1d07",
-      "name": "Sharon Bradford",
-      "email_address": "sharon@honchodesign.com",
-      "personable_type": "User",
-      "title": "Principal Branding Administrator",
-      "bio": null,
-      "location": null,
-      "created_at": "2022-11-22T08:23:22.231Z",
-      "updated_at": "2022-11-22T08:23:22.231Z",
-      "admin": false,
-      "owner": false,
-      "client": false,
-      "employee": false,
-      "time_zone": "Etc/UTC",
-      "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBOFkkT4=--560f7fa1330d4341e3c089226bcb7fefb82dbfd1/avatar?v=1",
-      "can_manage_projects": true,
-      "can_manage_people": true
-    }
-  },
-  {
-    "id": 1071915743,
-    "recording_id": 1069479523,
-    "action": "uncompleted",
-    "details": {
-    },
-    "created_at": "2022-11-22T13:32:44.529Z",
-    "creator": {
-      "id": 1049715937,
-      "attachable_sgid": "BAh7CEkiCGdpZAY6BkVUSSIrZ2lkOi8vYmMzL1BlcnNvbi8xMDQ5NzE1OTM3P2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg9hdHRhY2hhYmxlBjsAVEkiD2V4cGlyZXNfYXQGOwBUMA==--1255eb7c3d72232ea454ba0b42aaee71238c1d07",
-      "name": "Sharon Bradford",
-      "email_address": "sharon@honchodesign.com",
-      "personable_type": "User",
-      "title": "Principal Branding Administrator",
-      "bio": null,
-      "location": null,
-      "created_at": "2022-11-22T08:23:22.231Z",
-      "updated_at": "2022-11-22T08:23:22.231Z",
-      "admin": false,
-      "owner": false,
-      "client": false,
-      "employee": false,
-      "time_zone": "Etc/UTC",
-      "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBOFkkT4=--560f7fa1330d4341e3c089226bcb7fefb82dbfd1/avatar?v=1",
-      "can_manage_projects": true,
-      "can_manage_people": true
-    }
-  },
-  {
-    "id": 1071915742,
-    "recording_id": 1069479523,
-    "action": "completed",
-    "details": {
-      "notified_recipient_ids": [
-        1049715915
-      ]
-    },
-    "created_at": "2022-11-22T13:32:44.400Z",
-    "creator": {
-      "id": 1049715937,
-      "attachable_sgid": "BAh7CEkiCGdpZAY6BkVUSSIrZ2lkOi8vYmMzL1BlcnNvbi8xMDQ5NzE1OTM3P2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg9hdHRhY2hhYmxlBjsAVEkiD2V4cGlyZXNfYXQGOwBUMA==--1255eb7c3d72232ea454ba0b42aaee71238c1d07",
-      "name": "Sharon Bradford",
-      "email_address": "sharon@honchodesign.com",
-      "personable_type": "User",
-      "title": "Principal Branding Administrator",
-      "bio": null,
-      "location": null,
-      "created_at": "2022-11-22T08:23:22.231Z",
-      "updated_at": "2022-11-22T08:23:22.231Z",
-      "admin": false,
-      "owner": false,
-      "client": false,
-      "employee": false,
-      "time_zone": "Etc/UTC",
-      "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBOFkkT4=--560f7fa1330d4341e3c089226bcb7fefb82dbfd1/avatar?v=1",
-      "can_manage_projects": true,
-      "can_manage_people": true
-    }
-  },
-  {
-    "id": 1071915648,
-    "recording_id": 1069479523,
-    "action": "uncompleted",
-    "details": {
-    },
-    "created_at": "2022-11-22T11:17:22.551Z",
-    "creator": {
-      "id": 1049715937,
-      "attachable_sgid": "BAh7CEkiCGdpZAY6BkVUSSIrZ2lkOi8vYmMzL1BlcnNvbi8xMDQ5NzE1OTM3P2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg9hdHRhY2hhYmxlBjsAVEkiD2V4cGlyZXNfYXQGOwBUMA==--1255eb7c3d72232ea454ba0b42aaee71238c1d07",
-      "name": "Sharon Bradford",
-      "email_address": "sharon@honchodesign.com",
-      "personable_type": "User",
-      "title": "Principal Branding Administrator",
-      "bio": null,
-      "location": null,
-      "created_at": "2022-11-22T08:23:22.231Z",
-      "updated_at": "2022-11-22T08:23:22.231Z",
-      "admin": false,
-      "owner": false,
-      "client": false,
-      "employee": false,
-      "time_zone": "Etc/UTC",
-      "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBOFkkT4=--560f7fa1330d4341e3c089226bcb7fefb82dbfd1/avatar?v=1",
-      "can_manage_projects": true,
-      "can_manage_people": true
-    }
-  },
-  {
-    "id": 1071915647,
-    "recording_id": 1069479523,
-    "action": "completed",
-    "details": {
-      "notified_recipient_ids": [
-        1049715915
-      ]
-    },
-    "created_at": "2022-11-22T11:17:22.362Z",
-    "creator": {
-      "id": 1049715937,
-      "attachable_sgid": "BAh7CEkiCGdpZAY6BkVUSSIrZ2lkOi8vYmMzL1BlcnNvbi8xMDQ5NzE1OTM3P2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg9hdHRhY2hhYmxlBjsAVEkiD2V4cGlyZXNfYXQGOwBUMA==--1255eb7c3d72232ea454ba0b42aaee71238c1d07",
-      "name": "Sharon Bradford",
-      "email_address": "sharon@honchodesign.com",
-      "personable_type": "User",
-      "title": "Principal Branding Administrator",
-      "bio": null,
-      "location": null,
-      "created_at": "2022-11-22T08:23:22.231Z",
-      "updated_at": "2022-11-22T08:23:22.231Z",
-      "admin": false,
-      "owner": false,
-      "client": false,
-      "employee": false,
-      "time_zone": "Etc/UTC",
-      "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBOFkkT4=--560f7fa1330d4341e3c089226bcb7fefb82dbfd1/avatar?v=1",
-      "can_manage_projects": true,
-      "can_manage_people": true
-    }
-  },
-  {
-    "id": 1071915610,
-    "recording_id": 1069479523,
-    "action": "uncompleted",
-    "details": {
-    },
-    "created_at": "2022-11-22T11:15:57.430Z",
-    "creator": {
-      "id": 1049715937,
-      "attachable_sgid": "BAh7CEkiCGdpZAY6BkVUSSIrZ2lkOi8vYmMzL1BlcnNvbi8xMDQ5NzE1OTM3P2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg9hdHRhY2hhYmxlBjsAVEkiD2V4cGlyZXNfYXQGOwBUMA==--1255eb7c3d72232ea454ba0b42aaee71238c1d07",
-      "name": "Sharon Bradford",
-      "email_address": "sharon@honchodesign.com",
-      "personable_type": "User",
-      "title": "Principal Branding Administrator",
-      "bio": null,
-      "location": null,
-      "created_at": "2022-11-22T08:23:22.231Z",
-      "updated_at": "2022-11-22T08:23:22.231Z",
-      "admin": false,
-      "owner": false,
-      "client": false,
-      "employee": false,
-      "time_zone": "Etc/UTC",
-      "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBOFkkT4=--560f7fa1330d4341e3c089226bcb7fefb82dbfd1/avatar?v=1",
-      "can_manage_projects": true,
-      "can_manage_people": true
-    }
-  },
-  {
-    "id": 1071915609,
-    "recording_id": 1069479523,
-    "action": "completed",
-    "details": {
-      "notified_recipient_ids": [
-        1049715915
-      ]
-    },
-    "created_at": "2022-11-22T11:15:57.335Z",
-    "creator": {
-      "id": 1049715937,
-      "attachable_sgid": "BAh7CEkiCGdpZAY6BkVUSSIrZ2lkOi8vYmMzL1BlcnNvbi8xMDQ5NzE1OTM3P2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg9hdHRhY2hhYmxlBjsAVEkiD2V4cGlyZXNfYXQGOwBUMA==--1255eb7c3d72232ea454ba0b42aaee71238c1d07",
-      "name": "Sharon Bradford",
-      "email_address": "sharon@honchodesign.com",
-      "personable_type": "User",
-      "title": "Principal Branding Administrator",
-      "bio": null,
-      "location": null,
-      "created_at": "2022-11-22T08:23:22.231Z",
-      "updated_at": "2022-11-22T08:23:22.231Z",
-      "admin": false,
-      "owner": false,
-      "client": false,
-      "employee": false,
-      "time_zone": "Etc/UTC",
-      "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBOFkkT4=--560f7fa1330d4341e3c089226bcb7fefb82dbfd1/avatar?v=1",
-      "can_manage_projects": true,
-      "can_manage_people": true
+      "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBOlkkT4=--eebbe1ab1b28f5fcf32a1c0ff3644e06931fbcfa/avatar?v=1",
+      "can_ping": true,
+      "can_manage_projects": false,
+      "can_manage_people": false,
+      "can_access_timesheet": false,
+      "can_access_hill_charts": false
     }
   }
 ]

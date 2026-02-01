@@ -241,30 +241,24 @@ Get webhooks
 * `GET /buckets/1/webhooks.json` will return all the webhooks from the basecamp with an ID of `1`.
 
 ###### Example JSON Response
+<!-- START GET /buckets/1/webhooks.json -->
 ```json
 [
   {
-    "id": 9007199254741202,
+    "id": 1051369971,
     "active": true,
-    "created_at": "2016-06-08T19:00:41.933Z",
-    "updated_at": "2016-07-19T16:47:00.621Z",
+    "created_at": "2026-01-31T08:38:45.916Z",
+    "updated_at": "2026-01-31T08:38:45.916Z",
     "payload_url": "https://example.com/endpoint",
-    "types": [ "all" ],
-    "url": "https://3.basecampapi.com/195539477/buckets/2085958498/webhooks/9007199254741202.json",
-    "app_url": "https://3.basecamp.com/195539477/buckets/2085958498/webhooks/9007199254741202"
-  },
-  {
-    "id": 9007199254741203,
-    "active": "false",
-    "created_at": "2016-06-08T19:00:41.933Z",
-    "updated_at": "2016-07-19T16:47:00.621Z",
-    "payload_url": "https://example.com/another/endpoint",
-    "types": [ "Todo", "Todolist" ],
-    "url": "https://3.basecampapi.com/195539477/buckets/2085958498/webhooks/9007199254741203.json",
-    "app_url": "https://3.basecamp.com/195539477/buckets/2085958498/webhooks/9007199254741203"
-  }  
+    "types": [
+      "all"
+    ],
+    "url": "https://3.basecampapi.com/195539477/buckets/2085958504/webhooks/1051369971.json",
+    "app_url": "https://3.basecamp.com/195539477/buckets/2085958504/webhooks/1051369971"
+  }
 ]
 ```
+<!-- END GET /buckets/1/webhooks.json -->
 ###### Copy as cURL
 
 ``` shell
@@ -282,66 +276,17 @@ The recent deliveries array will contain the 25 most recent delivery exchanges, 
 <!-- START GET /buckets/1/webhooks/3.json -->
 ```json
 {
-"id": 9007199254741202,
-"active": true,
-"created_at": "2016-06-08T19:00:41.933Z",
-"updated_at": "2016-07-19T16:47:00.621Z",
-"payload_url": "https://example.com/endpoint",
-"types": [ "all" ],
-"url": "https://3.basecampapi.com/195539477/buckets/2085958498/webhooks/9007199254741202.json",
-"app_url": "https://3.basecamp.com/195539477/buckets/2085958498/webhooks/9007199254741202",
-"recent_deliveries": [
-  {
-    "id": 2,
-    "created_at": "2016-08-26T18:36:09.988Z",
-    "request": {
-      "headers": {
-        "Content-Type": "application/json",
-        "User-Agent": "Basecamp3 Webhook",
-        "X-Request-Id": "d9ba7dae-2ee0-4a89-bace-b7bbbe1a30d9"
-      },
-      "body": {
-        "id": 9007199254741828,
-        "kind": "todo_completed",
-        "details": { },
-        "created_at": "2016-08-26T13:36:07.345-05:00",
-        "recording": {
-          "id": 9007199254741036,
-          "status": "active",
-          "created_at": "2016-08-05T15:02:19.588-05:00",
-          "updated_at": "2016-08-26T13:36:07.340-05:00",
-          "title": "Add Leto folks to Basecamp",
-          "inherits_status": true,
-          "type": "Todo",
-          "url": "http://bc3-api.dev/195539477/buckets/2085958495/todos/9007199254741036.json",
-          "app_url": "http://bc3.dev/195539477/buckets/2085958495/todos/9007199254741036",
-          "parent": {
-            "id": 9007199254741034,
-            "title": "Project stuff",
-            "type": "Todolist",
-            "url": "http://bc3-api.dev/195539477/buckets/2085958495/todolists/9007199254741034.json",
-            "app_url": "http://bc3.dev/195539477/buckets/2085958495/todolists/9007199254741034"
-          },
-          "bucket": {
-            "id": 2085958495,
-            "name": "Annie's Corner",
-            "type": "Project"
-          },
-          "content": "Add Leto folks to Basecamp"
-        }
-      }
-    },
-    "response": {
-      "code": 200,
-      "headers": {
-        "Content-Type": "text/html;charset=utf-8",
-        "Content-Length": "0"
-      },
-      "message": "OK",
-      "body": ""
-    }
-  }
-]
+  "id": 1051369971,
+  "active": true,
+  "created_at": "2026-01-31T08:38:45.916Z",
+  "updated_at": "2026-01-31T08:38:45.916Z",
+  "payload_url": "https://example.com/endpoint",
+  "types": [
+    "all"
+  ],
+  "url": "https://3.basecampapi.com/195539477/buckets/2085958504/webhooks/1051369971.json",
+  "app_url": "https://3.basecamp.com/195539477/buckets/2085958504/webhooks/1051369971",
+  "recent_deliveries": []
 }
 ```
 <!-- END GET /buckets/1/webhooks/3.json -->
@@ -359,7 +304,9 @@ Create a webhook
 **Required parameters**: `payload_url` for the HTTPS url that Basecamp should call.
 _Optional parameters_: `types` as an array of types, options given in the introduction.
 
-This endpoint will return `201 Created` with the current JSON representation of the vault if the creation was a success. See the [Get a webhook](#get-a-webhook) endpoint for more info on the payload.
+This endpoint will return `201 Created` with the current JSON representation of the webhook if the creation was a success. See the [Get a webhook](#get-a-webhook) endpoint for more info on the payload.
+
+This endpoint will return `400 Bad Request` if the payload URL is not a valid HTTPS URL or other validation errors occur. It will return `507 Insufficient Storage` if the account has reached its webhook limit.
 
 ###### Example JSON Request
 
@@ -387,6 +334,8 @@ Update a webhook
 _Optional parameters_: `types` as an array of types, options given in the introduction. `active` as a boolean whether this webhook should be matching.
 
 This endpoint will return `200 OK` with the current JSON representation of the webhook if the update was a success. See the [Get a webhook](#get-a-webhook) endpoint for more info on the payload.
+
+This endpoint will return `400 Bad Request` if the payload URL is not a valid HTTPS URL or other validation errors occur.
 
 ###### Example JSON Request
 

@@ -29,69 +29,68 @@ This endpoint without any parameters returns only active, pending (i.e. not comp
 ```json
 [
   {
-    "id": 1069479521,
+    "id": 1069479574,
     "status": "active",
     "visible_to_clients": false,
-    "created_at": "2022-12-11T12:43:58.169Z",
-    "updated_at": "2022-12-11T12:43:58.169Z",
+    "created_at": "2026-01-15T06:18:00.000Z",
+    "updated_at": "2026-01-15T06:18:00.000Z",
     "title": "Go cutting edge: iOS8 and Android 4.5 only",
     "inherits_status": true,
     "type": "Todo",
-    "url": "https://3.basecampapi.com/195539477/buckets/2085958499/todos/1069479521.json",
-    "app_url": "https://3.basecamp.com/195539477/buckets/2085958499/todos/1069479521",
-    "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7CEkiCGdpZAY6BkVUSSIuZ2lkOi8vYmMzL1JlY29yZGluZy8xMDY5NDc5NTIxP2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg1yZWFkYWJsZQY7AFRJIg9leHBpcmVzX2F0BjsAVDA=--ca42d4aed48383928eedbeb305bbc7667ce0418e.json",
-    "subscription_url": "https://3.basecampapi.com/195539477/buckets/2085958499/recordings/1069479521/subscription.json",
+    "url": "https://3.basecampapi.com/195539477/buckets/2085958504/todos/1069479574.json",
+    "app_url": "https://3.basecamp.com/195539477/buckets/2085958504/todos/1069479574",
+    "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiLmdpZDovL2JjMy9SZWNvcmRpbmcvMTA2OTQ3OTU3ND9leHBpcmVzX2luBjsAVEkiCHB1cgY7AFRJIg1yZWFkYWJsZQY7AFQ=--902c7ca4798684fca5b9fe7621a760f4a0d432cd.json",
+    "subscription_url": "https://3.basecampapi.com/195539477/buckets/2085958504/recordings/1069479574/subscription.json",
     "comments_count": 0,
-    "comments_url": "https://3.basecampapi.com/195539477/buckets/2085958499/recordings/1069479521/comments.json",
+    "comments_url": "https://3.basecampapi.com/195539477/buckets/2085958504/recordings/1069479574/comments.json",
     "position": 1,
     "parent": {
-      "id": 1069479520,
+      "id": 1069479573,
       "title": "Strategy ideas",
       "type": "Todolist",
-      "url": "https://3.basecampapi.com/195539477/buckets/2085958499/todolists/1069479520.json",
-      "app_url": "https://3.basecamp.com/195539477/buckets/2085958499/todolists/1069479520"
+      "url": "https://3.basecampapi.com/195539477/buckets/2085958504/todolists/1069479573.json",
+      "app_url": "https://3.basecamp.com/195539477/buckets/2085958504/todolists/1069479573"
     },
     "bucket": {
-      "id": 2085958499,
+      "id": 2085958504,
       "name": "The Leto Laptop",
       "type": "Project"
     },
     "creator": {
-      "id": 1049715915,
-      "attachable_sgid": "BAh7CEkiCGdpZAY6BkVUSSIrZ2lkOi8vYmMzL1BlcnNvbi8xMDQ5NzE1OTE1P2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg9hdHRhY2hhYmxlBjsAVEkiD2V4cGlyZXNfYXQGOwBUMA==--aeb392ebf54ffd820e45f27add22bae3a8c7da56",
+      "id": 1049715938,
+      "attachable_sgid": "BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiK2dpZDovL2JjMy9QZXJzb24vMTA0OTcxNTkzOD9leHBpcmVzX2luBjsAVEkiCHB1cgY7AFRJIg9hdHRhY2hhYmxlBjsAVA==--4ccc567a0a3b10e354bca909b704637b601f0b16",
       "name": "Annie Bryan",
       "email_address": "annie@honchodesign.com",
       "personable_type": "User",
       "title": "Central Markets Manager",
       "bio": "To open a store is easy, to keep it open is an art",
       "location": null,
-      "created_at": "2022-11-22T08:23:21.911Z",
-      "updated_at": "2022-11-22T08:23:21.911Z",
+      "created_at": "2026-01-31T08:29:42.795Z",
+      "updated_at": "2026-01-31T08:29:42.795Z",
       "admin": false,
       "owner": false,
       "client": false,
       "employee": true,
       "time_zone": "America/Chicago",
-      "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBMtkkT4=--9927c47a4cbee30a7f9aea667882496aba799149/avatar?v=1",
+      "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBOJkkT4=--732a71fbd28ec10d9bf4466abd3588a8bea40bdb/avatar?v=1",
       "company": {
         "id": 1033447817,
         "name": "Honcho Design"
       },
+      "can_ping": true,
       "can_manage_projects": true,
-      "can_manage_people": true
+      "can_manage_people": true,
+      "can_access_timesheet": true,
+      "can_access_hill_charts": true
     },
     "description": "",
     "completed": false,
     "content": "Go cutting edge: iOS8 and Android 4.5 only",
     "starts_on": null,
     "due_on": null,
-    "assignees": [
-
-    ],
-    "completion_subscribers": [
-
-    ],
-    "completion_url": "https://3.basecampapi.com/195539477/buckets/2085958499/todos/1069479521/completion.json"
+    "assignees": [],
+    "completion_subscribers": [],
+    "completion_url": "https://3.basecampapi.com/195539477/buckets/2085958504/todos/1069479574/completion.json"
   }
 ]
 ```
@@ -112,79 +111,85 @@ Get a to-do
 <!-- START GET /buckets/1/todos/2.json -->
 ```json
 {
-  "id": 1069479523,
+  "id": 1069479576,
   "status": "active",
   "visible_to_clients": false,
-  "created_at": "2022-12-11T13:25:58.169Z",
-  "updated_at": "2022-11-22T17:56:30.804Z",
+  "created_at": "2026-01-15T07:20:00.000Z",
+  "updated_at": "2026-02-01T02:53:46.582Z",
   "title": "Clear and simple UI",
   "inherits_status": true,
   "type": "Todo",
-  "url": "https://3.basecampapi.com/195539477/buckets/2085958499/todos/1069479523.json",
-  "app_url": "https://3.basecamp.com/195539477/buckets/2085958499/todos/1069479523",
-  "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7CEkiCGdpZAY6BkVUSSIuZ2lkOi8vYmMzL1JlY29yZGluZy8xMDY5NDc5NTIzP2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg1yZWFkYWJsZQY7AFRJIg9leHBpcmVzX2F0BjsAVDA=--7372f7af1010860331b2d7e0c9b55ab29e63f821.json",
-  "subscription_url": "https://3.basecampapi.com/195539477/buckets/2085958499/recordings/1069479523/subscription.json",
+  "url": "https://3.basecampapi.com/195539477/buckets/2085958504/todos/1069479576.json",
+  "app_url": "https://3.basecamp.com/195539477/buckets/2085958504/todos/1069479576",
+  "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiLmdpZDovL2JjMy9SZWNvcmRpbmcvMTA2OTQ3OTU3Nj9leHBpcmVzX2luBjsAVEkiCHB1cgY7AFRJIg1yZWFkYWJsZQY7AFQ=--11a40c121978ed499b97e8c9ed0d3bfc8632df41.json",
+  "subscription_url": "https://3.basecampapi.com/195539477/buckets/2085958504/recordings/1069479576/subscription.json",
   "comments_count": 0,
-  "comments_url": "https://3.basecampapi.com/195539477/buckets/2085958499/recordings/1069479523/comments.json",
+  "comments_url": "https://3.basecampapi.com/195539477/buckets/2085958504/recordings/1069479576/comments.json",
   "parent": {
-    "id": 1069479520,
+    "id": 1069479573,
     "title": "Strategy ideas",
     "type": "Todolist",
-    "url": "https://3.basecampapi.com/195539477/buckets/2085958499/todolists/1069479520.json",
-    "app_url": "https://3.basecamp.com/195539477/buckets/2085958499/todolists/1069479520"
+    "url": "https://3.basecampapi.com/195539477/buckets/2085958504/todolists/1069479573.json",
+    "app_url": "https://3.basecamp.com/195539477/buckets/2085958504/todolists/1069479573"
   },
   "bucket": {
-    "id": 2085958499,
+    "id": 2085958504,
     "name": "The Leto Laptop",
     "type": "Project"
   },
   "creator": {
-    "id": 1049715915,
-    "attachable_sgid": "BAh7CEkiCGdpZAY6BkVUSSIrZ2lkOi8vYmMzL1BlcnNvbi8xMDQ5NzE1OTE1P2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg9hdHRhY2hhYmxlBjsAVEkiD2V4cGlyZXNfYXQGOwBUMA==--aeb392ebf54ffd820e45f27add22bae3a8c7da56",
+    "id": 1049715938,
+    "attachable_sgid": "BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiK2dpZDovL2JjMy9QZXJzb24vMTA0OTcxNTkzOD9leHBpcmVzX2luBjsAVEkiCHB1cgY7AFRJIg9hdHRhY2hhYmxlBjsAVA==--4ccc567a0a3b10e354bca909b704637b601f0b16",
     "name": "Annie Bryan",
     "email_address": "annie@honchodesign.com",
     "personable_type": "User",
     "title": "Central Markets Manager",
     "bio": "To open a store is easy, to keep it open is an art",
     "location": null,
-    "created_at": "2022-11-22T08:23:21.911Z",
-    "updated_at": "2022-11-22T08:23:21.911Z",
+    "created_at": "2026-01-31T08:29:42.795Z",
+    "updated_at": "2026-01-31T08:29:42.795Z",
     "admin": false,
     "owner": false,
     "client": false,
     "employee": true,
     "time_zone": "America/Chicago",
-    "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBMtkkT4=--9927c47a4cbee30a7f9aea667882496aba799149/avatar?v=1",
+    "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBOJkkT4=--732a71fbd28ec10d9bf4466abd3588a8bea40bdb/avatar?v=1",
     "company": {
       "id": 1033447817,
       "name": "Honcho Design"
     },
+    "can_ping": true,
     "can_manage_projects": true,
-    "can_manage_people": true
+    "can_manage_people": true,
+    "can_access_timesheet": true,
+    "can_access_hill_charts": true
   },
   "description": "",
   "completed": true,
   "completion": {
-    "created_at": "2022-11-22T17:56:30.731Z",
+    "created_at": "2026-02-01T02:53:46.523Z",
     "creator": {
-      "id": 1049715937,
-      "attachable_sgid": "BAh7CEkiCGdpZAY6BkVUSSIrZ2lkOi8vYmMzL1BlcnNvbi8xMDQ5NzE1OTM3P2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg9hdHRhY2hhYmxlBjsAVEkiD2V4cGlyZXNfYXQGOwBUMA==--1255eb7c3d72232ea454ba0b42aaee71238c1d07",
+      "id": 1049715930,
+      "attachable_sgid": "BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiK2dpZDovL2JjMy9QZXJzb24vMTA0OTcxNTkzMD9leHBpcmVzX2luBjsAVEkiCHB1cgY7AFRJIg9hdHRhY2hhYmxlBjsAVA==--322099b137f9e0b6bc944b5b9fe7a2692da94814",
       "name": "Sharon Bradford",
       "email_address": "sharon@honchodesign.com",
       "personable_type": "User",
       "title": "Principal Branding Administrator",
       "bio": null,
       "location": null,
-      "created_at": "2022-11-22T08:23:22.231Z",
-      "updated_at": "2022-11-22T08:23:22.231Z",
+      "created_at": "2026-01-31T08:29:40.859Z",
+      "updated_at": "2026-01-31T08:29:40.859Z",
       "admin": false,
       "owner": false,
       "client": false,
       "employee": false,
-      "time_zone": "Etc/UTC",
-      "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBOFkkT4=--560f7fa1330d4341e3c089226bcb7fefb82dbfd1/avatar?v=1",
+      "time_zone": "America/Chicago",
+      "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBNpkkT4=--789594e5e542ab99e467a51c9dec0a9035abc0e0/avatar?v=1",
+      "can_ping": true,
       "can_manage_projects": true,
-      "can_manage_people": true
+      "can_manage_people": true,
+      "can_access_timesheet": true,
+      "can_access_hill_charts": true
     }
   },
   "content": "Clear and simple UI",
@@ -192,49 +197,55 @@ Get a to-do
   "due_on": null,
   "assignees": [
     {
-      "id": 1049715937,
-      "attachable_sgid": "BAh7CEkiCGdpZAY6BkVUSSIrZ2lkOi8vYmMzL1BlcnNvbi8xMDQ5NzE1OTM3P2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg9hdHRhY2hhYmxlBjsAVEkiD2V4cGlyZXNfYXQGOwBUMA==--1255eb7c3d72232ea454ba0b42aaee71238c1d07",
+      "id": 1049715930,
+      "attachable_sgid": "BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiK2dpZDovL2JjMy9QZXJzb24vMTA0OTcxNTkzMD9leHBpcmVzX2luBjsAVEkiCHB1cgY7AFRJIg9hdHRhY2hhYmxlBjsAVA==--322099b137f9e0b6bc944b5b9fe7a2692da94814",
       "name": "Sharon Bradford",
       "email_address": "sharon@honchodesign.com",
       "personable_type": "User",
       "title": "Principal Branding Administrator",
       "bio": null,
       "location": null,
-      "created_at": "2022-11-22T08:23:22.231Z",
-      "updated_at": "2022-11-22T08:23:22.231Z",
+      "created_at": "2026-01-31T08:29:40.859Z",
+      "updated_at": "2026-01-31T08:29:40.859Z",
       "admin": false,
       "owner": false,
       "client": false,
       "employee": false,
-      "time_zone": "Etc/UTC",
-      "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBOFkkT4=--560f7fa1330d4341e3c089226bcb7fefb82dbfd1/avatar?v=1",
+      "time_zone": "America/Chicago",
+      "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBNpkkT4=--789594e5e542ab99e467a51c9dec0a9035abc0e0/avatar?v=1",
+      "can_ping": true,
       "can_manage_projects": true,
-      "can_manage_people": true
+      "can_manage_people": true,
+      "can_access_timesheet": true,
+      "can_access_hill_charts": true
     }
   ],
   "completion_subscribers": [
     {
-      "id": 1049715937,
-      "attachable_sgid": "BAh7CEkiCGdpZAY6BkVUSSIrZ2lkOi8vYmMzL1BlcnNvbi8xMDQ5NzE1OTM3P2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg9hdHRhY2hhYmxlBjsAVEkiD2V4cGlyZXNfYXQGOwBUMA==--1255eb7c3d72232ea454ba0b42aaee71238c1d07",
+      "id": 1049715930,
+      "attachable_sgid": "BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiK2dpZDovL2JjMy9QZXJzb24vMTA0OTcxNTkzMD9leHBpcmVzX2luBjsAVEkiCHB1cgY7AFRJIg9hdHRhY2hhYmxlBjsAVA==--322099b137f9e0b6bc944b5b9fe7a2692da94814",
       "name": "Sharon Bradford",
       "email_address": "sharon@honchodesign.com",
       "personable_type": "User",
       "title": "Principal Branding Administrator",
       "bio": null,
       "location": null,
-      "created_at": "2022-11-22T08:23:22.231Z",
-      "updated_at": "2022-11-22T08:23:22.231Z",
+      "created_at": "2026-01-31T08:29:40.859Z",
+      "updated_at": "2026-01-31T08:29:40.859Z",
       "admin": false,
       "owner": false,
       "client": false,
       "employee": false,
-      "time_zone": "Etc/UTC",
-      "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBOFkkT4=--560f7fa1330d4341e3c089226bcb7fefb82dbfd1/avatar?v=1",
+      "time_zone": "America/Chicago",
+      "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBNpkkT4=--789594e5e542ab99e467a51c9dec0a9035abc0e0/avatar?v=1",
+      "can_ping": true,
       "can_manage_projects": true,
-      "can_manage_people": true
+      "can_manage_people": true,
+      "can_access_timesheet": true,
+      "can_access_hill_charts": true
     }
   ],
-  "completion_url": "https://3.basecampapi.com/195539477/buckets/2085958499/todos/1069479523/completion.json"
+  "completion_url": "https://3.basecampapi.com/195539477/buckets/2085958504/todos/1069479576/completion.json"
 }
 ```
 <!-- END GET /buckets/1/todos/2.json -->
@@ -356,6 +367,10 @@ Reposition a to-do
 
 **Required parameters**: `position` greater than or equal to one.
 
+_Optional parameters_:
+
+* `parent_id` - the ID of a to-do list to move this to-do into. When provided, the to-do will be repositioned within the specified to-do list instead of its current parent.
+
 This endpoint will return `204 No Content` if the update was a success.
 
 ###### Example JSON Request
@@ -363,6 +378,15 @@ This endpoint will return `204 No Content` if the update was a success.
 ``` json
 {
   "position": 3
+}
+```
+
+To move a to-do to a different to-do list and set its position:
+
+``` json
+{
+  "position": 1,
+  "parent_id": 5
 }
 ```
 

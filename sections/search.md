@@ -23,30 +23,88 @@ curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -A 'MyApp (yourname@example.com
 ```
 
 ###### Example JSON Response
-
-``` json
+<!-- START GET /searches/metadata.json -->
+```json
 {
   "recording_search_types": [
-    { "key": null, "value": "Search Everything" },
-    { "key": "Attachment", "value": "Files & images" },
-    { "key": "Chat::Transcript", "value": "Chats" },
-    { "key": "Comment", "value": "Comments" },
-    { "key": "Document", "value": "Docs" },
-    { "key": "Kanban::Card", "value": "Card tables" },
-    { "key": "Message", "value": "Messages" },
-    { "key": "Question", "value": "Questions" },
-    { "key": "Schedule::Entry", "value": "Schedule events" },
-    { "key": "Todo", "value": "To-dos" },
-    { "key": "Vault", "value": "Folders" }
+    {
+      "key": null,
+      "value": "Search Everything"
+    },
+    {
+      "key": "Kanban::Card",
+      "value": "Card tables"
+    },
+    {
+      "key": "Chat::Transcript",
+      "value": "Chats"
+    },
+    {
+      "key": "Question",
+      "value": "Check-ins"
+    },
+    {
+      "key": "Client::Correspondence",
+      "value": "Client emails"
+    },
+    {
+      "key": "Comment",
+      "value": "Comments"
+    },
+    {
+      "key": "Document",
+      "value": "Documents"
+    },
+    {
+      "key": "Schedule::Entry",
+      "value": "Events"
+    },
+    {
+      "key": "Attachment",
+      "value": "Files"
+    },
+    {
+      "key": "Vault",
+      "value": "Folders"
+    },
+    {
+      "key": "Inbox::Forward",
+      "value": "Forwarded emails"
+    },
+    {
+      "key": "Message",
+      "value": "Messages"
+    },
+    {
+      "key": "Circle",
+      "value": "Pings"
+    },
+    {
+      "key": "Todo",
+      "value": "To-dos"
+    }
   ],
   "file_search_types": [
-    { "key": null, "value": "All files" },
-    { "key": "image", "value": "images" },
-    { "key": "video", "value": "videos" },
-    { "key": "document", "value": "documents" },
-    { "key": "audio", "value": "audio" },
-    { "key": "archive", "value": "archives" },
-    { "key": "other", "value": "other" }
+    {
+      "key": null,
+      "value": "All files"
+    },
+    {
+      "key": "Image",
+      "value": "Images"
+    },
+    {
+      "key": "Audio",
+      "value": "Audios"
+    },
+    {
+      "key": "Video",
+      "value": "Videos"
+    },
+    {
+      "key": "PDF",
+      "value": "PDFs"
+    }
   ],
   "default_creator_label": "by Anyone",
   "default_bucket_label": "Everywhere",
@@ -55,6 +113,7 @@ curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -A 'MyApp (yourname@example.com
   "default_type_label": "Search Everything"
 }
 ```
+<!-- END GET /searches/metadata.json -->
 
 Entries with `"key": null` represent the default "search everything" option. Omit the `type` or `file_type` parameter entirely to search without filtering.
 
@@ -85,68 +144,63 @@ curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -A 'MyApp (yourname@example.com
 ```
 
 ###### Example JSON Response
-
-``` json
+<!-- START GET /search.json -->
+```json
 [
   {
-    "id": 9007199254741620,
+    "id": 1069479707,
     "status": "active",
     "visible_to_clients": false,
-    "created_at": "2024-01-15T10:30:00.000Z",
-    "updated_at": "2024-01-15T10:30:00.000Z",
-    "title": "Fix authentication token expiry",
+    "created_at": "2026-01-26T20:17:00.000Z",
+    "updated_at": "2026-01-26T20:17:00.000Z",
+    "title": "Re: Final deliverables and launch are right around the corner",
     "inherits_status": true,
-    "type": "Todo",
-    "url": "https://3.basecampapi.com/999999999/buckets/2085958496/todos/9007199254741620.json",
-    "app_url": "https://3.basecamp.com/999999999/buckets/2085958496/todos/9007199254741620",
-    "bookmark_url": "https://3.basecampapi.com/999999999/my/bookmarks/BAh7CEkiCGdpZAY6BkVUSSIuZ2lkOi8vYmMzL1JlY29yZGluZy85MDA3MTk5MjU0NzQxNjIwP2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg1yZWFkYWJsZQY7AFRJIg9leHBpcmVzX2F0BjsAVDA=--aeb043c5d84c03f04f7dd573c6f57a9da29a77c7.json",
-    "subscription_url": "https://3.basecampapi.com/999999999/buckets/2085958496/recordings/9007199254741620/subscription.json",
-    "comments_count": 2,
-    "comments_url": "https://3.basecampapi.com/999999999/buckets/2085958496/recordings/9007199254741620/comments.json",
-    "content": null,
-    "description": null,
-    "plain_text_content": "Handle token refresh when the OAuth <em>authentication</em> token expires...",
+    "type": "Client::Reply",
+    "url": "https://3.basecampapi.com/195539477/buckets/2085958505/client/replies/1069479707.json",
+    "app_url": "https://3.basecamp.com/195539477/buckets/2085958505/client/correspondences/1069479702#__recording_1069479707",
+    "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiLmdpZDovL2JjMy9SZWNvcmRpbmcvMTA2OTQ3OTcwNz9leHBpcmVzX2luBjsAVEkiCHB1cgY7AFRJIg1yZWFkYWJsZQY7AFQ=--d3c4971ef90e14058095d73bcde20afe9cdf922b.json",
     "parent": {
-      "id": 9007199254741434,
-      "title": "Backend Tasks",
-      "type": "Todolist",
-      "url": "https://3.basecampapi.com/999999999/buckets/2085958496/todolists/9007199254741434.json",
-      "app_url": "https://3.basecamp.com/999999999/buckets/2085958496/todolists/9007199254741434"
+      "id": 1069479702,
+      "title": "Final deliverables and launch are right around the corner",
+      "type": "Client::Correspondence",
+      "url": "https://3.basecampapi.com/195539477/buckets/2085958505/client/correspondences/1069479702.json",
+      "app_url": "https://3.basecamp.com/195539477/buckets/2085958505/client/correspondences/1069479702"
     },
     "bucket": {
-      "id": 2085958496,
-      "name": "Backend Project",
+      "id": 2085958505,
+      "name": "The Leto Locator",
       "type": "Project"
     },
     "creator": {
-      "id": 1049715914,
-      "attachable_sgid": "BAh7CEkiCGdpZAY6BkVUSSIrZ2lkOi8vYmMzL1BlcnNvbi8xMDQ5NzE1OTE0P2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg9hdHRhY2hhYmxlBjsAVEkiD2V4cGlyZXNfYXQGOwBUMA==--aeb043c5d84c03f04f7dd573c6f57a9da29a77c7",
-      "name": "Annie Bryan",
-      "email_address": "annie@honchodesign.com",
+      "id": 1049715922,
+      "attachable_sgid": "BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiK2dpZDovL2JjMy9QZXJzb24vMTA0OTcxNTkyMj9leHBpcmVzX2luBjsAVEkiCHB1cgY7AFRJIg9hdHRhY2hhYmxlBjsAVA==--ed42dd1af36c4756554ffb2a20de4e019f0c28d3",
+      "name": "Jay Edmonds",
+      "email_address": "jay@honchodesign.com",
       "personable_type": "User",
-      "title": "Central Markets Manager",
-      "bio": "To open a store is easy, to keep it open is an art",
+      "title": "Internal Marketing Assistant",
+      "bio": null,
       "location": null,
-      "created_at": "2024-01-15T10:30:00.000Z",
-      "updated_at": "2024-01-15T10:30:00.000Z",
+      "created_at": "2026-01-31T08:29:36.692Z",
+      "updated_at": "2026-01-31T08:29:36.692Z",
       "admin": false,
       "owner": false,
       "client": false,
       "employee": false,
       "time_zone": "America/Chicago",
-      "avatar_url": "https://3.basecamp-static.com/...",
+      "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBNJkkT4=--6ef93d58440c2ed1fec4457e3eb5f09572e866a4/avatar?v=1",
       "can_ping": true,
       "can_manage_projects": true,
-      "can_manage_people": false
+      "can_manage_people": true,
+      "can_access_timesheet": true,
+      "can_access_hill_charts": true
     },
-    "starts_on": null,
-    "due_on": null,
-    "assignees": [],
-    "completion_subscribers": [],
-    "completion_url": "https://3.basecampapi.com/999999999/buckets/2085958496/todos/9007199254741620/completion.json"
+    "content": null,
+    "description": null,
+    "plain_text_content": "Leto team, let me just say it has been tremendous working with you. The success of this project is a reflection of your spirit and attitude throughout. Thank *you* guys."
   }
 ]
 ```
+<!-- END GET /search.json -->
 
 The `plain_text_content` field contains HTML with search terms wrapped in `<em>` tags for highlighting. Be sure to escape this content appropriately when rendering.
 

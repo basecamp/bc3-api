@@ -20,59 +20,62 @@ To get the inbox ID for a project, see the [Get inbox][3] endpoint.
 ```json
 [
   {
-    "id": 1069479031,
+    "id": 1069479085,
     "status": "active",
     "visible_to_clients": false,
-    "created_at": "2022-09-01T10:16:24.930Z",
-    "updated_at": "2022-09-01T10:16:24.930Z",
-    "title": "Fwd: Some technical details",
+    "created_at": "2026-01-31T08:30:27.890Z",
+    "updated_at": "2026-01-31T08:30:28.904Z",
+    "title": "Can we make the logo pop?",
     "inherits_status": true,
     "type": "Inbox::Forward",
-    "url": "https://3.basecampapi.com/195539477/buckets/2085958497/inbox_forwards/1069479031.json",
-    "app_url": "https://3.basecamp.com/195539477/buckets/2085958497/inbox_forwards/1069479031",
-    "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7CEkiCGdpZAY6BkVUSSIuZ2lkOi8vYmMzL1JlY29yZGluZy8xMDY5NDc5MDMxP2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg1yZWFkYWJsZQY7AFRJIg9leHBpcmVzX2F0BjsAVDA=--4891627f80344c55f5a27c306dff50d689e6cbf1.json",
-    "subscription_url": "https://3.basecampapi.com/195539477/buckets/2085958497/recordings/1069479031/subscription.json",
+    "url": "https://3.basecampapi.com/195539477/buckets/2085958502/inbox_forwards/1069479085.json",
+    "app_url": "https://3.basecamp.com/195539477/buckets/2085958502/inbox_forwards/1069479085",
+    "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiLmdpZDovL2JjMy9SZWNvcmRpbmcvMTA2OTQ3OTA4NT9leHBpcmVzX2luBjsAVEkiCHB1cgY7AFRJIg1yZWFkYWJsZQY7AFQ=--5dbe6f761324a7399d519608a8b79f9a518b791d.json",
+    "subscription_url": "https://3.basecampapi.com/195539477/buckets/2085958502/recordings/1069479085/subscription.json",
     "parent": {
-      "id": 1069478936,
+      "id": 1069478988,
       "title": "Email Forwards",
       "type": "Inbox",
-      "url": "https://3.basecampapi.com/195539477/buckets/2085958497/inboxes/1069478936.json",
-      "app_url": "https://3.basecamp.com/195539477/buckets/2085958497/inboxes/1069478936"
+      "url": "https://3.basecampapi.com/195539477/buckets/2085958502/inboxes/1069478988.json",
+      "app_url": "https://3.basecamp.com/195539477/buckets/2085958502/inboxes/1069478988"
     },
     "bucket": {
-      "id": 2085958497,
+      "id": 2085958502,
       "name": "Honcho Design Newsroom",
       "type": "Project"
     },
     "creator": {
-      "id": 1049715915,
-      "attachable_sgid": "BAh7CEkiCGdpZAY6BkVUSSIrZ2lkOi8vYmMzL1BlcnNvbi8xMDQ5NzE1OTE1P2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg9hdHRhY2hhYmxlBjsAVEkiD2V4cGlyZXNfYXQGOwBUMA==--aeb392ebf54ffd820e45f27add22bae3a8c7da56",
-      "name": "Annie Bryan",
-      "email_address": "annie@honchodesign.com",
+      "id": 1049715913,
+      "attachable_sgid": "BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiK2dpZDovL2JjMy9QZXJzb24vMTA0OTcxNTkxMz9leHBpcmVzX2luBjsAVEkiCHB1cgY7AFRJIg9hdHRhY2hhYmxlBjsAVA==--e627c45e6b34e08862da23906862412620e4d5d9",
+      "name": "Victor Cooper",
+      "email_address": "victor@honchodesign.com",
       "personable_type": "User",
-      "title": "Central Markets Manager",
-      "bio": "To open a store is easy, to keep it open is an art",
-      "location": null,
-      "created_at": "2022-11-22T08:23:21.911Z",
-      "updated_at": "2022-11-22T08:23:21.911Z",
-      "admin": false,
-      "owner": false,
+      "title": "Chief Strategist",
+      "bio": "Don’t let your dreams be dreams",
+      "location": "Chicago, IL",
+      "created_at": "2026-01-31T08:29:28.365Z",
+      "updated_at": "2026-01-31T08:29:32.599Z",
+      "admin": true,
+      "owner": true,
       "client": false,
       "employee": true,
       "time_zone": "America/Chicago",
-      "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBMtkkT4=--9927c47a4cbee30a7f9aea667882496aba799149/avatar?v=1",
+      "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBMlkkT4=--5fe7b70fbee7a7f0e2e1e19df7579e5d880c753d/avatar?v=1",
       "company": {
         "id": 1033447817,
         "name": "Honcho Design"
       },
+      "can_ping": true,
       "can_manage_projects": true,
-      "can_manage_people": true
+      "can_manage_people": true,
+      "can_access_timesheet": true,
+      "can_access_hill_charts": true
     },
-    "content": "---------- Forwarded message ----------\nFrom: \"Beth Allen\" \nDate: Oct 13, 2013 1:38 PM\nSubject: Some technical details\nTo: \"Annie Bryan\" \n\nHey Team Honcho,\n\nJust wanted to let you know I'm a big fan of your blog. Your writing is so inspiring. Thanks for sharing!",
-    "subject": "Fwd: Some technical details",
-    "from": "beth@letobrand.com",
-    "replies_count": 0,
-    "replies_url": "https://3.basecampapi.com/195539477/buckets/2085958497/inbox_forwards/1069479031/replies.json"
+    "content": "---------- Forwarded message ---------- From: \"Henry Bowman\"  Date: Oct 15, 2013 1:13 AM Subject: Can we make the logo pop? To: \"Victor Cooper\"  Hey Victor, I know it's late at night, but I had a quick thought about the logo. It feels, I dunno, flat. Is there anything you could do to make it pop? I'm thinking it needs more sizzle. More... SOMETHING. Maybe we could try adding a rainbow? Let's take a look mid-day tomorrow and re-group with the rest of the team. Cheers, Henry",
+    "subject": "Can we make the logo pop?",
+    "from": null,
+    "replies_count": 2,
+    "replies_url": "https://3.basecampapi.com/195539477/buckets/2085958502/inbox_forwards/1069479085/replies.json"
   }
 ]
 ```
@@ -94,59 +97,62 @@ Get a forward
 <!-- START GET /buckets/1/inbox_forwards/2.json -->
 ```json
 {
-  "id": 1069479032,
+  "id": 1069479084,
   "status": "active",
   "visible_to_clients": false,
-  "created_at": "2022-09-01T09:04:24.930Z",
-  "updated_at": "2022-11-22T08:23:32.496Z",
-  "title": "Fwd: Can we make the logo pop?",
+  "created_at": "2026-01-31T08:30:27.536Z",
+  "updated_at": "2026-01-31T08:30:27.564Z",
+  "title": "Some technical details",
   "inherits_status": true,
   "type": "Inbox::Forward",
-  "url": "https://3.basecampapi.com/195539477/buckets/2085958497/inbox_forwards/1069479032.json",
-  "app_url": "https://3.basecamp.com/195539477/buckets/2085958497/inbox_forwards/1069479032",
-  "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7CEkiCGdpZAY6BkVUSSIuZ2lkOi8vYmMzL1JlY29yZGluZy8xMDY5NDc5MDMyP2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg1yZWFkYWJsZQY7AFRJIg9leHBpcmVzX2F0BjsAVDA=--22643a88456d69fada6fdb7e215bdc16aaa20b84.json",
-  "subscription_url": "https://3.basecampapi.com/195539477/buckets/2085958497/recordings/1069479032/subscription.json",
+  "url": "https://3.basecampapi.com/195539477/buckets/2085958502/inbox_forwards/1069479084.json",
+  "app_url": "https://3.basecamp.com/195539477/buckets/2085958502/inbox_forwards/1069479084",
+  "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiLmdpZDovL2JjMy9SZWNvcmRpbmcvMTA2OTQ3OTA4ND9leHBpcmVzX2luBjsAVEkiCHB1cgY7AFRJIg1yZWFkYWJsZQY7AFQ=--e82f515d3ab363490c1fe06e0d733db9d6f623e9.json",
+  "subscription_url": "https://3.basecampapi.com/195539477/buckets/2085958502/recordings/1069479084/subscription.json",
   "parent": {
-    "id": 1069478936,
+    "id": 1069478988,
     "title": "Email Forwards",
     "type": "Inbox",
-    "url": "https://3.basecampapi.com/195539477/buckets/2085958497/inboxes/1069478936.json",
-    "app_url": "https://3.basecamp.com/195539477/buckets/2085958497/inboxes/1069478936"
+    "url": "https://3.basecampapi.com/195539477/buckets/2085958502/inboxes/1069478988.json",
+    "app_url": "https://3.basecamp.com/195539477/buckets/2085958502/inboxes/1069478988"
   },
   "bucket": {
-    "id": 2085958497,
+    "id": 2085958502,
     "name": "Honcho Design Newsroom",
     "type": "Project"
   },
   "creator": {
-    "id": 1049715914,
-    "attachable_sgid": "BAh7CEkiCGdpZAY6BkVUSSIrZ2lkOi8vYmMzL1BlcnNvbi8xMDQ5NzE1OTE0P2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg9hdHRhY2hhYmxlBjsAVEkiD2V4cGlyZXNfYXQGOwBUMA==--ff006accb6e013cca785190fa38f42c091d24f1e",
-    "name": "Victor Cooper",
-    "email_address": "victor@honchodesign.com",
+    "id": 1049715938,
+    "attachable_sgid": "BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiK2dpZDovL2JjMy9QZXJzb24vMTA0OTcxNTkzOD9leHBpcmVzX2luBjsAVEkiCHB1cgY7AFRJIg9hdHRhY2hhYmxlBjsAVA==--4ccc567a0a3b10e354bca909b704637b601f0b16",
+    "name": "Annie Bryan",
+    "email_address": "annie@honchodesign.com",
     "personable_type": "User",
-    "title": "Chief Strategist",
-    "bio": "Don’t let your dreams be dreams",
-    "location": "Chicago, IL",
-    "created_at": "2022-11-22T08:23:21.732Z",
-    "updated_at": "2022-11-22T08:23:21.904Z",
-    "admin": true,
-    "owner": true,
+    "title": "Central Markets Manager",
+    "bio": "To open a store is easy, to keep it open is an art",
+    "location": null,
+    "created_at": "2026-01-31T08:29:42.795Z",
+    "updated_at": "2026-01-31T08:29:42.795Z",
+    "admin": false,
+    "owner": false,
     "client": false,
     "employee": true,
     "time_zone": "America/Chicago",
-    "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBMpkkT4=--5520caeec1845b5090bbfc993ffe8eca8d138e14/avatar?v=1",
+    "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBOJkkT4=--732a71fbd28ec10d9bf4466abd3588a8bea40bdb/avatar?v=1",
     "company": {
       "id": 1033447817,
       "name": "Honcho Design"
     },
+    "can_ping": true,
     "can_manage_projects": true,
-    "can_manage_people": true
+    "can_manage_people": true,
+    "can_access_timesheet": true,
+    "can_access_hill_charts": true
   },
-  "content": "---------- Forwarded message ----------\nFrom: \"Henry Bowman\" \nDate: Oct 15, 2013 1:13 AM\nSubject: Can we make the logo pop?\nTo: \"Victor Cooper\" \n\nHey Victor,\n\nI know it's late at night, but I had a quick thought about the logo. It feels, I dunno, flat. Is there anything you could do to make it pop? I'm thinking it needs more sizzle. More... SOMETHING. Maybe we could try adding a rainbow?\n\nLet's take a look mid-day tomorrow and re-group with the rest of the team.\n\nCheers,\nHenry",
-  "subject": "Fwd: Can we make the logo pop?",
-  "from": "henry@letobrand.com",
-  "replies_count": 2,
-  "replies_url": "https://3.basecampapi.com/195539477/buckets/2085958497/inbox_forwards/1069479032/replies.json"
+  "content": "---------- Forwarded message ---------- From: \"Beth Allen\"  Date: Oct 13, 2013 1:38 PM Subject: Some technical details To: \"Annie Bryan\"  Hey Team Honcho, Just wanted to let you know I'm a big fan of your blog. Your writing is so inspiring. Thanks for sharing!",
+  "subject": "Some technical details",
+  "from": null,
+  "replies_count": 0,
+  "replies_url": "https://3.basecampapi.com/195539477/buckets/2085958502/inbox_forwards/1069479084/replies.json"
 }
 ```
 <!-- END GET /buckets/1/inbox_forwards/2.json -->

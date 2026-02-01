@@ -16,58 +16,61 @@ Get client correspondences
 ```json
 [
   {
-    "id": 1069479645,
+    "id": 1069479702,
     "status": "active",
     "visible_to_clients": false,
-    "created_at": "2022-11-17T12:20:14.049Z",
-    "updated_at": "2022-11-22T08:24:20.989Z",
+    "created_at": "2026-01-26T18:32:00.000Z",
+    "updated_at": "2026-01-31T08:33:24.732Z",
     "title": "Final deliverables and launch are right around the corner",
     "inherits_status": true,
     "type": "Client::Correspondence",
-    "url": "https://3.basecampapi.com/195539477/buckets/2085958500/client/correspondences/1069479645.json",
-    "app_url": "https://3.basecamp.com/195539477/buckets/2085958500/client/correspondences/1069479645",
-    "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7CEkiCGdpZAY6BkVUSSIuZ2lkOi8vYmMzL1JlY29yZGluZy8xMDY5NDc5NjQ1P2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg1yZWFkYWJsZQY7AFRJIg9leHBpcmVzX2F0BjsAVDA=--b97572c6fc1a6421db18970bedae2ed70392d269.json",
-    "subscription_url": "https://3.basecampapi.com/195539477/buckets/2085958500/recordings/1069479645/subscription.json",
+    "url": "https://3.basecampapi.com/195539477/buckets/2085958505/client/correspondences/1069479702.json",
+    "app_url": "https://3.basecamp.com/195539477/buckets/2085958505/client/correspondences/1069479702",
+    "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiLmdpZDovL2JjMy9SZWNvcmRpbmcvMTA2OTQ3OTcwMj9leHBpcmVzX2luBjsAVEkiCHB1cgY7AFRJIg1yZWFkYWJsZQY7AFQ=--549ac000e6e0eac9d8df54b89a1c0a473ab78e57.json",
+    "subscription_url": "https://3.basecampapi.com/195539477/buckets/2085958505/recordings/1069479702/subscription.json",
     "parent": {
-      "id": 1069479564,
+      "id": 1069479620,
       "title": "The Clientside",
       "type": "Client::Board",
-      "url": "https://3.basecampapi.com/195539477/buckets/2085958500/client/board.json",
-      "app_url": "https://3.basecamp.com/195539477/buckets/2085958500/client/board.1069479564"
+      "url": "https://3.basecampapi.com/195539477/buckets/2085958505/client/board.json",
+      "app_url": "https://3.basecamp.com/195539477/buckets/2085958505/client/board.1069479620"
     },
     "bucket": {
-      "id": 2085958500,
+      "id": 2085958505,
       "name": "The Leto Locator",
       "type": "Project"
     },
     "creator": {
-      "id": 1049715915,
-      "attachable_sgid": "BAh7CEkiCGdpZAY6BkVUSSIrZ2lkOi8vYmMzL1BlcnNvbi8xMDQ5NzE1OTE1P2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg9hdHRhY2hhYmxlBjsAVEkiD2V4cGlyZXNfYXQGOwBUMA==--aeb392ebf54ffd820e45f27add22bae3a8c7da56",
+      "id": 1049715938,
+      "attachable_sgid": "BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiK2dpZDovL2JjMy9QZXJzb24vMTA0OTcxNTkzOD9leHBpcmVzX2luBjsAVEkiCHB1cgY7AFRJIg9hdHRhY2hhYmxlBjsAVA==--4ccc567a0a3b10e354bca909b704637b601f0b16",
       "name": "Annie Bryan",
       "email_address": "annie@honchodesign.com",
       "personable_type": "User",
       "title": "Central Markets Manager",
       "bio": "To open a store is easy, to keep it open is an art",
       "location": null,
-      "created_at": "2022-11-22T08:23:21.911Z",
-      "updated_at": "2022-11-22T08:23:21.911Z",
+      "created_at": "2026-01-31T08:29:42.795Z",
+      "updated_at": "2026-01-31T08:29:42.795Z",
       "admin": false,
       "owner": false,
       "client": false,
       "employee": true,
       "time_zone": "America/Chicago",
-      "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBMtkkT4=--9927c47a4cbee30a7f9aea667882496aba799149/avatar?v=1",
+      "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBOJkkT4=--732a71fbd28ec10d9bf4466abd3588a8bea40bdb/avatar?v=1",
       "company": {
         "id": 1033447817,
         "name": "Honcho Design"
       },
+      "can_ping": true,
       "can_manage_projects": true,
-      "can_manage_people": true
+      "can_manage_people": true,
+      "can_access_timesheet": true,
+      "can_access_hill_charts": true
     },
-    "content": "<div>Hey everyone - we're in the home stretch! It's hard to believe how far we've come in just about 6 weeks. We've made incredible progress - created an in depth strategy and plan of attack, built an awesome experience and design, and backed it with incredible technology. We're so thrilled to be nearing the finish line - not just that we did it, but the way we did it.<br><br>\n\n  Of course, we're not quite there yet so we don't want to start celebrating just yet . We're running through our final bug fixes and those should be done today. We'll want one more pass by legal to take a look. And then of course, one more eyeball from the Leto team. In fact, we're in such good shape, we could even launch the site as-is - it's really solid.<br><br>\n\n  Please let us know if there's anything else on your minds before launch, but just wanted to report back that we're in good shape and on target to launch on schedule!</div>",
+    "content": "",
     "subject": "Final deliverables and launch are right around the corner",
     "replies_count": 5,
-    "replies_url": "https://3.basecampapi.com/195539477/buckets/2085958500/client/recordings/1069479645/replies.json"
+    "replies_url": "https://3.basecampapi.com/195539477/buckets/2085958505/client/recordings/1069479702/replies.json"
   }
 ]
 ```
@@ -87,54 +90,57 @@ Get a client correspondence
 <!-- START GET /buckets/1/client/correspondences/2.json -->
 ```json
 {
-  "id": 1069479566,
+  "id": 1069479622,
   "status": "active",
   "visible_to_clients": false,
-  "created_at": "2022-10-09T09:22:14.049Z",
-  "updated_at": "2022-11-22T08:24:14.926Z",
+  "created_at": "2025-12-18T23:05:00.000Z",
+  "updated_at": "2026-01-31T08:33:03.644Z",
   "title": "Project kickoff!",
   "inherits_status": true,
   "type": "Client::Correspondence",
-  "url": "https://3.basecampapi.com/195539477/buckets/2085958500/client/correspondences/1069479566.json",
-  "app_url": "https://3.basecamp.com/195539477/buckets/2085958500/client/correspondences/1069479566",
-  "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7CEkiCGdpZAY6BkVUSSIuZ2lkOi8vYmMzL1JlY29yZGluZy8xMDY5NDc5NTY2P2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg1yZWFkYWJsZQY7AFRJIg9leHBpcmVzX2F0BjsAVDA=--fbfbc7c9428986404e1713f3335033f80b3c0313.json",
-  "subscription_url": "https://3.basecampapi.com/195539477/buckets/2085958500/recordings/1069479566/subscription.json",
+  "url": "https://3.basecampapi.com/195539477/buckets/2085958505/client/correspondences/1069479622.json",
+  "app_url": "https://3.basecamp.com/195539477/buckets/2085958505/client/correspondences/1069479622",
+  "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiLmdpZDovL2JjMy9SZWNvcmRpbmcvMTA2OTQ3OTYyMj9leHBpcmVzX2luBjsAVEkiCHB1cgY7AFRJIg1yZWFkYWJsZQY7AFQ=--05a942db8b0024e8a6f293a19b83d795cf079601.json",
+  "subscription_url": "https://3.basecampapi.com/195539477/buckets/2085958505/recordings/1069479622/subscription.json",
   "parent": {
-    "id": 1069479564,
+    "id": 1069479620,
     "title": "The Clientside",
     "type": "Client::Board",
-    "url": "https://3.basecampapi.com/195539477/buckets/2085958500/client/board.json",
-    "app_url": "https://3.basecamp.com/195539477/buckets/2085958500/client/board.1069479564"
+    "url": "https://3.basecampapi.com/195539477/buckets/2085958505/client/board.json",
+    "app_url": "https://3.basecamp.com/195539477/buckets/2085958505/client/board.1069479620"
   },
   "bucket": {
-    "id": 2085958500,
+    "id": 2085958505,
     "name": "The Leto Locator",
     "type": "Project"
   },
   "creator": {
-    "id": 1049715929,
-    "attachable_sgid": "BAh7CEkiCGdpZAY6BkVUSSIrZ2lkOi8vYmMzL1BlcnNvbi8xMDQ5NzE1OTI5P2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg9hdHRhY2hhYmxlBjsAVEkiD2V4cGlyZXNfYXQGOwBUMA==--d5a066a78ea37eba00e6590336eb23dd6717760b",
+    "id": 1049715922,
+    "attachable_sgid": "BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiK2dpZDovL2JjMy9QZXJzb24vMTA0OTcxNTkyMj9leHBpcmVzX2luBjsAVEkiCHB1cgY7AFRJIg9hdHRhY2hhYmxlBjsAVA==--ed42dd1af36c4756554ffb2a20de4e019f0c28d3",
     "name": "Jay Edmonds",
     "email_address": "jay@honchodesign.com",
     "personable_type": "User",
     "title": "Internal Marketing Assistant",
     "bio": null,
     "location": null,
-    "created_at": "2022-11-22T08:23:22.092Z",
-    "updated_at": "2022-11-22T08:23:22.092Z",
+    "created_at": "2026-01-31T08:29:36.692Z",
+    "updated_at": "2026-01-31T08:29:36.692Z",
     "admin": false,
     "owner": false,
     "client": false,
     "employee": false,
-    "time_zone": "Etc/UTC",
-    "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBNlkkT4=--0f3c77d8c13069d514fd3f0ad694a67e426bad0f/avatar?v=1",
+    "time_zone": "America/Chicago",
+    "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBNJkkT4=--6ef93d58440c2ed1fec4457e3eb5f09572e866a4/avatar?v=1",
+    "can_ping": true,
     "can_manage_projects": true,
-    "can_manage_people": true
+    "can_manage_people": true,
+    "can_access_timesheet": true,
+    "can_access_hill_charts": true
   },
-  "content": "<div>Hi everyone! Welcome to the Basecamp that we'll be using to collaboroate and manage the Leto Locator project.\n\n  We're particularly excited to bring on board our friends from Leto - Stephen, Miranda, and Beth. I know you guys have used Basecamp before, but so we're on the same page, we'll post a bunch of discussions, things for review, and todos to make sure we stay on the same page. We'll do our best to keep everyone looped in this way, instead of using email (which can be hard to keep people up to date on stuff.)\n\n  I also want to take a moment to introduce our team. It will be evolving and growing soon, but right now we've got some core team members: Myself as the Account Director, Annie as the Senior PM, Jared is our tech lead, Matt is our ACD, and Victor, of course, you know. A few people will be coming on to support us, but this will be your core team. You can, of course, reach out to any one of us at any time, but I'll ultimately be the one responsible for making sure you're happy with our work.\n\n  Again, can't tell you how excited we are to get started on this and all the other projects. Let's go, Leto!\n\n  -Jay</div>",
+  "content": "",
   "subject": "Project kickoff!",
-  "replies_count": 5,
-  "replies_url": "https://3.basecampapi.com/195539477/buckets/2085958500/client/recordings/1069479566/replies.json"
+  "replies_count": 6,
+  "replies_url": "https://3.basecampapi.com/195539477/buckets/2085958505/client/recordings/1069479622/replies.json"
 }
 ```
 <!-- END GET /buckets/1/client/correspondences/2.json -->

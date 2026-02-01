@@ -20,61 +20,91 @@ Get a column
 <!-- START GET /buckets/1/card_tables/columns/2.json -->
 ```json
 {
-  "id": 1069482092,
+  "id": 1069479400,
   "status": "active",
   "visible_to_clients": false,
-  "created_at": "2022-11-18T09:51:27.242Z",
-  "updated_at": "2022-11-18T09:51:41.806Z",
+  "created_at": "2026-01-31T08:32:04.760Z",
+  "updated_at": "2026-01-31T08:33:00.710Z",
   "title": "Triage",
   "inherits_status": true,
   "type": "Kanban::Triage",
-  "url": "https://3.basecampapi.com/195539477/buckets/2085958499/card_tables/columns/1069482092.json",
-  "app_url": "https://3.basecamp.com/195539477/buckets/2085958499/card_tables/columns/1069482092",
-  "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7CEkiCGdpZAY6BkVUSSIuZ2lkOi8vYmMzL1JlY29yZGluZy8xMDY5NDgyMDkyP2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg1yZWFkYWJsZQY7AFRJIg9leHBpcmVzX2F0BjsAVDA=--4e5003c6ebe9d448a770f00a1b3da52b6f668c65.json",
+  "url": "https://3.basecampapi.com/195539477/buckets/2085958504/card_tables/columns/1069479400.json",
+  "app_url": "https://3.basecamp.com/195539477/buckets/2085958504/card_tables/columns/1069479400",
+  "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiLmdpZDovL2JjMy9SZWNvcmRpbmcvMTA2OTQ3OTQwMD9leHBpcmVzX2luBjsAVEkiCHB1cgY7AFRJIg1yZWFkYWJsZQY7AFQ=--76b2dfcd8a8eea46097d4f1ce80acf09d339e6d2.json",
+  "subscription_url": "https://3.basecampapi.com/195539477/buckets/2085958504/recordings/1069479400/subscription.json",
   "parent": {
-    "id": 1069482091,
+    "id": 1069479399,
     "title": "Card Table",
     "type": "Kanban::Board",
-    "url": "https://3.basecampapi.com/195539477/buckets/2085958499/card_tables/1069482091.json",
-    "app_url": "https://3.basecamp.com/195539477/buckets/2085958499/card_tables/1069482091"
+    "url": "https://3.basecampapi.com/195539477/buckets/2085958504/card_tables/1069479399.json",
+    "app_url": "https://3.basecamp.com/195539477/buckets/2085958504/card_tables/1069479399"
   },
   "bucket": {
-    "id": 2085958499,
+    "id": 2085958504,
     "name": "The Leto Laptop",
     "type": "Project"
   },
   "creator": {
-    "id": 1049716070,
-    "attachable_sgid": "BAh7CEkiCGdpZAY6BkVUSSIrZ2lkOi8vYmMzL1BlcnNvbi8xMDQ5NzE2MDcwP2V4cGlyZXNfaW4GOwBUSSIMcHVycG9zZQY7AFRJIg9hdHRhY2hhYmxlBjsAVEkiD2V4cGlyZXNfYXQGOwBUMA==--5cfb1d97d8544362aa74062bc84b66fbf1d7a853",
+    "id": 1049715913,
+    "attachable_sgid": "BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiK2dpZDovL2JjMy9QZXJzb24vMTA0OTcxNTkxMz9leHBpcmVzX2luBjsAVEkiCHB1cgY7AFRJIg9hdHRhY2hhYmxlBjsAVA==--e627c45e6b34e08862da23906862412620e4d5d9",
     "name": "Victor Cooper",
     "email_address": "victor@honchodesign.com",
     "personable_type": "User",
     "title": "Chief Strategist",
     "bio": "Don’t let your dreams be dreams",
     "location": "Chicago, IL",
-    "created_at": "2022-11-18T09:50:54.566Z",
-    "updated_at": "2022-11-18T09:50:54.760Z",
+    "created_at": "2026-01-31T08:29:28.365Z",
+    "updated_at": "2026-01-31T08:29:32.599Z",
     "admin": true,
     "owner": true,
     "client": false,
     "employee": true,
     "time_zone": "America/Chicago",
-    "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBGZlkT4=--b295b0b432557d4a03760f78668284d4f39bf563/avatar?v=1",
+    "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBMlkkT4=--5fe7b70fbee7a7f0e2e1e19df7579e5d880c753d/avatar?v=1",
     "company": {
-      "id": 1033447825,
+      "id": 1033447817,
       "name": "Honcho Design"
     },
+    "can_ping": true,
     "can_manage_projects": true,
-    "can_manage_people": true
+    "can_manage_people": true,
+    "can_access_timesheet": true,
+    "can_access_hill_charts": true
   },
   "description": null,
   "subscribers": [
-
+    {
+      "id": 1049715913,
+      "attachable_sgid": "BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiK2dpZDovL2JjMy9QZXJzb24vMTA0OTcxNTkxMz9leHBpcmVzX2luBjsAVEkiCHB1cgY7AFRJIg9hdHRhY2hhYmxlBjsAVA==--e627c45e6b34e08862da23906862412620e4d5d9",
+      "name": "Victor Cooper",
+      "email_address": "victor@honchodesign.com",
+      "personable_type": "User",
+      "title": "Chief Strategist",
+      "bio": "Don’t let your dreams be dreams",
+      "location": "Chicago, IL",
+      "created_at": "2026-01-31T08:29:28.365Z",
+      "updated_at": "2026-01-31T08:29:32.599Z",
+      "admin": true,
+      "owner": true,
+      "client": false,
+      "employee": true,
+      "time_zone": "America/Chicago",
+      "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBMlkkT4=--5fe7b70fbee7a7f0e2e1e19df7579e5d880c753d/avatar?v=1",
+      "company": {
+        "id": 1033447817,
+        "name": "Honcho Design"
+      },
+      "can_ping": true,
+      "can_manage_projects": true,
+      "can_manage_people": true,
+      "can_access_timesheet": true,
+      "can_access_hill_charts": true
+    }
   ],
   "color": null,
   "cards_count": 1,
   "comment_count": 0,
-  "cards_url": "https://3.basecampapi.com/195539477/buckets/2085958499/card_tables/lists/1069482092/cards.json"
+  "cards_url": "https://3.basecampapi.com/195539477/buckets/2085958504/card_tables/lists/1069479400/cards.json"
 }
 ```
 <!-- END GET /buckets/1/card_tables/columns/2.json -->
@@ -152,7 +182,7 @@ _Optional parameters_:
 
 * `position` - index among the columns (ignoring Triage, Not Now or Done). Default: `1`
 
-This endpoint will return `204 No content` if the update was a success.
+This endpoint will return `204 No Content` if the update was a success.
 
 ###### Example JSON Request
 
@@ -176,7 +206,7 @@ Watch a column
 * `POST /buckets/1/card_tables/lists/2/subscription.json` starts watching the column with id `2` in the project with ID `1`.
 * `DELETE /buckets/1/card_tables/lists/2/subscription.json` stops watching the column with id `2` in the project with ID `1`.
 
-This endpoint will return `204 No content` if the update was a success.
+This endpoint will return `204 No Content` if the update was a success.
 
 ###### Copy as cURL
 ``` shell
@@ -196,7 +226,7 @@ Change on hold on a column
 * `POST /buckets/1/card_tables/columns/2/on_hold.json` creates an on_hold section in the column with ID `2` in the project with id `1`.
 * `DELETE /buckets/1/card_tables/columns/2/on_hold.json` removes an on_hold section in the column with ID `2` in the project with id `1`.
 
-This endpoint will return `200 Success` with the current JSON representation of the column if the operation was a success. See the [Get a column](#get-a-column) endpoint for more info on the payload.
+This endpoint will return `200 OK` with the current JSON representation of the column if the operation was a success. See the [Get a column](#get-a-column) endpoint for more info on the payload.
 
 ###### Copy as cURL
 
