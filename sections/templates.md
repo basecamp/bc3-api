@@ -113,7 +113,7 @@ _Optional parameters_:
 <!-- END GET /templates.json -->
 ###### Copy as cURL
 
-``` shell
+```shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/templates.json
 ```
 
@@ -213,7 +213,7 @@ Get a Template
 <!-- END GET /templates/1.json -->
 ###### Copy as cURL
 
-``` shell
+```shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/templates/1.json
 ```
 
@@ -225,7 +225,7 @@ Create a Template
 
 ###### Example JSON Request
 
-``` json
+```json
 {
   "name": "New Starter Checklist",
   "description": "Things every new starter should do"
@@ -234,7 +234,7 @@ Create a Template
 
 ###### Copy as cURL
 
-``` shell
+```shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" \
   -d '{"name":"New Starter Checklist","description":"Things every new starter should do in their first week"}' \
   https://3.basecampapi.com/$ACCOUNT_ID/templates.json
@@ -242,7 +242,7 @@ curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/j
 
 This will return `201 Created` with the current JSON representation of the Template if the creation was a success. See the [Get a Template](#get-a-template) endpoint for more info. Templates follow the same account limits as projects. If the account is on a free subscription and you're trying to create a new Template you'll see a `507 Insufficient Storage` and a response of:
 
-``` json
+```json
 {
   "error": "The project/team limit for this account has been reached."
 }
@@ -258,7 +258,7 @@ Update a Template
 
 ###### Example JSON Request
 
-``` json
+```json
 {
   "name": "New Starter First Week Checklist",
   "description": "Things every new starter should do in their first week"
@@ -269,7 +269,7 @@ This will return `200 OK` with the current JSON representation of the Template i
 
 ###### Copy as cURL
 
-``` shell
+```shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" \
   -d '{"name":"New Starter First Week Checklist","description":"Things every new starter should do in their first week"}' -X PUT \
   https://3.basecampapi.com/$ACCOUNT_ID/templates/2085958506.json
@@ -284,7 +284,7 @@ Trashed Templates will be deleted from Basecamp 4 after 30 days. No parameters r
 
 ###### Copy as cURL
 
-``` shell
+```shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" -X DELETE \
   https://3.basecampapi.com/$ACCOUNT_ID/templates/2085958507.json
 ```
@@ -299,7 +299,7 @@ To create a project given a template, you need to create a project construction.
 
 ###### Example JSON Request
 
-``` json
+```json
 {
   "project": {
     "name": "Marketing ",
@@ -310,7 +310,7 @@ To create a project given a template, you need to create a project construction.
 
 ###### Copy as cURL
 
-``` shell
+```shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" -d '{"project":{"name":"Marketing Campaign","description":"For Client: Xyz Corp Conference"}}' -X POST \
   https://3.basecampapi.com/$ACCOUNT_ID/templates/2085958507/project_constructions.json
 ```

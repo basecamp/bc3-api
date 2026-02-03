@@ -87,7 +87,7 @@ Get uploads
 <!-- END GET /buckets/1/vaults/2/uploads.json -->
 ###### Copy as cURL
 
-``` shell
+```shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/vaults/2/uploads.json
 ```
 
@@ -168,7 +168,7 @@ Get an upload
 
 ###### Copy as cURL
 
-``` shell
+```shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/uploads/2.json
 ```
 
@@ -187,7 +187,7 @@ This endpoint will return `201 Created` with the current JSON representation of 
 
 ###### Example JSON Request
 
-``` json
+```json
 {
   "attachable_sgid": "BAh2CEkiCGdpZAY6BkVUSSIsZ2lkOi7vYmMzL0F0dGFjaG1lbnQvNzM4NDcyNj9leHBpcmVzX2luBjsAVEkiDHB1cnBvc2UGOwBUSSIPYXR0YWNoYWJsZQY7AFRJIg9leHBpcmVzX2F0BjsAVDA=--13982201abe18044c897e32979c7dccfe8add9c1",
   "description": "<div><strong>Yum</strong></div>",
@@ -197,7 +197,7 @@ This endpoint will return `201 Created` with the current JSON representation of 
 
 ###### Copy as cURL
 
-``` shell
+```shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" \
   -d '{"attachable_sgid":"BAh…9c1","description":"<div><strong>Yum</strong></div>","base_name":"yummy_pizza"}' \
   https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/vaults/2/uploads.json
@@ -212,7 +212,7 @@ This endpoint will return `200 OK` with the current JSON representation of the u
 
 ###### Example JSON Request
 
-``` json
+```json
 {
   "description": "<div>Meh</div>",
   "base_name": "old_pizza"
@@ -221,7 +221,7 @@ This endpoint will return `200 OK` with the current JSON representation of the u
 
 ###### Copy as cURL
 
-``` shell
+```shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" \
   -d '{"description":"<div>Meh</div>","base_name":"old_pizza"}' -X PUT \
   https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/uploads/2.json

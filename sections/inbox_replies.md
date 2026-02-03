@@ -75,7 +75,7 @@ Get inbox replies
 <!-- END GET /buckets/1/inbox_forwards/2/replies.json -->
 ###### Copy as cURL
 
-``` shell
+```shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/inbox_forwards/2/replies.json
 ```
 
@@ -140,7 +140,7 @@ Get an inbox reply
 <!-- END GET /buckets/1/inbox_forwards/2/replies/3.json -->
 ###### Copy as cURL
 
-``` shell
+```shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/inbox_forwards/2/replies/3.json
 ```
 

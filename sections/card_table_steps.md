@@ -30,7 +30,7 @@ This endpoint will return `201 Created` with the current JSON representation of 
 
 ###### Example JSON Request
 
-``` json
+```json
 {
   "title": "Inspiration",
   "due_on": "2021-01-01",
@@ -40,7 +40,7 @@ This endpoint will return `201 Created` with the current JSON representation of 
 
 ###### Copy as cURL
 
-``` shell
+```shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" \
   -d '{"title": "Inspiration", "due_on": "2021-01-01", "assignees": "30068628,270913789"}' \
   https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/card_tables/cards/2/steps.json
@@ -61,7 +61,7 @@ This endpoint will return `200 OK` with the current JSON representation of the s
 
 ###### Example JSON Request
 
-``` json
+```json
 {
   "title": "Updated inspiration"
 }
@@ -69,7 +69,7 @@ This endpoint will return `200 OK` with the current JSON representation of the s
 
 ###### Copy as cURL
 
-``` shell
+```shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" \
   -d '{"title": "Updated inspiration"}' -X PUT \
   https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/card_tables/steps/2.json
@@ -88,7 +88,7 @@ This endpoint will return `200 OK` with the current JSON representation of the s
 
 ###### Example JSON Request
 
-``` json
+```json
 {
   "completion": "on"
 }
@@ -96,7 +96,7 @@ This endpoint will return `200 OK` with the current JSON representation of the s
 
 ###### Copy as cURL
 
-``` shell
+```shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" \
   -d '{"completion": "on"}' -X PUT \
   https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/card_tables/steps/2/completions.json
@@ -116,14 +116,14 @@ This endpoint will return `204 No Content` if successful.
 
 ###### Example JSON Request
 
-``` json
+```json
 {
   "source_id": 3,
   "position": 4
 }
 ```
 
-``` shell
+```shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" \
   -d '{"source_id": 3, "position": 4}' -X POST \
   https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/card_tables/cards/2/positions.json

@@ -77,7 +77,7 @@ Get client correspondences
 <!-- END GET /buckets/1/client/correspondences.json -->
 ###### Copy as cURL
 
-``` shell
+```shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/client/correspondences.json
 ```
 
@@ -146,7 +146,7 @@ Get a client correspondence
 <!-- END GET /buckets/1/client/correspondences/2.json -->
 ###### Copy as cURL
 
-``` shell
+```shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/client/correspondences/2.json
 ```
 

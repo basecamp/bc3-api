@@ -70,7 +70,7 @@ To get the questionnaire ID for a project, see the [Get a Project][project] endp
 
 ###### Copy as cURL
 
-``` shell
+```shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/questionnaires/2.json
 ```
 

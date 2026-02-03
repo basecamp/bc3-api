@@ -21,7 +21,7 @@ This endpoint will return `201 Created` with an empty response body.
 
 ###### Example JSON Request
 
-``` json
+```json
 {
   "name": "Anniversary",
   "date": "2021-01-01"
@@ -30,7 +30,7 @@ This endpoint will return `201 Created` with an empty response body.
 
 ###### Copy as cURL
 
-``` shell
+```shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" \
   -d '{"name": "Anniversary", "date": "2021-01-01"}' \
   https://3.basecampapi.com/$ACCOUNT_ID/lineup/markers.json
@@ -50,7 +50,7 @@ This endpoint will return `200 OK` with an empty response body.
 
 ###### Example JSON Request
 
-``` json
+```json
 {
   "name": "Updated anniversary"
 }
@@ -58,7 +58,7 @@ This endpoint will return `200 OK` with an empty response body.
 
 ###### Copy as cURL
 
-``` shell
+```shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" \
   -d '{"name": "Updated anniversary"}' -X PUT \
   https://3.basecampapi.com/$ACCOUNT_ID/lineup/markers/1.json
@@ -73,7 +73,7 @@ This endpoint will return `204 No Content`.
 
 ###### Copy as cURL
 
-``` shell
+```shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" \
   -X DELETE \
   https://3.basecampapi.com/$ACCOUNT_ID/lineup/markers/1.json

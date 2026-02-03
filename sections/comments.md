@@ -74,7 +74,7 @@ Get comments
 <!-- END GET /buckets/1/recordings/3/comments.json -->
 ###### Copy as cURL
 
-``` shell
+```shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/recordings/3/comments.json
 ```
 
@@ -144,7 +144,7 @@ Get a comment
 <!-- END GET /buckets/1/comments/2.json -->
 ###### Copy as cURL
 
-``` shell
+```shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/comment/2.json
 ```
 
@@ -162,7 +162,7 @@ This endpoint will return `201 Created` with the current JSON representation of 
 
 ###### Example JSON Request
 
-``` json
+```json
 {
   "content": "<div><em>Wow!</em> That is cool.</div>",
 }
@@ -170,7 +170,7 @@ This endpoint will return `201 Created` with the current JSON representation of 
 
 ###### Copy as cURL
 
-``` shell
+```shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" \
   -d '{"content":"<div><em>Wow!</em> That is cool.</div>"}' \
   https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/recordings/3/comments.json
@@ -186,7 +186,7 @@ This endpoint will return `200 OK` with the current JSON representation of the m
 
 ###### Example JSON Request
 
-``` json
+```json
 {
   "content": "<div><em>No way!</em> That isn't cool at all.</div>"
 }
@@ -194,7 +194,7 @@ This endpoint will return `200 OK` with the current JSON representation of the m
 
 ###### Copy as cURL
 
-``` shell
+```shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" \
   -d '{"content":"<div><em>No way!</em> That isn't cool at all.</div>"}' -X PUT \
   https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/messages/2.json

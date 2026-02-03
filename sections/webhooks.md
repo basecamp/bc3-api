@@ -261,7 +261,7 @@ Get webhooks
 <!-- END GET /buckets/1/webhooks.json -->
 ###### Copy as cURL
 
-``` shell
+```shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/webhooks.json
 ```
 
@@ -292,7 +292,7 @@ The recent deliveries array will contain the 25 most recent delivery exchanges, 
 <!-- END GET /buckets/1/webhooks/3.json -->
 ###### Copy as cURL
 
-``` shell
+```shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/webhooks/3.json
 ```
 
@@ -310,7 +310,7 @@ This endpoint will return `400 Bad Request` if the payload URL is not a valid HT
 
 ###### Example JSON Request
 
-``` json
+```json
 {
   "payload_url": "https://example.com/endpoint",
   "types": [ "Todo", "Todolist" ]
@@ -319,7 +319,7 @@ This endpoint will return `400 Bad Request` if the payload URL is not a valid HT
 
 ###### Copy as cURL
 
-``` shell
+```shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" \
   -d '{"payload_url":"https://example.com/endpoint","types":["Todo","Todolist"]}' \
   https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/webhooks.json
@@ -339,7 +339,7 @@ This endpoint will return `400 Bad Request` if the payload URL is not a valid HT
 
 ###### Example JSON Request
 
-``` json
+```json
 {
   "payload_url": "https://example.com/endpoint",
   "types": ["Todo", "Todolist"],
@@ -349,7 +349,7 @@ This endpoint will return `400 Bad Request` if the payload URL is not a valid HT
 
 ###### Copy as cURL
 
-``` shell
+```shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" \
   -d '{"payload_url":"https://example.com/endpoint","types":["Todo","Todolist"],"active":true}' -X PUT \
   https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/webhooks/3.json
@@ -364,7 +364,7 @@ This endpoint will return `204 No Content` if the destroy was a success.
 
 ###### Copy as cURL
 
-``` shell
+```shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -X DELETE \
   https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/webhooks/3.json
 ```

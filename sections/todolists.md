@@ -94,7 +94,7 @@ _Optional query parameters_:
 <!-- END GET /buckets/1/todosets/3/todolists.json -->
 ###### Copy as cURL
 
-``` shell
+```shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/todosets/3/todolists.json
 ```
 
@@ -176,7 +176,7 @@ Get a to-do list
 <!-- END GET /buckets/1/todolists/2.json -->
 ###### Copy as cURL
 
-``` shell
+```shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/todolists/2.json
 ```
 
@@ -194,7 +194,7 @@ This endpoint will return `201 Created` with the current JSON representation of 
 
 ###### Example JSON Request
 
-``` json
+```json
 {
   "name": "Launch",
   "description": "<div><em>Finish it!</em></div>"
@@ -203,7 +203,7 @@ This endpoint will return `201 Created` with the current JSON representation of 
 
 ###### Copy as cURL
 
-``` shell
+```shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" \
   -d '{"name":"Launch","description":"<div><em>Finish it!</em></div>"}' \
   https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/todosets/3/todolists.json
@@ -225,7 +225,7 @@ This endpoint will return `200 OK` with the current JSON representation of the t
 
 ###### Example JSON Request
 
-``` json
+```json
 {
   "name": "Relaunch",
   "description": "<div><strong>Try this again.</strong></div>"
@@ -234,7 +234,7 @@ This endpoint will return `200 OK` with the current JSON representation of the t
 
 ###### Copy as cURL
 
-``` shell
+```shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" \
   -d '{"name":"Relaunch","description":"<div><strong>Try this again.</strong></div>"}' -X PUT \
   https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/todolists/2.json

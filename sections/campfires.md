@@ -73,7 +73,7 @@ Get Campfires
 <!-- END GET /chats.json -->
 ###### Copy as cURL
 
-``` shell
+```shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/chats.json
 ```
 
@@ -138,7 +138,7 @@ Get a Campfire
 <!-- END GET /buckets/1/chats/2.json -->
 ###### Copy as cURL
 
-``` shell
+```shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/chats/2.json
 ```
 
@@ -205,7 +205,7 @@ Get Campfire lines
 <!-- END GET /buckets/1/chats/2/lines.json -->
 ###### Copy as cURL
 
-``` shell
+```shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/chats/2/lines.json
 ```
 
@@ -270,7 +270,7 @@ Get a Campfire line
 <!-- END GET /buckets/1/chats/2/lines/3.json -->
 ###### Copy as cURL
 
-``` shell
+```shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/chats/2/lines/3.json
 ```
 
@@ -285,7 +285,7 @@ This endpoint will return `201 Created` with the current JSON representation of 
 
 ###### Example JSON Request
 
-``` json
+```json
 {
   "content": "Good morning"
 }
@@ -293,7 +293,7 @@ This endpoint will return `201 Created` with the current JSON representation of 
 
 ###### Copy as cURL
 
-``` shell
+```shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" \
   -d '{"content":"Good morning"}' \
   https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/chats/2/lines.json
@@ -308,7 +308,7 @@ Returns `204 No Content` if successful.
 
 ###### Copy as cURL
 
-``` shell
+```shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/chats/2/lines/3.json
 ```
 

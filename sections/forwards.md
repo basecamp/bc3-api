@@ -83,7 +83,7 @@ To get the inbox ID for a project, see the [Get inbox][3] endpoint.
 
 ###### Copy as cURL
 
-``` shell
+```shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/inboxes/3/forwards.json
 ```
 
@@ -159,7 +159,7 @@ Get a forward
 
 ###### Copy as cURL
 
-``` shell
+```shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/inbox_forwards/2.json
 ```
 

@@ -221,7 +221,7 @@ _Optional parameters_:
 <!-- END GET /projects.json -->
 ###### Copy as cURL
 
-``` shell
+```shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/projects.json
 ```
 
@@ -332,7 +332,7 @@ The `dock` key contains an array of the current tools for this project. The `ena
 <!-- END GET /projects/1.json -->
 ###### Copy as cURL
 
-``` shell
+```shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/projects/1.json
 ```
 
@@ -344,7 +344,7 @@ Create a project
 
 ###### Example JSON Request
 
-``` json
+```json
 {
   "name": "Marketing Campaign",
   "description": "For Client: Xyz Corp Conference"
@@ -353,7 +353,7 @@ Create a project
 
 This will return `201 Created` with the current JSON representation of the project if the creation was a success. See the [Get a project](#get-a-project) endpoint for more info. If the account is on a free subscription and you're trying to create a new project you'll see a `507 Insufficient Storage` and a response of:
 
-``` json
+```json
 {
   "error": "The project limit for this account has been reached."
 }
@@ -363,7 +363,7 @@ If you hit that error, the user will need to upgrade their subscription to any p
 
 ###### Copy as cURL
 
-``` shell
+```shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" \
   -d '{"name":"Marketing Campaign","description":"For Client: Xyz Corp Conference"}' \
   https://3.basecampapi.com/$ACCOUNT_ID/projects.json
@@ -392,7 +392,7 @@ _Optional parameters_:
 
 ###### Example JSON Request
 
-``` json
+```json
 {
   "name": "Marketing Campaign",
   "description": "For Client: Xyz Corp Conference",
@@ -408,7 +408,7 @@ This will return `200 OK` with the current JSON representation of the project if
 
 ###### Copy as cURL
 
-``` shell
+```shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" \
   -d '{"name":"Marketing Campaign for Xyz Corp","description":"2016-2017 Strategy"}' -X PUT \
   https://3.basecampapi.com/$ACCOUNT_ID/projects/2085958506.json
@@ -424,7 +424,7 @@ Trashed projects will be deleted from Basecamp 4 after 30 days. No parameters re
 
 ###### Copy as cURL
 
-``` shell
+```shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" -X DELETE \
   https://3.basecampapi.com/$ACCOUNT_ID/projects/2085958507.json
 ```

@@ -26,13 +26,13 @@ All URLs start with **`https://3.basecampapi.com/999999999/`**. URLs are HTTPS o
 
 To make a request for all the projects on your account, append the `projects` index path to the base URL to form something like `https://3.basecampapi.com/999999999/projects.json`. In cURL, it looks like this:
 
-``` shell
+```shell
 curl -H "Authorization: Bearer $ACCESS_TOKEN" -A 'MyApp (yourname@example.com)' https://3.basecampapi.com/999999999/projects.json
 ```
 
 To create something, it's the same idea, but you also have to include the `Content-Type` header and the JSON data:
 
-``` shell
+```shell
 curl -H "Authorization: Bearer $ACCESS_TOKEN" \
   -H 'Content-Type: application/json' \
   -A 'User-Agent: MyApp (yourname@example.com)' \
@@ -42,14 +42,14 @@ curl -H "Authorization: Bearer $ACCESS_TOKEN" \
 
 Throughout the Basecamp 4 API docs, we include "Copy as cURL" examples. To try the examples in your shell, copy your OAuth 2.0 access token into your clipboard and run:
 
-``` shell
+```shell
 export ACCESS_TOKEN=PASTE_ACCESS_TOKEN_HERE
 export ACCOUNT_ID=999999999
 ```
 
 Then you should be able to copy/paste any example from the docs. After pasting a cURL example, you can pipe it to a JSON pretty printer to make it more readable. Try [jsonpp](https://jmhodges.github.io/jsonpp/) or `json_pp` on OSX:
 
-``` shell
+```shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/999999999/projects.json | json_pp
 ```
 

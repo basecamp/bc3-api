@@ -38,7 +38,7 @@ Get message types
 
 ###### Copy as cURL
 
-``` shell
+```shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/categories.json
 ```
 
@@ -62,7 +62,7 @@ Get a message type
 
 ###### Copy as cURL
 
-``` shell
+```shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/categories/2.json
 ```
 
@@ -77,7 +77,7 @@ This endpoint will return `201 Created` with the current JSON representation of 
 
 ###### Example JSON Request
 
-``` json
+```json
 {
   "name": "Announcement",
   "icon": "📢"
@@ -86,7 +86,7 @@ This endpoint will return `201 Created` with the current JSON representation of 
 
 ###### Copy as cURL
 
-``` shell
+```shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" \
   -d '{"name":"Announcement","icon": "📢"}' \
   https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/categories.json
@@ -101,7 +101,7 @@ This endpoint will return `200 OK` with the current JSON representation of the m
 
 ###### Example JSON Request
 
-``` json
+```json
 {
   "name": "Quick Update",
   "icon": "📢"
@@ -110,7 +110,7 @@ This endpoint will return `200 OK` with the current JSON representation of the m
 
 ###### Copy as cURL
 
-``` shell
+```shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" \
   -d '{"name":"Quick Update","icon":"📢"}' -X PUT \
   https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/categories/2.json
@@ -125,7 +125,7 @@ No parameters required. Returns `204 No Content` if successful.
 
 ###### Copy as cURL
 
-``` shell
+```shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" -X DELETE \
   https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/categories/2.json
 ```

@@ -44,7 +44,7 @@ This endpoint will return `201 Created` with the attachment's `attachable_sgid` 
 
 ###### Copy as cURL
 
-``` shell
+```shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" \
   --data-binary @pizza.png \
   -H "Content-Type: image/png" -H "Content-Length: 123" \

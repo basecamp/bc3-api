@@ -51,7 +51,7 @@ Get all people
 <!-- END GET /people.json -->
 ###### Copy as cURL
 
-``` shell
+```shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/people.json
 ```
 
@@ -65,7 +65,7 @@ See the [Get all people](#get-all-people) endpoint for an example of the JSON re
 
 ###### Copy as cURL
 
-``` shell
+```shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/projects/1/people.json
 ```
 
@@ -103,7 +103,7 @@ Update who can access a project
 <!-- END PUT PAYLOAD /projects/1/people/users.json -->
 ###### Copy as cURL
 
-``` shell
+```shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" \
   -d '{"grant":[2],"revoke":[3,4]}' -X PUT \
   https://3.basecampapi.com/$ACCOUNT_ID/projects/1/people/users.json
@@ -209,7 +209,7 @@ See the [Get all people](#get-all-people) endpoint for an example of the JSON re
 
 ###### Copy as cURL
 
-``` shell
+```shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/circles/people.json
 ```
 
@@ -249,7 +249,7 @@ Get person
 <!-- END GET /people/2.json -->
 ###### Copy as cURL
 
-``` shell
+```shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/people/2.json
 ```
 
@@ -263,6 +263,6 @@ See the [Get person](#get-person) endpoint for an example of the JSON response.
 
 ###### Copy as cURL
 
-``` shell
+```shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/my/profile.json
 ```
