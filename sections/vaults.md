@@ -83,7 +83,7 @@ Get vaults
 <!-- END GET /buckets/1/vaults/2/vaults.json -->
 ###### Copy as cURL
 
-``` shell
+```shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/vaults/2/vaults.json
 ```
 
@@ -151,7 +151,7 @@ Get a vault
 <!-- END GET /buckets/1/vaults/2.json -->
 ###### Copy as cURL
 
-``` shell
+```shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/vaults/2.json
 ```
 
@@ -166,7 +166,7 @@ This endpoint will return `201 Created` with the current JSON representation of 
 
 ###### Example JSON Request
 
-``` json
+```json
 {
   "title": "Materials"
 }
@@ -174,7 +174,7 @@ This endpoint will return `201 Created` with the current JSON representation of 
 
 ###### Copy as cURL
 
-``` shell
+```shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" \
   -d '{"title":"Materials"}' \
   https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/vaults/2/vaults.json
@@ -189,7 +189,7 @@ This endpoint will return `200 OK` with the current JSON representation of the t
 
 ###### Example JSON Request
 
-``` json
+```json
 {
   "title": "Important Materials"
 }
@@ -197,7 +197,7 @@ This endpoint will return `200 OK` with the current JSON representation of the t
 
 ###### Copy as cURL
 
-``` shell
+```shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" \
   -d '{"title":"Important Materials"}' -X PUT \
   https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/vaults/3.json

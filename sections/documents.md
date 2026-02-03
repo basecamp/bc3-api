@@ -80,7 +80,7 @@ Get documents
 <!-- END GET /buckets/1/vaults/2/documents.json -->
 ###### Copy as cURL
 
-``` shell
+```shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/vaults/2/documents.json
 ```
 
@@ -150,7 +150,7 @@ Get a document
 
 ###### Copy as cURL
 
-``` shell
+```shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/documents/2.json
 ```
 
@@ -167,7 +167,7 @@ This endpoint will return `201 Created` with the current JSON representation of 
 
 ###### Example JSON Request
 
-``` json
+```json
 {
   "title": "New Hire Info",
   "content": "<div><strong>Getting started</strong></div>",
@@ -177,7 +177,7 @@ This endpoint will return `201 Created` with the current JSON representation of 
 
 ###### Copy as cURL
 
-``` shell
+```shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" \
   -d '{"title":"New Hire Info","content":"<div><strong>Getting started</strong></div>","status":"active"}' \
   https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/vaults/2/documents.json
@@ -192,7 +192,7 @@ This endpoint will return `200 OK` with the current JSON representation of the d
 
 ###### Example JSON Request
 
-``` json
+```json
 {
   "title": "New Hire Information",
   "content": "<div><strong>Let's get started</strong></div>"
@@ -201,7 +201,7 @@ This endpoint will return `200 OK` with the current JSON representation of the d
 
 ###### Copy as cURL
 
-``` shell
+```shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" \
   -d '{"title":"New Hire Information","content":"<div><strong>Let's get started</strong></div>"}' -X PUT \
   https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/documents/2.json

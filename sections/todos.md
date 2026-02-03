@@ -97,7 +97,7 @@ This endpoint without any parameters returns only active, pending (i.e. not comp
 <!-- END GET /buckets/1/todolists/3/todos.json -->
 ###### Copy as cURL
 
-``` shell
+```shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/todolists/3/todos.json
 ```
 
@@ -251,7 +251,7 @@ Get a to-do
 <!-- END GET /buckets/1/todos/2.json -->
 ###### Copy as cURL
 
-``` shell
+```shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/todos/2.json
 ```
 
@@ -276,7 +276,7 @@ This endpoint will return `201 Created` with the current JSON representation of 
 
 ###### Example JSON Request
 
-``` json
+```json
 {
   "content": "Program it",
   "description": "<div><em>Try that new language!</em></div>",
@@ -286,7 +286,7 @@ This endpoint will return `201 Created` with the current JSON representation of 
 
 ###### Copy as cURL
 
-``` shell
+```shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" \
   -d '{"content":"Program it","description":"<div><em>Try that new language!</em></div>","due_on":"2016-05-01"}' \
   https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/todolists/3/todos.json
@@ -313,7 +313,7 @@ For example, to update the to-do's `content` from [Create a to-do](#create-a-tod
 
 ###### Example JSON Request
 
-``` json
+```json
 {
   "content": "Only changing content! Passing the rest to preserve them.",
   "description": "<div><em>Try that new language!</em></div>",
@@ -323,7 +323,7 @@ For example, to update the to-do's `content` from [Create a to-do](#create-a-tod
 
 ###### Copy as cURL
 
-``` shell
+```shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" \
   -d '{"content":"Only changing content! Passing the rest to preserve them.","description":"<div><em>Try that new language!</em></div>","due_on":"2016-05-01"}' -X PUT \
   https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/todos/2.json
@@ -339,7 +339,7 @@ This endpoint will return `204 No Content` if successful. No parameters are requ
 
 ###### Copy as cURL
 
-``` shell
+```shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" -X POST \
   https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/todos/2/completion.json
 ```
@@ -354,7 +354,7 @@ This endpoint will return `204 No Content` if successful. No parameters are requ
 
 ###### Copy as cURL
 
-``` shell
+```shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" -X DELETE \
   https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/todos/2/completion.json
 ```
@@ -375,7 +375,7 @@ This endpoint will return `204 No Content` if the update was a success.
 
 ###### Example JSON Request
 
-``` json
+```json
 {
   "position": 3
 }
@@ -383,7 +383,7 @@ This endpoint will return `204 No Content` if the update was a success.
 
 To move a to-do to a different to-do list and set its position:
 
-``` json
+```json
 {
   "position": 1,
   "parent_id": 5
@@ -392,7 +392,7 @@ To move a to-do to a different to-do list and set its position:
 
 ###### Copy as cURL
 
-``` shell
+```shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" \
   -d '{"position":3}' -X PUT \
   https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/todos/2/position.json

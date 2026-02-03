@@ -87,7 +87,7 @@ _Optional query parameters_:
 <!-- END GET /buckets/1/questions/2/answers.json -->
 ###### Copy as cURL
 
-``` shell
+```shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/questions/2/answers.json
 ```
 
@@ -102,7 +102,7 @@ Each entry is a person object.
 
 ###### Copy as cURL
 
-``` shell
+```shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/questions/2/answers/by.json
 ```
 
@@ -113,7 +113,7 @@ Get answers by person
 
 ###### Copy as cURL
 
-``` shell
+```shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/questions/2/answers/by/3.json
 ```
 
@@ -186,7 +186,7 @@ Get a question answer
 <!-- END GET /buckets/1/question_answers/2.json -->
 ###### Copy as cURL
 
-``` shell
+```shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/question_answers/2.json
 ```
 
@@ -205,7 +205,7 @@ This endpoint will return `201 Created` with the current JSON representation of 
 
 ###### Example JSON Request
 
-``` json
+```json
 {
   "question_answer": {
     "content": "<div>Today I worked on the API documentation.</div>",
@@ -216,7 +216,7 @@ This endpoint will return `201 Created` with the current JSON representation of 
 
 ###### Copy as cURL
 
-``` shell
+```shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" \
   -d '{"question_answer":{"content":"<div>Today I worked on the API documentation.</div>","group_on":"2024-01-22"}}' \
   https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/questions/2/answers.json
@@ -232,7 +232,7 @@ This endpoint will return `204 No Content` if the update was a success.
 
 ###### Example JSON Request
 
-``` json
+```json
 {
   "question_answer": {
     "content": "<div>Updated: Today I finished the API documentation.</div>"
@@ -242,7 +242,7 @@ This endpoint will return `204 No Content` if the update was a success.
 
 ###### Copy as cURL
 
-``` shell
+```shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" \
   -d '{"question_answer":{"content":"<div>Updated: Today I finished the API documentation.</div>"}}' -X PUT \
   https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/question_answers/2.json

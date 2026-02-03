@@ -118,7 +118,7 @@ _Optional query parameters_:
 <!-- END GET /buckets/1/schedules/3/entries.json -->
 ###### Copy as cURL
 
-``` shell
+```shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/schedules/3/entries.json
 ```
 
@@ -243,7 +243,7 @@ Recurring schedule entries will include an additional `recurrence_schedule` attr
 
 ###### Copy as cURL
 
-``` shell
+```shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/schedule_entries/2.json
 ```
 
@@ -270,7 +270,7 @@ This endpoint will return `201 Created` with the current JSON representation of 
 
 ###### Example JSON Request
 
-``` json
+```json
 {
   "summary": "Important Meeting",
   "starts_at": "2015-06-04T00:00:00Z",
@@ -280,7 +280,7 @@ This endpoint will return `201 Created` with the current JSON representation of 
 
 ###### Copy as cURL
 
-``` shell
+```shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" \
   -d '{"summary":"Important Meeting","starts_at":"2015-06-04T00:00:00Z","ends_at":"2015-06-04T00:00:00Z"}' \
   https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/schedules/3/entries.json
@@ -298,7 +298,7 @@ This endpoint will return `200 OK` with the current JSON representation of the s
 
 ###### Example JSON Request
 
-``` json
+```json
 {
   "summary": "All Day Meeting",
   "starts_at": "2015-06-04",
@@ -309,7 +309,7 @@ This endpoint will return `200 OK` with the current JSON representation of the s
 
 ###### Copy as cURL
 
-``` shell
+```shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" \
   -d '{"summary":"All Day Meeting","starts_at":"2015-06-04","ends_at":"2015-06-04","all_day":true}' -X PUT \
   https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/schedule_entries/2.json

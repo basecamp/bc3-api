@@ -110,7 +110,7 @@ Get a column
 <!-- END GET /buckets/1/card_tables/columns/2.json -->
 ###### Copy as cURL
 
-``` shell
+```shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/card_tables/columns/2.json
 ```
 
@@ -129,7 +129,7 @@ This endpoint will return `201 Created` with the current JSON representation of 
 
 ###### Example JSON Request
 
-``` json
+```json
 {
   "title": "In progress",
   "description": "Stuff we are working on actively"
@@ -138,7 +138,7 @@ This endpoint will return `201 Created` with the current JSON representation of 
 
 ###### Copy as cURL
 
-``` shell
+```shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" \
   -d '{"title":"In progress"}' \
   https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/card_tables/2/columns.json
@@ -153,7 +153,7 @@ This endpoint will return `200 OK` with the current JSON representation of the c
 
 ###### Example JSON Request
 
-``` json
+```json
 {
   "title": "On it",
   "description": "Stuff we are doing right now"
@@ -162,7 +162,7 @@ This endpoint will return `200 OK` with the current JSON representation of the c
 
 ###### Copy as cURL
 
-``` shell
+```shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" \
   -d '{"title":"On it", "description":"Stuff we are doing right now"}' -X PUT \
   https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/card_tables/columns/2.json
@@ -186,7 +186,7 @@ This endpoint will return `204 No Content` if the update was a success.
 
 ###### Example JSON Request
 
-``` json
+```json
 {
   "source_id": 3,
   "targed_id": 4,
@@ -195,7 +195,7 @@ This endpoint will return `204 No Content` if the update was a success.
 ```
 ###### Copy as cURL
 
-``` shell
+```shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" \
   -d '{"source_id": 3, "target_id":4, "position": 2}' \
   https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/card_tables/2/moves.json
@@ -209,12 +209,12 @@ Watch a column
 This endpoint will return `204 No Content` if the update was a success.
 
 ###### Copy as cURL
-``` shell
+```shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" \
   -X POST \
   https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/card_tables/lists/2/subscription.json
 ```
-``` shell
+```shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" \
   -X DELETE \
   https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/card_tables/lists/2/subscription.json
@@ -230,12 +230,12 @@ This endpoint will return `200 OK` with the current JSON representation of the c
 
 ###### Copy as cURL
 
-``` shell
+```shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" \
   -X POST \
   https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/card_tables/columns/2/on_hold.json
 ```
-``` shell
+```shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" \
   -X DELETE \
   https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/card_tables/columns/2/on_hold.json
@@ -255,7 +255,7 @@ This endpoint will return `200 OK` with the current JSON representation of the c
 
 ###### Example JSON Request
 
-``` json
+```json
 {
   "color": "orange"
 }
@@ -263,7 +263,7 @@ This endpoint will return `200 OK` with the current JSON representation of the c
 
 ###### Copy as cURL
 
-``` shell
+```shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" \
   -d '{"color":"orange"}' -X PUT \
   https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/card_tables/columns/2/color.json

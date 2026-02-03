@@ -100,7 +100,7 @@ Get questions
 <!-- END GET /buckets/1/questionnaires/2/questions.json -->
 ###### Copy as cURL
 
-``` shell
+```shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/questionnaires/2/questions.json
 ```
 
@@ -190,7 +190,7 @@ Get a question
 <!-- END GET /buckets/1/questions/2.json -->
 ###### Copy as cURL
 
-``` shell
+```shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/questions/2.json
 ```
 
@@ -211,7 +211,7 @@ This endpoint will return `201 Created` with the current JSON representation of 
 
 ###### Example JSON Request
 
-``` json
+```json
 {
   "question": {
     "title": "What did you work on today?",
@@ -226,7 +226,7 @@ This endpoint will return `201 Created` with the current JSON representation of 
 
 ###### Copy as cURL
 
-``` shell
+```shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" \
   -d '{"question":{"title":"What did you work on today?","schedule":{"frequency":"every_day","time_of_day":"5:00pm","days":["1","2","3","4","5"]}}}' \
   https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/questionnaires/2/questions.json
@@ -242,7 +242,7 @@ This endpoint will return `200 OK` with the current JSON representation of the q
 
 ###### Example JSON Request
 
-``` json
+```json
 {
   "question": {
     "title": "What are you working on this week?",
@@ -257,7 +257,7 @@ This endpoint will return `200 OK` with the current JSON representation of the q
 
 ###### Copy as cURL
 
-``` shell
+```shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" \
   -d '{"question":{"title":"What are you working on this week?","schedule":{"frequency":"every_week","time_of_day":"9:00am","days":["1"]}}}' -X PUT \
   https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/questions/2.json
@@ -273,7 +273,7 @@ Returns `200 OK` with `{"paused": true}`.
 
 ###### Copy as cURL
 
-``` shell
+```shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -X POST \
   https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/questions/2/pause.json
 ```
@@ -288,7 +288,7 @@ Returns `200 OK` with `{"paused": false}`.
 
 ###### Copy as cURL
 
-``` shell
+```shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -X DELETE \
   https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/questions/2/pause.json
 ```
@@ -308,7 +308,7 @@ Returns `200 OK` with `{"responding": true/false, "subscribed": true/false}`.
 
 ###### Example JSON Request
 
-``` json
+```json
 {
   "responding": true,
   "subscribed": false
@@ -317,7 +317,7 @@ Returns `200 OK` with `{"responding": true/false, "subscribed": true/false}`.
 
 ###### Copy as cURL
 
-``` shell
+```shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" \
   -d '{"responding":true,"subscribed":false}' -X PUT \
   https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/questions/2/notification_settings.json

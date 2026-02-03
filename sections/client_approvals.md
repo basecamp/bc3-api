@@ -106,7 +106,7 @@ Get client approvals
 <!-- END GET /buckets/1/client/approvals.json -->
 ###### Copy as cURL
 
-``` shell
+```shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/client/approvals.json
 ```
 
@@ -263,7 +263,7 @@ Get a client approval
 <!-- END GET /buckets/1/client/approvals/2.json -->
 ###### Copy as cURL
 
-``` shell
+```shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/client/approvals/2.json
 ```
 

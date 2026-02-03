@@ -255,7 +255,7 @@ Get events
 <!-- END GET /buckets/1/recordings/2/events.json -->
 ###### Copy as cURL
 
-``` shell
+```shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/recordings/2/events.json
 ```
 

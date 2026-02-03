@@ -71,7 +71,7 @@ To get the message board ID for a project, see the [Get a project][1] endpoint's
 <!-- END GET /buckets/1/message_boards/2.json -->
 ###### Copy as cURL
 
-``` shell
+```shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/message_boards/2.json
 ```
 

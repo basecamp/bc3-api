@@ -143,7 +143,7 @@ Get chatbots
 
 ###### Copy as cURL
 
-``` shell
+```shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/chats/1/integrations.json
 ```
 
@@ -171,7 +171,7 @@ Get a chatbot
 <!-- END GET /buckets/1/chats/1/integrations/3.json -->
 ###### Copy as cURL
 
-``` shell
+```shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/chats/1/integrations/3.json
 ```
 
@@ -188,7 +188,7 @@ This endpoint will return `201 Created` with the current JSON representation of 
 
 ###### Example JSON Request
 
-``` json
+```json
 {
   "service_name": "tally",
   "command_url": "https://example.com/endpoint"
@@ -197,7 +197,7 @@ This endpoint will return `201 Created` with the current JSON representation of 
 
 ###### Copy as cURL
 
-``` shell
+```shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" \
   -d '{"service_name":"tally","command_url":"https://example.com/endpoint"}' \
   https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/chats/1/integrations.json
@@ -216,7 +216,7 @@ This endpoint will return `200 OK` with the current JSON representation of the c
 
 ###### Example JSON Request
 
-``` json
+```json
 {
   "service_name": "uptime",
   "command_url": "https://example.com/endpoint"
@@ -225,7 +225,7 @@ This endpoint will return `200 OK` with the current JSON representation of the c
 
 ###### Copy as cURL
 
-``` shell
+```shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" \
   -d '{"service_name":"uptime","command_url":"https://example.com/endpoint"}' -X PUT \
   https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/chats/1/integrations/3.json
@@ -240,7 +240,7 @@ This endpoint will return `204 No Content` if the destroy was a success.
 
 ###### Copy as cURL
 
-``` shell
+```shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -X DELETE \
   https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/chatbots/3.json
 ```
@@ -262,7 +262,7 @@ This endpoint will return `201 Created` if the creation was a success.
 
 ###### Example JSON Request
 
-``` json
+```json
 {
   "content": "Good morning"
 }
@@ -270,14 +270,14 @@ This endpoint will return `201 Created` if the creation was a success.
 
 ###### Copy as cURL
 
-``` shell
+```shell
 curl -s -H "Content-Type: application/json" -d '{"content":"Good morning"}' \
   https://3.basecampapi.com/$ACCOUNT_ID/integrations/$CHATBOT_KEY/buckets/1/chats/2/lines.json
 ```
 
 or, with a custom content_param called `text`:
 
-``` shell
+```shell
 curl -s -H "Content-Type: application/json" -d '{"text":"Good morning"}' \
   https://3.basecampapi.com/$ACCOUNT_ID/integrations/$CHATBOT_KEY/buckets/1/chats/2/lines.json?content_param=text
 ```

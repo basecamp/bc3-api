@@ -79,7 +79,7 @@ To get the message board ID for a project, see the [Get message board][3] endpoi
 <!-- END GET /buckets/1/message_boards/3/messages.json -->
 ###### Copy as cURL
 
-``` shell
+```shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/message_boards/3/messages.json
 ```
 
@@ -154,7 +154,7 @@ Get a message
 
 ###### Copy as cURL
 
-``` shell
+```shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/messages/2.json
 ```
 
@@ -176,7 +176,7 @@ This endpoint will return `201 Created` with the current JSON representation of 
 
 ###### Example JSON Request
 
-``` json
+```json
 {
   "subject": "Kickoff",
   "content": "<div><strong>Welcome to Basecamp, everyone.</strong></div>",
@@ -186,7 +186,7 @@ This endpoint will return `201 Created` with the current JSON representation of 
 
 ###### Copy as cURL
 
-``` shell
+```shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" \
   -d '{"subject":"Kickoff","content":"<div><strong>Welcome to Basecamp, everyone.</strong></div>","status":"active"}' \
   https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/message_boards/3/messages.json
@@ -202,7 +202,7 @@ This endpoint will return `200 OK` with the current JSON representation of the m
 
 ###### Example JSON Request
 
-``` json
+```json
 {
   "subject": "Spin-down",
   "content": "<div><strong>Oops, we lost that client.</strong></div>"
@@ -211,7 +211,7 @@ This endpoint will return `200 OK` with the current JSON representation of the m
 
 ###### Copy as cURL
 
-``` shell
+```shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" \
   -d '{"subject":"Spin-down","content":"<div><strong>Oops, we lost that client.</strong></div>"}' -X PUT \
   https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/messages/2.json
@@ -227,12 +227,12 @@ This endpoint will return `204 No Content` if the operation was a success.
 
 ###### Copy as cURL
 
-``` shell
+```shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" \
   -X POST \
   https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/recordings/2/pin.json
 ```
-``` shell
+```shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" \
   -X DELETE \
   https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/recordings/2/pin.json

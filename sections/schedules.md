@@ -72,7 +72,7 @@ To get the schedule ID for a project, see the [Get a project][1] endpoint's `doc
 <!-- END GET /buckets/1/schedules/2.json -->
 ###### Copy as cURL
 
-``` shell
+```shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/schedules/2.json
 ```
 
@@ -89,7 +89,7 @@ This endpoint will return `200 OK` with the current JSON representation of the s
 
 ###### Example JSON Request
 
-``` json
+```json
 {
   "include_due_assignments": "false"
 }
@@ -97,7 +97,7 @@ This endpoint will return `200 OK` with the current JSON representation of the s
 
 ###### Copy as cURL
 
-``` shell
+```shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" \
   -d '{"schedule": {"include_due_assignments": "false"}}' -X PUT \
   https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/schedules/2.json

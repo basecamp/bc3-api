@@ -21,7 +21,7 @@ Each reminder includes the question it belongs to, along with the question's pro
 
 ###### Copy as cURL
 
-``` shell
+```shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/my/question_reminders.json
 ```
 

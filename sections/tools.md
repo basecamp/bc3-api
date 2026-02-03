@@ -74,7 +74,7 @@ Get a tool
 <!-- END GET /buckets/1/dock/tools/2.json -->
 ###### Copy as cURL
 
-``` shell
+```shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/dock/tools/2.json
 ```
 
@@ -92,7 +92,7 @@ This endpoint will return `201 Created` with the JSON representation of the new 
 
 ###### Example JSON Request
 
-``` json
+```json
 {
   "source_recording_id": 1069479341,
   "title": "Q&A Chat"
@@ -101,7 +101,7 @@ This endpoint will return `201 Created` with the JSON representation of the new 
 
 ###### Copy as cURL
 
-``` shell
+```shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" \
   -d '{"source_recording_id":1069479341,"title":"Q&A Chat"}' \
   https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/dock/tools.json
@@ -119,7 +119,7 @@ This endpoint will return `200 OK` with the updated JSON representation of the t
 
 ###### Example JSON Request
 
-``` json
+```json
 {
   "title": "Team Chat"
 }
@@ -127,7 +127,7 @@ This endpoint will return `200 OK` with the updated JSON representation of the t
 
 ###### Copy as cURL
 
-``` shell
+```shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" \
   -d '{"title":"Team Chat"}' -X PUT \
   https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/dock/tools/2.json
@@ -145,7 +145,7 @@ This endpoint will return `201 Created` if successful.
 
 ###### Copy as cURL
 
-``` shell
+```shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" \
   -X POST \
   https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/recordings/2/position.json
@@ -163,7 +163,7 @@ This endpoint will return `200 OK` if successful.
 
 ###### Example JSON Request
 
-``` json
+```json
 {
   "position": 1
 }
@@ -171,7 +171,7 @@ This endpoint will return `200 OK` if successful.
 
 ###### Copy as cURL
 
-``` shell
+```shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" \
   -d '{"position":1}' -X PUT \
   https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/recordings/2/position.json
@@ -189,7 +189,7 @@ This endpoint will return `204 No Content` if successful.
 
 ###### Copy as cURL
 
-``` shell
+```shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" \
   -X DELETE \
   https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/recordings/2/position.json
@@ -207,7 +207,7 @@ This endpoint will return `204 No Content` if successful.
 
 ###### Copy as cURL
 
-``` shell
+```shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" \
   -X DELETE \
   https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/dock/tools/2.json

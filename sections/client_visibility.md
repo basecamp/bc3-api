@@ -18,7 +18,7 @@ This endpoint will return `200 OK` with the current JSON representation of the r
 
 ###### Example JSON Request
 
-``` json
+```json
 {
   "visible_to_clients": true
 }
@@ -26,7 +26,7 @@ This endpoint will return `200 OK` with the current JSON representation of the r
 
 ###### Copy as cURL
 
-``` shell
+```shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" \
   -d '{"visible_to_clients":true}' -X PUT \
   https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/recordings/2/client_visibility.json

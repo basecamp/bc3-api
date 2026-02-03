@@ -88,7 +88,7 @@ Get cards in a column
 <!-- END GET /buckets/1/card_tables/lists/3/cards.json -->
 ###### Copy as cURL
 
-``` shell
+```shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/card_tables/lists/3/cards.json
 ```
 
@@ -251,7 +251,7 @@ Get a card
 <!-- END GET /buckets/1/card_tables/cards/2.json -->
 ###### Copy as cURL
 
-``` shell
+```shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/card_tables/cards/2.json
 ```
 
@@ -272,7 +272,7 @@ This endpoint will return `201 Created` with the current JSON representation of 
 
 ###### Example JSON Request
 
-``` json
+```json
 {
   "title": "Investigation",
   "content": "Investigate on an issue in our todo list.",
@@ -282,7 +282,7 @@ This endpoint will return `201 Created` with the current JSON representation of 
 
 ###### Copy as cURL
 
-``` shell
+```shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" \
   -d '{"title":"Investigation", "content": "Investigate on an issue in our todo list.", "due_on": "2021-01-01"}' \
   https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/card_tables/lists/2/cards.json
@@ -304,7 +304,7 @@ This endpoint will return `200 OK` with the current JSON representation of the c
 
 ###### Example JSON Request
 
-``` json
+```json
 {
   "title": "Updated investigation"
 }
@@ -312,7 +312,7 @@ This endpoint will return `200 OK` with the current JSON representation of the c
 
 ###### Copy as cURL
 
-``` shell
+```shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" \
   -d '{"title":"Updated investigation"}' -X PUT \
   https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/card_tables/cards/2.json
@@ -329,14 +329,14 @@ This endpoint will return `204 No Content` if the update was a success.
 
 ###### Example JSON Request
 
-``` json
+```json
 {
   "column_id": 3
 }
 ```
 ###### Copy as cURL
 
-``` shell
+```shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" \
   -d '{"column_id": 3}' \
   https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/card_tables/cards/2/moves.json

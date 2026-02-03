@@ -85,7 +85,7 @@ Get subscription
 
 ###### Copy as cURL
 
-``` shell
+```shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/recordings/2/subscription.json
 ```
 
@@ -96,7 +96,7 @@ Subscribe current user
 
 ###### Copy as cURL
 
-``` shell
+```shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" -X POST \
   https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/recordings/2/subscription.json
 ```
@@ -108,7 +108,7 @@ Unsubscribe current user
 
 ###### Copy as cURL
 
-``` shell
+```shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" -X DELETE \
   https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/recordings/2/subscription.json
 ```
@@ -140,7 +140,7 @@ Update subscription
 
 ###### Copy as cURL
 
-``` shell
+```shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" \
   -d '{"subscriptions":[1049715916], "unsubscriptions":[1049715914]}' -X PUT \
   https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/recordings/2/subscription.json

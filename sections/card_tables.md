@@ -534,6 +534,6 @@ Get a card table
 <!-- END GET /buckets/1/card_tables/2.json -->
 ###### Copy as cURL
 
-``` shell
+```shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/card_tables/2.json
 ```

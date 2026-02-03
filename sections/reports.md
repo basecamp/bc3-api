@@ -47,7 +47,7 @@ This endpoint is useful for building a list of people to then retrieve their ind
 <!-- END GET /reports/todos/assigned.json -->
 ###### Copy as cURL
 
-``` shell
+```shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/reports/todos/assigned.json
 ```
 
@@ -179,7 +179,7 @@ _Optional query parameters_:
 <!-- END GET /reports/todos/assigned/1.json -->
 ###### Copy as cURL
 
-``` shell
+```shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/reports/todos/assigned/1.json
 ```
 
@@ -207,7 +207,7 @@ The response includes four groups:
 <!-- END GET /reports/todos/overdue.json -->
 ###### Copy as cURL
 
-``` shell
+```shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/reports/todos/overdue.json
 ```
 
@@ -300,7 +300,7 @@ The response includes:
 <!-- END GET /reports/schedules/upcoming.json -->
 ###### Copy as cURL
 
-``` shell
+```shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" "https://3.basecampapi.com/$ACCOUNT_ID/reports/schedules/upcoming.json?window_starts_on=2025-10-10&window_ends_on=2025-10-17"
 ```
 

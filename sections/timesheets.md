@@ -89,7 +89,7 @@ This endpoint without any parameters returns only timesheet entries for the last
 <!-- END GET /reports/timesheet.json -->
 ###### Copy as cURL
 
-``` shell
+```shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/reports/timesheet.json
 ```
 
@@ -162,7 +162,7 @@ Get timesheet for a project
 <!-- END GET /projects/1/timesheet.json -->
 ###### Copy as cURL
 
-``` shell
+```shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/projects/1/timesheet.json
 ```
 
@@ -235,7 +235,7 @@ Get timesheet for a recording
 <!-- END GET /projects/1/recordings/2/timesheet.json -->
 ###### Copy as cURL
 
-``` shell
+```shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/projects/1/recordings/2/timesheet.json
 ```
 

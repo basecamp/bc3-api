@@ -17,7 +17,7 @@ Use this endpoint to discover valid values for the `type` and `file_type` parame
 
 ###### Copy as cURL
 
-``` shell
+```shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -A 'MyApp (yourname@example.com)' \
   "https://3.basecampapi.com/$ACCOUNT_ID/searches/metadata.json"
 ```
@@ -138,7 +138,7 @@ Results are ordered by relevance with a recency boost.
 
 ###### Copy as cURL
 
-``` shell
+```shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -A 'MyApp (yourname@example.com)' \
   "https://3.basecampapi.com/$ACCOUNT_ID/search.json?q=authentication"
 ```

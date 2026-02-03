@@ -148,7 +148,7 @@ _Optional query parameters_:
 <!-- END GET /buckets/1/todolists/2/groups.json -->
 ###### Copy as cURL
 
-``` shell
+```shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/todolists/2/groups.json
 ```
 
@@ -242,7 +242,7 @@ This endpoint will return `201 Created` with the current JSON representation of 
 
 ###### Example JSON Request
 
-``` json
+```json
 {
   "name": "The Spencer Davis Group",
 }
@@ -250,7 +250,7 @@ This endpoint will return `201 Created` with the current JSON representation of 
 
 ###### Copy as cURL
 
-``` shell
+```shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" \
   -d '{"name":"The Spencer Davis Group"}' \
   https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/todolists/2/groups.json
@@ -267,7 +267,7 @@ This endpoint will return `204 No Content` if the update was a success.
 
 ###### Example JSON Request
 
-``` json
+```json
 {
   "position": 3
 }
@@ -275,7 +275,7 @@ This endpoint will return `204 No Content` if the update was a success.
 
 ###### Copy as cURL
 
-``` shell
+```shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" \
   -d '{"position":3}' -X PUT \
   https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/todolists/groups/3/position.json
