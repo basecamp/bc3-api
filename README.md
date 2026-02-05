@@ -58,7 +58,7 @@ Authentication
 
 As mentioned above, to authenticate you must use OAuth 2.0. OAuth 2.0 allows users to authorize your application to use Basecamp on their behalf without having to copy/paste API tokens or touch sensitive login information.
 
-Read the [authentication guide](https://github.com/basecamp/api/blob/master/sections/authentication.md) to get started.
+Read the [authentication guide](sections/authentication.md) to get started.
 
 
 Identifying your application
@@ -257,6 +257,7 @@ A to-do can be `completed: true` and `status: "active"` (done but not archived).
 API endpoints
 -------------
 <!-- START API ENDPOINTS -->
+- [Authentication](https://github.com/basecamp/bc3-api/blob/master/sections/authentication.md#authentication)
 - [Attachments](https://github.com/basecamp/bc3-api/blob/master/sections/attachments.md#attachments)
 - [Campfires](https://github.com/basecamp/bc3-api/blob/master/sections/campfires.md#campfires)
 - [Card table cards](https://github.com/basecamp/bc3-api/blob/master/sections/card_table_cards.md#card-table-cards)
