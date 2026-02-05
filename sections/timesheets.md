@@ -6,6 +6,7 @@ Endpoints:
 - [Get timesheet report](#get-timesheet-report)
 - [Get timesheet for a project](#get-timesheet-for-a-project)
 - [Get timesheet for a recording](#get-timesheet-for-a-recording)
+- [Get a timesheet entry](#get-a-timesheet-entry)
 - [Create a timesheet entry](#create-a-timesheet-entry)
 - [Update a timesheet entry](#update-a-timesheet-entry)
 - [Trash a timesheet entry][3]
@@ -85,7 +86,34 @@ This endpoint without any parameters returns only timesheet entries for the last
     },
     "date": "2026-01-30",
     "description": "Team Meeting Prep",
-    "hours": "2.0"
+    "hours": "2.0",
+    "person": {
+      "id": 1049715913,
+      "attachable_sgid": "BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiK2dpZDovL2JjMy9QZXJzb24vMTA0OTcxNTkxMz9leHBpcmVzX2luBjsAVEkiCHB1cgY7AFRJIg9hdHRhY2hhYmxlBjsAVA==--e627c45e6b34e08862da23906862412620e4d5d9",
+      "name": "Victor Cooper",
+      "email_address": "victor@honchodesign.com",
+      "personable_type": "User",
+      "title": "Chief Strategist",
+      "bio": "Don’t let your dreams be dreams",
+      "location": "Chicago, IL",
+      "created_at": "2026-01-31T08:29:28.365Z",
+      "updated_at": "2026-01-31T08:29:32.599Z",
+      "admin": true,
+      "owner": true,
+      "client": false,
+      "employee": true,
+      "time_zone": "America/Chicago",
+      "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBMlkkT4=--5fe7b70fbee7a7f0e2e1e19df7579e5d880c753d/avatar?v=1",
+      "company": {
+        "id": 1033447817,
+        "name": "Honcho Design"
+      },
+      "can_ping": true,
+      "can_manage_projects": true,
+      "can_manage_people": true,
+      "can_access_timesheet": true,
+      "can_access_hill_charts": true
+    }
   }
 ]
 ```
@@ -158,7 +186,34 @@ Get timesheet for a project
     },
     "date": "2026-01-30",
     "description": "Team Meeting Prep",
-    "hours": "2.0"
+    "hours": "2.0",
+    "person": {
+      "id": 1049715913,
+      "attachable_sgid": "BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiK2dpZDovL2JjMy9QZXJzb24vMTA0OTcxNTkxMz9leHBpcmVzX2luBjsAVEkiCHB1cgY7AFRJIg9hdHRhY2hhYmxlBjsAVA==--e627c45e6b34e08862da23906862412620e4d5d9",
+      "name": "Victor Cooper",
+      "email_address": "victor@honchodesign.com",
+      "personable_type": "User",
+      "title": "Chief Strategist",
+      "bio": "Don’t let your dreams be dreams",
+      "location": "Chicago, IL",
+      "created_at": "2026-01-31T08:29:28.365Z",
+      "updated_at": "2026-01-31T08:29:32.599Z",
+      "admin": true,
+      "owner": true,
+      "client": false,
+      "employee": true,
+      "time_zone": "America/Chicago",
+      "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBMlkkT4=--5fe7b70fbee7a7f0e2e1e19df7579e5d880c753d/avatar?v=1",
+      "company": {
+        "id": 1033447817,
+        "name": "Honcho Design"
+      },
+      "can_ping": true,
+      "can_manage_projects": true,
+      "can_manage_people": true,
+      "can_access_timesheet": true,
+      "can_access_hill_charts": true
+    }
   }
 ]
 ```
@@ -231,7 +286,34 @@ Get timesheet for a recording
     },
     "date": "2026-01-30",
     "description": "Team Meeting Prep",
-    "hours": "2.0"
+    "hours": "2.0",
+    "person": {
+      "id": 1049715913,
+      "attachable_sgid": "BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiK2dpZDovL2JjMy9QZXJzb24vMTA0OTcxNTkxMz9leHBpcmVzX2luBjsAVEkiCHB1cgY7AFRJIg9hdHRhY2hhYmxlBjsAVA==--e627c45e6b34e08862da23906862412620e4d5d9",
+      "name": "Victor Cooper",
+      "email_address": "victor@honchodesign.com",
+      "personable_type": "User",
+      "title": "Chief Strategist",
+      "bio": "Don’t let your dreams be dreams",
+      "location": "Chicago, IL",
+      "created_at": "2026-01-31T08:29:28.365Z",
+      "updated_at": "2026-01-31T08:29:32.599Z",
+      "admin": true,
+      "owner": true,
+      "client": false,
+      "employee": true,
+      "time_zone": "America/Chicago",
+      "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBMlkkT4=--5fe7b70fbee7a7f0e2e1e19df7579e5d880c753d/avatar?v=1",
+      "company": {
+        "id": 1033447817,
+        "name": "Honcho Design"
+      },
+      "can_ping": true,
+      "can_manage_projects": true,
+      "can_manage_people": true,
+      "can_access_timesheet": true,
+      "can_access_hill_charts": true
+    }
   }
 ]
 ```
@@ -242,50 +324,26 @@ Get timesheet for a recording
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/projects/1/recordings/2/timesheet.json
 ```
 
-Create a timesheet entry
-------------------------
+Get a timesheet entry
+---------------------
 
-* `POST /buckets/1/recordings/2/timesheet/entries.json` creates a timesheet entry in the project with ID `1` under the recording with ID `2`.
-
-The recording can be any timesheetable type: a message, to-do, card, document, upload, schedule entry, or the project timesheet itself.
-
-**Required parameters**:
-
-* `date` - the date the time was spent (ISO 8601, e.g. `2024-05-16`).
-* `hours` - the number of hours. Accepts decimal (`1.5`) or time format (`1:30`).
-
-_Optional parameters_:
-
-* `description` - a note about the work performed.
-* `person_id` - the [person][1] the time is for. Defaults to the authenticated user. Must be a non-client member of the project.
-
-This endpoint will return `201 Created` with the current JSON representation of the timesheet entry if the creation was a success. See the [Get timesheet for a project](#get-timesheet-for-a-project) endpoint for more info on the payload.
-
-###### Example JSON Request
-
-```json
-{
-  "date": "2024-05-16",
-  "hours": "1:30",
-  "description": "Client meeting prep"
-}
-```
+* `GET /projects/1/timesheet/entries/2.json` will return the timesheet entry with an ID of `2` in the project with an ID of `1`.
 
 ###### Example JSON Response
-<!-- START POST /projects/1/recordings/2/timesheet/entries.json -->
+<!-- START GET /projects/1/timesheet/entries/2.json -->
 ```json
 {
-  "id": 1069480002,
+  "id": 1069480003,
   "status": "active",
   "visible_to_clients": false,
-  "created_at": "2026-02-05T05:44:22.449Z",
-  "updated_at": "2026-02-05T05:44:22.449Z",
+  "created_at": "2026-02-05T07:32:20.768Z",
+  "updated_at": "2026-02-05T07:32:20.768Z",
   "title": "Timesheet entry",
   "inherits_status": true,
   "type": "Timesheet::Entry",
-  "url": "https://3.basecampapi.com/195539477/projects/2085958504/timesheet/entries/1069480002.json",
-  "app_url": "https://3.basecamp.com/195539477/projects/2085958504/timesheet/entries/1069480002",
-  "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiLmdpZDovL2JjMy9SZWNvcmRpbmcvMTA2OTQ4MDAwMj9leHBpcmVzX2luBjsAVEkiCHB1cgY7AFRJIg1yZWFkYWJsZQY7AFQ=--b1f7207e7c464c3d371bace6cec654ff8f20b268.json",
+  "url": "https://3.basecampapi.com/195539477/projects/2085958504/timesheet/entries/1069480003.json",
+  "app_url": "https://3.basecamp.com/195539477/projects/2085958504/timesheet/entries/1069480003",
+  "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiLmdpZDovL2JjMy9SZWNvcmRpbmcvMTA2OTQ4MDAwMz9leHBpcmVzX2luBjsAVEkiCHB1cgY7AFRJIg1yZWFkYWJsZQY7AFQ=--ccfe246f63ad947294e26409f3067b394d3ab04b.json",
   "parent": {
     "id": 1069479406,
     "title": "We won Leto!",
@@ -327,7 +385,156 @@ This endpoint will return `201 Created` with the current JSON representation of 
   },
   "date": "2026-02-04",
   "description": "API docs example",
-  "hours": "1.5"
+  "hours": "1.5",
+  "person": {
+    "id": 1049715913,
+    "attachable_sgid": "BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiK2dpZDovL2JjMy9QZXJzb24vMTA0OTcxNTkxMz9leHBpcmVzX2luBjsAVEkiCHB1cgY7AFRJIg9hdHRhY2hhYmxlBjsAVA==--e627c45e6b34e08862da23906862412620e4d5d9",
+    "name": "Victor Cooper",
+    "email_address": "victor@honchodesign.com",
+    "personable_type": "User",
+    "title": "Chief Strategist",
+    "bio": "Don’t let your dreams be dreams",
+    "location": "Chicago, IL",
+    "created_at": "2026-01-31T08:29:28.365Z",
+    "updated_at": "2026-01-31T08:29:32.599Z",
+    "admin": true,
+    "owner": true,
+    "client": false,
+    "employee": true,
+    "time_zone": "America/Chicago",
+    "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBMlkkT4=--5fe7b70fbee7a7f0e2e1e19df7579e5d880c753d/avatar?v=1",
+    "company": {
+      "id": 1033447817,
+      "name": "Honcho Design"
+    },
+    "can_ping": true,
+    "can_manage_projects": true,
+    "can_manage_people": true,
+    "can_access_timesheet": true,
+    "can_access_hill_charts": true
+  }
+}
+```
+<!-- END GET /projects/1/timesheet/entries/2.json -->
+###### Copy as cURL
+
+```shell
+curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/projects/1/timesheet/entries/2.json
+```
+
+Create a timesheet entry
+------------------------
+
+* `POST /buckets/1/recordings/2/timesheet/entries.json` creates a timesheet entry in the project with ID `1` under the recording with ID `2`.
+
+The recording can be any timesheetable type: a message, to-do, card, document, upload, schedule entry, or the project timesheet itself.
+
+**Required parameters**:
+
+* `date` - the date the time was spent (ISO 8601, e.g. `2024-05-16`).
+* `hours` - the number of hours. Accepts decimal (`1.5`) or time format (`1:30`).
+
+_Optional parameters_:
+
+* `description` - a note about the work performed.
+* `person_id` - the [person][1] the time is for. Defaults to the authenticated user. Must be a non-client member of the project.
+
+This endpoint will return `201 Created` with the current JSON representation of the timesheet entry if the creation was a success. See the [Get timesheet for a project](#get-timesheet-for-a-project) endpoint for more info on the payload.
+
+###### Example JSON Request
+
+```json
+{
+  "date": "2024-05-16",
+  "hours": "1:30",
+  "description": "Client meeting prep"
+}
+```
+
+###### Example JSON Response
+<!-- START POST /projects/1/recordings/2/timesheet/entries.json -->
+```json
+{
+  "id": 1069480003,
+  "status": "active",
+  "visible_to_clients": false,
+  "created_at": "2026-02-05T07:32:20.768Z",
+  "updated_at": "2026-02-05T07:32:20.768Z",
+  "title": "Timesheet entry",
+  "inherits_status": true,
+  "type": "Timesheet::Entry",
+  "url": "https://3.basecampapi.com/195539477/projects/2085958504/timesheet/entries/1069480003.json",
+  "app_url": "https://3.basecamp.com/195539477/projects/2085958504/timesheet/entries/1069480003",
+  "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiLmdpZDovL2JjMy9SZWNvcmRpbmcvMTA2OTQ4MDAwMz9leHBpcmVzX2luBjsAVEkiCHB1cgY7AFRJIg1yZWFkYWJsZQY7AFQ=--ccfe246f63ad947294e26409f3067b394d3ab04b.json",
+  "parent": {
+    "id": 1069479406,
+    "title": "We won Leto!",
+    "type": "Message",
+    "url": "https://3.basecampapi.com/195539477/buckets/2085958504/messages/1069479406.json",
+    "app_url": "https://3.basecamp.com/195539477/buckets/2085958504/messages/1069479406"
+  },
+  "bucket": {
+    "id": 2085958504,
+    "name": "The Leto Laptop",
+    "type": "Project"
+  },
+  "creator": {
+    "id": 1049715913,
+    "attachable_sgid": "BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiK2dpZDovL2JjMy9QZXJzb24vMTA0OTcxNTkxMz9leHBpcmVzX2luBjsAVEkiCHB1cgY7AFRJIg9hdHRhY2hhYmxlBjsAVA==--e627c45e6b34e08862da23906862412620e4d5d9",
+    "name": "Victor Cooper",
+    "email_address": "victor@honchodesign.com",
+    "personable_type": "User",
+    "title": "Chief Strategist",
+    "bio": "Don’t let your dreams be dreams",
+    "location": "Chicago, IL",
+    "created_at": "2026-01-31T08:29:28.365Z",
+    "updated_at": "2026-01-31T08:29:32.599Z",
+    "admin": true,
+    "owner": true,
+    "client": false,
+    "employee": true,
+    "time_zone": "America/Chicago",
+    "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBMlkkT4=--5fe7b70fbee7a7f0e2e1e19df7579e5d880c753d/avatar?v=1",
+    "company": {
+      "id": 1033447817,
+      "name": "Honcho Design"
+    },
+    "can_ping": true,
+    "can_manage_projects": true,
+    "can_manage_people": true,
+    "can_access_timesheet": true,
+    "can_access_hill_charts": true
+  },
+  "date": "2026-02-04",
+  "description": "API docs example",
+  "hours": "1.5",
+  "person": {
+    "id": 1049715913,
+    "attachable_sgid": "BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiK2dpZDovL2JjMy9QZXJzb24vMTA0OTcxNTkxMz9leHBpcmVzX2luBjsAVEkiCHB1cgY7AFRJIg9hdHRhY2hhYmxlBjsAVA==--e627c45e6b34e08862da23906862412620e4d5d9",
+    "name": "Victor Cooper",
+    "email_address": "victor@honchodesign.com",
+    "personable_type": "User",
+    "title": "Chief Strategist",
+    "bio": "Don’t let your dreams be dreams",
+    "location": "Chicago, IL",
+    "created_at": "2026-01-31T08:29:28.365Z",
+    "updated_at": "2026-01-31T08:29:32.599Z",
+    "admin": true,
+    "owner": true,
+    "client": false,
+    "employee": true,
+    "time_zone": "America/Chicago",
+    "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBMlkkT4=--5fe7b70fbee7a7f0e2e1e19df7579e5d880c753d/avatar?v=1",
+    "company": {
+      "id": 1033447817,
+      "name": "Honcho Design"
+    },
+    "can_ping": true,
+    "can_manage_projects": true,
+    "can_manage_people": true,
+    "can_access_timesheet": true,
+    "can_access_hill_charts": true
+  }
 }
 ```
 <!-- END POST /projects/1/recordings/2/timesheet/entries.json -->
@@ -367,17 +574,17 @@ _Optional parameters_: Only pass the parameters you want to change.
 <!-- START PUT /projects/1/timesheet/entries/2.json -->
 ```json
 {
-  "id": 1069480002,
+  "id": 1069480003,
   "status": "active",
   "visible_to_clients": false,
-  "created_at": "2026-02-05T05:44:22.449Z",
-  "updated_at": "2026-02-05T05:44:22.945Z",
+  "created_at": "2026-02-05T07:32:20.768Z",
+  "updated_at": "2026-02-05T07:32:21.757Z",
   "title": "Timesheet entry",
   "inherits_status": true,
   "type": "Timesheet::Entry",
-  "url": "https://3.basecampapi.com/195539477/projects/2085958504/timesheet/entries/1069480002.json",
-  "app_url": "https://3.basecamp.com/195539477/projects/2085958504/timesheet/entries/1069480002",
-  "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiLmdpZDovL2JjMy9SZWNvcmRpbmcvMTA2OTQ4MDAwMj9leHBpcmVzX2luBjsAVEkiCHB1cgY7AFRJIg1yZWFkYWJsZQY7AFQ=--b1f7207e7c464c3d371bace6cec654ff8f20b268.json",
+  "url": "https://3.basecampapi.com/195539477/projects/2085958504/timesheet/entries/1069480003.json",
+  "app_url": "https://3.basecamp.com/195539477/projects/2085958504/timesheet/entries/1069480003",
+  "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiLmdpZDovL2JjMy9SZWNvcmRpbmcvMTA2OTQ4MDAwMz9leHBpcmVzX2luBjsAVEkiCHB1cgY7AFRJIg1yZWFkYWJsZQY7AFQ=--ccfe246f63ad947294e26409f3067b394d3ab04b.json",
   "parent": {
     "id": 1069479406,
     "title": "We won Leto!",
@@ -419,7 +626,34 @@ _Optional parameters_: Only pass the parameters you want to change.
   },
   "date": "2026-02-04",
   "description": "Updated via API",
-  "hours": "2.5"
+  "hours": "2.5",
+  "person": {
+    "id": 1049715913,
+    "attachable_sgid": "BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiK2dpZDovL2JjMy9QZXJzb24vMTA0OTcxNTkxMz9leHBpcmVzX2luBjsAVEkiCHB1cgY7AFRJIg9hdHRhY2hhYmxlBjsAVA==--e627c45e6b34e08862da23906862412620e4d5d9",
+    "name": "Victor Cooper",
+    "email_address": "victor@honchodesign.com",
+    "personable_type": "User",
+    "title": "Chief Strategist",
+    "bio": "Don’t let your dreams be dreams",
+    "location": "Chicago, IL",
+    "created_at": "2026-01-31T08:29:28.365Z",
+    "updated_at": "2026-01-31T08:29:32.599Z",
+    "admin": true,
+    "owner": true,
+    "client": false,
+    "employee": true,
+    "time_zone": "America/Chicago",
+    "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBMlkkT4=--5fe7b70fbee7a7f0e2e1e19df7579e5d880c753d/avatar?v=1",
+    "company": {
+      "id": 1033447817,
+      "name": "Honcho Design"
+    },
+    "can_ping": true,
+    "can_manage_projects": true,
+    "can_manage_people": true,
+    "can_access_timesheet": true,
+    "can_access_hill_charts": true
+  }
 }
 ```
 <!-- END PUT /projects/1/timesheet/entries/2.json -->
