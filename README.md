@@ -256,8 +256,8 @@ A to-do can be `completed: true` and `status: "active"` (done but not archived).
 
 API endpoints
 -------------
-<!-- START API ENDPOINTS -->
 - [Authentication](https://github.com/basecamp/bc3-api/blob/master/sections/authentication.md#authentication)
+<!-- START API ENDPOINTS -->
 - [Attachments](https://github.com/basecamp/bc3-api/blob/master/sections/attachments.md#attachments)
 - [Campfires](https://github.com/basecamp/bc3-api/blob/master/sections/campfires.md#campfires)
 - [Card table cards](https://github.com/basecamp/bc3-api/blob/master/sections/card_table_cards.md#card-table-cards)
