@@ -35,7 +35,7 @@ Get a tool
   "url": "https://3.basecampapi.com/195539477/buckets/2085958504/chats/1069479395.json",
   "app_url": "https://3.basecamp.com/195539477/buckets/2085958504/chats/1069479395",
   "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiLmdpZDovL2JjMy9SZWNvcmRpbmcvMTA2OTQ3OTM5NT9leHBpcmVzX2luBjsAVEkiCHB1cgY7AFRJIg1yZWFkYWJsZQY7AFQ=--8737d118a3b0bb00e4fc9ddfea9e3a421b2b8bf5.json",
-  "subscription_url": "https://3.basecampapi.com/195539477/buckets/2085958504/recordings/1069479395/subscription.json",
+  "subscription_url": "https://3.basecampapi.com/195539477/recordings/1069479395/subscription.json",
   "position": 4,
   "bucket": {
     "id": 2085958504,

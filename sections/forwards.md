@@ -11,12 +11,12 @@ Endpoints:
 Get forwards
 ------------
 
-* `GET /buckets/1/inboxes/3/forwards.json` will return a [paginated list][2] of active forwards in the project with an ID of `1` and the inbox with an ID of `3`.
+* `GET /inboxes/3/forwards.json` will return a [paginated list][2] of active forwards in the inbox with an ID of `3`.
 
 To get the inbox ID for a project, see the [Get inbox][3] endpoint.
 
 ###### Example JSON Response
-<!-- START GET /buckets/1/inboxes/3/forwards.json -->
+<!-- START GET /inboxes/3/forwards.json -->
 ```json
 [
   {
@@ -31,7 +31,7 @@ To get the inbox ID for a project, see the [Get inbox][3] endpoint.
     "url": "https://3.basecampapi.com/195539477/buckets/2085958502/inbox_forwards/1069479085.json",
     "app_url": "https://3.basecamp.com/195539477/buckets/2085958502/inbox_forwards/1069479085",
     "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiLmdpZDovL2JjMy9SZWNvcmRpbmcvMTA2OTQ3OTA4NT9leHBpcmVzX2luBjsAVEkiCHB1cgY7AFRJIg1yZWFkYWJsZQY7AFQ=--5dbe6f761324a7399d519608a8b79f9a518b791d.json",
-    "subscription_url": "https://3.basecampapi.com/195539477/buckets/2085958502/recordings/1069479085/subscription.json",
+    "subscription_url": "https://3.basecampapi.com/195539477/recordings/1069479085/subscription.json",
     "parent": {
       "id": 1069478988,
       "title": "Email Forwards",
@@ -79,22 +79,22 @@ To get the inbox ID for a project, see the [Get inbox][3] endpoint.
   }
 ]
 ```
-<!-- END GET /buckets/1/inboxes/3/forwards.json -->
+<!-- END GET /inboxes/3/forwards.json -->
 
 ###### Copy as cURL
 
 ```shell
-curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/inboxes/3/forwards.json
+curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/inboxes/3/forwards.json
 ```
 
 
 Get a forward
 -------------
 
-* `GET /buckets/1/inbox_forwards/2.json` will return the forward with an ID of `2` in the project with an ID of `1`.
+* `GET /inbox_forwards/2.json` will return the forward with an ID of `2`.
 
 ###### Example JSON Response
-<!-- START GET /buckets/1/inbox_forwards/2.json -->
+<!-- START GET /inbox_forwards/2.json -->
 ```json
 {
   "id": 1069479084,
@@ -108,7 +108,7 @@ Get a forward
   "url": "https://3.basecampapi.com/195539477/buckets/2085958502/inbox_forwards/1069479084.json",
   "app_url": "https://3.basecamp.com/195539477/buckets/2085958502/inbox_forwards/1069479084",
   "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiLmdpZDovL2JjMy9SZWNvcmRpbmcvMTA2OTQ3OTA4ND9leHBpcmVzX2luBjsAVEkiCHB1cgY7AFRJIg1yZWFkYWJsZQY7AFQ=--e82f515d3ab363490c1fe06e0d733db9d6f623e9.json",
-  "subscription_url": "https://3.basecampapi.com/195539477/buckets/2085958502/recordings/1069479084/subscription.json",
+  "subscription_url": "https://3.basecampapi.com/195539477/recordings/1069479084/subscription.json",
   "parent": {
     "id": 1069478988,
     "title": "Email Forwards",
@@ -155,14 +155,21 @@ Get a forward
   "replies_url": "https://3.basecampapi.com/195539477/buckets/2085958502/inbox_forwards/1069479084/replies.json"
 }
 ```
-<!-- END GET /buckets/1/inbox_forwards/2.json -->
+<!-- END GET /inbox_forwards/2.json -->
 
 ###### Copy as cURL
 
 ```shell
-curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/inbox_forwards/2.json
+curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/inbox_forwards/2.json
 ```
 
+Legacy project-scoped routes
+-----------------------------
+
+The following project-scoped routes are still supported and will remain available, but flat routes above are the canonical form for new integrations.
+
+* `GET /buckets/1/inboxes/3/forwards.json` → [Get forwards](#get-forwards)
+* `GET /buckets/1/inbox_forwards/2.json` → [Get a forward](#get-a-forward)
 
 [1]: https://github.com/basecamp/bc3-api/blob/master/sections/recordings.md#trash-a-recording
 [2]: https://github.com/basecamp/bc3-api/blob/master/README.md#pagination

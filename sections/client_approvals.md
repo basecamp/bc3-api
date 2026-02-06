@@ -27,7 +27,7 @@ Get client approvals
     "url": "https://3.basecampapi.com/195539477/buckets/2085958505/client/approvals/1069479710.json",
     "app_url": "https://3.basecamp.com/195539477/buckets/2085958505/client/approvals/1069479710",
     "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiLmdpZDovL2JjMy9SZWNvcmRpbmcvMTA2OTQ3OTcxMD9leHBpcmVzX2luBjsAVEkiCHB1cgY7AFRJIg1yZWFkYWJsZQY7AFQ=--c829d12a1ba1abe280f06a0f79bcbc38c7c189cb.json",
-    "subscription_url": "https://3.basecampapi.com/195539477/buckets/2085958505/recordings/1069479710/subscription.json",
+    "subscription_url": "https://3.basecampapi.com/195539477/recordings/1069479710/subscription.json",
     "parent": {
       "id": 1069479620,
       "title": "The Clientside",
@@ -113,10 +113,10 @@ curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCO
 Get a client approval
 ---------------------
 
-* `GET /buckets/1/client/approvals/2.json` will return the client approval with an ID of `2` in the project with an ID of `1`.
+* `GET /client/approvals/2.json` will return the client approval with an ID of `2`.
 
 ###### Example JSON Response
-<!-- START GET /buckets/1/client/approvals/2.json -->
+<!-- START GET /client/approvals/2.json -->
 ```json
 {
   "id": 1069479708,
@@ -130,7 +130,7 @@ Get a client approval
   "url": "https://3.basecampapi.com/195539477/buckets/2085958505/client/approvals/1069479708.json",
   "app_url": "https://3.basecamp.com/195539477/buckets/2085958505/client/approvals/1069479708",
   "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiLmdpZDovL2JjMy9SZWNvcmRpbmcvMTA2OTQ3OTcwOD9leHBpcmVzX2luBjsAVEkiCHB1cgY7AFRJIg1yZWFkYWJsZQY7AFQ=--04b696f4ae155bb3e5af2626c7e368f092038285.json",
-  "subscription_url": "https://3.basecampapi.com/195539477/buckets/2085958505/recordings/1069479708/subscription.json",
+  "subscription_url": "https://3.basecampapi.com/195539477/recordings/1069479708/subscription.json",
   "parent": {
     "id": 1069479620,
     "title": "The Clientside",
@@ -260,11 +260,19 @@ Get a client approval
   ]
 }
 ```
-<!-- END GET /buckets/1/client/approvals/2.json -->
+<!-- END GET /client/approvals/2.json -->
 ###### Copy as cURL
 
 ```shell
-curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/client/approvals/2.json
+curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/client/approvals/2.json
 ```
+
+
+Legacy project-scoped routes
+-----------------------------
+
+The following project-scoped routes are still supported and will remain available, but flat routes above are the canonical form for new integrations.
+
+* `GET /buckets/1/client/approvals/2.json` → [Get a client approval](#get-a-client-approval)
 
 [pagination]: https://github.com/basecamp/bc3-api/blob/master/README.md#pagination

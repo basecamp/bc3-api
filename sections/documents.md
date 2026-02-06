@@ -12,10 +12,10 @@ Endpoints:
 Get documents
 -------------
 
-* `GET /buckets/1/vaults/2/documents.json` will return a [paginated list][pagination] of active documents in the project with an ID of `1` and the [vault][vaults] with ID of `2`.
+* `GET /vaults/2/documents.json` will return a [paginated list][pagination] of active documents in the [vault][vaults] with ID of `2`.
 
 ###### Example JSON Response
-<!-- START GET /buckets/1/vaults/2/documents.json -->
+<!-- START GET /vaults/2/documents.json -->
 ```json
 [
   {
@@ -30,9 +30,9 @@ Get documents
     "url": "https://3.basecampapi.com/195539477/buckets/2085958502/documents/1069479147.json",
     "app_url": "https://3.basecamp.com/195539477/buckets/2085958502/documents/1069479147",
     "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiLmdpZDovL2JjMy9SZWNvcmRpbmcvMTA2OTQ3OTE0Nz9leHBpcmVzX2luBjsAVEkiCHB1cgY7AFRJIg1yZWFkYWJsZQY7AFQ=--7d1a4e571d9352315554d871bda4d46313701285.json",
-    "subscription_url": "https://3.basecampapi.com/195539477/buckets/2085958502/recordings/1069479147/subscription.json",
+    "subscription_url": "https://3.basecampapi.com/195539477/recordings/1069479147/subscription.json",
     "comments_count": 1,
-    "comments_url": "https://3.basecampapi.com/195539477/buckets/2085958502/recordings/1069479147/comments.json",
+    "comments_url": "https://3.basecampapi.com/195539477/recordings/1069479147/comments.json",
     "position": 1,
     "parent": {
       "id": 1069479146,
@@ -77,20 +77,20 @@ Get documents
   }
 ]
 ```
-<!-- END GET /buckets/1/vaults/2/documents.json -->
+<!-- END GET /vaults/2/documents.json -->
 ###### Copy as cURL
 
 ```shell
-curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/vaults/2/documents.json
+curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/vaults/2/documents.json
 ```
 
 Get a document
 --------------
 
-* `GET /buckets/1/documents/2.json` will return the document with an ID of `2` in the project with an ID of `1`.
+* `GET /documents/2.json` will return the document with an ID of `2`.
 
 ###### Example JSON Response
-<!-- START GET /buckets/1/documents/2.json -->
+<!-- START GET /documents/2.json -->
 ```json
 {
   "id": 1069479860,
@@ -104,9 +104,9 @@ Get a document
   "url": "https://3.basecampapi.com/195539477/buckets/2085958508/documents/1069479860.json",
   "app_url": "https://3.basecamp.com/195539477/buckets/2085958508/documents/1069479860",
   "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiLmdpZDovL2JjMy9SZWNvcmRpbmcvMTA2OTQ3OTg2MD9leHBpcmVzX2luBjsAVEkiCHB1cgY7AFRJIg1yZWFkYWJsZQY7AFQ=--6e3c21a333aa7ca5da3b9a9372022b4b19083f73.json",
-  "subscription_url": "https://3.basecampapi.com/195539477/buckets/2085958508/recordings/1069479860/subscription.json",
+  "subscription_url": "https://3.basecampapi.com/195539477/recordings/1069479860/subscription.json",
   "comments_count": 0,
-  "comments_url": "https://3.basecampapi.com/195539477/buckets/2085958508/recordings/1069479860/comments.json",
+  "comments_url": "https://3.basecampapi.com/195539477/recordings/1069479860/comments.json",
   "position": 1,
   "parent": {
     "id": 1069479845,
@@ -146,18 +146,18 @@ Get a document
   "content": "This overview of the available project tools will help you know when and how to use them.           <br><br><strong>To-dos</strong><br>           To-dos keep everyone on a project in the loop about the work that needs to be done and who’s responsible. Let’s dig into to-dos.           <ul>             <li>\n<a href=\"https://3.basecamp-help.com/article/48-to-dos#assigning\" target=\"_blank\" rel=\"noreferrer\">Assignments</a> let you divvy up the work and manage accountability.</li>             <li>\n<a href=\"https://3.basecamp-help.com/article/48-to-dos#group-to-dos\" target=\"_blank\" rel=\"noreferrer\">Groups</a> are a great way to organize and color-code related tasks.</li>             <li>\n<a href=\"https://3.basecamp-help.com/article/48-to-dos#bulk-assign-archive-edit-due-dates\" target=\"_blank\" rel=\"noreferrer\">Bulk actions</a> let you make multiple changes at once.</li>             <li>\n<a href=\"https://3.basecamp-help.com/article/66-templates#creating-a-new-to-do-list-template\" target=\"_blank\" rel=\"noreferrer\">To-do templates</a> makes it possible to use the same list without recreating it every time.</li>           </ul>           <a href=\"https://3.basecamp-help.com/article/48-to-dos\" target=\"_blank\" rel=\"noreferrer\">Learn more about To-dos</a>           <br><br><strong>Docs &amp; Files</strong><br>           Docs and Files are great for how-tos, best practices, shared files, photos, brand assets, and much more. Here are a few helpful details.           <ul>             <li>Files can be uploaded, linked from the cloud, or you can drag and drop them into Basecamp.</li>             <li>Documents can be edited by multiple people, but not at once.</li>             <li>Every version of a document is stored so you can see the history of changes. Click the three dot menu ••• on the doc, then View changes.</li>             <li>Folders let you group stuff together and can be color-coded to organize things visually.</li>           </ul>           <a href=\"https://3.basecamp-help.com/article/51-docs-files\" target=\"_blank\" rel=\"noreferrer\">Learn more about Docs &amp; Files</a>           <br><br><strong>Message Board</strong><br>           When you want to make an announcement, start a discussion, or share progress, Messages are the answer. At Basecamp, messages have           replaced email internally. Everyone gets notified and can comment, boost, or ask questions in one place without a long email thread.           <ul>             <li>\n<a href=\"https://3.basecamp-help.com/article/46-message-board#pinning\" target=\"_blank\" rel=\"noreferrer\">Pin a message</a> to keep the important stuff at the top, whether a welcome message or the project overview.</li>             <li>\n<a href=\"https://3.basecamp-help.com/article/46-message-board#message-categories\" target=\"_blank\" rel=\"noreferrer\">Use categories</a> to organize your posts and gives the people context about the information they’re going to read. You can customize those categories for your organization, too. You’ll find the option in Adminland.</li>             <li>\n<a href=\"https://3.basecamp-help.com/article/46-message-board#schedule\" target=\"_blank\" rel=\"noreferrer\">Schedule a post</a> to publish it at the optimal time, perfect if you’re in another time zone from your team or are working after hours.</li>           </ul>           <a href=\"https://basecamp.com/learn/beyond-the-basics/message-board\" target=\"_blank\" rel=\"noreferrer\">Learn more about Messages</a>           <br><br><strong>Schedule</strong><br>           The Schedule keeps you on track for each project. In one place, you can see the meetings, milestones, and upcoming due dates. Let’s get into more tips:           <ul>             <li>Click My Stuff &gt; My Schedule to see events from across all of your projects.</li>             <li>Go to the specific project to <a href=\"https://3.basecamp-help.com/article/49-schedule#add-events\" target=\"_blank\" rel=\"noreferrer\">add events</a>.</li>             <li>\n<a href=\"https://3.basecamp-help.com/article/49-schedule#recurring-events\" target=\"_blank\" rel=\"noreferrer\">Create recurring events</a> for meetings that happen on a regular schedule.</li>             <li>Want your Basecamp schedule in your calendar app? <a href=\"https://3.basecamp-help.com/article/49-schedule#sync-your-schedule-with-an-external-calendar\" target=\"_blank\" rel=\"noreferrer\">Here’s how to sync it</a>.</li>             <li>By default, the Schedule includes assignments with due dates. If you only want to see meetings and events, you can <a href=\"https://3.basecamp-help.com/article/49-schedule#Choose-what-to-show-on-a-Schedule-rs5BI\" target=\"_blank\" rel=\"noreferrer\">change what’s shown</a>.</li>           </ul>           <a href=\"https://3.basecamp-help.com/article/49-schedule\" target=\"_blank\" rel=\"noreferrer\">Learn more about the Schedule</a>           <br><br><strong>Card Table</strong><br>           Card tables are Basecamp’s way to manage process-driven and reactive work, similar to Kanban boards in other tools. A support team           that needs to triage customer requests? Card table. A creative team that needs to move an item from ideation through to completion?           Card table. From event planning to real estate, cards help you manage all kinds of work.           <ul>             <li>\n<a href=\"https://3.basecamp-help.com/article/676-card-tables#add-card\" target=\"_blank\" rel=\"noreferrer\">Add a card</a>, then assign it to someone, give it a due date, and include any needed notes or attachments. All of the conversation about the card will happen right there.</li>             <li>\n<a href=\"https://3.basecamp-help.com/article/676-card-tables#steps\" target=\"_blank\" rel=\"noreferrer\">Add steps to cards</a> to break down the work into a checklist. You can assign each step and give it a due date, which is great for when multiple people are working together.</li>             <li>\n<a href=\"https://3.basecamp-help.com/article/676-card-tables#watch-column\" target=\"_blank\" rel=\"noreferrer\">Watch a column</a> to be notified about new cards added or moved to that space.</li>             <li>\n<a href=\"https://3.basecamp-help.com/article/676-card-tables#organizing-columns\" target=\"_blank\" rel=\"noreferrer\">Organize the columns</a> so that each stage is relevant to the work.</li>           </ul>           <a href=\"https://basecamp.com/learn/beyond-the-basics/card-table\" target=\"_blank\" rel=\"noreferrer\">Learn more about Card Tables</a>           <br><br><strong>Chat</strong><br>           Chat is where real-time group conversation happens in a project. Sometimes getting on the same page requires live conversation and Chat is a           great solution.<br><br>It’s also a fun place to say good morning and share a bit about your day, the water cooler conversations that           keeps people connected. If the chatter is ever too much, you can turn off notifications from within the chat itself.           <br><br>           Curious when to use Chat, Pings, or Messages? <a href=\"https://basecamp.com/learn/beyond-the-basics/communication-tools\" target=\"_blank\" rel=\"noreferrer\">This short video</a>           will walk you through it.           <br><br>           <a href=\"https://3.basecamp-help.com/article/40-campfire\" target=\"_blank\" rel=\"noreferrer\">Learn more about Chat</a>           <br><br><strong>Automatic Check-ins</strong><br>           Automatic check-ins allow everyone on the project to share responses to the same prompt, collected in one place. You can set up           questions for just about anything, on any cadence. These questions can be project related, goal specific, or just for fun.           <br><br>           <a href=\"https://basecamp.com/learn/beyond-the-basics/automatic-check-ins\" target=\"_blank\" rel=\"noreferrer\">Watch this quick video</a> to learn more and see how we           use check-ins at Basecamp."
 }
 ```
-<!-- END GET /buckets/1/documents/2.json -->
+<!-- END GET /documents/2.json -->
 
 ###### Copy as cURL
 
 ```shell
-curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/documents/2.json
+curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/documents/2.json
 ```
 
 Create a document
 -----------------
 
-* `POST /buckets/1/vaults/2/documents.json` publishes a document in the project with ID `1` and under the vault with an ID of `2`.
+* `POST /vaults/2/documents.json` publishes a document under the vault with an ID of `2`.
 
 **Required parameters**: `title` as the title of the document, and `content` as the body of the document. See our [Rich text guide][rich] for what HTML tags are allowed.
 
@@ -180,13 +180,13 @@ This endpoint will return `201 Created` with the current JSON representation of 
 ```shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" \
   -d '{"title":"New Hire Info","content":"<div><strong>Getting started</strong></div>","status":"active"}' \
-  https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/vaults/2/documents.json
+  https://3.basecampapi.com/$ACCOUNT_ID/vaults/2/documents.json
 ```
 
 Update a document
 -----------------
 
-* `PUT /buckets/1/documents/2.json` allows changing the title and content of the document with an ID of `2` in the project with ID `1`.
+* `PUT /documents/2.json` allows changing the title and content of the document with an ID of `2`.
 
 This endpoint will return `200 OK` with the current JSON representation of the document if the update was a success. See the [Get a document](#get-a-document) endpoint for more info on the payload.
 
@@ -204,8 +204,18 @@ This endpoint will return `200 OK` with the current JSON representation of the d
 ```shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" \
   -d '{"title":"New Hire Information","content":"<div><strong>Let's get started</strong></div>"}' -X PUT \
-  https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/documents/2.json
+  https://3.basecampapi.com/$ACCOUNT_ID/documents/2.json
 ```
+
+Legacy project-scoped routes
+-----------------------------
+
+The following project-scoped routes are still supported and will remain available, but flat routes above are the canonical form for new integrations.
+
+* `GET /buckets/1/vaults/2/documents.json` → [Get documents](#get-documents)
+* `GET /buckets/1/documents/2.json` → [Get a document](#get-a-document)
+* `POST /buckets/1/vaults/2/documents.json` → [Create a document](#create-a-document)
+* `PUT /buckets/1/documents/2.json` → [Update a document](#update-a-document)
 
 [pagination]: https://github.com/basecamp/bc3-api/blob/master/README.md#pagination
 [trash]: https://github.com/basecamp/bc3-api/blob/master/sections/recordings.md#trash-a-recording

@@ -10,10 +10,10 @@ Endpoints:
 Get a card table
 --------------------
 
-* `GET /buckets/1/card_tables/2.json` will return the card_table with an ID of `2` in the project with an ID of `1`.
+* `GET /card_tables/2.json` will return the card table with an ID of `2`.
 
 ###### Example JSON Response
-<!-- START GET /buckets/1/card_tables/2.json -->
+<!-- START GET /card_tables/2.json -->
 ```json
 {
   "id": 1069479399,
@@ -27,7 +27,7 @@ Get a card table
   "url": "https://3.basecampapi.com/195539477/buckets/2085958504/card_tables/1069479399.json",
   "app_url": "https://3.basecamp.com/195539477/buckets/2085958504/card_tables/1069479399",
   "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiLmdpZDovL2JjMy9SZWNvcmRpbmcvMTA2OTQ3OTM5OT9leHBpcmVzX2luBjsAVEkiCHB1cgY7AFRJIg1yZWFkYWJsZQY7AFQ=--4c62f9ab0364fa8feecc3d38b70fc066bfa6bdb9.json",
-  "subscription_url": "https://3.basecampapi.com/195539477/buckets/2085958504/recordings/1069479399/subscription.json",
+  "subscription_url": "https://3.basecampapi.com/195539477/recordings/1069479399/subscription.json",
   "bucket": {
     "id": 2085958504,
     "name": "The Leto Laptop",
@@ -103,7 +103,7 @@ Get a card table
       "url": "https://3.basecampapi.com/195539477/buckets/2085958504/card_tables/columns/1069479400.json",
       "app_url": "https://3.basecamp.com/195539477/buckets/2085958504/card_tables/columns/1069479400",
       "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiLmdpZDovL2JjMy9SZWNvcmRpbmcvMTA2OTQ3OTQwMD9leHBpcmVzX2luBjsAVEkiCHB1cgY7AFRJIg1yZWFkYWJsZQY7AFQ=--76b2dfcd8a8eea46097d4f1ce80acf09d339e6d2.json",
-      "subscription_url": "https://3.basecampapi.com/195539477/buckets/2085958504/recordings/1069479400/subscription.json",
+      "subscription_url": "https://3.basecampapi.com/195539477/recordings/1069479400/subscription.json",
       "parent": {
         "id": 1069479399,
         "title": "Card Table",
@@ -190,7 +190,7 @@ Get a card table
       "url": "https://3.basecampapi.com/195539477/buckets/2085958504/card_tables/columns/1069479401.json",
       "app_url": "https://3.basecamp.com/195539477/buckets/2085958504/card_tables/columns/1069479401",
       "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiLmdpZDovL2JjMy9SZWNvcmRpbmcvMTA2OTQ3OTQwMT9leHBpcmVzX2luBjsAVEkiCHB1cgY7AFRJIg1yZWFkYWJsZQY7AFQ=--c38ff652825662db3002123f804f6ff4d4ba010d.json",
-      "subscription_url": "https://3.basecampapi.com/195539477/buckets/2085958504/recordings/1069479401/subscription.json",
+      "subscription_url": "https://3.basecampapi.com/195539477/recordings/1069479401/subscription.json",
       "parent": {
         "id": 1069479399,
         "title": "Card Table",
@@ -277,7 +277,7 @@ Get a card table
       "url": "https://3.basecampapi.com/195539477/buckets/2085958504/card_tables/columns/1069479402.json",
       "app_url": "https://3.basecamp.com/195539477/buckets/2085958504/card_tables/columns/1069479402",
       "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiLmdpZDovL2JjMy9SZWNvcmRpbmcvMTA2OTQ3OTQwMj9leHBpcmVzX2luBjsAVEkiCHB1cgY7AFRJIg1yZWFkYWJsZQY7AFQ=--ccb1881249e7c3823899fb63807fdf71e67a68ab.json",
-      "subscription_url": "https://3.basecampapi.com/195539477/buckets/2085958504/recordings/1069479402/subscription.json",
+      "subscription_url": "https://3.basecampapi.com/195539477/recordings/1069479402/subscription.json",
       "position": 1,
       "parent": {
         "id": 1069479399,
@@ -365,7 +365,7 @@ Get a card table
       "url": "https://3.basecampapi.com/195539477/buckets/2085958504/card_tables/columns/1069479403.json",
       "app_url": "https://3.basecamp.com/195539477/buckets/2085958504/card_tables/columns/1069479403",
       "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiLmdpZDovL2JjMy9SZWNvcmRpbmcvMTA2OTQ3OTQwMz9leHBpcmVzX2luBjsAVEkiCHB1cgY7AFRJIg1yZWFkYWJsZQY7AFQ=--3f35474fda2b034850dd6f71da9aaf6e737fdfbf.json",
-      "subscription_url": "https://3.basecampapi.com/195539477/buckets/2085958504/recordings/1069479403/subscription.json",
+      "subscription_url": "https://3.basecampapi.com/195539477/recordings/1069479403/subscription.json",
       "position": 2,
       "parent": {
         "id": 1069479399,
@@ -453,7 +453,7 @@ Get a card table
       "url": "https://3.basecampapi.com/195539477/buckets/2085958504/card_tables/columns/1069479404.json",
       "app_url": "https://3.basecamp.com/195539477/buckets/2085958504/card_tables/columns/1069479404",
       "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiLmdpZDovL2JjMy9SZWNvcmRpbmcvMTA2OTQ3OTQwND9leHBpcmVzX2luBjsAVEkiCHB1cgY7AFRJIg1yZWFkYWJsZQY7AFQ=--999257f5e2a3be18e6cd145f0eb7b91e5f417d5e.json",
-      "subscription_url": "https://3.basecampapi.com/195539477/buckets/2085958504/recordings/1069479404/subscription.json",
+      "subscription_url": "https://3.basecampapi.com/195539477/recordings/1069479404/subscription.json",
       "parent": {
         "id": 1069479399,
         "title": "Card Table",
@@ -531,9 +531,16 @@ Get a card table
   ]
 }
 ```
-<!-- END GET /buckets/1/card_tables/2.json -->
+<!-- END GET /card_tables/2.json -->
 ###### Copy as cURL
 
 ```shell
-curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/card_tables/2.json
+curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/card_tables/2.json
 ```
+
+Legacy project-scoped routes
+-----------------------------
+
+The following project-scoped routes are still supported and will remain available, but flat routes above are the canonical form for new integrations.
+
+* `GET /buckets/1/card_tables/2.json` → [Get a card table](#get-a-card-table)

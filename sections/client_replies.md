@@ -11,10 +11,10 @@ Endpoints:
 Get client replies
 ------------------
 
-* `GET /buckets/1/client/recordings/2/replies.json` will return a [paginated list][pagination] of client replies in the project with an ID of `1` and the recording with ID of `2`.
+* `GET /client/recordings/2/replies.json` will return a [paginated list][pagination] of client replies for the recording with ID `2`.
 
 ###### Example JSON Response
-<!-- START GET /buckets/1/client/recordings/2/replies.json -->
+<!-- START GET /client/recordings/2/replies.json -->
 ```json
 [
   {
@@ -72,20 +72,20 @@ Get client replies
   }
 ]
 ```
-<!-- END GET /buckets/1/client/recordings/2/replies.json -->
+<!-- END GET /client/recordings/2/replies.json -->
 ###### Copy as cURL
 
 ```shell
-curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/client/recordings/2/replies.json
+curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/client/recordings/2/replies.json
 ```
 
 Get a client reply
 ------------------
 
-* `GET /buckets/1/client/recordings/2/replies/3.json` will return the client reply with an ID of `3` for the recording with an ID of `2` in the project with an ID of `1`.
+* `GET /client/recordings/2/replies/3.json` will return the client reply with an ID of `3` for the recording with an ID of `2`.
 
 ###### Example JSON Response
-<!-- START GET /buckets/1/client/recordings/2/replies/3.json -->
+<!-- START GET /client/recordings/2/replies/3.json -->
 ```json
 {
   "id": 1069479628,
@@ -141,12 +141,21 @@ Get a client reply
   "content": "Hi Leto team, this it's Annie. I'll be your day to day contact for the project, so keep me on your speed dial (or speed email, perhaps more accurately!) Feel free to reach out to me with any questions at all, and I'll be posting up some outlines, timelines, etc. very shortly."
 }
 ```
-<!-- END GET /buckets/1/client/recordings/2/replies/3.json -->
+<!-- END GET /client/recordings/2/replies/3.json -->
 ###### Copy as cURL
 
 ```shell
-curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/client/recordings/2/replies/3.json
+curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/client/recordings/2/replies/3.json
 ```
+
+
+Legacy project-scoped routes
+-----------------------------
+
+The following project-scoped routes are still supported and will remain available, but flat routes above are the canonical form for new integrations.
+
+* `GET /buckets/1/client/recordings/2/replies.json` → [Get client replies](#get-client-replies)
+* `GET /buckets/1/client/recordings/2/replies/3.json` → [Get a client reply](#get-a-client-reply)
 
 [pagination]: https://github.com/basecamp/bc3-api/blob/master/README.md#pagination
 [correspondences]: https://github.com/basecamp/bc3-api/blob/master/sections/client_correspondences.md#client-correspondences

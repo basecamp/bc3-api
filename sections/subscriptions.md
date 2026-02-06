@@ -14,10 +14,10 @@ Endpoints:
 Get subscription
 ----------------
 
-* `GET /buckets/1/recordings/2/subscription.json` will return subscription information for a recording with an ID of `2` in the bucket with ID `1`.
+* `GET /recordings/2/subscription.json` will return subscription information for a recording with an ID of `2`.
 
 ###### Example JSON Response
-<!-- START GET /buckets/1/recordings/2/subscription.json -->
+<!-- START GET /recordings/2/subscription.json -->
 ```json
 {
   "subscribed": true,
@@ -81,42 +81,42 @@ Get subscription
   ]
 }
 ```
-<!-- END GET /buckets/1/recordings/2/subscription.json -->
+<!-- END GET /recordings/2/subscription.json -->
 
 ###### Copy as cURL
 
 ```shell
-curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/recordings/2/subscription.json
+curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/recordings/2/subscription.json
 ```
 
 Subscribe current user
 ----------------------
 
-* `POST /buckets/1/recordings/2/subscription.json` will subscribe the current user to the recording with an ID of `2` in the bucket with ID `1`. It returns `200 OK` with the current JSON representation of the recording subscriptions if the creation was a success. See the [Get subscription](#get-subscription) endpoint for an example of such response. 
+* `POST /recordings/2/subscription.json` will subscribe the current user to the recording with an ID of `2`. It returns `200 OK` with the current JSON representation of the recording subscriptions if the creation was a success. See the [Get subscription](#get-subscription) endpoint for an example of such response.
 
 ###### Copy as cURL
 
 ```shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" -X POST \
-  https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/recordings/2/subscription.json
+  https://3.basecampapi.com/$ACCOUNT_ID/recordings/2/subscription.json
 ```
 
 Unsubscribe current user
 -----------------------
 
-* `DELETE /buckets/1/recordings/2/subscription.json` will unsubscribe the current user from the recording with an ID of `2` in the bucket with ID `1`. It returns `204 No Content` in any case, even if the current user wasn't previously subscribed.
+* `DELETE /recordings/2/subscription.json` will unsubscribe the current user from the recording with an ID of `2`. It returns `204 No Content` in any case, even if the current user wasn't previously subscribed.
 
 ###### Copy as cURL
 
 ```shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" -X DELETE \
-  https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/recordings/2/subscription.json
+  https://3.basecampapi.com/$ACCOUNT_ID/recordings/2/subscription.json
 ```
 
 Update subscription
 -------------------
 
-* `PUT /buckets/1/recordings/2/subscription.json` will add and remove the people given from the list of subscribers for the recording with an ID of `2` in the bucket with ID `1`. It returns `200 OK` with the current JSON representation of the recording subscriptions if the creation was a success.
+* `PUT /recordings/2/subscription.json` will add and remove the people given from the list of subscribers for the recording with an ID of `2`. It returns `200 OK` with the current JSON representation of the recording subscriptions if the creation was a success.
 
 **Parameters**: Requests should include at least one of the following parameters.
 
@@ -124,7 +124,7 @@ Update subscription
 * `unsubscriptions` - an array of people IDs.
 
 ###### Example JSON Request
-<!-- START PUT PAYLOAD /buckets/1/recordings/2/subscription.json -->
+<!-- START PUT PAYLOAD /recordings/2/subscription.json -->
 ```json
 {
   "subscriptions": [
@@ -135,7 +135,7 @@ Update subscription
   ]
 }
 ```
-<!-- END PUT PAYLOAD /buckets/1/recordings/2/subscription.json -->
+<!-- END PUT PAYLOAD /recordings/2/subscription.json -->
 
 
 ###### Copy as cURL
@@ -143,11 +143,11 @@ Update subscription
 ```shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" \
   -d '{"subscriptions":[1049715916], "unsubscriptions":[1049715914]}' -X PUT \
-  https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/recordings/2/subscription.json
+  https://3.basecampapi.com/$ACCOUNT_ID/recordings/2/subscription.json
 ```
 
 ###### Example JSON Response
-<!-- START PUT /buckets/1/recordings/2/subscription.json -->
+<!-- START PUT /recordings/2/subscription.json -->
 ```json
 {
   "subscribed": false,
@@ -211,4 +211,14 @@ curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/j
   ]
 }
 ```
-<!-- END PUT /buckets/1/recordings/2/subscription.json -->
+<!-- END PUT /recordings/2/subscription.json -->
+
+Legacy project-scoped routes
+-----------------------------
+
+The following project-scoped routes are still supported and will remain available, but flat routes above are the canonical form for new integrations.
+
+* `GET /buckets/1/recordings/2/subscription.json` → [Get subscription](#get-subscription)
+* `POST /buckets/1/recordings/2/subscription.json` → [Subscribe current user](#subscribe-current-user)
+* `DELETE /buckets/1/recordings/2/subscription.json` → [Unsubscribe current user](#unsubscribe-current-user)
+* `PUT /buckets/1/recordings/2/subscription.json` → [Update subscription](#update-subscription)

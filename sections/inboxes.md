@@ -11,12 +11,12 @@ Endpoints:
 Get inbox
 ---------
 
-* `GET /buckets/1/inboxes/2.json` will return the inbox with an ID of `2` for the project with an ID of `1`.
+* `GET /inboxes/2.json` will return the inbox with an ID of `2`.
 
 To get the inbox ID for a project, see the [Get a project][1] endpoint's `dock` payload. To retrieve its forwards, see the [Get forwards][2] endpoint.
 
 ###### Example JSON Response
-<!-- START GET /buckets/1/inboxes/2.json -->
+<!-- START GET /inboxes/2.json -->
 ```json
 {
   "id": 1069478988,
@@ -67,14 +67,21 @@ To get the inbox ID for a project, see the [Get a project][1] endpoint's `dock` 
   "forwards_url": "https://3.basecampapi.com/195539477/buckets/2085958502/inboxes/1069478988/forwards.json"
 }
 ```
-<!-- END GET /buckets/1/inboxes/2.json -->
+<!-- END GET /inboxes/2.json -->
 
 ###### Copy as cURL
 
 ```shell
-curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/inboxes/2.json
+curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/inboxes/2.json
 ```
 
+
+Legacy project-scoped routes
+-----------------------------
+
+The following project-scoped routes are still supported and will remain available, but flat routes above are the canonical form for new integrations.
+
+* `GET /buckets/1/inboxes/2.json` → [Get inbox](#get-inbox)
 
 [1]: https://github.com/basecamp/bc3-api/blob/master/sections/projects.md#get-a-project
 [2]: https://github.com/basecamp/bc3-api/blob/master/sections/forwards.md#get-forwards
