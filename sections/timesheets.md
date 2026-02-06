@@ -333,17 +333,17 @@ Get a timesheet entry
 <!-- START GET /projects/1/timesheet/entries/2.json -->
 ```json
 {
-  "id": 1069480003,
+  "id": 1069480091,
   "status": "active",
   "visible_to_clients": false,
-  "created_at": "2026-02-05T07:32:20.768Z",
-  "updated_at": "2026-02-05T07:32:20.768Z",
+  "created_at": "2026-02-06T22:55:54.662Z",
+  "updated_at": "2026-02-06T22:55:54.662Z",
   "title": "Timesheet entry",
   "inherits_status": true,
   "type": "Timesheet::Entry",
-  "url": "https://3.basecampapi.com/195539477/projects/2085958504/timesheet/entries/1069480003.json",
-  "app_url": "https://3.basecamp.com/195539477/projects/2085958504/timesheet/entries/1069480003",
-  "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiLmdpZDovL2JjMy9SZWNvcmRpbmcvMTA2OTQ4MDAwMz9leHBpcmVzX2luBjsAVEkiCHB1cgY7AFRJIg1yZWFkYWJsZQY7AFQ=--ccfe246f63ad947294e26409f3067b394d3ab04b.json",
+  "url": "https://3.basecampapi.com/195539477/projects/2085958504/timesheet/entries/1069480091.json",
+  "app_url": "https://3.basecamp.com/195539477/projects/2085958504/timesheet/entries/1069480091",
+  "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiLmdpZDovL2JjMy9SZWNvcmRpbmcvMTA2OTQ4MDA5MT9leHBpcmVzX2luBjsAVEkiCHB1cgY7AFRJIg1yZWFkYWJsZQY7AFQ=--0b7abbaa49e554506a83edc6934173ebe077c1f0.json",
   "parent": {
     "id": 1069479406,
     "title": "We won Leto!",
@@ -383,7 +383,7 @@ Get a timesheet entry
     "can_access_timesheet": true,
     "can_access_hill_charts": true
   },
-  "date": "2026-02-04",
+  "date": "2026-02-06",
   "description": "API docs example",
   "hours": "1.5",
   "person": {
@@ -455,17 +455,17 @@ This endpoint will return `201 Created` with the current JSON representation of 
 <!-- START POST /projects/1/recordings/2/timesheet/entries.json -->
 ```json
 {
-  "id": 1069480003,
+  "id": 1069480091,
   "status": "active",
   "visible_to_clients": false,
-  "created_at": "2026-02-05T07:32:20.768Z",
-  "updated_at": "2026-02-05T07:32:20.768Z",
+  "created_at": "2026-02-06T22:55:54.662Z",
+  "updated_at": "2026-02-06T22:55:54.662Z",
   "title": "Timesheet entry",
   "inherits_status": true,
   "type": "Timesheet::Entry",
-  "url": "https://3.basecampapi.com/195539477/projects/2085958504/timesheet/entries/1069480003.json",
-  "app_url": "https://3.basecamp.com/195539477/projects/2085958504/timesheet/entries/1069480003",
-  "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiLmdpZDovL2JjMy9SZWNvcmRpbmcvMTA2OTQ4MDAwMz9leHBpcmVzX2luBjsAVEkiCHB1cgY7AFRJIg1yZWFkYWJsZQY7AFQ=--ccfe246f63ad947294e26409f3067b394d3ab04b.json",
+  "url": "https://3.basecampapi.com/195539477/projects/2085958504/timesheet/entries/1069480091.json",
+  "app_url": "https://3.basecamp.com/195539477/projects/2085958504/timesheet/entries/1069480091",
+  "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiLmdpZDovL2JjMy9SZWNvcmRpbmcvMTA2OTQ4MDA5MT9leHBpcmVzX2luBjsAVEkiCHB1cgY7AFRJIg1yZWFkYWJsZQY7AFQ=--0b7abbaa49e554506a83edc6934173ebe077c1f0.json",
   "parent": {
     "id": 1069479406,
     "title": "We won Leto!",
@@ -505,7 +505,7 @@ This endpoint will return `201 Created` with the current JSON representation of 
     "can_access_timesheet": true,
     "can_access_hill_charts": true
   },
-  "date": "2026-02-04",
+  "date": "2026-02-06",
   "description": "API docs example",
   "hours": "1.5",
   "person": {
@@ -574,17 +574,17 @@ _Optional parameters_: Only pass the parameters you want to change.
 <!-- START PUT /projects/1/timesheet/entries/2.json -->
 ```json
 {
-  "id": 1069480003,
+  "id": 1069480091,
   "status": "active",
   "visible_to_clients": false,
-  "created_at": "2026-02-05T07:32:20.768Z",
-  "updated_at": "2026-02-05T07:32:21.757Z",
+  "created_at": "2026-02-06T22:55:54.662Z",
+  "updated_at": "2026-02-06T22:55:55.514Z",
   "title": "Timesheet entry",
   "inherits_status": true,
   "type": "Timesheet::Entry",
-  "url": "https://3.basecampapi.com/195539477/projects/2085958504/timesheet/entries/1069480003.json",
-  "app_url": "https://3.basecamp.com/195539477/projects/2085958504/timesheet/entries/1069480003",
-  "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiLmdpZDovL2JjMy9SZWNvcmRpbmcvMTA2OTQ4MDAwMz9leHBpcmVzX2luBjsAVEkiCHB1cgY7AFRJIg1yZWFkYWJsZQY7AFQ=--ccfe246f63ad947294e26409f3067b394d3ab04b.json",
+  "url": "https://3.basecampapi.com/195539477/projects/2085958504/timesheet/entries/1069480091.json",
+  "app_url": "https://3.basecamp.com/195539477/projects/2085958504/timesheet/entries/1069480091",
+  "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiLmdpZDovL2JjMy9SZWNvcmRpbmcvMTA2OTQ4MDA5MT9leHBpcmVzX2luBjsAVEkiCHB1cgY7AFRJIg1yZWFkYWJsZQY7AFQ=--0b7abbaa49e554506a83edc6934173ebe077c1f0.json",
   "parent": {
     "id": 1069479406,
     "title": "We won Leto!",
@@ -624,7 +624,7 @@ _Optional parameters_: Only pass the parameters you want to change.
     "can_access_timesheet": true,
     "can_access_hill_charts": true
   },
-  "date": "2026-02-04",
+  "date": "2026-02-06",
   "description": "Updated via API",
   "hours": "2.5",
   "person": {

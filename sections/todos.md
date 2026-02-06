@@ -115,7 +115,7 @@ Get a to-do
   "status": "active",
   "visible_to_clients": false,
   "created_at": "2026-01-15T07:20:00.000Z",
-  "updated_at": "2026-02-01T02:53:46.582Z",
+  "updated_at": "2026-02-06T22:56:33.038Z",
   "title": "Clear and simple UI",
   "inherits_status": true,
   "type": "Todo",
@@ -167,7 +167,7 @@ Get a to-do
   "description": "",
   "completed": true,
   "completion": {
-    "created_at": "2026-02-01T02:53:46.523Z",
+    "created_at": "2026-02-06T22:56:32.917Z",
     "creator": {
       "id": 1049715930,
       "attachable_sgid": "BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiK2dpZDovL2JjMy9QZXJzb24vMTA0OTcxNTkzMD9leHBpcmVzX2luBjsAVEkiCHB1cgY7AFRJIg9hdHRhY2hhYmxlBjsAVA==--322099b137f9e0b6bc944b5b9fe7a2692da94814",

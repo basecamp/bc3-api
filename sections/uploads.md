@@ -78,7 +78,7 @@ Get uploads
     "byte_size": 1281,
     "filename": "company-logo.png",
     "download_url": "https://3.basecampapi.com/195539477/buckets/2085958504/uploads/1069479913/download/company-logo.png",
-    "app_download_url": "http://storage.3.basecamp.localhost:4001/195539477/buckets/2085958504/uploads/1069479913/download/company-logo.png",
+    "app_download_url": "https://3.basecampapi.com/195539477/buckets/2085958504/uploads/1069479913/download/company-logo.png",
     "width": 164,
     "height": 39
   }
@@ -159,7 +159,7 @@ Get an upload
   "byte_size": 1281,
   "filename": "company-logo.png",
   "download_url": "https://3.basecampapi.com/195539477/buckets/2085958504/uploads/1069479913/download/company-logo.png",
-  "app_download_url": "http://storage.3.basecamp.localhost:4001/195539477/buckets/2085958504/uploads/1069479913/download/company-logo.png",
+  "app_download_url": "https://3.basecampapi.com/195539477/buckets/2085958504/uploads/1069479913/download/company-logo.png",
   "width": 164,
   "height": 39
 }

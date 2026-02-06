@@ -29,7 +29,7 @@ _Optional query parameters_:
     "status": "active",
     "visible_to_clients": false,
     "created_at": "2026-01-15T05:50:00.000Z",
-    "updated_at": "2026-01-31T08:32:56.540Z",
+    "updated_at": "2026-02-06T22:45:49.904Z",
     "title": "Strategy ideas",
     "inherits_status": true,
     "type": "Todolist",

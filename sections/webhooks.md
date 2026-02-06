@@ -286,7 +286,114 @@ The recent deliveries array will contain the 25 most recent delivery exchanges, 
   ],
   "url": "https://3.basecampapi.com/195539477/buckets/2085958504/webhooks/1051369971.json",
   "app_url": "https://3.basecamp.com/195539477/buckets/2085958504/webhooks/1051369971",
-  "recent_deliveries": []
+  "recent_deliveries": [
+    {
+      "id": 627138755,
+      "created_at": "2026-02-06T22:55:58.243Z",
+      "request": {
+        "headers": {
+          "Content-Type": "application/json",
+          "User-Agent": "Basecamp3 Webhook",
+          "X-Request-Id": "18fe80cd-df90-442f-be87-f223a2cd69b7"
+        },
+        "body": {
+          "id": 1071915871,
+          "kind": "timesheet_entry_deleted",
+          "details": {
+            "status_was": "active"
+          },
+          "created_at": "2026-02-06T16:55:56.001-06:00",
+          "recording": {
+            "id": 1069480091,
+            "status": "deleted",
+            "visible_to_clients": false,
+            "created_at": "2026-02-06T16:55:54.662-06:00",
+            "updated_at": "2026-02-06T16:55:55.924-06:00",
+            "title": "Timesheet entry",
+            "inherits_status": false,
+            "type": "Timesheet::Entry",
+            "url": "https://3.basecampapi.com/195539477/projects/2085958504/timesheet/entries/1069480091.json",
+            "app_url": "https://3.basecamp.com/195539477/projects/2085958504/timesheet/entries/1069480091",
+            "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiLmdpZDovL2JjMy9SZWNvcmRpbmcvMTA2OTQ4MDA5MT9leHBpcmVzX2luBjsAVEkiCHB1cgY7AFRJIg1yZWFkYWJsZQY7AFQ=--0b7abbaa49e554506a83edc6934173ebe077c1f0.json",
+            "parent": {
+              "id": 1069479406,
+              "title": "We won Leto!",
+              "type": "Message",
+              "url": "https://3.basecampapi.com/195539477/buckets/2085958504/messages/1069479406.json",
+              "app_url": "https://3.basecamp.com/195539477/buckets/2085958504/messages/1069479406"
+            },
+            "bucket": {
+              "id": 2085958504,
+              "name": "The Leto Laptop",
+              "type": "Project"
+            },
+            "creator": {
+              "id": 1049715913,
+              "attachable_sgid": "BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiK2dpZDovL2JjMy9QZXJzb24vMTA0OTcxNTkxMz9leHBpcmVzX2luBjsAVEkiCHB1cgY7AFRJIg9hdHRhY2hhYmxlBjsAVA==--e627c45e6b34e08862da23906862412620e4d5d9",
+              "name": "Victor Cooper",
+              "email_address": "victor@honchodesign.com",
+              "personable_type": "User",
+              "title": "Chief Strategist",
+              "bio": "Don’t let your dreams be dreams",
+              "location": "Chicago, IL",
+              "created_at": "2026-01-31T02:29:28.365-06:00",
+              "updated_at": "2026-01-31T02:29:32.599-06:00",
+              "admin": true,
+              "owner": true,
+              "client": false,
+              "employee": true,
+              "time_zone": "America/Chicago",
+              "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBMlkkT4=--5fe7b70fbee7a7f0e2e1e19df7579e5d880c753d/avatar?v=1",
+              "company": {
+                "id": 1033447817,
+                "name": "Honcho Design"
+              },
+              "can_ping": true,
+              "can_manage_projects": true,
+              "can_manage_people": true,
+              "can_access_timesheet": true,
+              "can_access_hill_charts": true
+            },
+            "content": null
+          },
+          "creator": {
+            "id": 1049715913,
+            "attachable_sgid": "BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiK2dpZDovL2JjMy9QZXJzb24vMTA0OTcxNTkxMz9leHBpcmVzX2luBjsAVEkiCHB1cgY7AFRJIg9hdHRhY2hhYmxlBjsAVA==--e627c45e6b34e08862da23906862412620e4d5d9",
+            "name": "Victor Cooper",
+            "email_address": "victor@honchodesign.com",
+            "personable_type": "User",
+            "title": "Chief Strategist",
+            "bio": "Don’t let your dreams be dreams",
+            "location": "Chicago, IL",
+            "created_at": "2026-01-31T02:29:28.365-06:00",
+            "updated_at": "2026-01-31T02:29:32.599-06:00",
+            "admin": true,
+            "owner": true,
+            "client": false,
+            "employee": true,
+            "time_zone": "America/Chicago",
+            "avatar_url": "https://3.basecamp-static.com/195539477/people/BAhpBMlkkT4=--5fe7b70fbee7a7f0e2e1e19df7579e5d880c753d/avatar?v=1",
+            "company": {
+              "id": 1033447817,
+              "name": "Honcho Design"
+            },
+            "can_ping": true,
+            "can_manage_projects": true,
+            "can_manage_people": true,
+            "can_access_timesheet": true,
+            "can_access_hill_charts": true
+          }
+        }
+      },
+      "response": {
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "code": 200,
+        "message": "OK"
+      }
+    }
+  ]
 }
 ```
 <!-- END GET /buckets/1/webhooks/3.json -->

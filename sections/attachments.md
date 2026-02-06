@@ -23,21 +23,21 @@ This endpoint will return `201 Created` with the attachment's `attachable_sgid` 
 <!-- START POST /attachments.json -->
 ```json
 {
-  "id": 1046628522,
-  "attachable_sgid": "BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiL2dpZDovL2JjMy9BdHRhY2htZW50LzEwNDY2Mjg1MjI_ZXhwaXJlc19pbgY7AFRJIghwdXIGOwBUSSIPYXR0YWNoYWJsZQY7AFQ=--67bd596fd0fe6862dcaa2a30ac40d587e4130988",
-  "sgid": "BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiL2dpZDovL2JjMy9BdHRhY2htZW50LzEwNDY2Mjg1MjI_ZXhwaXJlc19pbgY7AFRJIghwdXIGOwBUSSIPYXR0YWNoYWJsZQY7AFQ=--67bd596fd0fe6862dcaa2a30ac40d587e4130988",
-  "status_url": "https://3.basecampapi.com/195539477/attachments/BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiL2dpZDovL2JjMy9BdHRhY2htZW50LzEwNDY2Mjg1MjI_ZXhwaXJlc19pbgY7AFRJIghwdXIGOwBUSSIPYXR0YWNoYWJsZQY7AFQ=--67bd596fd0fe6862dcaa2a30ac40d587e4130988.json",
+  "id": 1046628526,
+  "attachable_sgid": "BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiL2dpZDovL2JjMy9BdHRhY2htZW50LzEwNDY2Mjg1MjY_ZXhwaXJlc19pbgY7AFRJIghwdXIGOwBUSSIPYXR0YWNoYWJsZQY7AFQ=--56e38ec83681abfe01b6203ad23176a5d9fad093",
+  "sgid": "BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiL2dpZDovL2JjMy9BdHRhY2htZW50LzEwNDY2Mjg1MjY_ZXhwaXJlc19pbgY7AFRJIghwdXIGOwBUSSIPYXR0YWNoYWJsZQY7AFQ=--56e38ec83681abfe01b6203ad23176a5d9fad093",
+  "status_url": "https://3.basecampapi.com/195539477/attachments/BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiL2dpZDovL2JjMy9BdHRhY2htZW50LzEwNDY2Mjg1MjY_ZXhwaXJlc19pbgY7AFRJIghwdXIGOwBUSSIPYXR0YWNoYWJsZQY7AFQ=--56e38ec83681abfe01b6203ad23176a5d9fad093.json",
   "caption": null,
   "byte_size": 1281,
   "content_type": "image/png",
   "width": 164,
   "height": 39,
-  "key": "63129eb69b03a8ec0cd941eb5cd44a2da646397a",
+  "key": "490857bc2f3fa187475e9ca1b891918df6ec400c",
   "filename": "company-logo.png",
-  "download_url": "https://3.basecamp-static.com/195539477/blobs/63129eb69b03a8ec0cd941eb5cd44a2da646397a/download/company-logo.png",
+  "download_url": "https://3.basecamp-static.com/195539477/blobs/490857bc2f3fa187475e9ca1b891918df6ec400c/download/company-logo.png",
   "previewable": true,
-  "preview_url": "https://3.basecamp-static.com/195539477/blobs/63129eb69b03a8ec0cd941eb5cd44a2da646397a/previews/full",
-  "thumbnail_url": "https://3.basecamp-static.com/195539477/blobs/63129eb69b03a8ec0cd941eb5cd44a2da646397a/previews/card"
+  "preview_url": "https://3.basecamp-static.com/195539477/blobs/490857bc2f3fa187475e9ca1b891918df6ec400c/previews/full",
+  "thumbnail_url": "https://3.basecamp-static.com/195539477/blobs/490857bc2f3fa187475e9ca1b891918df6ec400c/previews/card"
 }
 ```
 <!-- END POST /attachments.json -->
