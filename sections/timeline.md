@@ -19,8 +19,8 @@ Get timeline
 ```json
 [
   {
-    "id": 1071915657,
-    "created_at": "2026-02-01T02:53:36.156Z",
+    "id": 1071915901,
+    "created_at": "2026-02-06T22:56:23.125Z",
     "kind": "project_access_changed",
     "creator": {
       "id": 1049715913,
@@ -62,8 +62,8 @@ Get timeline
     }
   },
   {
-    "id": 1071915655,
-    "created_at": "2026-02-01T02:53:35.530Z",
+    "id": 1071915899,
+    "created_at": "2026-02-06T22:56:22.481Z",
     "kind": "project_access_changed",
     "creator": {
       "id": 1049715913,
@@ -105,12 +105,12 @@ Get timeline
     }
   },
   {
-    "id": 1071915638,
-    "created_at": "2026-02-01T02:53:29.296Z",
+    "id": 1071915883,
+    "created_at": "2026-02-06T22:56:14.308Z",
     "kind": "todo_created",
-    "parent_recording_id": 1069479921,
-    "url": "https://3.basecampapi.com/195539477/buckets/2085958509/todos/1069479924.json",
-    "app_url": "https://3.basecamp.com/195539477/buckets/2085958509/todos/1069479924",
+    "parent_recording_id": 1069480097,
+    "url": "https://3.basecampapi.com/195539477/buckets/2085958516/todos/1069480101.json",
+    "app_url": "https://3.basecamp.com/195539477/buckets/2085958516/todos/1069480101",
     "creator": {
       "id": 1049715913,
       "attachable_sgid": "BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiK2dpZDovL2JjMy9QZXJzb24vMTA0OTcxNTkxMz9leHBpcmVzX2luBjsAVEkiCHB1cgY7AFRJIg9hdHRhY2hhYmxlBjsAVA==--e627c45e6b34e08862da23906862412620e4d5d9",
@@ -144,20 +144,20 @@ Get timeline
     "summary_excerpt": "Install ShipShape",
     "avatars_sample": [],
     "bucket": {
-      "id": 2085958509,
+      "id": 2085958516,
       "name": "New project from template",
-      "url": "https://3.basecampapi.com/195539477/projects/2085958509.json",
-      "app_url": "https://3.basecamp.com/195539477/projects/2085958509"
+      "url": "https://3.basecampapi.com/195539477/projects/2085958516.json",
+      "app_url": "https://3.basecamp.com/195539477/projects/2085958516"
     },
     "attachments": []
   },
   {
-    "id": 1071915637,
-    "created_at": "2026-02-01T02:53:29.237Z",
+    "id": 1071915882,
+    "created_at": "2026-02-06T22:56:14.192Z",
     "kind": "todo_created",
-    "parent_recording_id": 1069479921,
-    "url": "https://3.basecampapi.com/195539477/buckets/2085958509/todos/1069479923.json",
-    "app_url": "https://3.basecamp.com/195539477/buckets/2085958509/todos/1069479923",
+    "parent_recording_id": 1069480097,
+    "url": "https://3.basecampapi.com/195539477/buckets/2085958516/todos/1069480100.json",
+    "app_url": "https://3.basecamp.com/195539477/buckets/2085958516/todos/1069480100",
     "creator": {
       "id": 1049715913,
       "attachable_sgid": "BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiK2dpZDovL2JjMy9QZXJzb24vMTA0OTcxNTkxMz9leHBpcmVzX2luBjsAVEkiCHB1cgY7AFRJIg9hdHRhY2hhYmxlBjsAVA==--e627c45e6b34e08862da23906862412620e4d5d9",
@@ -191,20 +191,20 @@ Get timeline
     "summary_excerpt": "Talk to Jerry about holidays",
     "avatars_sample": [],
     "bucket": {
-      "id": 2085958509,
+      "id": 2085958516,
       "name": "New project from template",
-      "url": "https://3.basecampapi.com/195539477/projects/2085958509.json",
-      "app_url": "https://3.basecamp.com/195539477/projects/2085958509"
+      "url": "https://3.basecampapi.com/195539477/projects/2085958516.json",
+      "app_url": "https://3.basecamp.com/195539477/projects/2085958516"
     },
     "attachments": []
   },
   {
-    "id": 1071915636,
-    "created_at": "2026-02-01T02:53:29.190Z",
+    "id": 1071915880,
+    "created_at": "2026-02-06T22:56:13.958Z",
     "kind": "todo_created",
-    "parent_recording_id": 1069479921,
-    "url": "https://3.basecampapi.com/195539477/buckets/2085958509/todos/1069479922.json",
-    "app_url": "https://3.basecamp.com/195539477/buckets/2085958509/todos/1069479922",
+    "parent_recording_id": 1069480097,
+    "url": "https://3.basecampapi.com/195539477/buckets/2085958516/todos/1069480098.json",
+    "app_url": "https://3.basecamp.com/195539477/buckets/2085958516/todos/1069480098",
     "creator": {
       "id": 1049715913,
       "attachable_sgid": "BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiK2dpZDovL2JjMy9QZXJzb24vMTA0OTcxNTkxMz9leHBpcmVzX2luBjsAVEkiCHB1cgY7AFRJIg9hdHRhY2hhYmxlBjsAVA==--e627c45e6b34e08862da23906862412620e4d5d9",
@@ -238,10 +238,10 @@ Get timeline
     "summary_excerpt": "Talk to Cheryl about benefits",
     "avatars_sample": [],
     "bucket": {
-      "id": 2085958509,
+      "id": 2085958516,
       "name": "New project from template",
-      "url": "https://3.basecampapi.com/195539477/projects/2085958509.json",
-      "app_url": "https://3.basecamp.com/195539477/projects/2085958509"
+      "url": "https://3.basecampapi.com/195539477/projects/2085958516.json",
+      "app_url": "https://3.basecamp.com/195539477/projects/2085958516"
     },
     "attachments": []
   }
@@ -265,8 +265,8 @@ Get project timeline
 ```json
 [
   {
-    "id": 1071915657,
-    "created_at": "2026-02-01T02:53:36.156Z",
+    "id": 1071915901,
+    "created_at": "2026-02-06T22:56:23.125Z",
     "kind": "project_access_changed",
     "creator": {
       "id": 1049715913,
@@ -308,8 +308,8 @@ Get project timeline
     }
   },
   {
-    "id": 1071915655,
-    "created_at": "2026-02-01T02:53:35.530Z",
+    "id": 1071915899,
+    "created_at": "2026-02-06T22:56:22.481Z",
     "kind": "project_access_changed",
     "creator": {
       "id": 1049715913,
@@ -398,8 +398,8 @@ Get person's timeline
   },
   "events": [
     {
-      "id": 1071915657,
-      "created_at": "2026-02-01T02:53:36.156Z",
+      "id": 1071915901,
+      "created_at": "2026-02-06T22:56:23.125Z",
       "kind": "project_access_changed",
       "creator": {
         "id": 1049715913,
@@ -441,8 +441,8 @@ Get person's timeline
       }
     },
     {
-      "id": 1071915655,
-      "created_at": "2026-02-01T02:53:35.530Z",
+      "id": 1071915899,
+      "created_at": "2026-02-06T22:56:22.481Z",
       "kind": "project_access_changed",
       "creator": {
         "id": 1049715913,
@@ -484,12 +484,12 @@ Get person's timeline
       }
     },
     {
-      "id": 1071915638,
-      "created_at": "2026-02-01T02:53:29.296Z",
+      "id": 1071915883,
+      "created_at": "2026-02-06T22:56:14.308Z",
       "kind": "todo_created",
-      "parent_recording_id": 1069479921,
-      "url": "https://3.basecampapi.com/195539477/buckets/2085958509/todos/1069479924.json",
-      "app_url": "https://3.basecamp.com/195539477/buckets/2085958509/todos/1069479924",
+      "parent_recording_id": 1069480097,
+      "url": "https://3.basecampapi.com/195539477/buckets/2085958516/todos/1069480101.json",
+      "app_url": "https://3.basecamp.com/195539477/buckets/2085958516/todos/1069480101",
       "creator": {
         "id": 1049715913,
         "attachable_sgid": "BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiK2dpZDovL2JjMy9QZXJzb24vMTA0OTcxNTkxMz9leHBpcmVzX2luBjsAVEkiCHB1cgY7AFRJIg9hdHRhY2hhYmxlBjsAVA==--e627c45e6b34e08862da23906862412620e4d5d9",
@@ -523,20 +523,20 @@ Get person's timeline
       "summary_excerpt": "Install ShipShape",
       "avatars_sample": [],
       "bucket": {
-        "id": 2085958509,
+        "id": 2085958516,
         "name": "New project from template",
-        "url": "https://3.basecampapi.com/195539477/projects/2085958509.json",
-        "app_url": "https://3.basecamp.com/195539477/projects/2085958509"
+        "url": "https://3.basecampapi.com/195539477/projects/2085958516.json",
+        "app_url": "https://3.basecamp.com/195539477/projects/2085958516"
       },
       "attachments": []
     },
     {
-      "id": 1071915637,
-      "created_at": "2026-02-01T02:53:29.237Z",
+      "id": 1071915882,
+      "created_at": "2026-02-06T22:56:14.192Z",
       "kind": "todo_created",
-      "parent_recording_id": 1069479921,
-      "url": "https://3.basecampapi.com/195539477/buckets/2085958509/todos/1069479923.json",
-      "app_url": "https://3.basecamp.com/195539477/buckets/2085958509/todos/1069479923",
+      "parent_recording_id": 1069480097,
+      "url": "https://3.basecampapi.com/195539477/buckets/2085958516/todos/1069480100.json",
+      "app_url": "https://3.basecamp.com/195539477/buckets/2085958516/todos/1069480100",
       "creator": {
         "id": 1049715913,
         "attachable_sgid": "BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiK2dpZDovL2JjMy9QZXJzb24vMTA0OTcxNTkxMz9leHBpcmVzX2luBjsAVEkiCHB1cgY7AFRJIg9hdHRhY2hhYmxlBjsAVA==--e627c45e6b34e08862da23906862412620e4d5d9",
@@ -570,20 +570,20 @@ Get person's timeline
       "summary_excerpt": "Talk to Jerry about holidays",
       "avatars_sample": [],
       "bucket": {
-        "id": 2085958509,
+        "id": 2085958516,
         "name": "New project from template",
-        "url": "https://3.basecampapi.com/195539477/projects/2085958509.json",
-        "app_url": "https://3.basecamp.com/195539477/projects/2085958509"
+        "url": "https://3.basecampapi.com/195539477/projects/2085958516.json",
+        "app_url": "https://3.basecamp.com/195539477/projects/2085958516"
       },
       "attachments": []
     },
     {
-      "id": 1071915636,
-      "created_at": "2026-02-01T02:53:29.190Z",
+      "id": 1071915880,
+      "created_at": "2026-02-06T22:56:13.958Z",
       "kind": "todo_created",
-      "parent_recording_id": 1069479921,
-      "url": "https://3.basecampapi.com/195539477/buckets/2085958509/todos/1069479922.json",
-      "app_url": "https://3.basecamp.com/195539477/buckets/2085958509/todos/1069479922",
+      "parent_recording_id": 1069480097,
+      "url": "https://3.basecampapi.com/195539477/buckets/2085958516/todos/1069480098.json",
+      "app_url": "https://3.basecamp.com/195539477/buckets/2085958516/todos/1069480098",
       "creator": {
         "id": 1049715913,
         "attachable_sgid": "BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiK2dpZDovL2JjMy9QZXJzb24vMTA0OTcxNTkxMz9leHBpcmVzX2luBjsAVEkiCHB1cgY7AFRJIg9hdHRhY2hhYmxlBjsAVA==--e627c45e6b34e08862da23906862412620e4d5d9",
@@ -617,19 +617,19 @@ Get person's timeline
       "summary_excerpt": "Talk to Cheryl about benefits",
       "avatars_sample": [],
       "bucket": {
-        "id": 2085958509,
+        "id": 2085958516,
         "name": "New project from template",
-        "url": "https://3.basecampapi.com/195539477/projects/2085958509.json",
-        "app_url": "https://3.basecamp.com/195539477/projects/2085958509"
+        "url": "https://3.basecampapi.com/195539477/projects/2085958516.json",
+        "app_url": "https://3.basecamp.com/195539477/projects/2085958516"
       },
       "attachments": []
     },
     {
-      "id": 1071915630,
-      "created_at": "2026-02-01T02:53:28.937Z",
+      "id": 1071915874,
+      "created_at": "2026-02-06T22:56:11.891Z",
       "kind": "dock_created",
-      "url": "https://3.basecampapi.com/195539477/buckets/2085958509/dock.json",
-      "app_url": "https://3.basecamp.com/195539477/projects/2085958509",
+      "url": "https://3.basecampapi.com/195539477/buckets/2085958516/dock.json",
+      "app_url": "https://3.basecamp.com/195539477/projects/2085958516",
       "creator": {
         "id": 1049715913,
         "attachable_sgid": "BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiK2dpZDovL2JjMy9QZXJzb24vMTA0OTcxNTkxMz9leHBpcmVzX2luBjsAVEkiCHB1cgY7AFRJIg9hdHRhY2hhYmxlBjsAVA==--e627c45e6b34e08862da23906862412620e4d5d9",
@@ -663,10 +663,424 @@ Get person's timeline
       "summary_excerpt": null,
       "avatars_sample": [],
       "bucket": {
-        "id": 2085958509,
+        "id": 2085958516,
         "name": "New project from template",
-        "url": "https://3.basecampapi.com/195539477/projects/2085958509.json",
-        "app_url": "https://3.basecamp.com/195539477/projects/2085958509"
+        "url": "https://3.basecampapi.com/195539477/projects/2085958516.json",
+        "app_url": "https://3.basecamp.com/195539477/projects/2085958516"
+      },
+      "attachments": []
+    },
+    {
+      "id": 1071915860,
+      "created_at": "2026-02-06T22:45:38.643Z",
+      "kind": "project_access_changed",
+      "creator": {
+        "id": 1049715913,
+        "attachable_sgid": "BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiK2dpZDovL2JjMy9QZXJzb24vMTA0OTcxNTkxMz9leHBpcmVzX2luBjsAVEkiCHB1cgY7AFRJIg9hdHRhY2hhYmxlBjsAVA==--e627c45e6b34e08862da23906862412620e4d5d9",
+        "name": "Victor Cooper",
+        "email_address": "victor@honchodesign.com",
+        "personable_type": "User",
+        "title": "Chief Strategist",
+        "bio": "Don’t let your dreams be dreams",
+        "location": "Chicago, IL",
+        "created_at": "2026-01-31T08:29:28.365Z",
+        "updated_at": "2026-01-31T08:29:32.599Z",
+        "admin": true,
+        "owner": true,
+        "client": false,
+        "employee": true,
+        "time_zone": "America/Chicago",
+        "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBMlkkT4=--5fe7b70fbee7a7f0e2e1e19df7579e5d880c753d/avatar?v=1",
+        "company": {
+          "id": 1033447817,
+          "name": "Honcho Design"
+        },
+        "can_ping": true,
+        "can_manage_projects": true,
+        "can_manage_people": true,
+        "can_access_timesheet": true,
+        "can_access_hill_charts": true
+      },
+      "action": "Victor C. changed who can access this project",
+      "target": null,
+      "title": "Victor C. changed who can access this project",
+      "summary_excerpt": "Steve Marsh was granted access.",
+      "avatars_sample": [],
+      "bucket": {
+        "id": 2085958504,
+        "name": "The Leto Laptop",
+        "url": "https://3.basecampapi.com/195539477/projects/2085958504.json",
+        "app_url": "https://3.basecamp.com/195539477/projects/2085958504"
+      }
+    },
+    {
+      "id": 1071915858,
+      "created_at": "2026-02-06T22:45:37.863Z",
+      "kind": "project_access_changed",
+      "creator": {
+        "id": 1049715913,
+        "attachable_sgid": "BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiK2dpZDovL2JjMy9QZXJzb24vMTA0OTcxNTkxMz9leHBpcmVzX2luBjsAVEkiCHB1cgY7AFRJIg9hdHRhY2hhYmxlBjsAVA==--e627c45e6b34e08862da23906862412620e4d5d9",
+        "name": "Victor Cooper",
+        "email_address": "victor@honchodesign.com",
+        "personable_type": "User",
+        "title": "Chief Strategist",
+        "bio": "Don’t let your dreams be dreams",
+        "location": "Chicago, IL",
+        "created_at": "2026-01-31T08:29:28.365Z",
+        "updated_at": "2026-01-31T08:29:32.599Z",
+        "admin": true,
+        "owner": true,
+        "client": false,
+        "employee": true,
+        "time_zone": "America/Chicago",
+        "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBMlkkT4=--5fe7b70fbee7a7f0e2e1e19df7579e5d880c753d/avatar?v=1",
+        "company": {
+          "id": 1033447817,
+          "name": "Honcho Design"
+        },
+        "can_ping": true,
+        "can_manage_projects": true,
+        "can_manage_people": true,
+        "can_access_timesheet": true,
+        "can_access_hill_charts": true
+      },
+      "action": "Victor C. changed who can access this project",
+      "target": null,
+      "title": "Victor C. changed who can access this project",
+      "summary_excerpt": "Amy Rivera was granted access.",
+      "avatars_sample": [],
+      "bucket": {
+        "id": 2085958504,
+        "name": "The Leto Laptop",
+        "url": "https://3.basecampapi.com/195539477/projects/2085958504.json",
+        "app_url": "https://3.basecamp.com/195539477/projects/2085958504"
+      }
+    },
+    {
+      "id": 1071915841,
+      "created_at": "2026-02-06T22:45:32.261Z",
+      "kind": "todo_created",
+      "parent_recording_id": 1069480069,
+      "url": "https://3.basecampapi.com/195539477/buckets/2085958515/todos/1069480072.json",
+      "app_url": "https://3.basecamp.com/195539477/buckets/2085958515/todos/1069480072",
+      "creator": {
+        "id": 1049715913,
+        "attachable_sgid": "BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiK2dpZDovL2JjMy9QZXJzb24vMTA0OTcxNTkxMz9leHBpcmVzX2luBjsAVEkiCHB1cgY7AFRJIg9hdHRhY2hhYmxlBjsAVA==--e627c45e6b34e08862da23906862412620e4d5d9",
+        "name": "Victor Cooper",
+        "email_address": "victor@honchodesign.com",
+        "personable_type": "User",
+        "title": "Chief Strategist",
+        "bio": "Don’t let your dreams be dreams",
+        "location": "Chicago, IL",
+        "created_at": "2026-01-31T08:29:28.365Z",
+        "updated_at": "2026-01-31T08:29:32.599Z",
+        "admin": true,
+        "owner": true,
+        "client": false,
+        "employee": true,
+        "time_zone": "America/Chicago",
+        "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBMlkkT4=--5fe7b70fbee7a7f0e2e1e19df7579e5d880c753d/avatar?v=1",
+        "company": {
+          "id": 1033447817,
+          "name": "Honcho Design"
+        },
+        "can_ping": true,
+        "can_manage_projects": true,
+        "can_manage_people": true,
+        "can_access_timesheet": true,
+        "can_access_hill_charts": true
+      },
+      "action": "Victor C. added a to-do",
+      "target": "First things first",
+      "title": "On “First things first”, Victor C. added",
+      "summary_excerpt": "Install ShipShape",
+      "avatars_sample": [],
+      "bucket": {
+        "id": 2085958515,
+        "name": "New project from template",
+        "url": "https://3.basecampapi.com/195539477/projects/2085958515.json",
+        "app_url": "https://3.basecamp.com/195539477/projects/2085958515"
+      },
+      "attachments": []
+    },
+    {
+      "id": 1071915840,
+      "created_at": "2026-02-06T22:45:32.213Z",
+      "kind": "todo_created",
+      "parent_recording_id": 1069480069,
+      "url": "https://3.basecampapi.com/195539477/buckets/2085958515/todos/1069480071.json",
+      "app_url": "https://3.basecamp.com/195539477/buckets/2085958515/todos/1069480071",
+      "creator": {
+        "id": 1049715913,
+        "attachable_sgid": "BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiK2dpZDovL2JjMy9QZXJzb24vMTA0OTcxNTkxMz9leHBpcmVzX2luBjsAVEkiCHB1cgY7AFRJIg9hdHRhY2hhYmxlBjsAVA==--e627c45e6b34e08862da23906862412620e4d5d9",
+        "name": "Victor Cooper",
+        "email_address": "victor@honchodesign.com",
+        "personable_type": "User",
+        "title": "Chief Strategist",
+        "bio": "Don’t let your dreams be dreams",
+        "location": "Chicago, IL",
+        "created_at": "2026-01-31T08:29:28.365Z",
+        "updated_at": "2026-01-31T08:29:32.599Z",
+        "admin": true,
+        "owner": true,
+        "client": false,
+        "employee": true,
+        "time_zone": "America/Chicago",
+        "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBMlkkT4=--5fe7b70fbee7a7f0e2e1e19df7579e5d880c753d/avatar?v=1",
+        "company": {
+          "id": 1033447817,
+          "name": "Honcho Design"
+        },
+        "can_ping": true,
+        "can_manage_projects": true,
+        "can_manage_people": true,
+        "can_access_timesheet": true,
+        "can_access_hill_charts": true
+      },
+      "action": "Victor C. added a to-do",
+      "target": "First things first",
+      "title": "On “First things first”, Victor C. added",
+      "summary_excerpt": "Talk to Jerry about holidays",
+      "avatars_sample": [],
+      "bucket": {
+        "id": 2085958515,
+        "name": "New project from template",
+        "url": "https://3.basecampapi.com/195539477/projects/2085958515.json",
+        "app_url": "https://3.basecamp.com/195539477/projects/2085958515"
+      },
+      "attachments": []
+    },
+    {
+      "id": 1071915839,
+      "created_at": "2026-02-06T22:45:32.146Z",
+      "kind": "todo_created",
+      "parent_recording_id": 1069480069,
+      "url": "https://3.basecampapi.com/195539477/buckets/2085958515/todos/1069480070.json",
+      "app_url": "https://3.basecamp.com/195539477/buckets/2085958515/todos/1069480070",
+      "creator": {
+        "id": 1049715913,
+        "attachable_sgid": "BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiK2dpZDovL2JjMy9QZXJzb24vMTA0OTcxNTkxMz9leHBpcmVzX2luBjsAVEkiCHB1cgY7AFRJIg9hdHRhY2hhYmxlBjsAVA==--e627c45e6b34e08862da23906862412620e4d5d9",
+        "name": "Victor Cooper",
+        "email_address": "victor@honchodesign.com",
+        "personable_type": "User",
+        "title": "Chief Strategist",
+        "bio": "Don’t let your dreams be dreams",
+        "location": "Chicago, IL",
+        "created_at": "2026-01-31T08:29:28.365Z",
+        "updated_at": "2026-01-31T08:29:32.599Z",
+        "admin": true,
+        "owner": true,
+        "client": false,
+        "employee": true,
+        "time_zone": "America/Chicago",
+        "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBMlkkT4=--5fe7b70fbee7a7f0e2e1e19df7579e5d880c753d/avatar?v=1",
+        "company": {
+          "id": 1033447817,
+          "name": "Honcho Design"
+        },
+        "can_ping": true,
+        "can_manage_projects": true,
+        "can_manage_people": true,
+        "can_access_timesheet": true,
+        "can_access_hill_charts": true
+      },
+      "action": "Victor C. added a to-do",
+      "target": "First things first",
+      "title": "On “First things first”, Victor C. added",
+      "summary_excerpt": "Talk to Cheryl about benefits",
+      "avatars_sample": [],
+      "bucket": {
+        "id": 2085958515,
+        "name": "New project from template",
+        "url": "https://3.basecampapi.com/195539477/projects/2085958515.json",
+        "app_url": "https://3.basecamp.com/195539477/projects/2085958515"
+      },
+      "attachments": []
+    },
+    {
+      "id": 1071915833,
+      "created_at": "2026-02-06T22:45:31.892Z",
+      "kind": "dock_created",
+      "url": "https://3.basecampapi.com/195539477/buckets/2085958515/dock.json",
+      "app_url": "https://3.basecamp.com/195539477/projects/2085958515",
+      "creator": {
+        "id": 1049715913,
+        "attachable_sgid": "BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiK2dpZDovL2JjMy9QZXJzb24vMTA0OTcxNTkxMz9leHBpcmVzX2luBjsAVEkiCHB1cgY7AFRJIg9hdHRhY2hhYmxlBjsAVA==--e627c45e6b34e08862da23906862412620e4d5d9",
+        "name": "Victor Cooper",
+        "email_address": "victor@honchodesign.com",
+        "personable_type": "User",
+        "title": "Chief Strategist",
+        "bio": "Don’t let your dreams be dreams",
+        "location": "Chicago, IL",
+        "created_at": "2026-01-31T08:29:28.365Z",
+        "updated_at": "2026-01-31T08:29:32.599Z",
+        "admin": true,
+        "owner": true,
+        "client": false,
+        "employee": true,
+        "time_zone": "America/Chicago",
+        "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBMlkkT4=--5fe7b70fbee7a7f0e2e1e19df7579e5d880c753d/avatar?v=1",
+        "company": {
+          "id": 1033447817,
+          "name": "Honcho Design"
+        },
+        "can_ping": true,
+        "can_manage_projects": true,
+        "can_manage_people": true,
+        "can_access_timesheet": true,
+        "can_access_hill_charts": true
+      },
+      "action": "Victor C. started a new project called New project from template",
+      "target": "New project from template",
+      "title": "Victor C. started a new project called “New project from template”",
+      "summary_excerpt": null,
+      "avatars_sample": [],
+      "bucket": {
+        "id": 2085958515,
+        "name": "New project from template",
+        "url": "https://3.basecampapi.com/195539477/projects/2085958515.json",
+        "app_url": "https://3.basecamp.com/195539477/projects/2085958515"
+      },
+      "attachments": []
+    },
+    {
+      "id": 1071915810,
+      "created_at": "2026-02-06T22:44:52.980Z",
+      "kind": "todo_created",
+      "parent_recording_id": 1069480044,
+      "url": "https://3.basecampapi.com/195539477/buckets/2085958514/todos/1069480047.json",
+      "app_url": "https://3.basecamp.com/195539477/buckets/2085958514/todos/1069480047",
+      "creator": {
+        "id": 1049715913,
+        "attachable_sgid": "BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiK2dpZDovL2JjMy9QZXJzb24vMTA0OTcxNTkxMz9leHBpcmVzX2luBjsAVEkiCHB1cgY7AFRJIg9hdHRhY2hhYmxlBjsAVA==--e627c45e6b34e08862da23906862412620e4d5d9",
+        "name": "Victor Cooper",
+        "email_address": "victor@honchodesign.com",
+        "personable_type": "User",
+        "title": "Chief Strategist",
+        "bio": "Don’t let your dreams be dreams",
+        "location": "Chicago, IL",
+        "created_at": "2026-01-31T08:29:28.365Z",
+        "updated_at": "2026-01-31T08:29:32.599Z",
+        "admin": true,
+        "owner": true,
+        "client": false,
+        "employee": true,
+        "time_zone": "America/Chicago",
+        "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBMlkkT4=--5fe7b70fbee7a7f0e2e1e19df7579e5d880c753d/avatar?v=1",
+        "company": {
+          "id": 1033447817,
+          "name": "Honcho Design"
+        },
+        "can_ping": true,
+        "can_manage_projects": true,
+        "can_manage_people": true,
+        "can_access_timesheet": true,
+        "can_access_hill_charts": true
+      },
+      "action": "Victor C. added a to-do",
+      "target": "First things first",
+      "title": "On “First things first”, Victor C. added",
+      "summary_excerpt": "Install ShipShape",
+      "avatars_sample": [],
+      "bucket": {
+        "id": 2085958514,
+        "name": "New project from template",
+        "url": "https://3.basecampapi.com/195539477/projects/2085958514.json",
+        "app_url": "https://3.basecamp.com/195539477/projects/2085958514"
+      },
+      "attachments": []
+    },
+    {
+      "id": 1071915809,
+      "created_at": "2026-02-06T22:44:52.919Z",
+      "kind": "todo_created",
+      "parent_recording_id": 1069480044,
+      "url": "https://3.basecampapi.com/195539477/buckets/2085958514/todos/1069480046.json",
+      "app_url": "https://3.basecamp.com/195539477/buckets/2085958514/todos/1069480046",
+      "creator": {
+        "id": 1049715913,
+        "attachable_sgid": "BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiK2dpZDovL2JjMy9QZXJzb24vMTA0OTcxNTkxMz9leHBpcmVzX2luBjsAVEkiCHB1cgY7AFRJIg9hdHRhY2hhYmxlBjsAVA==--e627c45e6b34e08862da23906862412620e4d5d9",
+        "name": "Victor Cooper",
+        "email_address": "victor@honchodesign.com",
+        "personable_type": "User",
+        "title": "Chief Strategist",
+        "bio": "Don’t let your dreams be dreams",
+        "location": "Chicago, IL",
+        "created_at": "2026-01-31T08:29:28.365Z",
+        "updated_at": "2026-01-31T08:29:32.599Z",
+        "admin": true,
+        "owner": true,
+        "client": false,
+        "employee": true,
+        "time_zone": "America/Chicago",
+        "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBMlkkT4=--5fe7b70fbee7a7f0e2e1e19df7579e5d880c753d/avatar?v=1",
+        "company": {
+          "id": 1033447817,
+          "name": "Honcho Design"
+        },
+        "can_ping": true,
+        "can_manage_projects": true,
+        "can_manage_people": true,
+        "can_access_timesheet": true,
+        "can_access_hill_charts": true
+      },
+      "action": "Victor C. added a to-do",
+      "target": "First things first",
+      "title": "On “First things first”, Victor C. added",
+      "summary_excerpt": "Talk to Jerry about holidays",
+      "avatars_sample": [],
+      "bucket": {
+        "id": 2085958514,
+        "name": "New project from template",
+        "url": "https://3.basecampapi.com/195539477/projects/2085958514.json",
+        "app_url": "https://3.basecamp.com/195539477/projects/2085958514"
+      },
+      "attachments": []
+    },
+    {
+      "id": 1071915808,
+      "created_at": "2026-02-06T22:44:52.863Z",
+      "kind": "todo_created",
+      "parent_recording_id": 1069480044,
+      "url": "https://3.basecampapi.com/195539477/buckets/2085958514/todos/1069480045.json",
+      "app_url": "https://3.basecamp.com/195539477/buckets/2085958514/todos/1069480045",
+      "creator": {
+        "id": 1049715913,
+        "attachable_sgid": "BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiK2dpZDovL2JjMy9QZXJzb24vMTA0OTcxNTkxMz9leHBpcmVzX2luBjsAVEkiCHB1cgY7AFRJIg9hdHRhY2hhYmxlBjsAVA==--e627c45e6b34e08862da23906862412620e4d5d9",
+        "name": "Victor Cooper",
+        "email_address": "victor@honchodesign.com",
+        "personable_type": "User",
+        "title": "Chief Strategist",
+        "bio": "Don’t let your dreams be dreams",
+        "location": "Chicago, IL",
+        "created_at": "2026-01-31T08:29:28.365Z",
+        "updated_at": "2026-01-31T08:29:32.599Z",
+        "admin": true,
+        "owner": true,
+        "client": false,
+        "employee": true,
+        "time_zone": "America/Chicago",
+        "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBMlkkT4=--5fe7b70fbee7a7f0e2e1e19df7579e5d880c753d/avatar?v=1",
+        "company": {
+          "id": 1033447817,
+          "name": "Honcho Design"
+        },
+        "can_ping": true,
+        "can_manage_projects": true,
+        "can_manage_people": true,
+        "can_access_timesheet": true,
+        "can_access_hill_charts": true
+      },
+      "action": "Victor C. added a to-do",
+      "target": "First things first",
+      "title": "On “First things first”, Victor C. added",
+      "summary_excerpt": "Talk to Cheryl about benefits",
+      "avatars_sample": [],
+      "bucket": {
+        "id": 2085958514,
+        "name": "New project from template",
+        "url": "https://3.basecampapi.com/195539477/projects/2085958514.json",
+        "app_url": "https://3.basecamp.com/195539477/projects/2085958514"
       },
       "attachments": []
     }
