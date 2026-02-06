@@ -372,7 +372,7 @@ curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/j
 ```
 
 ###### Example Rich Text JSON Response
-<!-- START POST (rich text) /buckets/1/chats/2/lines.json -->
+<!-- START POST /buckets/1/chats/2/lines.json (rich text) -->
 ```json
 {
   "id": 1069480008,
@@ -428,7 +428,7 @@ curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/j
   "content": "<strong>Hello</strong> from the API"
 }
 ```
-<!-- END POST (rich text) /buckets/1/chats/2/lines.json -->
+<!-- END POST /buckets/1/chats/2/lines.json (rich text) -->
 
 ###### Copy as cURL
 
