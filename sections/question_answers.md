@@ -40,6 +40,8 @@ _Optional query parameters_:
     "subscription_url": "https://3.basecampapi.com/195539477/buckets/2085958504/recordings/1069479545/subscription.json",
     "comments_count": 0,
     "comments_url": "https://3.basecampapi.com/195539477/buckets/2085958504/recordings/1069479545/comments.json",
+    "boosts_count": 0,
+    "boosts_url": "https://3.basecampapi.com/195539477/buckets/2085958504/recordings/1069479545/boosts.json",
     "parent": {
       "id": 1069479417,
       "title": "What did you work on today?",
@@ -140,6 +142,8 @@ Get a question answer
   "subscription_url": "https://3.basecampapi.com/195539477/buckets/2085958504/recordings/1069479545/subscription.json",
   "comments_count": 0,
   "comments_url": "https://3.basecampapi.com/195539477/buckets/2085958504/recordings/1069479545/comments.json",
+  "boosts_count": 0,
+  "boosts_url": "https://3.basecampapi.com/195539477/buckets/2085958504/recordings/1069479545/boosts.json",
   "parent": {
     "id": 1069479417,
     "title": "What did you work on today?",

@@ -39,6 +39,8 @@ _Optional query parameters_:
     "subscription_url": "https://3.basecampapi.com/195539477/buckets/2085958504/recordings/1069479912/subscription.json",
     "comments_count": 0,
     "comments_url": "https://3.basecampapi.com/195539477/buckets/2085958504/recordings/1069479912/comments.json",
+    "boosts_count": 0,
+    "boosts_url": "https://3.basecampapi.com/195539477/buckets/2085958504/recordings/1069479912/boosts.json",
     "parent": {
       "id": 1069479396,
       "title": "Schedule",
@@ -148,6 +150,8 @@ Get a schedule entry
   "subscription_url": "https://3.basecampapi.com/195539477/buckets/2085958504/recordings/1069479912/subscription.json",
   "comments_count": 0,
   "comments_url": "https://3.basecampapi.com/195539477/buckets/2085958504/recordings/1069479912/comments.json",
+  "boosts_count": 0,
+  "boosts_url": "https://3.basecampapi.com/195539477/buckets/2085958504/recordings/1069479912/boosts.json",
   "parent": {
     "id": 1069479396,
     "title": "Schedule",

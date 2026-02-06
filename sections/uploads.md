@@ -33,6 +33,8 @@ Get uploads
     "subscription_url": "https://3.basecampapi.com/195539477/buckets/2085958504/recordings/1069479913/subscription.json",
     "comments_count": 0,
     "comments_url": "https://3.basecampapi.com/195539477/buckets/2085958504/recordings/1069479913/comments.json",
+    "boosts_count": 0,
+    "boosts_url": "https://3.basecampapi.com/195539477/buckets/2085958504/recordings/1069479913/boosts.json",
     "position": 1,
     "parent": {
       "id": 1069479394,
@@ -78,7 +80,7 @@ Get uploads
     "byte_size": 1281,
     "filename": "company-logo.png",
     "download_url": "https://3.basecampapi.com/195539477/buckets/2085958504/uploads/1069479913/download/company-logo.png",
-    "app_download_url": "https://3.basecampapi.com/195539477/buckets/2085958504/uploads/1069479913/download/company-logo.png",
+    "app_download_url": "http://localhost:4001/195539477/buckets/2085958504/uploads/1069479913/download/company-logo.png",
     "width": 164,
     "height": 39
   }
@@ -114,6 +116,8 @@ Get an upload
   "subscription_url": "https://3.basecampapi.com/195539477/buckets/2085958504/recordings/1069479913/subscription.json",
   "comments_count": 0,
   "comments_url": "https://3.basecampapi.com/195539477/buckets/2085958504/recordings/1069479913/comments.json",
+  "boosts_count": 0,
+  "boosts_url": "https://3.basecampapi.com/195539477/buckets/2085958504/recordings/1069479913/boosts.json",
   "position": 1,
   "parent": {
     "id": 1069479394,
@@ -159,7 +163,7 @@ Get an upload
   "byte_size": 1281,
   "filename": "company-logo.png",
   "download_url": "https://3.basecampapi.com/195539477/buckets/2085958504/uploads/1069479913/download/company-logo.png",
-  "app_download_url": "https://3.basecampapi.com/195539477/buckets/2085958504/uploads/1069479913/download/company-logo.png",
+  "app_download_url": "http://localhost:4001/195539477/buckets/2085958504/uploads/1069479913/download/company-logo.png",
   "width": 164,
   "height": 39
 }

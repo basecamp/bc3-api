@@ -43,6 +43,8 @@ This endpoint without any parameters returns only active, pending (i.e. not comp
     "subscription_url": "https://3.basecampapi.com/195539477/buckets/2085958504/recordings/1069479574/subscription.json",
     "comments_count": 0,
     "comments_url": "https://3.basecampapi.com/195539477/buckets/2085958504/recordings/1069479574/comments.json",
+    "boosts_count": 0,
+    "boosts_url": "https://3.basecampapi.com/195539477/buckets/2085958504/recordings/1069479574/boosts.json",
     "position": 1,
     "parent": {
       "id": 1069479573,
@@ -115,7 +117,7 @@ Get a to-do
   "status": "active",
   "visible_to_clients": false,
   "created_at": "2026-01-15T07:20:00.000Z",
-  "updated_at": "2026-02-06T22:56:33.038Z",
+  "updated_at": "2026-02-06T21:44:48.539Z",
   "title": "Clear and simple UI",
   "inherits_status": true,
   "type": "Todo",
@@ -125,6 +127,8 @@ Get a to-do
   "subscription_url": "https://3.basecampapi.com/195539477/buckets/2085958504/recordings/1069479576/subscription.json",
   "comments_count": 0,
   "comments_url": "https://3.basecampapi.com/195539477/buckets/2085958504/recordings/1069479576/comments.json",
+  "boosts_count": 0,
+  "boosts_url": "https://3.basecampapi.com/195539477/buckets/2085958504/recordings/1069479576/boosts.json",
   "parent": {
     "id": 1069479573,
     "title": "Strategy ideas",
@@ -167,7 +171,7 @@ Get a to-do
   "description": "",
   "completed": true,
   "completion": {
-    "created_at": "2026-02-06T22:56:32.917Z",
+    "created_at": "2026-02-06T21:44:48.399Z",
     "creator": {
       "id": 1049715930,
       "attachable_sgid": "BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiK2dpZDovL2JjMy9QZXJzb24vMTA0OTcxNTkzMD9leHBpcmVzX2luBjsAVEkiCHB1cgY7AFRJIg9hdHRhY2hhYmxlBjsAVA==--322099b137f9e0b6bc944b5b9fe7a2692da94814",
