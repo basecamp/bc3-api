@@ -241,8 +241,8 @@ The response includes:
       "summary": "Team Meeting",
       "all_day": false,
       "recurring": false,
-      "starts_at": "2026-02-01T10:36:20.949Z",
-      "ends_at": "2026-02-01T14:36:20.950Z",
+      "starts_at": "2026-02-08T00:48:58.572Z",
+      "ends_at": "2026-02-08T04:48:58.572Z",
       "creator": {
         "id": 1049715913,
         "name": "Victor Cooper",
@@ -263,38 +263,7 @@ The response includes:
     }
   ],
   "recurring_schedule_entry_occurrences": [],
-  "assignables": [
-    {
-      "id": 1069479603,
-      "status": "active",
-      "visible_to_clients": false,
-      "url": "https://3.basecampapi.com/195539477/buckets/2085958504/card_tables/steps/1069479603.json",
-      "app_url": "https://3.basecamp.com/195539477/buckets/2085958504/card_tables/cards/1069479602#__recording_1069479603",
-      "starts_on": null,
-      "due_on": "2026-02-04",
-      "type": "step",
-      "content": "Find inspiration",
-      "assignees": [
-        {
-          "id": 1049715931,
-          "name": "Tashia Hughes",
-          "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBNtkkT4=--b72a5df90f237e00570273b726a82176287186e4/avatar?v=1"
-        }
-      ],
-      "bucket": {
-        "id": 2085958504,
-        "name": "The Leto Laptop"
-      },
-      "parent": {
-        "id": 1069479602,
-        "title": "New and fancy UI"
-      },
-      "completion_url": "/195539477/buckets/2085958504/card_tables/steps/1069479603/completions.json",
-      "completed": false,
-      "repeating": false,
-      "comments_count": 0
-    }
-  ]
+  "assignables": []
 }
 ```
 <!-- END GET /reports/schedules/upcoming.json -->

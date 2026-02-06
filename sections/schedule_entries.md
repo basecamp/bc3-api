@@ -81,8 +81,8 @@ _Optional query parameters_:
     "description": "<div>Time to synergize!</div>",
     "summary": "Team Meeting",
     "all_day": false,
-    "starts_at": "2026-02-01T10:36:20.949Z",
-    "ends_at": "2026-02-01T14:36:20.950Z",
+    "starts_at": "2026-02-08T00:48:58.572Z",
+    "ends_at": "2026-02-08T04:48:58.572Z",
     "participants": [
       {
         "id": 1049715944,
@@ -190,8 +190,8 @@ Get a schedule entry
   "description": "<div>Time to synergize!</div>",
   "summary": "Team Meeting",
   "all_day": false,
-  "starts_at": "2026-02-01T10:36:20.949Z",
-  "ends_at": "2026-02-01T14:36:20.950Z",
+  "starts_at": "2026-02-08T00:48:58.572Z",
+  "ends_at": "2026-02-08T04:48:58.572Z",
   "participants": [
     {
       "id": 1049715944,
