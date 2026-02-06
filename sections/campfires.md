@@ -279,7 +279,11 @@ Create a Campfire line
 
 * `POST /buckets/1/chats/2/lines.json` creates a line in the Campfire with ID `2` in the project with ID `1`.
 
-**Required parameters**: `content` as the plain text body for the Campfire line.
+**Required parameters**: `content` as the body of the Campfire line.
+
+_Optional parameters_:
+
+* `content_type` set to `text/html` to create a rich text line. When omitted, a plain text line is created. See our [Rich text guide][rich_text] for what HTML tags are allowed.
 
 This endpoint will return `201 Created` with the current JSON representation of the line if the creation was a success. See the [Get a Campfire line](#get-a-campfire-line) endpoint for more info on the payload.
 
@@ -291,11 +295,146 @@ This endpoint will return `201 Created` with the current JSON representation of 
 }
 ```
 
+###### Example JSON Response
+<!-- START POST /buckets/1/chats/2/lines.json -->
+```json
+{
+  "id": 1069480007,
+  "status": "active",
+  "visible_to_clients": false,
+  "created_at": "2026-02-06T21:38:57.555Z",
+  "updated_at": "2026-02-06T21:38:57.555Z",
+  "title": "Good morning",
+  "inherits_status": true,
+  "type": "Chat::Lines::Text",
+  "url": "https://3.basecampapi.com/195539477/buckets/2085958502/chats/1069478985/lines/1069480007.json",
+  "app_url": "https://3.basecamp.com/195539477/buckets/2085958502/chats/1069478985@1069480007",
+  "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiLmdpZDovL2JjMy9SZWNvcmRpbmcvMTA2OTQ4MDAwNz9leHBpcmVzX2luBjsAVEkiCHB1cgY7AFRJIg1yZWFkYWJsZQY7AFQ=--0b2fce7d5cb7b7aeafd95960a30be109dca416bc.json",
+  "parent": {
+    "id": 1069478985,
+    "title": "Chat",
+    "type": "Chat::Transcript",
+    "url": "https://3.basecampapi.com/195539477/buckets/2085958502/chats/1069478985.json",
+    "app_url": "https://3.basecamp.com/195539477/buckets/2085958502/chats/1069478985"
+  },
+  "bucket": {
+    "id": 2085958502,
+    "name": "Honcho Design Newsroom",
+    "type": "Project"
+  },
+  "creator": {
+    "id": 1049715913,
+    "attachable_sgid": "BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiK2dpZDovL2JjMy9QZXJzb24vMTA0OTcxNTkxMz9leHBpcmVzX2luBjsAVEkiCHB1cgY7AFRJIg9hdHRhY2hhYmxlBjsAVA==--e627c45e6b34e08862da23906862412620e4d5d9",
+    "name": "Victor Cooper",
+    "email_address": "victor@honchodesign.com",
+    "personable_type": "User",
+    "title": "Chief Strategist",
+    "bio": "Don’t let your dreams be dreams",
+    "location": "Chicago, IL",
+    "created_at": "2026-01-31T08:29:28.365Z",
+    "updated_at": "2026-01-31T08:29:32.599Z",
+    "admin": true,
+    "owner": true,
+    "client": false,
+    "employee": true,
+    "time_zone": "America/Chicago",
+    "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBMlkkT4=--5fe7b70fbee7a7f0e2e1e19df7579e5d880c753d/avatar?v=1",
+    "company": {
+      "id": 1033447817,
+      "name": "Honcho Design"
+    },
+    "can_ping": true,
+    "can_manage_projects": true,
+    "can_manage_people": true,
+    "can_access_timesheet": true,
+    "can_access_hill_charts": true
+  },
+  "content": "Good morning"
+}
+```
+<!-- END POST /buckets/1/chats/2/lines.json -->
+
 ###### Copy as cURL
 
 ```shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" \
   -d '{"content":"Good morning"}' \
+  https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/chats/2/lines.json
+```
+
+###### Example Rich Text JSON Request
+
+```json
+{
+  "content": "<strong>Hello</strong> from the API",
+  "content_type": "text/html"
+}
+```
+
+###### Example Rich Text JSON Response
+<!-- START POST (rich text) /buckets/1/chats/2/lines.json -->
+```json
+{
+  "id": 1069480008,
+  "status": "active",
+  "visible_to_clients": false,
+  "created_at": "2026-02-06T21:38:58.342Z",
+  "updated_at": "2026-02-06T21:38:58.342Z",
+  "title": "Hello from the API",
+  "inherits_status": true,
+  "type": "Chat::Lines::RichText",
+  "url": "https://3.basecampapi.com/195539477/buckets/2085958502/chats/1069478985/lines/1069480008.json",
+  "app_url": "https://3.basecamp.com/195539477/buckets/2085958502/chats/1069478985@1069480008",
+  "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiLmdpZDovL2JjMy9SZWNvcmRpbmcvMTA2OTQ4MDAwOD9leHBpcmVzX2luBjsAVEkiCHB1cgY7AFRJIg1yZWFkYWJsZQY7AFQ=--63c88a017556486cbb71bde82b1ad62ba59d65f1.json",
+  "parent": {
+    "id": 1069478985,
+    "title": "Chat",
+    "type": "Chat::Transcript",
+    "url": "https://3.basecampapi.com/195539477/buckets/2085958502/chats/1069478985.json",
+    "app_url": "https://3.basecamp.com/195539477/buckets/2085958502/chats/1069478985"
+  },
+  "bucket": {
+    "id": 2085958502,
+    "name": "Honcho Design Newsroom",
+    "type": "Project"
+  },
+  "creator": {
+    "id": 1049715913,
+    "attachable_sgid": "BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiK2dpZDovL2JjMy9QZXJzb24vMTA0OTcxNTkxMz9leHBpcmVzX2luBjsAVEkiCHB1cgY7AFRJIg9hdHRhY2hhYmxlBjsAVA==--e627c45e6b34e08862da23906862412620e4d5d9",
+    "name": "Victor Cooper",
+    "email_address": "victor@honchodesign.com",
+    "personable_type": "User",
+    "title": "Chief Strategist",
+    "bio": "Don’t let your dreams be dreams",
+    "location": "Chicago, IL",
+    "created_at": "2026-01-31T08:29:28.365Z",
+    "updated_at": "2026-01-31T08:29:32.599Z",
+    "admin": true,
+    "owner": true,
+    "client": false,
+    "employee": true,
+    "time_zone": "America/Chicago",
+    "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBMlkkT4=--5fe7b70fbee7a7f0e2e1e19df7579e5d880c753d/avatar?v=1",
+    "company": {
+      "id": 1033447817,
+      "name": "Honcho Design"
+    },
+    "can_ping": true,
+    "can_manage_projects": true,
+    "can_manage_people": true,
+    "can_access_timesheet": true,
+    "can_access_hill_charts": true
+  },
+  "content": "<strong>Hello</strong> from the API"
+}
+```
+<!-- END POST (rich text) /buckets/1/chats/2/lines.json -->
+
+###### Copy as cURL
+
+```shell
+curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" \
+  -d '{"content":"<strong>Hello</strong> from the API","content_type":"text/html"}' \
   https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/chats/2/lines.json
 ```
 
@@ -313,3 +452,4 @@ curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCO
 ```
 
 [pagination]: https://github.com/basecamp/bc3-api/blob/master/README.md#pagination
+[rich_text]: https://github.com/basecamp/bc3-api/blob/master/sections/rich_text.md
