@@ -11,10 +11,10 @@ Endpoints:
 Get inbox replies
 -------------------
 
-* `GET /buckets/1/inbox_forwards/2/replies.json` will return a [paginated list][pagination] of inbox replies in the project with an ID of `1` and the forward with ID of `2`.
+* `GET /inbox_forwards/2/replies.json` will return a [paginated list][pagination] of inbox replies for the forward with ID of `2`.
 
 ###### Example JSON Response
-<!-- START GET /buckets/1/inbox_forwards/2/replies.json -->
+<!-- START GET /inbox_forwards/2/replies.json -->
 ```json
 [
   {
@@ -72,20 +72,20 @@ Get inbox replies
   }
 ]
 ```
-<!-- END GET /buckets/1/inbox_forwards/2/replies.json -->
+<!-- END GET /inbox_forwards/2/replies.json -->
 ###### Copy as cURL
 
 ```shell
-curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/inbox_forwards/2/replies.json
+curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/inbox_forwards/2/replies.json
 ```
 
 Get an inbox reply
 -------------------
 
-* `GET /buckets/1/inbox_forwards/2/replies/3.json` will return the inbox reply with an ID of `3` for the forward with an ID of `2` in the project with an ID of `1`.
+* `GET /inbox_forwards/2/replies/3.json` will return the inbox reply with an ID of `3` for the forward with an ID of `2`.
 
 ###### Example JSON Response
-<!-- START GET /buckets/1/inbox_forwards/2/replies/3.json -->
+<!-- START GET /inbox_forwards/2/replies/3.json -->
 ```json
 {
   "id": 1069479089,
@@ -137,12 +137,20 @@ Get an inbox reply
   "content": "Awesome, sounds good Victor!<br><br>Thanks again,<br>Henry"
 }
 ```
-<!-- END GET /buckets/1/inbox_forwards/2/replies/3.json -->
+<!-- END GET /inbox_forwards/2/replies/3.json -->
 ###### Copy as cURL
 
 ```shell
-curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/inbox_forwards/2/replies/3.json
+curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/inbox_forwards/2/replies/3.json
 ```
+
+Legacy project-scoped routes
+-----------------------------
+
+The following project-scoped routes are still supported and will remain available, but flat routes above are the canonical form for new integrations.
+
+* `GET /buckets/1/inbox_forwards/2/replies.json` → [Get inbox replies](#get-inbox-replies)
+* `GET /buckets/1/inbox_forwards/2/replies/3.json` → [Get an inbox reply](#get-an-inbox-reply)
 
 [pagination]: https://github.com/basecamp/bc3-api/blob/master/README.md#pagination
 [forwards]: https://github.com/basecamp/bc3-api/blob/master/sections/forwards.md#forwards

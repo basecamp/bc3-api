@@ -14,7 +14,7 @@ Endpoints:
 Get question answers
 --------------------
 
-* `GET /buckets/1/questions/2/answers.json` will return a [paginated list][pagination] of answers in the project with an ID of `1` and the question with ID of `2`.
+* `GET /questions/2/answers.json` will return a [paginated list][pagination] of answers to the question with ID of `2`.
 
 _Optional query parameters_:
 
@@ -22,7 +22,7 @@ _Optional query parameters_:
 * `creator_id` - a person ID to filter answers by author.
 
 ###### Example JSON Response
-<!-- START GET /buckets/1/questions/2/answers.json -->
+<!-- START GET /questions/2/answers.json -->
 ```json
 [
   {
@@ -37,9 +37,9 @@ _Optional query parameters_:
     "url": "https://3.basecampapi.com/195539477/buckets/2085958504/question_answers/1069479545.json",
     "app_url": "https://3.basecamp.com/195539477/buckets/2085958504/question_answers/1069479545",
     "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiLmdpZDovL2JjMy9SZWNvcmRpbmcvMTA2OTQ3OTU0NT9leHBpcmVzX2luBjsAVEkiCHB1cgY7AFRJIg1yZWFkYWJsZQY7AFQ=--4ecc639365c1b1091bba2cebaad8b5d8bd1be402.json",
-    "subscription_url": "https://3.basecampapi.com/195539477/buckets/2085958504/recordings/1069479545/subscription.json",
+    "subscription_url": "https://3.basecampapi.com/195539477/recordings/1069479545/subscription.json",
     "comments_count": 0,
-    "comments_url": "https://3.basecampapi.com/195539477/buckets/2085958504/recordings/1069479545/comments.json",
+    "comments_url": "https://3.basecampapi.com/195539477/recordings/1069479545/comments.json",
     "parent": {
       "id": 1069479417,
       "title": "What did you work on today?",
@@ -84,17 +84,17 @@ _Optional query parameters_:
   }
 ]
 ```
-<!-- END GET /buckets/1/questions/2/answers.json -->
+<!-- END GET /questions/2/answers.json -->
 ###### Copy as cURL
 
 ```shell
-curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/questions/2/answers.json
+curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/questions/2/answers.json
 ```
 
 List answerers
 --------------
 
-* `GET /buckets/1/questions/2/answers/by.json` will return a [paginated list][pagination] of people who have answered the question with ID `2` in the project with an ID of `1`.
+* `GET /questions/2/answers/by.json` will return a [paginated list][pagination] of people who have answered the question with ID `2`.
 
 By default, long-deceased people are filtered out. Pass `?deceased=true` to include them.
 
@@ -103,27 +103,27 @@ Each entry is a person object.
 ###### Copy as cURL
 
 ```shell
-curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/questions/2/answers/by.json
+curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/questions/2/answers/by.json
 ```
 
 Get answers by person
 ---------------------
 
-* `GET /buckets/1/questions/2/answers/by/3.json` will return a [paginated list][pagination] of answers to the question with ID `2` in the project with an ID of `1`, filtered to only answers by the person with ID `3`.
+* `GET /questions/2/answers/by/3.json` will return a [paginated list][pagination] of answers to the question with ID `2`, filtered to only answers by the person with ID `3`.
 
 ###### Copy as cURL
 
 ```shell
-curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/questions/2/answers/by/3.json
+curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/questions/2/answers/by/3.json
 ```
 
 Get a question answer
 ---------------------
 
-* `GET /buckets/1/question_answers/2.json` will return the answer with an ID of `2` in the project with an ID of `1`.
+* `GET /question_answers/2.json` will return the answer with an ID of `2`.
 
 ###### Example JSON Response
-<!-- START GET /buckets/1/question_answers/2.json -->
+<!-- START GET /question_answers/2.json -->
 ```json
 {
   "id": 1069479545,
@@ -137,9 +137,9 @@ Get a question answer
   "url": "https://3.basecampapi.com/195539477/buckets/2085958504/question_answers/1069479545.json",
   "app_url": "https://3.basecamp.com/195539477/buckets/2085958504/question_answers/1069479545",
   "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiLmdpZDovL2JjMy9SZWNvcmRpbmcvMTA2OTQ3OTU0NT9leHBpcmVzX2luBjsAVEkiCHB1cgY7AFRJIg1yZWFkYWJsZQY7AFQ=--4ecc639365c1b1091bba2cebaad8b5d8bd1be402.json",
-  "subscription_url": "https://3.basecampapi.com/195539477/buckets/2085958504/recordings/1069479545/subscription.json",
+  "subscription_url": "https://3.basecampapi.com/195539477/recordings/1069479545/subscription.json",
   "comments_count": 0,
-  "comments_url": "https://3.basecampapi.com/195539477/buckets/2085958504/recordings/1069479545/comments.json",
+  "comments_url": "https://3.basecampapi.com/195539477/recordings/1069479545/comments.json",
   "parent": {
     "id": 1069479417,
     "title": "What did you work on today?",
@@ -183,18 +183,18 @@ Get a question answer
   "group_on": "2026-01-26"
 }
 ```
-<!-- END GET /buckets/1/question_answers/2.json -->
+<!-- END GET /question_answers/2.json -->
 ###### Copy as cURL
 
 ```shell
-curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/question_answers/2.json
+curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/question_answers/2.json
 ```
 
 
 Create a question answer
 ------------------------
 
-* `POST /buckets/1/questions/2/answers.json` creates an answer to the question with ID `2` in the project with ID `1`.
+* `POST /questions/2/answers.json` creates an answer to the question with ID `2`.
 
 **Required parameters**: `content` containing the answer text. See our [Rich text guide][rich_text] for what HTML tags are allowed.
 
@@ -219,14 +219,14 @@ This endpoint will return `201 Created` with the current JSON representation of 
 ```shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" \
   -d '{"question_answer":{"content":"<div>Today I worked on the API documentation.</div>","group_on":"2024-01-22"}}' \
-  https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/questions/2/answers.json
+  https://3.basecampapi.com/$ACCOUNT_ID/questions/2/answers.json
 ```
 
 
 Update a question answer
 ------------------------
 
-* `PUT /buckets/1/question_answers/2.json` allows changing the answer with an ID of `2` in the project with ID `1`.
+* `PUT /question_answers/2.json` allows changing the answer with an ID of `2`.
 
 This endpoint will return `204 No Content` if the update was a success.
 
@@ -245,9 +245,22 @@ This endpoint will return `204 No Content` if the update was a success.
 ```shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" \
   -d '{"question_answer":{"content":"<div>Updated: Today I finished the API documentation.</div>"}}' -X PUT \
-  https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/question_answers/2.json
+  https://3.basecampapi.com/$ACCOUNT_ID/question_answers/2.json
 ```
 
+
+
+Legacy project-scoped routes
+-----------------------------
+
+The following project-scoped routes are still supported and will remain available, but flat routes above are the canonical form for new integrations.
+
+* `GET /buckets/1/questions/2/answers.json` → [Get question answers](#get-question-answers)
+* `GET /buckets/1/questions/2/answers/by.json` → [List answerers](#list-answerers)
+* `GET /buckets/1/questions/2/answers/by/3.json` → [Get answers by person](#get-answers-by-person)
+* `GET /buckets/1/question_answers/2.json` → [Get a question answer](#get-a-question-answer)
+* `POST /buckets/1/questions/2/answers.json` → [Create a question answer](#create-a-question-answer)
+* `PUT /buckets/1/question_answers/2.json` → [Update a question answer](#update-a-question-answer)
 
 [pagination]: https://github.com/basecamp/bc3-api/blob/master/README.md#pagination
 [rich_text]: https://github.com/basecamp/bc3-api/blob/master/sections/rich_text.md

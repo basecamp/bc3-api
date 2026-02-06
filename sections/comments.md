@@ -14,10 +14,10 @@ Endpoints:
 Get comments
 ------------
 
-* `GET /buckets/1/recordings/3/comments.json` will return a [paginated list][pagination] of active comments in the project with an ID of `1` and the recording with ID of `3`.
+* `GET /recordings/3/comments.json` will return a [paginated list][pagination] of active comments for the recording with ID of `3`.
 
 ###### Example JSON Response
-<!-- START GET /buckets/1/recordings/3/comments.json -->
+<!-- START GET /recordings/3/comments.json -->
 ```json
 [
   {
@@ -71,21 +71,21 @@ Get comments
   }
 ]
 ```
-<!-- END GET /buckets/1/recordings/3/comments.json -->
+<!-- END GET /recordings/3/comments.json -->
 ###### Copy as cURL
 
 ```shell
-curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/recordings/3/comments.json
+curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/recordings/3/comments.json
 ```
 
 
 Get a comment
 -------------
 
-* `GET /buckets/1/comments/2.json` will return the comment with an ID of `2` in the project with an ID of `1`.
+* `GET /comments/2.json` will return the comment with an ID of `2`.
 
 ###### Example JSON Response
-<!-- START GET /buckets/1/comments/2.json -->
+<!-- START GET /comments/2.json -->
 ```json
 {
   "id": 1069479416,
@@ -141,18 +141,18 @@ Get a comment
   "content": "I just want to echo what just about everyone already said. This is a big one for us, and I can't wait to get going. I'll be spinning up the project shortly!"
 }
 ```
-<!-- END GET /buckets/1/comments/2.json -->
+<!-- END GET /comments/2.json -->
 ###### Copy as cURL
 
 ```shell
-curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/comment/2.json
+curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/comments/2.json
 ```
 
 
 Create a comment
 ----------------
 
-* `POST /buckets/1/recordings/3/comments.json` publishes a comment in the project with ID `1` and under the recording with an ID of `3`.
+* `POST /recordings/3/comments.json` publishes a comment under the recording with an ID of `3`.
 
 **Required parameters**: `content` as the body of the message. See our [Rich text guide][rich] for what HTML tags are allowed.
 
@@ -173,14 +173,14 @@ This endpoint will return `201 Created` with the current JSON representation of 
 ```shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" \
   -d '{"content":"<div><em>Wow!</em> That is cool.</div>"}' \
-  https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/recordings/3/comments.json
+  https://3.basecampapi.com/$ACCOUNT_ID/recordings/3/comments.json
 ```
 
 
 Update a comment
 ----------------
 
-* `PUT /buckets/1/comments/2.json` allows changing content of the message with an ID of `2` in the project with ID `1`.
+* `PUT /comments/2.json` allows changing content of the comment with an ID of `2`.
 
 This endpoint will return `200 OK` with the current JSON representation of the message if the update was a success. See the [Get a comment](#get-a-comment) endpoint for more info on the payload. The `Location` header will contain a URL to the HTML version of the updated comment.
 
@@ -197,9 +197,19 @@ This endpoint will return `200 OK` with the current JSON representation of the m
 ```shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" \
   -d '{"content":"<div><em>No way!</em> That isn't cool at all.</div>"}' -X PUT \
-  https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/messages/2.json
+  https://3.basecampapi.com/$ACCOUNT_ID/comments/2.json
 ```
 
+
+Legacy project-scoped routes
+-----------------------------
+
+The following project-scoped routes are still supported and will remain available, but flat routes above are the canonical form for new integrations.
+
+* `GET /buckets/1/recordings/3/comments.json` → [Get comments](#get-comments)
+* `GET /buckets/1/comments/2.json` → [Get a comment](#get-a-comment)
+* `POST /buckets/1/recordings/3/comments.json` → [Create a comment](#create-a-comment)
+* `PUT /buckets/1/comments/2.json` → [Update a comment](#update-a-comment)
 
 [recordings]: https://github.com/basecamp/bc3-api/blob/master/sections/recordings.md#recordings
 [messages]:   https://github.com/basecamp/bc3-api/blob/master/sections/messages.md#messages

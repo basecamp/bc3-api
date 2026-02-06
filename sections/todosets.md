@@ -11,19 +11,19 @@ Endpoints:
 Get to-do set
 -------------
 
-* `GET /buckets/1/todosets/2.json` will return the to-do set for the project with an ID of `1` and a to-do set ID of `2`.
+* `GET /todosets/2.json` will return the to-do set with an ID of `2`.
 
 To get the to-do set ID for a project, see the [Get a project][1] endpoint's `dock` payload. To retrieve its to-do lists, see the [Get to-do lists][2] endpoint.
 
 ###### Example JSON Response
-<!-- START GET /buckets/1/todosets/2.json -->
+<!-- START GET /todosets/2.json -->
 ```json
 {
   "id": 1069479393,
   "status": "active",
   "visible_to_clients": false,
   "created_at": "2026-01-31T08:32:04.373Z",
-  "updated_at": "2026-01-31T08:32:56.590Z",
+  "updated_at": "2026-02-06T22:19:46.808Z",
   "title": "To-dos",
   "inherits_status": true,
   "type": "Todoset",
@@ -74,7 +74,7 @@ To get the to-do set ID for a project, see the [Get a project][1] endpoint's `do
       "description": null,
       "completed": false,
       "completed_ratio": "2/5",
-      "url": "https://3.basecampapi.com/195539477/buckets/2085958504/todolists/1069479573.json",
+      "url": "https://3.basecampapi.com/195539477/todolists/1069479573.json",
       "app_url": "https://3.basecamp.com/195539477/buckets/2085958504/todolists/1069479573"
     },
     {
@@ -83,7 +83,7 @@ To get the to-do set ID for a project, see the [Get a project][1] endpoint's `do
       "description": null,
       "completed": false,
       "completed_ratio": "8/17",
-      "url": "https://3.basecampapi.com/195539477/buckets/2085958504/todolists/1069479511.json",
+      "url": "https://3.basecampapi.com/195539477/todolists/1069479511.json",
       "app_url": "https://3.basecamp.com/195539477/buckets/2085958504/todolists/1069479511"
     },
     {
@@ -92,7 +92,7 @@ To get the to-do set ID for a project, see the [Get a project][1] endpoint's `do
       "description": null,
       "completed": false,
       "completed_ratio": "0/3",
-      "url": "https://3.basecampapi.com/195539477/buckets/2085958504/todolists/1069479496.json",
+      "url": "https://3.basecampapi.com/195539477/todolists/1069479496.json",
       "app_url": "https://3.basecamp.com/195539477/buckets/2085958504/todolists/1069479496"
     },
     {
@@ -101,7 +101,7 @@ To get the to-do set ID for a project, see the [Get a project][1] endpoint's `do
       "description": null,
       "completed": false,
       "completed_ratio": "1/5",
-      "url": "https://3.basecampapi.com/195539477/buckets/2085958504/todolists/1069479487.json",
+      "url": "https://3.basecampapi.com/195539477/todolists/1069479487.json",
       "app_url": "https://3.basecamp.com/195539477/buckets/2085958504/todolists/1069479487"
     },
     {
@@ -110,7 +110,7 @@ To get the to-do set ID for a project, see the [Get a project][1] endpoint's `do
       "description": null,
       "completed": false,
       "completed_ratio": "1/6",
-      "url": "https://3.basecampapi.com/195539477/buckets/2085958504/todolists/1069479480.json",
+      "url": "https://3.basecampapi.com/195539477/todolists/1069479480.json",
       "app_url": "https://3.basecamp.com/195539477/buckets/2085958504/todolists/1069479480"
     },
     {
@@ -119,7 +119,7 @@ To get the to-do set ID for a project, see the [Get a project][1] endpoint's `do
       "description": null,
       "completed": false,
       "completed_ratio": "1/4",
-      "url": "https://3.basecampapi.com/195539477/buckets/2085958504/todolists/1069479475.json",
+      "url": "https://3.basecampapi.com/195539477/todolists/1069479475.json",
       "app_url": "https://3.basecamp.com/195539477/buckets/2085958504/todolists/1069479475"
     },
     {
@@ -128,7 +128,7 @@ To get the to-do set ID for a project, see the [Get a project][1] endpoint's `do
       "description": null,
       "completed": false,
       "completed_ratio": "0/5",
-      "url": "https://3.basecampapi.com/195539477/buckets/2085958504/todolists/1069479465.json",
+      "url": "https://3.basecampapi.com/195539477/todolists/1069479465.json",
       "app_url": "https://3.basecamp.com/195539477/buckets/2085958504/todolists/1069479465"
     },
     {
@@ -137,7 +137,7 @@ To get the to-do set ID for a project, see the [Get a project][1] endpoint's `do
       "description": null,
       "completed": false,
       "completed_ratio": "1/6",
-      "url": "https://3.basecampapi.com/195539477/buckets/2085958504/todolists/1069479458.json",
+      "url": "https://3.basecampapi.com/195539477/todolists/1069479458.json",
       "app_url": "https://3.basecamp.com/195539477/buckets/2085958504/todolists/1069479458"
     },
     {
@@ -146,7 +146,7 @@ To get the to-do set ID for a project, see the [Get a project][1] endpoint's `do
       "description": null,
       "completed": false,
       "completed_ratio": "0/5",
-      "url": "https://3.basecampapi.com/195539477/buckets/2085958504/todolists/1069479436.json",
+      "url": "https://3.basecampapi.com/195539477/todolists/1069479436.json",
       "app_url": "https://3.basecamp.com/195539477/buckets/2085958504/todolists/1069479436"
     },
     {
@@ -155,21 +155,28 @@ To get the to-do set ID for a project, see the [Get a project][1] endpoint's `do
       "description": null,
       "completed": false,
       "completed_ratio": "0/4",
-      "url": "https://3.basecampapi.com/195539477/buckets/2085958504/todolists/1069479424.json",
+      "url": "https://3.basecampapi.com/195539477/todolists/1069479424.json",
       "app_url": "https://3.basecamp.com/195539477/buckets/2085958504/todolists/1069479424"
     }
   ],
-  "todolists_url": "https://3.basecampapi.com/195539477/buckets/2085958504/todosets/1069479393/todolists.json",
+  "todolists_url": "https://3.basecampapi.com/195539477/todosets/1069479393/todolists.json",
   "app_todoslists_url": "https://3.basecamp.com/195539477/buckets/2085958504/todosets/1069479393/todolists"
 }
 ```
-<!-- END GET /buckets/1/todosets/2.json -->
+<!-- END GET /todosets/2.json -->
 ###### Copy as cURL
 
 ```shell
-curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/todosets/2.json
+curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/todosets/2.json
 ```
 
+
+Legacy project-scoped routes
+-----------------------------
+
+The following project-scoped routes are still supported and will remain available, but flat routes above are the canonical form for new integrations.
+
+* `GET /buckets/1/todosets/2.json` → [Get to-do set](#get-to-do-set)
 
 [1]: https://github.com/basecamp/bc3-api/blob/master/sections/projects.md#get-a-project
 [2]: https://github.com/basecamp/bc3-api/blob/master/sections/todolists.md#get-to-do-lists

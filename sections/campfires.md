@@ -24,14 +24,14 @@ Get Campfires
     "status": "active",
     "visible_to_clients": false,
     "created_at": "2026-01-31T08:29:58.785Z",
-    "updated_at": "2026-01-31T08:30:23.083Z",
+    "updated_at": "2026-02-06T21:38:59.101Z",
     "title": "Chat",
     "inherits_status": true,
     "type": "Chat::Transcript",
     "url": "https://3.basecampapi.com/195539477/buckets/2085958502/chats/1069478985.json",
     "app_url": "https://3.basecamp.com/195539477/buckets/2085958502/chats/1069478985",
     "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiLmdpZDovL2JjMy9SZWNvcmRpbmcvMTA2OTQ3ODk4NT9leHBpcmVzX2luBjsAVEkiCHB1cgY7AFRJIg1yZWFkYWJsZQY7AFQ=--f745f0a5dc8108b7f361e578d47b72ff974ed50e.json",
-    "subscription_url": "https://3.basecampapi.com/195539477/buckets/2085958502/recordings/1069478985/subscription.json",
+    "subscription_url": "https://3.basecampapi.com/195539477/recordings/1069478985/subscription.json",
     "position": 4,
     "bucket": {
       "id": 2085958502,
@@ -66,7 +66,7 @@ Get Campfires
       "can_access_hill_charts": true
     },
     "topic": "Chat",
-    "lines_url": "https://3.basecampapi.com/195539477/buckets/2085958502/chats/1069478985/lines.json"
+    "lines_url": "https://3.basecampapi.com/195539477/chats/1069478985/lines.json"
   }
 ]
 ```
@@ -80,24 +80,24 @@ curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCO
 Get a Campfire
 --------------
 
-* `GET /buckets/1/chats/2.json` will return the Campfire with ID `2` in the project with ID `1`.
+* `GET /chats/2.json` will return the Campfire with ID `2`.
 
 ###### Example JSON Response
-<!-- START GET /buckets/1/chats/2.json -->
+<!-- START GET /chats/2.json -->
 ```json
 {
   "id": 1069478985,
   "status": "active",
   "visible_to_clients": false,
   "created_at": "2026-01-31T08:29:58.785Z",
-  "updated_at": "2026-01-31T08:30:23.083Z",
+  "updated_at": "2026-02-06T21:38:59.101Z",
   "title": "Chat",
   "inherits_status": true,
   "type": "Chat::Transcript",
   "url": "https://3.basecampapi.com/195539477/buckets/2085958502/chats/1069478985.json",
   "app_url": "https://3.basecamp.com/195539477/buckets/2085958502/chats/1069478985",
   "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiLmdpZDovL2JjMy9SZWNvcmRpbmcvMTA2OTQ3ODk4NT9leHBpcmVzX2luBjsAVEkiCHB1cgY7AFRJIg1yZWFkYWJsZQY7AFQ=--f745f0a5dc8108b7f361e578d47b72ff974ed50e.json",
-  "subscription_url": "https://3.basecampapi.com/195539477/buckets/2085958502/recordings/1069478985/subscription.json",
+  "subscription_url": "https://3.basecampapi.com/195539477/recordings/1069478985/subscription.json",
   "position": 4,
   "bucket": {
     "id": 2085958502,
@@ -132,23 +132,23 @@ Get a Campfire
     "can_access_hill_charts": true
   },
   "topic": "Chat",
-  "lines_url": "https://3.basecampapi.com/195539477/buckets/2085958502/chats/1069478985/lines.json"
+  "lines_url": "https://3.basecampapi.com/195539477/chats/1069478985/lines.json"
 }
 ```
-<!-- END GET /buckets/1/chats/2.json -->
+<!-- END GET /chats/2.json -->
 ###### Copy as cURL
 
 ```shell
-curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/chats/2.json
+curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/chats/2.json
 ```
 
 Get Campfire lines
 ------------------
 
-* `GET /buckets/1/chats/2/lines.json` will return a [paginated list][pagination] of Campfire lines of the Campfire with ID `2` in the project with ID `1`.
+* `GET /chats/2/lines.json` will return a [paginated list][pagination] of Campfire lines of the Campfire with ID `2`.
 
 ###### Example JSON Response
-<!-- START GET /buckets/1/chats/2/lines.json -->
+<!-- START GET /chats/2/lines.json -->
 ```json
 [
   {
@@ -202,20 +202,20 @@ Get Campfire lines
   }
 ]
 ```
-<!-- END GET /buckets/1/chats/2/lines.json -->
+<!-- END GET /chats/2/lines.json -->
 ###### Copy as cURL
 
 ```shell
-curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/chats/2/lines.json
+curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/chats/2/lines.json
 ```
 
 Get a Campfire line
 -------------------
 
-* `GET /buckets/1/chats/2/lines/3.json` will return the Campfire line with ID `3` in the Campfire with ID `2` in the project with ID `1`.
+* `GET /chats/2/lines/3.json` will return the Campfire line with ID `3` in the Campfire with ID `2`.
 
 ###### Example JSON Response
-<!-- START GET /buckets/1/chats/2/lines/3.json -->
+<!-- START GET /chats/2/lines/3.json -->
 ```json
 {
   "id": 1069479054,
@@ -267,17 +267,17 @@ Get a Campfire line
   "content": "👏 🎉"
 }
 ```
-<!-- END GET /buckets/1/chats/2/lines/3.json -->
+<!-- END GET /chats/2/lines/3.json -->
 ###### Copy as cURL
 
 ```shell
-curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/chats/2/lines/3.json
+curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/chats/2/lines/3.json
 ```
 
 Create a Campfire line
 ----------------------
 
-* `POST /buckets/1/chats/2/lines.json` creates a line in the Campfire with ID `2` in the project with ID `1`.
+* `POST /chats/2/lines.json` creates a line in the Campfire with ID `2`.
 
 **Required parameters**: `content` as the plain text body for the Campfire line.
 
@@ -296,20 +296,31 @@ This endpoint will return `201 Created` with the current JSON representation of 
 ```shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" \
   -d '{"content":"Good morning"}' \
-  https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/chats/2/lines.json
+  https://3.basecampapi.com/$ACCOUNT_ID/chats/2/lines.json
 ```
 
 Delete a Campfire line
 ----------------------
 
-* `DELETE /buckets/1/chats/2/lines/3.json` will delete the Campfire line with ID `3` in the Campfire with ID `2` in the project with ID `1`.
+* `DELETE /chats/2/lines/3.json` will delete the Campfire line with ID `3` in the Campfire with ID `2`.
 
 Returns `204 No Content` if successful.
 
 ###### Copy as cURL
 
 ```shell
-curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/chats/2/lines/3.json
+curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/chats/2/lines/3.json
 ```
+
+Legacy project-scoped routes
+-----------------------------
+
+The following project-scoped routes are still supported and will remain available, but flat routes above are the canonical form for new integrations.
+
+* `GET /buckets/1/chats/2.json` → [Get a Campfire](#get-a-campfire)
+* `GET /buckets/1/chats/2/lines.json` → [Get Campfire lines](#get-campfire-lines)
+* `GET /buckets/1/chats/2/lines/3.json` → [Get a Campfire line](#get-a-campfire-line)
+* `POST /buckets/1/chats/2/lines.json` → [Create a Campfire line](#create-a-campfire-line)
+* `DELETE /buckets/1/chats/2/lines/3.json` → [Delete a Campfire line](#delete-a-campfire-line)
 
 [pagination]: https://github.com/basecamp/bc3-api/blob/master/README.md#pagination

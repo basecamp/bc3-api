@@ -101,9 +101,9 @@ _Optional query parameters_:
       "url": "https://3.basecampapi.com/195539477/buckets/2085958502/todos/1069479164.json",
       "app_url": "https://3.basecamp.com/195539477/buckets/2085958502/todos/1069479164",
       "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiLmdpZDovL2JjMy9SZWNvcmRpbmcvMTA2OTQ3OTE2ND9leHBpcmVzX2luBjsAVEkiCHB1cgY7AFRJIg1yZWFkYWJsZQY7AFQ=--8af0e81cbcfd171784f476df4fcd8a0defb0d525.json",
-      "subscription_url": "https://3.basecampapi.com/195539477/buckets/2085958502/recordings/1069479164/subscription.json",
+      "subscription_url": "https://3.basecampapi.com/195539477/recordings/1069479164/subscription.json",
       "comments_count": 0,
-      "comments_url": "https://3.basecampapi.com/195539477/buckets/2085958502/recordings/1069479164/comments.json",
+      "comments_url": "https://3.basecampapi.com/195539477/recordings/1069479164/comments.json",
       "position": 2,
       "parent": {
         "id": 1069479162,
@@ -171,7 +171,7 @@ _Optional query parameters_:
         }
       ],
       "completion_subscribers": [],
-      "completion_url": "https://3.basecampapi.com/195539477/buckets/2085958502/todos/1069479164/completion.json"
+      "completion_url": "https://3.basecampapi.com/195539477/todos/1069479164/completion.json"
     }
   ]
 }
@@ -230,71 +230,9 @@ The response includes:
 <!-- START GET /reports/schedules/upcoming.json -->
 ```json
 {
-  "schedule_entries": [
-    {
-      "id": 1069479912,
-      "status": "active",
-      "visible_to_clients": false,
-      "url": "https://3.basecampapi.com/195539477/buckets/2085958504/schedule_entries/1069479912.json",
-      "app_url": "https://3.basecamp.com/195539477/buckets/2085958504/schedule_entries/1069479912",
-      "type": "ScheduleEntry",
-      "summary": "Team Meeting",
-      "all_day": false,
-      "recurring": false,
-      "starts_at": "2026-02-01T10:36:20.949Z",
-      "ends_at": "2026-02-01T14:36:20.950Z",
-      "creator": {
-        "id": 1049715913,
-        "name": "Victor Cooper",
-        "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBMlkkT4=--5fe7b70fbee7a7f0e2e1e19df7579e5d880c753d/avatar?v=1"
-      },
-      "participants": [
-        {
-          "id": 1049715944,
-          "name": "Steve Marsh",
-          "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBOhkkT4=--b169e35b345bcc26eca6964b7ef7de2c16b6f238/avatar?v=1"
-        }
-      ],
-      "bucket": {
-        "id": 2085958504,
-        "name": "The Leto Laptop"
-      },
-      "comments_count": 0
-    }
-  ],
+  "schedule_entries": [],
   "recurring_schedule_entry_occurrences": [],
-  "assignables": [
-    {
-      "id": 1069479603,
-      "status": "active",
-      "visible_to_clients": false,
-      "url": "https://3.basecampapi.com/195539477/buckets/2085958504/card_tables/steps/1069479603.json",
-      "app_url": "https://3.basecamp.com/195539477/buckets/2085958504/card_tables/cards/1069479602#__recording_1069479603",
-      "starts_on": null,
-      "due_on": "2026-02-04",
-      "type": "step",
-      "content": "Find inspiration",
-      "assignees": [
-        {
-          "id": 1049715931,
-          "name": "Tashia Hughes",
-          "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBNtkkT4=--b72a5df90f237e00570273b726a82176287186e4/avatar?v=1"
-        }
-      ],
-      "bucket": {
-        "id": 2085958504,
-        "name": "The Leto Laptop"
-      },
-      "parent": {
-        "id": 1069479602,
-        "title": "New and fancy UI"
-      },
-      "completion_url": "/195539477/buckets/2085958504/card_tables/steps/1069479603/completions.json",
-      "completed": false,
-      "repeating": false,
-      "comments_count": 0
-    }
-  ]
+  "assignables": []
 }
 ```
 <!-- END GET /reports/schedules/upcoming.json -->

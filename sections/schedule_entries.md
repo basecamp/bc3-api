@@ -12,7 +12,7 @@ Endpoints:
 Get schedule entries
 --------------------
 
-* `GET /buckets/1/schedules/3/entries.json` will return a [paginated list][pagination] of active schedule entries in the project with an ID of `1` and the schedule with ID of `3`.
+* `GET /schedules/3/entries.json` will return a [paginated list][pagination] of active schedule entries in the schedule with ID of `3`.
 
 To get the schedule ID for a project, see the [Get schedule][schedule] endpoint.
 
@@ -21,7 +21,7 @@ _Optional query parameters_:
 * `status` - when set to `archived` or `trashed`, will return archived or trashed schedule entries that are in this schedule.
 
 ###### Example JSON Response
-<!-- START GET /buckets/1/schedules/3/entries.json -->
+<!-- START GET /schedules/3/entries.json -->
 ```json
 [
   {
@@ -36,9 +36,9 @@ _Optional query parameters_:
     "url": "https://3.basecampapi.com/195539477/buckets/2085958504/schedule_entries/1069479912.json",
     "app_url": "https://3.basecamp.com/195539477/buckets/2085958504/schedule_entries/1069479912",
     "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiLmdpZDovL2JjMy9SZWNvcmRpbmcvMTA2OTQ3OTkxMj9leHBpcmVzX2luBjsAVEkiCHB1cgY7AFRJIg1yZWFkYWJsZQY7AFQ=--1c88dffbb88f2382add4122242aca5e1bd46ba40.json",
-    "subscription_url": "https://3.basecampapi.com/195539477/buckets/2085958504/recordings/1069479912/subscription.json",
+    "subscription_url": "https://3.basecampapi.com/195539477/recordings/1069479912/subscription.json",
     "comments_count": 0,
-    "comments_url": "https://3.basecampapi.com/195539477/buckets/2085958504/recordings/1069479912/comments.json",
+    "comments_url": "https://3.basecampapi.com/195539477/recordings/1069479912/comments.json",
     "parent": {
       "id": 1069479396,
       "title": "Schedule",
@@ -115,23 +115,23 @@ _Optional query parameters_:
   }
 ]
 ```
-<!-- END GET /buckets/1/schedules/3/entries.json -->
+<!-- END GET /schedules/3/entries.json -->
 ###### Copy as cURL
 
 ```shell
-curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/schedules/3/entries.json
+curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/schedules/3/entries.json
 ```
 
 
 Get a schedule entry
 --------------------
 
-* `GET /buckets/1/schedule_entries/2.json` will return the schedule entry with an ID of `2` in the project with an ID of `1`.
+* `GET /schedule_entries/2.json` will return the schedule entry with an ID of `2`.
 
-**Note:** this endpoint redirects to the first individual occurrence of the entry, for **recurring schedule entries**. It's also possible to access a recurring schedule entry via any of the individual occurrences: `GET /buckets/1/schedule_entries/2/occurrences/20190218.json` will return the occurrence for a recurring schedule entry with an ID of `2`, happening on `2019-02-18`, in the project with an ID of `1`. It'll return 404 for invalid occurrences.
+**Note:** this endpoint redirects to the first individual occurrence of the entry, for **recurring schedule entries**. It's also possible to access a recurring schedule entry via any of the individual occurrences: `GET /schedule_entries/2/occurrences/20190218.json` will return the occurrence for a recurring schedule entry with an ID of `2`, happening on `2019-02-18`. It'll return 404 for invalid occurrences.
 
 ###### Example JSON Response
-<!-- START GET /buckets/1/schedule_entries/2.json -->
+<!-- START GET /schedule_entries/2.json -->
 ```json
 {
   "id": 1069479912,
@@ -145,9 +145,9 @@ Get a schedule entry
   "url": "https://3.basecampapi.com/195539477/buckets/2085958504/schedule_entries/1069479912.json",
   "app_url": "https://3.basecamp.com/195539477/buckets/2085958504/schedule_entries/1069479912",
   "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiLmdpZDovL2JjMy9SZWNvcmRpbmcvMTA2OTQ3OTkxMj9leHBpcmVzX2luBjsAVEkiCHB1cgY7AFRJIg1yZWFkYWJsZQY7AFQ=--1c88dffbb88f2382add4122242aca5e1bd46ba40.json",
-  "subscription_url": "https://3.basecampapi.com/195539477/buckets/2085958504/recordings/1069479912/subscription.json",
+  "subscription_url": "https://3.basecampapi.com/195539477/recordings/1069479912/subscription.json",
   "comments_count": 0,
-  "comments_url": "https://3.basecampapi.com/195539477/buckets/2085958504/recordings/1069479912/comments.json",
+  "comments_url": "https://3.basecampapi.com/195539477/recordings/1069479912/comments.json",
   "parent": {
     "id": 1069479396,
     "title": "Schedule",
@@ -223,7 +223,7 @@ Get a schedule entry
   ]
 }
 ```
-<!-- END GET /buckets/1/schedule_entries/2.json -->
+<!-- END GET /schedule_entries/2.json -->
 
 Recurring schedule entries will include an additional `recurrence_schedule` attribute. For example:
 
@@ -244,14 +244,14 @@ Recurring schedule entries will include an additional `recurrence_schedule` attr
 ###### Copy as cURL
 
 ```shell
-curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/schedule_entries/2.json
+curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/schedule_entries/2.json
 ```
 
 
 Create a schedule entry
 -----------------------
 
-* `POST /buckets/1/schedules/3/entries.json` creates a schedule entry in the project with ID `1` and under the schedule with an ID of `3`.
+* `POST /schedules/3/entries.json` creates a schedule entry under the schedule with an ID of `3`.
 
 **Required parameters**:
 
@@ -283,14 +283,14 @@ This endpoint will return `201 Created` with the current JSON representation of 
 ```shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" \
   -d '{"summary":"Important Meeting","starts_at":"2015-06-04T00:00:00Z","ends_at":"2015-06-04T00:00:00Z"}' \
-  https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/schedules/3/entries.json
+  https://3.basecampapi.com/$ACCOUNT_ID/schedules/3/entries.json
 ```
 
 
 Update a schedule entry
 -----------------------
 
-* `PUT /buckets/1/schedule_entries/2.json` allows changing of the schedule entry with an ID of `2` in the project with ID `1`.
+* `PUT /schedule_entries/2.json` allows changing of the schedule entry with an ID of `2`.
 
 Clients may change any of the required or optional parameters as listed in the [Create a schedule entry](#create-a-schedule-entry) endpoint.
 
@@ -312,9 +312,19 @@ This endpoint will return `200 OK` with the current JSON representation of the s
 ```shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" \
   -d '{"summary":"All Day Meeting","starts_at":"2015-06-04","ends_at":"2015-06-04","all_day":true}' -X PUT \
-  https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/schedule_entries/2.json
+  https://3.basecampapi.com/$ACCOUNT_ID/schedule_entries/2.json
 ```
 
+
+Legacy project-scoped routes
+-----------------------------
+
+The following project-scoped routes are still supported and will remain available, but flat routes above are the canonical form for new integrations.
+
+* `GET /buckets/1/schedules/3/entries.json` → [Get schedule entries](#get-schedule-entries)
+* `GET /buckets/1/schedule_entries/2.json` → [Get a schedule entry](#get-a-schedule-entry)
+* `POST /buckets/1/schedules/3/entries.json` → [Create a schedule entry](#create-a-schedule-entry)
+* `PUT /buckets/1/schedule_entries/2.json` → [Update a schedule entry](#update-a-schedule-entry)
 
 [trash]: https://github.com/basecamp/bc3-api/blob/master/sections/recordings.md#trash-a-recording
 [pagination]: https://github.com/basecamp/bc3-api/blob/master/README.md#pagination

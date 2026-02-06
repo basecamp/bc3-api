@@ -27,7 +27,7 @@ Get client correspondences
     "url": "https://3.basecampapi.com/195539477/buckets/2085958505/client/correspondences/1069479702.json",
     "app_url": "https://3.basecamp.com/195539477/buckets/2085958505/client/correspondences/1069479702",
     "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiLmdpZDovL2JjMy9SZWNvcmRpbmcvMTA2OTQ3OTcwMj9leHBpcmVzX2luBjsAVEkiCHB1cgY7AFRJIg1yZWFkYWJsZQY7AFQ=--549ac000e6e0eac9d8df54b89a1c0a473ab78e57.json",
-    "subscription_url": "https://3.basecampapi.com/195539477/buckets/2085958505/recordings/1069479702/subscription.json",
+    "subscription_url": "https://3.basecampapi.com/195539477/recordings/1069479702/subscription.json",
     "parent": {
       "id": 1069479620,
       "title": "The Clientside",
@@ -84,10 +84,10 @@ curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCO
 Get a client correspondence
 ---------------------------
 
-* `GET /buckets/1/client/correspondences/2.json` will return the client correspondence with an ID of `2` in the project with an ID of `1`.
+* `GET /client/correspondences/2.json` will return the client correspondence with an ID of `2`.
 
 ###### Example JSON Response
-<!-- START GET /buckets/1/client/correspondences/2.json -->
+<!-- START GET /client/correspondences/2.json -->
 ```json
 {
   "id": 1069479622,
@@ -101,7 +101,7 @@ Get a client correspondence
   "url": "https://3.basecampapi.com/195539477/buckets/2085958505/client/correspondences/1069479622.json",
   "app_url": "https://3.basecamp.com/195539477/buckets/2085958505/client/correspondences/1069479622",
   "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiLmdpZDovL2JjMy9SZWNvcmRpbmcvMTA2OTQ3OTYyMj9leHBpcmVzX2luBjsAVEkiCHB1cgY7AFRJIg1yZWFkYWJsZQY7AFQ=--05a942db8b0024e8a6f293a19b83d795cf079601.json",
-  "subscription_url": "https://3.basecampapi.com/195539477/buckets/2085958505/recordings/1069479622/subscription.json",
+  "subscription_url": "https://3.basecampapi.com/195539477/recordings/1069479622/subscription.json",
   "parent": {
     "id": 1069479620,
     "title": "The Clientside",
@@ -143,11 +143,19 @@ Get a client correspondence
   "replies_url": "https://3.basecampapi.com/195539477/buckets/2085958505/client/recordings/1069479622/replies.json"
 }
 ```
-<!-- END GET /buckets/1/client/correspondences/2.json -->
+<!-- END GET /client/correspondences/2.json -->
 ###### Copy as cURL
 
 ```shell
-curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/client/correspondences/2.json
+curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/client/correspondences/2.json
 ```
+
+
+Legacy project-scoped routes
+-----------------------------
+
+The following project-scoped routes are still supported and will remain available, but flat routes above are the canonical form for new integrations.
+
+* `GET /buckets/1/client/correspondences/2.json` → [Get a client correspondence](#get-a-client-correspondence)
 
 [pagination]: https://github.com/basecamp/bc3-api/blob/master/README.md#pagination

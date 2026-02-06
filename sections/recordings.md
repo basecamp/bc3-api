@@ -30,7 +30,7 @@ Examples: `/projects/recordings.json?type=Todo`, `/projects/recordings.json?type
 Trash a recording
 -----------------
 
-* `PUT /buckets/1/recordings/2/status/trashed.json` will mark the recording with an ID of `2`in the project with ID `1` as trashed.
+* `PUT /recordings/2/status/trashed.json` will mark the recording with an ID of `2` as trashed.
 
 No parameters required. Returns `204 No Content` if successful.
 
@@ -38,14 +38,14 @@ No parameters required. Returns `204 No Content` if successful.
 
 ```shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" -X PUT \
-  https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/recordings/2/status/trashed.json
+  https://3.basecampapi.com/$ACCOUNT_ID/recordings/2/status/trashed.json
 ```
 
 
 Archive a recording
 -------------------
 
-* `PUT /buckets/1/recordings/2/status/archived.json` will mark the recording with an ID of `2`in the project with ID `1` as archived.
+* `PUT /recordings/2/status/archived.json` will mark the recording with an ID of `2` as archived.
 
 No parameters required. Returns `204 No Content` if successful.
 
@@ -53,14 +53,14 @@ No parameters required. Returns `204 No Content` if successful.
 
 ```shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" -X PUT \
-  https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/recordings/2/status/archived.json
+  https://3.basecampapi.com/$ACCOUNT_ID/recordings/2/status/archived.json
 ```
 
 
 Unarchive a recording
 ---------------------
 
-* `PUT /buckets/1/recordings/2/status/active.json` will mark the recording with an ID of `2`in the project with ID `1` as active.
+* `PUT /recordings/2/status/active.json` will mark the recording with an ID of `2` as active.
 
 No parameters required. Returns `204 No Content` if successful.
 
@@ -68,8 +68,17 @@ No parameters required. Returns `204 No Content` if successful.
 
 ```shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" -X PUT \
-  https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/recordings/2/status/active.json
+  https://3.basecampapi.com/$ACCOUNT_ID/recordings/2/status/active.json
 ```
+
+Legacy project-scoped routes
+-----------------------------
+
+The following project-scoped routes are still supported and will remain available, but flat routes above are the canonical form for new integrations.
+
+* `PUT /buckets/1/recordings/2/status/trashed.json` → [Trash a recording](#trash-a-recording)
+* `PUT /buckets/1/recordings/2/status/archived.json` → [Archive a recording](#archive-a-recording)
+* `PUT /buckets/1/recordings/2/status/active.json` → [Unarchive a recording](#unarchive-a-recording)
 
 [1]: https://github.com/basecamp/bc3-api/blob/master/README.md#pagination
 [2]: https://github.com/basecamp/bc3-api/blob/master/sections/projects.md#projects
