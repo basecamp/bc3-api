@@ -23,7 +23,7 @@ To get the to-do set ID for a project, see the [Get a project][1] endpoint's `do
   "status": "active",
   "visible_to_clients": false,
   "created_at": "2026-01-31T08:32:04.373Z",
-  "updated_at": "2026-02-06T22:19:46.808Z",
+  "updated_at": "2026-02-07T01:42:48.760Z",
   "title": "To-dos",
   "inherits_status": true,
   "type": "Todoset",

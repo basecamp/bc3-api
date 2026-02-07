@@ -32,6 +32,8 @@ Get comments
     "url": "https://3.basecampapi.com/195539477/buckets/2085958504/comments/1069479407.json",
     "app_url": "https://3.basecamp.com/195539477/buckets/2085958504/messages/1069479406#__recording_1069479407",
     "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiLmdpZDovL2JjMy9SZWNvcmRpbmcvMTA2OTQ3OTQwNz9leHBpcmVzX2luBjsAVEkiCHB1cgY7AFRJIg1yZWFkYWJsZQY7AFQ=--2d87c12332eb478cb125670282e0540a56500c87.json",
+    "boosts_count": 0,
+    "boosts_url": "https://3.basecampapi.com/195539477/buckets/2085958504/recordings/1069479407/boosts.json",
     "parent": {
       "id": 1069479406,
       "title": "We won Leto!",
@@ -99,6 +101,8 @@ Get a comment
   "url": "https://3.basecampapi.com/195539477/buckets/2085958504/comments/1069479416.json",
   "app_url": "https://3.basecamp.com/195539477/buckets/2085958504/messages/1069479406#__recording_1069479416",
   "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiLmdpZDovL2JjMy9SZWNvcmRpbmcvMTA2OTQ3OTQxNj9leHBpcmVzX2luBjsAVEkiCHB1cgY7AFRJIg1yZWFkYWJsZQY7AFQ=--cdd017a73b856e57fbc03bcaf209b104e458a3c9.json",
+  "boosts_count": 0,
+  "boosts_url": "https://3.basecampapi.com/195539477/buckets/2085958504/recordings/1069479416/boosts.json",
   "parent": {
     "id": 1069479406,
     "title": "We won Leto!",

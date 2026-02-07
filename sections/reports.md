@@ -104,6 +104,8 @@ _Optional query parameters_:
       "subscription_url": "https://3.basecampapi.com/195539477/recordings/1069479164/subscription.json",
       "comments_count": 0,
       "comments_url": "https://3.basecampapi.com/195539477/recordings/1069479164/comments.json",
+      "boosts_count": 0,
+      "boosts_url": "https://3.basecampapi.com/195539477/buckets/2085958502/recordings/1069479164/boosts.json",
       "position": 2,
       "parent": {
         "id": 1069479162,
@@ -230,7 +232,38 @@ The response includes:
 <!-- START GET /reports/schedules/upcoming.json -->
 ```json
 {
-  "schedule_entries": [],
+  "schedule_entries": [
+    {
+      "id": 1069479912,
+      "status": "active",
+      "visible_to_clients": false,
+      "url": "https://3.basecampapi.com/195539477/buckets/2085958504/schedule_entries/1069479912.json",
+      "app_url": "https://3.basecamp.com/195539477/buckets/2085958504/schedule_entries/1069479912",
+      "type": "ScheduleEntry",
+      "summary": "Team Meeting",
+      "all_day": false,
+      "recurring": false,
+      "starts_at": "2026-02-08T00:48:58.572Z",
+      "ends_at": "2026-02-08T04:48:58.572Z",
+      "creator": {
+        "id": 1049715913,
+        "name": "Victor Cooper",
+        "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBMlkkT4=--5fe7b70fbee7a7f0e2e1e19df7579e5d880c753d/avatar?v=1"
+      },
+      "participants": [
+        {
+          "id": 1049715944,
+          "name": "Steve Marsh",
+          "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBOhkkT4=--b169e35b345bcc26eca6964b7ef7de2c16b6f238/avatar?v=1"
+        }
+      ],
+      "bucket": {
+        "id": 2085958504,
+        "name": "The Leto Laptop"
+      },
+      "comments_count": 0
+    }
+  ],
   "recurring_schedule_entry_occurrences": [],
   "assignables": []
 }

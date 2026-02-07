@@ -36,6 +36,8 @@ _Optional query parameters_:
     "subscription_url": "https://3.basecampapi.com/195539477/recordings/1069479153/subscription.json",
     "comments_count": 0,
     "comments_url": "https://3.basecampapi.com/195539477/recordings/1069479153/comments.json",
+    "boosts_count": 0,
+    "boosts_url": "https://3.basecampapi.com/195539477/buckets/2085958502/recordings/1069479153/boosts.json",
     "position": 1,
     "parent": {
       "id": 1069479152,
@@ -77,7 +79,7 @@ _Optional query parameters_:
     "completed_ratio": "0/2",
     "name": "Group A",
     "color": null,
-    "group_position_url": "https://3.basecampapi.com/195539477/buckets/2085958502/todolists/groups/1069479153/position.json",
+    "group_position_url": "https://3.basecampapi.com/195539477/todolists/groups/1069479153/position.json",
     "todos_url": "https://3.basecampapi.com/195539477/todolists/1069479153/todos.json",
     "app_todos_url": "https://3.basecamp.com/195539477/buckets/2085958502/todolists/1069479153/todos",
     "comments_app_url": "https://3.basecamp.com/195539477/buckets/2085958502/recordings/1069479153/comments"
@@ -97,6 +99,8 @@ _Optional query parameters_:
     "subscription_url": "https://3.basecampapi.com/195539477/recordings/1069479156/subscription.json",
     "comments_count": 0,
     "comments_url": "https://3.basecampapi.com/195539477/recordings/1069479156/comments.json",
+    "boosts_count": 0,
+    "boosts_url": "https://3.basecampapi.com/195539477/buckets/2085958502/recordings/1069479156/boosts.json",
     "position": 2,
     "parent": {
       "id": 1069479152,
@@ -138,7 +142,7 @@ _Optional query parameters_:
     "completed_ratio": "0/2",
     "name": "Group B",
     "color": null,
-    "group_position_url": "https://3.basecampapi.com/195539477/buckets/2085958502/todolists/groups/1069479156/position.json",
+    "group_position_url": "https://3.basecampapi.com/195539477/todolists/groups/1069479156/position.json",
     "todos_url": "https://3.basecampapi.com/195539477/todolists/1069479156/todos.json",
     "app_todos_url": "https://3.basecamp.com/195539477/buckets/2085958502/todolists/1069479156/todos",
     "comments_app_url": "https://3.basecamp.com/195539477/buckets/2085958502/recordings/1069479156/comments"
@@ -178,6 +182,8 @@ include a groups_url in its response, while a group will have a group_position_u
   "subscription_url": "https://3.basecampapi.com/195539477/recordings/1069479153/subscription.json",
   "comments_count": 0,
   "comments_url": "https://3.basecampapi.com/195539477/recordings/1069479153/comments.json",
+  "boosts_count": 0,
+  "boosts_url": "https://3.basecampapi.com/195539477/buckets/2085958502/recordings/1069479153/boosts.json",
   "position": 1,
   "parent": {
     "id": 1069479152,
@@ -219,7 +225,7 @@ include a groups_url in its response, while a group will have a group_position_u
   "completed_ratio": "0/2",
   "name": "Group A",
   "color": null,
-  "group_position_url": "https://3.basecampapi.com/195539477/buckets/2085958502/todolists/groups/1069479153/position.json",
+  "group_position_url": "https://3.basecampapi.com/195539477/todolists/groups/1069479153/position.json",
   "todos_url": "https://3.basecampapi.com/195539477/todolists/1069479153/todos.json",
   "app_todos_url": "https://3.basecamp.com/195539477/buckets/2085958502/todolists/1069479153/todos",
   "comments_app_url": "https://3.basecamp.com/195539477/buckets/2085958502/recordings/1069479153/comments"

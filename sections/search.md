@@ -148,55 +148,92 @@ curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -A 'MyApp (yourname@example.com
 ```json
 [
   {
-    "id": 1069479707,
+    "id": 1069480167,
     "status": "active",
     "visible_to_clients": false,
-    "created_at": "2026-01-26T20:17:00.000Z",
-    "updated_at": "2026-01-26T20:17:00.000Z",
-    "title": "Re: Final deliverables and launch are right around the corner",
+    "created_at": "2026-02-07T01:42:30.427Z",
+    "updated_at": "2026-02-07T01:42:30.446Z",
+    "title": "Triage",
     "inherits_status": true,
-    "type": "Client::Reply",
-    "url": "https://3.basecampapi.com/195539477/buckets/2085958505/client/replies/1069479707.json",
-    "app_url": "https://3.basecamp.com/195539477/buckets/2085958505/client/correspondences/1069479702#__recording_1069479707",
-    "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiLmdpZDovL2JjMy9SZWNvcmRpbmcvMTA2OTQ3OTcwNz9leHBpcmVzX2luBjsAVEkiCHB1cgY7AFRJIg1yZWFkYWJsZQY7AFQ=--d3c4971ef90e14058095d73bcde20afe9cdf922b.json",
+    "type": "Kanban::Triage",
+    "url": "https://3.basecampapi.com/195539477/buckets/2085958518/card_tables/columns/1069480167.json",
+    "app_url": "https://3.basecamp.com/195539477/buckets/2085958518/card_tables/columns/1069480167",
+    "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiLmdpZDovL2JjMy9SZWNvcmRpbmcvMTA2OTQ4MDE2Nz9leHBpcmVzX2luBjsAVEkiCHB1cgY7AFRJIg1yZWFkYWJsZQY7AFQ=--fa6c69d588a42ee8088bfb8ab5ccaf8038eca3ac.json",
+    "subscription_url": "https://3.basecampapi.com/195539477/recordings/1069480167/subscription.json",
     "parent": {
-      "id": 1069479702,
-      "title": "Final deliverables and launch are right around the corner",
-      "type": "Client::Correspondence",
-      "url": "https://3.basecampapi.com/195539477/buckets/2085958505/client/correspondences/1069479702.json",
-      "app_url": "https://3.basecamp.com/195539477/buckets/2085958505/client/correspondences/1069479702"
+      "id": 1069480166,
+      "title": "Card Table",
+      "type": "Kanban::Board",
+      "url": "https://3.basecampapi.com/195539477/buckets/2085958518/card_tables/1069480166.json",
+      "app_url": "https://3.basecamp.com/195539477/buckets/2085958518/card_tables/1069480166"
     },
     "bucket": {
-      "id": 2085958505,
-      "name": "The Leto Locator",
+      "id": 2085958518,
+      "name": "New project from template",
       "type": "Project"
     },
     "creator": {
-      "id": 1049715922,
-      "attachable_sgid": "BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiK2dpZDovL2JjMy9QZXJzb24vMTA0OTcxNTkyMj9leHBpcmVzX2luBjsAVEkiCHB1cgY7AFRJIg9hdHRhY2hhYmxlBjsAVA==--ed42dd1af36c4756554ffb2a20de4e019f0c28d3",
-      "name": "Jay Edmonds",
-      "email_address": "jay@honchodesign.com",
+      "id": 1049715913,
+      "attachable_sgid": "BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiK2dpZDovL2JjMy9QZXJzb24vMTA0OTcxNTkxMz9leHBpcmVzX2luBjsAVEkiCHB1cgY7AFRJIg9hdHRhY2hhYmxlBjsAVA==--e627c45e6b34e08862da23906862412620e4d5d9",
+      "name": "Victor Cooper",
+      "email_address": "victor@honchodesign.com",
       "personable_type": "User",
-      "title": "Internal Marketing Assistant",
-      "bio": null,
-      "location": null,
-      "created_at": "2026-01-31T08:29:36.692Z",
-      "updated_at": "2026-01-31T08:29:36.692Z",
-      "admin": false,
-      "owner": false,
+      "title": "Chief Strategist",
+      "bio": "Don’t let your dreams be dreams",
+      "location": "Chicago, IL",
+      "created_at": "2026-01-31T08:29:28.365Z",
+      "updated_at": "2026-01-31T08:29:32.599Z",
+      "admin": true,
+      "owner": true,
       "client": false,
-      "employee": false,
+      "employee": true,
       "time_zone": "America/Chicago",
-      "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBNJkkT4=--6ef93d58440c2ed1fec4457e3eb5f09572e866a4/avatar?v=1",
+      "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBMlkkT4=--5fe7b70fbee7a7f0e2e1e19df7579e5d880c753d/avatar?v=1",
+      "company": {
+        "id": 1033447817,
+        "name": "Honcho Design"
+      },
       "can_ping": true,
       "can_manage_projects": true,
       "can_manage_people": true,
       "can_access_timesheet": true,
       "can_access_hill_charts": true
     },
-    "content": null,
     "description": null,
-    "plain_text_content": "Leto team, let me just say it has been tremendous working with you. The success of this project is a reflection of your spirit and attitude throughout. Thank *you* guys."
+    "subscribers": [
+      {
+        "id": 1049715913,
+        "attachable_sgid": "BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiK2dpZDovL2JjMy9QZXJzb24vMTA0OTcxNTkxMz9leHBpcmVzX2luBjsAVEkiCHB1cgY7AFRJIg9hdHRhY2hhYmxlBjsAVA==--e627c45e6b34e08862da23906862412620e4d5d9",
+        "name": "Victor Cooper",
+        "email_address": "victor@honchodesign.com",
+        "personable_type": "User",
+        "title": "Chief Strategist",
+        "bio": "Don’t let your dreams be dreams",
+        "location": "Chicago, IL",
+        "created_at": "2026-01-31T08:29:28.365Z",
+        "updated_at": "2026-01-31T08:29:32.599Z",
+        "admin": true,
+        "owner": true,
+        "client": false,
+        "employee": true,
+        "time_zone": "America/Chicago",
+        "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBMlkkT4=--5fe7b70fbee7a7f0e2e1e19df7579e5d880c753d/avatar?v=1",
+        "company": {
+          "id": 1033447817,
+          "name": "Honcho Design"
+        },
+        "can_ping": true,
+        "can_manage_projects": true,
+        "can_manage_people": true,
+        "can_access_timesheet": true,
+        "can_access_hill_charts": true
+      }
+    ],
+    "color": null,
+    "cards_count": 0,
+    "comment_count": 0,
+    "cards_url": "https://3.basecampapi.com/195539477/buckets/2085958518/card_tables/lists/1069480167/cards.json",
+    "content": null
   }
 ]
 ```

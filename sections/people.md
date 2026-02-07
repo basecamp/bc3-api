@@ -138,22 +138,22 @@ curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/j
       "can_access_hill_charts": true
     },
     {
-      "id": 1049715957,
-      "attachable_sgid": "BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiK2dpZDovL2JjMy9QZXJzb24vMTA0OTcxNTk1Nz9leHBpcmVzX2luBjsAVEkiCHB1cgY7AFRJIg9hdHRhY2hhYmxlBjsAVA==--3fec89eba438d9f6d19dbd3a0aa909d5991b6cbc",
+      "id": 1049715961,
+      "attachable_sgid": "BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiK2dpZDovL2JjMy9QZXJzb24vMTA0OTcxNTk2MT9leHBpcmVzX2luBjsAVEkiCHB1cgY7AFRJIg9hdHRhY2hhYmxlBjsAVA==--2810c58b0cd0e5d2faaeae277dc521750fea97bd",
       "name": "Victor Copper",
       "email_address": "victor@hanchodesign.com",
       "personable_type": "User",
       "title": "Prankster",
       "bio": null,
       "location": null,
-      "created_at": "2026-02-06T22:45:37.706Z",
-      "updated_at": "2026-02-06T22:45:37.706Z",
+      "created_at": "2026-02-07T01:45:15.400Z",
+      "updated_at": "2026-02-07T01:45:15.400Z",
       "admin": false,
       "owner": false,
       "client": false,
       "employee": false,
       "time_zone": "America/Chicago",
-      "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBPVkkT4=--ca7960f255b5092fc95ceecae3e91ec283698184/avatar?v=1",
+      "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBPlkkT4=--90b4d55769b70df2e0ee1aa1a115f3416d5ecac3/avatar?v=1",
       "company": {
         "id": 1033447819,
         "name": "Hancho Design"
