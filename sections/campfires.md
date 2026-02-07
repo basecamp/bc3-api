@@ -163,6 +163,8 @@ Get Campfire lines
     "url": "https://3.basecampapi.com/195539477/buckets/2085958502/chats/1069478985/lines/1069479068.json",
     "app_url": "https://3.basecamp.com/195539477/buckets/2085958502/chats/1069478985@1069479068",
     "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiLmdpZDovL2JjMy9SZWNvcmRpbmcvMTA2OTQ3OTA2OD9leHBpcmVzX2luBjsAVEkiCHB1cgY7AFRJIg1yZWFkYWJsZQY7AFQ=--ed75de023587361ebed66cce122997d56faeaa2e.json",
+    "boosts_count": 0,
+    "boosts_url": "https://3.basecampapi.com/195539477/buckets/2085958502/recordings/1069479068/boosts.json",
     "parent": {
       "id": 1069478985,
       "title": "Chat",
@@ -229,6 +231,8 @@ Get a Campfire line
   "url": "https://3.basecampapi.com/195539477/buckets/2085958502/chats/1069478985/lines/1069479054.json",
   "app_url": "https://3.basecamp.com/195539477/buckets/2085958502/chats/1069478985@1069479054",
   "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiLmdpZDovL2JjMy9SZWNvcmRpbmcvMTA2OTQ3OTA1ND9leHBpcmVzX2luBjsAVEkiCHB1cgY7AFRJIg1yZWFkYWJsZQY7AFQ=--bf7b55e226a9c3111e0a8639faa1012b4db18bb1.json",
+  "boosts_count": 0,
+  "boosts_url": "https://3.basecampapi.com/195539477/buckets/2085958502/recordings/1069479054/boosts.json",
   "parent": {
     "id": 1069478985,
     "title": "Chat",

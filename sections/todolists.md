@@ -29,7 +29,7 @@ _Optional query parameters_:
     "status": "active",
     "visible_to_clients": false,
     "created_at": "2026-01-15T05:50:00.000Z",
-    "updated_at": "2026-02-06T22:45:49.904Z",
+    "updated_at": "2026-02-01T02:53:47.036Z",
     "title": "Strategy ideas",
     "inherits_status": true,
     "type": "Todolist",
@@ -39,6 +39,8 @@ _Optional query parameters_:
     "subscription_url": "https://3.basecampapi.com/195539477/buckets/2085958504/recordings/1069479573/subscription.json",
     "comments_count": 0,
     "comments_url": "https://3.basecampapi.com/195539477/buckets/2085958504/recordings/1069479573/comments.json",
+    "boosts_count": 0,
+    "boosts_url": "https://3.basecampapi.com/195539477/buckets/2085958504/recordings/1069479573/boosts.json",
     "position": 1,
     "parent": {
       "id": 1069479393,
@@ -122,6 +124,8 @@ Get a to-do list
   "subscription_url": "https://3.basecampapi.com/195539477/buckets/2085958504/recordings/1069479424/subscription.json",
   "comments_count": 0,
   "comments_url": "https://3.basecampapi.com/195539477/buckets/2085958504/recordings/1069479424/comments.json",
+  "boosts_count": 0,
+  "boosts_url": "https://3.basecampapi.com/195539477/buckets/2085958504/recordings/1069479424/boosts.json",
   "position": 10,
   "parent": {
     "id": 1069479393,

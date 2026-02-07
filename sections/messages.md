@@ -36,6 +36,8 @@ To get the message board ID for a project, see the [Get message board][3] endpoi
     "subscription_url": "https://3.basecampapi.com/195539477/buckets/2085958504/recordings/1069479583/subscription.json",
     "comments_count": 1,
     "comments_url": "https://3.basecampapi.com/195539477/buckets/2085958504/recordings/1069479583/comments.json",
+    "boosts_count": 0,
+    "boosts_url": "https://3.basecampapi.com/195539477/buckets/2085958504/recordings/1069479583/boosts.json",
     "parent": {
       "id": 1069479392,
       "title": "Message Board",
@@ -97,7 +99,7 @@ Get a message
   "status": "active",
   "visible_to_clients": false,
   "created_at": "2025-12-18T23:30:00.000Z",
-  "updated_at": "2026-02-06T22:55:55.960Z",
+  "updated_at": "2026-02-05T17:52:19.252Z",
   "title": "We won Leto!",
   "inherits_status": true,
   "type": "Message",
@@ -107,6 +109,8 @@ Get a message
   "subscription_url": "https://3.basecamp.com/195539477/buckets/2085958504/recordings/1069479406/subscription",
   "comments_count": 10,
   "comments_url": "https://3.basecampapi.com/195539477/buckets/2085958504/recordings/1069479406/comments.json",
+  "boosts_count": 5,
+  "boosts_url": "https://3.basecampapi.com/195539477/buckets/2085958504/recordings/1069479406/boosts.json",
   "parent": {
     "id": 1069479392,
     "title": "Message Board",

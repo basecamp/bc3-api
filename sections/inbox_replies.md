@@ -29,6 +29,8 @@ Get inbox replies
     "url": "https://3.basecampapi.com/195539477/buckets/2085958502/inbox_replies/1069479086.json",
     "app_url": "https://3.basecamp.com/195539477/buckets/2085958502/inbox_forwards/1069479085#__recording_1069479086",
     "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiLmdpZDovL2JjMy9SZWNvcmRpbmcvMTA2OTQ3OTA4Nj9leHBpcmVzX2luBjsAVEkiCHB1cgY7AFRJIg1yZWFkYWJsZQY7AFQ=--549cad1a70fa7d9365abbbd3b7e1bf5100c2b0fe.json",
+    "boosts_count": 0,
+    "boosts_url": "https://3.basecampapi.com/195539477/buckets/2085958502/recordings/1069479086/boosts.json",
     "parent": {
       "id": 1069479085,
       "title": "Can we make the logo pop?",
@@ -99,6 +101,8 @@ Get an inbox reply
   "url": "https://3.basecampapi.com/195539477/buckets/2085958502/inbox_replies/1069479089.json",
   "app_url": "https://3.basecamp.com/195539477/buckets/2085958502/inbox_forwards/1069479085#__recording_1069479089",
   "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiLmdpZDovL2JjMy9SZWNvcmRpbmcvMTA2OTQ3OTA4OT9leHBpcmVzX2luBjsAVEkiCHB1cgY7AFRJIg1yZWFkYWJsZQY7AFQ=--980876c579f6871de55c47d306bb5507f01e537d.json",
+  "boosts_count": 0,
+  "boosts_url": "https://3.basecampapi.com/195539477/buckets/2085958502/recordings/1069479089/boosts.json",
   "parent": {
     "id": 1069479085,
     "title": "Can we make the logo pop?",

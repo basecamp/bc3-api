@@ -33,6 +33,8 @@ Get documents
     "subscription_url": "https://3.basecampapi.com/195539477/buckets/2085958502/recordings/1069479147/subscription.json",
     "comments_count": 1,
     "comments_url": "https://3.basecampapi.com/195539477/buckets/2085958502/recordings/1069479147/comments.json",
+    "boosts_count": 0,
+    "boosts_url": "https://3.basecampapi.com/195539477/buckets/2085958502/recordings/1069479147/boosts.json",
     "position": 1,
     "parent": {
       "id": 1069479146,
@@ -107,6 +109,8 @@ Get a document
   "subscription_url": "https://3.basecampapi.com/195539477/buckets/2085958508/recordings/1069479860/subscription.json",
   "comments_count": 0,
   "comments_url": "https://3.basecampapi.com/195539477/buckets/2085958508/recordings/1069479860/comments.json",
+  "boosts_count": 0,
+  "boosts_url": "https://3.basecampapi.com/195539477/buckets/2085958508/recordings/1069479860/boosts.json",
   "position": 1,
   "parent": {
     "id": 1069479845,

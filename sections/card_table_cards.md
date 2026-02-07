@@ -115,6 +115,8 @@ Get a card
   "subscription_url": "https://3.basecampapi.com/195539477/buckets/2085958504/recordings/1069479602/subscription.json",
   "comments_count": 0,
   "comments_url": "https://3.basecampapi.com/195539477/buckets/2085958504/recordings/1069479602/comments.json",
+  "boosts_count": 0,
+  "boosts_url": "https://3.basecampapi.com/195539477/buckets/2085958504/recordings/1069479602/boosts.json",
   "position": 1,
   "parent": {
     "id": 1069479400,

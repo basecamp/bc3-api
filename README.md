@@ -259,6 +259,7 @@ API endpoints
 - [Authentication](https://github.com/basecamp/bc3-api/blob/master/sections/authentication.md#authentication)
 <!-- START API ENDPOINTS -->
 - [Attachments](https://github.com/basecamp/bc3-api/blob/master/sections/attachments.md#attachments)
+- [Boosts](https://github.com/basecamp/bc3-api/blob/master/sections/boosts.md#boosts)
 - [Campfires](https://github.com/basecamp/bc3-api/blob/master/sections/campfires.md#campfires)
 - [Card table cards](https://github.com/basecamp/bc3-api/blob/master/sections/card_table_cards.md#card-table-cards)
 - [Card table columns](https://github.com/basecamp/bc3-api/blob/master/sections/card_table_columns.md#card-table-columns)

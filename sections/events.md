@@ -3,6 +3,8 @@ Events
 
 An event is created any time a [recording][recordings] changes.
 
+Some events are **boostable**: events with an action of `completed`, `adopted`, or `column_changed`. Boostable events include `boosts_count` and `boosts_url` attributes in their JSON responses. See the [Boosts][boosts] section for details on boosting events.
+
 Endpoints:
 
 - [Get events](#get-events)
@@ -11,6 +13,11 @@ Get events
 ----------
 
 * `GET /buckets/1/recordings/2/events.json` will return a [paginated list][pagination] of events for the recording with an ID of `2` in the project with an ID of `1`.
+
+Boostable events (`completed`, `adopted`, `column_changed`) include additional attributes:
+
+- `boosts_count` - the number of boosts on this event
+- `boosts_url` - the URL to list or create boosts on this event (see [Boosts][boosts])
 
 ###### Example JSON Response
 <!-- START GET /buckets/1/recordings/2/events.json -->
@@ -78,7 +85,9 @@ Get events
       "can_manage_people": true,
       "can_access_timesheet": true,
       "can_access_hill_charts": true
-    }
+    },
+    "boosts_count": 0,
+    "boosts_url": "https://3.basecampapi.com/195539477/buckets/2085958504/recordings/1069479576/events/1071915905/boosts.json"
   },
   {
     "id": 1071915865,
@@ -142,7 +151,9 @@ Get events
       "can_manage_people": true,
       "can_access_timesheet": true,
       "can_access_hill_charts": true
-    }
+    },
+    "boosts_count": 0,
+    "boosts_url": "https://3.basecampapi.com/195539477/buckets/2085958504/recordings/1069479576/events/1071915864/boosts.json"
   },
   {
     "id": 1071915793,
@@ -206,7 +217,9 @@ Get events
       "can_manage_people": true,
       "can_access_timesheet": true,
       "can_access_hill_charts": true
-    }
+    },
+    "boosts_count": 0,
+    "boosts_url": "https://3.basecampapi.com/195539477/buckets/2085958504/recordings/1069479576/events/1071915792/boosts.json"
   },
   {
     "id": 1071915753,
@@ -270,7 +283,9 @@ Get events
       "can_manage_people": true,
       "can_access_timesheet": true,
       "can_access_hill_charts": true
-    }
+    },
+    "boosts_count": 0,
+    "boosts_url": "https://3.basecampapi.com/195539477/buckets/2085958504/recordings/1069479576/events/1071915752/boosts.json"
   },
   {
     "id": 1071915662,
@@ -334,7 +349,9 @@ Get events
       "can_manage_people": true,
       "can_access_timesheet": true,
       "can_access_hill_charts": true
-    }
+    },
+    "boosts_count": 0,
+    "boosts_url": "https://3.basecampapi.com/195539477/buckets/2085958504/recordings/1069479576/events/1071915661/boosts.json"
   },
   {
     "id": 1071915233,
@@ -420,5 +437,6 @@ Get events
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/recordings/2/events.json
 ```
 
+[boosts]: https://github.com/basecamp/bc3-api/blob/master/sections/boosts.md#boosts
 [recordings]: https://github.com/basecamp/bc3-api/blob/master/sections/recordings.md#recordings
 [pagination]: https://github.com/basecamp/bc3-api/blob/master/README.md#pagination
