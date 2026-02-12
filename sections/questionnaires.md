@@ -10,19 +10,19 @@ Endpoints:
 Get questionnaire
 -----------------
 
-* `GET /buckets/1/questionnaires/2.json` will return the questionnaire for the project with an ID of `1`.
+* `GET /questionnaires/2.json` will return the questionnaire with an ID of `2`.
 
 To get the questionnaire ID for a project, see the [Get a Project][project] endpoint's `dock` payload. To retrieve its questions, see the [Get questions][questions] endpoint.
 
 ###### Example JSON Response
-<!-- START GET /buckets/1/questionnaires/2.json -->
+<!-- START GET /questionnaires/2.json -->
 ```json
 {
   "id": 1069479397,
   "status": "active",
   "visible_to_clients": false,
-  "created_at": "2026-01-31T08:32:04.661Z",
-  "updated_at": "2026-01-31T08:33:00.032Z",
+  "created_at": "2026-02-12T06:09:34.701Z",
+  "updated_at": "2026-02-12T06:09:49.569Z",
   "title": "Automatic Check-ins",
   "inherits_status": true,
   "type": "Questionnaire",
@@ -43,8 +43,8 @@ To get the questionnaire ID for a project, see the [Get a Project][project] endp
     "title": "Chief Strategist",
     "bio": "Don’t let your dreams be dreams",
     "location": "Chicago, IL",
-    "created_at": "2026-01-31T08:29:28.365Z",
-    "updated_at": "2026-01-31T08:29:32.599Z",
+    "created_at": "2026-02-12T06:08:49.342Z",
+    "updated_at": "2026-02-12T06:08:50.871Z",
     "admin": true,
     "owner": true,
     "client": false,
@@ -58,21 +58,29 @@ To get the questionnaire ID for a project, see the [Get a Project][project] endp
     "can_ping": true,
     "can_manage_projects": true,
     "can_manage_people": true,
-    "can_access_timesheet": true,
+    "can_access_timesheet": false,
     "can_access_hill_charts": true
   },
   "name": "Automatic Check-ins",
   "questions_count": 1,
-  "questions_url": "https://3.basecampapi.com/195539477/buckets/2085958504/questionnaires/1069479397/questions.json"
+  "questions_url": "https://3.basecampapi.com/195539477/questionnaires/1069479397/questions.json"
 }
 ```
-<!-- END GET /buckets/1/questionnaires/2.json -->
+<!-- END GET /questionnaires/2.json -->
 
 ###### Copy as cURL
 
 ```shell
-curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/questionnaires/2.json
+curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/questionnaires/2.json
 ```
+
+
+Legacy project-scoped routes
+-----------------------------
+
+The following project-scoped routes are still supported and will remain available, but flat routes above are the canonical form for new integrations.
+
+* `GET /buckets/1/questionnaires/2.json` → [Get questionnaire](#get-questionnaire)
 
 [project]: https://github.com/basecamp/bc3-api/blob/master/sections/projects.md#get-a-project
 [questions]: https://github.com/basecamp/bc3-api/blob/master/sections/questions.md#get-questions

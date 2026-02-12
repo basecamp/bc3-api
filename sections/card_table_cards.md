@@ -12,10 +12,10 @@ Endpoints:
 Get cards in a column
 --------------------
 
-* `GET /buckets/1/card_tables/lists/3/cards.json` will return a [paginated list][pagination] of cards in the project with an ID of `1` and the column with ID of `3`.
+* `GET /card_tables/lists/3/cards.json` will return a [paginated list][pagination] of cards in the column with ID of `3`.
 
 ###### Example JSON Response
-<!-- START GET /buckets/1/card_tables/lists/3/cards.json -->
+<!-- START GET /card_tables/lists/3/cards.json -->
 ```json
 [
   {
@@ -85,20 +85,20 @@ Get cards in a column
   }
 ]
 ```
-<!-- END GET /buckets/1/card_tables/lists/3/cards.json -->
+<!-- END GET /card_tables/lists/3/cards.json -->
 ###### Copy as cURL
 
 ```shell
-curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/card_tables/lists/3/cards.json
+curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/card_tables/lists/3/cards.json
 ```
 
 Get a card
 --------------------
 
-* `GET /buckets/1/card_tables/cards/2.json` will return the card with an ID of `2` in the project with an ID of `1`.
+* `GET /card_tables/cards/2.json` will return the card with an ID of `2`.
 
 ###### Example JSON Response
-<!-- START GET /buckets/1/card_tables/cards/2.json -->
+<!-- START GET /card_tables/cards/2.json -->
 ```json
 {
   "id": 1069479602,
@@ -250,17 +250,17 @@ Get a card
   ]
 }
 ```
-<!-- END GET /buckets/1/card_tables/cards/2.json -->
+<!-- END GET /card_tables/cards/2.json -->
 ###### Copy as cURL
 
 ```shell
-curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/card_tables/cards/2.json
+curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/card_tables/cards/2.json
 ```
 
 Create a card
 -------------------------
 
-* `POST /buckets/1/card_tables/lists/2/cards.json` creates a card within the column with ID `2` in the project with id `1`.
+* `POST /card_tables/lists/2/cards.json` creates a card within the column with ID `2`.
 
 **Required parameters**: `title` of the card.
 
@@ -287,13 +287,13 @@ This endpoint will return `201 Created` with the current JSON representation of 
 ```shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" \
   -d '{"title":"Investigation", "content": "Investigate on an issue in our todo list.", "due_on": "2021-01-01"}' \
-  https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/card_tables/lists/2/cards.json
+  https://3.basecampapi.com/$ACCOUNT_ID/card_tables/lists/2/cards.json
 ```
 
 Update a card
 -----------------------
 
-* `PUT /buckets/1/card_tables/cards/2.json` allows changing of the card with an ID of `2` in the project with ID `1`.
+* `PUT /card_tables/cards/2.json` allows changing of the card with an ID of `2`.
 
 _Optional parameters_:
 
@@ -317,13 +317,13 @@ This endpoint will return `200 OK` with the current JSON representation of the c
 ```shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" \
   -d '{"title":"Updated investigation"}' -X PUT \
-  https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/card_tables/cards/2.json
+  https://3.basecampapi.com/$ACCOUNT_ID/card_tables/cards/2.json
 ```
 
 Move a card
 -----------------------
 
-* `POST /buckets/1/card_tables/cards/2/moves.json` allows moving of a card with id `2` in the project with ID `1`.
+* `POST /card_tables/cards/2/moves.json` allows moving of a card with id `2`.
 
 **Required parameters**: `column_id` of the column destination
 
@@ -341,8 +341,20 @@ This endpoint will return `204 No Content` if the update was a success.
 ```shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" \
   -d '{"column_id": 3}' \
-  https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/card_tables/cards/2/moves.json
+  https://3.basecampapi.com/$ACCOUNT_ID/card_tables/cards/2/moves.json
 ```
+
+
+Legacy project-scoped routes
+-----------------------------
+
+The following project-scoped routes are still supported and will remain available, but flat routes above are the canonical form for new integrations.
+
+* `GET /buckets/1/card_tables/lists/3/cards.json` → [Get cards in a column](#get-cards-in-a-column)
+* `GET /buckets/1/card_tables/cards/2.json` → [Get a card](#get-a-card)
+* `POST /buckets/1/card_tables/lists/2/cards.json` → [Create a card](#create-a-card)
+* `PUT /buckets/1/card_tables/cards/2.json` → [Update a card](#update-a-card)
+* `POST /buckets/1/card_tables/cards/2/moves.json` → [Move a card](#move-a-card)
 
 [pagination]: https://github.com/basecamp/bc3-api/blob/master/README.md#pagination
 [rich]: https://github.com/basecamp/bc3-api/blob/master/sections/rich_text.md

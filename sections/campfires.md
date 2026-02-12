@@ -23,8 +23,8 @@ Get Campfires
     "id": 1069478985,
     "status": "active",
     "visible_to_clients": false,
-    "created_at": "2026-01-31T08:29:58.785Z",
-    "updated_at": "2026-02-06T21:38:59.101Z",
+    "created_at": "2026-02-12T06:09:02.404Z",
+    "updated_at": "2026-02-12T06:12:09.251Z",
     "title": "Chat",
     "inherits_status": true,
     "type": "Chat::Transcript",
@@ -47,8 +47,8 @@ Get Campfires
       "title": "Chief Strategist",
       "bio": "Don’t let your dreams be dreams",
       "location": "Chicago, IL",
-      "created_at": "2026-01-31T08:29:28.365Z",
-      "updated_at": "2026-01-31T08:29:32.599Z",
+      "created_at": "2026-02-12T06:08:49.342Z",
+      "updated_at": "2026-02-12T06:08:50.871Z",
       "admin": true,
       "owner": true,
       "client": false,
@@ -62,7 +62,7 @@ Get Campfires
       "can_ping": true,
       "can_manage_projects": true,
       "can_manage_people": true,
-      "can_access_timesheet": true,
+      "can_access_timesheet": false,
       "can_access_hill_charts": true
     },
     "topic": "Chat",
@@ -80,17 +80,17 @@ curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCO
 Get a Campfire
 --------------
 
-* `GET /buckets/1/chats/2.json` will return the Campfire with ID `2` in the project with ID `1`.
+* `GET /chats/2.json` will return the Campfire with ID `2`.
 
 ###### Example JSON Response
-<!-- START GET /buckets/1/chats/2.json -->
+<!-- START GET /chats/2.json -->
 ```json
 {
   "id": 1069478985,
   "status": "active",
   "visible_to_clients": false,
-  "created_at": "2026-01-31T08:29:58.785Z",
-  "updated_at": "2026-02-06T21:38:59.101Z",
+  "created_at": "2026-02-12T06:09:02.404Z",
+  "updated_at": "2026-02-12T06:12:09.251Z",
   "title": "Chat",
   "inherits_status": true,
   "type": "Chat::Transcript",
@@ -113,8 +113,8 @@ Get a Campfire
     "title": "Chief Strategist",
     "bio": "Don’t let your dreams be dreams",
     "location": "Chicago, IL",
-    "created_at": "2026-01-31T08:29:28.365Z",
-    "updated_at": "2026-01-31T08:29:32.599Z",
+    "created_at": "2026-02-12T06:08:49.342Z",
+    "updated_at": "2026-02-12T06:08:50.871Z",
     "admin": true,
     "owner": true,
     "client": false,
@@ -128,35 +128,35 @@ Get a Campfire
     "can_ping": true,
     "can_manage_projects": true,
     "can_manage_people": true,
-    "can_access_timesheet": true,
+    "can_access_timesheet": false,
     "can_access_hill_charts": true
   },
   "topic": "Chat",
   "lines_url": "https://3.basecampapi.com/195539477/buckets/2085958502/chats/1069478985/lines.json"
 }
 ```
-<!-- END GET /buckets/1/chats/2.json -->
+<!-- END GET /chats/2.json -->
 ###### Copy as cURL
 
 ```shell
-curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/chats/2.json
+curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/chats/2.json
 ```
 
 Get Campfire lines
 ------------------
 
-* `GET /buckets/1/chats/2/lines.json` will return a [paginated list][pagination] of Campfire lines of the Campfire with ID `2` in the project with ID `1`.
+* `GET /chats/2/lines.json` will return a [paginated list][pagination] of Campfire lines of the Campfire with ID `2`.
 
 ###### Example JSON Response
-<!-- START GET /buckets/1/chats/2/lines.json -->
+<!-- START GET /chats/2/lines.json -->
 ```json
 [
   {
     "id": 1069479068,
     "status": "active",
     "visible_to_clients": false,
-    "created_at": "2025-11-07T10:15:00.000Z",
-    "updated_at": "2025-11-07T10:15:00.000Z",
+    "created_at": "2025-11-19T09:27:00.000Z",
+    "updated_at": "2025-11-19T09:27:00.000Z",
     "title": "I'm hungry",
     "inherits_status": true,
     "type": "Chat::Lines::RichText",
@@ -186,8 +186,8 @@ Get Campfire lines
       "title": "Global Data Strategist",
       "bio": null,
       "location": null,
-      "created_at": "2026-01-31T08:29:40.358Z",
-      "updated_at": "2026-01-31T08:29:40.358Z",
+      "created_at": "2026-02-12T06:08:55.898Z",
+      "updated_at": "2026-02-12T06:08:55.898Z",
       "admin": false,
       "owner": false,
       "client": false,
@@ -197,34 +197,34 @@ Get Campfire lines
       "can_ping": true,
       "can_manage_projects": true,
       "can_manage_people": true,
-      "can_access_timesheet": true,
+      "can_access_timesheet": false,
       "can_access_hill_charts": true
     },
     "content": "I'm hungry"
   }
 ]
 ```
-<!-- END GET /buckets/1/chats/2/lines.json -->
+<!-- END GET /chats/2/lines.json -->
 ###### Copy as cURL
 
 ```shell
-curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/chats/2/lines.json
+curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/chats/2/lines.json
 ```
 
 Get a Campfire line
 -------------------
 
-* `GET /buckets/1/chats/2/lines/3.json` will return the Campfire line with ID `3` in the Campfire with ID `2` in the project with ID `1`.
+* `GET /chats/2/lines/3.json` will return the Campfire line with ID `3` in the Campfire with ID `2`.
 
 ###### Example JSON Response
-<!-- START GET /buckets/1/chats/2/lines/3.json -->
+<!-- START GET /chats/2/lines/3.json -->
 ```json
 {
   "id": 1069479054,
   "status": "active",
   "visible_to_clients": false,
-  "created_at": "2025-11-07T03:12:00.000Z",
-  "updated_at": "2025-11-07T03:12:00.000Z",
+  "created_at": "2025-11-19T01:03:00.000Z",
+  "updated_at": "2025-11-19T01:03:00.000Z",
   "title": "👏 🎉",
   "inherits_status": true,
   "type": "Chat::Lines::RichText",
@@ -254,8 +254,8 @@ Get a Campfire line
     "title": "Central Web Coordinator",
     "bio": "I never said most of the things I said",
     "location": null,
-    "created_at": "2026-01-31T08:29:32.987Z",
-    "updated_at": "2026-01-31T08:29:32.987Z",
+    "created_at": "2026-02-12T06:08:51.167Z",
+    "updated_at": "2026-02-12T06:08:51.167Z",
     "admin": false,
     "owner": false,
     "client": false,
@@ -265,29 +265,25 @@ Get a Campfire line
     "can_ping": true,
     "can_manage_projects": true,
     "can_manage_people": true,
-    "can_access_timesheet": true,
+    "can_access_timesheet": false,
     "can_access_hill_charts": true
   },
   "content": "👏 🎉"
 }
 ```
-<!-- END GET /buckets/1/chats/2/lines/3.json -->
+<!-- END GET /chats/2/lines/3.json -->
 ###### Copy as cURL
 
 ```shell
-curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/chats/2/lines/3.json
+curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/chats/2/lines/3.json
 ```
 
 Create a Campfire line
 ----------------------
 
-* `POST /buckets/1/chats/2/lines.json` creates a line in the Campfire with ID `2` in the project with ID `1`.
+* `POST /chats/2/lines.json` creates a line in the Campfire with ID `2`.
 
-**Required parameters**: `content` as the body of the Campfire line.
-
-_Optional parameters_:
-
-* `content_type` set to `text/html` to create a rich text line. When omitted, a plain text line is created. See our [Rich text guide][rich_text] for what HTML tags are allowed.
+**Required parameters**: `content` as the plain text body for the Campfire line.
 
 This endpoint will return `201 Created` with the current JSON representation of the line if the creation was a success. See the [Get a Campfire line](#get-a-campfire-line) endpoint for more info on the payload.
 
@@ -299,161 +295,36 @@ This endpoint will return `201 Created` with the current JSON representation of 
 }
 ```
 
-###### Example JSON Response
-<!-- START POST /buckets/1/chats/2/lines.json -->
-```json
-{
-  "id": 1069480007,
-  "status": "active",
-  "visible_to_clients": false,
-  "created_at": "2026-02-06T21:38:57.555Z",
-  "updated_at": "2026-02-06T21:38:57.555Z",
-  "title": "Good morning",
-  "inherits_status": true,
-  "type": "Chat::Lines::Text",
-  "url": "https://3.basecampapi.com/195539477/buckets/2085958502/chats/1069478985/lines/1069480007.json",
-  "app_url": "https://3.basecamp.com/195539477/buckets/2085958502/chats/1069478985@1069480007",
-  "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiLmdpZDovL2JjMy9SZWNvcmRpbmcvMTA2OTQ4MDAwNz9leHBpcmVzX2luBjsAVEkiCHB1cgY7AFRJIg1yZWFkYWJsZQY7AFQ=--0b2fce7d5cb7b7aeafd95960a30be109dca416bc.json",
-  "parent": {
-    "id": 1069478985,
-    "title": "Chat",
-    "type": "Chat::Transcript",
-    "url": "https://3.basecampapi.com/195539477/buckets/2085958502/chats/1069478985.json",
-    "app_url": "https://3.basecamp.com/195539477/buckets/2085958502/chats/1069478985"
-  },
-  "bucket": {
-    "id": 2085958502,
-    "name": "Honcho Design Newsroom",
-    "type": "Project"
-  },
-  "creator": {
-    "id": 1049715913,
-    "attachable_sgid": "BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiK2dpZDovL2JjMy9QZXJzb24vMTA0OTcxNTkxMz9leHBpcmVzX2luBjsAVEkiCHB1cgY7AFRJIg9hdHRhY2hhYmxlBjsAVA==--e627c45e6b34e08862da23906862412620e4d5d9",
-    "name": "Victor Cooper",
-    "email_address": "victor@honchodesign.com",
-    "personable_type": "User",
-    "title": "Chief Strategist",
-    "bio": "Don’t let your dreams be dreams",
-    "location": "Chicago, IL",
-    "created_at": "2026-01-31T08:29:28.365Z",
-    "updated_at": "2026-01-31T08:29:32.599Z",
-    "admin": true,
-    "owner": true,
-    "client": false,
-    "employee": true,
-    "time_zone": "America/Chicago",
-    "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBMlkkT4=--5fe7b70fbee7a7f0e2e1e19df7579e5d880c753d/avatar?v=1",
-    "company": {
-      "id": 1033447817,
-      "name": "Honcho Design"
-    },
-    "can_ping": true,
-    "can_manage_projects": true,
-    "can_manage_people": true,
-    "can_access_timesheet": true,
-    "can_access_hill_charts": true
-  },
-  "content": "Good morning"
-}
-```
-<!-- END POST /buckets/1/chats/2/lines.json -->
-
 ###### Copy as cURL
 
 ```shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" \
   -d '{"content":"Good morning"}' \
-  https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/chats/2/lines.json
-```
-
-###### Example Rich Text JSON Request
-
-```json
-{
-  "content": "<strong>Hello</strong> from the API",
-  "content_type": "text/html"
-}
-```
-
-###### Example Rich Text JSON Response
-<!-- START POST /buckets/1/chats/2/lines.json (rich text) -->
-```json
-{
-  "id": 1069480008,
-  "status": "active",
-  "visible_to_clients": false,
-  "created_at": "2026-02-06T21:38:58.342Z",
-  "updated_at": "2026-02-06T21:38:58.342Z",
-  "title": "Hello from the API",
-  "inherits_status": true,
-  "type": "Chat::Lines::RichText",
-  "url": "https://3.basecampapi.com/195539477/buckets/2085958502/chats/1069478985/lines/1069480008.json",
-  "app_url": "https://3.basecamp.com/195539477/buckets/2085958502/chats/1069478985@1069480008",
-  "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiLmdpZDovL2JjMy9SZWNvcmRpbmcvMTA2OTQ4MDAwOD9leHBpcmVzX2luBjsAVEkiCHB1cgY7AFRJIg1yZWFkYWJsZQY7AFQ=--63c88a017556486cbb71bde82b1ad62ba59d65f1.json",
-  "parent": {
-    "id": 1069478985,
-    "title": "Chat",
-    "type": "Chat::Transcript",
-    "url": "https://3.basecampapi.com/195539477/buckets/2085958502/chats/1069478985.json",
-    "app_url": "https://3.basecamp.com/195539477/buckets/2085958502/chats/1069478985"
-  },
-  "bucket": {
-    "id": 2085958502,
-    "name": "Honcho Design Newsroom",
-    "type": "Project"
-  },
-  "creator": {
-    "id": 1049715913,
-    "attachable_sgid": "BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiK2dpZDovL2JjMy9QZXJzb24vMTA0OTcxNTkxMz9leHBpcmVzX2luBjsAVEkiCHB1cgY7AFRJIg9hdHRhY2hhYmxlBjsAVA==--e627c45e6b34e08862da23906862412620e4d5d9",
-    "name": "Victor Cooper",
-    "email_address": "victor@honchodesign.com",
-    "personable_type": "User",
-    "title": "Chief Strategist",
-    "bio": "Don’t let your dreams be dreams",
-    "location": "Chicago, IL",
-    "created_at": "2026-01-31T08:29:28.365Z",
-    "updated_at": "2026-01-31T08:29:32.599Z",
-    "admin": true,
-    "owner": true,
-    "client": false,
-    "employee": true,
-    "time_zone": "America/Chicago",
-    "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBMlkkT4=--5fe7b70fbee7a7f0e2e1e19df7579e5d880c753d/avatar?v=1",
-    "company": {
-      "id": 1033447817,
-      "name": "Honcho Design"
-    },
-    "can_ping": true,
-    "can_manage_projects": true,
-    "can_manage_people": true,
-    "can_access_timesheet": true,
-    "can_access_hill_charts": true
-  },
-  "content": "<strong>Hello</strong> from the API"
-}
-```
-<!-- END POST /buckets/1/chats/2/lines.json (rich text) -->
-
-###### Copy as cURL
-
-```shell
-curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" \
-  -d '{"content":"<strong>Hello</strong> from the API","content_type":"text/html"}' \
-  https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/chats/2/lines.json
+  https://3.basecampapi.com/$ACCOUNT_ID/chats/2/lines.json
 ```
 
 Delete a Campfire line
 ----------------------
 
-* `DELETE /buckets/1/chats/2/lines/3.json` will delete the Campfire line with ID `3` in the Campfire with ID `2` in the project with ID `1`.
+* `DELETE /chats/2/lines/3.json` will delete the Campfire line with ID `3` in the Campfire with ID `2`.
 
 Returns `204 No Content` if successful.
 
 ###### Copy as cURL
 
 ```shell
-curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/chats/2/lines/3.json
+curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/chats/2/lines/3.json
 ```
 
+Legacy project-scoped routes
+-----------------------------
+
+The following project-scoped routes are still supported and will remain available, but flat routes above are the canonical form for new integrations.
+
+* `GET /buckets/1/chats/2.json` → [Get a Campfire](#get-a-campfire)
+* `GET /buckets/1/chats/2/lines.json` → [Get Campfire lines](#get-campfire-lines)
+* `GET /buckets/1/chats/2/lines/3.json` → [Get a Campfire line](#get-a-campfire-line)
+* `POST /buckets/1/chats/2/lines.json` → [Create a Campfire line](#create-a-campfire-line)
+* `DELETE /buckets/1/chats/2/lines/3.json` → [Delete a Campfire line](#delete-a-campfire-line)
+
 [pagination]: https://github.com/basecamp/bc3-api/blob/master/README.md#pagination
-[rich_text]: https://github.com/basecamp/bc3-api/blob/master/sections/rich_text.md

@@ -238,7 +238,7 @@ Starting the 1st of July 2024, Basecamp won't notify of changes that are automat
 Get webhooks
 ------------
 
-* `GET /buckets/1/webhooks.json` will return all the webhooks from the basecamp with an ID of `1`.
+* `GET /buckets/1/webhooks.json` will return all the webhooks for the project with an ID of `1`.
 
 ###### Example JSON Response
 <!-- START GET /buckets/1/webhooks.json -->
@@ -247,8 +247,8 @@ Get webhooks
   {
     "id": 1051369971,
     "active": true,
-    "created_at": "2026-01-31T08:38:45.916Z",
-    "updated_at": "2026-01-31T08:38:45.916Z",
+    "created_at": "2026-02-12T06:11:41.608Z",
+    "updated_at": "2026-02-12T06:11:41.608Z",
     "payload_url": "https://example.com/endpoint",
     "types": [
       "all"
@@ -268,18 +268,18 @@ curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCO
 Get a webhook
 -------------
 
-* `GET /buckets/1/webhooks/3.json` will return the webhook with an ID of `3` in the project with ID `1`.
+* `GET /webhooks/3.json` will return the webhook with an ID of `3`.
 
 The recent deliveries array will contain the 25 most recent delivery exchanges, sorted with the most recent first.
 
 ###### Example JSON Response
-<!-- START GET /buckets/1/webhooks/3.json -->
+<!-- START GET /webhooks/3.json -->
 ```json
 {
   "id": 1051369971,
   "active": true,
-  "created_at": "2026-01-31T08:38:45.916Z",
-  "updated_at": "2026-01-31T08:38:45.916Z",
+  "created_at": "2026-02-12T06:11:41.608Z",
+  "updated_at": "2026-02-12T06:11:41.608Z",
   "payload_url": "https://example.com/endpoint",
   "types": [
     "all"
@@ -288,39 +288,45 @@ The recent deliveries array will contain the 25 most recent delivery exchanges, 
   "app_url": "https://3.basecamp.com/195539477/buckets/2085958504/webhooks/1051369971",
   "recent_deliveries": [
     {
-      "id": 627138755,
-      "created_at": "2026-02-06T22:55:58.243Z",
+      "id": 627138715,
+      "created_at": "2026-02-12T06:12:11.774Z",
       "request": {
         "headers": {
           "Content-Type": "application/json",
           "User-Agent": "Basecamp3 Webhook",
-          "X-Request-Id": "18fe80cd-df90-442f-be87-f223a2cd69b7"
+          "X-Request-Id": "9728e569-4c4c-4ea0-9284-838fcac3c979"
         },
         "body": {
-          "id": 1071915871,
-          "kind": "timesheet_entry_deleted",
+          "id": 1071915635,
+          "kind": "message_subscribers_changed",
           "details": {
-            "status_was": "active"
+            "added_person_ids": [
+              1049715939
+            ],
+            "removed_person_ids": [
+              1049715913
+            ]
           },
-          "created_at": "2026-02-06T16:55:56.001-06:00",
+          "created_at": "2026-02-12T00:12:10.676-06:00",
           "recording": {
-            "id": 1069480091,
-            "status": "deleted",
+            "id": 1069479406,
+            "status": "active",
             "visible_to_clients": false,
-            "created_at": "2026-02-06T16:55:54.662-06:00",
-            "updated_at": "2026-02-06T16:55:55.924-06:00",
-            "title": "Timesheet entry",
-            "inherits_status": false,
-            "type": "Timesheet::Entry",
-            "url": "https://3.basecampapi.com/195539477/projects/2085958504/timesheet/entries/1069480091.json",
-            "app_url": "https://3.basecamp.com/195539477/projects/2085958504/timesheet/entries/1069480091",
-            "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiLmdpZDovL2JjMy9SZWNvcmRpbmcvMTA2OTQ4MDA5MT9leHBpcmVzX2luBjsAVEkiCHB1cgY7AFRJIg1yZWFkYWJsZQY7AFQ=--0b7abbaa49e554506a83edc6934173ebe077c1f0.json",
+            "created_at": "2025-12-30T12:58:00.000-06:00",
+            "updated_at": "2026-02-12T00:12:10.673-06:00",
+            "title": "We won Leto!",
+            "inherits_status": true,
+            "type": "Message",
+            "url": "https://3.basecampapi.com/195539477/buckets/2085958504/messages/1069479406.json",
+            "app_url": "https://3.basecamp.com/195539477/buckets/2085958504/messages/1069479406",
+            "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiLmdpZDovL2JjMy9SZWNvcmRpbmcvMTA2OTQ3OTQwNj9leHBpcmVzX2luBjsAVEkiCHB1cgY7AFRJIg1yZWFkYWJsZQY7AFQ=--309e0fbab86893aaaf279f01f2a0795c56716aeb.json",
+            "subscription_url": "https://3.basecampapi.com/195539477/buckets/2085958504/recordings/1069479406/subscription.json",
             "parent": {
-              "id": 1069479406,
-              "title": "We won Leto!",
-              "type": "Message",
-              "url": "https://3.basecampapi.com/195539477/buckets/2085958504/messages/1069479406.json",
-              "app_url": "https://3.basecamp.com/195539477/buckets/2085958504/messages/1069479406"
+              "id": 1069479392,
+              "title": "Message Board",
+              "type": "Message::Board",
+              "url": "https://3.basecampapi.com/195539477/buckets/2085958504/message_boards/1069479392.json",
+              "app_url": "https://3.basecamp.com/195539477/buckets/2085958504/message_boards/1069479392"
             },
             "bucket": {
               "id": 2085958504,
@@ -336,8 +342,8 @@ The recent deliveries array will contain the 25 most recent delivery exchanges, 
               "title": "Chief Strategist",
               "bio": "Don’t let your dreams be dreams",
               "location": "Chicago, IL",
-              "created_at": "2026-01-31T02:29:28.365-06:00",
-              "updated_at": "2026-01-31T02:29:32.599-06:00",
+              "created_at": "2026-02-12T00:08:49.342-06:00",
+              "updated_at": "2026-02-12T00:08:50.871-06:00",
               "admin": true,
               "owner": true,
               "client": false,
@@ -351,10 +357,10 @@ The recent deliveries array will contain the 25 most recent delivery exchanges, 
               "can_ping": true,
               "can_manage_projects": true,
               "can_manage_people": true,
-              "can_access_timesheet": true,
+              "can_access_timesheet": false,
               "can_access_hill_charts": true
             },
-            "content": null
+            "content": "Hey guys,<br><br>We won the Leto account! This is huge for us, it really marks a turning point for the company.<br><br>As you know we've been pursuing bigger clients in the consumer space, but we've done so carefully. We've never been about getting the biggest clients - those are easy to get. We've been trying to get the best clients for us - ones that will challenge us, grow us, make us better, and ultimately giving us a platform to show how awesome you guys all are. And now we have that!<br><br>A big congrats to everyone who worked so hard to make this happen, and now the fun really begins. Most of the pitch team will stay on as leading members of the first project, the Leto Microsite.<br><br>Again, great job everyone, and let's go kick some more butt!<br><br>-Victor<br>"
           },
           "creator": {
             "id": 1049715913,
@@ -365,8 +371,8 @@ The recent deliveries array will contain the 25 most recent delivery exchanges, 
             "title": "Chief Strategist",
             "bio": "Don’t let your dreams be dreams",
             "location": "Chicago, IL",
-            "created_at": "2026-01-31T02:29:28.365-06:00",
-            "updated_at": "2026-01-31T02:29:32.599-06:00",
+            "created_at": "2026-02-12T00:08:49.342-06:00",
+            "updated_at": "2026-02-12T00:08:50.871-06:00",
             "admin": true,
             "owner": true,
             "client": false,
@@ -380,7 +386,7 @@ The recent deliveries array will contain the 25 most recent delivery exchanges, 
             "can_ping": true,
             "can_manage_projects": true,
             "can_manage_people": true,
-            "can_access_timesheet": true,
+            "can_access_timesheet": false,
             "can_access_hill_charts": true
           }
         }
@@ -390,23 +396,24 @@ The recent deliveries array will contain the 25 most recent delivery exchanges, 
           "Content-Type": "application/json"
         },
         "code": 200,
-        "message": "OK"
+        "message": "OK",
+        "body": "{}"
       }
     }
   ]
 }
 ```
-<!-- END GET /buckets/1/webhooks/3.json -->
+<!-- END GET /webhooks/3.json -->
 ###### Copy as cURL
 
 ```shell
-curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/webhooks/3.json
+curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/webhooks/3.json
 ```
 
 Create a webhook
 ----------------
 
-* `POST /buckets/1/webhooks.json` creates a webhook in the project with ID `1`.
+* `POST /buckets/1/webhooks.json` creates a webhook in the project with an ID of `1`.
 
 **Required parameters**: `payload_url` for the HTTPS url that Basecamp should call.
 _Optional parameters_: `types` as an array of types, options given in the introduction.
@@ -435,7 +442,7 @@ curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/j
 Update a webhook
 ----------------
 
-* `PUT /buckets/1/webhooks/3.json` allows changing the payload url and types of the webhook with an ID of `3` in the project with ID `1`.
+* `PUT /webhooks/3.json` allows changing the payload url and types of the webhook with an ID of `3`.
 
 **Required parameters**: `payload_url` for the HTTPS url that Basecamp will call.
 _Optional parameters_: `types` as an array of types, options given in the introduction. `active` as a boolean whether this webhook should be matching.
@@ -459,13 +466,13 @@ This endpoint will return `400 Bad Request` if the payload URL is not a valid HT
 ```shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" \
   -d '{"payload_url":"https://example.com/endpoint","types":["Todo","Todolist"],"active":true}' -X PUT \
-  https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/webhooks/3.json
+  https://3.basecampapi.com/$ACCOUNT_ID/webhooks/3.json
 ```
 
 Destroy a webhook
 -----------------
 
-* `DELETE /buckets/1/webhooks/3.json` will delete the webhook with an ID of `3` in the project with ID `1`.
+* `DELETE /webhooks/3.json` will delete the webhook with an ID of `3`.
 
 This endpoint will return `204 No Content` if the destroy was a success.
 
@@ -473,8 +480,18 @@ This endpoint will return `204 No Content` if the destroy was a success.
 
 ```shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -X DELETE \
-  https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/webhooks/3.json
+  https://3.basecampapi.com/$ACCOUNT_ID/webhooks/3.json
 ```
+
+
+Legacy project-scoped routes
+-----------------------------
+
+The following project-scoped routes are still supported and will remain available, but flat routes above are the canonical form for new integrations.
+
+* `GET /buckets/1/webhooks/3.json` → [Get a webhook](#get-a-webhook)
+* `PUT /buckets/1/webhooks/3.json` → [Update a webhook](#update-a-webhook)
+* `DELETE /buckets/1/webhooks/3.json` → [Destroy a webhook](#destroy-a-webhook)
 
 [1]: https://github.com/basecamp/bc3-api/blob/master/sections/chatbots.md
 [2]: https://github.com/basecamp/bc3-api/blob/master/sections/todos.md#get-a-to-do
