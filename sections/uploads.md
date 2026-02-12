@@ -12,10 +12,10 @@ Endpoints:
 Get uploads
 -----------
 
-* `GET /buckets/1/vaults/2/uploads.json` will return a [paginated list][pagination] of active uploads in the project with an ID of `1` and the [vault][vaults] with ID of `2`.
+* `GET /vaults/2/uploads.json` will return a [paginated list][pagination] of active uploads in the [vault][vaults] with ID of `2`.
 
 ###### Example JSON Response
-<!-- START GET /buckets/1/vaults/2/uploads.json -->
+<!-- START GET /vaults/2/uploads.json -->
 ```json
 [
   {
@@ -30,9 +30,9 @@ Get uploads
     "url": "https://3.basecampapi.com/195539477/buckets/2085958504/uploads/1069479913.json",
     "app_url": "https://3.basecamp.com/195539477/buckets/2085958504/uploads/1069479913",
     "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiLmdpZDovL2JjMy9SZWNvcmRpbmcvMTA2OTQ3OTkxMz9leHBpcmVzX2luBjsAVEkiCHB1cgY7AFRJIg1yZWFkYWJsZQY7AFQ=--b796a37ac3f19f619e8150d87b4a6a39882fdfd5.json",
-    "subscription_url": "https://3.basecampapi.com/195539477/buckets/2085958504/recordings/1069479913/subscription.json",
+    "subscription_url": "https://3.basecampapi.com/195539477/recordings/1069479913/subscription.json",
     "comments_count": 0,
-    "comments_url": "https://3.basecampapi.com/195539477/buckets/2085958504/recordings/1069479913/comments.json",
+    "comments_url": "https://3.basecampapi.com/195539477/recordings/1069479913/comments.json",
     "boosts_count": 0,
     "boosts_url": "https://3.basecampapi.com/195539477/buckets/2085958504/recordings/1069479913/boosts.json",
     "position": 1,
@@ -80,26 +80,26 @@ Get uploads
     "byte_size": 1281,
     "filename": "company-logo.png",
     "download_url": "https://3.basecampapi.com/195539477/buckets/2085958504/uploads/1069479913/download/company-logo.png",
-    "app_download_url": "http://localhost:4001/195539477/buckets/2085958504/uploads/1069479913/download/company-logo.png",
+    "app_download_url": "https://3.basecamp-static.com/195539477/buckets/2085958504/uploads/1069479913/download/company-logo.png",
     "width": 164,
     "height": 39
   }
 ]
 ```
-<!-- END GET /buckets/1/vaults/2/uploads.json -->
+<!-- END GET /vaults/2/uploads.json -->
 ###### Copy as cURL
 
 ```shell
-curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/vaults/2/uploads.json
+curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/vaults/2/uploads.json
 ```
 
 Get an upload
 -------------
 
-* `GET /buckets/1/uploads/2.json` will return the upload with an ID of `2` in the project with an ID of `1`.
+* `GET /uploads/2.json` will return the upload with an ID of `2`.
 
 ###### Example JSON Response
-<!-- START GET /buckets/1/uploads/2.json -->
+<!-- START GET /uploads/2.json -->
 ```json
 {
   "id": 1069479913,
@@ -113,9 +113,9 @@ Get an upload
   "url": "https://3.basecampapi.com/195539477/buckets/2085958504/uploads/1069479913.json",
   "app_url": "https://3.basecamp.com/195539477/buckets/2085958504/uploads/1069479913",
   "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiLmdpZDovL2JjMy9SZWNvcmRpbmcvMTA2OTQ3OTkxMz9leHBpcmVzX2luBjsAVEkiCHB1cgY7AFRJIg1yZWFkYWJsZQY7AFQ=--b796a37ac3f19f619e8150d87b4a6a39882fdfd5.json",
-  "subscription_url": "https://3.basecampapi.com/195539477/buckets/2085958504/recordings/1069479913/subscription.json",
+  "subscription_url": "https://3.basecampapi.com/195539477/recordings/1069479913/subscription.json",
   "comments_count": 0,
-  "comments_url": "https://3.basecampapi.com/195539477/buckets/2085958504/recordings/1069479913/comments.json",
+  "comments_url": "https://3.basecampapi.com/195539477/recordings/1069479913/comments.json",
   "boosts_count": 0,
   "boosts_url": "https://3.basecampapi.com/195539477/buckets/2085958504/recordings/1069479913/boosts.json",
   "position": 1,
@@ -163,23 +163,23 @@ Get an upload
   "byte_size": 1281,
   "filename": "company-logo.png",
   "download_url": "https://3.basecampapi.com/195539477/buckets/2085958504/uploads/1069479913/download/company-logo.png",
-  "app_download_url": "http://localhost:4001/195539477/buckets/2085958504/uploads/1069479913/download/company-logo.png",
+  "app_download_url": "https://3.basecamp-static.com/195539477/buckets/2085958504/uploads/1069479913/download/company-logo.png",
   "width": 164,
   "height": 39
 }
 ```
-<!-- END GET /buckets/1/uploads/2.json -->
+<!-- END GET /uploads/2.json -->
 
 ###### Copy as cURL
 
 ```shell
-curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/uploads/2.json
+curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/uploads/2.json
 ```
 
 Create an upload
 ----------------
 
-* `POST /buckets/1/vaults/2/uploads.json` creates an upload in the project with ID `1` and under the vault with an ID of `2`.
+* `POST /vaults/2/uploads.json` creates an upload under the vault with an ID of `2`.
 
 **Required parameters**: `attachable_sgid` for an uploaded attachment. See the [Create an attachment][attachments] endpoint for more info on uploading attachments.
 
@@ -204,13 +204,13 @@ This endpoint will return `201 Created` with the current JSON representation of 
 ```shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" \
   -d '{"attachable_sgid":"BAh…9c1","description":"<div><strong>Yum</strong></div>","base_name":"yummy_pizza"}' \
-  https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/vaults/2/uploads.json
+  https://3.basecampapi.com/$ACCOUNT_ID/vaults/2/uploads.json
 ```
 
 Update an upload
 ----------------
 
-* `PUT /buckets/1/uploads/2.json` allows changing the `description` and `base_name` of the upload with an ID of `2` in the project with ID `1`.
+* `PUT /uploads/2.json` allows changing the `description` and `base_name` of the upload with an ID of `2`.
 
 This endpoint will return `200 OK` with the current JSON representation of the upload if the update was a success. See the [Get an upload](#get-an-upload) endpoint for more info on the payload.
 
@@ -228,8 +228,18 @@ This endpoint will return `200 OK` with the current JSON representation of the u
 ```shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" \
   -d '{"description":"<div>Meh</div>","base_name":"old_pizza"}' -X PUT \
-  https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/uploads/2.json
+  https://3.basecampapi.com/$ACCOUNT_ID/uploads/2.json
 ```
+
+Legacy project-scoped routes
+-----------------------------
+
+The following project-scoped routes are still supported and will remain available, but flat routes above are the canonical form for new integrations.
+
+* `GET /buckets/1/vaults/2/uploads.json` → [Get uploads](#get-uploads)
+* `GET /buckets/1/uploads/2.json` → [Get an upload](#get-an-upload)
+* `POST /buckets/1/vaults/2/uploads.json` → [Create an upload](#create-an-upload)
+* `PUT /buckets/1/uploads/2.json` → [Update an upload](#update-an-upload)
 
 [pagination]: https://github.com/basecamp/bc3-api/blob/master/README.md#pagination
 [attachments]: https://github.com/basecamp/bc3-api/blob/master/sections/attachments.md#create-an-attachment

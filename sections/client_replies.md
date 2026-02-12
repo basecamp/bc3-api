@@ -11,18 +11,18 @@ Endpoints:
 Get client replies
 ------------------
 
-* `GET /buckets/1/client/recordings/2/replies.json` will return a [paginated list][pagination] of client replies in the project with an ID of `1` and the recording with ID of `2`.
+* `GET /client/recordings/2/replies.json` will return a [paginated list][pagination] of client replies for the recording with ID `2`.
 
 ###### Example JSON Response
-<!-- START GET /buckets/1/client/recordings/2/replies.json -->
+<!-- START GET /client/recordings/2/replies.json -->
 ```json
 [
   {
     "id": 1069479623,
     "status": "active",
     "visible_to_clients": false,
-    "created_at": "2025-12-18T23:12:00.000Z",
-    "updated_at": "2025-12-18T23:12:00.000Z",
+    "created_at": "2025-12-30T17:01:00.000Z",
+    "updated_at": "2025-12-30T17:01:00.000Z",
     "title": "Re: Project kickoff!",
     "inherits_status": true,
     "type": "Client::Reply",
@@ -50,8 +50,8 @@ Get client replies
       "title": "National Directives Director",
       "bio": null,
       "location": null,
-      "created_at": "2026-01-31T08:29:42.692Z",
-      "updated_at": "2026-01-31T08:29:42.692Z",
+      "created_at": "2026-02-12T06:08:57.319Z",
+      "updated_at": "2026-02-12T06:08:57.319Z",
       "admin": false,
       "owner": false,
       "client": false,
@@ -72,27 +72,27 @@ Get client replies
   }
 ]
 ```
-<!-- END GET /buckets/1/client/recordings/2/replies.json -->
+<!-- END GET /client/recordings/2/replies.json -->
 ###### Copy as cURL
 
 ```shell
-curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/client/recordings/2/replies.json
+curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/client/recordings/2/replies.json
 ```
 
 Get a client reply
 ------------------
 
-* `GET /buckets/1/client/recordings/2/replies/3.json` will return the client reply with an ID of `3` for the recording with an ID of `2` in the project with an ID of `1`.
+* `GET /client/recordings/2/replies/3.json` will return the client reply with an ID of `3` for the recording with an ID of `2`.
 
 ###### Example JSON Response
-<!-- START GET /buckets/1/client/recordings/2/replies/3.json -->
+<!-- START GET /client/recordings/2/replies/3.json -->
 ```json
 {
   "id": 1069479628,
   "status": "active",
   "visible_to_clients": false,
-  "created_at": "2025-12-19T00:15:00.000Z",
-  "updated_at": "2025-12-19T00:15:00.000Z",
+  "created_at": "2025-12-30T20:23:00.000Z",
+  "updated_at": "2025-12-30T20:23:00.000Z",
   "title": "Re: Project kickoff!",
   "inherits_status": true,
   "type": "Client::Reply",
@@ -120,8 +120,8 @@ Get a client reply
     "title": "Central Markets Manager",
     "bio": "To open a store is easy, to keep it open is an art",
     "location": null,
-    "created_at": "2026-01-31T08:29:42.795Z",
-    "updated_at": "2026-01-31T08:29:42.795Z",
+    "created_at": "2026-02-12T06:08:57.340Z",
+    "updated_at": "2026-02-12T06:08:57.340Z",
     "admin": false,
     "owner": false,
     "client": false,
@@ -135,18 +135,27 @@ Get a client reply
     "can_ping": true,
     "can_manage_projects": true,
     "can_manage_people": true,
-    "can_access_timesheet": true,
+    "can_access_timesheet": false,
     "can_access_hill_charts": true
   },
   "content": "Hi Leto team, this it's Annie. I'll be your day to day contact for the project, so keep me on your speed dial (or speed email, perhaps more accurately!) Feel free to reach out to me with any questions at all, and I'll be posting up some outlines, timelines, etc. very shortly."
 }
 ```
-<!-- END GET /buckets/1/client/recordings/2/replies/3.json -->
+<!-- END GET /client/recordings/2/replies/3.json -->
 ###### Copy as cURL
 
 ```shell
-curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/client/recordings/2/replies/3.json
+curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/client/recordings/2/replies/3.json
 ```
+
+
+Legacy project-scoped routes
+-----------------------------
+
+The following project-scoped routes are still supported and will remain available, but flat routes above are the canonical form for new integrations.
+
+* `GET /buckets/1/client/recordings/2/replies.json` → [Get client replies](#get-client-replies)
+* `GET /buckets/1/client/recordings/2/replies/3.json` → [Get a client reply](#get-a-client-reply)
 
 [pagination]: https://github.com/basecamp/bc3-api/blob/master/README.md#pagination
 [correspondences]: https://github.com/basecamp/bc3-api/blob/master/sections/client_correspondences.md#client-correspondences

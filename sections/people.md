@@ -28,8 +28,8 @@ Get all people
     "title": "Chief Strategist",
     "bio": "Don’t let your dreams be dreams",
     "location": "Chicago, IL",
-    "created_at": "2026-01-31T08:29:28.365Z",
-    "updated_at": "2026-01-31T08:29:32.599Z",
+    "created_at": "2026-02-12T06:08:49.342Z",
+    "updated_at": "2026-02-12T06:08:50.871Z",
     "admin": true,
     "owner": true,
     "client": false,
@@ -43,7 +43,7 @@ Get all people
     "can_ping": true,
     "can_manage_projects": true,
     "can_manage_people": true,
-    "can_access_timesheet": true,
+    "can_access_timesheet": false,
     "can_access_hill_charts": true
   }
 ]
@@ -123,8 +123,8 @@ curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/j
       "title": "Central Web Coordinator",
       "bio": "I never said most of the things I said",
       "location": null,
-      "created_at": "2026-01-31T08:29:32.987Z",
-      "updated_at": "2026-01-31T08:29:32.987Z",
+      "created_at": "2026-02-12T00:08:51.167-06:00",
+      "updated_at": "2026-02-12T00:08:51.167-06:00",
       "admin": false,
       "owner": false,
       "client": false,
@@ -134,26 +134,26 @@ curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/j
       "can_ping": true,
       "can_manage_projects": true,
       "can_manage_people": true,
-      "can_access_timesheet": true,
+      "can_access_timesheet": false,
       "can_access_hill_charts": true
     },
     {
-      "id": 1049715958,
-      "attachable_sgid": "BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiK2dpZDovL2JjMy9QZXJzb24vMTA0OTcxNTk1OD9leHBpcmVzX2luBjsAVEkiCHB1cgY7AFRJIg9hdHRhY2hhYmxlBjsAVA==--0faf1b608c4b8dea212de1c3a530e5332c413296",
+      "id": 1049715955,
+      "attachable_sgid": "BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiK2dpZDovL2JjMy9QZXJzb24vMTA0OTcxNTk1NT9leHBpcmVzX2luBjsAVEkiCHB1cgY7AFRJIg9hdHRhY2hhYmxlBjsAVA==--6a8affd82c540e7c1f7e846b2b02fedb01bcd3f0",
       "name": "Victor Copper",
       "email_address": "victor@hanchodesign.com",
       "personable_type": "User",
       "title": "Prankster",
       "bio": null,
       "location": null,
-      "created_at": "2026-02-06T22:56:22.154Z",
-      "updated_at": "2026-02-06T22:56:22.154Z",
+      "created_at": "2026-02-12T00:13:54.748-06:00",
+      "updated_at": "2026-02-12T00:13:54.748-06:00",
       "admin": false,
       "owner": false,
       "client": false,
       "employee": false,
       "time_zone": "America/Chicago",
-      "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBPZkkT4=--1cb255ae7eb8be518396c3a2d9fa86e1472b367c/avatar?v=1",
+      "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBPNkkT4=--5049939da9ea89df60ade5a1c42d324c1651c66c/avatar?v=1",
       "company": {
         "id": 1033447819,
         "name": "Hancho Design"
@@ -161,7 +161,7 @@ curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/j
       "can_ping": true,
       "can_manage_projects": true,
       "can_manage_people": true,
-      "can_access_timesheet": true,
+      "can_access_timesheet": false,
       "can_access_hill_charts": true
     }
   ],
@@ -175,8 +175,8 @@ curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/j
       "title": "Legacy Directives Strategist",
       "bio": "You can do it!",
       "location": null,
-      "created_at": "2026-01-31T08:29:46.012Z",
-      "updated_at": "2026-01-31T08:29:46.012Z",
+      "created_at": "2026-02-12T00:08:59.344-06:00",
+      "updated_at": "2026-02-12T00:08:59.344-06:00",
       "admin": false,
       "owner": false,
       "client": false,
@@ -190,7 +190,7 @@ curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/j
       "can_ping": true,
       "can_manage_projects": true,
       "can_manage_people": true,
-      "can_access_timesheet": true,
+      "can_access_timesheet": false,
       "can_access_hill_charts": true
     }
   ]
@@ -231,8 +231,8 @@ Get person
   "title": "Principal Markets Supervisor",
   "bio": null,
   "location": null,
-  "created_at": "2026-01-31T08:29:39.861Z",
-  "updated_at": "2026-01-31T08:29:39.861Z",
+  "created_at": "2026-02-12T06:08:55.513Z",
+  "updated_at": "2026-02-12T06:08:55.513Z",
   "admin": false,
   "owner": false,
   "client": false,
@@ -242,7 +242,7 @@ Get person
   "can_ping": true,
   "can_manage_projects": true,
   "can_manage_people": true,
-  "can_access_timesheet": true,
+  "can_access_timesheet": false,
   "can_access_hill_charts": true
 }
 ```

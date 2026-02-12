@@ -19,8 +19,8 @@ Get timeline
 ```json
 [
   {
-    "id": 1071915901,
-    "created_at": "2026-02-06T22:56:23.125Z",
+    "id": 1071915692,
+    "created_at": "2026-02-12T06:13:55.569Z",
     "kind": "project_access_changed",
     "creator": {
       "id": 1049715913,
@@ -31,8 +31,8 @@ Get timeline
       "title": "Chief Strategist",
       "bio": "Don’t let your dreams be dreams",
       "location": "Chicago, IL",
-      "created_at": "2026-01-31T08:29:28.365Z",
-      "updated_at": "2026-01-31T08:29:32.599Z",
+      "created_at": "2026-02-12T06:08:49.342Z",
+      "updated_at": "2026-02-12T06:08:50.871Z",
       "admin": true,
       "owner": true,
       "client": false,
@@ -46,7 +46,7 @@ Get timeline
       "can_ping": true,
       "can_manage_projects": true,
       "can_manage_people": true,
-      "can_access_timesheet": true,
+      "can_access_timesheet": false,
       "can_access_hill_charts": true
     },
     "action": "Victor C. changed who can access this project",
@@ -62,8 +62,8 @@ Get timeline
     }
   },
   {
-    "id": 1071915899,
-    "created_at": "2026-02-06T22:56:22.481Z",
+    "id": 1071915690,
+    "created_at": "2026-02-12T06:13:54.966Z",
     "kind": "project_access_changed",
     "creator": {
       "id": 1049715913,
@@ -74,8 +74,8 @@ Get timeline
       "title": "Chief Strategist",
       "bio": "Don’t let your dreams be dreams",
       "location": "Chicago, IL",
-      "created_at": "2026-01-31T08:29:28.365Z",
-      "updated_at": "2026-01-31T08:29:32.599Z",
+      "created_at": "2026-02-12T06:08:49.342Z",
+      "updated_at": "2026-02-12T06:08:50.871Z",
       "admin": true,
       "owner": true,
       "client": false,
@@ -89,7 +89,7 @@ Get timeline
       "can_ping": true,
       "can_manage_projects": true,
       "can_manage_people": true,
-      "can_access_timesheet": true,
+      "can_access_timesheet": false,
       "can_access_hill_charts": true
     },
     "action": "Victor C. changed who can access this project",
@@ -105,12 +105,12 @@ Get timeline
     }
   },
   {
-    "id": 1071915883,
-    "created_at": "2026-02-06T22:56:14.308Z",
+    "id": 1071915673,
+    "created_at": "2026-02-12T06:13:49.017Z",
     "kind": "todo_created",
-    "parent_recording_id": 1069480097,
-    "url": "https://3.basecampapi.com/195539477/buckets/2085958516/todos/1069480101.json",
-    "app_url": "https://3.basecamp.com/195539477/buckets/2085958516/todos/1069480101",
+    "parent_recording_id": 1069479950,
+    "url": "https://3.basecampapi.com/195539477/buckets/2085958510/todos/1069479953.json",
+    "app_url": "https://3.basecamp.com/195539477/buckets/2085958510/todos/1069479953",
     "creator": {
       "id": 1049715913,
       "attachable_sgid": "BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiK2dpZDovL2JjMy9QZXJzb24vMTA0OTcxNTkxMz9leHBpcmVzX2luBjsAVEkiCHB1cgY7AFRJIg9hdHRhY2hhYmxlBjsAVA==--e627c45e6b34e08862da23906862412620e4d5d9",
@@ -120,8 +120,8 @@ Get timeline
       "title": "Chief Strategist",
       "bio": "Don’t let your dreams be dreams",
       "location": "Chicago, IL",
-      "created_at": "2026-01-31T08:29:28.365Z",
-      "updated_at": "2026-01-31T08:29:32.599Z",
+      "created_at": "2026-02-12T06:08:49.342Z",
+      "updated_at": "2026-02-12T06:08:50.871Z",
       "admin": true,
       "owner": true,
       "client": false,
@@ -135,7 +135,7 @@ Get timeline
       "can_ping": true,
       "can_manage_projects": true,
       "can_manage_people": true,
-      "can_access_timesheet": true,
+      "can_access_timesheet": false,
       "can_access_hill_charts": true
     },
     "action": "Victor C. added a to-do",
@@ -144,20 +144,20 @@ Get timeline
     "summary_excerpt": "Install ShipShape",
     "avatars_sample": [],
     "bucket": {
-      "id": 2085958516,
+      "id": 2085958510,
       "name": "New project from template",
-      "url": "https://3.basecampapi.com/195539477/projects/2085958516.json",
-      "app_url": "https://3.basecamp.com/195539477/projects/2085958516"
+      "url": "https://3.basecampapi.com/195539477/projects/2085958510.json",
+      "app_url": "https://3.basecamp.com/195539477/projects/2085958510"
     },
     "attachments": []
   },
   {
-    "id": 1071915882,
-    "created_at": "2026-02-06T22:56:14.192Z",
+    "id": 1071915672,
+    "created_at": "2026-02-12T06:13:48.958Z",
     "kind": "todo_created",
-    "parent_recording_id": 1069480097,
-    "url": "https://3.basecampapi.com/195539477/buckets/2085958516/todos/1069480100.json",
-    "app_url": "https://3.basecamp.com/195539477/buckets/2085958516/todos/1069480100",
+    "parent_recording_id": 1069479950,
+    "url": "https://3.basecampapi.com/195539477/buckets/2085958510/todos/1069479952.json",
+    "app_url": "https://3.basecamp.com/195539477/buckets/2085958510/todos/1069479952",
     "creator": {
       "id": 1049715913,
       "attachable_sgid": "BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiK2dpZDovL2JjMy9QZXJzb24vMTA0OTcxNTkxMz9leHBpcmVzX2luBjsAVEkiCHB1cgY7AFRJIg9hdHRhY2hhYmxlBjsAVA==--e627c45e6b34e08862da23906862412620e4d5d9",
@@ -167,8 +167,8 @@ Get timeline
       "title": "Chief Strategist",
       "bio": "Don’t let your dreams be dreams",
       "location": "Chicago, IL",
-      "created_at": "2026-01-31T08:29:28.365Z",
-      "updated_at": "2026-01-31T08:29:32.599Z",
+      "created_at": "2026-02-12T06:08:49.342Z",
+      "updated_at": "2026-02-12T06:08:50.871Z",
       "admin": true,
       "owner": true,
       "client": false,
@@ -182,7 +182,7 @@ Get timeline
       "can_ping": true,
       "can_manage_projects": true,
       "can_manage_people": true,
-      "can_access_timesheet": true,
+      "can_access_timesheet": false,
       "can_access_hill_charts": true
     },
     "action": "Victor C. added a to-do",
@@ -191,20 +191,20 @@ Get timeline
     "summary_excerpt": "Talk to Jerry about holidays",
     "avatars_sample": [],
     "bucket": {
-      "id": 2085958516,
+      "id": 2085958510,
       "name": "New project from template",
-      "url": "https://3.basecampapi.com/195539477/projects/2085958516.json",
-      "app_url": "https://3.basecamp.com/195539477/projects/2085958516"
+      "url": "https://3.basecampapi.com/195539477/projects/2085958510.json",
+      "app_url": "https://3.basecamp.com/195539477/projects/2085958510"
     },
     "attachments": []
   },
   {
-    "id": 1071915880,
-    "created_at": "2026-02-06T22:56:13.958Z",
+    "id": 1071915671,
+    "created_at": "2026-02-12T06:13:48.910Z",
     "kind": "todo_created",
-    "parent_recording_id": 1069480097,
-    "url": "https://3.basecampapi.com/195539477/buckets/2085958516/todos/1069480098.json",
-    "app_url": "https://3.basecamp.com/195539477/buckets/2085958516/todos/1069480098",
+    "parent_recording_id": 1069479950,
+    "url": "https://3.basecampapi.com/195539477/buckets/2085958510/todos/1069479951.json",
+    "app_url": "https://3.basecamp.com/195539477/buckets/2085958510/todos/1069479951",
     "creator": {
       "id": 1049715913,
       "attachable_sgid": "BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiK2dpZDovL2JjMy9QZXJzb24vMTA0OTcxNTkxMz9leHBpcmVzX2luBjsAVEkiCHB1cgY7AFRJIg9hdHRhY2hhYmxlBjsAVA==--e627c45e6b34e08862da23906862412620e4d5d9",
@@ -214,8 +214,8 @@ Get timeline
       "title": "Chief Strategist",
       "bio": "Don’t let your dreams be dreams",
       "location": "Chicago, IL",
-      "created_at": "2026-01-31T08:29:28.365Z",
-      "updated_at": "2026-01-31T08:29:32.599Z",
+      "created_at": "2026-02-12T06:08:49.342Z",
+      "updated_at": "2026-02-12T06:08:50.871Z",
       "admin": true,
       "owner": true,
       "client": false,
@@ -229,7 +229,7 @@ Get timeline
       "can_ping": true,
       "can_manage_projects": true,
       "can_manage_people": true,
-      "can_access_timesheet": true,
+      "can_access_timesheet": false,
       "can_access_hill_charts": true
     },
     "action": "Victor C. added a to-do",
@@ -238,10 +238,10 @@ Get timeline
     "summary_excerpt": "Talk to Cheryl about benefits",
     "avatars_sample": [],
     "bucket": {
-      "id": 2085958516,
+      "id": 2085958510,
       "name": "New project from template",
-      "url": "https://3.basecampapi.com/195539477/projects/2085958516.json",
-      "app_url": "https://3.basecamp.com/195539477/projects/2085958516"
+      "url": "https://3.basecampapi.com/195539477/projects/2085958510.json",
+      "app_url": "https://3.basecamp.com/195539477/projects/2085958510"
     },
     "attachments": []
   }
@@ -265,8 +265,8 @@ Get project timeline
 ```json
 [
   {
-    "id": 1071915901,
-    "created_at": "2026-02-06T22:56:23.125Z",
+    "id": 1071915692,
+    "created_at": "2026-02-12T06:13:55.569Z",
     "kind": "project_access_changed",
     "creator": {
       "id": 1049715913,
@@ -277,8 +277,8 @@ Get project timeline
       "title": "Chief Strategist",
       "bio": "Don’t let your dreams be dreams",
       "location": "Chicago, IL",
-      "created_at": "2026-01-31T08:29:28.365Z",
-      "updated_at": "2026-01-31T08:29:32.599Z",
+      "created_at": "2026-02-12T06:08:49.342Z",
+      "updated_at": "2026-02-12T06:08:50.871Z",
       "admin": true,
       "owner": true,
       "client": false,
@@ -292,7 +292,7 @@ Get project timeline
       "can_ping": true,
       "can_manage_projects": true,
       "can_manage_people": true,
-      "can_access_timesheet": true,
+      "can_access_timesheet": false,
       "can_access_hill_charts": true
     },
     "action": "Victor C. changed who can access this project",
@@ -308,8 +308,8 @@ Get project timeline
     }
   },
   {
-    "id": 1071915899,
-    "created_at": "2026-02-06T22:56:22.481Z",
+    "id": 1071915690,
+    "created_at": "2026-02-12T06:13:54.966Z",
     "kind": "project_access_changed",
     "creator": {
       "id": 1049715913,
@@ -320,8 +320,8 @@ Get project timeline
       "title": "Chief Strategist",
       "bio": "Don’t let your dreams be dreams",
       "location": "Chicago, IL",
-      "created_at": "2026-01-31T08:29:28.365Z",
-      "updated_at": "2026-01-31T08:29:32.599Z",
+      "created_at": "2026-02-12T06:08:49.342Z",
+      "updated_at": "2026-02-12T06:08:50.871Z",
       "admin": true,
       "owner": true,
       "client": false,
@@ -335,7 +335,7 @@ Get project timeline
       "can_ping": true,
       "can_manage_projects": true,
       "can_manage_people": true,
-      "can_access_timesheet": true,
+      "can_access_timesheet": false,
       "can_access_hill_charts": true
     },
     "action": "Victor C. changed who can access this project",
@@ -378,8 +378,8 @@ Get person's timeline
     "title": "Chief Strategist",
     "bio": "Don’t let your dreams be dreams",
     "location": "Chicago, IL",
-    "created_at": "2026-01-31T08:29:28.365Z",
-    "updated_at": "2026-01-31T08:29:32.599Z",
+    "created_at": "2026-02-12T06:08:49.342Z",
+    "updated_at": "2026-02-12T06:08:50.871Z",
     "admin": true,
     "owner": true,
     "client": false,
@@ -393,13 +393,13 @@ Get person's timeline
     "can_ping": true,
     "can_manage_projects": true,
     "can_manage_people": true,
-    "can_access_timesheet": true,
+    "can_access_timesheet": false,
     "can_access_hill_charts": true
   },
   "events": [
     {
-      "id": 1071915901,
-      "created_at": "2026-02-06T22:56:23.125Z",
+      "id": 1071915692,
+      "created_at": "2026-02-12T06:13:55.569Z",
       "kind": "project_access_changed",
       "creator": {
         "id": 1049715913,
@@ -410,8 +410,8 @@ Get person's timeline
         "title": "Chief Strategist",
         "bio": "Don’t let your dreams be dreams",
         "location": "Chicago, IL",
-        "created_at": "2026-01-31T08:29:28.365Z",
-        "updated_at": "2026-01-31T08:29:32.599Z",
+        "created_at": "2026-02-12T06:08:49.342Z",
+        "updated_at": "2026-02-12T06:08:50.871Z",
         "admin": true,
         "owner": true,
         "client": false,
@@ -425,7 +425,7 @@ Get person's timeline
         "can_ping": true,
         "can_manage_projects": true,
         "can_manage_people": true,
-        "can_access_timesheet": true,
+        "can_access_timesheet": false,
         "can_access_hill_charts": true
       },
       "action": "Victor C. changed who can access this project",
@@ -441,8 +441,8 @@ Get person's timeline
       }
     },
     {
-      "id": 1071915899,
-      "created_at": "2026-02-06T22:56:22.481Z",
+      "id": 1071915690,
+      "created_at": "2026-02-12T06:13:54.966Z",
       "kind": "project_access_changed",
       "creator": {
         "id": 1049715913,
@@ -453,8 +453,8 @@ Get person's timeline
         "title": "Chief Strategist",
         "bio": "Don’t let your dreams be dreams",
         "location": "Chicago, IL",
-        "created_at": "2026-01-31T08:29:28.365Z",
-        "updated_at": "2026-01-31T08:29:32.599Z",
+        "created_at": "2026-02-12T06:08:49.342Z",
+        "updated_at": "2026-02-12T06:08:50.871Z",
         "admin": true,
         "owner": true,
         "client": false,
@@ -468,7 +468,7 @@ Get person's timeline
         "can_ping": true,
         "can_manage_projects": true,
         "can_manage_people": true,
-        "can_access_timesheet": true,
+        "can_access_timesheet": false,
         "can_access_hill_charts": true
       },
       "action": "Victor C. changed who can access this project",
@@ -484,12 +484,12 @@ Get person's timeline
       }
     },
     {
-      "id": 1071915883,
-      "created_at": "2026-02-06T22:56:14.308Z",
+      "id": 1071915673,
+      "created_at": "2026-02-12T06:13:49.017Z",
       "kind": "todo_created",
-      "parent_recording_id": 1069480097,
-      "url": "https://3.basecampapi.com/195539477/buckets/2085958516/todos/1069480101.json",
-      "app_url": "https://3.basecamp.com/195539477/buckets/2085958516/todos/1069480101",
+      "parent_recording_id": 1069479950,
+      "url": "https://3.basecampapi.com/195539477/buckets/2085958510/todos/1069479953.json",
+      "app_url": "https://3.basecamp.com/195539477/buckets/2085958510/todos/1069479953",
       "creator": {
         "id": 1049715913,
         "attachable_sgid": "BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiK2dpZDovL2JjMy9QZXJzb24vMTA0OTcxNTkxMz9leHBpcmVzX2luBjsAVEkiCHB1cgY7AFRJIg9hdHRhY2hhYmxlBjsAVA==--e627c45e6b34e08862da23906862412620e4d5d9",
@@ -499,8 +499,8 @@ Get person's timeline
         "title": "Chief Strategist",
         "bio": "Don’t let your dreams be dreams",
         "location": "Chicago, IL",
-        "created_at": "2026-01-31T08:29:28.365Z",
-        "updated_at": "2026-01-31T08:29:32.599Z",
+        "created_at": "2026-02-12T06:08:49.342Z",
+        "updated_at": "2026-02-12T06:08:50.871Z",
         "admin": true,
         "owner": true,
         "client": false,
@@ -514,7 +514,7 @@ Get person's timeline
         "can_ping": true,
         "can_manage_projects": true,
         "can_manage_people": true,
-        "can_access_timesheet": true,
+        "can_access_timesheet": false,
         "can_access_hill_charts": true
       },
       "action": "Victor C. added a to-do",
@@ -523,20 +523,20 @@ Get person's timeline
       "summary_excerpt": "Install ShipShape",
       "avatars_sample": [],
       "bucket": {
-        "id": 2085958516,
+        "id": 2085958510,
         "name": "New project from template",
-        "url": "https://3.basecampapi.com/195539477/projects/2085958516.json",
-        "app_url": "https://3.basecamp.com/195539477/projects/2085958516"
+        "url": "https://3.basecampapi.com/195539477/projects/2085958510.json",
+        "app_url": "https://3.basecamp.com/195539477/projects/2085958510"
       },
       "attachments": []
     },
     {
-      "id": 1071915882,
-      "created_at": "2026-02-06T22:56:14.192Z",
+      "id": 1071915672,
+      "created_at": "2026-02-12T06:13:48.958Z",
       "kind": "todo_created",
-      "parent_recording_id": 1069480097,
-      "url": "https://3.basecampapi.com/195539477/buckets/2085958516/todos/1069480100.json",
-      "app_url": "https://3.basecamp.com/195539477/buckets/2085958516/todos/1069480100",
+      "parent_recording_id": 1069479950,
+      "url": "https://3.basecampapi.com/195539477/buckets/2085958510/todos/1069479952.json",
+      "app_url": "https://3.basecamp.com/195539477/buckets/2085958510/todos/1069479952",
       "creator": {
         "id": 1049715913,
         "attachable_sgid": "BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiK2dpZDovL2JjMy9QZXJzb24vMTA0OTcxNTkxMz9leHBpcmVzX2luBjsAVEkiCHB1cgY7AFRJIg9hdHRhY2hhYmxlBjsAVA==--e627c45e6b34e08862da23906862412620e4d5d9",
@@ -546,8 +546,8 @@ Get person's timeline
         "title": "Chief Strategist",
         "bio": "Don’t let your dreams be dreams",
         "location": "Chicago, IL",
-        "created_at": "2026-01-31T08:29:28.365Z",
-        "updated_at": "2026-01-31T08:29:32.599Z",
+        "created_at": "2026-02-12T06:08:49.342Z",
+        "updated_at": "2026-02-12T06:08:50.871Z",
         "admin": true,
         "owner": true,
         "client": false,
@@ -561,7 +561,7 @@ Get person's timeline
         "can_ping": true,
         "can_manage_projects": true,
         "can_manage_people": true,
-        "can_access_timesheet": true,
+        "can_access_timesheet": false,
         "can_access_hill_charts": true
       },
       "action": "Victor C. added a to-do",
@@ -570,20 +570,20 @@ Get person's timeline
       "summary_excerpt": "Talk to Jerry about holidays",
       "avatars_sample": [],
       "bucket": {
-        "id": 2085958516,
+        "id": 2085958510,
         "name": "New project from template",
-        "url": "https://3.basecampapi.com/195539477/projects/2085958516.json",
-        "app_url": "https://3.basecamp.com/195539477/projects/2085958516"
+        "url": "https://3.basecampapi.com/195539477/projects/2085958510.json",
+        "app_url": "https://3.basecamp.com/195539477/projects/2085958510"
       },
       "attachments": []
     },
     {
-      "id": 1071915880,
-      "created_at": "2026-02-06T22:56:13.958Z",
+      "id": 1071915671,
+      "created_at": "2026-02-12T06:13:48.910Z",
       "kind": "todo_created",
-      "parent_recording_id": 1069480097,
-      "url": "https://3.basecampapi.com/195539477/buckets/2085958516/todos/1069480098.json",
-      "app_url": "https://3.basecamp.com/195539477/buckets/2085958516/todos/1069480098",
+      "parent_recording_id": 1069479950,
+      "url": "https://3.basecampapi.com/195539477/buckets/2085958510/todos/1069479951.json",
+      "app_url": "https://3.basecamp.com/195539477/buckets/2085958510/todos/1069479951",
       "creator": {
         "id": 1049715913,
         "attachable_sgid": "BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiK2dpZDovL2JjMy9QZXJzb24vMTA0OTcxNTkxMz9leHBpcmVzX2luBjsAVEkiCHB1cgY7AFRJIg9hdHRhY2hhYmxlBjsAVA==--e627c45e6b34e08862da23906862412620e4d5d9",
@@ -593,8 +593,8 @@ Get person's timeline
         "title": "Chief Strategist",
         "bio": "Don’t let your dreams be dreams",
         "location": "Chicago, IL",
-        "created_at": "2026-01-31T08:29:28.365Z",
-        "updated_at": "2026-01-31T08:29:32.599Z",
+        "created_at": "2026-02-12T06:08:49.342Z",
+        "updated_at": "2026-02-12T06:08:50.871Z",
         "admin": true,
         "owner": true,
         "client": false,
@@ -608,7 +608,7 @@ Get person's timeline
         "can_ping": true,
         "can_manage_projects": true,
         "can_manage_people": true,
-        "can_access_timesheet": true,
+        "can_access_timesheet": false,
         "can_access_hill_charts": true
       },
       "action": "Victor C. added a to-do",
@@ -617,19 +617,19 @@ Get person's timeline
       "summary_excerpt": "Talk to Cheryl about benefits",
       "avatars_sample": [],
       "bucket": {
-        "id": 2085958516,
+        "id": 2085958510,
         "name": "New project from template",
-        "url": "https://3.basecampapi.com/195539477/projects/2085958516.json",
-        "app_url": "https://3.basecamp.com/195539477/projects/2085958516"
+        "url": "https://3.basecampapi.com/195539477/projects/2085958510.json",
+        "app_url": "https://3.basecamp.com/195539477/projects/2085958510"
       },
       "attachments": []
     },
     {
-      "id": 1071915874,
-      "created_at": "2026-02-06T22:56:11.891Z",
+      "id": 1071915665,
+      "created_at": "2026-02-12T06:13:48.702Z",
       "kind": "dock_created",
-      "url": "https://3.basecampapi.com/195539477/buckets/2085958516/dock.json",
-      "app_url": "https://3.basecamp.com/195539477/projects/2085958516",
+      "url": "https://3.basecampapi.com/195539477/buckets/2085958510/dock.json",
+      "app_url": "https://3.basecamp.com/195539477/projects/2085958510",
       "creator": {
         "id": 1049715913,
         "attachable_sgid": "BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiK2dpZDovL2JjMy9QZXJzb24vMTA0OTcxNTkxMz9leHBpcmVzX2luBjsAVEkiCHB1cgY7AFRJIg9hdHRhY2hhYmxlBjsAVA==--e627c45e6b34e08862da23906862412620e4d5d9",
@@ -639,8 +639,8 @@ Get person's timeline
         "title": "Chief Strategist",
         "bio": "Don’t let your dreams be dreams",
         "location": "Chicago, IL",
-        "created_at": "2026-01-31T08:29:28.365Z",
-        "updated_at": "2026-01-31T08:29:32.599Z",
+        "created_at": "2026-02-12T06:08:49.342Z",
+        "updated_at": "2026-02-12T06:08:50.871Z",
         "admin": true,
         "owner": true,
         "client": false,
@@ -654,7 +654,7 @@ Get person's timeline
         "can_ping": true,
         "can_manage_projects": true,
         "can_manage_people": true,
-        "can_access_timesheet": true,
+        "can_access_timesheet": false,
         "can_access_hill_charts": true
       },
       "action": "Victor C. started a new project called New project from template",
@@ -663,106 +663,20 @@ Get person's timeline
       "summary_excerpt": null,
       "avatars_sample": [],
       "bucket": {
-        "id": 2085958516,
+        "id": 2085958510,
         "name": "New project from template",
-        "url": "https://3.basecampapi.com/195539477/projects/2085958516.json",
-        "app_url": "https://3.basecamp.com/195539477/projects/2085958516"
+        "url": "https://3.basecampapi.com/195539477/projects/2085958510.json",
+        "app_url": "https://3.basecamp.com/195539477/projects/2085958510"
       },
       "attachments": []
     },
     {
-      "id": 1071915860,
-      "created_at": "2026-02-06T22:45:38.643Z",
-      "kind": "project_access_changed",
-      "creator": {
-        "id": 1049715913,
-        "attachable_sgid": "BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiK2dpZDovL2JjMy9QZXJzb24vMTA0OTcxNTkxMz9leHBpcmVzX2luBjsAVEkiCHB1cgY7AFRJIg9hdHRhY2hhYmxlBjsAVA==--e627c45e6b34e08862da23906862412620e4d5d9",
-        "name": "Victor Cooper",
-        "email_address": "victor@honchodesign.com",
-        "personable_type": "User",
-        "title": "Chief Strategist",
-        "bio": "Don’t let your dreams be dreams",
-        "location": "Chicago, IL",
-        "created_at": "2026-01-31T08:29:28.365Z",
-        "updated_at": "2026-01-31T08:29:32.599Z",
-        "admin": true,
-        "owner": true,
-        "client": false,
-        "employee": true,
-        "time_zone": "America/Chicago",
-        "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBMlkkT4=--5fe7b70fbee7a7f0e2e1e19df7579e5d880c753d/avatar?v=1",
-        "company": {
-          "id": 1033447817,
-          "name": "Honcho Design"
-        },
-        "can_ping": true,
-        "can_manage_projects": true,
-        "can_manage_people": true,
-        "can_access_timesheet": true,
-        "can_access_hill_charts": true
-      },
-      "action": "Victor C. changed who can access this project",
-      "target": null,
-      "title": "Victor C. changed who can access this project",
-      "summary_excerpt": "Steve Marsh was granted access.",
-      "avatars_sample": [],
-      "bucket": {
-        "id": 2085958504,
-        "name": "The Leto Laptop",
-        "url": "https://3.basecampapi.com/195539477/projects/2085958504.json",
-        "app_url": "https://3.basecamp.com/195539477/projects/2085958504"
-      }
-    },
-    {
-      "id": 1071915858,
-      "created_at": "2026-02-06T22:45:37.863Z",
-      "kind": "project_access_changed",
-      "creator": {
-        "id": 1049715913,
-        "attachable_sgid": "BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiK2dpZDovL2JjMy9QZXJzb24vMTA0OTcxNTkxMz9leHBpcmVzX2luBjsAVEkiCHB1cgY7AFRJIg9hdHRhY2hhYmxlBjsAVA==--e627c45e6b34e08862da23906862412620e4d5d9",
-        "name": "Victor Cooper",
-        "email_address": "victor@honchodesign.com",
-        "personable_type": "User",
-        "title": "Chief Strategist",
-        "bio": "Don’t let your dreams be dreams",
-        "location": "Chicago, IL",
-        "created_at": "2026-01-31T08:29:28.365Z",
-        "updated_at": "2026-01-31T08:29:32.599Z",
-        "admin": true,
-        "owner": true,
-        "client": false,
-        "employee": true,
-        "time_zone": "America/Chicago",
-        "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBMlkkT4=--5fe7b70fbee7a7f0e2e1e19df7579e5d880c753d/avatar?v=1",
-        "company": {
-          "id": 1033447817,
-          "name": "Honcho Design"
-        },
-        "can_ping": true,
-        "can_manage_projects": true,
-        "can_manage_people": true,
-        "can_access_timesheet": true,
-        "can_access_hill_charts": true
-      },
-      "action": "Victor C. changed who can access this project",
-      "target": null,
-      "title": "Victor C. changed who can access this project",
-      "summary_excerpt": "Amy Rivera was granted access.",
-      "avatars_sample": [],
-      "bucket": {
-        "id": 2085958504,
-        "name": "The Leto Laptop",
-        "url": "https://3.basecampapi.com/195539477/projects/2085958504.json",
-        "app_url": "https://3.basecamp.com/195539477/projects/2085958504"
-      }
-    },
-    {
-      "id": 1071915841,
-      "created_at": "2026-02-06T22:45:32.261Z",
+      "id": 1071915646,
+      "created_at": "2026-02-12T06:13:12.912Z",
       "kind": "todo_created",
-      "parent_recording_id": 1069480069,
-      "url": "https://3.basecampapi.com/195539477/buckets/2085958515/todos/1069480072.json",
-      "app_url": "https://3.basecamp.com/195539477/buckets/2085958515/todos/1069480072",
+      "parent_recording_id": 1069479926,
+      "url": "https://3.basecampapi.com/195539477/buckets/2085958509/todos/1069479929.json",
+      "app_url": "https://3.basecamp.com/195539477/buckets/2085958509/todos/1069479929",
       "creator": {
         "id": 1049715913,
         "attachable_sgid": "BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiK2dpZDovL2JjMy9QZXJzb24vMTA0OTcxNTkxMz9leHBpcmVzX2luBjsAVEkiCHB1cgY7AFRJIg9hdHRhY2hhYmxlBjsAVA==--e627c45e6b34e08862da23906862412620e4d5d9",
@@ -772,8 +686,8 @@ Get person's timeline
         "title": "Chief Strategist",
         "bio": "Don’t let your dreams be dreams",
         "location": "Chicago, IL",
-        "created_at": "2026-01-31T08:29:28.365Z",
-        "updated_at": "2026-01-31T08:29:32.599Z",
+        "created_at": "2026-02-12T06:08:49.342Z",
+        "updated_at": "2026-02-12T06:08:50.871Z",
         "admin": true,
         "owner": true,
         "client": false,
@@ -787,7 +701,7 @@ Get person's timeline
         "can_ping": true,
         "can_manage_projects": true,
         "can_manage_people": true,
-        "can_access_timesheet": true,
+        "can_access_timesheet": false,
         "can_access_hill_charts": true
       },
       "action": "Victor C. added a to-do",
@@ -796,20 +710,20 @@ Get person's timeline
       "summary_excerpt": "Install ShipShape",
       "avatars_sample": [],
       "bucket": {
-        "id": 2085958515,
+        "id": 2085958509,
         "name": "New project from template",
-        "url": "https://3.basecampapi.com/195539477/projects/2085958515.json",
-        "app_url": "https://3.basecamp.com/195539477/projects/2085958515"
+        "url": "https://3.basecampapi.com/195539477/projects/2085958509.json",
+        "app_url": "https://3.basecamp.com/195539477/projects/2085958509"
       },
       "attachments": []
     },
     {
-      "id": 1071915840,
-      "created_at": "2026-02-06T22:45:32.213Z",
+      "id": 1071915645,
+      "created_at": "2026-02-12T06:13:12.885Z",
       "kind": "todo_created",
-      "parent_recording_id": 1069480069,
-      "url": "https://3.basecampapi.com/195539477/buckets/2085958515/todos/1069480071.json",
-      "app_url": "https://3.basecamp.com/195539477/buckets/2085958515/todos/1069480071",
+      "parent_recording_id": 1069479926,
+      "url": "https://3.basecampapi.com/195539477/buckets/2085958509/todos/1069479928.json",
+      "app_url": "https://3.basecamp.com/195539477/buckets/2085958509/todos/1069479928",
       "creator": {
         "id": 1049715913,
         "attachable_sgid": "BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiK2dpZDovL2JjMy9QZXJzb24vMTA0OTcxNTkxMz9leHBpcmVzX2luBjsAVEkiCHB1cgY7AFRJIg9hdHRhY2hhYmxlBjsAVA==--e627c45e6b34e08862da23906862412620e4d5d9",
@@ -819,8 +733,8 @@ Get person's timeline
         "title": "Chief Strategist",
         "bio": "Don’t let your dreams be dreams",
         "location": "Chicago, IL",
-        "created_at": "2026-01-31T08:29:28.365Z",
-        "updated_at": "2026-01-31T08:29:32.599Z",
+        "created_at": "2026-02-12T06:08:49.342Z",
+        "updated_at": "2026-02-12T06:08:50.871Z",
         "admin": true,
         "owner": true,
         "client": false,
@@ -834,7 +748,7 @@ Get person's timeline
         "can_ping": true,
         "can_manage_projects": true,
         "can_manage_people": true,
-        "can_access_timesheet": true,
+        "can_access_timesheet": false,
         "can_access_hill_charts": true
       },
       "action": "Victor C. added a to-do",
@@ -843,20 +757,20 @@ Get person's timeline
       "summary_excerpt": "Talk to Jerry about holidays",
       "avatars_sample": [],
       "bucket": {
-        "id": 2085958515,
+        "id": 2085958509,
         "name": "New project from template",
-        "url": "https://3.basecampapi.com/195539477/projects/2085958515.json",
-        "app_url": "https://3.basecamp.com/195539477/projects/2085958515"
+        "url": "https://3.basecampapi.com/195539477/projects/2085958509.json",
+        "app_url": "https://3.basecamp.com/195539477/projects/2085958509"
       },
       "attachments": []
     },
     {
-      "id": 1071915839,
-      "created_at": "2026-02-06T22:45:32.146Z",
+      "id": 1071915644,
+      "created_at": "2026-02-12T06:13:12.854Z",
       "kind": "todo_created",
-      "parent_recording_id": 1069480069,
-      "url": "https://3.basecampapi.com/195539477/buckets/2085958515/todos/1069480070.json",
-      "app_url": "https://3.basecamp.com/195539477/buckets/2085958515/todos/1069480070",
+      "parent_recording_id": 1069479926,
+      "url": "https://3.basecampapi.com/195539477/buckets/2085958509/todos/1069479927.json",
+      "app_url": "https://3.basecamp.com/195539477/buckets/2085958509/todos/1069479927",
       "creator": {
         "id": 1049715913,
         "attachable_sgid": "BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiK2dpZDovL2JjMy9QZXJzb24vMTA0OTcxNTkxMz9leHBpcmVzX2luBjsAVEkiCHB1cgY7AFRJIg9hdHRhY2hhYmxlBjsAVA==--e627c45e6b34e08862da23906862412620e4d5d9",
@@ -866,8 +780,8 @@ Get person's timeline
         "title": "Chief Strategist",
         "bio": "Don’t let your dreams be dreams",
         "location": "Chicago, IL",
-        "created_at": "2026-01-31T08:29:28.365Z",
-        "updated_at": "2026-01-31T08:29:32.599Z",
+        "created_at": "2026-02-12T06:08:49.342Z",
+        "updated_at": "2026-02-12T06:08:50.871Z",
         "admin": true,
         "owner": true,
         "client": false,
@@ -881,7 +795,7 @@ Get person's timeline
         "can_ping": true,
         "can_manage_projects": true,
         "can_manage_people": true,
-        "can_access_timesheet": true,
+        "can_access_timesheet": false,
         "can_access_hill_charts": true
       },
       "action": "Victor C. added a to-do",
@@ -890,19 +804,19 @@ Get person's timeline
       "summary_excerpt": "Talk to Cheryl about benefits",
       "avatars_sample": [],
       "bucket": {
-        "id": 2085958515,
+        "id": 2085958509,
         "name": "New project from template",
-        "url": "https://3.basecampapi.com/195539477/projects/2085958515.json",
-        "app_url": "https://3.basecamp.com/195539477/projects/2085958515"
+        "url": "https://3.basecampapi.com/195539477/projects/2085958509.json",
+        "app_url": "https://3.basecamp.com/195539477/projects/2085958509"
       },
       "attachments": []
     },
     {
-      "id": 1071915833,
-      "created_at": "2026-02-06T22:45:31.892Z",
+      "id": 1071915638,
+      "created_at": "2026-02-12T06:13:12.685Z",
       "kind": "dock_created",
-      "url": "https://3.basecampapi.com/195539477/buckets/2085958515/dock.json",
-      "app_url": "https://3.basecamp.com/195539477/projects/2085958515",
+      "url": "https://3.basecampapi.com/195539477/buckets/2085958509/dock.json",
+      "app_url": "https://3.basecamp.com/195539477/projects/2085958509",
       "creator": {
         "id": 1049715913,
         "attachable_sgid": "BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiK2dpZDovL2JjMy9QZXJzb24vMTA0OTcxNTkxMz9leHBpcmVzX2luBjsAVEkiCHB1cgY7AFRJIg9hdHRhY2hhYmxlBjsAVA==--e627c45e6b34e08862da23906862412620e4d5d9",
@@ -912,8 +826,8 @@ Get person's timeline
         "title": "Chief Strategist",
         "bio": "Don’t let your dreams be dreams",
         "location": "Chicago, IL",
-        "created_at": "2026-01-31T08:29:28.365Z",
-        "updated_at": "2026-01-31T08:29:32.599Z",
+        "created_at": "2026-02-12T06:08:49.342Z",
+        "updated_at": "2026-02-12T06:08:50.871Z",
         "admin": true,
         "owner": true,
         "client": false,
@@ -927,7 +841,7 @@ Get person's timeline
         "can_ping": true,
         "can_manage_projects": true,
         "can_manage_people": true,
-        "can_access_timesheet": true,
+        "can_access_timesheet": false,
         "can_access_hill_charts": true
       },
       "action": "Victor C. started a new project called New project from template",
@@ -936,20 +850,17 @@ Get person's timeline
       "summary_excerpt": null,
       "avatars_sample": [],
       "bucket": {
-        "id": 2085958515,
+        "id": 2085958509,
         "name": "New project from template",
-        "url": "https://3.basecampapi.com/195539477/projects/2085958515.json",
-        "app_url": "https://3.basecamp.com/195539477/projects/2085958515"
+        "url": "https://3.basecampapi.com/195539477/projects/2085958509.json",
+        "app_url": "https://3.basecamp.com/195539477/projects/2085958509"
       },
       "attachments": []
     },
     {
-      "id": 1071915810,
-      "created_at": "2026-02-06T22:44:52.980Z",
-      "kind": "todo_created",
-      "parent_recording_id": 1069480044,
-      "url": "https://3.basecampapi.com/195539477/buckets/2085958514/todos/1069480047.json",
-      "app_url": "https://3.basecamp.com/195539477/buckets/2085958514/todos/1069480047",
+      "id": 1071915629,
+      "created_at": "2026-02-12T06:11:41.619Z",
+      "kind": "project_webhook_created",
       "creator": {
         "id": 1049715913,
         "attachable_sgid": "BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiK2dpZDovL2JjMy9QZXJzb24vMTA0OTcxNTkxMz9leHBpcmVzX2luBjsAVEkiCHB1cgY7AFRJIg9hdHRhY2hhYmxlBjsAVA==--e627c45e6b34e08862da23906862412620e4d5d9",
@@ -959,8 +870,8 @@ Get person's timeline
         "title": "Chief Strategist",
         "bio": "Don’t let your dreams be dreams",
         "location": "Chicago, IL",
-        "created_at": "2026-01-31T08:29:28.365Z",
-        "updated_at": "2026-01-31T08:29:32.599Z",
+        "created_at": "2026-02-12T06:08:49.342Z",
+        "updated_at": "2026-02-12T06:08:50.871Z",
         "admin": true,
         "owner": true,
         "client": false,
@@ -974,115 +885,20 @@ Get person's timeline
         "can_ping": true,
         "can_manage_projects": true,
         "can_manage_people": true,
-        "can_access_timesheet": true,
+        "can_access_timesheet": false,
         "can_access_hill_charts": true
       },
-      "action": "Victor C. added a to-do",
-      "target": "First things first",
-      "title": "On “First things first”, Victor C. added",
-      "summary_excerpt": "Install ShipShape",
+      "action": "Victor C. added a webhook to this project",
+      "target": null,
+      "title": "Victor C. added a webhook to this project",
+      "summary_excerpt": "Some information will now be sent to https://example.com/endpoint",
       "avatars_sample": [],
       "bucket": {
-        "id": 2085958514,
-        "name": "New project from template",
-        "url": "https://3.basecampapi.com/195539477/projects/2085958514.json",
-        "app_url": "https://3.basecamp.com/195539477/projects/2085958514"
-      },
-      "attachments": []
-    },
-    {
-      "id": 1071915809,
-      "created_at": "2026-02-06T22:44:52.919Z",
-      "kind": "todo_created",
-      "parent_recording_id": 1069480044,
-      "url": "https://3.basecampapi.com/195539477/buckets/2085958514/todos/1069480046.json",
-      "app_url": "https://3.basecamp.com/195539477/buckets/2085958514/todos/1069480046",
-      "creator": {
-        "id": 1049715913,
-        "attachable_sgid": "BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiK2dpZDovL2JjMy9QZXJzb24vMTA0OTcxNTkxMz9leHBpcmVzX2luBjsAVEkiCHB1cgY7AFRJIg9hdHRhY2hhYmxlBjsAVA==--e627c45e6b34e08862da23906862412620e4d5d9",
-        "name": "Victor Cooper",
-        "email_address": "victor@honchodesign.com",
-        "personable_type": "User",
-        "title": "Chief Strategist",
-        "bio": "Don’t let your dreams be dreams",
-        "location": "Chicago, IL",
-        "created_at": "2026-01-31T08:29:28.365Z",
-        "updated_at": "2026-01-31T08:29:32.599Z",
-        "admin": true,
-        "owner": true,
-        "client": false,
-        "employee": true,
-        "time_zone": "America/Chicago",
-        "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBMlkkT4=--5fe7b70fbee7a7f0e2e1e19df7579e5d880c753d/avatar?v=1",
-        "company": {
-          "id": 1033447817,
-          "name": "Honcho Design"
-        },
-        "can_ping": true,
-        "can_manage_projects": true,
-        "can_manage_people": true,
-        "can_access_timesheet": true,
-        "can_access_hill_charts": true
-      },
-      "action": "Victor C. added a to-do",
-      "target": "First things first",
-      "title": "On “First things first”, Victor C. added",
-      "summary_excerpt": "Talk to Jerry about holidays",
-      "avatars_sample": [],
-      "bucket": {
-        "id": 2085958514,
-        "name": "New project from template",
-        "url": "https://3.basecampapi.com/195539477/projects/2085958514.json",
-        "app_url": "https://3.basecamp.com/195539477/projects/2085958514"
-      },
-      "attachments": []
-    },
-    {
-      "id": 1071915808,
-      "created_at": "2026-02-06T22:44:52.863Z",
-      "kind": "todo_created",
-      "parent_recording_id": 1069480044,
-      "url": "https://3.basecampapi.com/195539477/buckets/2085958514/todos/1069480045.json",
-      "app_url": "https://3.basecamp.com/195539477/buckets/2085958514/todos/1069480045",
-      "creator": {
-        "id": 1049715913,
-        "attachable_sgid": "BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiK2dpZDovL2JjMy9QZXJzb24vMTA0OTcxNTkxMz9leHBpcmVzX2luBjsAVEkiCHB1cgY7AFRJIg9hdHRhY2hhYmxlBjsAVA==--e627c45e6b34e08862da23906862412620e4d5d9",
-        "name": "Victor Cooper",
-        "email_address": "victor@honchodesign.com",
-        "personable_type": "User",
-        "title": "Chief Strategist",
-        "bio": "Don’t let your dreams be dreams",
-        "location": "Chicago, IL",
-        "created_at": "2026-01-31T08:29:28.365Z",
-        "updated_at": "2026-01-31T08:29:32.599Z",
-        "admin": true,
-        "owner": true,
-        "client": false,
-        "employee": true,
-        "time_zone": "America/Chicago",
-        "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBMlkkT4=--5fe7b70fbee7a7f0e2e1e19df7579e5d880c753d/avatar?v=1",
-        "company": {
-          "id": 1033447817,
-          "name": "Honcho Design"
-        },
-        "can_ping": true,
-        "can_manage_projects": true,
-        "can_manage_people": true,
-        "can_access_timesheet": true,
-        "can_access_hill_charts": true
-      },
-      "action": "Victor C. added a to-do",
-      "target": "First things first",
-      "title": "On “First things first”, Victor C. added",
-      "summary_excerpt": "Talk to Cheryl about benefits",
-      "avatars_sample": [],
-      "bucket": {
-        "id": 2085958514,
-        "name": "New project from template",
-        "url": "https://3.basecampapi.com/195539477/projects/2085958514.json",
-        "app_url": "https://3.basecamp.com/195539477/projects/2085958514"
-      },
-      "attachments": []
+        "id": 2085958504,
+        "name": "The Leto Laptop",
+        "url": "https://3.basecampapi.com/195539477/projects/2085958504.json",
+        "app_url": "https://3.basecamp.com/195539477/projects/2085958504"
+      }
     }
   ]
 }

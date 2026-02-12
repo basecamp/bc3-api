@@ -12,7 +12,7 @@ Endpoints:
 Get schedule entries
 --------------------
 
-* `GET /buckets/1/schedules/3/entries.json` will return a [paginated list][pagination] of active schedule entries in the project with an ID of `1` and the schedule with ID of `3`.
+* `GET /schedules/3/entries.json` will return a [paginated list][pagination] of active schedule entries in the schedule with ID of `3`.
 
 To get the schedule ID for a project, see the [Get schedule][schedule] endpoint.
 
@@ -21,26 +21,26 @@ _Optional query parameters_:
 * `status` - when set to `archived` or `trashed`, will return archived or trashed schedule entries that are in this schedule.
 
 ###### Example JSON Response
-<!-- START GET /buckets/1/schedules/3/entries.json -->
+<!-- START GET /schedules/3/entries.json -->
 ```json
 [
   {
-    "id": 1069479912,
+    "id": 1069479914,
     "status": "active",
     "visible_to_clients": false,
-    "created_at": "2026-01-31T08:36:21.028Z",
-    "updated_at": "2026-01-31T08:36:21.903Z",
+    "created_at": "2026-02-12T06:10:28.094Z",
+    "updated_at": "2026-02-12T06:10:28.415Z",
     "title": "Team Meeting",
     "inherits_status": true,
     "type": "Schedule::Entry",
-    "url": "https://3.basecampapi.com/195539477/buckets/2085958504/schedule_entries/1069479912.json",
-    "app_url": "https://3.basecamp.com/195539477/buckets/2085958504/schedule_entries/1069479912",
-    "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiLmdpZDovL2JjMy9SZWNvcmRpbmcvMTA2OTQ3OTkxMj9leHBpcmVzX2luBjsAVEkiCHB1cgY7AFRJIg1yZWFkYWJsZQY7AFQ=--1c88dffbb88f2382add4122242aca5e1bd46ba40.json",
-    "subscription_url": "https://3.basecampapi.com/195539477/buckets/2085958504/recordings/1069479912/subscription.json",
+    "url": "https://3.basecampapi.com/195539477/buckets/2085958504/schedule_entries/1069479914.json",
+    "app_url": "https://3.basecamp.com/195539477/buckets/2085958504/schedule_entries/1069479914",
+    "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiLmdpZDovL2JjMy9SZWNvcmRpbmcvMTA2OTQ3OTkxND9leHBpcmVzX2luBjsAVEkiCHB1cgY7AFRJIg1yZWFkYWJsZQY7AFQ=--1616343b17ee8ece05fd271474b85fe06a864667.json",
+    "subscription_url": "https://3.basecampapi.com/195539477/buckets/2085958504/recordings/1069479914/subscription.json",
     "comments_count": 0,
-    "comments_url": "https://3.basecampapi.com/195539477/buckets/2085958504/recordings/1069479912/comments.json",
+    "comments_url": "https://3.basecampapi.com/195539477/buckets/2085958504/recordings/1069479914/comments.json",
     "boosts_count": 0,
-    "boosts_url": "https://3.basecampapi.com/195539477/buckets/2085958504/recordings/1069479912/boosts.json",
+    "boosts_url": "https://3.basecampapi.com/195539477/buckets/2085958504/recordings/1069479914/boosts.json",
     "parent": {
       "id": 1069479396,
       "title": "Schedule",
@@ -62,8 +62,8 @@ _Optional query parameters_:
       "title": "Chief Strategist",
       "bio": "Don’t let your dreams be dreams",
       "location": "Chicago, IL",
-      "created_at": "2026-01-31T08:29:28.365Z",
-      "updated_at": "2026-01-31T08:29:32.599Z",
+      "created_at": "2026-02-12T06:08:49.342Z",
+      "updated_at": "2026-02-12T06:08:50.871Z",
       "admin": true,
       "owner": true,
       "client": false,
@@ -77,14 +77,14 @@ _Optional query parameters_:
       "can_ping": true,
       "can_manage_projects": true,
       "can_manage_people": true,
-      "can_access_timesheet": true,
+      "can_access_timesheet": false,
       "can_access_hill_charts": true
     },
     "description": "<div>Time to synergize!</div>",
     "summary": "Team Meeting",
     "all_day": false,
-    "starts_at": "2026-02-08T00:48:58.572Z",
-    "ends_at": "2026-02-08T04:48:58.572Z",
+    "starts_at": "2026-02-13T08:10:28.050Z",
+    "ends_at": "2026-02-13T12:10:28.050Z",
     "participants": [
       {
         "id": 1049715944,
@@ -95,8 +95,8 @@ _Optional query parameters_:
         "title": "Legacy Directives Strategist",
         "bio": "You can do it!",
         "location": null,
-        "created_at": "2026-01-31T08:29:46.012Z",
-        "updated_at": "2026-01-31T08:29:46.012Z",
+        "created_at": "2026-02-12T06:08:59.344Z",
+        "updated_at": "2026-02-12T06:08:59.344Z",
         "admin": false,
         "owner": false,
         "client": false,
@@ -110,48 +110,48 @@ _Optional query parameters_:
         "can_ping": true,
         "can_manage_projects": true,
         "can_manage_people": true,
-        "can_access_timesheet": true,
+        "can_access_timesheet": false,
         "can_access_hill_charts": true
       }
     ]
   }
 ]
 ```
-<!-- END GET /buckets/1/schedules/3/entries.json -->
+<!-- END GET /schedules/3/entries.json -->
 ###### Copy as cURL
 
 ```shell
-curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/schedules/3/entries.json
+curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/schedules/3/entries.json
 ```
 
 
 Get a schedule entry
 --------------------
 
-* `GET /buckets/1/schedule_entries/2.json` will return the schedule entry with an ID of `2` in the project with an ID of `1`.
+* `GET /schedule_entries/2.json` will return the schedule entry with an ID of `2`.
 
-**Note:** this endpoint redirects to the first individual occurrence of the entry, for **recurring schedule entries**. It's also possible to access a recurring schedule entry via any of the individual occurrences: `GET /buckets/1/schedule_entries/2/occurrences/20190218.json` will return the occurrence for a recurring schedule entry with an ID of `2`, happening on `2019-02-18`, in the project with an ID of `1`. It'll return 404 for invalid occurrences.
+**Note:** this endpoint redirects to the first individual occurrence of the entry, for **recurring schedule entries**. It's also possible to access a recurring schedule entry via any of the individual occurrences: `GET /schedule_entries/2/occurrences/20190218.json` will return the occurrence for a recurring schedule entry with an ID of `2`, happening on `2019-02-18`. It'll return 404 for invalid occurrences.
 
 ###### Example JSON Response
-<!-- START GET /buckets/1/schedule_entries/2.json -->
+<!-- START GET /schedule_entries/2.json -->
 ```json
 {
-  "id": 1069479912,
+  "id": 1069479914,
   "status": "active",
   "visible_to_clients": false,
-  "created_at": "2026-01-31T08:36:21.028Z",
-  "updated_at": "2026-01-31T08:36:21.903Z",
+  "created_at": "2026-02-12T06:10:28.094Z",
+  "updated_at": "2026-02-12T06:10:28.415Z",
   "title": "Team Meeting",
   "inherits_status": true,
   "type": "Schedule::Entry",
-  "url": "https://3.basecampapi.com/195539477/buckets/2085958504/schedule_entries/1069479912.json",
-  "app_url": "https://3.basecamp.com/195539477/buckets/2085958504/schedule_entries/1069479912",
-  "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiLmdpZDovL2JjMy9SZWNvcmRpbmcvMTA2OTQ3OTkxMj9leHBpcmVzX2luBjsAVEkiCHB1cgY7AFRJIg1yZWFkYWJsZQY7AFQ=--1c88dffbb88f2382add4122242aca5e1bd46ba40.json",
-  "subscription_url": "https://3.basecampapi.com/195539477/buckets/2085958504/recordings/1069479912/subscription.json",
+  "url": "https://3.basecampapi.com/195539477/buckets/2085958504/schedule_entries/1069479914.json",
+  "app_url": "https://3.basecamp.com/195539477/buckets/2085958504/schedule_entries/1069479914",
+  "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiLmdpZDovL2JjMy9SZWNvcmRpbmcvMTA2OTQ3OTkxND9leHBpcmVzX2luBjsAVEkiCHB1cgY7AFRJIg1yZWFkYWJsZQY7AFQ=--1616343b17ee8ece05fd271474b85fe06a864667.json",
+  "subscription_url": "https://3.basecampapi.com/195539477/buckets/2085958504/recordings/1069479914/subscription.json",
   "comments_count": 0,
-  "comments_url": "https://3.basecampapi.com/195539477/buckets/2085958504/recordings/1069479912/comments.json",
+  "comments_url": "https://3.basecampapi.com/195539477/buckets/2085958504/recordings/1069479914/comments.json",
   "boosts_count": 0,
-  "boosts_url": "https://3.basecampapi.com/195539477/buckets/2085958504/recordings/1069479912/boosts.json",
+  "boosts_url": "https://3.basecampapi.com/195539477/buckets/2085958504/recordings/1069479914/boosts.json",
   "parent": {
     "id": 1069479396,
     "title": "Schedule",
@@ -173,8 +173,8 @@ Get a schedule entry
     "title": "Chief Strategist",
     "bio": "Don’t let your dreams be dreams",
     "location": "Chicago, IL",
-    "created_at": "2026-01-31T08:29:28.365Z",
-    "updated_at": "2026-01-31T08:29:32.599Z",
+    "created_at": "2026-02-12T06:08:49.342Z",
+    "updated_at": "2026-02-12T06:08:50.871Z",
     "admin": true,
     "owner": true,
     "client": false,
@@ -188,14 +188,14 @@ Get a schedule entry
     "can_ping": true,
     "can_manage_projects": true,
     "can_manage_people": true,
-    "can_access_timesheet": true,
+    "can_access_timesheet": false,
     "can_access_hill_charts": true
   },
   "description": "<div>Time to synergize!</div>",
   "summary": "Team Meeting",
   "all_day": false,
-  "starts_at": "2026-02-08T00:48:58.572Z",
-  "ends_at": "2026-02-08T04:48:58.572Z",
+  "starts_at": "2026-02-13T08:10:28.050Z",
+  "ends_at": "2026-02-13T12:10:28.050Z",
   "participants": [
     {
       "id": 1049715944,
@@ -206,8 +206,8 @@ Get a schedule entry
       "title": "Legacy Directives Strategist",
       "bio": "You can do it!",
       "location": null,
-      "created_at": "2026-01-31T08:29:46.012Z",
-      "updated_at": "2026-01-31T08:29:46.012Z",
+      "created_at": "2026-02-12T06:08:59.344Z",
+      "updated_at": "2026-02-12T06:08:59.344Z",
       "admin": false,
       "owner": false,
       "client": false,
@@ -221,13 +221,13 @@ Get a schedule entry
       "can_ping": true,
       "can_manage_projects": true,
       "can_manage_people": true,
-      "can_access_timesheet": true,
+      "can_access_timesheet": false,
       "can_access_hill_charts": true
     }
   ]
 }
 ```
-<!-- END GET /buckets/1/schedule_entries/2.json -->
+<!-- END GET /schedule_entries/2.json -->
 
 Recurring schedule entries will include an additional `recurrence_schedule` attribute. For example:
 
@@ -248,14 +248,14 @@ Recurring schedule entries will include an additional `recurrence_schedule` attr
 ###### Copy as cURL
 
 ```shell
-curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/schedule_entries/2.json
+curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/schedule_entries/2.json
 ```
 
 
 Create a schedule entry
 -----------------------
 
-* `POST /buckets/1/schedules/3/entries.json` creates a schedule entry in the project with ID `1` and under the schedule with an ID of `3`.
+* `POST /schedules/3/entries.json` creates a schedule entry under the schedule with an ID of `3`.
 
 **Required parameters**:
 
@@ -287,14 +287,14 @@ This endpoint will return `201 Created` with the current JSON representation of 
 ```shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" \
   -d '{"summary":"Important Meeting","starts_at":"2015-06-04T00:00:00Z","ends_at":"2015-06-04T00:00:00Z"}' \
-  https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/schedules/3/entries.json
+  https://3.basecampapi.com/$ACCOUNT_ID/schedules/3/entries.json
 ```
 
 
 Update a schedule entry
 -----------------------
 
-* `PUT /buckets/1/schedule_entries/2.json` allows changing of the schedule entry with an ID of `2` in the project with ID `1`.
+* `PUT /schedule_entries/2.json` allows changing of the schedule entry with an ID of `2`.
 
 Clients may change any of the required or optional parameters as listed in the [Create a schedule entry](#create-a-schedule-entry) endpoint.
 
@@ -316,9 +316,19 @@ This endpoint will return `200 OK` with the current JSON representation of the s
 ```shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" \
   -d '{"summary":"All Day Meeting","starts_at":"2015-06-04","ends_at":"2015-06-04","all_day":true}' -X PUT \
-  https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/schedule_entries/2.json
+  https://3.basecampapi.com/$ACCOUNT_ID/schedule_entries/2.json
 ```
 
+
+Legacy project-scoped routes
+-----------------------------
+
+The following project-scoped routes are still supported and will remain available, but flat routes above are the canonical form for new integrations.
+
+* `GET /buckets/1/schedules/3/entries.json` → [Get schedule entries](#get-schedule-entries)
+* `GET /buckets/1/schedule_entries/2.json` → [Get a schedule entry](#get-a-schedule-entry)
+* `POST /buckets/1/schedules/3/entries.json` → [Create a schedule entry](#create-a-schedule-entry)
+* `PUT /buckets/1/schedule_entries/2.json` → [Update a schedule entry](#update-a-schedule-entry)
 
 [trash]: https://github.com/basecamp/bc3-api/blob/master/sections/recordings.md#trash-a-recording
 [pagination]: https://github.com/basecamp/bc3-api/blob/master/README.md#pagination
