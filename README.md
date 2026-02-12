@@ -53,6 +53,32 @@ Then you should be able to copy/paste any example from the docs. After pasting a
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/999999999/projects.json | json_pp
 ```
 
+
+Flat routes
+-----------
+
+Every resource in the Basecamp 4 API is uniquely identified by its own ID. You can access any resource directly without including its project (bucket) in the URL:
+
+```
+GET /todos/67890.json
+GET /messages/12345.json
+GET /todolists/456/todos.json
+```
+
+These **flat routes** are the canonical form for all new integrations. The project context is derived server-side from the resource itself, so you rarely need to supply a `bucket_id`. A few project-level collection endpoints (message types, webhooks index/create, tools) still require the project-scoped form — these are noted in their respective sections.
+
+For listing and creating resources under a parent, use the parent's ID directly:
+
+```
+GET  /todolists/456/todos.json        # list to-dos in a to-do list
+POST /todolists/456/todos.json        # create a to-do in a to-do list
+GET  /message_boards/789/messages.json # list messages on a board
+POST /recordings/123/comments.json     # comment on any recording
+```
+
+The previous project-scoped form — `/buckets/{project_id}/...` — remains available and will continue to work in perpetuity, but is considered legacy. All endpoint documentation in this guide uses flat routes as the primary form, with legacy equivalents noted at the bottom of each section.
+
+
 Authentication
 --------------
 
@@ -93,7 +119,7 @@ Most collection APIs paginate their results. The number of requests that'll appe
 Here's an example response header from requesting the third page of [messages](sections/messages.md#messages):
 
 ```
-Link: <https://3.basecampapi.com/999999999/buckets/2085958496/messages.json?page=4>; rel="next"
+Link: <https://3.basecampapi.com/999999999/message_boards/3/messages.json?page=4>; rel="next"
 ```
 
 If the `Link` header is blank, that's the last page. The Basecamp 4 API also provides the `X-Total-Count` header, which displays the total number of resources in the collection you are fetching.
@@ -145,15 +171,24 @@ Understanding Basecamp's domain model helps you navigate the API effectively.
 
 ### The bucket/project relationship
 
-Every project has exactly one **bucket**—its storage container for all content. In API URLs, `bucket_id` and project ID are the same value:
+Every project has exactly one **bucket**—its storage container for all content. The `bucket_id` and project ID are the same value.
+
+With flat routes, you don't need to know the bucket ID to access a resource — just use the resource's own ID:
 
 ```
-/buckets/12345/todolists/67890.json
-         ↑
-    This is the project ID
+GET /todos/67890.json          # access a to-do directly
+GET /todolists/456/todos.json  # list to-dos in a to-do list
 ```
 
-When you see `/buckets/{id}/...` in the API, think "project." (Templates also have buckets internally, but they use `/templates/...` endpoints.)
+The legacy project-scoped form includes the bucket explicitly:
+
+```
+GET /buckets/12345/todos/67890.json
+             ↑
+        This is the project ID
+```
+
+Both forms return identical responses. Flat routes are preferred for all new integrations.
 
 ### Recordings: bucket contents
 
@@ -196,8 +231,8 @@ Project
               └── To-do item
 ```
 
-To create a to-do list, POST to the **to-do set**, not the project:
-`POST /buckets/{project_id}/todosets/{todoset_id}/todolists.json`
+To create a to-do list, POST to the **to-do set**:
+`POST /todosets/{todoset_id}/todolists.json`
 
 ### Similar patterns for other tools
 

@@ -28,8 +28,8 @@ This endpoint is useful for building a list of people to then retrieve their ind
     "title": "Central Web Coordinator",
     "bio": "I never said most of the things I said",
     "location": null,
-    "created_at": "2026-01-31T08:29:32.987Z",
-    "updated_at": "2026-01-31T08:29:32.987Z",
+    "created_at": "2026-02-12T06:08:51.167Z",
+    "updated_at": "2026-02-12T06:08:51.167Z",
     "admin": false,
     "owner": false,
     "client": false,
@@ -39,7 +39,7 @@ This endpoint is useful for building a list of people to then retrieve their ind
     "can_ping": true,
     "can_manage_projects": true,
     "can_manage_people": true,
-    "can_access_timesheet": true,
+    "can_access_timesheet": false,
     "can_access_hill_charts": true
   }
 ]
@@ -73,8 +73,8 @@ _Optional query parameters_:
     "title": "Central Web Coordinator",
     "bio": "I never said most of the things I said",
     "location": null,
-    "created_at": "2026-01-31T08:29:32.987Z",
-    "updated_at": "2026-01-31T08:29:32.987Z",
+    "created_at": "2026-02-12T06:08:51.167Z",
+    "updated_at": "2026-02-12T06:08:51.167Z",
     "admin": false,
     "owner": false,
     "client": false,
@@ -84,7 +84,7 @@ _Optional query parameters_:
     "can_ping": true,
     "can_manage_projects": true,
     "can_manage_people": true,
-    "can_access_timesheet": true,
+    "can_access_timesheet": false,
     "can_access_hill_charts": true
   },
   "grouped_by": "bucket",
@@ -93,8 +93,8 @@ _Optional query parameters_:
       "id": 1069479164,
       "status": "active",
       "visible_to_clients": false,
-      "created_at": "2026-01-02T02:59:00.000Z",
-      "updated_at": "2026-01-02T02:59:00.000Z",
+      "created_at": "2026-01-14T04:18:00.000Z",
+      "updated_at": "2026-01-14T04:18:00.000Z",
       "title": "Amy vs. Sharon",
       "inherits_status": true,
       "type": "Todo",
@@ -104,6 +104,8 @@ _Optional query parameters_:
       "subscription_url": "https://3.basecampapi.com/195539477/buckets/2085958502/recordings/1069479164/subscription.json",
       "comments_count": 0,
       "comments_url": "https://3.basecampapi.com/195539477/buckets/2085958502/recordings/1069479164/comments.json",
+      "boosts_count": 0,
+      "boosts_url": "https://3.basecampapi.com/195539477/buckets/2085958502/recordings/1069479164/boosts.json",
       "position": 2,
       "parent": {
         "id": 1069479162,
@@ -126,8 +128,8 @@ _Optional query parameters_:
         "title": "International Branding Liason",
         "bio": null,
         "location": null,
-        "created_at": "2026-01-31T08:29:34.525Z",
-        "updated_at": "2026-01-31T08:29:34.525Z",
+        "created_at": "2026-02-12T06:08:52.123Z",
+        "updated_at": "2026-02-12T06:08:52.123Z",
         "admin": false,
         "owner": false,
         "client": false,
@@ -137,7 +139,7 @@ _Optional query parameters_:
         "can_ping": true,
         "can_manage_projects": true,
         "can_manage_people": true,
-        "can_access_timesheet": true,
+        "can_access_timesheet": false,
         "can_access_hill_charts": true
       },
       "description": "",
@@ -155,8 +157,8 @@ _Optional query parameters_:
           "title": "Central Web Coordinator",
           "bio": "I never said most of the things I said",
           "location": null,
-          "created_at": "2026-01-31T08:29:32.987Z",
-          "updated_at": "2026-01-31T08:29:32.987Z",
+          "created_at": "2026-02-12T06:08:51.167Z",
+          "updated_at": "2026-02-12T06:08:51.167Z",
           "admin": false,
           "owner": false,
           "client": false,
@@ -166,12 +168,12 @@ _Optional query parameters_:
           "can_ping": true,
           "can_manage_projects": true,
           "can_manage_people": true,
-          "can_access_timesheet": true,
+          "can_access_timesheet": false,
           "can_access_hill_charts": true
         }
       ],
       "completion_subscribers": [],
-      "completion_url": "https://3.basecampapi.com/195539477/buckets/2085958502/todos/1069479164/completion.json"
+      "completion_url": "https://3.basecampapi.com/195539477/todos/1069479164/completion.json"
     }
   ]
 }
@@ -232,17 +234,17 @@ The response includes:
 {
   "schedule_entries": [
     {
-      "id": 1069479912,
+      "id": 1069479914,
       "status": "active",
       "visible_to_clients": false,
-      "url": "https://3.basecampapi.com/195539477/buckets/2085958504/schedule_entries/1069479912.json",
-      "app_url": "https://3.basecamp.com/195539477/buckets/2085958504/schedule_entries/1069479912",
+      "url": "https://3.basecampapi.com/195539477/buckets/2085958504/schedule_entries/1069479914.json",
+      "app_url": "https://3.basecamp.com/195539477/buckets/2085958504/schedule_entries/1069479914",
       "type": "ScheduleEntry",
       "summary": "Team Meeting",
       "all_day": false,
       "recurring": false,
-      "starts_at": "2026-02-08T00:48:58.572Z",
-      "ends_at": "2026-02-08T04:48:58.572Z",
+      "starts_at": "2026-02-13T08:10:28.050Z",
+      "ends_at": "2026-02-13T12:10:28.050Z",
       "creator": {
         "id": 1049715913,
         "name": "Victor Cooper",
@@ -263,7 +265,38 @@ The response includes:
     }
   ],
   "recurring_schedule_entry_occurrences": [],
-  "assignables": []
+  "assignables": [
+    {
+      "id": 1069479603,
+      "status": "active",
+      "visible_to_clients": false,
+      "url": "https://3.basecampapi.com/195539477/buckets/2085958504/card_tables/steps/1069479603.json",
+      "app_url": "https://3.basecamp.com/195539477/buckets/2085958504/card_tables/cards/1069479602#__recording_1069479603",
+      "starts_on": null,
+      "due_on": "2026-02-16",
+      "type": "step",
+      "content": "Find inspiration",
+      "assignees": [
+        {
+          "id": 1049715931,
+          "name": "Tashia Hughes",
+          "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBNtkkT4=--b72a5df90f237e00570273b726a82176287186e4/avatar?v=1"
+        }
+      ],
+      "bucket": {
+        "id": 2085958504,
+        "name": "The Leto Laptop"
+      },
+      "parent": {
+        "id": 1069479602,
+        "title": "New and fancy UI"
+      },
+      "completion_url": "/195539477/buckets/2085958504/card_tables/steps/1069479603/completions.json",
+      "completed": false,
+      "repeating": false,
+      "comments_count": 0
+    }
+  ]
 }
 ```
 <!-- END GET /reports/schedules/upcoming.json -->

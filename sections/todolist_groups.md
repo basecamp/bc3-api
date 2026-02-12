@@ -11,22 +11,22 @@ Endpoints:
 List to-do list groups
 ----------------------
 
-* `GET /buckets/1/todolists/2/groups.json` will return a [paginated list][pagination] of active groups in the project with an ID of `1` and the to-do list with ID of `2`.
+* `GET /todolists/2/groups.json` will return a [paginated list][pagination] of active groups in the to-do list with ID of `2`.
 
 _Optional query parameters_:
 
 * `status` - when set to `archived` or `trashed`, returns only archived or trashed to-do list groups within this to-do list.
 
 ###### Example JSON Response
-<!-- START GET /buckets/1/todolists/2/groups.json -->
+<!-- START GET /todolists/2/groups.json -->
 ```json
 [
   {
     "id": 1069479153,
     "status": "active",
     "visible_to_clients": false,
-    "created_at": "2026-01-01T22:32:00.000Z",
-    "updated_at": "2026-01-31T08:30:50.887Z",
+    "created_at": "2026-01-13T22:28:00.000Z",
+    "updated_at": "2026-02-12T06:09:14.559Z",
     "title": "Group A",
     "inherits_status": true,
     "type": "Todolist",
@@ -36,6 +36,8 @@ _Optional query parameters_:
     "subscription_url": "https://3.basecampapi.com/195539477/buckets/2085958502/recordings/1069479153/subscription.json",
     "comments_count": 0,
     "comments_url": "https://3.basecampapi.com/195539477/buckets/2085958502/recordings/1069479153/comments.json",
+    "boosts_count": 0,
+    "boosts_url": "https://3.basecampapi.com/195539477/buckets/2085958502/recordings/1069479153/boosts.json",
     "position": 1,
     "parent": {
       "id": 1069479152,
@@ -58,8 +60,8 @@ _Optional query parameters_:
       "title": "International Branding Liason",
       "bio": null,
       "location": null,
-      "created_at": "2026-01-31T08:29:34.525Z",
-      "updated_at": "2026-01-31T08:29:34.525Z",
+      "created_at": "2026-02-12T06:08:52.123Z",
+      "updated_at": "2026-02-12T06:08:52.123Z",
       "admin": false,
       "owner": false,
       "client": false,
@@ -69,7 +71,7 @@ _Optional query parameters_:
       "can_ping": true,
       "can_manage_projects": true,
       "can_manage_people": true,
-      "can_access_timesheet": true,
+      "can_access_timesheet": false,
       "can_access_hill_charts": true
     },
     "description": "",
@@ -86,8 +88,8 @@ _Optional query parameters_:
     "id": 1069479156,
     "status": "active",
     "visible_to_clients": false,
-    "created_at": "2026-01-01T22:58:00.000Z",
-    "updated_at": "2026-01-31T08:30:51.823Z",
+    "created_at": "2026-01-14T00:19:00.000Z",
+    "updated_at": "2026-02-12T06:09:14.938Z",
     "title": "Group B",
     "inherits_status": true,
     "type": "Todolist",
@@ -97,6 +99,8 @@ _Optional query parameters_:
     "subscription_url": "https://3.basecampapi.com/195539477/buckets/2085958502/recordings/1069479156/subscription.json",
     "comments_count": 0,
     "comments_url": "https://3.basecampapi.com/195539477/buckets/2085958502/recordings/1069479156/comments.json",
+    "boosts_count": 0,
+    "boosts_url": "https://3.basecampapi.com/195539477/buckets/2085958502/recordings/1069479156/boosts.json",
     "position": 2,
     "parent": {
       "id": 1069479152,
@@ -119,8 +123,8 @@ _Optional query parameters_:
       "title": "International Branding Liason",
       "bio": null,
       "location": null,
-      "created_at": "2026-01-31T08:29:34.525Z",
-      "updated_at": "2026-01-31T08:29:34.525Z",
+      "created_at": "2026-02-12T06:08:52.123Z",
+      "updated_at": "2026-02-12T06:08:52.123Z",
       "admin": false,
       "owner": false,
       "client": false,
@@ -130,7 +134,7 @@ _Optional query parameters_:
       "can_ping": true,
       "can_manage_projects": true,
       "can_manage_people": true,
-      "can_access_timesheet": true,
+      "can_access_timesheet": false,
       "can_access_hill_charts": true
     },
     "description": "",
@@ -145,11 +149,11 @@ _Optional query parameters_:
   }
 ]
 ```
-<!-- END GET /buckets/1/todolists/2/groups.json -->
+<!-- END GET /todolists/2/groups.json -->
 ###### Copy as cURL
 
 ```shell
-curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/todolists/2/groups.json
+curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/todolists/2/groups.json
 ```
 
 Get a to-do list group
@@ -158,17 +162,17 @@ Get a to-do list group
 To-do list groups can be read in exactly the same way as to-do lists. The only difference is a top-level to-do list will
 include a groups_url in its response, while a group will have a group_position_url
 
-* `GET /buckets/1/todolists/3.json` will return the to-do list group with an ID of `3` in the project with an ID of `1`.
+* `GET /todolists/3.json` will return the to-do list group with an ID of `3`.
 
 ###### Example JSON Response
-<!-- START GET /buckets/1/todolists/3.json -->
+<!-- START GET /todolists/3.json -->
 ```json
 {
   "id": 1069479153,
   "status": "active",
   "visible_to_clients": false,
-  "created_at": "2026-01-01T22:32:00.000Z",
-  "updated_at": "2026-01-31T08:30:50.887Z",
+  "created_at": "2026-01-13T22:28:00.000Z",
+  "updated_at": "2026-02-12T06:09:14.559Z",
   "title": "Group A",
   "inherits_status": true,
   "type": "Todolist",
@@ -178,6 +182,8 @@ include a groups_url in its response, while a group will have a group_position_u
   "subscription_url": "https://3.basecampapi.com/195539477/buckets/2085958502/recordings/1069479153/subscription.json",
   "comments_count": 0,
   "comments_url": "https://3.basecampapi.com/195539477/buckets/2085958502/recordings/1069479153/comments.json",
+  "boosts_count": 0,
+  "boosts_url": "https://3.basecampapi.com/195539477/buckets/2085958502/recordings/1069479153/boosts.json",
   "position": 1,
   "parent": {
     "id": 1069479152,
@@ -200,8 +206,8 @@ include a groups_url in its response, while a group will have a group_position_u
     "title": "International Branding Liason",
     "bio": null,
     "location": null,
-    "created_at": "2026-01-31T08:29:34.525Z",
-    "updated_at": "2026-01-31T08:29:34.525Z",
+    "created_at": "2026-02-12T06:08:52.123Z",
+    "updated_at": "2026-02-12T06:08:52.123Z",
     "admin": false,
     "owner": false,
     "client": false,
@@ -211,7 +217,7 @@ include a groups_url in its response, while a group will have a group_position_u
     "can_ping": true,
     "can_manage_projects": true,
     "can_manage_people": true,
-    "can_access_timesheet": true,
+    "can_access_timesheet": false,
     "can_access_hill_charts": true
   },
   "description": "",
@@ -225,12 +231,12 @@ include a groups_url in its response, while a group will have a group_position_u
   "comments_app_url": "https://3.basecamp.com/195539477/buckets/2085958502/recordings/1069479153/comments"
 }
 ```
-<!-- END GET /buckets/1/todolists/3.json -->
+<!-- END GET /todolists/3.json -->
 
 Create a to-do list group
 -------------------------
 
-* `POST /buckets/1/todolists/2/groups.json` creates a to-do group within the todolist with ID `2` in the project with id `1`.
+* `POST /todolists/2/groups.json` creates a to-do group within the todolist with ID `2`.
 
 **Required parameters**: `name` of the to-do list group.
 
@@ -253,13 +259,13 @@ This endpoint will return `201 Created` with the current JSON representation of 
 ```shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" \
   -d '{"name":"The Spencer Davis Group"}' \
-  https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/todolists/2/groups.json
+  https://3.basecampapi.com/$ACCOUNT_ID/todolists/2/groups.json
 ```
 
 Reposition a to-do list group
 -----------------------------
 
-* `PUT /buckets/1/todolists/groups/3/position.json` allows changing the position of the to-do list group with an ID of `3` in the project with ID `1`.
+* `PUT /todolists/groups/3/position.json` allows changing the position of the to-do list group with an ID of `3`.
 
 **Required parameters**: `position` greater than or equal to one.
 
@@ -278,7 +284,17 @@ This endpoint will return `204 No Content` if the update was a success.
 ```shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" \
   -d '{"position":3}' -X PUT \
-  https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/todolists/groups/3/position.json
+  https://3.basecampapi.com/$ACCOUNT_ID/todolists/groups/3/position.json
 ```
+
+Legacy project-scoped routes
+-----------------------------
+
+The following project-scoped routes are still supported and will remain available, but flat routes above are the canonical form for new integrations.
+
+* `GET /buckets/1/todolists/2/groups.json` → [List to-do list groups](#list-to-do-list-groups)
+* `GET /buckets/1/todolists/3.json` → [Get a to-do list group](#get-to-do-list-group)
+* `POST /buckets/1/todolists/2/groups.json` → [Create a to-do list group](#create-a-to-do-list-group)
+* `PUT /buckets/1/todolists/groups/3/position.json` → [Reposition a to-do list group](#reposition-a-to-do-list-group)
 
 [pagination]: https://github.com/basecamp/bc3-api/blob/master/README.md#pagination

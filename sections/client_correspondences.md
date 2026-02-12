@@ -19,8 +19,8 @@ Get client correspondences
     "id": 1069479702,
     "status": "active",
     "visible_to_clients": false,
-    "created_at": "2026-01-26T18:32:00.000Z",
-    "updated_at": "2026-01-31T08:33:24.732Z",
+    "created_at": "2026-02-07T15:52:00.000Z",
+    "updated_at": "2026-02-12T06:09:55.894Z",
     "title": "Final deliverables and launch are right around the corner",
     "inherits_status": true,
     "type": "Client::Correspondence",
@@ -49,8 +49,8 @@ Get client correspondences
       "title": "Central Markets Manager",
       "bio": "To open a store is easy, to keep it open is an art",
       "location": null,
-      "created_at": "2026-01-31T08:29:42.795Z",
-      "updated_at": "2026-01-31T08:29:42.795Z",
+      "created_at": "2026-02-12T06:08:57.340Z",
+      "updated_at": "2026-02-12T06:08:57.340Z",
       "admin": false,
       "owner": false,
       "client": false,
@@ -64,7 +64,7 @@ Get client correspondences
       "can_ping": true,
       "can_manage_projects": true,
       "can_manage_people": true,
-      "can_access_timesheet": true,
+      "can_access_timesheet": false,
       "can_access_hill_charts": true
     },
     "content": "",
@@ -84,17 +84,17 @@ curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCO
 Get a client correspondence
 ---------------------------
 
-* `GET /buckets/1/client/correspondences/2.json` will return the client correspondence with an ID of `2` in the project with an ID of `1`.
+* `GET /client/correspondences/2.json` will return the client correspondence with an ID of `2`.
 
 ###### Example JSON Response
-<!-- START GET /buckets/1/client/correspondences/2.json -->
+<!-- START GET /client/correspondences/2.json -->
 ```json
 {
   "id": 1069479622,
   "status": "active",
   "visible_to_clients": false,
-  "created_at": "2025-12-18T23:05:00.000Z",
-  "updated_at": "2026-01-31T08:33:03.644Z",
+  "created_at": "2025-12-30T16:17:00.000Z",
+  "updated_at": "2026-02-12T06:09:50.717Z",
   "title": "Project kickoff!",
   "inherits_status": true,
   "type": "Client::Correspondence",
@@ -123,8 +123,8 @@ Get a client correspondence
     "title": "Internal Marketing Assistant",
     "bio": null,
     "location": null,
-    "created_at": "2026-01-31T08:29:36.692Z",
-    "updated_at": "2026-01-31T08:29:36.692Z",
+    "created_at": "2026-02-12T06:08:53.455Z",
+    "updated_at": "2026-02-12T06:08:53.455Z",
     "admin": false,
     "owner": false,
     "client": false,
@@ -134,7 +134,7 @@ Get a client correspondence
     "can_ping": true,
     "can_manage_projects": true,
     "can_manage_people": true,
-    "can_access_timesheet": true,
+    "can_access_timesheet": false,
     "can_access_hill_charts": true
   },
   "content": "",
@@ -143,11 +143,19 @@ Get a client correspondence
   "replies_url": "https://3.basecampapi.com/195539477/buckets/2085958505/client/recordings/1069479622/replies.json"
 }
 ```
-<!-- END GET /buckets/1/client/correspondences/2.json -->
+<!-- END GET /client/correspondences/2.json -->
 ###### Copy as cURL
 
 ```shell
-curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/client/correspondences/2.json
+curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/client/correspondences/2.json
 ```
+
+
+Legacy project-scoped routes
+-----------------------------
+
+The following project-scoped routes are still supported and will remain available, but flat routes above are the canonical form for new integrations.
+
+* `GET /buckets/1/client/correspondences/2.json` → [Get a client correspondence](#get-a-client-correspondence)
 
 [pagination]: https://github.com/basecamp/bc3-api/blob/master/README.md#pagination

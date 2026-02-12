@@ -12,7 +12,7 @@ Endpoints:
 Get to-do lists
 ---------------
 
-* `GET /buckets/1/todosets/3/todolists.json` will return a [paginated list][pagination] of active to-do lists in the project with an ID of `1` and the to-do set with ID of `3`.
+* `GET /todosets/3/todolists.json` will return a [paginated list][pagination] of active to-do lists in the to-do set with ID of `3`.
 
 To get the to-do set ID for a project, see the [Get to-do set][todoset] endpoint.
 
@@ -21,15 +21,15 @@ _Optional query parameters_:
 * `status` - when set to `archived` or `trashed`, will return archived or trashed to-do lists that are in this to-do set.
 
 ###### Example JSON Response
-<!-- START GET /buckets/1/todosets/3/todolists.json -->
+<!-- START GET /todosets/3/todolists.json -->
 ```json
 [
   {
     "id": 1069479573,
     "status": "active",
     "visible_to_clients": false,
-    "created_at": "2026-01-15T05:50:00.000Z",
-    "updated_at": "2026-02-01T02:53:47.036Z",
+    "created_at": "2026-01-27T05:02:00.000Z",
+    "updated_at": "2026-02-12T06:09:48.024Z",
     "title": "Strategy ideas",
     "inherits_status": true,
     "type": "Todolist",
@@ -63,8 +63,8 @@ _Optional query parameters_:
       "title": "Chief Strategist",
       "bio": "Don’t let your dreams be dreams",
       "location": "Chicago, IL",
-      "created_at": "2026-01-31T08:29:28.365Z",
-      "updated_at": "2026-01-31T08:29:32.599Z",
+      "created_at": "2026-02-12T06:08:49.342Z",
+      "updated_at": "2026-02-12T06:08:50.871Z",
       "admin": true,
       "owner": true,
       "client": false,
@@ -78,7 +78,7 @@ _Optional query parameters_:
       "can_ping": true,
       "can_manage_projects": true,
       "can_manage_people": true,
-      "can_access_timesheet": true,
+      "can_access_timesheet": false,
       "can_access_hill_charts": true
     },
     "description": "",
@@ -93,28 +93,28 @@ _Optional query parameters_:
   }
 ]
 ```
-<!-- END GET /buckets/1/todosets/3/todolists.json -->
+<!-- END GET /todosets/3/todolists.json -->
 ###### Copy as cURL
 
 ```shell
-curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/todosets/3/todolists.json
+curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/todosets/3/todolists.json
 ```
 
 
 Get a to-do list
 ----------------
 
-* `GET /buckets/1/todolists/2.json` will return the to-do list with an ID of `2` in the project with an ID of `1`.
+* `GET /todolists/2.json` will return the to-do list with an ID of `2`.
 
 ###### Example JSON Response
-<!-- START GET /buckets/1/todolists/2.json -->
+<!-- START GET /todolists/2.json -->
 ```json
 {
   "id": 1069479424,
   "status": "active",
   "visible_to_clients": false,
-  "created_at": "2025-12-20T18:09:00.000Z",
-  "updated_at": "2026-01-31T08:32:13.249Z",
+  "created_at": "2026-01-01T16:50:00.000Z",
+  "updated_at": "2026-02-12T06:09:36.862Z",
   "title": "Background and research",
   "inherits_status": true,
   "type": "Todolist",
@@ -148,8 +148,8 @@ Get a to-do list
     "title": "Chief Strategist",
     "bio": "Don’t let your dreams be dreams",
     "location": "Chicago, IL",
-    "created_at": "2026-01-31T08:29:28.365Z",
-    "updated_at": "2026-01-31T08:29:32.599Z",
+    "created_at": "2026-02-12T06:08:49.342Z",
+    "updated_at": "2026-02-12T06:08:50.871Z",
     "admin": true,
     "owner": true,
     "client": false,
@@ -163,7 +163,7 @@ Get a to-do list
     "can_ping": true,
     "can_manage_projects": true,
     "can_manage_people": true,
-    "can_access_timesheet": true,
+    "can_access_timesheet": false,
     "can_access_hill_charts": true
   },
   "description": "",
@@ -177,18 +177,18 @@ Get a to-do list
   "comments_app_url": "https://3.basecamp.com/195539477/buckets/2085958504/recordings/1069479424/comments"
 }
 ```
-<!-- END GET /buckets/1/todolists/2.json -->
+<!-- END GET /todolists/2.json -->
 ###### Copy as cURL
 
 ```shell
-curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/todolists/2.json
+curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/todolists/2.json
 ```
 
 
 Create a to-do list
 -------------------
 
-* `POST /buckets/1/todosets/3/todolists.json` creates a to-do list in the project with ID `1` and under the to-do set with an ID of `3`.
+* `POST /todosets/3/todolists.json` creates a to-do list under the to-do set with an ID of `3`.
 
 **Required parameters**: `name` of the to-do list.
 
@@ -210,14 +210,14 @@ This endpoint will return `201 Created` with the current JSON representation of 
 ```shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" \
   -d '{"name":"Launch","description":"<div><em>Finish it!</em></div>"}' \
-  https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/todosets/3/todolists.json
+  https://3.basecampapi.com/$ACCOUNT_ID/todosets/3/todolists.json
 ```
 
 
 Update a to-do list
 -------------------
 
-* `PUT /buckets/1/todolists/2.json` allows changing the name and description of the to-do list with an ID of `2` in the project with ID `1`.
+* `PUT /todolists/2.json` allows changing the name and description of the to-do list with an ID of `2`.
 
 This endpoint will return `200 OK` with the current JSON representation of the to-do list if the update was a success. See the [Get a to-do list](#get-a-to-do-list) endpoint for more info on the payload.
 
@@ -241,9 +241,20 @@ This endpoint will return `200 OK` with the current JSON representation of the t
 ```shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" \
   -d '{"name":"Relaunch","description":"<div><strong>Try this again.</strong></div>"}' -X PUT \
-  https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/todolists/2.json
+  https://3.basecampapi.com/$ACCOUNT_ID/todolists/2.json
 ```
 
+
+
+Legacy project-scoped routes
+-----------------------------
+
+The following project-scoped routes are still supported and will remain available, but flat routes above are the canonical form for new integrations.
+
+* `GET /buckets/1/todosets/3/todolists.json` → [Get to-do lists](#get-to-do-lists)
+* `GET /buckets/1/todolists/2.json` → [Get a to-do list](#get-a-to-do-list)
+* `POST /buckets/1/todosets/3/todolists.json` → [Create a to-do list](#create-a-to-do-list)
+* `PUT /buckets/1/todolists/2.json` → [Update a to-do list](#update-a-to-do-list)
 
 [trash]: https://github.com/basecamp/bc3-api/blob/master/sections/recordings.md#trash-a-recording
 [pagination]: https://github.com/basecamp/bc3-api/blob/master/README.md#pagination

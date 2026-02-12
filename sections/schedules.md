@@ -12,19 +12,19 @@ Endpoints:
 Get schedule
 ------------
 
-* `GET /buckets/1/schedules/2.json` will return the schedule for the project with an ID of `1`.
+* `GET /schedules/2.json` will return the schedule with an ID of `2`.
 
 To get the schedule ID for a project, see the [Get a project][1] endpoint's `dock` payload. To retrieve its schedule entries lists, see the [Get schedule entries][2] endpoint.
 
 ###### Example JSON Response
-<!-- START GET /buckets/1/schedules/2.json -->
+<!-- START GET /schedules/2.json -->
 ```json
 {
   "id": 1069479396,
   "status": "active",
   "visible_to_clients": false,
-  "created_at": "2026-01-31T08:32:04.600Z",
-  "updated_at": "2026-01-31T08:36:21.949Z",
+  "created_at": "2026-02-12T06:09:34.690Z",
+  "updated_at": "2026-02-12T06:10:28.425Z",
   "title": "Schedule",
   "inherits_status": true,
   "type": "Schedule",
@@ -46,8 +46,8 @@ To get the schedule ID for a project, see the [Get a project][1] endpoint's `doc
     "title": "Chief Strategist",
     "bio": "Don’t let your dreams be dreams",
     "location": "Chicago, IL",
-    "created_at": "2026-01-31T08:29:28.365Z",
-    "updated_at": "2026-01-31T08:29:32.599Z",
+    "created_at": "2026-02-12T06:08:49.342Z",
+    "updated_at": "2026-02-12T06:08:50.871Z",
     "admin": true,
     "owner": true,
     "client": false,
@@ -61,25 +61,25 @@ To get the schedule ID for a project, see the [Get a project][1] endpoint's `doc
     "can_ping": true,
     "can_manage_projects": true,
     "can_manage_people": true,
-    "can_access_timesheet": true,
+    "can_access_timesheet": false,
     "can_access_hill_charts": true
   },
   "include_due_assignments": true,
   "entries_count": 1,
-  "entries_url": "https://3.basecampapi.com/195539477/buckets/2085958504/schedules/1069479396/entries.json"
+  "entries_url": "https://3.basecampapi.com/195539477/schedules/1069479396/schedule_entries.json"
 }
 ```
-<!-- END GET /buckets/1/schedules/2.json -->
+<!-- END GET /schedules/2.json -->
 ###### Copy as cURL
 
 ```shell
-curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/schedules/2.json
+curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/schedules/2.json
 ```
 
 Update a schedule
 -----------------------
 
-* `PUT /buckets/1/schedules/2.json` allows changing of the schedule with an ID of `2` in the project with ID `1`.
+* `PUT /schedules/2.json` allows changing of the schedule with an ID of `2`.
 
 **Required parameters**:
 
@@ -100,9 +100,16 @@ This endpoint will return `200 OK` with the current JSON representation of the s
 ```shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" \
   -d '{"schedule": {"include_due_assignments": "false"}}' -X PUT \
-  https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/schedules/2.json
+  https://3.basecampapi.com/$ACCOUNT_ID/schedules/2.json
 ```
 
+Legacy project-scoped routes
+-----------------------------
+
+The following project-scoped routes are still supported and will remain available, but flat routes above are the canonical form for new integrations.
+
+* `GET /buckets/1/schedules/2.json` → [Get schedule](#get-schedule)
+* `PUT /buckets/1/schedules/2.json` → [Update a schedule](#update-a-schedule)
 
 [1]: https://github.com/basecamp/bc3-api/blob/master/sections/projects.md#get-a-project
 [2]: https://github.com/basecamp/bc3-api/blob/master/sections/schedule_entries.md#get-schedule-entries

@@ -9,7 +9,7 @@ Endpoints:
 - [Get a timesheet entry](#get-a-timesheet-entry)
 - [Create a timesheet entry](#create-a-timesheet-entry)
 - [Update a timesheet entry](#update-a-timesheet-entry)
-- [Trash a timesheet entry][3]
+- [Delete a timesheet entry](#delete-a-timesheet-entry)
 
 Get timesheet report
 --------------------
@@ -327,23 +327,23 @@ curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCO
 Get a timesheet entry
 ---------------------
 
-* `GET /projects/1/timesheet/entries/2.json` will return the timesheet entry with an ID of `2` in the project with an ID of `1`.
+* `GET /timesheet_entries/2.json` will return the timesheet entry with an ID of `2`.
 
 ###### Example JSON Response
-<!-- START GET /projects/1/timesheet/entries/2.json -->
+<!-- START GET /timesheet_entries/2.json -->
 ```json
 {
-  "id": 1069480091,
+  "id": 1069480181,
   "status": "active",
   "visible_to_clients": false,
-  "created_at": "2026-02-06T22:55:54.662Z",
-  "updated_at": "2026-02-06T22:55:54.662Z",
+  "created_at": "2026-02-07T01:44:59.972Z",
+  "updated_at": "2026-02-07T01:44:59.972Z",
   "title": "Timesheet entry",
   "inherits_status": true,
   "type": "Timesheet::Entry",
-  "url": "https://3.basecampapi.com/195539477/projects/2085958504/timesheet/entries/1069480091.json",
-  "app_url": "https://3.basecamp.com/195539477/projects/2085958504/timesheet/entries/1069480091",
-  "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiLmdpZDovL2JjMy9SZWNvcmRpbmcvMTA2OTQ4MDA5MT9leHBpcmVzX2luBjsAVEkiCHB1cgY7AFRJIg1yZWFkYWJsZQY7AFQ=--0b7abbaa49e554506a83edc6934173ebe077c1f0.json",
+  "url": "https://3.basecampapi.com/195539477/projects/2085958504/timesheet/entries/1069480181.json",
+  "app_url": "https://3.basecamp.com/195539477/projects/2085958504/timesheet/entries/1069480181",
+  "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiLmdpZDovL2JjMy9SZWNvcmRpbmcvMTA2OTQ4MDE4MT9leHBpcmVzX2luBjsAVEkiCHB1cgY7AFRJIg1yZWFkYWJsZQY7AFQ=--0adad083d350837fcc7f9b1b0dfd8ab1b9797c0c.json",
   "parent": {
     "id": 1069479406,
     "title": "We won Leto!",
@@ -415,11 +415,11 @@ Get a timesheet entry
   }
 }
 ```
-<!-- END GET /projects/1/timesheet/entries/2.json -->
+<!-- END GET /timesheet_entries/2.json -->
 ###### Copy as cURL
 
 ```shell
-curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/projects/1/timesheet/entries/2.json
+curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/timesheet_entries/2.json
 ```
 
 Create a timesheet entry
@@ -455,17 +455,17 @@ This endpoint will return `201 Created` with the current JSON representation of 
 <!-- START POST /projects/1/recordings/2/timesheet/entries.json -->
 ```json
 {
-  "id": 1069480091,
+  "id": 1069480181,
   "status": "active",
   "visible_to_clients": false,
-  "created_at": "2026-02-06T22:55:54.662Z",
-  "updated_at": "2026-02-06T22:55:54.662Z",
+  "created_at": "2026-02-07T01:44:59.972Z",
+  "updated_at": "2026-02-07T01:44:59.972Z",
   "title": "Timesheet entry",
   "inherits_status": true,
   "type": "Timesheet::Entry",
-  "url": "https://3.basecampapi.com/195539477/projects/2085958504/timesheet/entries/1069480091.json",
-  "app_url": "https://3.basecamp.com/195539477/projects/2085958504/timesheet/entries/1069480091",
-  "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiLmdpZDovL2JjMy9SZWNvcmRpbmcvMTA2OTQ4MDA5MT9leHBpcmVzX2luBjsAVEkiCHB1cgY7AFRJIg1yZWFkYWJsZQY7AFQ=--0b7abbaa49e554506a83edc6934173ebe077c1f0.json",
+  "url": "https://3.basecampapi.com/195539477/projects/2085958504/timesheet/entries/1069480181.json",
+  "app_url": "https://3.basecamp.com/195539477/projects/2085958504/timesheet/entries/1069480181",
+  "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiLmdpZDovL2JjMy9SZWNvcmRpbmcvMTA2OTQ4MDE4MT9leHBpcmVzX2luBjsAVEkiCHB1cgY7AFRJIg1yZWFkYWJsZQY7AFQ=--0adad083d350837fcc7f9b1b0dfd8ab1b9797c0c.json",
   "parent": {
     "id": 1069479406,
     "title": "We won Leto!",
@@ -550,7 +550,7 @@ curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/j
 Update a timesheet entry
 ------------------------
 
-* `PUT /buckets/1/timesheet/entries/2.json` allows changing the timesheet entry with an ID of `2` in the project with ID `1`.
+* `PUT /timesheet_entries/2.json` allows changing the timesheet entry with an ID of `2`.
 
 This endpoint will return `200 OK` with the current JSON representation of the timesheet entry if the update was a success. See the [Get timesheet for a project](#get-timesheet-for-a-project) endpoint for more info on the payload.
 
@@ -571,20 +571,20 @@ _Optional parameters_: Only pass the parameters you want to change.
 ```
 
 ###### Example JSON Response
-<!-- START PUT /projects/1/timesheet/entries/2.json -->
+<!-- START PUT /timesheet_entries/2.json -->
 ```json
 {
-  "id": 1069480091,
+  "id": 1069480181,
   "status": "active",
   "visible_to_clients": false,
-  "created_at": "2026-02-06T22:55:54.662Z",
-  "updated_at": "2026-02-06T22:55:55.514Z",
+  "created_at": "2026-02-07T01:44:59.972Z",
+  "updated_at": "2026-02-07T01:45:00.878Z",
   "title": "Timesheet entry",
   "inherits_status": true,
   "type": "Timesheet::Entry",
-  "url": "https://3.basecampapi.com/195539477/projects/2085958504/timesheet/entries/1069480091.json",
-  "app_url": "https://3.basecamp.com/195539477/projects/2085958504/timesheet/entries/1069480091",
-  "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiLmdpZDovL2JjMy9SZWNvcmRpbmcvMTA2OTQ4MDA5MT9leHBpcmVzX2luBjsAVEkiCHB1cgY7AFRJIg1yZWFkYWJsZQY7AFQ=--0b7abbaa49e554506a83edc6934173ebe077c1f0.json",
+  "url": "https://3.basecampapi.com/195539477/projects/2085958504/timesheet/entries/1069480181.json",
+  "app_url": "https://3.basecamp.com/195539477/projects/2085958504/timesheet/entries/1069480181",
+  "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiLmdpZDovL2JjMy9SZWNvcmRpbmcvMTA2OTQ4MDE4MT9leHBpcmVzX2luBjsAVEkiCHB1cgY7AFRJIg1yZWFkYWJsZQY7AFQ=--0adad083d350837fcc7f9b1b0dfd8ab1b9797c0c.json",
   "parent": {
     "id": 1069479406,
     "title": "We won Leto!",
@@ -656,16 +656,31 @@ _Optional parameters_: Only pass the parameters you want to change.
   }
 }
 ```
-<!-- END PUT /projects/1/timesheet/entries/2.json -->
+<!-- END PUT /timesheet_entries/2.json -->
 
 ###### Copy as cURL
 
 ```shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" \
   -X PUT -d '{"hours":"2.5","description":"Updated description"}' \
-  https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/timesheet/entries/2.json
+  https://3.basecampapi.com/$ACCOUNT_ID/timesheet_entries/2.json
+```
+
+Delete a timesheet entry
+------------------------
+
+* `DELETE /timesheet_entries/2.json` will delete the timesheet entry with an ID of `2`.
+
+This endpoint will return `204 No Content` if the delete was successful. No parameters are required.
+
+The entry is permanently deleted and cannot be recovered.
+
+###### Copy as cURL
+
+```shell
+curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -X DELETE \
+  https://3.basecampapi.com/$ACCOUNT_ID/timesheet_entries/2.json
 ```
 
 [1]: https://github.com/basecamp/bc3-api/blob/master/sections/people.md#people
 [2]: https://github.com/basecamp/bc3-api/blob/master/sections/projects.md#projects
-[3]: https://github.com/basecamp/bc3-api/blob/master/sections/recordings.md#trash-a-recording
