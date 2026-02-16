@@ -425,7 +425,7 @@ curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCO
 Create a timesheet entry
 ------------------------
 
-* `POST /buckets/1/recordings/2/timesheet/entries.json` creates a timesheet entry in the project with ID `1` under the recording with ID `2`.
+* `POST /projects/1/recordings/2/timesheet/entries.json` creates a timesheet entry in the project with ID `1` under the recording with ID `2`.
 
 The recording can be any timesheetable type: a message, to-do, card, document, upload, schedule entry, or the project timesheet itself.
 
@@ -544,13 +544,13 @@ This endpoint will return `201 Created` with the current JSON representation of 
 ```shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" \
   -d '{"date":"2024-05-16","hours":"1:30","description":"Client meeting prep"}' \
-  https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/recordings/2/timesheet/entries.json
+  https://3.basecampapi.com/$ACCOUNT_ID/projects/1/recordings/2/timesheet/entries.json
 ```
 
 Update a timesheet entry
 ------------------------
 
-* `PUT /buckets/1/timesheet/entries/2.json` allows changing the timesheet entry with an ID of `2` in the project with ID `1`.
+* `PUT /projects/1/timesheet/entries/2.json` allows changing the timesheet entry with an ID of `2` in the project with ID `1`.
 
 This endpoint will return `200 OK` with the current JSON representation of the timesheet entry if the update was a success. See the [Get timesheet for a project](#get-timesheet-for-a-project) endpoint for more info on the payload.
 
@@ -663,7 +663,7 @@ _Optional parameters_: Only pass the parameters you want to change.
 ```shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" \
   -X PUT -d '{"hours":"2.5","description":"Updated description"}' \
-  https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/timesheet/entries/2.json
+  https://3.basecampapi.com/$ACCOUNT_ID/projects/1/timesheet/entries/2.json
 ```
 
 [1]: https://github.com/basecamp/bc3-api/blob/master/sections/people.md#people
