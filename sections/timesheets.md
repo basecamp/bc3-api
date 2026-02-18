@@ -129,6 +129,8 @@ Get timesheet for a project
 
 * `GET /projects/1/timesheet.json` will return a [paginated list][pagination] of timesheet entries in the project with an ID of `1`.
 
+This includes all entries across the project: entries logged directly to the project as well as entries logged on specific to-dos, messages, cards, and other recordings. Each entry's `parent` field shows which recording it belongs to. For entries logged at the project level, the parent type is `Timesheet`.
+
 ###### Example JSON Response
 <!-- START GET /projects/1/timesheet.json -->
 ```json
@@ -428,6 +430,8 @@ Create a timesheet entry
 * `POST /projects/1/recordings/2/timesheet/entries.json` creates a timesheet entry in the project with ID `1` under the recording with ID `2`.
 
 The recording can be any timesheetable type: a message, to-do, card, document, upload, schedule entry, or the project timesheet itself.
+
+**Project-level entries**: Time can be logged directly to a project without associating it with a specific to-do or message. To do this, use the project's timesheet recording ID in the URL above. Unlike other tools, the timesheet doesn't appear in the project's `dock` array — instead, check the project's `timesheet_enabled` flag. When it's `true`, you can access the project timesheet at `GET /projects/1/timesheet.json`. The entries in that response include a `parent` field; for project-level entries, the parent type is `Timesheet` and its `id` is the recording ID to use in the create URL.
 
 **Required parameters**:
 
