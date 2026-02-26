@@ -60,7 +60,7 @@ To get the inbox ID for a project, see the [Get inbox][3] endpoint.
       "client": false,
       "employee": true,
       "time_zone": "America/Chicago",
-      "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBMlkkT4=--5fe7b70fbee7a7f0e2e1e19df7579e5d880c753d/avatar?v=1",
+      "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBMlkkT4=--5fe7b70fbee7a7f0e2e1e19df7579e5d880c753d/avatar",
       "company": {
         "id": 1033447817,
         "name": "Honcho Design"
@@ -68,7 +68,7 @@ To get the inbox ID for a project, see the [Get inbox][3] endpoint.
       "can_ping": true,
       "can_manage_projects": true,
       "can_manage_people": true,
-      "can_access_timesheet": false,
+      "can_access_timesheet": true,
       "can_access_hill_charts": true
     },
     "content": "---------- Forwarded message ---------- From: \"Henry Bowman\"  Date: Oct 15, 2013 1:13 AM Subject: Can we make the logo pop? To: \"Victor Cooper\"  Hey Victor, I know it's late at night, but I had a quick thought about the logo. It feels, I dunno, flat. Is there anything you could do to make it pop? I'm thinking it needs more sizzle. More... SOMETHING. Maybe we could try adding a rainbow? Let's take a look mid-day tomorrow and re-group with the rest of the team. Cheers, Henry",
@@ -137,7 +137,7 @@ Get a forward
     "client": false,
     "employee": true,
     "time_zone": "America/Chicago",
-    "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBOJkkT4=--732a71fbd28ec10d9bf4466abd3588a8bea40bdb/avatar?v=1",
+    "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBOJkkT4=--732a71fbd28ec10d9bf4466abd3588a8bea40bdb/avatar",
     "company": {
       "id": 1033447817,
       "name": "Honcho Design"
@@ -145,7 +145,7 @@ Get a forward
     "can_ping": true,
     "can_manage_projects": true,
     "can_manage_people": true,
-    "can_access_timesheet": false,
+    "can_access_timesheet": true,
     "can_access_hill_charts": true
   },
   "content": "---------- Forwarded message ---------- From: \"Beth Allen\"  Date: Oct 13, 2013 1:38 PM Subject: Some technical details To: \"Annie Bryan\"  Hey Team Honcho, Just wanted to let you know I'm a big fan of your blog. Your writing is so inspiring. Thanks for sharing!",

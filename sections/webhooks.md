@@ -246,7 +246,7 @@ Get webhooks
 [
   {
     "id": 1051369971,
-    "active": true,
+    "active": false,
     "created_at": "2026-02-12T06:11:41.608Z",
     "updated_at": "2026-02-12T06:11:41.608Z",
     "payload_url": "https://example.com/endpoint",
@@ -277,7 +277,7 @@ The recent deliveries array will contain the 25 most recent delivery exchanges, 
 ```json
 {
   "id": 1051369971,
-  "active": true,
+  "active": false,
   "created_at": "2026-02-12T06:11:41.608Z",
   "updated_at": "2026-02-12T06:11:41.608Z",
   "payload_url": "https://example.com/endpoint",
@@ -288,16 +288,16 @@ The recent deliveries array will contain the 25 most recent delivery exchanges, 
   "app_url": "https://3.basecamp.com/195539477/buckets/2085958504/webhooks/1051369971",
   "recent_deliveries": [
     {
-      "id": 627138715,
-      "created_at": "2026-02-12T06:12:11.774Z",
+      "id": 627138718,
+      "created_at": "2026-02-12T06:14:15.773Z",
       "request": {
         "headers": {
           "Content-Type": "application/json",
           "User-Agent": "Basecamp3 Webhook",
-          "X-Request-Id": "9728e569-4c4c-4ea0-9284-838fcac3c979"
+          "X-Request-Id": "3845f9bd-2b8a-4c08-9f30-c01135ab2f23"
         },
         "body": {
-          "id": 1071915635,
+          "id": 1071915703,
           "kind": "message_subscribers_changed",
           "details": {
             "added_person_ids": [
@@ -307,13 +307,13 @@ The recent deliveries array will contain the 25 most recent delivery exchanges, 
               1049715913
             ]
           },
-          "created_at": "2026-02-12T00:12:10.676-06:00",
+          "created_at": "2026-02-12T00:14:14.701-06:00",
           "recording": {
             "id": 1069479406,
             "status": "active",
             "visible_to_clients": false,
             "created_at": "2025-12-30T12:58:00.000-06:00",
-            "updated_at": "2026-02-12T00:12:10.673-06:00",
+            "updated_at": "2026-02-12T00:14:14.697-06:00",
             "title": "We won Leto!",
             "inherits_status": true,
             "type": "Message",

@@ -49,7 +49,7 @@ Get a card table
     "client": false,
     "employee": true,
     "time_zone": "America/Chicago",
-    "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBMlkkT4=--5fe7b70fbee7a7f0e2e1e19df7579e5d880c753d/avatar?v=1",
+    "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBMlkkT4=--5fe7b70fbee7a7f0e2e1e19df7579e5d880c753d/avatar",
     "company": {
       "id": 1033447817,
       "name": "Honcho Design"
@@ -57,7 +57,7 @@ Get a card table
     "can_ping": true,
     "can_manage_projects": true,
     "can_manage_people": true,
-    "can_access_timesheet": false,
+    "can_access_timesheet": true,
     "can_access_hill_charts": true
   },
   "subscribers": [
@@ -77,7 +77,7 @@ Get a card table
       "client": false,
       "employee": true,
       "time_zone": "America/Chicago",
-      "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBMlkkT4=--5fe7b70fbee7a7f0e2e1e19df7579e5d880c753d/avatar?v=1",
+      "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBMlkkT4=--5fe7b70fbee7a7f0e2e1e19df7579e5d880c753d/avatar",
       "company": {
         "id": 1033447817,
         "name": "Honcho Design"
@@ -85,7 +85,7 @@ Get a card table
       "can_ping": true,
       "can_manage_projects": true,
       "can_manage_people": true,
-      "can_access_timesheet": false,
+      "can_access_timesheet": true,
       "can_access_hill_charts": true
     }
   ],
@@ -132,7 +132,7 @@ Get a card table
         "client": false,
         "employee": true,
         "time_zone": "America/Chicago",
-        "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBMlkkT4=--5fe7b70fbee7a7f0e2e1e19df7579e5d880c753d/avatar?v=1",
+        "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBMlkkT4=--5fe7b70fbee7a7f0e2e1e19df7579e5d880c753d/avatar",
         "company": {
           "id": 1033447817,
           "name": "Honcho Design"
@@ -140,7 +140,7 @@ Get a card table
         "can_ping": true,
         "can_manage_projects": true,
         "can_manage_people": true,
-        "can_access_timesheet": false,
+        "can_access_timesheet": true,
         "can_access_hill_charts": true
       },
       "description": null,
@@ -161,7 +161,7 @@ Get a card table
           "client": false,
           "employee": true,
           "time_zone": "America/Chicago",
-          "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBMlkkT4=--5fe7b70fbee7a7f0e2e1e19df7579e5d880c753d/avatar?v=1",
+          "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBMlkkT4=--5fe7b70fbee7a7f0e2e1e19df7579e5d880c753d/avatar",
           "company": {
             "id": 1033447817,
             "name": "Honcho Design"
@@ -169,7 +169,7 @@ Get a card table
           "can_ping": true,
           "can_manage_projects": true,
           "can_manage_people": true,
-          "can_access_timesheet": false,
+          "can_access_timesheet": true,
           "can_access_hill_charts": true
         }
       ],
@@ -219,7 +219,7 @@ Get a card table
         "client": false,
         "employee": true,
         "time_zone": "America/Chicago",
-        "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBMlkkT4=--5fe7b70fbee7a7f0e2e1e19df7579e5d880c753d/avatar?v=1",
+        "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBMlkkT4=--5fe7b70fbee7a7f0e2e1e19df7579e5d880c753d/avatar",
         "company": {
           "id": 1033447817,
           "name": "Honcho Design"
@@ -227,7 +227,7 @@ Get a card table
         "can_ping": true,
         "can_manage_projects": true,
         "can_manage_people": true,
-        "can_access_timesheet": false,
+        "can_access_timesheet": true,
         "can_access_hill_charts": true
       },
       "description": null,
@@ -248,7 +248,7 @@ Get a card table
           "client": false,
           "employee": true,
           "time_zone": "America/Chicago",
-          "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBMlkkT4=--5fe7b70fbee7a7f0e2e1e19df7579e5d880c753d/avatar?v=1",
+          "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBMlkkT4=--5fe7b70fbee7a7f0e2e1e19df7579e5d880c753d/avatar",
           "company": {
             "id": 1033447817,
             "name": "Honcho Design"
@@ -256,7 +256,7 @@ Get a card table
           "can_ping": true,
           "can_manage_projects": true,
           "can_manage_people": true,
-          "can_access_timesheet": false,
+          "can_access_timesheet": true,
           "can_access_hill_charts": true
         }
       ],
@@ -307,7 +307,7 @@ Get a card table
         "client": false,
         "employee": true,
         "time_zone": "America/Chicago",
-        "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBMlkkT4=--5fe7b70fbee7a7f0e2e1e19df7579e5d880c753d/avatar?v=1",
+        "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBMlkkT4=--5fe7b70fbee7a7f0e2e1e19df7579e5d880c753d/avatar",
         "company": {
           "id": 1033447817,
           "name": "Honcho Design"
@@ -315,7 +315,7 @@ Get a card table
         "can_ping": true,
         "can_manage_projects": true,
         "can_manage_people": true,
-        "can_access_timesheet": false,
+        "can_access_timesheet": true,
         "can_access_hill_charts": true
       },
       "description": null,
@@ -336,7 +336,7 @@ Get a card table
           "client": false,
           "employee": true,
           "time_zone": "America/Chicago",
-          "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBMlkkT4=--5fe7b70fbee7a7f0e2e1e19df7579e5d880c753d/avatar?v=1",
+          "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBMlkkT4=--5fe7b70fbee7a7f0e2e1e19df7579e5d880c753d/avatar",
           "company": {
             "id": 1033447817,
             "name": "Honcho Design"
@@ -344,7 +344,7 @@ Get a card table
           "can_ping": true,
           "can_manage_projects": true,
           "can_manage_people": true,
-          "can_access_timesheet": false,
+          "can_access_timesheet": true,
           "can_access_hill_charts": true
         }
       ],
@@ -395,7 +395,7 @@ Get a card table
         "client": false,
         "employee": true,
         "time_zone": "America/Chicago",
-        "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBMlkkT4=--5fe7b70fbee7a7f0e2e1e19df7579e5d880c753d/avatar?v=1",
+        "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBMlkkT4=--5fe7b70fbee7a7f0e2e1e19df7579e5d880c753d/avatar",
         "company": {
           "id": 1033447817,
           "name": "Honcho Design"
@@ -403,7 +403,7 @@ Get a card table
         "can_ping": true,
         "can_manage_projects": true,
         "can_manage_people": true,
-        "can_access_timesheet": false,
+        "can_access_timesheet": true,
         "can_access_hill_charts": true
       },
       "description": null,
@@ -424,7 +424,7 @@ Get a card table
           "client": false,
           "employee": true,
           "time_zone": "America/Chicago",
-          "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBMlkkT4=--5fe7b70fbee7a7f0e2e1e19df7579e5d880c753d/avatar?v=1",
+          "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBMlkkT4=--5fe7b70fbee7a7f0e2e1e19df7579e5d880c753d/avatar",
           "company": {
             "id": 1033447817,
             "name": "Honcho Design"
@@ -432,7 +432,7 @@ Get a card table
           "can_ping": true,
           "can_manage_projects": true,
           "can_manage_people": true,
-          "can_access_timesheet": false,
+          "can_access_timesheet": true,
           "can_access_hill_charts": true
         }
       ],
@@ -482,7 +482,7 @@ Get a card table
         "client": false,
         "employee": true,
         "time_zone": "America/Chicago",
-        "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBMlkkT4=--5fe7b70fbee7a7f0e2e1e19df7579e5d880c753d/avatar?v=1",
+        "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBMlkkT4=--5fe7b70fbee7a7f0e2e1e19df7579e5d880c753d/avatar",
         "company": {
           "id": 1033447817,
           "name": "Honcho Design"
@@ -490,7 +490,7 @@ Get a card table
         "can_ping": true,
         "can_manage_projects": true,
         "can_manage_people": true,
-        "can_access_timesheet": false,
+        "can_access_timesheet": true,
         "can_access_hill_charts": true
       },
       "description": null,
@@ -511,7 +511,7 @@ Get a card table
           "client": false,
           "employee": true,
           "time_zone": "America/Chicago",
-          "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBMlkkT4=--5fe7b70fbee7a7f0e2e1e19df7579e5d880c753d/avatar?v=1",
+          "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBMlkkT4=--5fe7b70fbee7a7f0e2e1e19df7579e5d880c753d/avatar",
           "company": {
             "id": 1033447817,
             "name": "Honcho Design"
@@ -519,7 +519,7 @@ Get a card table
           "can_ping": true,
           "can_manage_projects": true,
           "can_manage_people": true,
-          "can_access_timesheet": false,
+          "can_access_timesheet": true,
           "can_access_hill_charts": true
         }
       ],

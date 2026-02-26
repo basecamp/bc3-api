@@ -64,7 +64,7 @@ Get documents
       "client": false,
       "employee": true,
       "time_zone": "America/Chicago",
-      "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBONkkT4=--b57b5a44335d4c3ba1a2585abd6e5c7e4c85fdd6/avatar?v=1",
+      "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBONkkT4=--b57b5a44335d4c3ba1a2585abd6e5c7e4c85fdd6/avatar",
       "company": {
         "id": 1033447817,
         "name": "Honcho Design"
@@ -72,7 +72,7 @@ Get documents
       "can_ping": true,
       "can_manage_projects": true,
       "can_manage_people": true,
-      "can_access_timesheet": false,
+      "can_access_timesheet": true,
       "can_access_hill_charts": true
     },
     "content": "<strong>Health Insurance</strong>\nWe have just one health insurance policy. The company pays most of the premium, and you cover the rest. Domestic partnerships are covered, as well as marriages. Open enrollment starts in January.<br><br>\n\n<strong>401K Retirement Plan</strong>\nWe match dollar-for-dollar up to 10% of your salary that you contribute to the plan. You are eligible to enroll in the 401K plan after your first paycheck.<br><br>\n\n<strong>Flexible Spending Account (FSA)</strong>\nThe FSA is an account where you can set aside pre-tax money for out-of-pocket medical expenses, such as prescriptions, OTC medicine, vision care, etc.  You have to decide up front how much money you want to put in the account, and the max is $2500/year.<br><br>\n\n<strong>Continuing Education Allowance</strong>\nWe provide you with $500 a year to take classes that help you professionally. Really, anything that helps you with your job.<br><br>\n\n<strong>Matching Charitable Gifts</strong>\nWhen you donate money to a qualified charity, we will make a matching gift to that charity on your behalf. The maximum for the year is $500 per employee.<br><br>\n\n<strong>Paid Time Off</strong>\nPaid time off doesn't really exist here - if you need a day (or week!) off, you just need to clear it with your team or others who would be affected by your absence. You should try to take at least 3 weeks off a year."
@@ -140,7 +140,7 @@ Get a document
     "client": false,
     "employee": false,
     "time_zone": "America/Chicago",
-    "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBPFkkT4=--684a9fd741b7edab076c407cfcc729da47aadbbf/avatar?v=1",
+    "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBPFkkT4=--684a9fd741b7edab076c407cfcc729da47aadbbf/avatar",
     "can_ping": true,
     "can_manage_projects": false,
     "can_manage_people": false,

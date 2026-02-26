@@ -62,7 +62,7 @@ Get questions
       "client": false,
       "employee": true,
       "time_zone": "America/Chicago",
-      "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBMlkkT4=--5fe7b70fbee7a7f0e2e1e19df7579e5d880c753d/avatar?v=1",
+      "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBMlkkT4=--5fe7b70fbee7a7f0e2e1e19df7579e5d880c753d/avatar",
       "company": {
         "id": 1033447817,
         "name": "Honcho Design"
@@ -70,7 +70,7 @@ Get questions
       "can_ping": true,
       "can_manage_projects": true,
       "can_manage_people": true,
-      "can_access_timesheet": false,
+      "can_access_timesheet": true,
       "can_access_hill_charts": true
     },
     "paused": false,
@@ -93,7 +93,7 @@ Get questions
       "end_date": null
     },
     "answers_count": 32,
-    "answers_url": "https://3.basecampapi.com/195539477/questions/1069479417/question_answers.json"
+    "answers_url": "https://3.basecampapi.com/195539477/questions/1069479417/answers.json"
   }
 ]
 ```
@@ -153,7 +153,7 @@ Get a question
     "client": false,
     "employee": true,
     "time_zone": "America/Chicago",
-    "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBMlkkT4=--5fe7b70fbee7a7f0e2e1e19df7579e5d880c753d/avatar?v=1",
+    "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBMlkkT4=--5fe7b70fbee7a7f0e2e1e19df7579e5d880c753d/avatar",
     "company": {
       "id": 1033447817,
       "name": "Honcho Design"
@@ -161,7 +161,7 @@ Get a question
     "can_ping": true,
     "can_manage_projects": true,
     "can_manage_people": true,
-    "can_access_timesheet": false,
+    "can_access_timesheet": true,
     "can_access_hill_charts": true
   },
   "paused": false,
@@ -184,7 +184,7 @@ Get a question
     "end_date": null
   },
   "answers_count": 32,
-  "answers_url": "https://3.basecampapi.com/195539477/questions/1069479417/question_answers.json"
+  "answers_url": "https://3.basecampapi.com/195539477/questions/1069479417/answers.json"
 }
 ```
 <!-- END GET /questions/2.json -->

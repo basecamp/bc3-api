@@ -24,7 +24,7 @@ Get Campfires
     "status": "active",
     "visible_to_clients": false,
     "created_at": "2026-02-12T06:09:02.404Z",
-    "updated_at": "2026-02-12T06:12:09.251Z",
+    "updated_at": "2026-02-12T06:14:10.540Z",
     "title": "Chat",
     "inherits_status": true,
     "type": "Chat::Transcript",
@@ -54,7 +54,7 @@ Get Campfires
       "client": false,
       "employee": true,
       "time_zone": "America/Chicago",
-      "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBMlkkT4=--5fe7b70fbee7a7f0e2e1e19df7579e5d880c753d/avatar?v=1",
+      "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBMlkkT4=--5fe7b70fbee7a7f0e2e1e19df7579e5d880c753d/avatar",
       "company": {
         "id": 1033447817,
         "name": "Honcho Design"
@@ -62,7 +62,7 @@ Get Campfires
       "can_ping": true,
       "can_manage_projects": true,
       "can_manage_people": true,
-      "can_access_timesheet": false,
+      "can_access_timesheet": true,
       "can_access_hill_charts": true
     },
     "topic": "Chat",
@@ -90,7 +90,7 @@ Get a Campfire
   "status": "active",
   "visible_to_clients": false,
   "created_at": "2026-02-12T06:09:02.404Z",
-  "updated_at": "2026-02-12T06:12:09.251Z",
+  "updated_at": "2026-02-12T06:14:10.540Z",
   "title": "Chat",
   "inherits_status": true,
   "type": "Chat::Transcript",
@@ -120,7 +120,7 @@ Get a Campfire
     "client": false,
     "employee": true,
     "time_zone": "America/Chicago",
-    "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBMlkkT4=--5fe7b70fbee7a7f0e2e1e19df7579e5d880c753d/avatar?v=1",
+    "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBMlkkT4=--5fe7b70fbee7a7f0e2e1e19df7579e5d880c753d/avatar",
     "company": {
       "id": 1033447817,
       "name": "Honcho Design"
@@ -128,7 +128,7 @@ Get a Campfire
     "can_ping": true,
     "can_manage_projects": true,
     "can_manage_people": true,
-    "can_access_timesheet": false,
+    "can_access_timesheet": true,
     "can_access_hill_charts": true
   },
   "topic": "Chat",
@@ -193,11 +193,11 @@ Get Campfire lines
       "client": false,
       "employee": false,
       "time_zone": "America/Chicago",
-      "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBNlkkT4=--0f3c77d8c13069d514fd3f0ad694a67e426bad0f/avatar?v=1",
+      "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBNlkkT4=--0f3c77d8c13069d514fd3f0ad694a67e426bad0f/avatar",
       "can_ping": true,
       "can_manage_projects": true,
       "can_manage_people": true,
-      "can_access_timesheet": false,
+      "can_access_timesheet": true,
       "can_access_hill_charts": true
     },
     "content": "I'm hungry"
@@ -261,11 +261,11 @@ Get a Campfire line
     "client": false,
     "employee": false,
     "time_zone": "America/Chicago",
-    "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBMtkkT4=--9927c47a4cbee30a7f9aea667882496aba799149/avatar?v=1",
+    "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBMtkkT4=--9927c47a4cbee30a7f9aea667882496aba799149/avatar",
     "can_ping": true,
     "can_manage_projects": true,
     "can_manage_people": true,
-    "can_access_timesheet": false,
+    "can_access_timesheet": true,
     "can_access_hill_charts": true
   },
   "content": "👏 🎉"

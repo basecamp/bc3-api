@@ -53,7 +53,7 @@ To get the schedule ID for a project, see the [Get a project][1] endpoint's `doc
     "client": false,
     "employee": true,
     "time_zone": "America/Chicago",
-    "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBMlkkT4=--5fe7b70fbee7a7f0e2e1e19df7579e5d880c753d/avatar?v=1",
+    "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBMlkkT4=--5fe7b70fbee7a7f0e2e1e19df7579e5d880c753d/avatar",
     "company": {
       "id": 1033447817,
       "name": "Honcho Design"
@@ -61,12 +61,12 @@ To get the schedule ID for a project, see the [Get a project][1] endpoint's `doc
     "can_ping": true,
     "can_manage_projects": true,
     "can_manage_people": true,
-    "can_access_timesheet": false,
+    "can_access_timesheet": true,
     "can_access_hill_charts": true
   },
   "include_due_assignments": true,
   "entries_count": 1,
-  "entries_url": "https://3.basecampapi.com/195539477/schedules/1069479396/schedule_entries.json"
+  "entries_url": "https://3.basecampapi.com/195539477/schedules/1069479396/entries.json"
 }
 ```
 <!-- END GET /schedules/2.json -->

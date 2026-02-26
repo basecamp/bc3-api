@@ -28,7 +28,7 @@ _Optional parameters_:
     "id": 2085958506,
     "status": "active",
     "created_at": "2026-02-12T06:55:56.041Z",
-    "updated_at": "2026-02-12T06:09:56.641Z",
+    "updated_at": "2026-02-12T06:13:55.432Z",
     "name": "Honcho Onboarding",
     "description": "Getting started on the right foot",
     "url": "https://3.basecampapi.com/195539477/templates/2085958506.json",
@@ -129,7 +129,7 @@ Get a Template
   "id": 2085958506,
   "status": "active",
   "created_at": "2026-02-12T06:55:56.041Z",
-  "updated_at": "2026-02-12T06:09:56.641Z",
+  "updated_at": "2026-02-12T06:13:55.432Z",
   "name": "Honcho Onboarding",
   "description": "Getting started on the right foot",
   "url": "https://3.basecampapi.com/195539477/templates/2085958506.json",
@@ -321,9 +321,9 @@ If creation was successful, this returns `201 Created` along with the current JS
 <!-- START POST /templates/1/project_constructions.json -->
 ```json
 {
-  "id": 598194960,
+  "id": 598194961,
   "status": "pending",
-  "url": "https://3.basecampapi.com/195539477/templates/2085958506/project_constructions/598194960.json"
+  "url": "https://3.basecampapi.com/195539477/templates/2085958506/project_constructions/598194961.json"
 }
 ```
 <!-- END POST /templates/1/project_constructions.json -->
@@ -338,14 +338,14 @@ This endpoint can be polled at regular intervals (no more than once a second) to
 <!-- START GET /templates/1/project_constructions/1.json -->
 ```json
 {
-  "id": 598194960,
+  "id": 598194961,
   "status": "completed",
-  "url": "https://3.basecampapi.com/195539477/templates/2085958506/project_constructions/598194960.json",
+  "url": "https://3.basecampapi.com/195539477/templates/2085958506/project_constructions/598194961.json",
   "project": {
-    "id": 2085958510,
+    "id": 2085958511,
     "status": "active",
-    "created_at": "2026-02-12T06:13:48.617Z",
-    "updated_at": "2026-02-12T06:13:49.378Z",
+    "created_at": "2026-02-26T16:41:57.253Z",
+    "updated_at": "2026-02-26T16:41:58.479Z",
     "name": "New project from template",
     "description": null,
     "purpose": "topic",
@@ -355,81 +355,81 @@ This endpoint can be polled at regular intervals (no more than once a second) to
     "last_needle_color": "green",
     "last_needle_position": null,
     "previous_needle_position": null,
-    "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiK2dpZDovL2JjMy9CdWNrZXQvMjA4NTk1ODUxMD9leHBpcmVzX2luBjsAVEkiCHB1cgY7AFRJIg1yZWFkYWJsZQY7AFQ=--991b5863f305d318b91ac4d140ad485d97583e93.json",
-    "url": "https://3.basecampapi.com/195539477/projects/2085958510.json",
-    "app_url": "https://3.basecamp.com/195539477/projects/2085958510",
+    "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiK2dpZDovL2JjMy9CdWNrZXQvMjA4NTk1ODUxMT9leHBpcmVzX2luBjsAVEkiCHB1cgY7AFRJIg1yZWFkYWJsZQY7AFQ=--4dd18a896aa1964bb280ed1b699308f2ad4d20c0.json",
+    "url": "https://3.basecampapi.com/195539477/projects/2085958511.json",
+    "app_url": "https://3.basecamp.com/195539477/projects/2085958511",
     "dock": [
       {
-        "id": 1069479948,
+        "id": 1069479980,
         "title": "Message Board",
         "name": "message_board",
         "enabled": true,
         "position": 1,
-        "url": "https://3.basecampapi.com/195539477/buckets/2085958510/message_boards/1069479948.json",
-        "app_url": "https://3.basecamp.com/195539477/buckets/2085958510/message_boards/1069479948"
+        "url": "https://3.basecampapi.com/195539477/buckets/2085958511/message_boards/1069479980.json",
+        "app_url": "https://3.basecamp.com/195539477/buckets/2085958511/message_boards/1069479980"
       },
       {
-        "id": 1069479949,
+        "id": 1069479981,
         "title": "To-dos",
         "name": "todoset",
         "enabled": true,
         "position": 2,
-        "url": "https://3.basecampapi.com/195539477/buckets/2085958510/todosets/1069479949.json",
-        "app_url": "https://3.basecamp.com/195539477/buckets/2085958510/todosets/1069479949"
+        "url": "https://3.basecampapi.com/195539477/buckets/2085958511/todosets/1069479981.json",
+        "app_url": "https://3.basecamp.com/195539477/buckets/2085958511/todosets/1069479981"
       },
       {
-        "id": 1069479954,
+        "id": 1069479986,
         "title": "Docs & Files",
         "name": "vault",
         "enabled": true,
         "position": 3,
-        "url": "https://3.basecampapi.com/195539477/buckets/2085958510/vaults/1069479954.json",
-        "app_url": "https://3.basecamp.com/195539477/buckets/2085958510/vaults/1069479954"
+        "url": "https://3.basecampapi.com/195539477/buckets/2085958511/vaults/1069479986.json",
+        "app_url": "https://3.basecamp.com/195539477/buckets/2085958511/vaults/1069479986"
       },
       {
-        "id": 1069479955,
+        "id": 1069479987,
         "title": "Chat",
         "name": "chat",
         "enabled": true,
         "position": 4,
-        "url": "https://3.basecampapi.com/195539477/buckets/2085958510/chats/1069479955.json",
-        "app_url": "https://3.basecamp.com/195539477/buckets/2085958510/chats/1069479955"
+        "url": "https://3.basecampapi.com/195539477/buckets/2085958511/chats/1069479987.json",
+        "app_url": "https://3.basecamp.com/195539477/buckets/2085958511/chats/1069479987"
       },
       {
-        "id": 1069479956,
+        "id": 1069479988,
         "title": "Schedule",
         "name": "schedule",
         "enabled": true,
         "position": 5,
-        "url": "https://3.basecampapi.com/195539477/buckets/2085958510/schedules/1069479956.json",
-        "app_url": "https://3.basecamp.com/195539477/buckets/2085958510/schedules/1069479956"
+        "url": "https://3.basecampapi.com/195539477/buckets/2085958511/schedules/1069479988.json",
+        "app_url": "https://3.basecamp.com/195539477/buckets/2085958511/schedules/1069479988"
       },
       {
-        "id": 1069479957,
+        "id": 1069479989,
         "title": "Automatic Check-ins",
         "name": "questionnaire",
         "enabled": false,
         "position": null,
-        "url": "https://3.basecampapi.com/195539477/buckets/2085958510/questionnaires/1069479957.json",
-        "app_url": "https://3.basecamp.com/195539477/buckets/2085958510/questionnaires/1069479957"
+        "url": "https://3.basecampapi.com/195539477/buckets/2085958511/questionnaires/1069479989.json",
+        "app_url": "https://3.basecamp.com/195539477/buckets/2085958511/questionnaires/1069479989"
       },
       {
-        "id": 1069479958,
+        "id": 1069479990,
         "title": "Email Forwards",
         "name": "inbox",
         "enabled": false,
         "position": null,
-        "url": "https://3.basecampapi.com/195539477/buckets/2085958510/inboxes/1069479958.json",
-        "app_url": "https://3.basecamp.com/195539477/buckets/2085958510/inboxes/1069479958"
+        "url": "https://3.basecampapi.com/195539477/buckets/2085958511/inboxes/1069479990.json",
+        "app_url": "https://3.basecamp.com/195539477/buckets/2085958511/inboxes/1069479990"
       },
       {
-        "id": 1069479959,
+        "id": 1069479991,
         "title": "Card Table",
         "name": "kanban_board",
         "enabled": false,
         "position": null,
-        "url": "https://3.basecampapi.com/195539477/buckets/2085958510/card_tables/1069479959.json",
-        "app_url": "https://3.basecamp.com/195539477/buckets/2085958510/card_tables/1069479959"
+        "url": "https://3.basecampapi.com/195539477/buckets/2085958511/card_tables/1069479991.json",
+        "app_url": "https://3.basecamp.com/195539477/buckets/2085958511/card_tables/1069479991"
       }
     ]
   }

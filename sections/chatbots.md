@@ -128,14 +128,14 @@ Get chatbots
 ```json
 [
   {
-    "id": 1049715954,
-    "created_at": "2026-02-12T06:10:28.807Z",
-    "updated_at": "2026-02-12T06:10:28.807Z",
+    "id": 1049715953,
+    "created_at": "2026-02-26T16:46:10.842Z",
+    "updated_at": "2026-02-26T16:46:10.842Z",
     "service_name": "Capistrano",
     "command_url": null,
-    "url": "https://3.basecampapi.com/195539477/buckets/2085958502/chats/1069478985/integrations/1049715954.json",
-    "app_url": "https://3.basecamp.com/195539477/buckets/2085958502/chats/1069478985/integrations/1049715954",
-    "lines_url": "https://3.basecampapi.com/195539477/integrations/qKcdQdSYteGQzPYpatt334zK/buckets/2085958502/chats/1069478985/lines"
+    "url": "https://3.basecampapi.com/195539477/buckets/2085958502/chats/1069478985/integrations/1049715953.json",
+    "app_url": "https://3.basecamp.com/195539477/buckets/2085958502/chats/1069478985/integrations/1049715953",
+    "lines_url": "https://3.basecampapi.com/195539477/integrations/WsCvJaxcgmDBCAaufcaQHNFr/buckets/2085958502/chats/1069478985/lines"
   }
 ]
 ```
@@ -157,14 +157,14 @@ Get a chatbot
 ```json
 [
   {
-    "id": 1049715954,
-    "created_at": "2026-02-12T06:10:28.807Z",
-    "updated_at": "2026-02-12T06:10:28.807Z",
+    "id": 1049715953,
+    "created_at": "2026-02-26T16:46:10.842Z",
+    "updated_at": "2026-02-26T16:46:10.842Z",
     "service_name": "Capistrano",
     "command_url": null,
-    "url": "https://3.basecampapi.com/195539477/buckets/2085958502/chats/1069478985/integrations/1049715954.json",
-    "app_url": "https://3.basecamp.com/195539477/buckets/2085958502/chats/1069478985/integrations/1049715954",
-    "lines_url": "https://3.basecampapi.com/195539477/integrations/qKcdQdSYteGQzPYpatt334zK/buckets/2085958502/chats/1069478985/lines"
+    "url": "https://3.basecampapi.com/195539477/buckets/2085958502/chats/1069478985/integrations/1049715953.json",
+    "app_url": "https://3.basecamp.com/195539477/buckets/2085958502/chats/1069478985/integrations/1049715953",
+    "lines_url": "https://3.basecampapi.com/195539477/integrations/WsCvJaxcgmDBCAaufcaQHNFr/buckets/2085958502/chats/1069478985/lines"
   }
 ]
 ```

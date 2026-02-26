@@ -23,7 +23,7 @@ To get the to-do set ID for a project, see the [Get a project][1] endpoint's `do
   "status": "active",
   "visible_to_clients": false,
   "created_at": "2026-02-12T06:09:34.637Z",
-  "updated_at": "2026-02-12T06:09:48.026Z",
+  "updated_at": "2026-02-12T06:14:05.539Z",
   "title": "To-dos",
   "inherits_status": true,
   "type": "Todoset",
@@ -52,7 +52,7 @@ To get the to-do set ID for a project, see the [Get a project][1] endpoint's `do
     "client": false,
     "employee": true,
     "time_zone": "America/Chicago",
-    "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBMlkkT4=--5fe7b70fbee7a7f0e2e1e19df7579e5d880c753d/avatar?v=1",
+    "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBMlkkT4=--5fe7b70fbee7a7f0e2e1e19df7579e5d880c753d/avatar",
     "company": {
       "id": 1033447817,
       "name": "Honcho Design"
@@ -60,7 +60,7 @@ To get the to-do set ID for a project, see the [Get a project][1] endpoint's `do
     "can_ping": true,
     "can_manage_projects": true,
     "can_manage_people": true,
-    "can_access_timesheet": false,
+    "can_access_timesheet": true,
     "can_access_hill_charts": true
   },
   "completed": false,

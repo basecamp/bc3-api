@@ -35,7 +35,7 @@ Get all people
     "client": false,
     "employee": true,
     "time_zone": "America/Chicago",
-    "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBMlkkT4=--5fe7b70fbee7a7f0e2e1e19df7579e5d880c753d/avatar?v=1",
+    "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBMlkkT4=--5fe7b70fbee7a7f0e2e1e19df7579e5d880c753d/avatar",
     "company": {
       "id": 1033447817,
       "name": "Honcho Design"
@@ -43,7 +43,7 @@ Get all people
     "can_ping": true,
     "can_manage_projects": true,
     "can_manage_people": true,
-    "can_access_timesheet": false,
+    "can_access_timesheet": true,
     "can_access_hill_charts": true
   }
 ]
@@ -123,37 +123,37 @@ curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/j
       "title": "Central Web Coordinator",
       "bio": "I never said most of the things I said",
       "location": null,
-      "created_at": "2026-02-12T00:08:51.167-06:00",
-      "updated_at": "2026-02-12T00:08:51.167-06:00",
+      "created_at": "2026-02-12T06:08:51.167Z",
+      "updated_at": "2026-02-12T06:08:51.167Z",
       "admin": false,
       "owner": false,
       "client": false,
       "employee": false,
       "time_zone": "America/Chicago",
-      "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBMtkkT4=--9927c47a4cbee30a7f9aea667882496aba799149/avatar?v=1",
+      "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBMtkkT4=--9927c47a4cbee30a7f9aea667882496aba799149/avatar",
       "can_ping": true,
       "can_manage_projects": true,
       "can_manage_people": true,
-      "can_access_timesheet": false,
+      "can_access_timesheet": true,
       "can_access_hill_charts": true
     },
     {
-      "id": 1049715955,
-      "attachable_sgid": "BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiK2dpZDovL2JjMy9QZXJzb24vMTA0OTcxNTk1NT9leHBpcmVzX2luBjsAVEkiCHB1cgY7AFRJIg9hdHRhY2hhYmxlBjsAVA==--6a8affd82c540e7c1f7e846b2b02fedb01bcd3f0",
+      "id": 1049715956,
+      "attachable_sgid": "BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiK2dpZDovL2JjMy9QZXJzb24vMTA0OTcxNTk1Nj9leHBpcmVzX2luBjsAVEkiCHB1cgY7AFRJIg9hdHRhY2hhYmxlBjsAVA==--e842ca0bf3c9a7c8d03a4dede5fd838e947fe5c1",
       "name": "Victor Copper",
       "email_address": "victor@hanchodesign.com",
       "personable_type": "User",
       "title": "Prankster",
       "bio": null,
       "location": null,
-      "created_at": "2026-02-12T00:13:54.748-06:00",
-      "updated_at": "2026-02-12T00:13:54.748-06:00",
+      "created_at": "2026-02-26T16:42:02.577Z",
+      "updated_at": "2026-02-26T16:42:02.577Z",
       "admin": false,
       "owner": false,
       "client": false,
       "employee": false,
       "time_zone": "America/Chicago",
-      "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBPNkkT4=--5049939da9ea89df60ade5a1c42d324c1651c66c/avatar?v=1",
+      "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBPRkkT4=--a31ea55b015ce2f5f714df6e51f42245d949ed3a/avatar",
       "company": {
         "id": 1033447819,
         "name": "Hancho Design"
@@ -161,7 +161,7 @@ curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/j
       "can_ping": true,
       "can_manage_projects": true,
       "can_manage_people": true,
-      "can_access_timesheet": false,
+      "can_access_timesheet": true,
       "can_access_hill_charts": true
     }
   ],
@@ -175,14 +175,14 @@ curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/j
       "title": "Legacy Directives Strategist",
       "bio": "You can do it!",
       "location": null,
-      "created_at": "2026-02-12T00:08:59.344-06:00",
-      "updated_at": "2026-02-12T00:08:59.344-06:00",
+      "created_at": "2026-02-12T06:08:59.344Z",
+      "updated_at": "2026-02-12T06:08:59.344Z",
       "admin": false,
       "owner": false,
       "client": false,
       "employee": true,
       "time_zone": "America/Chicago",
-      "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBOhkkT4=--b169e35b345bcc26eca6964b7ef7de2c16b6f238/avatar?v=1",
+      "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBOhkkT4=--b169e35b345bcc26eca6964b7ef7de2c16b6f238/avatar",
       "company": {
         "id": 1033447817,
         "name": "Honcho Design"
@@ -190,7 +190,7 @@ curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/j
       "can_ping": true,
       "can_manage_projects": true,
       "can_manage_people": true,
-      "can_access_timesheet": false,
+      "can_access_timesheet": true,
       "can_access_hill_charts": true
     }
   ]
@@ -238,11 +238,11 @@ Get person
   "client": false,
   "employee": false,
   "time_zone": "America/Chicago",
-  "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBNhkkT4=--cef810620a2f44a2144ab788d90679e478ea2344/avatar?v=1",
+  "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBNhkkT4=--cef810620a2f44a2144ab788d90679e478ea2344/avatar",
   "can_ping": true,
   "can_manage_projects": true,
   "can_manage_people": true,
-  "can_access_timesheet": false,
+  "can_access_timesheet": true,
   "can_access_hill_charts": true
 }
 ```
