@@ -25,22 +25,22 @@ _Optional query parameters_:
 ```json
 [
   {
-    "id": 1069479914,
+    "id": 1069479834,
     "status": "active",
     "visible_to_clients": false,
-    "created_at": "2026-02-12T06:10:28.094Z",
-    "updated_at": "2026-02-12T06:10:28.415Z",
+    "created_at": "2026-02-26T16:46:10.246Z",
+    "updated_at": "2026-02-26T16:46:10.473Z",
     "title": "Team Meeting",
     "inherits_status": true,
     "type": "Schedule::Entry",
-    "url": "https://3.basecampapi.com/195539477/buckets/2085958504/schedule_entries/1069479914.json",
-    "app_url": "https://3.basecamp.com/195539477/buckets/2085958504/schedule_entries/1069479914",
-    "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiLmdpZDovL2JjMy9SZWNvcmRpbmcvMTA2OTQ3OTkxND9leHBpcmVzX2luBjsAVEkiCHB1cgY7AFRJIg1yZWFkYWJsZQY7AFQ=--1616343b17ee8ece05fd271474b85fe06a864667.json",
-    "subscription_url": "https://3.basecampapi.com/195539477/buckets/2085958504/recordings/1069479914/subscription.json",
+    "url": "https://3.basecampapi.com/195539477/buckets/2085958504/schedule_entries/1069479834.json",
+    "app_url": "https://3.basecamp.com/195539477/buckets/2085958504/schedule_entries/1069479834",
+    "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiLmdpZDovL2JjMy9SZWNvcmRpbmcvMTA2OTQ3OTgzND9leHBpcmVzX2luBjsAVEkiCHB1cgY7AFRJIg1yZWFkYWJsZQY7AFQ=--44239f0fef95aba53d92f958278965ef8e9959c5.json",
+    "subscription_url": "https://3.basecampapi.com/195539477/buckets/2085958504/recordings/1069479834/subscription.json",
     "comments_count": 0,
-    "comments_url": "https://3.basecampapi.com/195539477/buckets/2085958504/recordings/1069479914/comments.json",
+    "comments_url": "https://3.basecampapi.com/195539477/buckets/2085958504/recordings/1069479834/comments.json",
     "boosts_count": 0,
-    "boosts_url": "https://3.basecampapi.com/195539477/buckets/2085958504/recordings/1069479914/boosts.json",
+    "boosts_url": "https://3.basecampapi.com/195539477/buckets/2085958504/recordings/1069479834/boosts.json",
     "parent": {
       "id": 1069479396,
       "title": "Schedule",
@@ -62,14 +62,14 @@ _Optional query parameters_:
       "title": "Chief Strategist",
       "bio": "Don’t let your dreams be dreams",
       "location": "Chicago, IL",
-      "created_at": "2026-02-12T06:08:49.342Z",
-      "updated_at": "2026-02-12T06:08:50.871Z",
+      "created_at": "2026-02-26T16:44:49.965Z",
+      "updated_at": "2026-02-26T16:44:51.645Z",
       "admin": true,
       "owner": true,
       "client": false,
       "employee": true,
       "time_zone": "America/Chicago",
-      "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBMlkkT4=--5fe7b70fbee7a7f0e2e1e19df7579e5d880c753d/avatar?v=1",
+      "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBMlkkT4=--5fe7b70fbee7a7f0e2e1e19df7579e5d880c753d/avatar",
       "company": {
         "id": 1033447817,
         "name": "Honcho Design"
@@ -77,14 +77,14 @@ _Optional query parameters_:
       "can_ping": true,
       "can_manage_projects": true,
       "can_manage_people": true,
-      "can_access_timesheet": false,
+      "can_access_timesheet": true,
       "can_access_hill_charts": true
     },
     "description": "<div>Time to synergize!</div>",
     "summary": "Team Meeting",
     "all_day": false,
-    "starts_at": "2026-02-13T08:10:28.050Z",
-    "ends_at": "2026-02-13T12:10:28.050Z",
+    "starts_at": "2026-02-27T18:46:10.205Z",
+    "ends_at": "2026-02-27T22:46:10.206Z",
     "participants": [
       {
         "id": 1049715944,
@@ -95,14 +95,14 @@ _Optional query parameters_:
         "title": "Legacy Directives Strategist",
         "bio": "You can do it!",
         "location": null,
-        "created_at": "2026-02-12T06:08:59.344Z",
-        "updated_at": "2026-02-12T06:08:59.344Z",
+        "created_at": "2026-02-26T16:44:59.972Z",
+        "updated_at": "2026-02-26T16:44:59.972Z",
         "admin": false,
         "owner": false,
         "client": false,
         "employee": true,
         "time_zone": "America/Chicago",
-        "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBOhkkT4=--b169e35b345bcc26eca6964b7ef7de2c16b6f238/avatar?v=1",
+        "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBOhkkT4=--b169e35b345bcc26eca6964b7ef7de2c16b6f238/avatar",
         "company": {
           "id": 1033447817,
           "name": "Honcho Design"
@@ -110,7 +110,7 @@ _Optional query parameters_:
         "can_ping": true,
         "can_manage_projects": true,
         "can_manage_people": true,
-        "can_access_timesheet": false,
+        "can_access_timesheet": true,
         "can_access_hill_charts": true
       }
     ]
@@ -136,22 +136,22 @@ Get a schedule entry
 <!-- START GET /schedule_entries/2.json -->
 ```json
 {
-  "id": 1069479914,
+  "id": 1069479834,
   "status": "active",
   "visible_to_clients": false,
-  "created_at": "2026-02-12T06:10:28.094Z",
-  "updated_at": "2026-02-12T06:10:28.415Z",
+  "created_at": "2026-02-26T16:46:10.246Z",
+  "updated_at": "2026-02-26T16:46:10.473Z",
   "title": "Team Meeting",
   "inherits_status": true,
   "type": "Schedule::Entry",
-  "url": "https://3.basecampapi.com/195539477/buckets/2085958504/schedule_entries/1069479914.json",
-  "app_url": "https://3.basecamp.com/195539477/buckets/2085958504/schedule_entries/1069479914",
-  "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiLmdpZDovL2JjMy9SZWNvcmRpbmcvMTA2OTQ3OTkxND9leHBpcmVzX2luBjsAVEkiCHB1cgY7AFRJIg1yZWFkYWJsZQY7AFQ=--1616343b17ee8ece05fd271474b85fe06a864667.json",
-  "subscription_url": "https://3.basecampapi.com/195539477/buckets/2085958504/recordings/1069479914/subscription.json",
+  "url": "https://3.basecampapi.com/195539477/buckets/2085958504/schedule_entries/1069479834.json",
+  "app_url": "https://3.basecamp.com/195539477/buckets/2085958504/schedule_entries/1069479834",
+  "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiLmdpZDovL2JjMy9SZWNvcmRpbmcvMTA2OTQ3OTgzND9leHBpcmVzX2luBjsAVEkiCHB1cgY7AFRJIg1yZWFkYWJsZQY7AFQ=--44239f0fef95aba53d92f958278965ef8e9959c5.json",
+  "subscription_url": "https://3.basecampapi.com/195539477/buckets/2085958504/recordings/1069479834/subscription.json",
   "comments_count": 0,
-  "comments_url": "https://3.basecampapi.com/195539477/buckets/2085958504/recordings/1069479914/comments.json",
+  "comments_url": "https://3.basecampapi.com/195539477/buckets/2085958504/recordings/1069479834/comments.json",
   "boosts_count": 0,
-  "boosts_url": "https://3.basecampapi.com/195539477/buckets/2085958504/recordings/1069479914/boosts.json",
+  "boosts_url": "https://3.basecampapi.com/195539477/buckets/2085958504/recordings/1069479834/boosts.json",
   "parent": {
     "id": 1069479396,
     "title": "Schedule",
@@ -173,14 +173,14 @@ Get a schedule entry
     "title": "Chief Strategist",
     "bio": "Don’t let your dreams be dreams",
     "location": "Chicago, IL",
-    "created_at": "2026-02-12T06:08:49.342Z",
-    "updated_at": "2026-02-12T06:08:50.871Z",
+    "created_at": "2026-02-26T16:44:49.965Z",
+    "updated_at": "2026-02-26T16:44:51.645Z",
     "admin": true,
     "owner": true,
     "client": false,
     "employee": true,
     "time_zone": "America/Chicago",
-    "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBMlkkT4=--5fe7b70fbee7a7f0e2e1e19df7579e5d880c753d/avatar?v=1",
+    "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBMlkkT4=--5fe7b70fbee7a7f0e2e1e19df7579e5d880c753d/avatar",
     "company": {
       "id": 1033447817,
       "name": "Honcho Design"
@@ -188,14 +188,14 @@ Get a schedule entry
     "can_ping": true,
     "can_manage_projects": true,
     "can_manage_people": true,
-    "can_access_timesheet": false,
+    "can_access_timesheet": true,
     "can_access_hill_charts": true
   },
   "description": "<div>Time to synergize!</div>",
   "summary": "Team Meeting",
   "all_day": false,
-  "starts_at": "2026-02-13T08:10:28.050Z",
-  "ends_at": "2026-02-13T12:10:28.050Z",
+  "starts_at": "2026-02-27T18:46:10.205Z",
+  "ends_at": "2026-02-27T22:46:10.206Z",
   "participants": [
     {
       "id": 1049715944,
@@ -206,14 +206,14 @@ Get a schedule entry
       "title": "Legacy Directives Strategist",
       "bio": "You can do it!",
       "location": null,
-      "created_at": "2026-02-12T06:08:59.344Z",
-      "updated_at": "2026-02-12T06:08:59.344Z",
+      "created_at": "2026-02-26T16:44:59.972Z",
+      "updated_at": "2026-02-26T16:44:59.972Z",
       "admin": false,
       "owner": false,
       "client": false,
       "employee": true,
       "time_zone": "America/Chicago",
-      "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBOhkkT4=--b169e35b345bcc26eca6964b7ef7de2c16b6f238/avatar?v=1",
+      "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBOhkkT4=--b169e35b345bcc26eca6964b7ef7de2c16b6f238/avatar",
       "company": {
         "id": 1033447817,
         "name": "Honcho Design"
@@ -221,7 +221,7 @@ Get a schedule entry
       "can_ping": true,
       "can_manage_projects": true,
       "can_manage_people": true,
-      "can_access_timesheet": false,
+      "can_access_timesheet": true,
       "can_access_hill_charts": true
     }
   ]

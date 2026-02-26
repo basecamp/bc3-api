@@ -29,8 +29,8 @@ _Optional query parameters_:
     "id": 1069479545,
     "status": "active",
     "visible_to_clients": false,
-    "created_at": "2026-02-07T18:07:00.000-06:00",
-    "updated_at": "2026-02-07T18:07:00.000-06:00",
+    "created_at": "2026-02-08T00:07:00.000Z",
+    "updated_at": "2026-02-08T00:07:00.000Z",
     "title": "Answer to “What did you work on today?”",
     "inherits_status": true,
     "type": "Question::Answer",
@@ -63,14 +63,14 @@ _Optional query parameters_:
       "title": "International Tactics Facilitator",
       "bio": "Oh, so they have internet on computers now!",
       "location": null,
-      "created_at": "2026-02-12T00:08:58.046-06:00",
-      "updated_at": "2026-02-12T00:08:58.046-06:00",
+      "created_at": "2026-02-12T06:08:58.046Z",
+      "updated_at": "2026-02-12T06:08:58.046Z",
       "admin": false,
       "owner": false,
       "client": false,
       "employee": true,
       "time_zone": "America/Chicago",
-      "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBORkkT4=--2667d9ced3ec021946197cbb6c3083f0f95f3b6a/avatar?v=1",
+      "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBORkkT4=--2667d9ced3ec021946197cbb6c3083f0f95f3b6a/avatar",
       "company": {
         "id": 1033447817,
         "name": "Honcho Design"
@@ -78,7 +78,7 @@ _Optional query parameters_:
       "can_ping": true,
       "can_manage_projects": true,
       "can_manage_people": true,
-      "can_access_timesheet": false,
+      "can_access_timesheet": true,
       "can_access_hill_charts": true
     },
     "content": "Prototype is done, components in really good shape. I think we're going to split for now and come back when design is more settled.",
@@ -172,7 +172,7 @@ Get a question answer
     "client": false,
     "employee": true,
     "time_zone": "America/Chicago",
-    "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBORkkT4=--2667d9ced3ec021946197cbb6c3083f0f95f3b6a/avatar?v=1",
+    "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBORkkT4=--2667d9ced3ec021946197cbb6c3083f0f95f3b6a/avatar",
     "company": {
       "id": 1033447817,
       "name": "Honcho Design"
@@ -180,7 +180,7 @@ Get a question answer
     "can_ping": true,
     "can_manage_projects": true,
     "can_manage_people": true,
-    "can_access_timesheet": false,
+    "can_access_timesheet": true,
     "can_access_hill_charts": true
   },
   "content": "Prototype is done, components in really good shape. I think we're going to split for now and come back when design is more settled.",
