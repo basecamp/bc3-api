@@ -686,5 +686,14 @@ curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -X DELETE \
   https://3.basecampapi.com/$ACCOUNT_ID/timesheet_entries/2.json
 ```
 
+Legacy project-scoped routes
+-----------------------------
+
+The following project-scoped routes are still supported and will remain available, but flat routes above are the canonical form for new integrations.
+
+* `GET /projects/1/timesheet.json` → [Get timesheet for a project](#get-timesheet-for-a-project)
+* `GET /projects/1/recordings/2/timesheet.json` → [Get timesheet for a recording](#get-timesheet-for-a-recording)
+* `POST /buckets/1/recordings/2/timesheet/entries.json` → [Create a timesheet entry](#create-a-timesheet-entry)
+
 [1]: https://github.com/basecamp/bc3-api/blob/master/sections/people.md#people
 [2]: https://github.com/basecamp/bc3-api/blob/master/sections/projects.md#projects

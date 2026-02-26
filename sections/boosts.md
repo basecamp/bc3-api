@@ -154,5 +154,15 @@ curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -X DELETE \
 ```
 
 
+Legacy project-scoped routes
+-----------------------------
+
+The following project-scoped routes are still supported and will remain available, but flat routes above are the canonical form for new integrations.
+
+* `GET /buckets/1/recordings/2/boosts.json` → [Get boosts](#get-boosts)
+* `GET /buckets/1/boosts/2.json` → [Get a boost](#get-a-boost)
+* `POST /buckets/1/recordings/2/boosts.json` → [Create a boost](#create-a-boost)
+* `DELETE /buckets/1/boosts/2.json` → [Destroy a boost](#destroy-a-boost)
+
 [events]: https://github.com/basecamp/bc3-api/blob/master/sections/events.md#events
 [pagination]: https://github.com/basecamp/bc3-api/blob/master/README.md#pagination
