@@ -11,19 +11,19 @@ Endpoints:
 Get message board
 -----------------
 
-* `GET /buckets/1/message_boards/2.json` will return the message board for the project with an ID of `1` and the message board ID of `2`.
+* `GET /message_boards/2.json` will return the message board with an ID of `2`.
 
 To get the message board ID for a project, see the [Get a project][1] endpoint's `dock` payload. To retrieve its messages, see the [Get messages][2] endpoint.
 
 ###### Example JSON Response
-<!-- START GET /buckets/1/message_boards/2.json -->
+<!-- START GET /message_boards/2.json -->
 ```json
 {
   "id": 1069479392,
   "status": "active",
   "visible_to_clients": false,
-  "created_at": "2026-01-31T08:32:04.229Z",
-  "updated_at": "2026-02-06T22:55:55.960Z",
+  "created_at": "2026-02-12T00:09:34.613-06:00",
+  "updated_at": "2026-02-26T10:41:51.038-06:00",
   "title": "Message Board",
   "inherits_status": true,
   "type": "Message::Board",
@@ -45,14 +45,14 @@ To get the message board ID for a project, see the [Get a project][1] endpoint's
     "title": "Chief Strategist",
     "bio": "Don’t let your dreams be dreams",
     "location": "Chicago, IL",
-    "created_at": "2026-01-31T08:29:28.365Z",
-    "updated_at": "2026-01-31T08:29:32.599Z",
+    "created_at": "2026-02-12T00:08:49.342-06:00",
+    "updated_at": "2026-02-12T00:08:50.871-06:00",
     "admin": true,
     "owner": true,
     "client": false,
     "employee": true,
     "time_zone": "America/Chicago",
-    "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBMlkkT4=--5fe7b70fbee7a7f0e2e1e19df7579e5d880c753d/avatar?v=1",
+    "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBMlkkT4=--5fe7b70fbee7a7f0e2e1e19df7579e5d880c753d/avatar",
     "company": {
       "id": 1033447817,
       "name": "Honcho Design"
@@ -68,13 +68,21 @@ To get the message board ID for a project, see the [Get a project][1] endpoint's
   "app_messages_url": "https://3.basecamp.com/195539477/buckets/2085958504/message_boards/1069479392/messages"
 }
 ```
-<!-- END GET /buckets/1/message_boards/2.json -->
+<!-- END GET /message_boards/2.json -->
 ###### Copy as cURL
 
 ```shell
-curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/message_boards/2.json
+curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/message_boards/2.json
 ```
 
+
+
+Legacy project-scoped routes
+-----------------------------
+
+The following project-scoped routes are still supported and will remain available, but flat routes above are the canonical form for new integrations.
+
+* `GET /buckets/1/message_boards/2.json` → [Get message board](#get-message-board)
 
 [1]: https://github.com/basecamp/bc3-api/blob/master/sections/projects.md#get-a-project
 [2]: https://github.com/basecamp/bc3-api/blob/master/sections/messages.md#get-messages

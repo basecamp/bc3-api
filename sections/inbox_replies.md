@@ -11,18 +11,18 @@ Endpoints:
 Get inbox replies
 -------------------
 
-* `GET /buckets/1/inbox_forwards/2/replies.json` will return a [paginated list][pagination] of inbox replies in the project with an ID of `1` and the forward with ID of `2`.
+* `GET /inbox_forwards/2/replies.json` will return a [paginated list][pagination] of inbox replies for the forward with ID of `2`.
 
 ###### Example JSON Response
-<!-- START GET /buckets/1/inbox_forwards/2/replies.json -->
+<!-- START GET /inbox_forwards/2/replies.json -->
 ```json
 [
   {
     "id": 1069479086,
     "status": "active",
     "visible_to_clients": false,
-    "created_at": "2025-11-13T01:32:00.000Z",
-    "updated_at": "2025-11-13T01:32:00.000Z",
+    "created_at": "2025-11-24T23:29:00.000Z",
+    "updated_at": "2025-11-24T23:29:00.000Z",
     "title": "Re: Can we make the logo pop?",
     "inherits_status": true,
     "type": "Inbox::Reply",
@@ -52,8 +52,8 @@ Get inbox replies
       "title": "Chief Strategist",
       "bio": "Don’t let your dreams be dreams",
       "location": "Chicago, IL",
-      "created_at": "2026-01-31T08:29:28.365Z",
-      "updated_at": "2026-01-31T08:29:32.599Z",
+      "created_at": "2026-02-12T06:08:49.342Z",
+      "updated_at": "2026-02-12T06:08:50.871Z",
       "admin": true,
       "owner": true,
       "client": false,
@@ -67,34 +67,34 @@ Get inbox replies
       "can_ping": true,
       "can_manage_projects": true,
       "can_manage_people": true,
-      "can_access_timesheet": true,
+      "can_access_timesheet": false,
       "can_access_hill_charts": true
     },
     "content": "Hey Henry!<br><br>Thanks for the quick feedback re: the logo. I know what you mean about feeling \"flat,\" but I'm not quite sure a rainbow is the way to go. I'll ping the design team and see what they can come up with later today. We'll post designs here in Basecamp when they're ready!<br><br><br>--VC"
   }
 ]
 ```
-<!-- END GET /buckets/1/inbox_forwards/2/replies.json -->
+<!-- END GET /inbox_forwards/2/replies.json -->
 ###### Copy as cURL
 
 ```shell
-curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/inbox_forwards/2/replies.json
+curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/inbox_forwards/2/replies.json
 ```
 
 Get an inbox reply
 -------------------
 
-* `GET /buckets/1/inbox_forwards/2/replies/3.json` will return the inbox reply with an ID of `3` for the forward with an ID of `2` in the project with an ID of `1`.
+* `GET /inbox_forwards/2/replies/3.json` will return the inbox reply with an ID of `3` for the forward with an ID of `2`.
 
 ###### Example JSON Response
-<!-- START GET /buckets/1/inbox_forwards/2/replies/3.json -->
+<!-- START GET /inbox_forwards/2/replies/3.json -->
 ```json
 {
   "id": 1069479089,
   "status": "active",
   "visible_to_clients": false,
-  "created_at": "2025-11-13T03:12:00.000Z",
-  "updated_at": "2025-11-13T03:12:00.000Z",
+  "created_at": "2025-11-25T00:36:00.000Z",
+  "updated_at": "2025-11-25T00:36:00.000Z",
   "title": "Re: Can we make the logo pop?",
   "inherits_status": true,
   "type": "Inbox::Reply",
@@ -124,8 +124,8 @@ Get an inbox reply
     "title": null,
     "bio": null,
     "location": null,
-    "created_at": "2026-01-31T08:29:42.654Z",
-    "updated_at": "2026-01-31T08:29:42.654Z",
+    "created_at": "2026-02-12T06:08:57.310Z",
+    "updated_at": "2026-02-12T06:08:57.310Z",
     "admin": false,
     "owner": false,
     "client": false,
@@ -141,12 +141,20 @@ Get an inbox reply
   "content": "Awesome, sounds good Victor!<br><br>Thanks again,<br>Henry"
 }
 ```
-<!-- END GET /buckets/1/inbox_forwards/2/replies/3.json -->
+<!-- END GET /inbox_forwards/2/replies/3.json -->
 ###### Copy as cURL
 
 ```shell
-curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/inbox_forwards/2/replies/3.json
+curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/inbox_forwards/2/replies/3.json
 ```
+
+Legacy project-scoped routes
+-----------------------------
+
+The following project-scoped routes are still supported and will remain available, but flat routes above are the canonical form for new integrations.
+
+* `GET /buckets/1/inbox_forwards/2/replies.json` → [Get inbox replies](#get-inbox-replies)
+* `GET /buckets/1/inbox_forwards/2/replies/3.json` → [Get an inbox reply](#get-an-inbox-reply)
 
 [pagination]: https://github.com/basecamp/bc3-api/blob/master/README.md#pagination
 [forwards]: https://github.com/basecamp/bc3-api/blob/master/sections/forwards.md#forwards

@@ -11,19 +11,19 @@ Endpoints:
 Get to-do set
 -------------
 
-* `GET /buckets/1/todosets/2.json` will return the to-do set for the project with an ID of `1` and a to-do set ID of `2`.
+* `GET /todosets/2.json` will return the to-do set with an ID of `2`.
 
 To get the to-do set ID for a project, see the [Get a project][1] endpoint's `dock` payload. To retrieve its to-do lists, see the [Get to-do lists][2] endpoint.
 
 ###### Example JSON Response
-<!-- START GET /buckets/1/todosets/2.json -->
+<!-- START GET /todosets/2.json -->
 ```json
 {
   "id": 1069479393,
   "status": "active",
   "visible_to_clients": false,
-  "created_at": "2026-01-31T08:32:04.373Z",
-  "updated_at": "2026-02-06T22:45:49.916Z",
+  "created_at": "2026-02-12T06:09:34.637Z",
+  "updated_at": "2026-02-12T06:14:05.539Z",
   "title": "To-dos",
   "inherits_status": true,
   "type": "Todoset",
@@ -45,14 +45,14 @@ To get the to-do set ID for a project, see the [Get a project][1] endpoint's `do
     "title": "Chief Strategist",
     "bio": "Don’t let your dreams be dreams",
     "location": "Chicago, IL",
-    "created_at": "2026-01-31T08:29:28.365Z",
-    "updated_at": "2026-01-31T08:29:32.599Z",
+    "created_at": "2026-02-12T06:08:49.342Z",
+    "updated_at": "2026-02-12T06:08:50.871Z",
     "admin": true,
     "owner": true,
     "client": false,
     "employee": true,
     "time_zone": "America/Chicago",
-    "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBMlkkT4=--5fe7b70fbee7a7f0e2e1e19df7579e5d880c753d/avatar?v=1",
+    "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBMlkkT4=--5fe7b70fbee7a7f0e2e1e19df7579e5d880c753d/avatar",
     "company": {
       "id": 1033447817,
       "name": "Honcho Design"
@@ -163,13 +163,20 @@ To get the to-do set ID for a project, see the [Get a project][1] endpoint's `do
   "app_todoslists_url": "https://3.basecamp.com/195539477/buckets/2085958504/todosets/1069479393/todolists"
 }
 ```
-<!-- END GET /buckets/1/todosets/2.json -->
+<!-- END GET /todosets/2.json -->
 ###### Copy as cURL
 
 ```shell
-curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/todosets/2.json
+curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/todosets/2.json
 ```
 
+
+Legacy project-scoped routes
+-----------------------------
+
+The following project-scoped routes are still supported and will remain available, but flat routes above are the canonical form for new integrations.
+
+* `GET /buckets/1/todosets/2.json` → [Get to-do set](#get-to-do-set)
 
 [1]: https://github.com/basecamp/bc3-api/blob/master/sections/projects.md#get-a-project
 [2]: https://github.com/basecamp/bc3-api/blob/master/sections/todolists.md#get-to-do-lists

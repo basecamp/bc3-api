@@ -28,14 +28,14 @@ This endpoint is useful for building a list of people to then retrieve their ind
     "title": "Central Web Coordinator",
     "bio": "I never said most of the things I said",
     "location": null,
-    "created_at": "2026-01-31T08:29:32.987Z",
-    "updated_at": "2026-01-31T08:29:32.987Z",
+    "created_at": "2026-02-12T06:08:51.167Z",
+    "updated_at": "2026-02-12T06:08:51.167Z",
     "admin": false,
     "owner": false,
     "client": false,
     "employee": false,
     "time_zone": "America/Chicago",
-    "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBMtkkT4=--9927c47a4cbee30a7f9aea667882496aba799149/avatar?v=1",
+    "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBMtkkT4=--9927c47a4cbee30a7f9aea667882496aba799149/avatar",
     "can_ping": true,
     "can_manage_projects": true,
     "can_manage_people": true,
@@ -73,14 +73,14 @@ _Optional query parameters_:
     "title": "Central Web Coordinator",
     "bio": "I never said most of the things I said",
     "location": null,
-    "created_at": "2026-01-31T08:29:32.987Z",
-    "updated_at": "2026-01-31T08:29:32.987Z",
+    "created_at": "2026-02-12T06:08:51.167Z",
+    "updated_at": "2026-02-12T06:08:51.167Z",
     "admin": false,
     "owner": false,
     "client": false,
     "employee": false,
     "time_zone": "America/Chicago",
-    "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBMtkkT4=--9927c47a4cbee30a7f9aea667882496aba799149/avatar?v=1",
+    "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBMtkkT4=--9927c47a4cbee30a7f9aea667882496aba799149/avatar",
     "can_ping": true,
     "can_manage_projects": true,
     "can_manage_people": true,
@@ -93,8 +93,8 @@ _Optional query parameters_:
       "id": 1069479164,
       "status": "active",
       "visible_to_clients": false,
-      "created_at": "2026-01-02T02:59:00.000Z",
-      "updated_at": "2026-01-02T02:59:00.000Z",
+      "created_at": "2026-01-14T04:18:00.000Z",
+      "updated_at": "2026-01-14T04:18:00.000Z",
       "title": "Amy vs. Sharon",
       "inherits_status": true,
       "type": "Todo",
@@ -104,6 +104,8 @@ _Optional query parameters_:
       "subscription_url": "https://3.basecampapi.com/195539477/buckets/2085958502/recordings/1069479164/subscription.json",
       "comments_count": 0,
       "comments_url": "https://3.basecampapi.com/195539477/buckets/2085958502/recordings/1069479164/comments.json",
+      "boosts_count": 0,
+      "boosts_url": "https://3.basecampapi.com/195539477/buckets/2085958502/recordings/1069479164/boosts.json",
       "position": 2,
       "parent": {
         "id": 1069479162,
@@ -126,14 +128,14 @@ _Optional query parameters_:
         "title": "International Branding Liason",
         "bio": null,
         "location": null,
-        "created_at": "2026-01-31T08:29:34.525Z",
-        "updated_at": "2026-01-31T08:29:34.525Z",
+        "created_at": "2026-02-12T06:08:52.123Z",
+        "updated_at": "2026-02-12T06:08:52.123Z",
         "admin": false,
         "owner": false,
         "client": false,
         "employee": false,
         "time_zone": "America/Chicago",
-        "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBM5kkT4=--50075f17f313c1198fb6f27e5d466327804dfd22/avatar?v=1",
+        "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBM5kkT4=--50075f17f313c1198fb6f27e5d466327804dfd22/avatar",
         "can_ping": true,
         "can_manage_projects": true,
         "can_manage_people": true,
@@ -155,14 +157,14 @@ _Optional query parameters_:
           "title": "Central Web Coordinator",
           "bio": "I never said most of the things I said",
           "location": null,
-          "created_at": "2026-01-31T08:29:32.987Z",
-          "updated_at": "2026-01-31T08:29:32.987Z",
+          "created_at": "2026-02-12T06:08:51.167Z",
+          "updated_at": "2026-02-12T06:08:51.167Z",
           "admin": false,
           "owner": false,
           "client": false,
           "employee": false,
           "time_zone": "America/Chicago",
-          "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBMtkkT4=--9927c47a4cbee30a7f9aea667882496aba799149/avatar?v=1",
+          "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBMtkkT4=--9927c47a4cbee30a7f9aea667882496aba799149/avatar",
           "can_ping": true,
           "can_manage_projects": true,
           "can_manage_people": true,
@@ -171,7 +173,7 @@ _Optional query parameters_:
         }
       ],
       "completion_subscribers": [],
-      "completion_url": "https://3.basecampapi.com/195539477/buckets/2085958502/todos/1069479164/completion.json"
+      "completion_url": "https://3.basecampapi.com/195539477/todos/1069479164/completion.json"
     }
   ]
 }
@@ -232,27 +234,27 @@ The response includes:
 {
   "schedule_entries": [
     {
-      "id": 1069479912,
+      "id": 1069479914,
       "status": "active",
       "visible_to_clients": false,
-      "url": "https://3.basecampapi.com/195539477/buckets/2085958504/schedule_entries/1069479912.json",
-      "app_url": "https://3.basecamp.com/195539477/buckets/2085958504/schedule_entries/1069479912",
+      "url": "https://3.basecampapi.com/195539477/buckets/2085958504/schedule_entries/1069479914.json",
+      "app_url": "https://3.basecamp.com/195539477/buckets/2085958504/schedule_entries/1069479914",
       "type": "ScheduleEntry",
       "summary": "Team Meeting",
       "all_day": false,
       "recurring": false,
-      "starts_at": "2026-02-08T00:48:58.572Z",
-      "ends_at": "2026-02-08T04:48:58.572Z",
+      "starts_at": "2026-02-27T18:29:36.956Z",
+      "ends_at": "2026-02-27T22:29:36.956Z",
       "creator": {
         "id": 1049715913,
         "name": "Victor Cooper",
-        "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBMlkkT4=--5fe7b70fbee7a7f0e2e1e19df7579e5d880c753d/avatar?v=1"
+        "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBMlkkT4=--5fe7b70fbee7a7f0e2e1e19df7579e5d880c753d/avatar"
       },
       "participants": [
         {
           "id": 1049715944,
           "name": "Steve Marsh",
-          "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBOhkkT4=--b169e35b345bcc26eca6964b7ef7de2c16b6f238/avatar?v=1"
+          "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBOhkkT4=--b169e35b345bcc26eca6964b7ef7de2c16b6f238/avatar"
         }
       ],
       "bucket": {

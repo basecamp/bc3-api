@@ -27,8 +27,8 @@ Get a tool
   "id": 1069479395,
   "status": "active",
   "visible_to_clients": false,
-  "created_at": "2026-01-31T08:32:04.505Z",
-  "updated_at": "2026-02-01T02:53:38.342Z",
+  "created_at": "2026-02-12T06:09:34.667Z",
+  "updated_at": "2026-02-12T06:13:57.731Z",
   "title": "Chat",
   "inherits_status": true,
   "type": "Chat::Transcript",
@@ -51,8 +51,8 @@ Get a tool
     "title": "Chief Strategist",
     "bio": "Don’t let your dreams be dreams",
     "location": "Chicago, IL",
-    "created_at": "2026-01-31T08:29:28.365Z",
-    "updated_at": "2026-01-31T08:29:32.599Z",
+    "created_at": "2026-02-12T06:08:49.342Z",
+    "updated_at": "2026-02-12T06:08:50.871Z",
     "admin": true,
     "owner": true,
     "client": false,
@@ -66,7 +66,7 @@ Get a tool
     "can_ping": true,
     "can_manage_projects": true,
     "can_manage_people": true,
-    "can_access_timesheet": true,
+    "can_access_timesheet": false,
     "can_access_hill_charts": true
   }
 }

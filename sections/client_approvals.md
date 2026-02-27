@@ -19,8 +19,8 @@ Get client approvals
     "id": 1069479710,
     "status": "active",
     "visible_to_clients": false,
-    "created_at": "2026-01-30T19:58:00.000Z",
-    "updated_at": "2026-01-30T19:58:00.000Z",
+    "created_at": "2026-02-25T20:04:00.000Z",
+    "updated_at": "2026-02-25T20:04:00.000Z",
     "title": "Business card",
     "inherits_status": true,
     "type": "Client::Approval",
@@ -49,14 +49,14 @@ Get client approvals
       "title": "Central Markets Manager",
       "bio": "To open a store is easy, to keep it open is an art",
       "location": null,
-      "created_at": "2026-01-31T08:29:42.795Z",
-      "updated_at": "2026-01-31T08:29:42.795Z",
+      "created_at": "2026-02-26T16:44:58.030Z",
+      "updated_at": "2026-02-26T16:44:58.030Z",
       "admin": false,
       "owner": false,
       "client": false,
       "employee": true,
       "time_zone": "America/Chicago",
-      "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBOJkkT4=--732a71fbd28ec10d9bf4466abd3588a8bea40bdb/avatar?v=1",
+      "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBOJkkT4=--732a71fbd28ec10d9bf4466abd3588a8bea40bdb/avatar",
       "company": {
         "id": 1033447817,
         "name": "Honcho Design"
@@ -82,14 +82,14 @@ Get client approvals
       "title": "Dynamic Markets Analyst",
       "bio": null,
       "location": null,
-      "created_at": "2026-01-31T08:29:42.724Z",
-      "updated_at": "2026-01-31T08:29:42.724Z",
+      "created_at": "2026-02-26T16:44:58.011Z",
+      "updated_at": "2026-02-26T16:44:58.011Z",
       "admin": false,
       "owner": false,
       "client": false,
       "employee": false,
       "time_zone": "Etc/UTC",
-      "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBOBkkT4=--78fb2ba7c3091268f41638ef90dee7dd32f395d6/avatar?v=1",
+      "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBOBkkT4=--78fb2ba7c3091268f41638ef90dee7dd32f395d6/avatar",
       "company": {
         "id": 1033447818,
         "name": "Leto Brand"
@@ -113,17 +113,17 @@ curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCO
 Get a client approval
 ---------------------
 
-* `GET /buckets/1/client/approvals/2.json` will return the client approval with an ID of `2` in the project with an ID of `1`.
+* `GET /client/approvals/2.json` will return the client approval with an ID of `2`.
 
 ###### Example JSON Response
-<!-- START GET /buckets/1/client/approvals/2.json -->
+<!-- START GET /client/approvals/2.json -->
 ```json
 {
   "id": 1069479708,
   "status": "active",
   "visible_to_clients": false,
-  "created_at": "2026-01-27T18:09:00.000Z",
-  "updated_at": "2026-01-31T08:33:25.094Z",
+  "created_at": "2026-02-22T21:27:00.000Z",
+  "updated_at": "2026-02-26T16:46:03.857Z",
   "title": "New logo for the website",
   "inherits_status": true,
   "type": "Client::Approval",
@@ -152,14 +152,14 @@ Get a client approval
     "title": "Central Markets Manager",
     "bio": "To open a store is easy, to keep it open is an art",
     "location": null,
-    "created_at": "2026-01-31T08:29:42.795Z",
-    "updated_at": "2026-01-31T08:29:42.795Z",
+    "created_at": "2026-02-26T16:44:58.030Z",
+    "updated_at": "2026-02-26T16:44:58.030Z",
     "admin": false,
     "owner": false,
     "client": false,
     "employee": true,
     "time_zone": "America/Chicago",
-    "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBOJkkT4=--732a71fbd28ec10d9bf4466abd3588a8bea40bdb/avatar?v=1",
+    "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBOJkkT4=--732a71fbd28ec10d9bf4466abd3588a8bea40bdb/avatar",
     "company": {
       "id": 1033447817,
       "name": "Honcho Design"
@@ -185,14 +185,14 @@ Get a client approval
     "title": "National Directives Director",
     "bio": null,
     "location": null,
-    "created_at": "2026-01-31T08:29:42.692Z",
-    "updated_at": "2026-01-31T08:29:42.692Z",
+    "created_at": "2026-02-26T16:44:58.005Z",
+    "updated_at": "2026-02-26T16:44:58.005Z",
     "admin": false,
     "owner": false,
     "client": false,
     "employee": false,
     "time_zone": "Etc/UTC",
-    "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBN9kkT4=--7df21243a6650f691505323b707250c92aeb468d/avatar?v=1",
+    "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBN9kkT4=--7df21243a6650f691505323b707250c92aeb468d/avatar",
     "company": {
       "id": 1033447818,
       "name": "Leto Brand"
@@ -208,8 +208,8 @@ Get a client approval
       "id": 1069479709,
       "status": "active",
       "visible_to_clients": false,
-      "created_at": "2026-01-27T18:49:00.000Z",
-      "updated_at": "2026-01-27T18:49:00.000Z",
+      "created_at": "2026-02-22T21:31:00.000Z",
+      "updated_at": "2026-02-22T21:31:00.000Z",
       "title": "Answer Re: New logo for the website",
       "inherits_status": true,
       "type": "Client::Approval::Response",
@@ -236,14 +236,14 @@ Get a client approval
         "title": "Product Tactics Architect",
         "bio": null,
         "location": null,
-        "created_at": "2026-01-31T08:29:42.744Z",
-        "updated_at": "2026-01-31T08:29:42.744Z",
+        "created_at": "2026-02-26T16:44:58.016Z",
+        "updated_at": "2026-02-26T16:44:58.016Z",
         "admin": false,
         "owner": false,
         "client": false,
         "employee": false,
         "time_zone": "Etc/UTC",
-        "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBOFkkT4=--560f7fa1330d4341e3c089226bcb7fefb82dbfd1/avatar?v=1",
+        "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBOFkkT4=--560f7fa1330d4341e3c089226bcb7fefb82dbfd1/avatar",
         "company": {
           "id": 1033447818,
           "name": "Leto Brand"
@@ -260,11 +260,19 @@ Get a client approval
   ]
 }
 ```
-<!-- END GET /buckets/1/client/approvals/2.json -->
+<!-- END GET /client/approvals/2.json -->
 ###### Copy as cURL
 
 ```shell
-curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/client/approvals/2.json
+curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/client/approvals/2.json
 ```
+
+
+Legacy project-scoped routes
+-----------------------------
+
+The following project-scoped routes are still supported and will remain available, but flat routes above are the canonical form for new integrations.
+
+* `GET /buckets/1/client/approvals/2.json` → [Get a client approval](#get-a-client-approval)
 
 [pagination]: https://github.com/basecamp/bc3-api/blob/master/README.md#pagination

@@ -10,17 +10,17 @@ Endpoints:
 Get a card table
 --------------------
 
-* `GET /buckets/1/card_tables/2.json` will return the card_table with an ID of `2` in the project with an ID of `1`.
+* `GET /card_tables/2.json` will return the card table with an ID of `2`.
 
 ###### Example JSON Response
-<!-- START GET /buckets/1/card_tables/2.json -->
+<!-- START GET /card_tables/2.json -->
 ```json
 {
   "id": 1069479399,
   "status": "active",
   "visible_to_clients": false,
-  "created_at": "2026-01-31T08:32:04.723Z",
-  "updated_at": "2026-01-31T08:33:00.714Z",
+  "created_at": "2026-02-12T06:09:34.724Z",
+  "updated_at": "2026-02-12T06:09:49.749Z",
   "title": "Card Table",
   "inherits_status": true,
   "type": "Kanban::Board",
@@ -42,14 +42,14 @@ Get a card table
     "title": "Chief Strategist",
     "bio": "Don’t let your dreams be dreams",
     "location": "Chicago, IL",
-    "created_at": "2026-01-31T08:29:28.365Z",
-    "updated_at": "2026-01-31T08:29:32.599Z",
+    "created_at": "2026-02-12T06:08:49.342Z",
+    "updated_at": "2026-02-12T06:08:50.871Z",
     "admin": true,
     "owner": true,
     "client": false,
     "employee": true,
     "time_zone": "America/Chicago",
-    "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBMlkkT4=--5fe7b70fbee7a7f0e2e1e19df7579e5d880c753d/avatar?v=1",
+    "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBMlkkT4=--5fe7b70fbee7a7f0e2e1e19df7579e5d880c753d/avatar",
     "company": {
       "id": 1033447817,
       "name": "Honcho Design"
@@ -70,14 +70,14 @@ Get a card table
       "title": "Chief Strategist",
       "bio": "Don’t let your dreams be dreams",
       "location": "Chicago, IL",
-      "created_at": "2026-01-31T08:29:28.365Z",
-      "updated_at": "2026-01-31T08:29:32.599Z",
+      "created_at": "2026-02-12T06:08:49.342Z",
+      "updated_at": "2026-02-12T06:08:50.871Z",
       "admin": true,
       "owner": true,
       "client": false,
       "employee": true,
       "time_zone": "America/Chicago",
-      "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBMlkkT4=--5fe7b70fbee7a7f0e2e1e19df7579e5d880c753d/avatar?v=1",
+      "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBMlkkT4=--5fe7b70fbee7a7f0e2e1e19df7579e5d880c753d/avatar",
       "company": {
         "id": 1033447817,
         "name": "Honcho Design"
@@ -95,8 +95,8 @@ Get a card table
       "id": 1069479400,
       "status": "active",
       "visible_to_clients": false,
-      "created_at": "2026-01-31T08:32:04.760Z",
-      "updated_at": "2026-01-31T08:33:00.710Z",
+      "created_at": "2026-02-12T06:09:34.735Z",
+      "updated_at": "2026-02-12T06:09:49.748Z",
       "title": "Triage",
       "inherits_status": true,
       "type": "Kanban::Triage",
@@ -125,14 +125,14 @@ Get a card table
         "title": "Chief Strategist",
         "bio": "Don’t let your dreams be dreams",
         "location": "Chicago, IL",
-        "created_at": "2026-01-31T08:29:28.365Z",
-        "updated_at": "2026-01-31T08:29:32.599Z",
+        "created_at": "2026-02-12T06:08:49.342Z",
+        "updated_at": "2026-02-12T06:08:50.871Z",
         "admin": true,
         "owner": true,
         "client": false,
         "employee": true,
         "time_zone": "America/Chicago",
-        "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBMlkkT4=--5fe7b70fbee7a7f0e2e1e19df7579e5d880c753d/avatar?v=1",
+        "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBMlkkT4=--5fe7b70fbee7a7f0e2e1e19df7579e5d880c753d/avatar",
         "company": {
           "id": 1033447817,
           "name": "Honcho Design"
@@ -154,14 +154,14 @@ Get a card table
           "title": "Chief Strategist",
           "bio": "Don’t let your dreams be dreams",
           "location": "Chicago, IL",
-          "created_at": "2026-01-31T08:29:28.365Z",
-          "updated_at": "2026-01-31T08:29:32.599Z",
+          "created_at": "2026-02-12T06:08:49.342Z",
+          "updated_at": "2026-02-12T06:08:50.871Z",
           "admin": true,
           "owner": true,
           "client": false,
           "employee": true,
           "time_zone": "America/Chicago",
-          "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBMlkkT4=--5fe7b70fbee7a7f0e2e1e19df7579e5d880c753d/avatar?v=1",
+          "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBMlkkT4=--5fe7b70fbee7a7f0e2e1e19df7579e5d880c753d/avatar",
           "company": {
             "id": 1033447817,
             "name": "Honcho Design"
@@ -182,8 +182,8 @@ Get a card table
       "id": 1069479401,
       "status": "active",
       "visible_to_clients": false,
-      "created_at": "2026-01-31T08:32:04.829Z",
-      "updated_at": "2026-01-31T08:32:04.853Z",
+      "created_at": "2026-02-12T06:09:34.754Z",
+      "updated_at": "2026-02-12T06:09:34.763Z",
       "title": "Not now",
       "inherits_status": true,
       "type": "Kanban::NotNowColumn",
@@ -212,14 +212,14 @@ Get a card table
         "title": "Chief Strategist",
         "bio": "Don’t let your dreams be dreams",
         "location": "Chicago, IL",
-        "created_at": "2026-01-31T08:29:28.365Z",
-        "updated_at": "2026-01-31T08:29:32.599Z",
+        "created_at": "2026-02-12T06:08:49.342Z",
+        "updated_at": "2026-02-12T06:08:50.871Z",
         "admin": true,
         "owner": true,
         "client": false,
         "employee": true,
         "time_zone": "America/Chicago",
-        "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBMlkkT4=--5fe7b70fbee7a7f0e2e1e19df7579e5d880c753d/avatar?v=1",
+        "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBMlkkT4=--5fe7b70fbee7a7f0e2e1e19df7579e5d880c753d/avatar",
         "company": {
           "id": 1033447817,
           "name": "Honcho Design"
@@ -241,14 +241,14 @@ Get a card table
           "title": "Chief Strategist",
           "bio": "Don’t let your dreams be dreams",
           "location": "Chicago, IL",
-          "created_at": "2026-01-31T08:29:28.365Z",
-          "updated_at": "2026-01-31T08:29:32.599Z",
+          "created_at": "2026-02-12T06:08:49.342Z",
+          "updated_at": "2026-02-12T06:08:50.871Z",
           "admin": true,
           "owner": true,
           "client": false,
           "employee": true,
           "time_zone": "America/Chicago",
-          "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBMlkkT4=--5fe7b70fbee7a7f0e2e1e19df7579e5d880c753d/avatar?v=1",
+          "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBMlkkT4=--5fe7b70fbee7a7f0e2e1e19df7579e5d880c753d/avatar",
           "company": {
             "id": 1033447817,
             "name": "Honcho Design"
@@ -269,8 +269,8 @@ Get a card table
       "id": 1069479402,
       "status": "active",
       "visible_to_clients": false,
-      "created_at": "2026-01-31T08:32:04.899Z",
-      "updated_at": "2026-01-31T08:32:04.920Z",
+      "created_at": "2026-02-12T06:09:34.773Z",
+      "updated_at": "2026-02-12T06:09:34.779Z",
       "title": "Figuring it out",
       "inherits_status": true,
       "type": "Kanban::Column",
@@ -300,14 +300,14 @@ Get a card table
         "title": "Chief Strategist",
         "bio": "Don’t let your dreams be dreams",
         "location": "Chicago, IL",
-        "created_at": "2026-01-31T08:29:28.365Z",
-        "updated_at": "2026-01-31T08:29:32.599Z",
+        "created_at": "2026-02-12T06:08:49.342Z",
+        "updated_at": "2026-02-12T06:08:50.871Z",
         "admin": true,
         "owner": true,
         "client": false,
         "employee": true,
         "time_zone": "America/Chicago",
-        "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBMlkkT4=--5fe7b70fbee7a7f0e2e1e19df7579e5d880c753d/avatar?v=1",
+        "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBMlkkT4=--5fe7b70fbee7a7f0e2e1e19df7579e5d880c753d/avatar",
         "company": {
           "id": 1033447817,
           "name": "Honcho Design"
@@ -329,14 +329,14 @@ Get a card table
           "title": "Chief Strategist",
           "bio": "Don’t let your dreams be dreams",
           "location": "Chicago, IL",
-          "created_at": "2026-01-31T08:29:28.365Z",
-          "updated_at": "2026-01-31T08:29:32.599Z",
+          "created_at": "2026-02-12T06:08:49.342Z",
+          "updated_at": "2026-02-12T06:08:50.871Z",
           "admin": true,
           "owner": true,
           "client": false,
           "employee": true,
           "time_zone": "America/Chicago",
-          "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBMlkkT4=--5fe7b70fbee7a7f0e2e1e19df7579e5d880c753d/avatar?v=1",
+          "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBMlkkT4=--5fe7b70fbee7a7f0e2e1e19df7579e5d880c753d/avatar",
           "company": {
             "id": 1033447817,
             "name": "Honcho Design"
@@ -357,8 +357,8 @@ Get a card table
       "id": 1069479403,
       "status": "active",
       "visible_to_clients": false,
-      "created_at": "2026-01-31T08:32:04.976Z",
-      "updated_at": "2026-01-31T08:32:04.997Z",
+      "created_at": "2026-02-12T06:09:34.801Z",
+      "updated_at": "2026-02-12T06:09:34.811Z",
       "title": "In progress",
       "inherits_status": true,
       "type": "Kanban::Column",
@@ -388,14 +388,14 @@ Get a card table
         "title": "Chief Strategist",
         "bio": "Don’t let your dreams be dreams",
         "location": "Chicago, IL",
-        "created_at": "2026-01-31T08:29:28.365Z",
-        "updated_at": "2026-01-31T08:29:32.599Z",
+        "created_at": "2026-02-12T06:08:49.342Z",
+        "updated_at": "2026-02-12T06:08:50.871Z",
         "admin": true,
         "owner": true,
         "client": false,
         "employee": true,
         "time_zone": "America/Chicago",
-        "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBMlkkT4=--5fe7b70fbee7a7f0e2e1e19df7579e5d880c753d/avatar?v=1",
+        "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBMlkkT4=--5fe7b70fbee7a7f0e2e1e19df7579e5d880c753d/avatar",
         "company": {
           "id": 1033447817,
           "name": "Honcho Design"
@@ -417,14 +417,14 @@ Get a card table
           "title": "Chief Strategist",
           "bio": "Don’t let your dreams be dreams",
           "location": "Chicago, IL",
-          "created_at": "2026-01-31T08:29:28.365Z",
-          "updated_at": "2026-01-31T08:29:32.599Z",
+          "created_at": "2026-02-12T06:08:49.342Z",
+          "updated_at": "2026-02-12T06:08:50.871Z",
           "admin": true,
           "owner": true,
           "client": false,
           "employee": true,
           "time_zone": "America/Chicago",
-          "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBMlkkT4=--5fe7b70fbee7a7f0e2e1e19df7579e5d880c753d/avatar?v=1",
+          "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBMlkkT4=--5fe7b70fbee7a7f0e2e1e19df7579e5d880c753d/avatar",
           "company": {
             "id": 1033447817,
             "name": "Honcho Design"
@@ -445,8 +445,8 @@ Get a card table
       "id": 1069479404,
       "status": "active",
       "visible_to_clients": false,
-      "created_at": "2026-01-31T08:32:05.051Z",
-      "updated_at": "2026-01-31T08:32:05.073Z",
+      "created_at": "2026-02-12T06:09:34.828Z",
+      "updated_at": "2026-02-12T06:09:34.834Z",
       "title": "Done",
       "inherits_status": true,
       "type": "Kanban::DoneColumn",
@@ -475,14 +475,14 @@ Get a card table
         "title": "Chief Strategist",
         "bio": "Don’t let your dreams be dreams",
         "location": "Chicago, IL",
-        "created_at": "2026-01-31T08:29:28.365Z",
-        "updated_at": "2026-01-31T08:29:32.599Z",
+        "created_at": "2026-02-12T06:08:49.342Z",
+        "updated_at": "2026-02-12T06:08:50.871Z",
         "admin": true,
         "owner": true,
         "client": false,
         "employee": true,
         "time_zone": "America/Chicago",
-        "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBMlkkT4=--5fe7b70fbee7a7f0e2e1e19df7579e5d880c753d/avatar?v=1",
+        "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBMlkkT4=--5fe7b70fbee7a7f0e2e1e19df7579e5d880c753d/avatar",
         "company": {
           "id": 1033447817,
           "name": "Honcho Design"
@@ -504,14 +504,14 @@ Get a card table
           "title": "Chief Strategist",
           "bio": "Don’t let your dreams be dreams",
           "location": "Chicago, IL",
-          "created_at": "2026-01-31T08:29:28.365Z",
-          "updated_at": "2026-01-31T08:29:32.599Z",
+          "created_at": "2026-02-12T06:08:49.342Z",
+          "updated_at": "2026-02-12T06:08:50.871Z",
           "admin": true,
           "owner": true,
           "client": false,
           "employee": true,
           "time_zone": "America/Chicago",
-          "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBMlkkT4=--5fe7b70fbee7a7f0e2e1e19df7579e5d880c753d/avatar?v=1",
+          "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBMlkkT4=--5fe7b70fbee7a7f0e2e1e19df7579e5d880c753d/avatar",
           "company": {
             "id": 1033447817,
             "name": "Honcho Design"
@@ -531,9 +531,16 @@ Get a card table
   ]
 }
 ```
-<!-- END GET /buckets/1/card_tables/2.json -->
+<!-- END GET /card_tables/2.json -->
 ###### Copy as cURL
 
 ```shell
-curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/card_tables/2.json
+curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/card_tables/2.json
 ```
+
+Legacy project-scoped routes
+-----------------------------
+
+The following project-scoped routes are still supported and will remain available, but flat routes above are the canonical form for new integrations.
+
+* `GET /buckets/1/card_tables/2.json` → [Get a card table](#get-a-card-table)

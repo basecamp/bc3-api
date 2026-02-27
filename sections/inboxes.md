@@ -11,19 +11,19 @@ Endpoints:
 Get inbox
 ---------
 
-* `GET /buckets/1/inboxes/2.json` will return the inbox with an ID of `2` for the project with an ID of `1`.
+* `GET /inboxes/2.json` will return the inbox with an ID of `2`.
 
 To get the inbox ID for a project, see the [Get a project][1] endpoint's `dock` payload. To retrieve its forwards, see the [Get forwards][2] endpoint.
 
 ###### Example JSON Response
-<!-- START GET /buckets/1/inboxes/2.json -->
+<!-- START GET /inboxes/2.json -->
 ```json
 {
   "id": 1069478988,
   "status": "active",
   "visible_to_clients": false,
-  "created_at": "2026-01-31T08:29:58.961Z",
-  "updated_at": "2026-01-31T08:30:28.950Z",
+  "created_at": "2026-02-12T06:09:02.464Z",
+  "updated_at": "2026-02-12T06:09:09.085Z",
   "title": "Email Forwards",
   "inherits_status": true,
   "type": "Inbox",
@@ -45,14 +45,14 @@ To get the inbox ID for a project, see the [Get a project][1] endpoint's `dock` 
     "title": "Chief Strategist",
     "bio": "Don’t let your dreams be dreams",
     "location": "Chicago, IL",
-    "created_at": "2026-01-31T08:29:28.365Z",
-    "updated_at": "2026-01-31T08:29:32.599Z",
+    "created_at": "2026-02-12T06:08:49.342Z",
+    "updated_at": "2026-02-12T06:08:50.871Z",
     "admin": true,
     "owner": true,
     "client": false,
     "employee": true,
     "time_zone": "America/Chicago",
-    "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBMlkkT4=--5fe7b70fbee7a7f0e2e1e19df7579e5d880c753d/avatar?v=1",
+    "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBMlkkT4=--5fe7b70fbee7a7f0e2e1e19df7579e5d880c753d/avatar",
     "company": {
       "id": 1033447817,
       "name": "Honcho Design"
@@ -67,14 +67,21 @@ To get the inbox ID for a project, see the [Get a project][1] endpoint's `dock` 
   "forwards_url": "https://3.basecampapi.com/195539477/buckets/2085958502/inboxes/1069478988/forwards.json"
 }
 ```
-<!-- END GET /buckets/1/inboxes/2.json -->
+<!-- END GET /inboxes/2.json -->
 
 ###### Copy as cURL
 
 ```shell
-curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/inboxes/2.json
+curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/inboxes/2.json
 ```
 
+
+Legacy project-scoped routes
+-----------------------------
+
+The following project-scoped routes are still supported and will remain available, but flat routes above are the canonical form for new integrations.
+
+* `GET /buckets/1/inboxes/2.json` → [Get inbox](#get-inbox)
 
 [1]: https://github.com/basecamp/bc3-api/blob/master/sections/projects.md#get-a-project
 [2]: https://github.com/basecamp/bc3-api/blob/master/sections/forwards.md#get-forwards

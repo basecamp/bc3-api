@@ -9,7 +9,7 @@ Endpoints:
 - [Get a timesheet entry](#get-a-timesheet-entry)
 - [Create a timesheet entry](#create-a-timesheet-entry)
 - [Update a timesheet entry](#update-a-timesheet-entry)
-- [Trash a timesheet entry][3]
+- [Delete a timesheet entry](#delete-a-timesheet-entry)
 
 Get timesheet report
 --------------------
@@ -34,17 +34,17 @@ This endpoint without any parameters returns only timesheet entries for the last
 ```json
 [
   {
-    "id": 1069479915,
+    "id": 1069479845,
     "status": "active",
     "visible_to_clients": false,
-    "created_at": "2026-01-31T08:37:37.811Z",
-    "updated_at": "2026-01-31T08:37:37.811Z",
+    "created_at": "2026-02-26T16:46:12.070Z",
+    "updated_at": "2026-02-26T16:46:12.070Z",
     "title": "Timesheet entry",
     "inherits_status": true,
     "type": "Timesheet::Entry",
-    "url": "https://3.basecampapi.com/195539477/projects/2085958504/timesheet/entries/1069479915.json",
-    "app_url": "https://3.basecamp.com/195539477/projects/2085958504/timesheet/entries/1069479915",
-    "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiLmdpZDovL2JjMy9SZWNvcmRpbmcvMTA2OTQ3OTkxNT9leHBpcmVzX2luBjsAVEkiCHB1cgY7AFRJIg1yZWFkYWJsZQY7AFQ=--eedd8d56e2e90002cdb2a96028846f61e1ae34f9.json",
+    "url": "https://3.basecampapi.com/195539477/projects/2085958504/timesheet/entries/1069479845.json",
+    "app_url": "https://3.basecamp.com/195539477/projects/2085958504/timesheet/entries/1069479845",
+    "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiLmdpZDovL2JjMy9SZWNvcmRpbmcvMTA2OTQ3OTg0NT9leHBpcmVzX2luBjsAVEkiCHB1cgY7AFRJIg1yZWFkYWJsZQY7AFQ=--c39764b3e2cc09bd0fb4d1a8ef655fcc01634c72.json",
     "parent": {
       "id": 1069479406,
       "title": "We won Leto!",
@@ -66,14 +66,14 @@ This endpoint without any parameters returns only timesheet entries for the last
       "title": "Chief Strategist",
       "bio": "Don’t let your dreams be dreams",
       "location": "Chicago, IL",
-      "created_at": "2026-01-31T08:29:28.365Z",
-      "updated_at": "2026-01-31T08:29:32.599Z",
+      "created_at": "2026-02-26T16:44:49.965Z",
+      "updated_at": "2026-02-26T16:44:51.645Z",
       "admin": true,
       "owner": true,
       "client": false,
       "employee": true,
       "time_zone": "America/Chicago",
-      "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBMlkkT4=--5fe7b70fbee7a7f0e2e1e19df7579e5d880c753d/avatar?v=1",
+      "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBMlkkT4=--5fe7b70fbee7a7f0e2e1e19df7579e5d880c753d/avatar",
       "company": {
         "id": 1033447817,
         "name": "Honcho Design"
@@ -84,7 +84,7 @@ This endpoint without any parameters returns only timesheet entries for the last
       "can_access_timesheet": true,
       "can_access_hill_charts": true
     },
-    "date": "2026-01-30",
+    "date": "2026-02-25",
     "description": "Team Meeting Prep",
     "hours": "2.0",
     "person": {
@@ -96,14 +96,14 @@ This endpoint without any parameters returns only timesheet entries for the last
       "title": "Chief Strategist",
       "bio": "Don’t let your dreams be dreams",
       "location": "Chicago, IL",
-      "created_at": "2026-01-31T08:29:28.365Z",
-      "updated_at": "2026-01-31T08:29:32.599Z",
+      "created_at": "2026-02-26T16:44:49.965Z",
+      "updated_at": "2026-02-26T16:44:51.645Z",
       "admin": true,
       "owner": true,
       "client": false,
       "employee": true,
       "time_zone": "America/Chicago",
-      "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBMlkkT4=--5fe7b70fbee7a7f0e2e1e19df7579e5d880c753d/avatar?v=1",
+      "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBMlkkT4=--5fe7b70fbee7a7f0e2e1e19df7579e5d880c753d/avatar",
       "company": {
         "id": 1033447817,
         "name": "Honcho Design"
@@ -136,17 +136,17 @@ This includes all entries across the project: entries logged directly to the pro
 ```json
 [
   {
-    "id": 1069479915,
+    "id": 1069479845,
     "status": "active",
     "visible_to_clients": false,
-    "created_at": "2026-01-31T08:37:37.811Z",
-    "updated_at": "2026-01-31T08:37:37.811Z",
+    "created_at": "2026-02-26T16:46:12.070Z",
+    "updated_at": "2026-02-26T16:46:12.070Z",
     "title": "Timesheet entry",
     "inherits_status": true,
     "type": "Timesheet::Entry",
-    "url": "https://3.basecampapi.com/195539477/projects/2085958504/timesheet/entries/1069479915.json",
-    "app_url": "https://3.basecamp.com/195539477/projects/2085958504/timesheet/entries/1069479915",
-    "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiLmdpZDovL2JjMy9SZWNvcmRpbmcvMTA2OTQ3OTkxNT9leHBpcmVzX2luBjsAVEkiCHB1cgY7AFRJIg1yZWFkYWJsZQY7AFQ=--eedd8d56e2e90002cdb2a96028846f61e1ae34f9.json",
+    "url": "https://3.basecampapi.com/195539477/projects/2085958504/timesheet/entries/1069479845.json",
+    "app_url": "https://3.basecamp.com/195539477/projects/2085958504/timesheet/entries/1069479845",
+    "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiLmdpZDovL2JjMy9SZWNvcmRpbmcvMTA2OTQ3OTg0NT9leHBpcmVzX2luBjsAVEkiCHB1cgY7AFRJIg1yZWFkYWJsZQY7AFQ=--c39764b3e2cc09bd0fb4d1a8ef655fcc01634c72.json",
     "parent": {
       "id": 1069479406,
       "title": "We won Leto!",
@@ -168,14 +168,14 @@ This includes all entries across the project: entries logged directly to the pro
       "title": "Chief Strategist",
       "bio": "Don’t let your dreams be dreams",
       "location": "Chicago, IL",
-      "created_at": "2026-01-31T08:29:28.365Z",
-      "updated_at": "2026-01-31T08:29:32.599Z",
+      "created_at": "2026-02-26T16:44:49.965Z",
+      "updated_at": "2026-02-26T16:44:51.645Z",
       "admin": true,
       "owner": true,
       "client": false,
       "employee": true,
       "time_zone": "America/Chicago",
-      "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBMlkkT4=--5fe7b70fbee7a7f0e2e1e19df7579e5d880c753d/avatar?v=1",
+      "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBMlkkT4=--5fe7b70fbee7a7f0e2e1e19df7579e5d880c753d/avatar",
       "company": {
         "id": 1033447817,
         "name": "Honcho Design"
@@ -186,7 +186,7 @@ This includes all entries across the project: entries logged directly to the pro
       "can_access_timesheet": true,
       "can_access_hill_charts": true
     },
-    "date": "2026-01-30",
+    "date": "2026-02-25",
     "description": "Team Meeting Prep",
     "hours": "2.0",
     "person": {
@@ -198,14 +198,14 @@ This includes all entries across the project: entries logged directly to the pro
       "title": "Chief Strategist",
       "bio": "Don’t let your dreams be dreams",
       "location": "Chicago, IL",
-      "created_at": "2026-01-31T08:29:28.365Z",
-      "updated_at": "2026-01-31T08:29:32.599Z",
+      "created_at": "2026-02-26T16:44:49.965Z",
+      "updated_at": "2026-02-26T16:44:51.645Z",
       "admin": true,
       "owner": true,
       "client": false,
       "employee": true,
       "time_zone": "America/Chicago",
-      "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBMlkkT4=--5fe7b70fbee7a7f0e2e1e19df7579e5d880c753d/avatar?v=1",
+      "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBMlkkT4=--5fe7b70fbee7a7f0e2e1e19df7579e5d880c753d/avatar",
       "company": {
         "id": 1033447817,
         "name": "Honcho Design"
@@ -229,24 +229,24 @@ curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCO
 Get timesheet for a recording
 -----------------------------
 
-* `GET /projects/1/recordings/2/timesheet.json` will return a [paginated list][pagination] of timesheet entries in the project with an ID of `1` and the recording with ID of `2`.
+* `GET /recordings/2/timesheet.json` will return a [paginated list][pagination] of timesheet entries for the recording with ID of `2`.
 
 ###### Example JSON Response
-<!-- START GET /projects/1/recordings/2/timesheet.json -->
+<!-- START GET /recordings/2/timesheet.json -->
 ```json
 [
   {
-    "id": 1069479915,
+    "id": 1069479845,
     "status": "active",
     "visible_to_clients": false,
-    "created_at": "2026-01-31T08:37:37.811Z",
-    "updated_at": "2026-01-31T08:37:37.811Z",
+    "created_at": "2026-02-26T16:46:12.070Z",
+    "updated_at": "2026-02-26T16:46:12.070Z",
     "title": "Timesheet entry",
     "inherits_status": true,
     "type": "Timesheet::Entry",
-    "url": "https://3.basecampapi.com/195539477/projects/2085958504/timesheet/entries/1069479915.json",
-    "app_url": "https://3.basecamp.com/195539477/projects/2085958504/timesheet/entries/1069479915",
-    "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiLmdpZDovL2JjMy9SZWNvcmRpbmcvMTA2OTQ3OTkxNT9leHBpcmVzX2luBjsAVEkiCHB1cgY7AFRJIg1yZWFkYWJsZQY7AFQ=--eedd8d56e2e90002cdb2a96028846f61e1ae34f9.json",
+    "url": "https://3.basecampapi.com/195539477/projects/2085958504/timesheet/entries/1069479845.json",
+    "app_url": "https://3.basecamp.com/195539477/projects/2085958504/timesheet/entries/1069479845",
+    "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiLmdpZDovL2JjMy9SZWNvcmRpbmcvMTA2OTQ3OTg0NT9leHBpcmVzX2luBjsAVEkiCHB1cgY7AFRJIg1yZWFkYWJsZQY7AFQ=--c39764b3e2cc09bd0fb4d1a8ef655fcc01634c72.json",
     "parent": {
       "id": 1069479406,
       "title": "We won Leto!",
@@ -268,14 +268,14 @@ Get timesheet for a recording
       "title": "Chief Strategist",
       "bio": "Don’t let your dreams be dreams",
       "location": "Chicago, IL",
-      "created_at": "2026-01-31T08:29:28.365Z",
-      "updated_at": "2026-01-31T08:29:32.599Z",
+      "created_at": "2026-02-26T16:44:49.965Z",
+      "updated_at": "2026-02-26T16:44:51.645Z",
       "admin": true,
       "owner": true,
       "client": false,
       "employee": true,
       "time_zone": "America/Chicago",
-      "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBMlkkT4=--5fe7b70fbee7a7f0e2e1e19df7579e5d880c753d/avatar?v=1",
+      "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBMlkkT4=--5fe7b70fbee7a7f0e2e1e19df7579e5d880c753d/avatar",
       "company": {
         "id": 1033447817,
         "name": "Honcho Design"
@@ -286,7 +286,7 @@ Get timesheet for a recording
       "can_access_timesheet": true,
       "can_access_hill_charts": true
     },
-    "date": "2026-01-30",
+    "date": "2026-02-25",
     "description": "Team Meeting Prep",
     "hours": "2.0",
     "person": {
@@ -298,14 +298,14 @@ Get timesheet for a recording
       "title": "Chief Strategist",
       "bio": "Don’t let your dreams be dreams",
       "location": "Chicago, IL",
-      "created_at": "2026-01-31T08:29:28.365Z",
-      "updated_at": "2026-01-31T08:29:32.599Z",
+      "created_at": "2026-02-26T16:44:49.965Z",
+      "updated_at": "2026-02-26T16:44:51.645Z",
       "admin": true,
       "owner": true,
       "client": false,
       "employee": true,
       "time_zone": "America/Chicago",
-      "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBMlkkT4=--5fe7b70fbee7a7f0e2e1e19df7579e5d880c753d/avatar?v=1",
+      "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBMlkkT4=--5fe7b70fbee7a7f0e2e1e19df7579e5d880c753d/avatar",
       "company": {
         "id": 1033447817,
         "name": "Honcho Design"
@@ -319,33 +319,33 @@ Get timesheet for a recording
   }
 ]
 ```
-<!-- END GET /projects/1/recordings/2/timesheet.json -->
+<!-- END GET /recordings/2/timesheet.json -->
 ###### Copy as cURL
 
 ```shell
-curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/projects/1/recordings/2/timesheet.json
+curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/recordings/2/timesheet.json
 ```
 
 Get a timesheet entry
 ---------------------
 
-* `GET /projects/1/timesheet/entries/2.json` will return the timesheet entry with an ID of `2` in the project with an ID of `1`.
+* `GET /timesheet_entries/2.json` will return the timesheet entry with an ID of `2`.
 
 ###### Example JSON Response
-<!-- START GET /projects/1/timesheet/entries/2.json -->
+<!-- START GET /timesheet_entries/2.json -->
 ```json
 {
-  "id": 1069480091,
+  "id": 1069479848,
   "status": "active",
   "visible_to_clients": false,
-  "created_at": "2026-02-06T22:55:54.662Z",
-  "updated_at": "2026-02-06T22:55:54.662Z",
+  "created_at": "2026-02-26T16:46:14.812Z",
+  "updated_at": "2026-02-26T16:46:14.812Z",
   "title": "Timesheet entry",
   "inherits_status": true,
   "type": "Timesheet::Entry",
-  "url": "https://3.basecampapi.com/195539477/projects/2085958504/timesheet/entries/1069480091.json",
-  "app_url": "https://3.basecamp.com/195539477/projects/2085958504/timesheet/entries/1069480091",
-  "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiLmdpZDovL2JjMy9SZWNvcmRpbmcvMTA2OTQ4MDA5MT9leHBpcmVzX2luBjsAVEkiCHB1cgY7AFRJIg1yZWFkYWJsZQY7AFQ=--0b7abbaa49e554506a83edc6934173ebe077c1f0.json",
+  "url": "https://3.basecampapi.com/195539477/projects/2085958504/timesheet/entries/1069479848.json",
+  "app_url": "https://3.basecamp.com/195539477/projects/2085958504/timesheet/entries/1069479848",
+  "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiLmdpZDovL2JjMy9SZWNvcmRpbmcvMTA2OTQ3OTg0OD9leHBpcmVzX2luBjsAVEkiCHB1cgY7AFRJIg1yZWFkYWJsZQY7AFQ=--c0d1292c53eef3e210b24fbd2ad16864dae8875f.json",
   "parent": {
     "id": 1069479406,
     "title": "We won Leto!",
@@ -367,14 +367,14 @@ Get a timesheet entry
     "title": "Chief Strategist",
     "bio": "Don’t let your dreams be dreams",
     "location": "Chicago, IL",
-    "created_at": "2026-01-31T08:29:28.365Z",
-    "updated_at": "2026-01-31T08:29:32.599Z",
+    "created_at": "2026-02-26T16:44:49.965Z",
+    "updated_at": "2026-02-26T16:44:51.645Z",
     "admin": true,
     "owner": true,
     "client": false,
     "employee": true,
     "time_zone": "America/Chicago",
-    "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBMlkkT4=--5fe7b70fbee7a7f0e2e1e19df7579e5d880c753d/avatar?v=1",
+    "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBMlkkT4=--5fe7b70fbee7a7f0e2e1e19df7579e5d880c753d/avatar",
     "company": {
       "id": 1033447817,
       "name": "Honcho Design"
@@ -385,7 +385,7 @@ Get a timesheet entry
     "can_access_timesheet": true,
     "can_access_hill_charts": true
   },
-  "date": "2026-02-06",
+  "date": "2026-02-26",
   "description": "API docs example",
   "hours": "1.5",
   "person": {
@@ -397,14 +397,14 @@ Get a timesheet entry
     "title": "Chief Strategist",
     "bio": "Don’t let your dreams be dreams",
     "location": "Chicago, IL",
-    "created_at": "2026-01-31T08:29:28.365Z",
-    "updated_at": "2026-01-31T08:29:32.599Z",
+    "created_at": "2026-02-26T16:44:49.965Z",
+    "updated_at": "2026-02-26T16:44:51.645Z",
     "admin": true,
     "owner": true,
     "client": false,
     "employee": true,
     "time_zone": "America/Chicago",
-    "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBMlkkT4=--5fe7b70fbee7a7f0e2e1e19df7579e5d880c753d/avatar?v=1",
+    "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBMlkkT4=--5fe7b70fbee7a7f0e2e1e19df7579e5d880c753d/avatar",
     "company": {
       "id": 1033447817,
       "name": "Honcho Design"
@@ -417,17 +417,17 @@ Get a timesheet entry
   }
 }
 ```
-<!-- END GET /projects/1/timesheet/entries/2.json -->
+<!-- END GET /timesheet_entries/2.json -->
 ###### Copy as cURL
 
 ```shell
-curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/projects/1/timesheet/entries/2.json
+curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/timesheet_entries/2.json
 ```
 
 Create a timesheet entry
 ------------------------
 
-* `POST /projects/1/recordings/2/timesheet/entries.json` creates a timesheet entry in the project with ID `1` under the recording with ID `2`.
+* `POST /recordings/2/timesheet/entries.json` creates a timesheet entry under the recording with ID `2`.
 
 The recording can be any timesheetable type: a message, to-do, card, document, upload, schedule entry, or the project timesheet itself.
 
@@ -456,20 +456,20 @@ This endpoint will return `201 Created` with the current JSON representation of 
 ```
 
 ###### Example JSON Response
-<!-- START POST /projects/1/recordings/2/timesheet/entries.json -->
+<!-- START POST /recordings/2/timesheet/entries.json -->
 ```json
 {
-  "id": 1069480091,
+  "id": 1069479848,
   "status": "active",
   "visible_to_clients": false,
-  "created_at": "2026-02-06T22:55:54.662Z",
-  "updated_at": "2026-02-06T22:55:54.662Z",
+  "created_at": "2026-02-26T16:46:14.812Z",
+  "updated_at": "2026-02-26T16:46:14.812Z",
   "title": "Timesheet entry",
   "inherits_status": true,
   "type": "Timesheet::Entry",
-  "url": "https://3.basecampapi.com/195539477/projects/2085958504/timesheet/entries/1069480091.json",
-  "app_url": "https://3.basecamp.com/195539477/projects/2085958504/timesheet/entries/1069480091",
-  "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiLmdpZDovL2JjMy9SZWNvcmRpbmcvMTA2OTQ4MDA5MT9leHBpcmVzX2luBjsAVEkiCHB1cgY7AFRJIg1yZWFkYWJsZQY7AFQ=--0b7abbaa49e554506a83edc6934173ebe077c1f0.json",
+  "url": "https://3.basecampapi.com/195539477/projects/2085958504/timesheet/entries/1069479848.json",
+  "app_url": "https://3.basecamp.com/195539477/projects/2085958504/timesheet/entries/1069479848",
+  "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiLmdpZDovL2JjMy9SZWNvcmRpbmcvMTA2OTQ3OTg0OD9leHBpcmVzX2luBjsAVEkiCHB1cgY7AFRJIg1yZWFkYWJsZQY7AFQ=--c0d1292c53eef3e210b24fbd2ad16864dae8875f.json",
   "parent": {
     "id": 1069479406,
     "title": "We won Leto!",
@@ -491,14 +491,14 @@ This endpoint will return `201 Created` with the current JSON representation of 
     "title": "Chief Strategist",
     "bio": "Don’t let your dreams be dreams",
     "location": "Chicago, IL",
-    "created_at": "2026-01-31T08:29:28.365Z",
-    "updated_at": "2026-01-31T08:29:32.599Z",
+    "created_at": "2026-02-26T16:44:49.965Z",
+    "updated_at": "2026-02-26T16:44:51.645Z",
     "admin": true,
     "owner": true,
     "client": false,
     "employee": true,
     "time_zone": "America/Chicago",
-    "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBMlkkT4=--5fe7b70fbee7a7f0e2e1e19df7579e5d880c753d/avatar?v=1",
+    "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBMlkkT4=--5fe7b70fbee7a7f0e2e1e19df7579e5d880c753d/avatar",
     "company": {
       "id": 1033447817,
       "name": "Honcho Design"
@@ -509,7 +509,7 @@ This endpoint will return `201 Created` with the current JSON representation of 
     "can_access_timesheet": true,
     "can_access_hill_charts": true
   },
-  "date": "2026-02-06",
+  "date": "2026-02-26",
   "description": "API docs example",
   "hours": "1.5",
   "person": {
@@ -521,14 +521,14 @@ This endpoint will return `201 Created` with the current JSON representation of 
     "title": "Chief Strategist",
     "bio": "Don’t let your dreams be dreams",
     "location": "Chicago, IL",
-    "created_at": "2026-01-31T08:29:28.365Z",
-    "updated_at": "2026-01-31T08:29:32.599Z",
+    "created_at": "2026-02-26T16:44:49.965Z",
+    "updated_at": "2026-02-26T16:44:51.645Z",
     "admin": true,
     "owner": true,
     "client": false,
     "employee": true,
     "time_zone": "America/Chicago",
-    "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBMlkkT4=--5fe7b70fbee7a7f0e2e1e19df7579e5d880c753d/avatar?v=1",
+    "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBMlkkT4=--5fe7b70fbee7a7f0e2e1e19df7579e5d880c753d/avatar",
     "company": {
       "id": 1033447817,
       "name": "Honcho Design"
@@ -541,20 +541,20 @@ This endpoint will return `201 Created` with the current JSON representation of 
   }
 }
 ```
-<!-- END POST /projects/1/recordings/2/timesheet/entries.json -->
+<!-- END POST /recordings/2/timesheet/entries.json -->
 
 ###### Copy as cURL
 
 ```shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" \
   -d '{"date":"2024-05-16","hours":"1:30","description":"Client meeting prep"}' \
-  https://3.basecampapi.com/$ACCOUNT_ID/projects/1/recordings/2/timesheet/entries.json
+  https://3.basecampapi.com/$ACCOUNT_ID/recordings/2/timesheet/entries.json
 ```
 
 Update a timesheet entry
 ------------------------
 
-* `PUT /projects/1/timesheet/entries/2.json` allows changing the timesheet entry with an ID of `2` in the project with ID `1`.
+* `PUT /timesheet_entries/2.json` allows changing the timesheet entry with an ID of `2`.
 
 This endpoint will return `200 OK` with the current JSON representation of the timesheet entry if the update was a success. See the [Get timesheet for a project](#get-timesheet-for-a-project) endpoint for more info on the payload.
 
@@ -575,20 +575,20 @@ _Optional parameters_: Only pass the parameters you want to change.
 ```
 
 ###### Example JSON Response
-<!-- START PUT /projects/1/timesheet/entries/2.json -->
+<!-- START PUT /timesheet_entries/2.json -->
 ```json
 {
-  "id": 1069480091,
+  "id": 1069479848,
   "status": "active",
   "visible_to_clients": false,
-  "created_at": "2026-02-06T22:55:54.662Z",
-  "updated_at": "2026-02-06T22:55:55.514Z",
+  "created_at": "2026-02-26T16:46:14.812Z",
+  "updated_at": "2026-02-26T16:46:15.665Z",
   "title": "Timesheet entry",
   "inherits_status": true,
   "type": "Timesheet::Entry",
-  "url": "https://3.basecampapi.com/195539477/projects/2085958504/timesheet/entries/1069480091.json",
-  "app_url": "https://3.basecamp.com/195539477/projects/2085958504/timesheet/entries/1069480091",
-  "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiLmdpZDovL2JjMy9SZWNvcmRpbmcvMTA2OTQ4MDA5MT9leHBpcmVzX2luBjsAVEkiCHB1cgY7AFRJIg1yZWFkYWJsZQY7AFQ=--0b7abbaa49e554506a83edc6934173ebe077c1f0.json",
+  "url": "https://3.basecampapi.com/195539477/projects/2085958504/timesheet/entries/1069479848.json",
+  "app_url": "https://3.basecamp.com/195539477/projects/2085958504/timesheet/entries/1069479848",
+  "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiLmdpZDovL2JjMy9SZWNvcmRpbmcvMTA2OTQ3OTg0OD9leHBpcmVzX2luBjsAVEkiCHB1cgY7AFRJIg1yZWFkYWJsZQY7AFQ=--c0d1292c53eef3e210b24fbd2ad16864dae8875f.json",
   "parent": {
     "id": 1069479406,
     "title": "We won Leto!",
@@ -610,14 +610,14 @@ _Optional parameters_: Only pass the parameters you want to change.
     "title": "Chief Strategist",
     "bio": "Don’t let your dreams be dreams",
     "location": "Chicago, IL",
-    "created_at": "2026-01-31T08:29:28.365Z",
-    "updated_at": "2026-01-31T08:29:32.599Z",
+    "created_at": "2026-02-26T16:44:49.965Z",
+    "updated_at": "2026-02-26T16:44:51.645Z",
     "admin": true,
     "owner": true,
     "client": false,
     "employee": true,
     "time_zone": "America/Chicago",
-    "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBMlkkT4=--5fe7b70fbee7a7f0e2e1e19df7579e5d880c753d/avatar?v=1",
+    "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBMlkkT4=--5fe7b70fbee7a7f0e2e1e19df7579e5d880c753d/avatar",
     "company": {
       "id": 1033447817,
       "name": "Honcho Design"
@@ -628,7 +628,7 @@ _Optional parameters_: Only pass the parameters you want to change.
     "can_access_timesheet": true,
     "can_access_hill_charts": true
   },
-  "date": "2026-02-06",
+  "date": "2026-02-26",
   "description": "Updated via API",
   "hours": "2.5",
   "person": {
@@ -640,14 +640,14 @@ _Optional parameters_: Only pass the parameters you want to change.
     "title": "Chief Strategist",
     "bio": "Don’t let your dreams be dreams",
     "location": "Chicago, IL",
-    "created_at": "2026-01-31T08:29:28.365Z",
-    "updated_at": "2026-01-31T08:29:32.599Z",
+    "created_at": "2026-02-26T16:44:49.965Z",
+    "updated_at": "2026-02-26T16:44:51.645Z",
     "admin": true,
     "owner": true,
     "client": false,
     "employee": true,
     "time_zone": "America/Chicago",
-    "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBMlkkT4=--5fe7b70fbee7a7f0e2e1e19df7579e5d880c753d/avatar?v=1",
+    "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBMlkkT4=--5fe7b70fbee7a7f0e2e1e19df7579e5d880c753d/avatar",
     "company": {
       "id": 1033447817,
       "name": "Honcho Design"
@@ -660,16 +660,40 @@ _Optional parameters_: Only pass the parameters you want to change.
   }
 }
 ```
-<!-- END PUT /projects/1/timesheet/entries/2.json -->
+<!-- END PUT /timesheet_entries/2.json -->
 
 ###### Copy as cURL
 
 ```shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" \
   -X PUT -d '{"hours":"2.5","description":"Updated description"}' \
-  https://3.basecampapi.com/$ACCOUNT_ID/projects/1/timesheet/entries/2.json
+  https://3.basecampapi.com/$ACCOUNT_ID/timesheet_entries/2.json
 ```
+
+Delete a timesheet entry
+------------------------
+
+* `DELETE /timesheet_entries/2.json` will delete the timesheet entry with an ID of `2`.
+
+This endpoint will return `204 No Content` if the delete was successful. No parameters are required.
+
+The entry is permanently deleted and cannot be recovered.
+
+###### Copy as cURL
+
+```shell
+curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -X DELETE \
+  https://3.basecampapi.com/$ACCOUNT_ID/timesheet_entries/2.json
+```
+
+Legacy project-scoped routes
+-----------------------------
+
+The following project-scoped routes are still supported and will remain available, but flat routes above are the canonical form for new integrations.
+
+* `GET /projects/1/timesheet.json` → [Get timesheet for a project](#get-timesheet-for-a-project)
+* `GET /projects/1/recordings/2/timesheet.json` → [Get timesheet for a recording](#get-timesheet-for-a-recording)
+* `POST /buckets/1/recordings/2/timesheet/entries.json` → [Create a timesheet entry](#create-a-timesheet-entry)
 
 [1]: https://github.com/basecamp/bc3-api/blob/master/sections/people.md#people
 [2]: https://github.com/basecamp/bc3-api/blob/master/sections/projects.md#projects
-[3]: https://github.com/basecamp/bc3-api/blob/master/sections/recordings.md#trash-a-recording
