@@ -8,6 +8,8 @@ Endpoints:
 - [Get Campfire lines](#get-campfire-lines)
 - [Get a Campfire line](#get-a-campfire-line)
 - [Create a Campfire line](#create-a-campfire-line)
+- [Get Campfire uploads](#get-campfire-uploads)
+- [Upload a file to a Campfire](#upload-a-file-to-a-campfire)
 - [Delete a Campfire line](#delete-a-campfire-line)
 
 Get Campfires
@@ -303,6 +305,49 @@ curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/j
   https://3.basecampapi.com/$ACCOUNT_ID/chats/2/lines.json
 ```
 
+Get Campfire uploads
+--------------------
+
+* `GET /chats/2/uploads.json` will return a [paginated list][pagination] of file uploads in the Campfire with ID `2`, sorted newest first.
+
+###### Example JSON Response
+<!-- START GET /chats/2/uploads.json -->
+```json
+```
+<!-- END GET /chats/2/uploads.json -->
+###### Copy as cURL
+
+```shell
+curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/chats/2/uploads.json
+```
+
+Upload a file to a Campfire
+----------------------------
+
+* `POST /chats/2/uploads.json` uploads a file to the Campfire with ID `2`.
+
+**Required request data**: The request body should be the file's raw binary data.
+
+**Required request headers**: `Content-Type` and `Content-Length` for the file.
+
+**Required URI query parameters**: `name` as the file name.
+
+This endpoint will return `201 Created` with the current JSON representation of the upload line if the creation was a success. Each upload line contains an `attachments` array with `title`, `filename`, `content_type`, `byte_size`, `url`, and `download_url` for each file.
+
+###### Example JSON Response
+<!-- START POST /chats/2/uploads.json -->
+```json
+```
+<!-- END POST /chats/2/uploads.json -->
+###### Copy as cURL
+
+```shell
+curl -s -H "Authorization: Bearer $ACCESS_TOKEN" \
+  --data-binary @logo.png \
+  -H "Content-Type: image/png" -H "Content-Length: 1281" \
+  https://3.basecampapi.com/$ACCOUNT_ID/chats/2/uploads.json?name=logo.png
+```
+
 Delete a Campfire line
 ----------------------
 
@@ -326,5 +371,7 @@ The following project-scoped routes are still supported and will remain availabl
 * `GET /buckets/1/chats/2/lines/3.json` → [Get a Campfire line](#get-a-campfire-line)
 * `POST /buckets/1/chats/2/lines.json` → [Create a Campfire line](#create-a-campfire-line)
 * `DELETE /buckets/1/chats/2/lines/3.json` → [Delete a Campfire line](#delete-a-campfire-line)
+* `GET /buckets/1/chats/2/uploads.json` → [Get Campfire uploads](#get-campfire-uploads)
+* `POST /buckets/1/chats/2/uploads.json` → [Upload a file to a Campfire](#upload-a-file-to-a-campfire)
 
 [pagination]: https://github.com/basecamp/bc3-api/blob/master/README.md#pagination
