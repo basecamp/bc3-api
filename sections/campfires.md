@@ -370,8 +370,8 @@ The following project-scoped routes are still supported and will remain availabl
 * `GET /buckets/1/chats/2/lines.json` → [Get Campfire lines](#get-campfire-lines)
 * `GET /buckets/1/chats/2/lines/3.json` → [Get a Campfire line](#get-a-campfire-line)
 * `POST /buckets/1/chats/2/lines.json` → [Create a Campfire line](#create-a-campfire-line)
-* `DELETE /buckets/1/chats/2/lines/3.json` → [Delete a Campfire line](#delete-a-campfire-line)
 * `GET /buckets/1/chats/2/uploads.json` → [Get Campfire uploads](#get-campfire-uploads)
 * `POST /buckets/1/chats/2/uploads.json` → [Upload a file to a Campfire](#upload-a-file-to-a-campfire)
+* `DELETE /buckets/1/chats/2/lines/3.json` → [Delete a Campfire line](#delete-a-campfire-line)
 
 [pagination]: https://github.com/basecamp/bc3-api/blob/master/README.md#pagination
