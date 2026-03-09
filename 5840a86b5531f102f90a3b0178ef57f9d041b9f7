@@ -1,0 +1,23 @@
+sections/campfires.md
+  9d52a755c50f85d0 375
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.1.9",
+  "base_commit_sha": "5840a86b5531f102f90a3b0178ef57f9d041b9f7",
+  "prompts": {
+    "9d52a755c50f85d0": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "f17a8021-8022-42d7-84fe-a55f4bfb382f",
+        "model": "claude-opus-4-6"
+      },
+      "human_author": "Jeremy Daer <jeremy@37signals.com>",
+      "messages": [],
+      "total_additions": 1,
+      "total_deletions": 1,
+      "accepted_lines": 1,
+      "overriden_lines": 0
+    }
+  }
+}
