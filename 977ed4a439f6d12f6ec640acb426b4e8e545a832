@@ -1,0 +1,25 @@
+sections/card_tables.md
+  66af7f821147dd20 9,542-574,581-583
+sections/uploads.md
+  66af7f821147dd20 8,180-198
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.1.10",
+  "base_commit_sha": "977ed4a439f6d12f6ec640acb426b4e8e545a832",
+  "prompts": {
+    "66af7f821147dd20": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "2110d408-9ccb-4d23-afad-f55cfb6ea978",
+        "model": "claude-opus-4-6"
+      },
+      "human_author": "Jeremy Daer <jeremy@37signals.com>",
+      "messages": [],
+      "total_additions": 59,
+      "total_deletions": 1,
+      "accepted_lines": 58,
+      "overriden_lines": 0
+    }
+  }
+}
