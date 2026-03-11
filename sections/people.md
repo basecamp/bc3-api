@@ -299,11 +299,11 @@ Update my preferences
 
 * `PUT /my/preferences.json` will update the current user's preferences.
 
-All parameters are optional. Only include the ones you want to change.
+All parameters are optional. Only include the ones you want to change. These parameters should be sent inside the top-level `person` object in the JSON request body.
 
-* `person[time_zone_name]` - the user's time zone (e.g. `America/Chicago`, `London`, `UTC`). Accepts any valid Rails time zone name.
-* `person[first_week_day]` - the first day of the week. Accepts: `Sunday`, `Monday`, `Tuesday`, `Wednesday`, `Thursday`, `Friday`, `Saturday`.
-* `person[time_format]` - the time display format. Accepts: `twelve_hour`, `twenty_four_hour`.
+* `time_zone_name` - the user's time zone (e.g. `America/Chicago`, `London`, `UTC`). Accepts any valid Rails time zone name.
+* `first_week_day` - the first day of the week. Accepts: `Sunday`, `Monday`, `Tuesday`, `Wednesday`, `Thursday`, `Friday`, `Saturday`.
+* `time_format` - the time display format. Accepts: `twelve_hour`, `twenty_four_hour`.
 
 Returns `200 OK` with the updated [preferences](#get-my-preferences) JSON representation.
 
