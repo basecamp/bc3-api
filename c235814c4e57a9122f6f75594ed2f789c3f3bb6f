@@ -1,0 +1,23 @@
+sections/hill_charts.md
+  eb0c8b8443ecae68 6,54
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.1.10",
+  "base_commit_sha": "c235814c4e57a9122f6f75594ed2f789c3f3bb6f",
+  "prompts": {
+    "eb0c8b8443ecae68": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "259fa61d-b91a-4139-a314-0fd6549d9664",
+        "model": "claude-opus-4-6"
+      },
+      "human_author": "Jeremy Daer <jeremy@37signals.com>",
+      "messages": [],
+      "total_additions": 2,
+      "total_deletions": 2,
+      "accepted_lines": 2,
+      "overriden_lines": 0
+    }
+  }
+}
