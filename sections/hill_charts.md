@@ -3,7 +3,7 @@ Hill charts
 
 Hill charts visualize the progress of to-do lists on a hill-shaped curve, from "figuring things out" (uphill) to "making it happen" (downhill). Each tracked to-do list appears as a dot on the hill.
 
-Hill charts belong to a to-do set. To get the to-do set ID for a project, see the [Get a project][1] endpoint's `dock` payload.
+Hill charts belong to a [to-do set][2]. To get the to-do set ID for a project, see the [Get a project][1] endpoint's `dock` payload.
 
 Endpoints:
 
@@ -51,7 +51,7 @@ Update hill chart settings
 
 Pass to-do list IDs to `tracked` and/or `untracked` arrays. Both are optional; you can track, untrack, or do both in a single request. Tracking the first to-do list enables the hill chart. Untracking the last to-do list disables it.
 
-**Optional parameters**:
+_Optional parameters_:
 
 * `tracked` - an array of to-do list IDs to start tracking on the hill chart.
 * `untracked` - an array of to-do list IDs to stop tracking on the hill chart.
