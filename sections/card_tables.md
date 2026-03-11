@@ -6,6 +6,7 @@ A card table is made of multiple columns which contain cards.
 Endpoints:
 
 - [Get a card table](#get-a-card-table)
+- [Move a card on the board](#move-a-card-on-the-board)
 
 Get a card table
 --------------------
@@ -538,9 +539,45 @@ Get a card table
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/card_tables/2.json
 ```
 
+Move a card on the board
+------------------------
+
+* `POST /card_tables/2/moves.json` moves a card to a different column or position on the card table with ID `2`.
+
+This is the same endpoint documented in the [card table columns][columns] section as **Move a column**. When moving a card, pass the card's recording ID as `source_id` and the destination column's recording ID as `target_id`.
+
+**Required parameters**:
+
+* `source_id` – the card recording ID to move.
+* `target_id` – the destination column recording ID.
+* `position` – zero-indexed position within the destination column.
+
+This endpoint will return `204 No Content` if successful.
+
+###### Example JSON Request
+
+```json
+{
+  "source_id": 3,
+  "target_id": 4,
+  "position": 0
+}
+```
+
+###### Copy as cURL
+
+```shell
+curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" \
+  -d '{"source_id": 3, "target_id": 4, "position": 0}' -X POST \
+  https://3.basecampapi.com/$ACCOUNT_ID/card_tables/2/moves.json
+```
+
 Legacy project-scoped routes
 -----------------------------
 
 The following project-scoped routes are still supported and will remain available, but flat routes above are the canonical form for new integrations.
 
 * `GET /buckets/1/card_tables/2.json` → [Get a card table](#get-a-card-table)
+* `POST /buckets/1/card_tables/2/moves.json` → [Move a card on the board](#move-a-card-on-the-board)
+
+[columns]: https://github.com/basecamp/bc3-api/blob/master/sections/card_table_columns.md#move-a-column

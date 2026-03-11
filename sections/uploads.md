@@ -5,6 +5,7 @@ Endpoints:
 
 - [Get uploads](#get-uploads)
 - [Get an upload](#get-an-upload)
+- [Get upload versions](#get-upload-versions)
 - [Create an upload](#create-an-upload)
 - [Update an upload](#update-an-upload)
 - [Trash an upload][trash]
@@ -22,8 +23,8 @@ Get uploads
     "id": 1069479915,
     "status": "active",
     "visible_to_clients": false,
-    "created_at": "2026-02-12T06:10:28.607Z",
-    "updated_at": "2026-02-12T06:10:28.621Z",
+    "created_at": "2026-03-11T06:24:04.174Z",
+    "updated_at": "2026-03-11T06:24:04.193Z",
     "title": "company-logo.png",
     "inherits_status": true,
     "type": "Upload",
@@ -57,8 +58,8 @@ Get uploads
       "title": "Chief Strategist",
       "bio": "Don’t let your dreams be dreams",
       "location": "Chicago, IL",
-      "created_at": "2026-02-12T06:08:49.342Z",
-      "updated_at": "2026-02-12T06:08:50.871Z",
+      "created_at": "2026-03-11T06:20:08.303Z",
+      "updated_at": "2026-03-11T06:20:09.929Z",
       "admin": true,
       "owner": true,
       "client": false,
@@ -105,8 +106,8 @@ Get an upload
   "id": 1069479915,
   "status": "active",
   "visible_to_clients": false,
-  "created_at": "2026-02-12T06:10:28.607Z",
-  "updated_at": "2026-02-12T06:10:28.621Z",
+  "created_at": "2026-03-11T06:24:04.174Z",
+  "updated_at": "2026-03-11T06:24:04.193Z",
   "title": "company-logo.png",
   "inherits_status": true,
   "type": "Upload",
@@ -140,8 +141,8 @@ Get an upload
     "title": "Chief Strategist",
     "bio": "Don’t let your dreams be dreams",
     "location": "Chicago, IL",
-    "created_at": "2026-02-12T06:08:49.342Z",
-    "updated_at": "2026-02-12T06:08:50.871Z",
+    "created_at": "2026-03-11T06:20:08.303Z",
+    "updated_at": "2026-03-11T06:20:09.929Z",
     "admin": true,
     "owner": true,
     "client": false,
@@ -174,6 +175,58 @@ Get an upload
 
 ```shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/uploads/2.json
+```
+
+Get upload versions
+-------------------
+
+* `GET /uploads/2/versions.json` will return a list of version events for the upload with an ID of `2`, in reverse chronological order. Each version event represents a file replacement.
+
+###### Example JSON Response
+<!-- START GET /uploads/2/versions.json -->
+```json
+[
+  {
+    "id": 1071915626,
+    "recording_id": 1069479915,
+    "action": "created",
+    "details": {},
+    "created_at": "2026-03-11T06:24:04.197Z",
+    "creator": {
+      "id": 1049715913,
+      "attachable_sgid": "BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiK2dpZDovL2JjMy9QZXJzb24vMTA0OTcxNTkxMz9leHBpcmVzX2luBjsAVEkiCHB1cgY7AFRJIg9hdHRhY2hhYmxlBjsAVA==--e627c45e6b34e08862da23906862412620e4d5d9",
+      "name": "Victor Cooper",
+      "email_address": "victor@honchodesign.com",
+      "personable_type": "User",
+      "title": "Chief Strategist",
+      "bio": "Don’t let your dreams be dreams",
+      "location": "Chicago, IL",
+      "created_at": "2026-03-11T06:20:08.303Z",
+      "updated_at": "2026-03-11T06:20:09.929Z",
+      "admin": true,
+      "owner": true,
+      "client": false,
+      "employee": true,
+      "time_zone": "America/Chicago",
+      "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBMlkkT4=--5fe7b70fbee7a7f0e2e1e19df7579e5d880c753d/avatar",
+      "company": {
+        "id": 1033447817,
+        "name": "Honcho Design"
+      },
+      "can_ping": true,
+      "can_manage_projects": true,
+      "can_manage_people": true,
+      "can_access_timesheet": true,
+      "can_access_hill_charts": true
+    }
+  }
+]
+```
+<!-- END GET /uploads/2/versions.json -->
+###### Copy as cURL
+
+```shell
+curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/uploads/2/versions.json
 ```
 
 Create an upload
@@ -238,6 +291,7 @@ The following project-scoped routes are still supported and will remain availabl
 
 * `GET /buckets/1/vaults/2/uploads.json` → [Get uploads](#get-uploads)
 * `GET /buckets/1/uploads/2.json` → [Get an upload](#get-an-upload)
+* `GET /buckets/1/uploads/2/versions.json` → [Get upload versions](#get-upload-versions)
 * `POST /buckets/1/vaults/2/uploads.json` → [Create an upload](#create-an-upload)
 * `PUT /buckets/1/uploads/2.json` → [Update an upload](#update-an-upload)
 
