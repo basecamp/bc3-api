@@ -20,8 +20,6 @@ Get a tool
 
 * `GET /dock/tools/2.json` will return the tool with ID `2`.
 
-This endpoint can also be accessed via the project-scoped path `GET /buckets/1/dock/tools/2.json`.
-
 ###### Example JSON Response
 <!-- START GET /buckets/1/dock/tools/2.json -->
 ```json
@@ -115,8 +113,6 @@ Update a tool
 
 * `PUT /dock/tools/2.json` allows renaming the tool with ID `2`.
 
-This endpoint can also be accessed via the project-scoped path `PUT /buckets/1/dock/tools/2.json`.
-
 **Required parameters**: `title` for the new name.
 
 This endpoint will return `200 OK` with the updated JSON representation of the tool.
@@ -205,8 +201,6 @@ Trash a tool
 
 * `DELETE /dock/tools/2.json` trashes the tool with ID `2`.
 
-This endpoint can also be accessed via the project-scoped path `DELETE /buckets/1/dock/tools/2.json`.
-
 This permanently removes the tool and all its content. Use with caution.
 
 This endpoint will return `204 No Content` if successful.
@@ -219,5 +213,14 @@ curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/j
   https://3.basecampapi.com/$ACCOUNT_ID/dock/tools/2.json
 ```
 
+
+Legacy project-scoped routes
+-----------------------------
+
+The following project-scoped routes are still supported and will remain available, but flat routes above are the canonical form for new integrations.
+
+* `GET /buckets/1/dock/tools/2.json` → [Get a tool](#get-a-tool)
+* `PUT /buckets/1/dock/tools/2.json` → [Update a tool](#update-a-tool)
+* `DELETE /buckets/1/dock/tools/2.json` → [Trash a tool](#trash-a-tool)
 
 [project]: https://github.com/basecamp/bc3-api/blob/master/sections/projects.md#get-a-project
