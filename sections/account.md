@@ -56,7 +56,7 @@ The `logo` field is only present when the account has a logo configured. It is o
     "byte_size": 85231,
     "content_type": "image/png",
     "filename": "honcho-logo.png",
-    "download_url": "https://3.basecampapi.com/195539477/blobs/..."
+    "download_url": "https://3.basecamp-static.com/195539477/blobs/..."
   },
   "trash_app_url": "https://3.basecamp.com/195539477/trash",
   "projects_trash_app_url": "https://3.basecamp.com/195539477/projects/trash"
@@ -128,7 +128,7 @@ This endpoint returns `200 OK` with the full [account](#get-account) JSON repres
     "byte_size": 85231,
     "content_type": "image/png",
     "filename": "honcho-logo.png",
-    "download_url": "https://3.basecampapi.com/195539477/blobs/..."
+    "download_url": "https://3.basecamp-static.com/195539477/blobs/..."
   },
   "trash_app_url": "https://3.basecamp.com/195539477/trash",
   "projects_trash_app_url": "https://3.basecamp.com/195539477/projects/trash"
@@ -166,7 +166,7 @@ Account logos use direct multipart file upload rather than the standard two-stag
   "byte_size": 85231,
   "content_type": "image/png",
   "filename": "company-logo.png",
-  "download_url": "https://3.basecampapi.com/195539477/blobs/..."
+  "download_url": "https://3.basecamp-static.com/195539477/blobs/..."
 }
 ```
 <!-- END PUT /account/logo.json -->
