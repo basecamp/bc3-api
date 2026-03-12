@@ -5,7 +5,7 @@ Endpoints for retrieving the current user's assignments, including active assign
 
 Each assignment includes its content, type, bucket, parent, assignees, due dates, completion status, and any child assignments (e.g. card steps nested under their parent card).
 
-**Note:** These endpoints return the full result set and are not [paginated][pagination].
+**Note:** These endpoints return the full result set and are not paginated.
 
 Endpoints:
 
@@ -203,5 +203,3 @@ Providing an invalid `scope` returns `400 Bad Request` with an error listing the
 ```shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/my/assignments/due.json?scope=overdue
 ```
-
-[pagination]: https://github.com/basecamp/bc3-api/blob/master/README.md#pagination
