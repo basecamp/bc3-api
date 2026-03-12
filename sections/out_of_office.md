@@ -102,4 +102,3 @@ curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -X DELETE \
   https://3.basecampapi.com/$ACCOUNT_ID/people/2/out_of_office.json
 ```
 
-[1]: https://github.com/basecamp/bc3-api/blob/master/sections/people.md#get-person
