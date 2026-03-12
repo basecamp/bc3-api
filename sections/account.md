@@ -9,9 +9,11 @@ Endpoints:
 Get account
 -----------
 
-* `GET /account.json` will return the account for the current authenticated session.
+* `GET /account.json` will return the account for the current access token.
 
 Account owners will see additional fields: `frozen` and `paused`. These fields are not included for non-owners.
+
+The `logo` field is only present when the account has a logo configured. It is omitted entirely when no logo exists.
 
 ###### Example JSON Response
 <!-- START GET /account.json -->
