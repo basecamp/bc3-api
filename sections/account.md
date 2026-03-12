@@ -5,6 +5,8 @@ Endpoints:
 
 - [Get account](#get-account)
 - [Update account name](#update-account-name)
+- [Update account logo](#update-account-logo)
+- [Remove account logo](#remove-account-logo)
 
 Get account
 -----------
@@ -51,14 +53,10 @@ The `logo` field is only present when the account has a logo configured. It is o
   "logo": {
     "id": 1037392521,
     "sgid": "BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiK2dpZDov...",
-    "status_url": "https://3.basecampapi.com/195539477/logos/BAh7BkkiC19yYW.../status.json",
     "byte_size": 85231,
     "content_type": "image/png",
     "filename": "honcho-logo.png",
-    "download_url": "https://3.basecampapi.com/195539477/blobs/...",
-    "previewable": true,
-    "preview_url": "https://3.basecampapi.com/195539477/blobs/...",
-    "thumbnail_url": "https://3.basecampapi.com/195539477/blobs/..."
+    "download_url": "https://3.basecampapi.com/195539477/blobs/..."
   },
   "trash_app_url": "https://3.basecamp.com/195539477/trash",
   "projects_trash_app_url": "https://3.basecamp.com/195539477/projects/trash"
@@ -127,14 +125,10 @@ This endpoint returns `200 OK` with the full [account](#get-account) JSON repres
   "logo": {
     "id": 1037392521,
     "sgid": "BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiK2dpZDov...",
-    "status_url": "https://3.basecampapi.com/195539477/logos/BAh7BkkiC19yYW.../status.json",
     "byte_size": 85231,
     "content_type": "image/png",
     "filename": "honcho-logo.png",
-    "download_url": "https://3.basecampapi.com/195539477/blobs/...",
-    "previewable": true,
-    "preview_url": "https://3.basecampapi.com/195539477/blobs/...",
-    "thumbnail_url": "https://3.basecampapi.com/195539477/blobs/..."
+    "download_url": "https://3.basecampapi.com/195539477/blobs/..."
   },
   "trash_app_url": "https://3.basecamp.com/195539477/trash",
   "projects_trash_app_url": "https://3.basecamp.com/195539477/projects/trash"
@@ -150,4 +144,53 @@ curl -s -H "Authorization: Bearer $ACCESS_TOKEN" \
   -X PUT \
   -d '{"name":"Honcho Design Studio"}' \
   https://3.basecampapi.com/$ACCOUNT_ID/account/name.json
+```
+
+Update account logo
+-------------------
+
+* `PUT /account/logo.json` will upload or replace the account logo. Only administrators and account owners can use this endpoint — returns `403 Forbidden` for others.
+
+Account logos use direct multipart file upload rather than the standard two-stage `/attachments` flow used elsewhere in the API.
+
+**Required parameters**:
+
+* `logo` - the logo image file, sent as a multipart form upload. Accepted formats: PNG, JPEG, GIF, WebP, AVIF, HEIC. Maximum file size: 5 MB. Returns `422 Unprocessable Entity` when the file is missing, the format is invalid, or the file exceeds 5 MB.
+
+###### Example JSON Response
+<!-- START PUT /account/logo.json -->
+```json
+{
+  "id": 1037392521,
+  "sgid": "BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiK2dpZDov...",
+  "byte_size": 85231,
+  "content_type": "image/png",
+  "filename": "company-logo.png",
+  "download_url": "https://3.basecampapi.com/195539477/blobs/..."
+}
+```
+<!-- END PUT /account/logo.json -->
+
+###### Copy as cURL
+
+```shell
+curl -s -H "Authorization: Bearer $ACCESS_TOKEN" \
+  -X PUT \
+  -F "logo=@company-logo.png" \
+  https://3.basecampapi.com/$ACCOUNT_ID/account/logo.json
+```
+
+Remove account logo
+-------------------
+
+* `DELETE /account/logo.json` will remove the account logo. Only administrators and account owners can use this endpoint — returns `403 Forbidden` for others.
+
+Returns `204 No Content` on success.
+
+###### Copy as cURL
+
+```shell
+curl -s -H "Authorization: Bearer $ACCESS_TOKEN" \
+  -X DELETE \
+  https://3.basecampapi.com/$ACCOUNT_ID/account/logo.json
 ```
