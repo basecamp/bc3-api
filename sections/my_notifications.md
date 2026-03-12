@@ -16,7 +16,7 @@ Get notifications
 
 * `GET /my/readings.json` will return the current user's notifications grouped into `unreads`, `reads`, and `memories`.
 
-Reads are paginated with 50 items per page. Unreads are not paginated but are capped at 100 items. Memories are not paginated.
+Reads are a [paginated list][pagination] with 50 items per page. Unreads are not paginated but are capped at 100 items. Memories are not paginated.
 
 _Optional parameters_:
 
@@ -39,7 +39,7 @@ Each notification in the response includes:
 * `creator` - the person who created or last updated the readable (see [People][1] for the full person object).
 * `content_excerpt` - a text excerpt of the content, when available.
 * `app_url` - the URL to view this item in Basecamp.
-* `unread_url` - the URL to mark this item as read.
+* `unread_url` - a URL related to this item's unread state (mark items as read using the "Mark as read" endpoint described below).
 * `bookmark_url` - the URL to bookmark this item.
 * `memory_url` - the URL to memorize or forget this item (only present when the item is memorizable).
 * `subscribed` - `true` if the current user is subscribed to the item's container.
@@ -100,7 +100,7 @@ Pings additionally include:
       "content_excerpt": "Here are the notes from today's kickoff...",
       "app_url": "https://3.basecamp.com/195539477/buckets/2085958502/messages/1069479012",
       "unread_url": "https://3.basecampapi.com/195539477/my/readings/1069479012.json",
-      "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7BkkiC19yYWlscwY6BkVU....json",
+      "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7BkkiC19yYWlscwY6BkVU...json",
       "subscription_url": "https://3.basecampapi.com/195539477/buckets/2085958502/recordings/1069479012/subscription.json",
       "previewable_attachments": [],
       "subscribed": true
@@ -150,7 +150,7 @@ Pings additionally include:
       "content_excerpt": "Please review and update the copy on...",
       "app_url": "https://3.basecamp.com/195539477/buckets/2085958502/todos/1069479005",
       "unread_url": "https://3.basecampapi.com/195539477/my/readings/1069479005.json",
-      "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7BkkiC19yYWlscwY6BkVU....json",
+      "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7BkkiC19yYWlscwY6BkVU...json",
       "subscription_url": "https://3.basecampapi.com/195539477/buckets/2085958502/recordings/1069479005/subscription.json",
       "previewable_attachments": [],
       "subscribed": true
@@ -200,7 +200,7 @@ Pings additionally include:
       "content_excerpt": "Attached are the updated brand guidelines...",
       "app_url": "https://3.basecamp.com/195539477/buckets/2085958502/messages/1069479001",
       "unread_url": "https://3.basecampapi.com/195539477/my/readings/1069479001.json",
-      "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7BkkiC19yYWlscwY6BkVU....json",
+      "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7BkkiC19yYWlscwY6BkVU...json",
       "memory_url": "https://3.basecampapi.com/195539477/my/readings/1069479001/memory.json",
       "subscription_url": "https://3.basecampapi.com/195539477/buckets/2085958502/recordings/1069479001/subscription.json",
       "previewable_attachments": [],
@@ -250,10 +250,11 @@ Returns `200 OK` on success with no body.
 
 ```shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" \
-  -H 'Content-Type: application/json' \
+  -H "Content-Type: application/json" \
   -X PUT \
   -d '{ "readables": ["BAh7BkkiC19yYWlscwY6BkVU..."] }' \
   https://3.basecampapi.com/$ACCOUNT_ID/my/unreads.json
 ```
 
 [1]: https://github.com/basecamp/bc3-api/blob/master/sections/people.md#people
+[pagination]: https://github.com/basecamp/bc3-api/blob/master/README.md#pagination
