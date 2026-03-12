@@ -306,6 +306,7 @@ API endpoints
 - [Message Types](https://github.com/basecamp/bc3-api/blob/master/sections/message_types.md#message-types)
 - [Messages](https://github.com/basecamp/bc3-api/blob/master/sections/messages.md#messages)
 - [My assignments](https://github.com/basecamp/bc3-api/blob/master/sections/my_assignments.md#my-assignments)
+- [My notifications](https://github.com/basecamp/bc3-api/blob/master/sections/my_notifications.md#my-notifications)
 - [People](https://github.com/basecamp/bc3-api/blob/master/sections/people.md#people)
 - [Projects](https://github.com/basecamp/bc3-api/blob/master/sections/projects.md#projects)
 - [Question answers](https://github.com/basecamp/bc3-api/blob/master/sections/question_answers.md#question-answers)
