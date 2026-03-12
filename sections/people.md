@@ -219,6 +219,8 @@ Get person
 
 * `GET /people/2.json` will return the profile for the user with the given ID.
 
+When a person has [out of office][3] enabled, the response will include an `out_of_office` object with `start_date` and `end_date` in ISO 8601 format (`YYYY-MM-DD`).
+
 ###### Example JSON Response
 <!-- START GET /people/2.json -->
 ```json
@@ -266,3 +268,5 @@ See the [Get person](#get-person) endpoint for an example of the JSON response.
 ```shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/my/profile.json
 ```
+
+[3]: https://github.com/basecamp/bc3-api/blob/master/sections/out_of_office.md#out-of-office
