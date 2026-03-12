@@ -64,7 +64,7 @@ _Optional parameters_:
 * `show_badge_counts` - whether to show badge counts. `true` or `false`.
 * `schedule_enabled` - whether the notification schedule is active. `true` or `false`. When `true`, also provide `schedule`.
 * `schedule` - an object with `start_hour` (integer 0–23), `end_hour` (integer 0–23), and `work_days` (array of integers, 0=Sunday through 6=Saturday).
-* `bundle_enabled` - whether notification bundling is enabled. `true` or `false`. Requires `schedule_enabled` to be `true`.
+* `bundle_enabled` - whether notification bundling is enabled. `true` or `false`.
 * `reminders` - an array of reminder types to enable. Valid values: `schedule_entries`, `due_assignments`. Pass an empty array to disable all reminders.
 
 Providing an invalid `platform` or `granularity` returns `422 Unprocessable Entity` with an error listing the valid options:
