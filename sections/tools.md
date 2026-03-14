@@ -21,7 +21,7 @@ Get a tool
 * `GET /dock/tools/2.json` will return the tool with ID `2`.
 
 ###### Example JSON Response
-<!-- START GET /buckets/1/dock/tools/2.json -->
+<!-- START GET /dock/tools/2.json -->
 ```json
 {
   "id": 1069479395,
@@ -71,7 +71,7 @@ Get a tool
   }
 }
 ```
-<!-- END GET /buckets/1/dock/tools/2.json -->
+<!-- END GET /dock/tools/2.json -->
 ###### Copy as cURL
 
 ```shell
