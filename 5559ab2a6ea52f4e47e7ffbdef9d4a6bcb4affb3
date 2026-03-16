@@ -1,0 +1,23 @@
+sections/account.md
+  6193092986c686c8 32,37-38,70,96,101-102,142
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.1.12",
+  "base_commit_sha": "5559ab2a6ea52f4e47e7ffbdef9d4a6bcb4affb3",
+  "prompts": {
+    "6193092986c686c8": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "653bbcef-9509-4a5e-852d-0f1b81cc0df3",
+        "model": "claude-opus-4-6"
+      },
+      "human_author": "Jeremy Daer <jeremy@37signals.com>",
+      "messages": [],
+      "total_additions": 20,
+      "total_deletions": 44,
+      "accepted_lines": 8,
+      "overriden_lines": 0
+    }
+  }
+}
