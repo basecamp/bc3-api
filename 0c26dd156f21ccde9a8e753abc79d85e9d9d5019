@@ -1,0 +1,23 @@
+sections/lineup_markers.md
+  ee4158c5fe67bc7f 9,16,18-19,31
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.1.12",
+  "base_commit_sha": "0c26dd156f21ccde9a8e753abc79d85e9d9d5019",
+  "prompts": {
+    "ee4158c5fe67bc7f": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "391238dd-6bbb-46d3-883c-b77c437b6632",
+        "model": "claude-opus-4-6"
+      },
+      "human_author": "Jeremy Daer <jeremy@37signals.com>",
+      "messages": [],
+      "total_additions": 5,
+      "total_deletions": 2,
+      "accepted_lines": 5,
+      "overriden_lines": 0
+    }
+  }
+}
