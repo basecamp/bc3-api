@@ -6,15 +6,17 @@ Endpoints:
 - [List markers](#list-markers)
 - [Create a marker](#create-a-marker)
 - [Update a marker](#update-a-marker)
-- [Destroy a marker](#destroy-a-step)
+- [Destroy a marker](#destroy-a-marker)
 
 List markers
 -----------------------
 
 * `GET /lineup/markers.json` returns all markers for the account.
 
-###### Example JSON Response
+This endpoint will return `200 OK` with a JSON array of markers.
 
+###### Example JSON Response
+<!-- START GET /lineup/markers.json -->
 ```json
 [
   {
@@ -26,6 +28,7 @@ List markers
   }
 ]
 ```
+<!-- END GET /lineup/markers.json -->
 
 ###### Copy as cURL
 
