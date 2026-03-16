@@ -1,0 +1,36 @@
+sections/lineup_markers.md
+  1bc85dc17fb9d80a 6,11-36
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.1.12",
+  "base_commit_sha": "4510443129e625a70a73d9e925220e2160a96bea",
+  "prompts": {
+    "1bc85dc17fb9d80a": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "6f39bc98-74ac-4c60-8751-68b71bfec054",
+        "model": "claude-opus-4-6"
+      },
+      "human_author": "Jeremy Daer <jeremy@37signals.com>",
+      "messages": [],
+      "total_additions": 27,
+      "total_deletions": 0,
+      "accepted_lines": 27,
+      "overriden_lines": 0
+    },
+    "eb0c8b8443ecae68": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "259fa61d-b91a-4139-a314-0fd6549d9664",
+        "model": "claude-opus-4-6"
+      },
+      "human_author": "Jeremy Daer <jeremy@37signals.com>",
+      "messages": [],
+      "total_additions": 84,
+      "total_deletions": 0,
+      "accepted_lines": 84,
+      "overriden_lines": 0
+    }
+  }
+}
