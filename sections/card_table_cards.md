@@ -327,9 +327,11 @@ Move a card
 
 **Required parameters**: `column_id` of the column destination
 
-**Optional parameters**: `position` — 1-indexed position within the destination column (defaults to `1`, placing the card at the top). Must be a positive integer. Returns `400 Bad Request` if the value is zero, negative, or non-numeric.
+_Optional parameters_:
 
-This endpoint will return `204 No Content` if the update was a success.
+* `position` - 1-indexed position within the destination column. Defaults to `1`, placing the card at the top. Must be a positive integer.
+
+This endpoint will return `204 No Content` if the move was a success. Returns `400 Bad Request` if `position` is zero, negative, or non-numeric.
 
 ###### Example JSON Request
 
