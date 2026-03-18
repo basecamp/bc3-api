@@ -327,20 +327,23 @@ Move a card
 
 **Required parameters**: `column_id` of the column destination
 
+**Optional parameters**: `position` — 1-indexed position within the destination column (defaults to `1`, placing the card at the top). Must be a positive integer. Returns `400 Bad Request` if the value is zero, negative, or non-numeric.
+
 This endpoint will return `204 No Content` if the update was a success.
 
 ###### Example JSON Request
 
 ```json
 {
-  "column_id": 3
+  "column_id": 3,
+  "position": 2
 }
 ```
 ###### Copy as cURL
 
 ```shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" \
-  -d '{"column_id": 3}' \
+  -d '{"column_id": 3, "position": 2}' \
   https://3.basecampapi.com/$ACCOUNT_ID/card_tables/cards/2/moves.json
 ```
 
