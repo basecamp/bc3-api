@@ -282,6 +282,7 @@ API endpoints
 -------------
 - [Authentication](https://github.com/basecamp/bc3-api/blob/master/sections/authentication.md#authentication)
 <!-- START API ENDPOINTS -->
+- [Account](https://github.com/basecamp/bc3-api/blob/master/sections/account.md#account)
 - [Attachments](https://github.com/basecamp/bc3-api/blob/master/sections/attachments.md#attachments)
 - [Boosts](https://github.com/basecamp/bc3-api/blob/master/sections/boosts.md#boosts)
 - [Campfires](https://github.com/basecamp/bc3-api/blob/master/sections/campfires.md#campfires)
