@@ -17,7 +17,7 @@ Get recordings
 
 **Required parameters**: `type`, which must be `Comment`, `Document`, `Kanban::Card`, `Kanban::Step`, `Message`, `Question::Answer`, `Schedule::Entry`, `Todo`, `Todolist`, `Upload`, or `Vault`.
 
-_Optional parameters_:
+_Optional query parameters_:
 
 * `bucket` - Single or comma separated list of [project][2] IDs. Default: All active projects visible to the current user.
 * `status` - Options: `active`, `archived`, or `trashed`. Default: `active`
