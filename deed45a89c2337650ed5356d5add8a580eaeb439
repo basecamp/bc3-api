@@ -1,0 +1,23 @@
+sections/recordings.md
+  94bdc8a481e39ed5 20
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.1.15",
+  "base_commit_sha": "deed45a89c2337650ed5356d5add8a580eaeb439",
+  "prompts": {
+    "94bdc8a481e39ed5": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "e8bf9b45-e33e-4ea6-a3fb-de6ce469cb48",
+        "model": "claude-opus-4-6"
+      },
+      "human_author": "Jeremy Daer <jeremy@37signals.com>",
+      "messages": [],
+      "total_additions": 1,
+      "total_deletions": 1,
+      "accepted_lines": 1,
+      "overriden_lines": 0
+    }
+  }
+}
