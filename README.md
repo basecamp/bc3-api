@@ -299,6 +299,7 @@ API endpoints
 - [Documents](https://github.com/basecamp/bc3-api/blob/master/sections/documents.md#documents)
 - [Events](https://github.com/basecamp/bc3-api/blob/master/sections/events.md#events)
 - [Forwards](https://github.com/basecamp/bc3-api/blob/master/sections/forwards.md#forwards)
+- [Gauges](https://github.com/basecamp/bc3-api/blob/master/sections/gauges.md#gauges)
 - [Hill charts](https://github.com/basecamp/bc3-api/blob/master/sections/hill_charts.md#hill-charts)
 - [Inbox replies](https://github.com/basecamp/bc3-api/blob/master/sections/inbox_replies.md#inbox-replies)
 - [Inboxes](https://github.com/basecamp/bc3-api/blob/master/sections/inboxes.md#inboxes)
