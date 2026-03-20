@@ -9,6 +9,7 @@ Endpoints:
 - [Get pingable people](#get-pingable-people)
 - [Get person](#get-person)
 - [Get my personal info](#get-my-personal-info)
+- [Update my personal info](#update-my-personal-info)
 - [Get my preferences](#get-my-preferences)
 - [Update my preferences](#update-my-preferences)
 
@@ -272,6 +273,43 @@ curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCO
 ```
 
 
+Update my personal info
+-----------------------
+
+* `PUT /my/profile.json` allows updating the current user's personal info.
+
+**Optional parameters**:
+
+* `name` - the user's display name.
+* `email_address` - the user's email address.
+* `title` - the user's job title.
+* `bio` - a short bio.
+* `location` - the user's location.
+* `time_zone_name` - the user's time zone (e.g. `America/Chicago`).
+* `first_week_day` - the first day of the week (`0` for Sunday, `1` for Monday).
+* `time_format` - time display format.
+
+This endpoint will return `204 No Content` if the update was a success. Returns `422 Unprocessable Entity` if the update fails (e.g. the email address is already in use).
+
+###### Example JSON Request
+
+```json
+{
+  "name": "Victor Cooper",
+  "title": "Chief Strategist",
+  "bio": "Don't let your dreams be dreams",
+  "location": "Chicago, IL"
+}
+```
+###### Copy as cURL
+
+```shell
+curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" \
+  -d '{"name":"Victor Cooper","title":"Chief Strategist"}' -X PUT \
+  https://3.basecampapi.com/$ACCOUNT_ID/my/profile.json
+```
+
+
 Get my preferences
 ------------------
 
@@ -321,6 +359,7 @@ Returns `200 OK` with the updated [preferences](#get-my-preferences) JSON repres
 }
 ```
 <!-- END PUT PAYLOAD /my/preferences.json -->
+
 ###### Copy as cURL
 
 ```shell

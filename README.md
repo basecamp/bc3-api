@@ -260,7 +260,7 @@ The resource is called **person** (not user). Endpoints:
 - `/people.json` — list people in account
 - `/people/{id}.json` — single person
 - `/projects/{id}/people.json` — people in a project
-- `/my/profile.json` — current authenticated user
+- `/my/profile.json` — current authenticated user (GET and PUT)
 
 ### To-do specifics
 
