@@ -11,6 +11,11 @@ Get client approvals
 
 * `GET /buckets/1/client/approvals.json` will return a [paginated list][pagination] of client approvals in the project with an ID of `1`.
 
+_Optional query parameters_:
+
+* `sort` - Options: `created_at` or `updated_at`. Default: `created_at`.
+* `direction` - Options: `desc` or `asc`. Default: `desc`.
+
 ###### Example JSON Response
 <!-- START GET /buckets/1/client/approvals.json -->
 ```json

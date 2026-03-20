@@ -15,6 +15,11 @@ Get forwards
 
 To get the inbox ID for a project, see the [Get inbox][3] endpoint.
 
+_Optional query parameters_:
+
+* `sort` - Options: `created_at` or `updated_at`. Default: `created_at`.
+* `direction` - Options: `desc` or `asc`. Default: `desc`.
+
 ###### Example JSON Response
 <!-- START GET /inboxes/3/forwards.json -->
 ```json
