@@ -10,6 +10,8 @@ Endpoints:
 - [Get person](#get-person)
 - [Get my personal info](#get-my-personal-info)
 - [Update my personal info](#update-my-personal-info)
+- [Get my preferences](#get-my-preferences)
+- [Update my preferences](#update-my-preferences)
 
 Get all people
 --------------
@@ -220,6 +222,8 @@ Get person
 
 * `GET /people/2.json` will return the profile for the user with the given ID.
 
+When a person has [out of office][3] enabled, the response will include an `out_of_office` object with `start_date` and `end_date` in ISO 8601 format (`YYYY-MM-DD`).
+
 ###### Example JSON Response
 <!-- START GET /people/2.json -->
 ```json
@@ -297,7 +301,6 @@ This endpoint will return `204 No Content` if the update was a success. Returns 
   "location": "Chicago, IL"
 }
 ```
-
 ###### Copy as cURL
 
 ```shell
@@ -305,3 +308,64 @@ curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/j
   -d '{"name":"Victor Cooper","title":"Chief Strategist"}' -X PUT \
   https://3.basecampapi.com/$ACCOUNT_ID/my/profile.json
 ```
+
+
+Get my preferences
+------------------
+
+* `GET /my/preferences.json` will return the current user's preferences.
+
+###### Example JSON Response
+<!-- START GET /my/preferences.json -->
+```json
+{
+  "url": "https://3.basecampapi.com/195539477/my/preferences.json",
+  "app_url": "https://3.basecamp.com/195539477/my/preferences",
+  "time_zone_name": "America/Chicago",
+  "first_week_day": "Sunday",
+  "time_format": "twelve_hour"
+}
+```
+<!-- END GET /my/preferences.json -->
+###### Copy as cURL
+
+```shell
+curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/my/preferences.json
+```
+
+
+Update my preferences
+---------------------
+
+* `PUT /my/preferences.json` will update the current user's preferences.
+
+All parameters are optional. Only include the ones you want to change. These parameters should be sent inside the top-level `person` object in the JSON request body.
+
+* `time_zone_name` - the user's time zone (e.g. `America/Chicago`, `London`, `UTC`). Accepts any valid Rails time zone name.
+* `first_week_day` - the first day of the week. Accepts: `Sunday`, `Monday`, `Tuesday`, `Wednesday`, `Thursday`, `Friday`, `Saturday`.
+* `time_format` - the time display format. Accepts: `twelve_hour`, `twenty_four_hour`.
+
+Returns `200 OK` with the updated [preferences](#get-my-preferences) JSON representation.
+
+###### Example JSON Request
+<!-- START PUT PAYLOAD /my/preferences.json -->
+```json
+{
+  "person": {
+    "time_zone_name": "London",
+    "first_week_day": "Monday",
+    "time_format": "twenty_four_hour"
+  }
+}
+```
+<!-- END PUT PAYLOAD /my/preferences.json -->
+
+###### Copy as cURL
+
+```shell
+curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" \
+  -d '{"person":{"time_zone_name":"London","first_week_day":"Monday","time_format":"twenty_four_hour"}}' -X PUT \
+  https://3.basecampapi.com/$ACCOUNT_ID/my/preferences.json
+```
+
+[3]: https://github.com/basecamp/bc3-api/blob/master/sections/out_of_office.md#out-of-office
