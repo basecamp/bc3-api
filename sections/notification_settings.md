@@ -25,8 +25,7 @@ Get notification settings
   "schedule_enabled": false,
   "schedule": null,
   "bundle_enabled": true,
-  "schedule_entries_reminders": true,
-  "due_assignments_reminders": true,
+  "reminders": ["schedule_entries", "due_assignments"],
   "state": "on"
 }
 ```
@@ -71,9 +70,7 @@ Providing an invalid `platform` or `granularity` returns `422 Unprocessable Enti
 
 ```json
 {
-  "errors": [
-    "Invalid platform 'carrier_pigeon'. Valid options: web, email, web_and_email"
-  ]
+  "error": "Invalid platform 'carrier_pigeon'. Valid options: web, email, web_and_email"
 }
 ```
 
