@@ -61,10 +61,10 @@ _Optional parameters_:
 
 * `platform` - delivery platform. Valid options: `web`, `email`, `web_and_email`.
 * `granularity` - notification granularity. Valid options: `everything`, `pings_and_mentions`.
-* `show_badge_counts` - whether to show badge counts. `true` or `false`.
-* `schedule_enabled` - whether the notification schedule is active. `true` or `false`. When `true`, also provide `schedule`.
-* `schedule` - an object with `start_hour` (integer 0–23), `end_hour` (integer 0–23), and `work_days` (array of integers, 0=Sunday through 6=Saturday).
-* `bundle_enabled` - whether notification bundling is enabled. `true` or `false`.
+* `show_badge_counts` - whether to show badge counts. JSON `true` or `false` (not strings).
+* `schedule_enabled` - whether the notification schedule is active. JSON `true` or `false` (not strings). When `true`, also provide `schedule`.
+* `schedule` - an object with `start_hour` (integer 0–23), `end_hour` (integer 0–23, must be greater than `start_hour`), and `work_days` (non-empty array of integers, 0=Sunday through 6=Saturday).
+* `bundle_enabled` - whether notification bundling is enabled. JSON `true` or `false` (not strings).
 * `reminders` - an array of reminder types to enable. Valid values: `schedule_entries`, `due_assignments`. Pass an empty array to disable all reminders. These correspond to the `schedule_entries_reminders` and `due_assignments_reminders` boolean fields in the GET response.
 
 Providing an invalid `platform` or `granularity` returns `422 Unprocessable Entity` with an error listing the valid options:
@@ -109,7 +109,7 @@ Snooze notifications
 
 **Required parameters**:
 
-* `duration` - the number of seconds to snooze notifications.
+* `duration` - a positive integer representing the number of seconds to snooze notifications.
 
 ###### Example JSON Response
 <!-- START PUT /my/notifications/snooze.json -->
