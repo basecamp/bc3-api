@@ -260,7 +260,7 @@ The resource is called **person** (not user). Endpoints:
 - `/people.json` — list people in account
 - `/people/{id}.json` — single person
 - `/projects/{id}/people.json` — people in a project
-- `/my/profile.json` — current authenticated user
+- `/my/profile.json` — current authenticated user (GET and PUT)
 
 ### To-do specifics
 
@@ -282,6 +282,7 @@ API endpoints
 -------------
 - [Authentication](https://github.com/basecamp/bc3-api/blob/master/sections/authentication.md#authentication)
 <!-- START API ENDPOINTS -->
+- [Account](https://github.com/basecamp/bc3-api/blob/master/sections/account.md#account)
 - [Attachments](https://github.com/basecamp/bc3-api/blob/master/sections/attachments.md#attachments)
 - [Boosts](https://github.com/basecamp/bc3-api/blob/master/sections/boosts.md#boosts)
 - [Campfires](https://github.com/basecamp/bc3-api/blob/master/sections/campfires.md#campfires)
@@ -298,6 +299,7 @@ API endpoints
 - [Documents](https://github.com/basecamp/bc3-api/blob/master/sections/documents.md#documents)
 - [Events](https://github.com/basecamp/bc3-api/blob/master/sections/events.md#events)
 - [Forwards](https://github.com/basecamp/bc3-api/blob/master/sections/forwards.md#forwards)
+- [Gauges](https://github.com/basecamp/bc3-api/blob/master/sections/gauges.md#gauges)
 - [Hill charts](https://github.com/basecamp/bc3-api/blob/master/sections/hill_charts.md#hill-charts)
 - [Inbox replies](https://github.com/basecamp/bc3-api/blob/master/sections/inbox_replies.md#inbox-replies)
 - [Inboxes](https://github.com/basecamp/bc3-api/blob/master/sections/inboxes.md#inboxes)
@@ -305,7 +307,10 @@ API endpoints
 - [Message Boards](https://github.com/basecamp/bc3-api/blob/master/sections/message_boards.md#message-boards)
 - [Message Types](https://github.com/basecamp/bc3-api/blob/master/sections/message_types.md#message-types)
 - [Messages](https://github.com/basecamp/bc3-api/blob/master/sections/messages.md#messages)
+- [My assignments](https://github.com/basecamp/bc3-api/blob/master/sections/my_assignments.md#my-assignments)
+- [My notifications](https://github.com/basecamp/bc3-api/blob/master/sections/my_notifications.md#my-notifications)
 - [Notification settings](https://github.com/basecamp/bc3-api/blob/master/sections/notification_settings.md#notification-settings)
+- [Out of office](https://github.com/basecamp/bc3-api/blob/master/sections/out_of_office.md#out-of-office)
 - [People](https://github.com/basecamp/bc3-api/blob/master/sections/people.md#people)
 - [Projects](https://github.com/basecamp/bc3-api/blob/master/sections/projects.md#projects)
 - [Question answers](https://github.com/basecamp/bc3-api/blob/master/sections/question_answers.md#question-answers)

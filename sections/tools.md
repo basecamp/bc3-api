@@ -18,10 +18,10 @@ Endpoints:
 Get a tool
 ----------
 
-* `GET /buckets/1/dock/tools/2.json` will return the tool with ID `2` in the project with ID `1`.
+* `GET /dock/tools/2.json` will return the tool with ID `2`.
 
 ###### Example JSON Response
-<!-- START GET /buckets/1/dock/tools/2.json -->
+<!-- START GET /dock/tools/2.json -->
 ```json
 {
   "id": 1069479395,
@@ -71,11 +71,11 @@ Get a tool
   }
 }
 ```
-<!-- END GET /buckets/1/dock/tools/2.json -->
+<!-- END GET /dock/tools/2.json -->
 ###### Copy as cURL
 
 ```shell
-curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/dock/tools/2.json
+curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/dock/tools/2.json
 ```
 
 
@@ -111,7 +111,7 @@ curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/j
 Update a tool
 -------------
 
-* `PUT /buckets/1/dock/tools/2.json` allows renaming the tool with ID `2` in the project with ID `1`.
+* `PUT /dock/tools/2.json` allows renaming the tool with ID `2`.
 
 **Required parameters**: `title` for the new name.
 
@@ -130,7 +130,7 @@ This endpoint will return `200 OK` with the updated JSON representation of the t
 ```shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" \
   -d '{"title":"Team Chat"}' -X PUT \
-  https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/dock/tools/2.json
+  https://3.basecampapi.com/$ACCOUNT_ID/dock/tools/2.json
 ```
 
 
@@ -199,7 +199,7 @@ curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/j
 Trash a tool
 ------------
 
-* `DELETE /buckets/1/dock/tools/2.json` trashes the tool with ID `2` in the project with ID `1`.
+* `DELETE /dock/tools/2.json` trashes the tool with ID `2`.
 
 This permanently removes the tool and all its content. Use with caution.
 
@@ -210,8 +210,17 @@ This endpoint will return `204 No Content` if successful.
 ```shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" \
   -X DELETE \
-  https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/dock/tools/2.json
+  https://3.basecampapi.com/$ACCOUNT_ID/dock/tools/2.json
 ```
 
+
+Legacy project-scoped routes
+-----------------------------
+
+The following project-scoped routes are still supported and will remain available, but flat routes above are the canonical form for new integrations.
+
+* `GET /buckets/1/dock/tools/2.json` → [Get a tool](#get-a-tool)
+* `PUT /buckets/1/dock/tools/2.json` → [Update a tool](#update-a-tool)
+* `DELETE /buckets/1/dock/tools/2.json` → [Trash a tool](#trash-a-tool)
 
 [project]: https://github.com/basecamp/bc3-api/blob/master/sections/projects.md#get-a-project
