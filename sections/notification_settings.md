@@ -25,7 +25,8 @@ Get notification settings
   "schedule_enabled": false,
   "schedule": null,
   "bundle_enabled": true,
-  "reminders": ["schedule_entries", "due_assignments"],
+  "schedule_entries_reminders": true,
+  "due_assignments_reminders": true,
   "state": "on"
 }
 ```
@@ -64,13 +65,13 @@ _Optional parameters_:
 * `schedule_enabled` - whether the notification schedule is active. `true` or `false`. When `true`, also provide `schedule`.
 * `schedule` - an object with `start_hour` (integer 0–23), `end_hour` (integer 0–23), and `work_days` (array of integers, 0=Sunday through 6=Saturday).
 * `bundle_enabled` - whether notification bundling is enabled. `true` or `false`.
-* `reminders` - an array of reminder types to enable. Valid values: `schedule_entries`, `due_assignments`. Pass an empty array to disable all reminders.
+* `reminders` - an array of reminder types to enable. Valid values: `schedule_entries`, `due_assignments`. Pass an empty array to disable all reminders. These correspond to the `schedule_entries_reminders` and `due_assignments_reminders` boolean fields in the GET response.
 
 Providing an invalid `platform` or `granularity` returns `422 Unprocessable Entity` with an error listing the valid options:
 
 ```json
 {
-  "error": "Invalid platform 'carrier_pigeon'. Valid options: web, email, web_and_email"
+  "errors": ["Invalid platform 'carrier_pigeon'. Valid options: web, email, web_and_email"]
 }
 ```
 
