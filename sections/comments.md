@@ -221,4 +221,4 @@ The following project-scoped routes are still supported and will remain availabl
 [todos]:      todos.md#todos
 [trash]:      recordings.md#trash-a-recording
 [pagination]: ../README.md#pagination
-[rich]:       ../README.md#rich-text-content
+[rich]:       rich_text.md
