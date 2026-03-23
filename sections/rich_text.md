@@ -66,7 +66,7 @@ To insert an image or file attachment in rich text content, first [create an Att
   {
     "attachable_sgid": "BAh7CEkiCG..."
   }
-````
+```
 
 Take this `attachable_sgid` and use it to submit rich text content with a `<bc-attachment>` tag:
 
@@ -103,6 +103,16 @@ You can also present image attachments grouped in a _gallery_. For this, you nee
   <bc-attachment presentation="gallery" sgid="BAh7CEki..."></bc-attachment>
 </div>
 ```
+
+Structured attachment metadata
+------------------------------
+
+Every rich text attribute in an API response is accompanied by a corresponding `*_attachments` array containing structured metadata for each downloadable file attachment embedded in the rich text HTML. The array is named after the attribute: `content_attachments` for `content`, `description_attachments` for `description`.
+
+Each entry includes `id`, `sgid`, `filename`, `content_type`, `byte_size`, `download_url`, `width`, `height`, `previewable`, `preview_url`, and `thumbnail_url`. Mentions, content attachments, remote images, and opengraph embeds are excluded — only downloadable file attachments appear.
+
+The array is always present, even when empty. This lets clients enumerate inline files without parsing `<bc-attachment>` tags from the HTML.
+
 
 Appendix
 --------

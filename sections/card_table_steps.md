@@ -139,5 +139,5 @@ The following project-scoped routes are still supported and will remain availabl
 * `PUT /buckets/1/card_tables/steps/2/completions.json` → [Change step completion status](#change-step-completion-status)
 * `POST /buckets/1/card_tables/cards/2/positions.json` → [Reposition a step](#reposition-a-step)
 
-[card]: https://github.com/basecamp/bc3-api/blob/master/sections/card_table_cards.md#get-a-card
-[people]: https://github.com/basecamp/bc3-api/blob/master/sections/people.md#get-all-people
+[card]: card_table_cards.md#get-a-card
+[people]: people.md#get-all-people

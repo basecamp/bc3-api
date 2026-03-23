@@ -266,6 +266,6 @@ The following project-scoped routes are still supported and will remain availabl
 * `POST /buckets/1/questions/2/answers.json` → [Create a question answer](#create-a-question-answer)
 * `PUT /buckets/1/question_answers/2.json` → [Update a question answer](#update-a-question-answer)
 
-[pagination]: https://github.com/basecamp/bc3-api/blob/master/README.md#pagination
-[rich_text]: https://github.com/basecamp/bc3-api/blob/master/sections/rich_text.md
-[trash]: https://github.com/basecamp/bc3-api/blob/master/sections/recordings.md#trash-a-recording
+[pagination]: ../README.md#pagination
+[rich_text]: rich_text.md
+[trash]: recordings.md#trash-a-recording

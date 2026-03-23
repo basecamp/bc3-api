@@ -83,5 +83,5 @@ The following project-scoped routes are still supported and will remain availabl
 
 * `GET /buckets/1/inboxes/2.json` → [Get inbox](#get-inbox)
 
-[1]: https://github.com/basecamp/bc3-api/blob/master/sections/projects.md#get-a-project
-[2]: https://github.com/basecamp/bc3-api/blob/master/sections/forwards.md#get-forwards
+[1]: projects.md#get-a-project
+[2]: forwards.md#get-forwards

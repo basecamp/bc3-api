@@ -76,5 +76,5 @@ curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/j
 ```
 
 
-[1]: https://github.com/basecamp/bc3-api/blob/master/sections/projects.md#get-a-project
-[2]: https://github.com/basecamp/bc3-api/blob/master/sections/todosets.md#get-to-do-set
+[1]: projects.md#get-a-project
+[2]: todosets.md#get-to-do-set

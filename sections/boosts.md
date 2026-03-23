@@ -59,6 +59,12 @@ Get boosts
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/recordings/2/boosts.json
 ```
 
+###### Example JSON Response (event boosts)
+<!-- START GET /recordings/2/events/3/boosts.json -->
+```json
+[]
+```
+<!-- END GET /recordings/2/events/3/boosts.json -->
 
 Get a boost
 -----------
@@ -164,5 +170,5 @@ The following project-scoped routes are still supported and will remain availabl
 * `POST /buckets/1/recordings/2/boosts.json` → [Create a boost](#create-a-boost)
 * `DELETE /buckets/1/boosts/2.json` → [Destroy a boost](#destroy-a-boost)
 
-[events]: https://github.com/basecamp/bc3-api/blob/master/sections/events.md#events
-[pagination]: https://github.com/basecamp/bc3-api/blob/master/README.md#pagination
+[events]: events.md#events
+[pagination]: ../README.md#pagination

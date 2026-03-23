@@ -368,4 +368,4 @@ curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/j
   https://3.basecampapi.com/$ACCOUNT_ID/my/preferences.json
 ```
 
-[3]: https://github.com/basecamp/bc3-api/blob/master/sections/out_of_office.md#out-of-office
+[3]: out_of_office.md#out-of-office

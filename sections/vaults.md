@@ -185,7 +185,7 @@ Update a vault
 
 * `PUT /vaults/3.json` allows changing the title of the vault with an ID of `3`.
 
-This endpoint will return `200 OK` with the current JSON representation of the to-do if the update was a success. See the [Get a vault](#get-a-vault) endpoint for more info on the payload.
+This endpoint will return `200 OK` with the current JSON representation of the vault if the update was a success. See the [Get a vault](#get-a-vault) endpoint for more info on the payload.
 
 ###### Example JSON Request
 
@@ -213,5 +213,5 @@ The following project-scoped routes are still supported and will remain availabl
 * `POST /buckets/1/vaults/2/vaults.json` → [Create a vault](#create-a-vault)
 * `PUT /buckets/1/vaults/3.json` → [Update a vault](#update-a-vault)
 
-[project]: https://github.com/basecamp/bc3-api/blob/master/sections/projects.md#get-a-project
-[pagination]: https://github.com/basecamp/bc3-api/blob/master/README.md#pagination
+[project]: projects.md#get-a-project
+[pagination]: ../README.md#pagination

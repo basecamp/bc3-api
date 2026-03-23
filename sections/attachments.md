@@ -13,7 +13,7 @@ Create an attachment
 
 **Required request data**: The request body should be the file's raw binary data.
 
-**Required request headers**: `Content-Type` and `Content-Length` for to the file.
+**Required request headers**: `Content-Type` and `Content-Length` for the file.
 
 **Required URI query parameters**: `name` as the file name.
 
@@ -48,10 +48,10 @@ This endpoint will return `201 Created` with the attachment's `attachable_sgid` 
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" \
   --data-binary @pizza.png \
   -H "Content-Type: image/png" -H "Content-Length: 123" \
-  https://3.basecampapi.com/$ACCOUNT_ID/attachments.json?name=pizza.png  
+  https://3.basecampapi.com/$ACCOUNT_ID/attachments.json?name=pizza.png
 ```
 
 Including attachments in rich text in other recordings
 ------------------------------------------------------
 
-Check [Inserting an image or file attachment](https://github.com/basecamp/bc3-api/blob/master/sections/rich_text.md#inserting-an-image-or-file-attachment) for details on how to do this.
+Check [Inserting an image or file attachment](rich_text.md#inserting-an-image-or-file-attachment) for details on how to do this.

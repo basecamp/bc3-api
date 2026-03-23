@@ -40,6 +40,6 @@ The following project-scoped routes are still supported and will remain availabl
 * `PUT /buckets/1/recordings/2/client_visibility.json` → [Toggle client visibility](#toggle-client-visibility)
 
 [1]: https://m.signalvnoise.com/launch-a-brand-new-way-to-work-with-clients-in-basecamp-3-6a78b1175c5d
-[2]: https://github.com/basecamp/bc3-api/blob/master/sections/client_approvals.md
-[3]: https://github.com/basecamp/bc3-api/blob/master/sections/client_correspondences.md
-[4]: https://github.com/basecamp/bc3-api/blob/master/sections/client_replies.md
+[2]: client_approvals.md
+[3]: client_correspondences.md
+[4]: client_replies.md

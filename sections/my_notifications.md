@@ -256,5 +256,5 @@ curl -s -H "Authorization: Bearer $ACCESS_TOKEN" \
   https://3.basecampapi.com/$ACCOUNT_ID/my/unreads.json
 ```
 
-[1]: https://github.com/basecamp/bc3-api/blob/master/sections/people.md#people
-[pagination]: https://github.com/basecamp/bc3-api/blob/master/README.md#pagination
+[1]: people.md#people
+[pagination]: ../README.md#pagination

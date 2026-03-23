@@ -693,7 +693,7 @@ The following project-scoped routes are still supported and will remain availabl
 
 * `GET /projects/1/timesheet.json` → [Get timesheet for a project](#get-timesheet-for-a-project)
 * `GET /projects/1/recordings/2/timesheet.json` → [Get timesheet for a recording](#get-timesheet-for-a-recording)
-* `POST /buckets/1/recordings/2/timesheet/entries.json` → [Create a timesheet entry](#create-a-timesheet-entry)
+* `POST /projects/1/recordings/2/timesheet/entries.json` → [Create a timesheet entry](#create-a-timesheet-entry)
 
-[1]: https://github.com/basecamp/bc3-api/blob/master/sections/people.md#people
-[2]: https://github.com/basecamp/bc3-api/blob/master/sections/projects.md#projects
+[1]: people.md#people
+[2]: projects.md#projects

@@ -40,12 +40,12 @@ curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/j
 Create a marker
 -------------------------
 
-* `POST /lineup/markers.json` creates an account wide marker that shows up in the Lineup.
+* `POST /lineup/markers.json` creates an account-wide marker that shows up in the Lineup.
 
 **Required parameters**:
 
 * `name` of the marker.
-* `date` of the marker iso8601 formatted without a time part.
+* `date` of the marker ISO 8601 formatted without a time part.
 
 This endpoint will return `201 Created` with an empty response body.
 
@@ -69,12 +69,12 @@ curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/j
 Update a marker
 -----------------------
 
-* `PUT /lineup/markers/1.json` change name and/or date of the marker with an ID of `1`.
+* `PUT /lineup/markers/1.json` changes name and/or date of the marker with an ID of `1`.
 
 _Optional parameters_:
 
 * `name` of the marker.
-* `date` of the marker iso8601 formatted without a time part.
+* `date` of the marker ISO 8601 formatted without a time part.
 
 This endpoint will return `200 OK` with an empty response body.
 

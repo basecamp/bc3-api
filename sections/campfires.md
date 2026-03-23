@@ -299,6 +299,20 @@ This endpoint will return `201 Created` with the current JSON representation of 
 }
 ```
 
+###### Example JSON Response (plain text)
+<!-- START POST /buckets/1/chats/2/lines.json -->
+```json
+{}
+```
+<!-- END POST /buckets/1/chats/2/lines.json -->
+
+###### Example JSON Response (rich text)
+<!-- START POST /buckets/1/chats/2/lines.json (rich text) -->
+```json
+{}
+```
+<!-- END POST /buckets/1/chats/2/lines.json (rich text) -->
+
 ###### Copy as cURL
 
 ```shell
@@ -506,4 +520,4 @@ The following project-scoped routes are still supported and will remain availabl
 * `POST /buckets/1/chats/2/uploads.json` → [Upload a file to a Campfire](#upload-a-file-to-a-campfire)
 * `DELETE /buckets/1/chats/2/lines/3.json` → [Delete a Campfire line](#delete-a-campfire-line)
 
-[pagination]: https://github.com/basecamp/bc3-api/blob/master/README.md#pagination
+[pagination]: ../README.md#pagination

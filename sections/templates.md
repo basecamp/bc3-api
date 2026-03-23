@@ -437,4 +437,4 @@ This endpoint can be polled at regular intervals (no more than once a second) to
 ```
 <!-- END GET /templates/1/project_constructions/1.json -->
 
-[pagination]: https://github.com/basecamp/bc3-api/blob/master/README.md#pagination
+[pagination]: ../README.md#pagination

@@ -361,6 +361,6 @@ The following project-scoped routes are still supported and will remain availabl
 * `PUT /buckets/1/card_tables/cards/2.json` → [Update a card](#update-a-card)
 * `POST /buckets/1/card_tables/cards/2/moves.json` → [Move a card](#move-a-card)
 
-[pagination]: https://github.com/basecamp/bc3-api/blob/master/README.md#pagination
-[rich]: https://github.com/basecamp/bc3-api/blob/master/sections/rich_text.md
-[people]: https://github.com/basecamp/bc3-api/blob/master/sections/people.md#get-all-people
+[pagination]: ../README.md#pagination
+[rich]: rich_text.md
+[people]: people.md#get-all-people

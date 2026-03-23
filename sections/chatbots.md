@@ -121,10 +121,10 @@ Endpoints:
 Get chatbots
 ------------
 
-* `GET /chats/1/integrations.json` will return all the chatbots from the account with the line URL for the campfire.
+* `GET /buckets/1/chats/1/integrations.json` will return all the chatbots from the account with the line URL for the campfire.
 
 ###### Example JSON Response
-<!-- START GET /chats/1/integrations.json -->
+<!-- START GET /buckets/1/chats/1/integrations.json -->
 ```json
 [
   {
@@ -139,21 +139,21 @@ Get chatbots
   }
 ]
 ```
-<!-- END GET /chats/1/integrations.json -->
+<!-- END GET /buckets/1/chats/1/integrations.json -->
 
 ###### Copy as cURL
 
 ```shell
-curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/chats/1/integrations.json
+curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/chats/1/integrations.json
 ```
 
 Get a chatbot
 -------------
 
-* `GET /chats/1/integrations/3.json` will return the chatbot with an ID of `3`, including its line URL.
+* `GET /buckets/1/chats/1/integrations/3.json` will return the chatbot with an ID of `3`, including its line URL.
 
 ###### Example JSON Response
-<!-- START GET /chats/1/integrations/3.json -->
+<!-- START GET /buckets/1/chats/1/integrations/3.json -->
 ```json
 [
   {
@@ -168,17 +168,17 @@ Get a chatbot
   }
 ]
 ```
-<!-- END GET /chats/1/integrations/3.json -->
+<!-- END GET /buckets/1/chats/1/integrations/3.json -->
 ###### Copy as cURL
 
 ```shell
-curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/chats/1/integrations/3.json
+curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/chats/1/integrations/3.json
 ```
 
 Create a chatbot
 ----------------
 
-* `POST /chats/1/integrations.json` creates a chatbot on the account and returns the new chatbot with its lines URL.
+* `POST /buckets/1/chats/1/integrations.json` creates a chatbot on the account and returns the new chatbot with its lines URL.
 
 **Required parameters**: `service_name` for the chatbot name, which will be used to invoke queries and commands on interactive bots.
 No spaces, emoji or non-word characters are allowed, as you need to be able to call it like `!tally myCommand`
@@ -200,13 +200,13 @@ This endpoint will return `201 Created` with the current JSON representation of 
 ```shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" \
   -d '{"service_name":"tally","command_url":"https://example.com/endpoint"}' \
-  https://3.basecampapi.com/$ACCOUNT_ID/chats/1/integrations.json
+  https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/chats/1/integrations.json
 ```
 
 Update a chatbot
 ----------------
 
-* `PUT /chats/1/integrations/3.json` allows changing the service name and commandURL of the chatbot with an ID of `3`.
+* `PUT /buckets/1/chats/1/integrations/3.json` allows changing the service name and commandURL of the chatbot with an ID of `3`.
 
 **Required parameters**: `service_name` for the chatbot name, which will be used to invoke queries and commands on interactive bots.
 No spaces, emoji or non-word characters are allowed, as you need to be able to call it like `!tally myCommand`
@@ -228,13 +228,13 @@ This endpoint will return `200 OK` with the current JSON representation of the c
 ```shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" \
   -d '{"service_name":"uptime","command_url":"https://example.com/endpoint"}' -X PUT \
-  https://3.basecampapi.com/$ACCOUNT_ID/chats/1/integrations/3.json
+  https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/chats/1/integrations/3.json
 ```
 
 Destroy a chatbot
 -----------------
 
-* `DELETE /chats/1/integrations/3.json` will delete the chatbot with an ID of `3` across the account.
+* `DELETE /buckets/1/chats/1/integrations/3.json` will delete the chatbot with an ID of `3` across the account.
 
 This endpoint will return `204 No Content` if the destroy was a success.
 
@@ -242,7 +242,7 @@ This endpoint will return `204 No Content` if the destroy was a success.
 
 ```shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -X DELETE \
-  https://3.basecampapi.com/$ACCOUNT_ID/chatbots/3.json
+  https://3.basecampapi.com/$ACCOUNT_ID/buckets/1/chats/1/integrations/3.json
 ```
 
 Create a line
@@ -285,15 +285,4 @@ curl -s -H "Content-Type: application/json" -d '{"text":"Good morning"}' \
 ```
 
 
-Legacy project-scoped routes
------------------------------
-
-The following project-scoped routes are still supported and will remain available, but flat routes above are the canonical form for new integrations.
-
-* `GET /buckets/1/chats/1/integrations.json` → [Get chatbots](#get-chatbots)
-* `GET /buckets/1/chats/1/integrations/3.json` → [Get a chatbot](#get-a-chatbot)
-* `POST /buckets/1/chats/1/integrations.json` → [Create a chatbot](#create-a-chatbot)
-* `PUT /buckets/1/chats/1/integrations/3.json` → [Update a chatbot](#update-a-chatbot)
-* `DELETE /buckets/1/chats/1/integrations/3.json` → [Destroy a chatbot](#destroy-a-chatbot)
-
-[1]: https://github.com/basecamp/bc3-api/blob/master/sections/rich_text.md
+[1]: rich_text.md

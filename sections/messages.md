@@ -260,8 +260,8 @@ The following project-scoped routes are still supported and will remain availabl
 * `POST /buckets/1/recordings/2/pin.json` → [Pin a message](#pin-a-message)
 * `DELETE /buckets/1/recordings/2/pin.json` → [Pin a message](#pin-a-message)
 
-[1]: https://github.com/basecamp/bc3-api/blob/master/sections/recordings.md#trash-a-recording
-[2]: https://github.com/basecamp/bc3-api/blob/master/README.md#pagination
-[3]: https://github.com/basecamp/bc3-api/blob/master/sections/message_boards.md#message-boards
-[4]: https://github.com/basecamp/bc3-api/blob/master/sections/rich_text.md
-[5]: https://github.com/basecamp/bc3-api/blob/master/sections/message_types.md#get-message-types
+[1]: recordings.md#trash-a-recording
+[2]: ../README.md#pagination
+[3]: message_boards.md#message-boards
+[4]: rich_text.md
+[5]: message_types.md#get-message-types

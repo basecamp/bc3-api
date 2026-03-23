@@ -14,7 +14,7 @@ Get schedule
 
 * `GET /schedules/2.json` will return the schedule with an ID of `2`.
 
-To get the schedule ID for a project, see the [Get a project][1] endpoint's `dock` payload. To retrieve its schedule entries lists, see the [Get schedule entries][2] endpoint.
+To get the schedule ID for a project, see the [Get a project][1] endpoint's `dock` payload. To retrieve its schedule entries, see the [Get schedule entries][2] endpoint.
 
 ###### Example JSON Response
 <!-- START GET /schedules/2.json -->
@@ -79,7 +79,7 @@ curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCO
 Update a schedule
 -----------------------
 
-* `PUT /schedules/2.json` allows changing of the schedule with an ID of `2`.
+* `PUT /schedules/2.json` allows changing the schedule with an ID of `2`.
 
 **Required parameters**:
 
@@ -91,7 +91,9 @@ This endpoint will return `200 OK` with the current JSON representation of the s
 
 ```json
 {
-  "include_due_assignments": "false"
+  "schedule": {
+    "include_due_assignments": false
+  }
 }
 ```
 
@@ -99,7 +101,7 @@ This endpoint will return `200 OK` with the current JSON representation of the s
 
 ```shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" \
-  -d '{"schedule": {"include_due_assignments": "false"}}' -X PUT \
+  -d '{"schedule": {"include_due_assignments": false}}' -X PUT \
   https://3.basecampapi.com/$ACCOUNT_ID/schedules/2.json
 ```
 
@@ -111,6 +113,6 @@ The following project-scoped routes are still supported and will remain availabl
 * `GET /buckets/1/schedules/2.json` → [Get schedule](#get-schedule)
 * `PUT /buckets/1/schedules/2.json` → [Update a schedule](#update-a-schedule)
 
-[1]: https://github.com/basecamp/bc3-api/blob/master/sections/projects.md#get-a-project
-[2]: https://github.com/basecamp/bc3-api/blob/master/sections/schedule_entries.md#get-schedule-entries
-[3]: https://github.com/basecamp/bc3-api/blob/master/sections/recordings.md#trash-a-recording
+[1]: projects.md#get-a-project
+[2]: schedule_entries.md#get-schedule-entries
+[3]: recordings.md#trash-a-recording

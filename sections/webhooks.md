@@ -493,5 +493,5 @@ The following project-scoped routes are still supported and will remain availabl
 * `PUT /buckets/1/webhooks/3.json` → [Update a webhook](#update-a-webhook)
 * `DELETE /buckets/1/webhooks/3.json` → [Destroy a webhook](#destroy-a-webhook)
 
-[1]: https://github.com/basecamp/bc3-api/blob/master/sections/chatbots.md
-[2]: https://github.com/basecamp/bc3-api/blob/master/sections/todos.md#get-a-to-do
+[1]: chatbots.md
+[2]: todos.md#get-a-to-do

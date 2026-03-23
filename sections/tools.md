@@ -223,4 +223,4 @@ The following project-scoped routes are still supported and will remain availabl
 * `PUT /buckets/1/dock/tools/2.json` → [Update a tool](#update-a-tool)
 * `DELETE /buckets/1/dock/tools/2.json` → [Trash a tool](#trash-a-tool)
 
-[project]: https://github.com/basecamp/bc3-api/blob/master/sections/projects.md#get-a-project
+[project]: projects.md#get-a-project

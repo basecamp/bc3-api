@@ -336,5 +336,5 @@ The following project-scoped routes are still supported and will remain availabl
 * `DELETE /buckets/1/questions/2/pause.json` → [Resume a question](#resume-a-question)
 * `PUT /buckets/1/questions/2/notification_settings.json` → [Update notification settings](#update-notification-settings)
 
-[pagination]: https://github.com/basecamp/bc3-api/blob/master/README.md#pagination
-[trash]: https://github.com/basecamp/bc3-api/blob/master/sections/recordings.md#trash-a-recording
+[pagination]: ../README.md#pagination
+[trash]: recordings.md#trash-a-recording

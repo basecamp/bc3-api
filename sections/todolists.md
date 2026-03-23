@@ -256,8 +256,8 @@ The following project-scoped routes are still supported and will remain availabl
 * `POST /buckets/1/todosets/3/todolists.json` → [Create a to-do list](#create-a-to-do-list)
 * `PUT /buckets/1/todolists/2.json` → [Update a to-do list](#update-a-to-do-list)
 
-[trash]: https://github.com/basecamp/bc3-api/blob/master/sections/recordings.md#trash-a-recording
-[pagination]: https://github.com/basecamp/bc3-api/blob/master/README.md#pagination
-[todoset]: https://github.com/basecamp/bc3-api/blob/master/sections/todosets.md#get-to-do-set
-[todos]: https://github.com/basecamp/bc3-api/blob/master/sections/todos.md#to-dos
-[rich]: https://github.com/basecamp/bc3-api/blob/master/sections/rich_text.md
+[trash]: recordings.md#trash-a-recording
+[pagination]: ../README.md#pagination
+[todoset]: todosets.md#get-to-do-set
+[todos]: todos.md#to-dos
+[rich]: rich_text.md
