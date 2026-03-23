@@ -36,10 +36,10 @@ export ACCESS_TOKEN=PASTE_ACCESS_TOKEN_HERE
 export ACCOUNT_ID=999999999
 ```
 
-Then you should be able to copy/paste any example from the docs. After pasting a cURL example, you can pipe it to a JSON pretty printer to make it more readable. Try [jsonpp](https://jmhodges.github.io/jsonpp/) or `json_pp` on OSX:
+Then you should be able to copy/paste any example from the docs. After pasting a cURL example, you can pipe it to `jq` to make it more readable:
 
 ```shell
-curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/999999999/projects.json | json_pp
+curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/999999999/projects.json | jq
 ```
 
 
