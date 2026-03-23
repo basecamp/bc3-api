@@ -309,6 +309,7 @@ API endpoints
 - [Messages](https://github.com/basecamp/bc3-api/blob/master/sections/messages.md#messages)
 - [My assignments](https://github.com/basecamp/bc3-api/blob/master/sections/my_assignments.md#my-assignments)
 - [My notifications](https://github.com/basecamp/bc3-api/blob/master/sections/my_notifications.md#my-notifications)
+- [Notification settings](https://github.com/basecamp/bc3-api/blob/master/sections/notification_settings.md#notification-settings)
 - [Out of office](https://github.com/basecamp/bc3-api/blob/master/sections/out_of_office.md#out-of-office)
 - [People](https://github.com/basecamp/bc3-api/blob/master/sections/people.md#people)
 - [Projects](https://github.com/basecamp/bc3-api/blob/master/sections/projects.md#projects)
