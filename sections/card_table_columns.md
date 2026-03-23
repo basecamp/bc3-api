@@ -176,7 +176,7 @@ Move a column
 **Required parameters**:
 
 * `source_id` - the id of the column to move
-* `target_id` - the id of the card table
+* `target_id` - the id of the column to move relative to
 
 _Optional parameters_:
 
@@ -189,7 +189,7 @@ This endpoint will return `204 No Content` if the update was a success.
 ```json
 {
   "source_id": 3,
-  "targed_id": 4,
+  "target_id": 4,
   "position": 2
 }
 ```

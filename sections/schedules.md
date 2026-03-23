@@ -81,9 +81,9 @@ Update a schedule
 
 * `PUT /schedules/2.json` allows changing of the schedule with an ID of `2`.
 
-**Required parameters**:
+**Required parameters** (nested under a `schedule` key):
 
-* `include_due_assignments` - whether the schedule should include due dates from to-dos, cards and steps.
+* `schedule[include_due_assignments]` - whether the schedule should include due dates from to-dos, cards and steps.
 
 This endpoint will return `200 OK` with the current JSON representation of the schedule if the update was a success.
 
@@ -91,7 +91,9 @@ This endpoint will return `200 OK` with the current JSON representation of the s
 
 ```json
 {
-  "include_due_assignments": "false"
+  "schedule": {
+    "include_due_assignments": false
+  }
 }
 ```
 
@@ -99,7 +101,7 @@ This endpoint will return `200 OK` with the current JSON representation of the s
 
 ```shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" \
-  -d '{"schedule": {"include_due_assignments": "false"}}' -X PUT \
+  -d '{"schedule": {"include_due_assignments": false}}' -X PUT \
   https://3.basecampapi.com/$ACCOUNT_ID/schedules/2.json
 ```
 
