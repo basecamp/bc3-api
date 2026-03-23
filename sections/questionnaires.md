@@ -82,5 +82,5 @@ The following project-scoped routes are still supported and will remain availabl
 
 * `GET /buckets/1/questionnaires/2.json` → [Get questionnaire](#get-questionnaire)
 
-[project]: https://github.com/basecamp/bc3-api/blob/master/sections/projects.md#get-a-project
-[questions]: https://github.com/basecamp/bc3-api/blob/master/sections/questions.md#get-questions
+[project]: projects.md#get-a-project
+[questions]: questions.md#get-questions

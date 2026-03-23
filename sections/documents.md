@@ -221,7 +221,7 @@ The following project-scoped routes are still supported and will remain availabl
 * `POST /buckets/1/vaults/2/documents.json` → [Create a document](#create-a-document)
 * `PUT /buckets/1/documents/2.json` → [Update a document](#update-a-document)
 
-[pagination]: https://github.com/basecamp/bc3-api/blob/master/README.md#pagination
-[trash]: https://github.com/basecamp/bc3-api/blob/master/sections/recordings.md#trash-a-recording
-[vaults]: https://github.com/basecamp/bc3-api/blob/master/sections/vaults.md#vaults
-[rich]: https://github.com/basecamp/bc3-api/blob/master/sections/rich_text.md
+[pagination]: ../README.md#pagination
+[trash]: recordings.md#trash-a-recording
+[vaults]: vaults.md#vaults
+[rich]: rich_text.md

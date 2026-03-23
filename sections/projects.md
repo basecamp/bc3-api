@@ -429,4 +429,4 @@ curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/j
   https://3.basecampapi.com/$ACCOUNT_ID/projects/2085958507.json
 ```
 
-[pagination]: https://github.com/basecamp/bc3-api/blob/master/README.md#pagination
+[pagination]: ../README.md#pagination

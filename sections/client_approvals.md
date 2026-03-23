@@ -280,4 +280,4 @@ The following project-scoped routes are still supported and will remain availabl
 
 * `GET /buckets/1/client/approvals/2.json` → [Get a client approval](#get-a-client-approval)
 
-[pagination]: https://github.com/basecamp/bc3-api/blob/master/README.md#pagination
+[pagination]: ../README.md#pagination

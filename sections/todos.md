@@ -415,7 +415,7 @@ The following project-scoped routes are still supported and will remain availabl
 * `DELETE /buckets/1/todos/2/completion.json` → [Uncomplete a to-do](#uncomplete-a-to-do)
 * `PUT /buckets/1/todos/2/position.json` → [Reposition a to-do](#reposition-a-to-do)
 
-[1]: https://github.com/basecamp/bc3-api/blob/master/sections/recordings.md#trash-a-recording
-[2]: https://github.com/basecamp/bc3-api/blob/master/README.md#pagination
-[3]: https://github.com/basecamp/bc3-api/blob/master/sections/rich_text.md
-[4]: https://github.com/basecamp/bc3-api/blob/master/sections/people.md#get-all-people
+[1]: recordings.md#trash-a-recording
+[2]: ../README.md#pagination
+[3]: rich_text.md
+[4]: people.md#get-all-people

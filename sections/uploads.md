@@ -237,8 +237,8 @@ Create an upload
 **Required parameters**: `attachable_sgid` for an uploaded attachment. See the [Create an attachment][attachments] endpoint for more info on uploading attachments.
 
 _Optional parameters_:
-* `description` - containing information about the upload. See our [Rich text guide][rich] for what HTML tags allowed.
-* `base_name` - an new file name for the upload. `base_name` should be a file name *without* an extension (e.g. `"pizza"` for `"pizza.png"`).
+* `description` - containing information about the upload. See our [Rich text guide][rich] for what HTML tags are allowed.
+* `base_name` - a new file name for the upload. `base_name` should be a file name *without* an extension (e.g. `"pizza"` for `"pizza.png"`).
 
 This endpoint will return `201 Created` with the current JSON representation of the upload if the creation was a success. See the [Get an upload](#get-an-upload) endpoint for more info on the payload.
 
@@ -295,8 +295,8 @@ The following project-scoped routes are still supported and will remain availabl
 * `POST /buckets/1/vaults/2/uploads.json` → [Create an upload](#create-an-upload)
 * `PUT /buckets/1/uploads/2.json` → [Update an upload](#update-an-upload)
 
-[pagination]: https://github.com/basecamp/bc3-api/blob/master/README.md#pagination
-[attachments]: https://github.com/basecamp/bc3-api/blob/master/sections/attachments.md#create-an-attachment
-[trash]: https://github.com/basecamp/bc3-api/blob/master/sections/recordings.md#trash-a-recording
-[vaults]: https://github.com/basecamp/bc3-api/blob/master/sections/vaults.md#vaults
-[rich]: https://github.com/basecamp/bc3-api/blob/master/sections/rich_text.md
+[pagination]: ../README.md#pagination
+[attachments]: attachments.md#create-an-attachment
+[trash]: recordings.md#trash-a-recording
+[vaults]: vaults.md#vaults
+[rich]: rich_text.md

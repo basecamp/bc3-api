@@ -160,4 +160,4 @@ The response has the same format as the initial token exchange:
 ```
 <!-- END POST https://launchpad.37signals.com/authorization/token (refresh) -->
 
-[people]: https://github.com/basecamp/bc3-api/blob/master/sections/people.md#get-person
+[people]: people.md#get-person

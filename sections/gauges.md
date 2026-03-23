@@ -525,11 +525,11 @@ Legacy project-scoped routes
 
 The following project-scoped routes are still supported and will remain available, but flat routes above are the canonical form for new integrations.
 
-* `GET /buckets/1/gauge/needles.json` → [Get gauge needles](#get-gauge-needles)
-* `GET /buckets/1/gauge/needles/2.json` → [Get a gauge needle](#get-a-gauge-needle)
-* `POST /buckets/1/gauge/needles.json` → [Create a gauge needle](#create-a-gauge-needle)
-* `PUT /buckets/1/gauge/needles/2.json` → [Update a gauge needle](#update-a-gauge-needle)
-* `DELETE /buckets/1/gauge/needles/2.json` → [Destroy a gauge needle](#destroy-a-gauge-needle)
+* `GET /projects/1/gauge/needles.json` → [Get gauge needles](#get-gauge-needles)
+* `GET /projects/1/gauge/needles/2.json` → [Get a gauge needle](#get-a-gauge-needle)
+* `POST /projects/1/gauge/needles.json` → [Create a gauge needle](#create-a-gauge-needle)
+* `PUT /projects/1/gauge/needles/2.json` → [Update a gauge needle](#update-a-gauge-needle)
+* `DELETE /projects/1/gauge/needles/2.json` → [Destroy a gauge needle](#destroy-a-gauge-needle)
 
-[projects]: https://github.com/basecamp/bc3-api/blob/master/sections/projects.md#get-a-project
-[pagination]: https://github.com/basecamp/bc3-api/blob/master/README.md#pagination
+[projects]: projects.md#get-a-project
+[pagination]: ../README.md#pagination

@@ -580,4 +580,4 @@ The following project-scoped routes are still supported and will remain availabl
 * `GET /buckets/1/card_tables/2.json` → [Get a card table](#get-a-card-table)
 * `POST /buckets/1/card_tables/2/moves.json` → [Move a card on the board](#move-a-card-on-the-board)
 
-[columns]: https://github.com/basecamp/bc3-api/blob/master/sections/card_table_columns.md#move-a-column
+[columns]: card_table_columns.md#move-a-column

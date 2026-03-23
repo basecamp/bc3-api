@@ -1,7 +1,7 @@
 Comments
 ========
 
-To determine if a resource can be commented on, check for the presences of `comments_count` and `comments_url` attributes in its JSON response.
+To determine if a resource can be commented on, check for the presence of `comments_count` and `comments_url` attributes in its JSON response.
 
 Endpoints:
 
@@ -158,17 +158,17 @@ Create a comment
 
 * `POST /recordings/3/comments.json` publishes a comment under the recording with an ID of `3`.
 
-**Required parameters**: `content` as the body of the message. See our [Rich text guide][rich] for what HTML tags are allowed.
+**Required parameters**: `content` as the body of the comment. See our [Rich text guide][rich] for what HTML tags are allowed.
 
 Note: All people who are subscribed to the recording will be notified when the comment is posted.
 
-This endpoint will return `201 Created` with the current JSON representation of the message if the creation was a success. See the [Get a comment](#get-a-comment) endpoint for more info on the payload. The `Location` header will contain a URL to the HTML version of the new comment.
+This endpoint will return `201 Created` with the current JSON representation of the comment if the creation was a success. See the [Get a comment](#get-a-comment) endpoint for more info on the payload. The `Location` header will contain a URL to the HTML version of the new comment.
 
 ###### Example JSON Request
 
 ```json
 {
-  "content": "<div><em>Wow!</em> That is cool.</div>",
+  "content": "<div><em>Wow!</em> That is cool.</div>"
 }
 ```
 
@@ -186,7 +186,7 @@ Update a comment
 
 * `PUT /comments/2.json` allows changing content of the comment with an ID of `2`.
 
-This endpoint will return `200 OK` with the current JSON representation of the message if the update was a success. See the [Get a comment](#get-a-comment) endpoint for more info on the payload. The `Location` header will contain a URL to the HTML version of the updated comment.
+This endpoint will return `200 OK` with the current JSON representation of the comment if the update was a success. See the [Get a comment](#get-a-comment) endpoint for more info on the payload. The `Location` header will contain a URL to the HTML version of the updated comment.
 
 ###### Example JSON Request
 
@@ -215,10 +215,10 @@ The following project-scoped routes are still supported and will remain availabl
 * `POST /buckets/1/recordings/3/comments.json` → [Create a comment](#create-a-comment)
 * `PUT /buckets/1/comments/2.json` → [Update a comment](#update-a-comment)
 
-[recordings]: https://github.com/basecamp/bc3-api/blob/master/sections/recordings.md#recordings
-[messages]:   https://github.com/basecamp/bc3-api/blob/master/sections/messages.md#messages
-[todolists]:  https://github.com/basecamp/bc3-api/blob/master/sections/todolists.md#todolists
-[todos]:      https://github.com/basecamp/bc3-api/blob/master/sections/todos.md#todos
-[trash]:      https://github.com/basecamp/bc3-api/blob/master/sections/recordings.md#trash-a-recording
-[pagination]: https://github.com/basecamp/bc3-api/blob/master/README.md#pagination
-[rich]:       https://github.com/basecamp/bc3-api/blob/master/README.md#rich-text-content
+[recordings]: recordings.md#recordings
+[messages]:   messages.md#messages
+[todolists]:  todolists.md#todolists
+[todos]:      todos.md#todos
+[trash]:      recordings.md#trash-a-recording
+[pagination]: ../README.md#pagination
+[rich]:       rich_text.md

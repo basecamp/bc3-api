@@ -275,6 +275,6 @@ The response includes:
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" "https://3.basecampapi.com/$ACCOUNT_ID/reports/schedules/upcoming.json?window_starts_on=2025-10-10&window_ends_on=2025-10-17"
 ```
 
-[pagination]: https://github.com/basecamp/bc3-api/blob/master/README.md#pagination
-[people]: https://github.com/basecamp/bc3-api/blob/master/sections/people.md#people
-[projects]: https://github.com/basecamp/bc3-api/blob/master/sections/projects.md#projects
+[pagination]: ../README.md#pagination
+[people]: people.md#people
+[projects]: projects.md#projects

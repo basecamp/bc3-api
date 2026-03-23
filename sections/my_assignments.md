@@ -40,8 +40,7 @@ Get assignments
       "assignees": [
         {
           "id": 1049715913,
-          "name": "Victor Cooper",
-          "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBMlkkT4=--5fe7b70fbee7a7f0e2e1e19df7579e5d880c753d/avatar"
+          "name": "Victor Cooper"
         }
       ],
       "comments_count": 0,
@@ -72,8 +71,7 @@ Get assignments
       "assignees": [
         {
           "id": 1049715913,
-          "name": "Victor Cooper",
-          "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBMlkkT4=--5fe7b70fbee7a7f0e2e1e19df7579e5d880c753d/avatar"
+          "name": "Victor Cooper"
         }
       ],
       "comments_count": 2,
@@ -124,8 +122,7 @@ Get completed assignments
     "assignees": [
       {
         "id": 1049715913,
-        "name": "Victor Cooper",
-        "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBMlkkT4=--5fe7b70fbee7a7f0e2e1e19df7579e5d880c753d/avatar"
+        "name": "Victor Cooper"
       }
     ],
     "comments_count": 0,
@@ -185,8 +182,7 @@ Providing an invalid `scope` returns `400 Bad Request` with an error listing the
     "assignees": [
       {
         "id": 1049715913,
-        "name": "Victor Cooper",
-        "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBMlkkT4=--5fe7b70fbee7a7f0e2e1e19df7579e5d880c753d/avatar"
+        "name": "Victor Cooper"
       }
     ],
     "comments_count": 0,

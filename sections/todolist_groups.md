@@ -297,4 +297,4 @@ The following project-scoped routes are still supported and will remain availabl
 * `POST /buckets/1/todolists/2/groups.json` → [Create a to-do list group](#create-a-to-do-list-group)
 * `PUT /buckets/1/todolists/groups/3/position.json` → [Reposition a to-do list group](#reposition-a-to-do-list-group)
 
-[pagination]: https://github.com/basecamp/bc3-api/blob/master/README.md#pagination
+[pagination]: ../README.md#pagination

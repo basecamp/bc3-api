@@ -278,5 +278,5 @@ The following project-scoped routes are still supported and will remain availabl
 
 * `GET /buckets/1/recordings/2/events.json` → [Get events](#get-events)
 
-[recordings]: https://github.com/basecamp/bc3-api/blob/master/sections/recordings.md#recordings
-[pagination]: https://github.com/basecamp/bc3-api/blob/master/README.md#pagination
+[recordings]: recordings.md#recordings
+[pagination]: ../README.md#pagination

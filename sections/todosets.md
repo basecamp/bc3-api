@@ -178,6 +178,6 @@ The following project-scoped routes are still supported and will remain availabl
 
 * `GET /buckets/1/todosets/2.json` → [Get to-do set](#get-to-do-set)
 
-[1]: https://github.com/basecamp/bc3-api/blob/master/sections/projects.md#get-a-project
-[2]: https://github.com/basecamp/bc3-api/blob/master/sections/todolists.md#get-to-do-lists
-[3]: https://github.com/basecamp/bc3-api/blob/master/sections/recordings.md#trash-a-recording
+[1]: projects.md#get-a-project
+[2]: todolists.md#get-to-do-lists
+[3]: recordings.md#trash-a-recording

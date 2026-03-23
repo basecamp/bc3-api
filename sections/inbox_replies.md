@@ -156,5 +156,5 @@ The following project-scoped routes are still supported and will remain availabl
 * `GET /buckets/1/inbox_forwards/2/replies.json` → [Get inbox replies](#get-inbox-replies)
 * `GET /buckets/1/inbox_forwards/2/replies/3.json` → [Get an inbox reply](#get-an-inbox-reply)
 
-[pagination]: https://github.com/basecamp/bc3-api/blob/master/README.md#pagination
-[forwards]: https://github.com/basecamp/bc3-api/blob/master/sections/forwards.md#forwards
+[pagination]: ../README.md#pagination
+[forwards]: forwards.md#forwards

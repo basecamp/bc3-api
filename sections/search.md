@@ -219,7 +219,7 @@ curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -A 'MyApp (yourname@example.com
 
 The `plain_text_content` field contains HTML with search terms wrapped in `<em>` tags for highlighting. Be sure to escape this content appropriately when rendering.
 
-[1]: https://github.com/basecamp/bc3-api/blob/master/README.md#pagination
-[2]: https://github.com/basecamp/bc3-api/blob/master/sections/projects.md#projects
-[3]: https://github.com/basecamp/bc3-api/blob/master/sections/people.md#people
-[4]: https://github.com/basecamp/bc3-api/blob/master/sections/recordings.md#recordings
+[1]: ../README.md#pagination
+[2]: projects.md#projects
+[3]: people.md#people
+[4]: recordings.md#recordings

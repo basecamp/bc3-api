@@ -330,8 +330,8 @@ The following project-scoped routes are still supported and will remain availabl
 * `POST /buckets/1/schedules/3/entries.json` → [Create a schedule entry](#create-a-schedule-entry)
 * `PUT /buckets/1/schedule_entries/2.json` → [Update a schedule entry](#update-a-schedule-entry)
 
-[trash]: https://github.com/basecamp/bc3-api/blob/master/sections/recordings.md#trash-a-recording
-[pagination]: https://github.com/basecamp/bc3-api/blob/master/README.md#pagination
-[schedule]: https://github.com/basecamp/bc3-api/blob/master/sections/schedules.md#get-schedule
-[rich]: https://github.com/basecamp/bc3-api/blob/master/sections/rich_text.md
-[people]: https://github.com/basecamp/bc3-api/blob/master/sections/people.md#people
+[trash]: recordings.md#trash-a-recording
+[pagination]: ../README.md#pagination
+[schedule]: schedules.md#get-schedule
+[rich]: rich_text.md
+[people]: people.md#people

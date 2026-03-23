@@ -11,7 +11,7 @@ Endpoints:
 Get forwards
 ------------
 
-* `GET /inboxes/3/forwards.json` will return a [paginated list][2] of active forwards in the inbox with an ID of `3`.
+* `GET /inboxes/3/inbox_forwards.json` will return a [paginated list][2] of active forwards in the inbox with an ID of `3`.
 
 To get the inbox ID for a project, see the [Get inbox][3] endpoint.
 
@@ -21,7 +21,7 @@ _Optional query parameters_:
 * `direction` - Options: `desc` or `asc`. Default: `desc`.
 
 ###### Example JSON Response
-<!-- START GET /inboxes/3/forwards.json -->
+<!-- START GET /inboxes/3/inbox_forwards.json -->
 ```json
 [
   {
@@ -84,12 +84,12 @@ _Optional query parameters_:
   }
 ]
 ```
-<!-- END GET /inboxes/3/forwards.json -->
+<!-- END GET /inboxes/3/inbox_forwards.json -->
 
 ###### Copy as cURL
 
 ```shell
-curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/inboxes/3/forwards.json
+curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/inboxes/3/inbox_forwards.json
 ```
 
 
@@ -173,9 +173,9 @@ Legacy project-scoped routes
 
 The following project-scoped routes are still supported and will remain available, but flat routes above are the canonical form for new integrations.
 
-* `GET /buckets/1/inboxes/3/forwards.json` → [Get forwards](#get-forwards)
+* `GET /buckets/1/inboxes/3/inbox_forwards.json` → [Get forwards](#get-forwards)
 * `GET /buckets/1/inbox_forwards/2.json` → [Get a forward](#get-a-forward)
 
-[1]: https://github.com/basecamp/bc3-api/blob/master/sections/recordings.md#trash-a-recording
-[2]: https://github.com/basecamp/bc3-api/blob/master/README.md#pagination
-[3]: https://github.com/basecamp/bc3-api/blob/master/sections/inboxes.md#inboxes
+[1]: recordings.md#trash-a-recording
+[2]: ../README.md#pagination
+[3]: inboxes.md#inboxes

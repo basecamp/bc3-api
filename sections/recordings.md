@@ -80,5 +80,5 @@ The following project-scoped routes are still supported and will remain availabl
 * `PUT /buckets/1/recordings/2/status/archived.json` → [Archive a recording](#archive-a-recording)
 * `PUT /buckets/1/recordings/2/status/active.json` → [Unarchive a recording](#unarchive-a-recording)
 
-[1]: https://github.com/basecamp/bc3-api/blob/master/README.md#pagination
-[2]: https://github.com/basecamp/bc3-api/blob/master/sections/projects.md#projects
+[1]: ../README.md#pagination
+[2]: projects.md#projects

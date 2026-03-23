@@ -163,4 +163,4 @@ The following project-scoped routes are still supported and will remain availabl
 
 * `GET /buckets/1/client/correspondences/2.json` → [Get a client correspondence](#get-a-client-correspondence)
 
-[pagination]: https://github.com/basecamp/bc3-api/blob/master/README.md#pagination
+[pagination]: ../README.md#pagination

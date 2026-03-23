@@ -1156,6 +1156,6 @@ Events with `kind` of `schedule_entry_created` or `schedule_entry_rescheduled` i
 }
 ```
 
-[pagination]: https://github.com/basecamp/bc3-api/blob/master/README.md#pagination
-[person]: https://github.com/basecamp/bc3-api/blob/master/sections/people.md#people
-[project]: https://github.com/basecamp/bc3-api/blob/master/sections/projects.md#projects
+[pagination]: ../README.md#pagination
+[person]: people.md#people
+[project]: projects.md#projects

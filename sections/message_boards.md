@@ -84,6 +84,6 @@ The following project-scoped routes are still supported and will remain availabl
 
 * `GET /buckets/1/message_boards/2.json` → [Get message board](#get-message-board)
 
-[1]: https://github.com/basecamp/bc3-api/blob/master/sections/projects.md#get-a-project
-[2]: https://github.com/basecamp/bc3-api/blob/master/sections/messages.md#get-messages
-[3]: https://github.com/basecamp/bc3-api/blob/master/sections/recordings.md#trash-a-recording
+[1]: projects.md#get-a-project
+[2]: messages.md#get-messages
+[3]: recordings.md#trash-a-recording
