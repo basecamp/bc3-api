@@ -81,9 +81,9 @@ Update a schedule
 
 * `PUT /schedules/2.json` allows changing the schedule with an ID of `2`.
 
-**Required parameters** (nested under a `schedule` key):
+**Required parameters**:
 
-* `schedule[include_due_assignments]` - whether the schedule should include due dates from to-dos, cards and steps.
+* `include_due_assignments` - whether the schedule should include due dates from to-dos, cards and steps.
 
 This endpoint will return `200 OK` with the current JSON representation of the schedule if the update was a success.
 
