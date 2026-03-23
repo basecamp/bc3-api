@@ -133,11 +133,7 @@ curl -s -H "Authorization: Bearer $ACCESS_TOKEN" \
 Grant account administratorship
 -------------------------------
 
-* `POST /account/people/2/administratorship.json` will make the person with the given ID an account administrator. Only account administrators can use this endpoint. Clients cannot be made administrators.
-
-**Required parameters**:
-
-* `person_id` - the ID of the person to promote. The person must belong to the current account.
+* `POST /account/people/2/administratorship.json` will make the person with ID `2` an account administrator. To promote a different person, replace `2` in the URL path with that person's ID. Only account administrators can use this endpoint. Clients cannot be made administrators.
 
 Returns `200 OK` with the updated [person][person] JSON representation. On success, the response will have `"admin": true`.
 
@@ -164,11 +160,7 @@ curl -s -H "Authorization: Bearer $ACCESS_TOKEN" \
 Revoke account administratorship
 --------------------------------
 
-* `DELETE /account/people/2/administratorship.json` will remove account administratorship from the person with the given ID. Only account administrators can use this endpoint. Account owners cannot have administratorship revoked through this endpoint.
-
-**Required parameters**:
-
-* `person_id` - the ID of the person whose administratorship should be revoked. The person must belong to the current account.
+* `DELETE /account/people/:person_id/administratorship.json` will remove account administratorship from the person identified by `:person_id` in the URL path. Only account administrators can use this endpoint. Account owners cannot have administratorship revoked through this endpoint.
 
 Returns `200 OK` with the updated [person][person] JSON representation. On success, the response will have `"admin": false`.
 
