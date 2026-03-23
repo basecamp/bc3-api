@@ -1,0 +1,27 @@
+sections/gauges.md
+  8a229f77e31db69a 526
+sections/schedules.md
+  8a229f77e31db69a 84,86,94-96,104
+sections/card_table_columns.md
+  8a229f77e31db69a 179,192
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.1.17",
+  "base_commit_sha": "6f349ed8031095ab1796ea8aaee432a0b16a5367",
+  "prompts": {
+    "8a229f77e31db69a": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "753e8777-0d14-45d5-9d53-7766bfaee84b",
+        "model": "claude-opus-4-6"
+      },
+      "human_author": "Jeremy Daer <jeremy@37signals.com>",
+      "messages": [],
+      "total_additions": 10,
+      "total_deletions": 10,
+      "accepted_lines": 9,
+      "overriden_lines": 0
+    }
+  }
+}
