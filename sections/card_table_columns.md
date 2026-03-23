@@ -176,7 +176,7 @@ Move a column
 **Required parameters**:
 
 * `source_id` - the id of the column to move
-* `target_id` - the id of the card table
+* `target_id` - the id of the column to move relative to
 
 _Optional parameters_:
 

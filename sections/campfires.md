@@ -300,18 +300,18 @@ This endpoint will return `201 Created` with the current JSON representation of 
 ```
 
 ###### Example JSON Response (plain text)
-<!-- START POST /buckets/1/chats/2/lines.json -->
+<!-- START POST /chats/2/lines.json -->
 ```json
 {}
 ```
-<!-- END POST /buckets/1/chats/2/lines.json -->
+<!-- END POST /chats/2/lines.json -->
 
 ###### Example JSON Response (rich text)
-<!-- START POST /buckets/1/chats/2/lines.json (rich text) -->
+<!-- START POST /chats/2/lines.json (rich text) -->
 ```json
 {}
 ```
-<!-- END POST /buckets/1/chats/2/lines.json (rich text) -->
+<!-- END POST /chats/2/lines.json (rich text) -->
 
 ###### Copy as cURL
 
