@@ -5,6 +5,8 @@ Endpoints:
 
 - [Get account](#get-account)
 - [Update account name](#update-account-name)
+- [Grant account administratorship](#grant-account-administratorship)
+- [Revoke account administratorship](#revoke-account-administratorship)
 - [Update account logo](#update-account-logo)
 - [Remove account logo](#remove-account-logo)
 
@@ -128,6 +130,68 @@ curl -s -H "Authorization: Bearer $ACCESS_TOKEN" \
   https://3.basecampapi.com/$ACCOUNT_ID/account/name.json
 ```
 
+Grant account administratorship
+-------------------------------
+
+* `POST /account/people/2/administratorship.json` will make the person with the given ID an account administrator. Only account administrators can use this endpoint. Clients cannot be made administrators.
+
+**Required parameters**:
+
+* `person_id` - the ID of the person to promote. The person must belong to the current account.
+
+Returns `200 OK` with the updated [person][person] JSON representation. On success, the response will have `"admin": true`.
+
+###### Example JSON Response
+<!-- START POST /account/people/2/administratorship.json -->
+```json
+{
+  "id": 1049715915,
+  "name": "Amy Rivera",
+  "email_address": "amy@honchodesign.com",
+  "admin": true
+}
+```
+<!-- END POST /account/people/2/administratorship.json -->
+
+###### Copy as cURL
+
+```shell
+curl -s -H "Authorization: Bearer $ACCESS_TOKEN" \
+  -X POST \
+  https://3.basecampapi.com/$ACCOUNT_ID/account/people/2/administratorship.json
+```
+
+Revoke account administratorship
+--------------------------------
+
+* `DELETE /account/people/2/administratorship.json` will remove account administratorship from the person with the given ID. Only account administrators can use this endpoint. Account owners cannot have administratorship revoked through this endpoint.
+
+**Required parameters**:
+
+* `person_id` - the ID of the person whose administratorship should be revoked. The person must belong to the current account.
+
+Returns `200 OK` with the updated [person][person] JSON representation. On success, the response will have `"admin": false`.
+
+###### Example JSON Response
+<!-- START DELETE /account/people/2/administratorship.json -->
+```json
+{
+  "id": 1049715915,
+  "name": "Amy Rivera",
+  "email_address": "amy@honchodesign.com",
+  "admin": false
+}
+```
+<!-- END DELETE /account/people/2/administratorship.json -->
+
+###### Copy as cURL
+
+```shell
+curl -s -H "Authorization: Bearer $ACCESS_TOKEN" \
+  -X DELETE \
+  https://3.basecampapi.com/$ACCOUNT_ID/account/people/2/administratorship.json
+```
+
 Update account logo
 -------------------
 
@@ -164,3 +228,5 @@ curl -s -H "Authorization: Bearer $ACCESS_TOKEN" \
   -X DELETE \
   https://3.basecampapi.com/$ACCOUNT_ID/account/logo.json
 ```
+
+[person]: https://github.com/basecamp/bc3-api/blob/master/sections/people.md#get-person
