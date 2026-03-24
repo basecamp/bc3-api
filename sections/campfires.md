@@ -287,11 +287,15 @@ Create a Campfire line
 
 * `POST /chats/2/lines.json` creates a line in the Campfire with ID `2`.
 
-**Required parameters**: `content` as the plain text body for the Campfire line.
+**Required parameters**: `content` as the body for the Campfire line.
+
+_Optional parameters_:
+
+* `content_type` - set to `text/html` to create a rich text line. Default: plain text.
 
 This endpoint will return `201 Created` with the current JSON representation of the line if the creation was a success. See the [Get a Campfire line](#get-a-campfire-line) endpoint for more info on the payload.
 
-###### Example JSON Request
+###### Example JSON Request (plain text)
 
 ```json
 {
@@ -299,8 +303,17 @@ This endpoint will return `201 Created` with the current JSON representation of 
 }
 ```
 
+###### Example JSON Request (rich text)
+
+```json
+{
+  "content": "<strong>Hello</strong> from the API",
+  "content_type": "text/html"
+}
+```
+
 ###### Example JSON Response (plain text)
-<!-- START POST /buckets/1/chats/2/lines.json -->
+<!-- START POST /chats/2/lines.json -->
 ```json
 {
   "id": 1069479921,
@@ -358,10 +371,10 @@ This endpoint will return `201 Created` with the current JSON representation of 
   "content": "Good morning"
 }
 ```
-<!-- END POST /buckets/1/chats/2/lines.json -->
+<!-- END POST /chats/2/lines.json -->
 
 ###### Example JSON Response (rich text)
-<!-- START POST /buckets/1/chats/2/lines.json (rich text) -->
+<!-- START POST /chats/2/lines.json (rich text) -->
 ```json
 {
   "id": 1069479922,
@@ -419,7 +432,7 @@ This endpoint will return `201 Created` with the current JSON representation of 
   "content": "<strong>Hello</strong> from the API"
 }
 ```
-<!-- END POST /buckets/1/chats/2/lines.json (rich text) -->
+<!-- END POST /chats/2/lines.json (rich text) -->
 
 ###### Copy as cURL
 
