@@ -24,7 +24,8 @@ Create a step
 _Optional parameters_:
 
 * `due_on` - due date (ISO 8601) of the step.
-* `assignees` - a comma separated list of people ids that will be assigned to this step. Please see the [Get people][people] endpoints to retrieve them.
+* `assignee_ids` - an array of people ids that will be assigned to this step. Please see the [Get people][people] endpoints to retrieve them.
+* `assignees` - a comma separated list of people ids (legacy format, prefer `assignee_ids`).
 
 This endpoint will return `201 Created` with the current JSON representation of the step if the creation was a success. See the step property of the [Get a card][card] endpoint for more info on the payload.
 
@@ -34,7 +35,7 @@ This endpoint will return `201 Created` with the current JSON representation of 
 {
   "title": "Inspiration",
   "due_on": "2021-01-01",
-  "assignees": "30068628,270913789"
+  "assignee_ids": [30068628, 270913789]
 }
 ```
 
@@ -42,7 +43,7 @@ This endpoint will return `201 Created` with the current JSON representation of 
 
 ```shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" \
-  -d '{"title": "Inspiration", "due_on": "2021-01-01", "assignees": "30068628,270913789"}' \
+  -d '{"title": "Inspiration", "due_on": "2021-01-01", "assignee_ids": [30068628, 270913789]}' \
   https://3.basecampapi.com/$ACCOUNT_ID/card_tables/cards/2/steps.json
 ```
 
@@ -55,7 +56,8 @@ _Optional parameters_:
 
 * `title` - of the card.
 * `due_on` - due date (ISO 8601) of the step.
-* `assignees` - a comma separated list of people ids that will be assigned to this step. Please see the [Get people][people] endpoints to retrieve them.
+* `assignee_ids` - an array of people ids that will be assigned to this step. Please see the [Get people][people] endpoints to retrieve them.
+* `assignees` - a comma separated list of people ids (legacy format, prefer `assignee_ids`).
 
 This endpoint will return `200 OK` with the current JSON representation of the step if the update was a success. See the step property of the [Get a card][card] endpoint for more info on the payload.
 
