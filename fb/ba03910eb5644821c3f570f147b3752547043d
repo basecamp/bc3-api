@@ -1,0 +1,33 @@
+README.md
+  s_8d9ba209b81c9a::t_b14ebc30d103bc 303
+sections/client_approvals.md
+  s_8d9ba209b81c9a::t_a379b240213856 41,147
+sections/client_correspondences.md
+  s_8d9ba209b81c9a::t_02586fd549a3fb 41,117
+sections/documents.md
+  s_8d9ba209b81c9a::t_34d7674919d5d5 168,174,221-236
+sections/drafts.md
+  s_8d9ba209b81c9a::t_d54206998885dd 1-64
+sections/messages.md
+  s_8d9ba209b81c9a::t_1658c2451b6eec 417,419,421,423,474-487
+sections/my_assignments.md
+  s_8d9ba209b81c9a::t_ee966f47dfb001 4,6,8,15-17,641-734
+sections/schedule_entries.md
+  s_8d9ba209b81c9a::t_7b19121bdfbbee 286
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.16",
+  "base_commit_sha": "fbba03910eb5644821c3f570f147b3752547043d",
+  "prompts": {},
+  "sessions": {
+    "s_8d9ba209b81c9a": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "24d3e68c-518b-40aa-b250-159bc07a26bd",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jeremy Daer <jeremy@37signals.com>"
+    }
+  }
+}
