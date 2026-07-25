@@ -1,0 +1,37 @@
+README.md
+  s_8a8548e8866958::t_16458d21fbf9da 303
+sections/card_table_cards.md
+  s_8a8548e8866958::t_8dc70e1dd9166f 395-397,405-406,414
+sections/card_table_steps.md
+  s_8a8548e8866958::t_08e30f1e463751 64,69-70,77-79,87
+sections/client_approvals.md
+  s_8a8548e8866958::t_35119438af60b0 41,147
+sections/client_correspondences.md
+  s_8a8548e8866958::t_608bf7c5d0156e 41,117
+sections/documents.md
+  s_8a8548e8866958::t_d525cfae83d0ae 168,174,221-236
+sections/drafts.md
+  s_8a8548e8866958::t_2a4f31988f0b42 1-64
+sections/messages.md
+  s_8a8548e8866958::t_7119c36590436e 417,419,421,423,474-487
+sections/my_assignments.md
+  s_8a8548e8866958::t_5621b818f2a089 4,6,8,15-17,641-736
+sections/schedule_entries.md
+  s_8a8548e8866958::t_96766e95a0dc7e 286
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.16",
+  "base_commit_sha": "cca8a3557c175dc87cbd2b7ca92ebeb5818fd3ea",
+  "prompts": {},
+  "sessions": {
+    "s_8a8548e8866958": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "26364120-e7b7-41a6-99d4-9ef82f457c3f",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jeremy Daer <jeremy@37signals.com>"
+    }
+  }
+}
