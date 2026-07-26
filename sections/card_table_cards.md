@@ -392,7 +392,9 @@ _Optional parameters_:
 * `title` - of the card.
 * `content` - containing information about the card. See our [Rich text guide][rich] for what HTML tags are allowed.
 * `due_on` - due date (ISO 8601) of the card
-* `assignee_ids` - an array of people that will be assigned to this to-do. Please see the [Get people][people] endpoints to retrieve them.
+* `assignee_ids` - an array of people that will be assigned to this card. Please see the [Get people][people] endpoints to retrieve them.
+
+**Note:** omitting `title`, `content`, or `assignee_ids` leaves those values unchanged, but omitting `due_on` **clears** the due date. To keep an existing due date while changing something else, resend the current `due_on`.
 
 This endpoint will return `200 OK` with the current JSON representation of the card if the update was a success. See the [Get a card](#get-a-card) endpoint for more info on the payload.
 
@@ -400,7 +402,8 @@ This endpoint will return `200 OK` with the current JSON representation of the c
 
 ```json
 {
-  "title": "Updated investigation"
+  "title": "Updated investigation",
+  "due_on": "2016-05-01"
 }
 ```
 
@@ -408,7 +411,7 @@ This endpoint will return `200 OK` with the current JSON representation of the c
 
 ```shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" \
-  -d '{"title":"Updated investigation"}' -X PUT \
+  -d '{"title":"Updated investigation","due_on":"2016-05-01"}' -X PUT \
   https://3.basecampapi.com/$ACCOUNT_ID/card_tables/cards/2.json
 ```
 
