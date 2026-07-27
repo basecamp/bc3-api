@@ -18,8 +18,6 @@ Endpoints:
 - [Update a folder](#update-a-folder)
 - [Delete a folder](#delete-a-folder)
 
-[projects]: projects.md
-
 Get my folders
 --------------
 
@@ -210,3 +208,5 @@ Delete a folder
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -X DELETE \
   https://3.basecampapi.com/$ACCOUNT_ID/stacks/2.json
 ```
+
+[projects]: projects.md
