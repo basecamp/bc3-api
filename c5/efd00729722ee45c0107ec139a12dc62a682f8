@@ -1,0 +1,19 @@
+sections/folders.md
+  s_6d94c580cd66de::t_7bb7792a07aa18 100
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.16",
+  "base_commit_sha": "c5efd00729722ee45c0107ec139a12dc62a682f8",
+  "prompts": {},
+  "sessions": {
+    "s_6d94c580cd66de": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "130884a6-58a0-4af0-967b-255c990394ff",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jeremy Daer <jeremy@37signals.com>"
+    }
+  }
+}
