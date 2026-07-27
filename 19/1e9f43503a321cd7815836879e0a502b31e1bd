@@ -1,0 +1,21 @@
+README.md
+  s_bed25e9efe7247::t_476959b254a9ac 307
+sections/folders.md
+  s_bed25e9efe7247::t_84d35005fbe0e1 1-2,26,30,34,37-38,41,45,49,54,60,64,67,70-71,74,78,82,87,93,105,112,118,121,124-125,128,132,136,143,149,159,165,170,173,176-177,180,184,188,195,201,211
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.16",
+  "base_commit_sha": "191e9f43503a321cd7815836879e0a502b31e1bd",
+  "prompts": {},
+  "sessions": {
+    "s_bed25e9efe7247": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "c8ee519f-e357-41ec-a393-104a907543b7",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jeremy Daer <jeremy@37signals.com>"
+    }
+  }
+}
