@@ -61,10 +61,12 @@ Update a step
 
 _Optional parameters_:
 
-* `title` - of the card.
+* `title` - of the step.
 * `due_on` - due date (ISO 8601) of the step.
 * `assignee_ids` - an array of people ids that will be assigned to this step. Please see the [Get people][people] endpoints to retrieve them.
 * `assignees` - a comma separated list of people ids (legacy format, prefer `assignee_ids`).
+
+**Note:** this update **replaces** the step — any of `title`, `due_on`, or `assignee_ids` you omit is cleared. Resend the values you want to keep.
 
 This endpoint will return `200 OK` with the current JSON representation of the step if the update was a success. See the step property of the [Get a card][card] endpoint for more info on the payload.
 
@@ -72,7 +74,9 @@ This endpoint will return `200 OK` with the current JSON representation of the s
 
 ```json
 {
-  "title": "Updated inspiration"
+  "title": "Updated inspiration",
+  "due_on": "2021-01-01",
+  "assignee_ids": [30068628, 270913789]
 }
 ```
 
@@ -80,7 +84,7 @@ This endpoint will return `200 OK` with the current JSON representation of the s
 
 ```shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" \
-  -d '{"title": "Updated inspiration"}' -X PUT \
+  -d '{"title": "Updated inspiration", "due_on": "2021-01-01", "assignee_ids": [30068628, 270913789]}' -X PUT \
   https://3.basecampapi.com/$ACCOUNT_ID/card_tables/steps/2.json
 ```
 
