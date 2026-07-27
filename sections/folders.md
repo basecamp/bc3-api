@@ -1,5 +1,5 @@
-My folders
-==========
+Folders
+=======
 
 Available since Basecamp 5: **folders** group [projects][projects] together on a
 person's home screen. Folders are per-user — each person arranges their own home
@@ -23,74 +23,74 @@ Endpoints:
 Get my folders
 --------------
 
-* `GET /my/stacks.json` returns the authenticated user's folders, in the order
+* `GET /stacks.json` returns the authenticated user's folders, in the order
   they appear on the home screen.
 
 ###### Example JSON Response
-<!-- START GET /my/stacks.json -->
+<!-- START GET /stacks.json -->
 ```json
 [
   {
-    "id": 2085958508,
+    "id": 2085958513,
     "name": "Client work",
     "type": "Stack",
-    "created_at": "2026-07-22T22:43:02.439Z",
-    "updated_at": "2026-07-22T22:43:02.572Z",
+    "created_at": "2026-07-27T10:16:49.312Z",
+    "updated_at": "2026-07-27T10:16:49.325Z",
     "bucket_ids": [],
     "is_emoji_only_name": false,
-    "star_url": "https://3.basecampapi.com/195539477/buckets/2085958508/stars.json",
+    "star_url": "https://3.basecampapi.com/195539477/buckets/2085958513/stars.json",
     "gauges_url": null,
     "color": null,
     "image_url": null,
-    "url": "https://3.basecampapi.com/195539477/my/stacks/2085958508.json"
+    "url": "https://3.basecampapi.com/195539477/stacks/2085958513.json"
   }
 ]
 ```
-<!-- END GET /my/stacks.json -->
+<!-- END GET /stacks.json -->
 
 ###### Copy as cURL
 
 ```shell
-curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/my/stacks.json
+curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/stacks.json
 ```
 
 Get a folder
 ------------
 
-* `GET /my/stacks/2.json` returns the folder with an ID of `2`, including the
+* `GET /stacks/2.json` returns the folder with an ID of `2`, including the
   [projects][projects] grouped inside it under `projects`.
 
 ###### Example JSON Response
-<!-- START GET /my/stacks/2.json -->
+<!-- START GET /stacks/2.json -->
 ```json
 {
-  "id": 2085958508,
+  "id": 2085958513,
   "name": "Client work",
   "type": "Stack",
-  "created_at": "2026-07-22T22:43:02.439Z",
-  "updated_at": "2026-07-22T22:43:02.572Z",
+  "created_at": "2026-07-27T10:16:49.312Z",
+  "updated_at": "2026-07-27T10:16:49.325Z",
   "bucket_ids": [],
   "is_emoji_only_name": false,
-  "star_url": "https://3.basecampapi.com/195539477/buckets/2085958508/stars.json",
+  "star_url": "https://3.basecampapi.com/195539477/buckets/2085958513/stars.json",
   "gauges_url": null,
   "color": null,
   "image_url": null,
-  "url": "https://3.basecampapi.com/195539477/my/stacks/2085958508.json",
+  "url": "https://3.basecampapi.com/195539477/stacks/2085958513.json",
   "projects": []
 }
 ```
-<!-- END GET /my/stacks/2.json -->
+<!-- END GET /stacks/2.json -->
 
 ###### Copy as cURL
 
 ```shell
-curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/my/stacks/2.json
+curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/stacks/2.json
 ```
 
 Create a folder
 ---------------
 
-* `POST /my/stacks.json` creates a new folder for the authenticated user and
+* `POST /stacks.json` creates a new folder for the authenticated user and
   files the given [projects][projects] into it. The folder is placed at the top
   of the home screen.
 
@@ -102,51 +102,51 @@ Create a folder
 | `project_ids` | Array<Integer> | IDs of the projects to file into the folder. Each must be a project the user can access, or an all-access project they're eligible to join — filing an all-access project the user isn't yet a member of also grants them access to it. Archived, trashed, or invitation-only projects the user isn't on are rejected: the whole request returns `404 Not Found` and nothing is created. Omit it, or send `null` or an empty array, for an empty folder. |
 
 ###### Example JSON Request
-<!-- START POST PAYLOAD /my/stacks.json -->
+<!-- START POST PAYLOAD /stacks.json -->
 ```json
 {
   "name": "Client work",
   "project_ids": []
 }
 ```
-<!-- END POST PAYLOAD /my/stacks.json -->
+<!-- END POST PAYLOAD /stacks.json -->
 
 A successful create returns `201 Created` with the new folder's JSON shape,
 including its grouped `projects`:
 
 ###### Example JSON Response
-<!-- START POST /my/stacks.json -->
+<!-- START POST /stacks.json -->
 ```json
 {
-  "id": 2085958508,
+  "id": 2085958513,
   "name": "Client work",
   "type": "Stack",
-  "created_at": "2026-07-22T22:43:02.439Z",
-  "updated_at": "2026-07-22T22:43:02.572Z",
+  "created_at": "2026-07-27T10:16:49.312Z",
+  "updated_at": "2026-07-27T10:16:49.325Z",
   "bucket_ids": [],
   "is_emoji_only_name": false,
-  "star_url": "https://3.basecampapi.com/195539477/buckets/2085958508/stars.json",
+  "star_url": "https://3.basecampapi.com/195539477/buckets/2085958513/stars.json",
   "gauges_url": null,
   "color": null,
   "image_url": null,
-  "url": "https://3.basecampapi.com/195539477/my/stacks/2085958508.json",
+  "url": "https://3.basecampapi.com/195539477/stacks/2085958513.json",
   "projects": []
 }
 ```
-<!-- END POST /my/stacks.json -->
+<!-- END POST /stacks.json -->
 
 ###### Copy as cURL
 
 ```shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" \
   -d '{"name":"Client work","project_ids":[]}' \
-  https://3.basecampapi.com/$ACCOUNT_ID/my/stacks.json
+  https://3.basecampapi.com/$ACCOUNT_ID/stacks.json
 ```
 
 Update a folder
 ---------------
 
-* `PUT /my/stacks/2.json` renames the folder with an ID of `2`. Only `name` can
+* `PUT /stacks/2.json` renames the folder with an ID of `2`. Only `name` can
   be changed; a folder's projects, ordering, and image are managed elsewhere.
 
 ###### Permitted parameters
@@ -156,49 +156,49 @@ Update a folder
 | `name` | String | The folder's new name. |
 
 ###### Example JSON Request
-<!-- START PUT PAYLOAD /my/stacks/2.json -->
+<!-- START PUT PAYLOAD /stacks/2.json -->
 ```json
 {
   "name": "Active client work"
 }
 ```
-<!-- END PUT PAYLOAD /my/stacks/2.json -->
+<!-- END PUT PAYLOAD /stacks/2.json -->
 
 Returns `200 OK` with the updated folder's JSON shape:
 
 ###### Example JSON Response
-<!-- START PUT /my/stacks/2.json -->
+<!-- START PUT /stacks/2.json -->
 ```json
 {
-  "id": 2085958508,
+  "id": 2085958513,
   "name": "Active client work",
   "type": "Stack",
-  "created_at": "2026-07-22T22:43:02.439Z",
-  "updated_at": "2026-07-22T22:43:02.572Z",
+  "created_at": "2026-07-27T10:16:49.312Z",
+  "updated_at": "2026-07-27T10:16:50.464Z",
   "bucket_ids": [],
   "is_emoji_only_name": false,
-  "star_url": "https://3.basecampapi.com/195539477/buckets/2085958508/stars.json",
+  "star_url": "https://3.basecampapi.com/195539477/buckets/2085958513/stars.json",
   "gauges_url": null,
   "color": null,
   "image_url": null,
-  "url": "https://3.basecampapi.com/195539477/my/stacks/2085958508.json",
+  "url": "https://3.basecampapi.com/195539477/stacks/2085958513.json",
   "projects": []
 }
 ```
-<!-- END PUT /my/stacks/2.json -->
+<!-- END PUT /stacks/2.json -->
 
 ###### Copy as cURL
 
 ```shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" \
   -d '{"name":"Active client work"}' -X PUT \
-  https://3.basecampapi.com/$ACCOUNT_ID/my/stacks/2.json
+  https://3.basecampapi.com/$ACCOUNT_ID/stacks/2.json
 ```
 
 Delete a folder
 ---------------
 
-* `DELETE /my/stacks/2.json` deletes the folder with an ID of `2` and returns
+* `DELETE /stacks/2.json` deletes the folder with an ID of `2` and returns
   `204 No Content`. Deleting a folder **unpins its projects** from the person's
   home screen — the projects themselves are not deleted, and they are not moved
   back out onto the home screen; they simply stop appearing there until pinned
@@ -208,5 +208,5 @@ Delete a folder
 
 ```shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -X DELETE \
-  https://3.basecampapi.com/$ACCOUNT_ID/my/stacks/2.json
+  https://3.basecampapi.com/$ACCOUNT_ID/stacks/2.json
 ```
