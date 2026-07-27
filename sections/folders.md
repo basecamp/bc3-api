@@ -97,7 +97,7 @@ Create a folder
 | Param         | Type            | Description |
 | ------------- | --------------- | ----------- |
 | `name`        | String          | The folder's name. Defaults to `New folder` when blank or omitted. |
-| `project_ids` | Array<Integer> | IDs of the projects to file into the folder. Each must be a project the user can access, or an all-access project they're eligible to join — filing an all-access project the user isn't yet a member of also grants them access to it. Archived, trashed, or invitation-only projects the user isn't on are rejected: the whole request returns `404 Not Found` and nothing is created. Omit it, or send `null` or an empty array, for an empty folder. |
+| `project_ids` | Array<Integer> | IDs of the projects to file into the folder — the same ids the folder reports back as `bucket_ids`. Each must be a project the user can access, or an all-access project they're eligible to join — filing an all-access project the user isn't yet a member of also grants them access to it. Archived, trashed, or invitation-only projects the user isn't on are rejected: the whole request returns `404 Not Found` and nothing is created. Omit it, or send `null` or an empty array, for an empty folder. |
 
 ###### Example JSON Request
 <!-- START POST PAYLOAD /stacks.json -->
