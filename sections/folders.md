@@ -12,14 +12,14 @@ For historical reasons the path and the wire type say `stack(s)` rather than
 
 Endpoints:
 
-- [Get my folders](#get-my-folders)
+- [Get folders](#get-folders)
 - [Get a folder](#get-a-folder)
 - [Create a folder](#create-a-folder)
 - [Update a folder](#update-a-folder)
 - [Delete a folder](#delete-a-folder)
 
-Get my folders
---------------
+Get folders
+-----------
 
 * `GET /stacks.json` returns the authenticated user's folders, in the order
   they appear on the home screen.
