@@ -1,0 +1,19 @@
+sections/folders.md
+  s_bed25e9efe7247::t_5d962638748fb7 15,21-22
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.16",
+  "base_commit_sha": "df2b865906db98b874c67a2f00aa17357fff4320",
+  "prompts": {},
+  "sessions": {
+    "s_bed25e9efe7247": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "c8ee519f-e357-41ec-a393-104a907543b7",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jeremy Daer <jeremy@37signals.com>"
+    }
+  }
+}
