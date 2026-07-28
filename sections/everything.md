@@ -10,9 +10,9 @@ Most collections are addressable at their root path: `/messages.json`,
 `/comments.json`, `/checkins.json`, `/forwards.json`,
 `/files.json`, and `/boosts.json` each return a recency-ordered, [paginated]
 [pagination] JSON collection directly. The to-do and card collections are the
-exceptions — the bare `/todos` and `/cards` paths are HTML shells in the web app
-and don't return JSON, so use the filtered sub-routes below (`/todos/open.json`,
-`/cards/overdue.json`, …).
+exceptions — the bare `/todos` and `/cards` paths, and the combined `/tasks`
+report, are HTML shells in the web app and don't return JSON, so use the
+filtered sub-routes below (`/todos/open.json`, `/cards/overdue.json`, …).
 
 The web app also serves `/<resource>/recent.json` Turbo-frame feeds for these
 collections, but those are internal: the root collection is the documented API
@@ -38,12 +38,41 @@ Endpoints:
 [pagination]: ../README.md#pagination
 
 
+Filtering to-dos and cards
+--------------------------
+
+Every to-do and card endpoint below accepts optional query parameters that
+narrow the results:
+
+* `assignee_ids[]` — one or more person IDs. Returns only tasks assigned to
+  at least one of the requested people. Matching considers the task's own
+  assignees; assignees on a task's nested steps aren't considered. If none of
+  the requested IDs resolve to people you know, the result is empty.
+* `due` — one of `with`, `without`, or `overdue`. Returns only tasks that
+  have a due date, have none, or are past due. Unrecognized values are
+  ignored.
+
+For example, `GET /todos/open.json?assignee_ids[]=1049715914&due=overdue`
+returns open, past-due to-dos assigned to that person.
+
+
 Bucket-grouped to-do and card lists
 -----------------------------------
 
 These endpoints return a [paginated][pagination] array of buckets. Each entry
 groups the matching recordings — to-dos and their steps, or cards and their
 steps — under their parent [project][projects].
+
+Grouping mirrors the in-app report presentation:
+
+* Tasks under tools that are hidden from the project's dock are excluded.
+* Tasks are ordered by their in-app position: to-do lists and card table
+  columns appear in project order (not alphabetically), with on-hold cards
+  following their column.
+* A bucket entry can appear with an empty `todos`/`cards` array — for
+  example, when a project's only matching tasks live under hidden tools.
+  Pagination counts buckets, so empty entries still count toward
+  `X-Total-Count`.
 
 Get to-dos by filter
 --------------------
