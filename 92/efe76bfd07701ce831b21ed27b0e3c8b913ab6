@@ -1,0 +1,19 @@
+sections/schedule_entries.md
+  s_b5ad3cc1000abe::t_f9bba2b0f95872 332-333
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.16",
+  "base_commit_sha": "92efe76bfd07701ce831b21ed27b0e3c8b913ab6",
+  "prompts": {},
+  "sessions": {
+    "s_b5ad3cc1000abe": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "1d31349f-f600-4849-95b2-afd72403000a",
+        "model": "claude-fable-5"
+      },
+      "human_author": "Jeremy Daer <jeremy@37signals.com>"
+    }
+  }
+}
