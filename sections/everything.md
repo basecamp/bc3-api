@@ -10,9 +10,10 @@ Most collections are addressable at their root path: `/messages.json`,
 `/comments.json`, `/checkins.json`, `/forwards.json`,
 `/files.json`, and `/boosts.json` each return a recency-ordered, [paginated]
 [pagination] JSON collection directly. The to-do and card collections are the
-exceptions — the bare `/todos` and `/cards` paths, and the combined `/tasks`
-report, are HTML shells in the web app and don't return JSON, so use the
-filtered sub-routes below (`/todos/open.json`, `/cards/overdue.json`, …).
+exceptions — there is no `/todos.json`, `/cards.json`, or `/tasks.json`
+collection API; use the filtered sub-routes below (`/todos/open.json`,
+`/cards/overdue.json`, …). In the web app, the combined `/tasks` report is
+where to-dos and cards are browsed.
 
 The web app also serves `/<resource>/recent.json` Turbo-frame feeds for these
 collections, but those are internal: the root collection is the documented API
@@ -81,6 +82,10 @@ Get to-dos by filter
 * `GET /todos/completed.json` — to-dos that have been completed.
 * `GET /todos/unassigned.json` — open to-dos with no assignees.
 * `GET /todos/no_due_date.json` — open to-dos that have no due date.
+
+These endpoints are preserved as the canonical API paths; the standalone
+all-to-dos web page was removed — the BC5 web app shows these tasks in the
+combined `/tasks` report.
 
 Each response is an array of buckets with their matching to-do recordings:
 
@@ -12811,6 +12816,10 @@ Get cards by filter
 * `GET /cards/no_due_date.json` — open cards with no due date.
 * `GET /cards/not_now.json` — cards parked in a project's "Not now" column.
 
+These endpoints are preserved as the canonical API paths; the standalone
+all-cards web page was removed — the BC5 web app shows these tasks in the
+combined `/tasks` report.
+
 ###### Example JSON Response
 <!-- START GET /cards/open.json -->
 ```json
@@ -13977,6 +13986,10 @@ Get overdue to-dos
 * `GET /todos/overdue.json` — to-dos with a `due_on` date in the past, sorted
   oldest-first by due date.
 
+This endpoint is preserved as the canonical API path; the standalone
+all-to-dos web page was removed — the BC5 web app shows these tasks in the
+combined `/tasks` report.
+
 ###### Example JSON Response
 <!-- START GET /todos/overdue.json -->
 ```json
@@ -14384,6 +14397,10 @@ Get overdue cards
 
 * `GET /cards/overdue.json` — cards with a `due_on` date in the past, sorted
   oldest-first by due date.
+
+This endpoint is preserved as the canonical API path; the standalone
+all-cards web page was removed — the BC5 web app shows these tasks in the
+combined `/tasks` report.
 
 ###### Example JSON Response
 <!-- START GET /cards/overdue.json -->
