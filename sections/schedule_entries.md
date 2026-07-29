@@ -329,6 +329,8 @@ Clients may change any of the required or optional parameters as listed in the [
 
 This endpoint will return `200 OK` with the current JSON representation of the schedule entry if the update was a success. See the [Get a schedule entry](#get-a-schedule-entry) endpoint for more info on the payload.
 
+Participants are only replaced when you address them: omit `participant_ids` and the entry keeps its current participants; send `"participant_ids": []` to remove them all.
+
 ###### Example JSON Request
 
 ```json
