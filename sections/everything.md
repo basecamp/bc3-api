@@ -2,14 +2,13 @@ Everything
 ==========
 
 Available since Basecamp 5: cross-project flat endpoints that aggregate
-[recordings][recordings] and [boosts][boosts] across every [project][projects]
+[recordings][recordings] across every [project][projects]
 the authenticated user can access. Use these for "show me all my open to-dos"
 or "every recent message I can see" style views without enumerating projects.
 
 Most collections are addressable at their root path: `/messages.json`,
-`/comments.json`, `/checkins.json`, `/forwards.json`,
-`/files.json`, and `/boosts.json` each return a recency-ordered, [paginated]
-[pagination] JSON collection directly. The to-do and card collections are the
+`/comments.json`, `/checkins.json`, `/forwards.json`, and `/files.json` each
+return a recency-ordered, [paginated][pagination] JSON collection directly. The to-do and card collections are the
 exceptions — there is no `/todos.json`, `/cards.json`, or `/tasks.json`
 collection API; use the filtered sub-routes below (`/todos/open.json`,
 `/cards/overdue.json`, …). In the web app, the combined `/tasks` report is
@@ -30,11 +29,8 @@ Endpoints:
 - [List check-ins](#list-check-ins)
 - [List forwards](#list-forwards)
 - [List files](#list-files)
-- [Get boosts](#get-boosts)
 
 [recordings]: recordings.md
-[boosts]: boosts.md
-[events]: events.md
 [projects]: projects.md
 [pagination]: ../README.md#pagination
 
@@ -15384,198 +15380,3 @@ curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCO
 [uploads]: uploads.md
 [attachments]: attachments.md
 [people]: people.md
-
-Boosts
-------
-
-Get boosts
-----------
-
-* `GET /boosts.json` — a [paginated][pagination] flat list of recent
-  [boosts][boosts] across every [recording][recordings] the user can access,
-  newest-first. Boosts on completion, adoption, and column-change
-  [events][events] are included too; each boost embeds the recording it applies
-  to (an event boost surfaces the event's recording).
-
-###### Example JSON Response
-<!-- START GET /boosts.json -->
-```json
-[
-  {
-    "id": 971636472,
-    "content": "Way to go! 🚀",
-    "created_at": "2026-07-20T04:30:39.680Z",
-    "booster": {
-      "id": 1049715913,
-      "attachable_sgid": "BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiK2dpZDovL2JjMy9QZXJzb24vMTA0OTcxNTkxMz9leHBpcmVzX2luBjsAVEkiCHB1cgY7AFRJIg9hdHRhY2hhYmxlBjsAVA==--e627c45e6b34e08862da23906862412620e4d5d9",
-      "name": "Victor Cooper",
-      "personable_type": "User",
-      "title": "Chief Strategist",
-      "tagline": "Don't let your dreams be dreams",
-      "location": "Chicago, IL",
-      "created_at": "2026-05-28T17:22:22.069Z",
-      "updated_at": "2026-07-21T01:06:02.483Z",
-      "email_address": "victor@honchodesign.com",
-      "bio": "Don't let your dreams be dreams",
-      "admin": true,
-      "owner": true,
-      "client": false,
-      "employee": true,
-      "time_zone": "America/Chicago",
-      "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBMlkkT4=--5fe7b70fbee7a7f0e2e1e19df7579e5d880c753d/avatar",
-      "company": {
-        "id": 1033447817,
-        "name": "Honcho Design"
-      },
-      "can_ping": true,
-      "can_manage_projects": true,
-      "can_manage_people": true,
-      "can_access_timesheet": true,
-      "can_access_hill_charts": true
-    },
-    "recording": {
-      "id": 1069479842,
-      "status": "active",
-      "visible_to_clients": false,
-      "created_at": "2026-04-14T21:02:00.000Z",
-      "updated_at": "2026-07-21T01:05:57.474Z",
-      "title": "We won Leto!",
-      "inherits_status": true,
-      "type": "Message",
-      "url": "https://3.basecampapi.com/195539477/buckets/2085958505/messages/1069479842.json",
-      "app_url": "https://3.basecamp.com/195539477/buckets/2085958505/messages/1069479842",
-      "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiLmdpZDovL2JjMy9SZWNvcmRpbmcvMTA2OTQ3OTg0Mj9leHBpcmVzX2luBjsAVEkiCHB1cgY7AFRJIg1yZWFkYWJsZQY7AFQ=--1708f8c9adb5dd70ebcc6837a0c054bacaf792fe.json",
-      "subscription_url": "https://3.basecampapi.com/195539477/buckets/2085958505/recordings/1069479842/subscription.json",
-      "parent": {
-        "id": 1069479828,
-        "title": "Message Board",
-        "type": "Message::Board",
-        "url": "https://3.basecampapi.com/195539477/buckets/2085958505/message_boards/1069479828.json",
-        "app_url": "https://3.basecamp.com/195539477/buckets/2085958505/message_boards/1069479828"
-      },
-      "bucket": {
-        "id": 2085958505,
-        "name": "The Leto Laptop",
-        "type": "Project"
-      },
-      "creator": {
-        "id": 1049715913,
-        "attachable_sgid": "BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiK2dpZDovL2JjMy9QZXJzb24vMTA0OTcxNTkxMz9leHBpcmVzX2luBjsAVEkiCHB1cgY7AFRJIg9hdHRhY2hhYmxlBjsAVA==--e627c45e6b34e08862da23906862412620e4d5d9",
-        "name": "Victor Cooper",
-        "personable_type": "User",
-        "title": "Chief Strategist",
-        "tagline": "Don't let your dreams be dreams",
-        "location": "Chicago, IL",
-        "created_at": "2026-05-28T17:22:22.069Z",
-        "updated_at": "2026-07-21T01:06:02.483Z",
-        "email_address": "victor@honchodesign.com",
-        "bio": "Don't let your dreams be dreams",
-        "admin": true,
-        "owner": true,
-        "client": false,
-        "employee": true,
-        "time_zone": "America/Chicago",
-        "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBMlkkT4=--5fe7b70fbee7a7f0e2e1e19df7579e5d880c753d/avatar",
-        "company": {
-          "id": 1033447817,
-          "name": "Honcho Design"
-        },
-        "can_ping": true,
-        "can_manage_projects": true,
-        "can_manage_people": true,
-        "can_access_timesheet": true,
-        "can_access_hill_charts": true
-      }
-    }
-  },
-  {
-    "id": 971636446,
-    "content": "🚀",
-    "created_at": "2026-05-28T17:23:25.360Z",
-    "booster": {
-      "id": 1049715929,
-      "attachable_sgid": "BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiK2dpZDovL2JjMy9QZXJzb24vMTA0OTcxNTkyOT9leHBpcmVzX2luBjsAVEkiCHB1cgY7AFRJIg9hdHRhY2hhYmxlBjsAVA==--d79103e78a10cd9f8ecda7470ea315674ac8a79a",
-      "name": "Matt Donahue",
-      "personable_type": "User",
-      "title": "Global Data Strategist",
-      "tagline": null,
-      "location": null,
-      "created_at": "2026-05-28T17:22:27.821Z",
-      "updated_at": "2026-05-28T17:22:27.821Z",
-      "email_address": "matt@honchodesign.com",
-      "bio": null,
-      "admin": false,
-      "owner": false,
-      "client": false,
-      "employee": false,
-      "time_zone": "America/Chicago",
-      "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBNlkkT4=--0f3c77d8c13069d514fd3f0ad694a67e426bad0f/avatar",
-      "can_ping": true,
-      "can_manage_projects": true,
-      "can_manage_people": true,
-      "can_access_timesheet": true,
-      "can_access_hill_charts": true
-    },
-    "recording": {
-      "id": 1069479975,
-      "status": "active",
-      "visible_to_clients": false,
-      "created_at": "2026-05-01T08:50:00.000Z",
-      "updated_at": "2026-05-28T17:23:25.361Z",
-      "title": "Re: Example videos for inspiration",
-      "inherits_status": true,
-      "type": "Comment",
-      "url": "https://3.basecampapi.com/195539477/buckets/2085958505/comments/1069479975.json",
-      "app_url": "https://3.basecamp.com/195539477/buckets/2085958505/messages/1069479968#__recording_1069479975",
-      "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiLmdpZDovL2JjMy9SZWNvcmRpbmcvMTA2OTQ3OTk3NT9leHBpcmVzX2luBjsAVEkiCHB1cgY7AFRJIg1yZWFkYWJsZQY7AFQ=--270bc5b967ddf405a0e1e56b31608709a4a58396.json",
-      "parent": {
-        "id": 1069479968,
-        "title": "Example videos for inspiration",
-        "type": "Message",
-        "url": "https://3.basecampapi.com/195539477/buckets/2085958505/messages/1069479968.json",
-        "app_url": "https://3.basecamp.com/195539477/buckets/2085958505/messages/1069479968"
-      },
-      "bucket": {
-        "id": 2085958505,
-        "name": "The Leto Laptop",
-        "type": "Project"
-      },
-      "creator": {
-        "id": 1049715913,
-        "attachable_sgid": "BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiK2dpZDovL2JjMy9QZXJzb24vMTA0OTcxNTkxMz9leHBpcmVzX2luBjsAVEkiCHB1cgY7AFRJIg9hdHRhY2hhYmxlBjsAVA==--e627c45e6b34e08862da23906862412620e4d5d9",
-        "name": "Victor Cooper",
-        "personable_type": "User",
-        "title": "Chief Strategist",
-        "tagline": "Don't let your dreams be dreams",
-        "location": "Chicago, IL",
-        "created_at": "2026-05-28T17:22:22.069Z",
-        "updated_at": "2026-07-21T01:06:02.483Z",
-        "email_address": "victor@honchodesign.com",
-        "bio": "Don't let your dreams be dreams",
-        "admin": true,
-        "owner": true,
-        "client": false,
-        "employee": true,
-        "time_zone": "America/Chicago",
-        "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBMlkkT4=--5fe7b70fbee7a7f0e2e1e19df7579e5d880c753d/avatar",
-        "company": {
-          "id": 1033447817,
-          "name": "Honcho Design"
-        },
-        "can_ping": true,
-        "can_manage_projects": true,
-        "can_manage_people": true,
-        "can_access_timesheet": true,
-        "can_access_hill_charts": true
-      }
-    }
-  }
-]
-```
-<!-- END GET /boosts.json -->
-
-###### Copy as cURL
-
-```shell
-curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/boosts.json
-```
