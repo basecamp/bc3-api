@@ -15222,7 +15222,10 @@ List files
   shapes; attachments are wrapped in a
   recording envelope plus an `attachable_sgid` and blob metadata
   (`filename`, `content_type`, `byte_size`, `download_url`, …), with
-  `parent` identifying the doc/message the attachment lives in.
+  `parent` identifying the recording the attachment hangs from: the
+  doc/message it lives in or, for images hotlinked into a chat, the
+  autolinked-image wrapper whose `url` and `app_url` point at the
+  surrounding chat line.
 
 Two optional query parameters narrow the list:
 
