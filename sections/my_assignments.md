@@ -690,6 +690,8 @@ Deprioritize an assignment
 
 * `DELETE /my/priorities/1069479801.json` removes the recording with an ID of `1069479801` from Up Next. Returns `204 No Content`.
 
+The delete is **exact-target**: it clears only the priority carried by the recording the URL identifies, and deleting a recording that carries no priority is a **no-op** that still returns `204 No Content` — so a repeated `DELETE` (a client retry after a lost response) is safe and never touches any other priority. To deprioritize a card table step surfaced under its parent card, send the step's own id — the `priority_recording_id` reported by [Get assignments](#get-assignments) — not the card's id.
+
 ###### Copy as cURL
 
 ```shell
