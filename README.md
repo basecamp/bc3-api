@@ -304,6 +304,7 @@ API endpoints
 - [Events](sections/events.md#events)
 - [Everything](sections/everything.md#everything)
 - [External links](sections/external_links.md#external-links)
+- [Folders](sections/folders.md#folders)
 - [Forwards](sections/forwards.md#forwards)
 - [Gauges](sections/gauges.md#gauges)
 - [Google documents](sections/google_documents.md#google-documents)
