@@ -331,6 +331,8 @@ This endpoint will return `200 OK` with the current JSON representation of the s
 
 Participants are only replaced when you address them: omit `participant_ids` and the entry keeps its current participants; send `"participant_ids": []` to remove them all.
 
+Subscribers work the same way: omit both `subscriptions` and `notify` and a drafted entry keeps its current subscribers; send either one to recompute the list. The creator and whoever makes the update are always on the list.
+
 ###### Example JSON Request
 
 ```json

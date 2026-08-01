@@ -231,7 +231,9 @@ Publish a [draft](drafts.md) document by updating it with `status` set to `activ
 }
 ```
 
-A status-only update fails with `400 Bad Request` (the `document` parameters are required), and omitting a field clears its value. Publishing posts the document and notifies its subscribers exactly once — the same publication side-effects as [publishing a message](messages.md#publishing-a-draft).
+A status-only update fails with `400 Bad Request` (the `document` parameters are required), and omitting a field clears its value.
+
+Subscribers are the exception. They're only replaced when you address them: omit both `subscriptions` and `notify` and a drafted document keeps its current subscribers; send either one to recompute the list. The creator and whoever makes the update are always on the list. Publishing posts the document and notifies its subscribers exactly once — the same publication side-effects as [publishing a message](messages.md#publishing-a-draft).
 
 
 Legacy project-scoped routes
