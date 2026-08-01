@@ -229,7 +229,7 @@ patching individual fields. `status` is also accepted.
 
 Subscribers are only replaced when you address them: omit both `subscriptions` and
 `notify` and a drafted Google document keeps its current subscribers; send either one
-to recompute the list. The creator and whoever makes the update are always on the list.
+to recompute the list. The creator is always on the list.
 
 ###### Example JSON Request
 <!-- START PUT PAYLOAD /buckets/1/google_documents/2.json -->

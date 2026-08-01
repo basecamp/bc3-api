@@ -246,7 +246,7 @@ patching individual fields. Updating a drafted cloud file also publishes it.
 
 Subscribers are only replaced when you address them: omit both `subscriptions` and
 `notify` and a drafted cloud file keeps its current subscribers; send either one to
-recompute the list. The creator and whoever makes the update are always on the list.
+recompute the list. The creator is always on the list.
 
 ###### Example JSON Request
 <!-- START PUT PAYLOAD /buckets/1/cloud_files/2.json -->
