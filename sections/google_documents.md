@@ -225,8 +225,11 @@ Update a Google document
 
 Update accepts `title`, `url`, `document_type`, and `description`, and all four are
 sent on every update — the controller replaces the recordable on each call rather than
-patching individual fields. `status` is also accepted; updating a drafted document
-applies any `subscriptions` sent with the request.
+patching individual fields. `status` is also accepted.
+
+Subscribers are only replaced when you address them: omit both `subscriptions` and
+`notify` and a drafted Google document keeps its current subscribers; send either one
+to recompute the list. The creator is always on the list.
 
 ###### Example JSON Request
 <!-- START PUT PAYLOAD /buckets/1/google_documents/2.json -->

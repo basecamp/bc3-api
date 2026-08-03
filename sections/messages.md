@@ -454,6 +454,8 @@ Update a message
 
 This endpoint will return `200 OK` with the current JSON representation of the message if the update was a success. See the [Get a message](#get-a-message) endpoint for more info on the payload.
 
+Subscribers are only replaced when you address them: omit both `subscriptions` and `notify` and a drafted message keeps its current subscribers; send either one to recompute the list. The creator and whoever makes the update are always on the list. Note that this differs from [creating a message](#create-a-message), where omitting `subscriptions` subscribes everyone on the project.
+
 ###### Example JSON Request
 
 ```json
@@ -480,7 +482,7 @@ Publish a [draft](drafts.md) message by updating it with `status` set to `active
 { "status": "active" }
 ```
 
-A message update **merges** the fields you send, so you don't need to resend `subject` or `content` — the draft's existing content is preserved.
+A message update **merges** the fields you send, so you don't need to resend `subject` or `content` — the draft's existing content is preserved. The draft's subscribers are preserved too, so publishing notifies the people already on the list unless you send `subscriptions` or `notify` to change it.
 
 Publishing is what actually posts the message, and it happens exactly once: each subscriber who should hear about it receives a single notification (delivered shortly after, once notifications are dispatched). Creating or re-saving a draft notifies no one — only publishing does. (Documents publish the same way; see [Publishing a draft](documents.md#publishing-a-draft) in the documents section.)
 
