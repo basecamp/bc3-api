@@ -66,7 +66,13 @@ _Optional parameters_:
 * `assignee_ids` - an array of people ids that will be assigned to this step. Please see the [Get people][people] endpoints to retrieve them.
 * `assignees` - a comma separated list of people ids (legacy format, prefer `assignee_ids`).
 
-**Note:** this update **replaces** the step — any of `title`, `due_on`, or `assignee_ids` you omit is cleared. Resend the values you want to keep.
+**Note:** this is a partial update — any parameter you omit is left unchanged. To clear a value, send it explicitly:
+
+| To…                    | Send                     |
+| ---------------------- | ------------------------ |
+| leave a value unchanged | omit the parameter      |
+| clear the due date     | `"due_on": null`         |
+| remove all assignees   | `"assignee_ids": []`     |
 
 This endpoint will return `200 OK` with the current JSON representation of the step if the update was a success. See the step property of the [Get a card][card] endpoint for more info on the payload.
 
