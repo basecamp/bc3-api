@@ -1,0 +1,21 @@
+sections/card_table_cards.md
+  s_394bca767bd0c3::t_804f9766f88d0b 397
+sections/card_table_steps.md
+  s_394bca767bd0c3::t_a168556c30ddc2 69-75
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "9b84f1a21ecc06c320a395d53518c3fde66cf177",
+  "prompts": {},
+  "sessions": {
+    "s_394bca767bd0c3": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "2f419f3a-b5aa-4bdf-8c68-9c0bafe1e43c",
+        "model": "claude-fable-5"
+      },
+      "human_author": "Jeremy Daer <jeremy@37signals.com>"
+    }
+  }
+}
