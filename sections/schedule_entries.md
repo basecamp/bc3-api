@@ -85,8 +85,10 @@ _Optional query parameters_:
     "description_attachments": [],
     "summary": "Team Meeting",
     "all_day": false,
+    "highlighted": false,
     "starts_at": "2026-07-21T06:05:47.135Z",
     "ends_at": "2026-07-21T10:05:47.135Z",
+    "join_url": null,
     "participants": [
       {
         "id": 1049715944,
@@ -199,8 +201,10 @@ Get a schedule entry
   "description_attachments": [],
   "summary": "Team Meeting",
   "all_day": false,
+  "highlighted": false,
   "starts_at": "2026-07-21T06:05:47.135Z",
   "ends_at": "2026-07-21T10:05:47.135Z",
+  "join_url": null,
   "participants": [
     {
       "id": 1049715944,
@@ -274,6 +278,8 @@ _Optional parameters_:
 * `description` - containing more information about the schedule entry. See our [Rich text guide][rich] for what HTML tags allowed.
 * `participant_ids` - an array of people IDs that will participate in this entry. Please see the [Get people][people] endpoints to retrieve them.
 * `all_day` - when set to `true`, the schedule entry will not have a specific start or end time, and instead will be held for the entire day or days denoted in `starts_at` and `ends_at`
+* `url` - a join link for the entry, such as a video-call URL. Must be a valid URL, up to 2500 characters. Returned as `join_url`, not `url` — the top-level `url` is the entry's own Basecamp API URL
+* `highlighted` - when set to `true`, the entry is highlighted on the schedule. Defaults to `false`
 * `notify` - when set to `true`, will notify the participants about the entry
 * `recurrence_schedule` - makes the entry recurring. An object with:
   * `frequency` - one of `every_day`, `every_weekday`, `every_week`, `every_other_week`, `every_month`, `every_day_of_month`, `every_year`, `custom_week`, or `custom_month`
@@ -330,6 +336,8 @@ Clients may change any of the required or optional parameters as listed in the [
 This endpoint will return `200 OK` with the current JSON representation of the schedule entry if the update was a success. See the [Get a schedule entry](#get-a-schedule-entry) endpoint for more info on the payload.
 
 Participants are only replaced when you address them: omit `participant_ids` and the entry keeps its current participants; send `"participant_ids": []` to remove them all.
+
+`url` and `highlighted` behave the same way: omit them and the entry keeps its current join link and highlight; send `"url": ""` to clear the link, or `"highlighted": false` to remove the highlight. Every other attribute you omit is cleared, so send the full set you want the entry to have.
 
 Subscribers work the same way, except that participants address them too — a drafted entry's subscribers are derived from its participants. So a draft keeps its current subscribers only when the request omits `subscriptions`, `notify`, **and** the participant parameters; sending any of them recomputes the list, which is what unsubscribes someone you drop from the entry. The creator is always on the list.
 
