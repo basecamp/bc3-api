@@ -394,7 +394,7 @@ _Optional parameters_:
 * `due_on` - due date (ISO 8601) of the card
 * `assignee_ids` - an array of people that will be assigned to this card. Please see the [Get people][people] endpoints to retrieve them.
 
-**Note:** omitting `title`, `content`, or `assignee_ids` leaves those values unchanged, but omitting `due_on` **clears** the due date. To keep an existing due date while changing something else, resend the current `due_on`.
+**Note:** this is a partial update — omitting any of `title`, `content`, `due_on`, or `assignee_ids` leaves it unchanged. To clear the due date, send `"due_on": null` explicitly; to remove all assignees, send `"assignee_ids": []`.
 
 This endpoint will return `200 OK` with the current JSON representation of the card if the update was a success. See the [Get a card](#get-a-card) endpoint for more info on the payload.
 
