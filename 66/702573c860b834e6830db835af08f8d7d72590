@@ -1,0 +1,19 @@
+sections/projects.md
+  s_78fdf55b28001a::t_42c6b8f273c0a2 10-11,564-593
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "66702573c860b834e6830db835af08f8d7d72590",
+  "prompts": {},
+  "sessions": {
+    "s_78fdf55b28001a": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "a62c69b5-98fd-4851-90b0-8845ed55b1b4",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jeremy Daer <jeremy@37signals.com>"
+    }
+  }
+}
