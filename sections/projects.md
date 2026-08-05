@@ -7,6 +7,8 @@ Endpoints:
 - [Get a project](#get-a-project)
 - [Create a project](#create-a-project)
 - [Update a project](#update-a-project)
+- [Archive a project](#archive-a-project)
+- [Unarchive a project](#unarchive-a-project)
 - [Trash a project](#trash-a-project)
 
 Get all projects
@@ -556,6 +558,36 @@ This will return `200 OK` with the current JSON representation of the project if
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" \
   -d '{"name":"Marketing Campaign for Xyz Corp","description":"2016-2017 Strategy"}' -X PUT \
   https://3.basecampapi.com/$ACCOUNT_ID/projects/2085958506.json
+```
+
+
+Archive a project
+------------------
+
+* `PUT /projects/1/status/archived.json` will mark the project with the given ID as archived.
+
+No parameters required. Returns `204 No Content` if successful. On accounts where archiving and trashing projects is limited to admins and the project's creator, everyone else gets a `403 Forbidden`.
+
+###### Copy as cURL
+
+```shell
+curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" -X PUT \
+  https://3.basecampapi.com/$ACCOUNT_ID/projects/2085958507/status/archived.json
+```
+
+
+Unarchive a project
+--------------------
+
+* `PUT /projects/1/status/active.json` will mark the project with the given ID as active, restoring it from either the archive or the trash.
+
+No parameters required. Returns `204 No Content` if successful. If the account has reached its project limit you'll see a `507 Insufficient Storage` and the same response documented under [Create a project](#create-a-project); the project stays where it is until the subscription is upgraded.
+
+###### Copy as cURL
+
+```shell
+curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" -X PUT \
+  https://3.basecampapi.com/$ACCOUNT_ID/projects/2085958507/status/active.json
 ```
 
 
