@@ -552,6 +552,8 @@ _Optional parameters_:
 
 This will return `200 OK` with the current JSON representation of the project if the update was a success. See the [Get a project](#get-a-project) endpoint for more info.
 
+A project's `status` is read-only here. Passing a `status` has no effect and still returns `200 OK`. To change it, see [Archive a project](#archive-a-project), [Unarchive a project](#unarchive-a-project), and [Trash a project](#trash-a-project).
+
 ###### Copy as cURL
 
 ```shell
