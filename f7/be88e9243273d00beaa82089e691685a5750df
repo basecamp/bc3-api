@@ -1,0 +1,19 @@
+sections/uploads.md
+  s_4b2851df67c3f7::t_f6cdab580f772d 9,188-199,238-245,257-301,314-320,345-350,378
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "f7be88e9243273d00beaa82089e691685a5750df",
+  "prompts": {},
+  "sessions": {
+    "s_4b2851df67c3f7": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "c1c83b83-446a-4c6b-886f-101040635c18",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jeremy Daer <jeremy@37signals.com>"
+    }
+  }
+}
