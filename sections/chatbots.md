@@ -44,6 +44,11 @@ When an interactive chatbot is invoked, it'll receive a JSON payload like this:
 You can use the information in the creator block to enforce permission controls. If you have a deploy bot, then maybe only certain
 people, with pre-specified IDs, will be able to interact with it.
 
+Note that Basecamp does not authenticate these POSTs to your command URL — there's no signature or shared secret on the request.
+The unguessable URL itself is what keeps the payload trustworthy, so keep it secret, and don't treat the creator block as your
+only authorization control: anyone who knows the URL can POST an arbitrary payload to it. If your bot does anything sensitive,
+perform your own authorization before acting on a command.
+
 If the interactive chatbot is able to provide a response right away, it can, as stated above, just return that as part
 of a text/html content-typed response with status code 200. This response has the same format as all other rich text in Basecamp,
 but also accepts these additional tags: `table tr td th thead tbody details summary`. The pair of details/summary is particularly
@@ -108,6 +113,8 @@ It's important to note that chatbots are account-wide, but with basecamp-specifi
 Basecamp to get the callback URL for that Basecamp, but the chatbot will instantly be available to every other Basecamp on the account as well.
 This also means that any edits or deletes of chatbots are account-wide. For this reason, chatbots can only be managed by administrators.
 But everyone is able to interact with interactive chatbots and all you need to post as a chatbot is that callback URL.
+Because possession of either URL is enough to use it, the `command_url` and `lines_url` fields are only included in the JSON
+responses below when the requester is an administrator.
 
 Endpoints:
 
@@ -132,9 +139,9 @@ Get chatbots
     "created_at": "2026-05-28T17:29:05.374Z",
     "updated_at": "2026-05-28T17:29:05.374Z",
     "service_name": "Capistrano",
-    "command_url": null,
     "url": "https://3.basecampapi.com/195539477/buckets/2085958502/chats/1069478958/integrations/1049715953.json",
     "app_url": "https://3.basecamp.com/195539477/buckets/2085958502/chats/1069478958/integrations/1049715953",
+    "command_url": null,
     "lines_url": "https://3.basecampapi.com/195539477/integrations/oneBqw5TTvLWcJJWLmuHPNC9/buckets/2085958502/chats/1069478958/lines"
   }
 ]
@@ -160,9 +167,9 @@ Get a chatbot
   "created_at": "2026-05-28T17:29:05.374Z",
   "updated_at": "2026-05-28T17:29:05.374Z",
   "service_name": "Capistrano",
-  "command_url": null,
   "url": "https://3.basecampapi.com/195539477/buckets/2085958502/chats/1069478958/integrations/1049715953.json",
   "app_url": "https://3.basecamp.com/195539477/buckets/2085958502/chats/1069478958/integrations/1049715953",
+  "command_url": null,
   "lines_url": "https://3.basecampapi.com/195539477/integrations/oneBqw5TTvLWcJJWLmuHPNC9/buckets/2085958502/chats/1069478958/lines"
 }
 ```
