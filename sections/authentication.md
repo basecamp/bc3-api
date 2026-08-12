@@ -130,6 +130,64 @@ curl -H "Authorization: Bearer $ACCESS_TOKEN" \
 **Note on authenticating users via OAuth**: We don't recommend using the OAuth API to authenticate users in third-party services (e.g. a "Login with Basecamp" button). We don't verify email addresses, so an attacker could gain access using email addresses they don't own.
 
 
+Get authorization from Basecamp
+-------------------------------
+
+* `GET https://3.basecampapi.com/authorization.json` will return the authorization details for a token, served by Basecamp itself.
+
+Basecamp serves its own authorization document at the API root — no account
+prefix — for any token it accepts: a Basecamp-issued OAuth token or personal
+access token, or a legacy Launchpad-issued token. It mirrors Launchpad's
+document above, with a few deliberate differences:
+
+- `identity` carries only `id`. The name and email fields are omitted: they
+  were never suitable for identifying users within Basecamp (see the note on
+  the Launchpad document above) — use the [Get person][people] endpoints.
+- Each account carries a `resource` indicator (`urn:bc:account:<id>`,
+  RFC 8707) instead of Launchpad's `product` and `app_href`. Pass it as the
+  `resource` parameter when requesting a token scoped to that account. A
+  client that reads both documents must treat `product` and `app_href` as
+  optional and select accounts by `href` or `resource`.
+- `scope` is present for every Basecamp-issued token — OAuth and personal
+  access tokens alike. Legacy Launchpad-issued tokens predate scopes, so a
+  missing `scope` is not an error.
+- `expires_at` is an ISO 8601 timestamp, as on Launchpad.
+
+###### Example JSON Response
+<!-- START GET https://3.basecampapi.com/authorization.json -->
+```json
+{
+  "identity": {
+    "id": 9999999
+  },
+  "accounts": [
+    {
+      "id": 99999999,
+      "name": "Honcho Design",
+      "href": "https://3.basecampapi.com/99999999",
+      "resource": "urn:bc:account:99999999"
+    }
+  ],
+  "scope": "full",
+  "expires_at": "2026-02-16T12:00:00.000Z"
+}
+```
+<!-- END GET https://3.basecampapi.com/authorization.json -->
+
+###### Copy as cURL
+
+```shell
+curl -H "Authorization: Bearer $ACCESS_TOKEN" \
+  -A 'MyApp (yourname@example.com)' \
+  https://3.basecampapi.com/authorization.json
+```
+
+This example presents a bearer token. A DPoP-bound token authenticates here
+the same way it does at every other endpoint: `Authorization: DPoP <token>`
+plus its `DPoP` proof header — the `Bearer` scheme is rejected for bound
+tokens (RFC 9449 §7.1).
+
+
 Refreshing access tokens
 -------------------------
 
