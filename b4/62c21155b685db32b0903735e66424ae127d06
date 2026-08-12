@@ -1,0 +1,19 @@
+sections/authentication.md
+  s_0e78c6630b4ac4::t_492b58d24f7405 133-190
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "b462c21155b685db32b0903735e66424ae127d06",
+  "prompts": {},
+  "sessions": {
+    "s_0e78c6630b4ac4": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "23a29ef5-f8f1-48fc-80f2-0ef9d7827559",
+        "model": "claude-fable-5"
+      },
+      "human_author": "Jeremy Daer <jeremy@37signals.com>"
+    }
+  }
+}
