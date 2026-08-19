@@ -1,0 +1,21 @@
+sections/events.md
+  s_d0807760396570::t_5d684fe7825e59 309-337
+sections/webhooks.md
+  s_d0807760396570::t_6253929cc6a604 106-107
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "4ab5853968e21e1c57884d28b8eae3c3dc373073",
+  "prompts": {},
+  "sessions": {
+    "s_d0807760396570": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a00e29-f65b-7a41-a1a9-746774871394",
+        "model": "gpt-daybreak-blue-latest"
+      },
+      "human_author": "Jeremy Daer <jeremy@37signals.com>"
+    }
+  }
+}
