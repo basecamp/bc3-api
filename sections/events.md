@@ -306,6 +306,35 @@ Get events
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/recordings/2/events.json
 ```
 
+Delegated events
+----------------
+
+When an action was executed by an agent working on someone's behalf, the event carries an additional `performed_by` field — a person object in the same shape as `creator`, with `"personable_type": "Agent"`. The `creator` remains the person the action is attributed to; `performed_by` identifies the agent that carried it out. Events for actions performed directly omit the field. If the agent has since been deleted, historical events keep their `performed_by` person, rendered with `"personable_type": "Tombstone"` — the presence of the field itself is the durable signal that the action was performed by an agent.
+
+The person objects below are abbreviated to the relevant fields — both carry the full shape shown for `creator` in the example above.
+
+```json
+{
+  "id": 1052474020,
+  "recording_id": 1069480015,
+  "action": "completed",
+  "details": {},
+  "created_at": "2026-07-21T01:06:20.752Z",
+  "creator": {
+    "id": 1049715930,
+    "name": "Sharon Bradford",
+    "personable_type": "User"
+  },
+  "performed_by": {
+    "id": 1049715999,
+    "name": "Clawdito",
+    "personable_type": "Agent"
+  }
+}
+```
+
+The same field appears in [webhook payloads](webhooks.md) for delegated actions.
+
 Legacy project-scoped routes
 -----------------------------
 
