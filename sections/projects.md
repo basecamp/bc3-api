@@ -18,7 +18,7 @@ Get all projects
 
 _Optional parameters_:
 
-* `status` - when set to `archived` or `trashed`, will return archived or trashed projects visible to the current user.
+* `status` - set to `active`, `archived`, or `trashed` to filter projects by status.
 
 ###### Example JSON Response
 <!-- START GET /projects.json -->
