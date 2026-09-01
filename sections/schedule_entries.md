@@ -293,7 +293,7 @@ _Optional parameters_:
 
 The remaining `recurrence_schedule` attributes shown in [Get a schedule entry](#get-a-schedule-entry) (`hour`, `minute`, `start_date`, `duration`, `end_date`) are derived from `starts_at`, `ends_at`, and `recurs_until` — they're ignored on input. An invalid `recurrence_schedule` is discarded on create: the entry is created without recurring.
 
-This endpoint will return `201 Created` with the current JSON representation of the schedule entry if the creation was a success. See the [Get a schedule entry](#get-a-schedule-entry) endpoint for more info on the payload.
+This endpoint will return `201 Created` with the current JSON representation of the schedule entry if the creation was a success. See the [Get a schedule entry](#get-a-schedule-entry) endpoint for more info on the payload. An entry that fails validation — a missing `starts_at` or `ends_at`, for example — returns `422 Unprocessable Entity` with a JSON `errors` payload.
 
 ###### Example JSON Request
 
