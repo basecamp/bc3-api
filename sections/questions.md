@@ -245,7 +245,7 @@ Update a question
 
 * `PUT /questions/2.json` allows changing the question with an ID of `2`.
 
-This endpoint will return `200 OK` with the current JSON representation of the question if the update was a success. See the [Get a question](#get-a-question) endpoint for more info on the payload.
+This endpoint will return `200 OK` with the current JSON representation of the question if the update was a success. Client users may only update a question they created; updating any other question returns `403 Forbidden`. See the [Get a question](#get-a-question) endpoint for more info on the payload.
 
 ###### Example JSON Request
 

@@ -331,6 +331,7 @@ API endpoints
 - [Schedule entries](sections/schedule_entries.md#schedule-entries)
 - [Schedules](sections/schedules.md#schedules)
 - [Search](sections/search.md#search)
+- [Spotlights](sections/spotlights.md#spotlights)
 - [Subscriptions](sections/subscriptions.md#subscriptions)
 - [Templates](sections/templates.md#templates)
 - [Timeline](sections/timeline.md#timeline)
