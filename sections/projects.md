@@ -20,6 +20,8 @@ _Optional parameters_:
 
 * `status` - set to `active`, `archived`, or `trashed` to filter projects by status.
 
+Two flags describe the project's place on the current user's home page: `bookmarked` is `true` when the project is pinned there at all, whether starred or filed into a stack, and `starred` is `true` only when it carries a star.
+
 ###### Example JSON Response
 <!-- START GET /projects.json -->
 ```json
@@ -164,7 +166,8 @@ _Optional parameters_:
       }
     },
     "all_access": false,
-    "bookmarked": false
+    "bookmarked": false,
+    "starred": false
   },
   {
     "id": 2085958506,
@@ -311,7 +314,8 @@ _Optional parameters_:
       }
     },
     "all_access": false,
-    "bookmarked": false
+    "bookmarked": false,
+    "starred": false
   }
 ]
 ```
@@ -329,6 +333,8 @@ Get a project
 * `GET /projects/1.json` will return the project with the given ID, granted they have access to it.
 
 The `dock` key contains an array of the current tools for this project. The `enabled` flag will be `true` if the tool is turned on for use. You can use the `url` parameter from each tool to jump to the resources available inside of this project.
+
+`bookmarked` and `starred` reflect the current user's home page, as in [Get all projects](#get-projects).
 
 ###### Example JSON Response
 <!-- START GET /projects/1.json -->
@@ -472,7 +478,9 @@ The `dock` key contains an array of the current tools for this project. The `ena
       ]
     }
   },
-  "all_access": false
+  "all_access": false,
+  "bookmarked": false,
+  "starred": false
 }
 ```
 <!-- END GET /projects/1.json -->
