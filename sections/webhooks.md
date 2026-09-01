@@ -103,6 +103,8 @@ All payloads follow the same JSON format:
 
 As you'll note, the recording format is the basic generic format that all other content endpoints share, with the addition of a `content` field. This format won't include as many details about the recording as other specific endpoints return. For example, for a [todo][2], this won't include fields such as `description`, `completed` or `assignees`.
 
+When the action was executed by an agent working on the creator's behalf, the payload also includes a top-level `performed_by` field — a person object in the same shape as `creator`, with `"personable_type": "Agent"`. The `creator` remains the person the action is attributed to; `performed_by` identifies the agent that carried it out. Payloads for actions performed directly omit the field. See [Delegated events](events.md#delegated-events).
+
 The payload for copy/move events will also include some details on the copied recording under `"copy"`. For example:
 ```json
 {
