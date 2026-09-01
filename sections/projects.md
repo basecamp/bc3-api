@@ -5,6 +5,8 @@ Endpoints:
 
 - [Get all projects](#get-projects)
 - [Get a project](#get-a-project)
+- [Get recent projects](#get-recent-projects)
+- [Record a project visit](#record-a-project-visit)
 - [Create a project](#create-a-project)
 - [Update a project](#update-a-project)
 - [Archive a project](#archive-a-project)
@@ -480,6 +482,184 @@ The `dock` key contains an array of the current tools for this project. The `ena
 
 ```shell
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/projects/1.json
+```
+
+
+Get recent projects
+-------------------
+
+* `GET /my/recent_projects.json` will return the projects the current user has most recently visited, most recent visit first. Only active projects the user can still access are included, and the list is capped at the 50 most recent visits.
+
+A visit is recorded when the user opens a project in Basecamp, when they create a project, and when an API client calls [Record a project visit](#record-a-project-visit). Each entry is the same shape as [Get a project](#get-a-project), plus `bookmarked`.
+
+###### Example JSON Response
+<!-- START GET /my/recent_projects.json -->
+```json
+[
+  {
+    "id": 2085958505,
+    "status": "active",
+    "created_at": "2026-04-13T20:24:00.000Z",
+    "updated_at": "2026-07-21T01:05:29.829Z",
+    "name": "The Leto Laptop",
+    "description": "Laptop product launch.",
+    "purpose": "topic",
+    "clients_enabled": false,
+    "timesheet_enabled": true,
+    "color": null,
+    "last_needle_color": "yellow",
+    "last_needle_position": 42,
+    "previous_needle_position": null,
+    "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiK2dpZDovL2JjMy9CdWNrZXQvMjA4NTk1ODUwNT9leHBpcmVzX2luBjsAVEkiCHB1cgY7AFRJIg1yZWFkYWJsZQY7AFQ=--427e605de283e100f75da40006030176fd863024.json",
+    "star_url": "https://3.basecampapi.com/195539477/buckets/2085958505/stars.json",
+    "url": "https://3.basecampapi.com/195539477/projects/2085958505.json",
+    "app_url": "https://3.basecamp.com/195539477/projects/2085958505",
+    "dock": [
+      {
+        "id": 1069479828,
+        "title": "Message Board",
+        "name": "message_board",
+        "enabled": true,
+        "position": 1,
+        "url": "https://3.basecampapi.com/195539477/buckets/2085958505/message_boards/1069479828.json",
+        "app_url": "https://3.basecamp.com/195539477/buckets/2085958505/message_boards/1069479828"
+      },
+      {
+        "id": 1069479829,
+        "title": "To-dos",
+        "name": "todoset",
+        "enabled": true,
+        "position": 2,
+        "url": "https://3.basecampapi.com/195539477/buckets/2085958505/todosets/1069479829.json",
+        "app_url": "https://3.basecamp.com/195539477/buckets/2085958505/todosets/1069479829"
+      },
+      {
+        "id": 1069479830,
+        "title": "Docs & Files",
+        "name": "vault",
+        "enabled": true,
+        "position": 3,
+        "url": "https://3.basecampapi.com/195539477/buckets/2085958505/vaults/1069479830.json",
+        "app_url": "https://3.basecamp.com/195539477/buckets/2085958505/vaults/1069479830"
+      },
+      {
+        "id": 1069479831,
+        "title": "Calendar",
+        "name": "schedule",
+        "enabled": true,
+        "position": 4,
+        "url": "https://3.basecampapi.com/195539477/buckets/2085958505/schedules/1069479831.json",
+        "app_url": "https://3.basecamp.com/195539477/buckets/2085958505/schedules/1069479831"
+      },
+      {
+        "id": 1069479832,
+        "title": "Chat",
+        "name": "chat",
+        "enabled": true,
+        "position": 5,
+        "url": "https://3.basecampapi.com/195539477/buckets/2085958505/chats/1069479832.json",
+        "app_url": "https://3.basecamp.com/195539477/buckets/2085958505/chats/1069479832"
+      },
+      {
+        "id": 1069479833,
+        "title": "Card Table",
+        "name": "kanban_board",
+        "enabled": true,
+        "position": 7,
+        "url": "https://3.basecampapi.com/195539477/buckets/2085958505/card_tables/1069479833.json",
+        "app_url": "https://3.basecamp.com/195539477/buckets/2085958505/card_tables/1069479833"
+      },
+      {
+        "id": 1069479839,
+        "title": "Automatic Check-ins",
+        "name": "questionnaire",
+        "enabled": true,
+        "position": 6,
+        "url": "https://3.basecampapi.com/195539477/buckets/2085958505/questionnaires/1069479839.json",
+        "app_url": "https://3.basecamp.com/195539477/buckets/2085958505/questionnaires/1069479839"
+      },
+      {
+        "id": 1069479840,
+        "title": "Email Forwards",
+        "name": "inbox",
+        "enabled": false,
+        "position": null,
+        "url": "https://3.basecampapi.com/195539477/buckets/2085958505/inboxes/1069479840.json",
+        "app_url": "https://3.basecamp.com/195539477/buckets/2085958505/inboxes/1069479840"
+      }
+    ],
+    "people": {
+      "team": {
+        "count": 8,
+        "sample": [
+          {
+            "id": 1049715938,
+            "name": "Annie Bryan",
+            "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBOJkkT4=--732a71fbd28ec10d9bf4466abd3588a8bea40bdb/avatar"
+          },
+          {
+            "id": 1049715939,
+            "name": "Cheryl Walters",
+            "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBONkkT4=--b57b5a44335d4c3ba1a2585abd6e5c7e4c85fdd6/avatar"
+          },
+          {
+            "id": 1049715940,
+            "name": "Jared Davis",
+            "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBORkkT4=--2667d9ced3ec021946197cbb6c3083f0f95f3b6a/avatar"
+          },
+          {
+            "id": 1049715941,
+            "name": "Jennifer Hemmersmith Young",
+            "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBOVkkT4=--33e3fc268c87411378691c71b6f13658e0b40967/avatar"
+          },
+          {
+            "id": 1049715942,
+            "name": "Josh Fiske",
+            "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBOZkkT4=--b8553b154990a1112ab6275b749296c4a3b56334/avatar"
+          },
+          {
+            "id": 1049715943,
+            "name": "Nicole Katz",
+            "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBOdkkT4=--1d2b80e583133f93afe008f88166b674fc0287a4/avatar"
+          },
+          {
+            "id": 1049715944,
+            "name": "Steve Marsh",
+            "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBOhkkT4=--b169e35b345bcc26eca6964b7ef7de2c16b6f238/avatar"
+          },
+          {
+            "id": 1049715913,
+            "name": "Victor Cooper",
+            "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBMlkkT4=--5fe7b70fbee7a7f0e2e1e19df7579e5d880c753d/avatar"
+          }
+        ]
+      }
+    },
+    "all_access": false,
+    "bookmarked": false
+  }
+]
+```
+<!-- END GET /my/recent_projects.json -->
+###### Copy as cURL
+
+```shell
+curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/my/recent_projects.json
+```
+
+
+Record a project visit
+----------------------
+
+* `POST /projects/1/recent_visit.json` will record that the current user visited the project with the given ID, moving it to the front of [Get recent projects](#get-recent-projects).
+
+No parameters required. Returns `204 No Content` if successful. Visits to archived or trashed projects are accepted but not recorded.
+
+###### Copy as cURL
+
+```shell
+curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -X POST \
+  https://3.basecampapi.com/$ACCOUNT_ID/projects/2085958505/recent_visit.json
 ```
 
 
