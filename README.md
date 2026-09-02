@@ -311,6 +311,7 @@ API endpoints
 - [Hill charts](sections/hill_charts.md#hill-charts)
 - [Inbox replies](sections/inbox_replies.md#inbox-replies)
 - [Inboxes](sections/inboxes.md#inboxes)
+- [Lineup](sections/lineup.md#lineup)
 - [Lineup Markers](sections/lineup_markers.md#lineup-markers)
 - [Message Boards](sections/message_boards.md#message-boards)
 - [Message Types](sections/message_types.md#message-types)
