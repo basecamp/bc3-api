@@ -6,6 +6,7 @@ Endpoints:
 - [Get all people](#get-all-people)
 - [Get people on a project](#get-people-on-a-project)
 - [Update who can access a project](#update-who-can-access-a-project)
+- [Enroll people](#enroll-people)
 - [Get pingable people](#get-pingable-people)
 - [Get person](#get-person)
 - [Get my personal info](#get-my-personal-info)
@@ -206,6 +207,143 @@ curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/j
 }
 ```
 <!-- END PUT /projects/1/people/users.json -->
+
+Enroll people
+-------------
+
+* `POST /account/enrollments/people.json` enrolls one or more people on the account, sending each new person an invitation. Unlike [Update who can access a project](#update-who-can-access-a-project), which grants and revokes access to a single project, this endpoint adds people to the account itself and can optionally grant them access to several projects at once.
+
+The caller must be able to manage people on the account; otherwise the request is rejected with `403 Forbidden`.
+
+**Parameters**:
+
+* `people` - a required array of people to enroll. Each entry must have `name` and `email_address`, and may include an optional `title` and `company_name`. An `email_address` that already belongs to someone on the account re-enrolls that existing person rather than creating a duplicate.
+* `project_ids` - an optional array of project IDs to grant the enrolled people access to. IDs that aren't integers, that the caller can't manage people on, or that aren't visible to the caller are silently ignored — the request still succeeds, but access is only granted for the projects that pass those checks, so a `201` does not guarantee every requested project was granted.
+* `notify` - an optional boolean (default `true`). When `false` (also accepts `"false"`, `"0"`, `0`), no invitation emails are sent to newly enrolled people.
+
+###### Example JSON Request
+<!-- START POST PAYLOAD /account/enrollments/people.json -->
+```json
+{
+  "people": [
+    {
+      "name": "Victor Copper",
+      "email_address": "victor@hanchodesign.com",
+      "title": "Prankster",
+      "company_name": "Hancho Design"
+    },
+    {
+      "name": "Amy Rivera",
+      "email_address": "amy@honchodesign.com"
+    }
+  ],
+  "project_ids": [
+    1049715914
+  ],
+  "notify": true
+}
+```
+<!-- END POST PAYLOAD /account/enrollments/people.json -->
+###### Copy as cURL
+
+```shell
+curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" \
+  -d '{"people":[{"name":"Victor Copper","email_address":"victor@hanchodesign.com"}]}' -X POST \
+  https://3.basecampapi.com/$ACCOUNT_ID/account/enrollments/people.json
+```
+
+The response is a `201 Created` whose body is an array with one entry per enrolled person, in request order. Each entry carries a `status` of `"created"` for a newly invited person or `"existing"` for someone who was already on the account, alongside the full person representation.
+
+###### Example JSON Response
+<!-- START POST /account/enrollments/people.json -->
+```json
+[
+  {
+    "status": "created",
+    "id": 1049715956,
+    "attachable_sgid": "BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiK2dpZDovL2JjMy9QZXJzb24vMTA0OTcxNTk1Nj9leHBpcmVzX2luBjsAVEkiCHB1cgY7AFRJIg9hdHRhY2hhYmxlBjsAVA==--e842ca0bf3c9a7c8d03a4dede5fd838e947fe5c1",
+    "name": "Victor Copper",
+    "personable_type": "User",
+    "title": "Prankster",
+    "tagline": null,
+    "location": null,
+    "created_at": "2026-07-21T01:05:54.042Z",
+    "updated_at": "2026-07-21T01:05:54.042Z",
+    "email_address": "victor@hanchodesign.com",
+    "bio": null,
+    "admin": false,
+    "owner": false,
+    "client": false,
+    "employee": false,
+    "time_zone": "America/Chicago",
+    "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBPRkkT4=--a31ea55b015ce2f5f714df6e51f42245d949ed3a/avatar",
+    "company": {
+      "id": 1033447819,
+      "name": "Hancho Design"
+    },
+    "can_ping": true,
+    "can_manage_projects": false,
+    "can_manage_people": false,
+    "can_access_timesheet": false,
+    "can_access_hill_charts": true
+  },
+  {
+    "status": "existing",
+    "id": 1049715915,
+    "attachable_sgid": "BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiK2dpZDovL2JjMy9QZXJzb24vMTA0OTcxNTkxNT9leHBpcmVzX2luBjsAVEkiCHB1cgY7AFRJIg9hdHRhY2hhYmxlBjsAVA==--56bb1f99675fd8fe08f93a706a5d2ddaa8412625",
+    "name": "Amy Rivera",
+    "personable_type": "User",
+    "title": "Central Web Coordinator",
+    "tagline": "I never said most of the things I said",
+    "location": null,
+    "created_at": "2026-05-28T17:22:23.206Z",
+    "updated_at": "2026-05-28T17:22:23.206Z",
+    "email_address": "amy@honchodesign.com",
+    "bio": "I never said most of the things I said",
+    "admin": false,
+    "owner": false,
+    "client": false,
+    "employee": false,
+    "time_zone": "America/Chicago",
+    "avatar_url": "https://3.basecampapi.com/195539477/people/BAhpBMtkkT4=--9927c47a4cbee30a7f9aea667882496aba799149/avatar",
+    "can_ping": true,
+    "can_manage_projects": true,
+    "can_manage_people": true,
+    "can_access_timesheet": true,
+    "can_access_hill_charts": true
+  }
+]
+```
+<!-- END POST /account/enrollments/people.json -->
+
+**Validation and error responses**
+
+Enrollment is all-or-nothing: if any entry can't be enrolled, the whole request is rolled back and nobody is created.
+
+* Per-entry validation failures return `422 Unprocessable Entity` with an `errors` array. Each element names the zero-based `index` of the offending entry and a `messages` list. Messages include `"name is required"`, `"email_address is required"`, `"email_address is invalid"`, and `"email_address is duplicated"` (email addresses must be unique within a single request, compared case-insensitively).
+
+```json
+{
+  "errors": [
+    {
+      "index": 1,
+      "messages": [
+        "email_address is invalid"
+      ]
+    }
+  ]
+}
+```
+
+* Structural problems with the request return `422 Unprocessable Entity` with a single `error` message. A missing, non-array, or empty `people` value returns `"Provide at least one person with name and email_address."`; an entry that isn't an object returns `"Each entry in people must be an object with name and email_address."`.
+
+```json
+{
+  "error": "Provide at least one person with name and email_address."
+}
+```
+
+* When the account has reached its user limit and the request would create at least one new person, the response is `507 Insufficient Storage` with `{ "error": "The user limit for this account has been reached." }`. Re-enrolling only people who already exist on the account succeeds even at the limit.
 
 Get pingable people
 -------------------

@@ -108,6 +108,9 @@ _Optional query parameters_:
       "comments_url": "https://3.basecampapi.com/195539477/buckets/2085958502/recordings/1069479538/comments.json",
       "boosts_count": 0,
       "boosts_url": "https://3.basecampapi.com/195539477/buckets/2085958502/recordings/1069479538/boosts.json",
+      "subtasks_count": 0,
+      "subtasks_completed_count": 0,
+      "subtasks_url": "https://3.basecampapi.com/195539477/recordings/1069479538/subtasks.json",
       "position": 2,
       "parent": {
         "id": 1069479536,
@@ -226,6 +229,9 @@ The response includes four groups:
       "comments_url": "https://3.basecampapi.com/195539477/buckets/2085958504/recordings/1069479805/comments.json",
       "boosts_count": 0,
       "boosts_url": "https://3.basecampapi.com/195539477/buckets/2085958504/recordings/1069479805/boosts.json",
+      "subtasks_count": 0,
+      "subtasks_completed_count": 0,
+      "subtasks_url": "https://3.basecampapi.com/195539477/recordings/1069479805/subtasks.json",
       "position": 4,
       "parent": {
         "id": 1069479800,
@@ -307,6 +313,9 @@ The response includes four groups:
       "comments_url": "https://3.basecampapi.com/195539477/buckets/2085958504/recordings/1069479803/comments.json",
       "boosts_count": 0,
       "boosts_url": "https://3.basecampapi.com/195539477/buckets/2085958504/recordings/1069479803/boosts.json",
+      "subtasks_count": 0,
+      "subtasks_completed_count": 0,
+      "subtasks_url": "https://3.basecampapi.com/195539477/recordings/1069479803/subtasks.json",
       "position": 2,
       "parent": {
         "id": 1069479800,
@@ -376,6 +385,9 @@ The response includes four groups:
       "comments_url": "https://3.basecampapi.com/195539477/buckets/2085958504/recordings/1069479804/comments.json",
       "boosts_count": 0,
       "boosts_url": "https://3.basecampapi.com/195539477/buckets/2085958504/recordings/1069479804/boosts.json",
+      "subtasks_count": 0,
+      "subtasks_completed_count": 0,
+      "subtasks_url": "https://3.basecampapi.com/195539477/recordings/1069479804/subtasks.json",
       "position": 3,
       "parent": {
         "id": 1069479800,
@@ -670,6 +682,9 @@ The response includes four groups:
       "comments_url": "https://3.basecampapi.com/195539477/buckets/2085958505/recordings/1069479861/comments.json",
       "boosts_count": 0,
       "boosts_url": "https://3.basecampapi.com/195539477/buckets/2085958505/recordings/1069479861/boosts.json",
+      "subtasks_count": 0,
+      "subtasks_completed_count": 0,
+      "subtasks_url": "https://3.basecampapi.com/195539477/recordings/1069479861/subtasks.json",
       "position": 2,
       "parent": {
         "id": 1069479829,
@@ -764,6 +779,9 @@ The response includes four groups:
       "comments_url": "https://3.basecampapi.com/195539477/buckets/2085958504/recordings/1069479801/comments.json",
       "boosts_count": 0,
       "boosts_url": "https://3.basecampapi.com/195539477/buckets/2085958504/recordings/1069479801/boosts.json",
+      "subtasks_count": 0,
+      "subtasks_completed_count": 0,
+      "subtasks_url": "https://3.basecampapi.com/195539477/recordings/1069479801/subtasks.json",
       "position": 1,
       "parent": {
         "id": 1069479800,
