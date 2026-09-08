@@ -6,6 +6,7 @@ Most of the data structures in the Basecamp 5 API are represented as "Recordings
 Endpoints:
 
 - [Get recordings](#get-recordings)
+- [Get a recording](#get-a-recording)
 - [Trash a recording](#trash-a-recording)
 - [Archive a recording](#archive-a-recording)
 - [Unarchive a recording](#unarchive-a-recording)
@@ -25,6 +26,21 @@ _Optional query parameters_:
 * `direction` - Options: `desc` or `asc`. Default: `desc`.
 
 Examples: `/projects/recordings.json?type=Todo`, `/projects/recordings.json?type=Message&bucket=1`, `/projects/recordings.json?type=Document&bucket=1,2&sort=updated_at&direction=asc`
+
+
+Get a recording
+---------------
+
+* `GET /recordings/2.json` will return the generic JSON representation of the recording with an ID of `2`.
+
+This endpoint is useful when you have a recording ID but do not yet know its specific type. The response includes the recording's `type`, which can then be used to follow up with the corresponding type-specific endpoint if needed.
+
+###### Copy as cURL
+
+```shell
+curl -s -H "Authorization: Bearer $ACCESS_TOKEN" \
+  https://3.basecampapi.com/$ACCOUNT_ID/recordings/2.json
+```
 
 
 Trash a recording
@@ -76,6 +92,7 @@ Legacy project-scoped routes
 
 The following project-scoped routes are still supported and will remain available, but flat routes above are the canonical form for new integrations.
 
+* `GET /buckets/1/recordings/2.json` → [Get a recording](#get-a-recording)
 * `PUT /buckets/1/recordings/2/status/trashed.json` → [Trash a recording](#trash-a-recording)
 * `PUT /buckets/1/recordings/2/status/archived.json` → [Archive a recording](#archive-a-recording)
 * `PUT /buckets/1/recordings/2/status/active.json` → [Unarchive a recording](#unarchive-a-recording)

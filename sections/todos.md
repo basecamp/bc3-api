@@ -45,6 +45,9 @@ This endpoint without any parameters returns only active, pending (i.e. not comp
     "comments_url": "https://3.basecampapi.com/195539477/buckets/2085958505/recordings/1069480013/comments.json",
     "boosts_count": 0,
     "boosts_url": "https://3.basecampapi.com/195539477/buckets/2085958505/recordings/1069480013/boosts.json",
+    "subtasks_count": 0,
+    "subtasks_completed_count": 0,
+    "subtasks_url": "https://3.basecampapi.com/195539477/recordings/1069480013/subtasks.json",
     "position": 1,
     "parent": {
       "id": 1069480012,
@@ -112,6 +115,11 @@ Get a to-do
 
 * `GET /todos/2.json` will return the to-do with an ID of `2`.
 
+The `steps` array holds the to-do's first 100 [subtasks][subtasks], read-only here. `subtasks_count`
+is the real total, so a to-do with more than 100 is detectable; `subtasks_url` returns a
+[paginated list][2] of all of them.
+Use the [subtasks][subtasks] endpoints to create, update, complete and reorder them.
+
 ###### Example JSON Response
 <!-- START GET /todos/2.json -->
 ```json
@@ -132,6 +140,9 @@ Get a to-do
   "comments_url": "https://3.basecampapi.com/195539477/buckets/2085958505/recordings/1069480015/comments.json",
   "boosts_count": 0,
   "boosts_url": "https://3.basecampapi.com/195539477/buckets/2085958505/recordings/1069480015/boosts.json",
+  "subtasks_count": 0,
+  "subtasks_completed_count": 0,
+  "subtasks_url": "https://3.basecampapi.com/195539477/recordings/1069480015/subtasks.json",
   "parent": {
     "id": 1069480012,
     "title": "Strategy ideas",
@@ -430,3 +441,4 @@ The following project-scoped routes are still supported and will remain availabl
 [3]: rich_text.md
 [4]: people.md#get-all-people
 [todoset]: todosets.md#get-to-do-set
+[subtasks]: subtasks.md#subtasks

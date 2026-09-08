@@ -1,6 +1,12 @@
 Card table steps
 ================
 
+These are the card-scoped endpoints for what are now called [subtasks][subtasks]. They will
+remain available indefinitely, but their paths speak of cards. The
+[subtasks][subtasks] endpoints work on a step under any recording — a to-do included — and are
+the ones to use for new integrations. Both operate on the same records and return the same
+payload.
+
 Available since Basecamp 5: steps are now also reachable via flat top-level paths
 (`/card_tables/steps/:id.json`, `/card_tables/cards/:card_id/steps.json`, …) in addition to the
 historical bucket-scoped paths shown below. Both paths return the same JSON shape and accept the
@@ -19,7 +25,8 @@ Endpoints:
 Get steps in a card
 --------------------
 
-Steps are returned unpaginated as part of the [Get a card][card] endpoint payload.
+The first 100 steps are returned as part of the [Get a card][card] endpoint payload. A card with
+more than that reports the real total in `subtasks_count`; fetch the rest from `subtasks_url`.
 
 Create a step
 -------------------------
@@ -129,7 +136,7 @@ Reposition a step
 **Required parameters**:
 
 * `source_id` – the step id. Step ids can be found via the [Get a card][card] endpoint.
-* `position` – Zero indexed.
+* `position` – the 1-based position to move it to.
 
 This endpoint will return `204 No Content` if successful.
 
@@ -160,3 +167,4 @@ The following project-scoped routes are still supported and will remain availabl
 
 [card]: card_table_cards.md#get-a-card
 [people]: people.md#get-all-people
+[subtasks]: subtasks.md#subtasks

@@ -35,6 +35,9 @@ Get cards in a column
     "comments_url": "https://3.basecampapi.com/195539477/buckets/2085958505/recordings/1069480041/comments.json",
     "boosts_count": 0,
     "boosts_url": "https://3.basecampapi.com/195539477/buckets/2085958505/recordings/1069480041/boosts.json",
+    "subtasks_count": 1,
+    "subtasks_completed_count": 0,
+    "subtasks_url": "https://3.basecampapi.com/195539477/recordings/1069480041/subtasks.json",
     "position": 1,
     "parent": {
       "id": 1069479834,
@@ -95,7 +98,7 @@ Get cards in a column
         "title": "Find inspiration",
         "inherits_status": true,
         "type": "Kanban::Step",
-        "url": "https://3.basecampapi.com/195539477/buckets/2085958505/card_tables/steps/1069480042.json",
+        "url": "https://3.basecampapi.com/195539477/buckets/2085958505/subtasks/1069480042.json",
         "app_url": "https://3.basecamp.com/195539477/buckets/2085958505/card_tables/cards/1069480041#__recording_1069480042",
         "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiLmdpZDovL2JjMy9SZWNvcmRpbmcvMTA2OTQ4MDA0Mj9leHBpcmVzX2luBjsAVEkiCHB1cgY7AFRJIg1yZWFkYWJsZQY7AFQ=--ac919964135c88e0b8d853cf2c2968095f8ce46a.json",
         "position": 1,
@@ -167,7 +170,7 @@ Get cards in a column
             "can_access_hill_charts": true
           }
         ],
-        "completion_url": "/195539477/buckets/2085958505/steps/1069480042/completions.json"
+        "completion_url": "https://3.basecampapi.com/195539477/subtasks/1069480042/completion.json"
       }
     ]
   }
@@ -205,6 +208,9 @@ Get a card
   "comments_url": "https://3.basecampapi.com/195539477/buckets/2085958505/recordings/1069480041/comments.json",
   "boosts_count": 0,
   "boosts_url": "https://3.basecampapi.com/195539477/buckets/2085958505/recordings/1069480041/boosts.json",
+  "subtasks_count": 1,
+  "subtasks_completed_count": 0,
+  "subtasks_url": "https://3.basecampapi.com/195539477/recordings/1069480041/subtasks.json",
   "position": 1,
   "parent": {
     "id": 1069479834,
@@ -265,7 +271,7 @@ Get a card
       "title": "Find inspiration",
       "inherits_status": true,
       "type": "Kanban::Step",
-      "url": "https://3.basecampapi.com/195539477/buckets/2085958505/card_tables/steps/1069480042.json",
+      "url": "https://3.basecampapi.com/195539477/buckets/2085958505/subtasks/1069480042.json",
       "app_url": "https://3.basecamp.com/195539477/buckets/2085958505/card_tables/cards/1069480041#__recording_1069480042",
       "bookmark_url": "https://3.basecampapi.com/195539477/my/bookmarks/BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiLmdpZDovL2JjMy9SZWNvcmRpbmcvMTA2OTQ4MDA0Mj9leHBpcmVzX2luBjsAVEkiCHB1cgY7AFRJIg1yZWFkYWJsZQY7AFQ=--ac919964135c88e0b8d853cf2c2968095f8ce46a.json",
       "position": 1,
@@ -337,7 +343,7 @@ Get a card
           "can_access_hill_charts": true
         }
       ],
-      "completion_url": "/195539477/buckets/2085958505/steps/1069480042/completions.json"
+      "completion_url": "https://3.basecampapi.com/195539477/subtasks/1069480042/completion.json"
     }
   ]
 }
