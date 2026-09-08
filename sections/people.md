@@ -7,6 +7,8 @@ Endpoints:
 - [Get people on a project](#get-people-on-a-project)
 - [Update who can access a project](#update-who-can-access-a-project)
 - [Enroll people](#enroll-people)
+- [Add and remove clients on a project](#add-and-remove-clients-on-a-project)
+- [Enable or disable clients on a project](#enable-or-disable-clients-on-a-project)
 - [Get pingable people](#get-pingable-people)
 - [Get person](#get-person)
 - [Get my personal info](#get-my-personal-info)
@@ -344,6 +346,77 @@ Enrollment is all-or-nothing: if any entry can't be enrolled, the whole request 
 ```
 
 * When the account has reached its user limit and the request would create at least one new person, the response is `507 Insufficient Storage` with `{ "error": "The user limit for this account has been reached." }`. Re-enrolling only people who already exist on the account succeeds even at the limit.
+
+Add and remove clients on a project
+-----------------------------------
+
+* `PUT /projects/1/people/client_users.json` grants and revokes client access to a project, and invites brand-new clients by email.
+
+Clients are external collaborators who log in to see only what you choose to share with them. The project must have client access enabled first — see [Enable or disable clients on a project](#enable-or-disable-clients-on-a-project). This endpoint returns `403 Forbidden` when clients are not enabled on the project.
+
+This is the client-side counterpart to [Update who can access a project](#update-who-can-access-a-project). Only client users may be granted here: a `grant` ID belonging to a team member is rejected rather than cross-graded into client access, and a newly `create`d person is always enrolled as a client. Likewise, `revoke` only removes client users.
+
+**Parameters**: Requests should include at least one of the following parameters.
+
+* `grant` - an array of existing client people IDs to add to the project.
+* `revoke` - an array of client people IDs to remove from the project.
+* `create` - an array of new clients to invite, each with an `email_address` and optional `name`, `title`, and `company_name` properties. When `name` is omitted it defaults to the email address.
+
+Invitations are all-or-nothing: if any `create` entry is invalid the response is `422 Unprocessable Entity` with an `errors` array naming each bad `email_address` and its `messages`, and if the new addresses would exceed the account's user limit the response is `429 Too Many Requests`. In either case nobody is invited. Addresses that already belong to people on the account don't count toward the limit, and a repeated address counts once.
+
+###### Example JSON Request
+```json
+{
+  "grant": [
+    1049715915
+  ],
+  "revoke": [
+    1049715944
+  ],
+  "create": [
+    {
+      "name": "Annie Bryan",
+      "email_address": "annie@springfield.example.com",
+      "title": "Owner",
+      "company_name": "Springfield Elementary"
+    }
+  ]
+}
+```
+###### Copy as cURL
+
+```shell
+curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" \
+  -d '{"grant":[2],"revoke":[3,4]}' -X PUT \
+  https://3.basecampapi.com/$ACCOUNT_ID/projects/1/people/client_users.json
+```
+
+The response mirrors [Update who can access a project](#update-who-can-access-a-project): a `granted` and a `revoked` array of the affected [people](#get-person), each with `client` set to `true`.
+
+
+Enable or disable clients on a project
+--------------------------------------
+
+* `POST /projects/1/client_enablement.json` enables client access on a project so clients can be added to it.
+* `DELETE /projects/1/client_enablement.json` disables client access on a project.
+
+Enabling clients is a separate, deliberate step from adding them: it turns on the project's client-facing surface and applies the default client visibility. By default the project's timeline and most of its docked tools become visible to clients — the card table, Campfire, and Doors stay private — and content added afterward inherits that default, so you adjust visibility per tool and per item from there. Because enabling reconfigures project-wide client visibility this way, adding clients never enables the project implicitly — enable first, then add.
+
+`POST` returns `403 Forbidden` unless the project can have clients (the account supports clients and the project is a standard project). `DELETE` returns `403 Forbidden` while the project still has any client users; remove them first (see above).
+
+###### Example JSON Response
+```json
+{
+  "clients_enabled": true
+}
+```
+###### Copy as cURL
+
+```shell
+curl -s -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" -X POST \
+  https://3.basecampapi.com/$ACCOUNT_ID/projects/1/client_enablement.json
+```
+
 
 Get pingable people
 -------------------
